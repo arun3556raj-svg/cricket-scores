@@ -13,7 +13,7 @@
       "venue": "M.Chinnaswamy Stadium, Bengaluru",
       "status": "finished",
       "status_text": "Royal Challengers Bengaluru won by 6 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1774706400000,
       "match_date": "Sat, 28 Mar 2026"
     },
@@ -30,7 +30,7 @@
       "venue": "Wankhede Stadium, Mumbai",
       "status": "finished",
       "status_text": "Mumbai Indians won by 6 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1774792800000,
       "match_date": "Sun, 29 Mar 2026"
     },
@@ -47,7 +47,7 @@
       "venue": "Barsapara Cricket Stadium, Guwahati",
       "status": "finished",
       "status_text": "Rajasthan Royals won by 8 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1774879200000,
       "match_date": "Mon, 30 Mar 2026"
     },
@@ -64,7 +64,7 @@
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "finished",
       "status_text": "Punjab Kings won by 3 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1774965600000,
       "match_date": "Tue, 31 Mar 2026"
     },
@@ -81,7 +81,7 @@
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "finished",
       "status_text": "Delhi Capitals won by 6 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775052000000,
       "match_date": "Wed, 01 Apr 2026"
     },
@@ -98,7 +98,7 @@
       "venue": "Eden Gardens, Kolkata",
       "status": "finished",
       "status_text": "Sunrisers Hyderabad won by 65 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775138400000,
       "match_date": "Thu, 02 Apr 2026"
     },
@@ -115,7 +115,7 @@
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "finished",
       "status_text": "Punjab Kings won by 5 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775224800000,
       "match_date": "Fri, 03 Apr 2026"
     },
@@ -132,7 +132,7 @@
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "finished",
       "status_text": "Delhi Capitals won by 6 wkts",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1775296800000,
       "match_date": "Sat, 04 Apr 2026"
     },
@@ -149,7 +149,7 @@
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "finished",
       "status_text": "Rajasthan Royals won by 6 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775311200000,
       "match_date": "Sat, 04 Apr 2026"
     },
@@ -166,7 +166,7 @@
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "finished",
       "status_text": "Lucknow Super Giants won by 5 wkts",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1775383200000,
       "match_date": "Sun, 05 Apr 2026"
     },
@@ -183,7 +183,7 @@
       "venue": "M.Chinnaswamy Stadium, Bengaluru",
       "status": "finished",
       "status_text": "Royal Challengers Bengaluru won by 43 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775397600000,
       "match_date": "Sun, 05 Apr 2026"
     },
@@ -200,7 +200,7 @@
       "venue": "Eden Gardens, Kolkata",
       "status": "finished",
       "status_text": "No result (due to rain)",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775484000000,
       "match_date": "Mon, 06 Apr 2026"
     },
@@ -217,7 +217,7 @@
       "venue": "Barsapara Cricket Stadium, Guwahati",
       "status": "finished",
       "status_text": "Rajasthan Royals won by 27 runs  -  11 overs game due to rain",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775570400000,
       "match_date": "Tue, 07 Apr 2026"
     },
@@ -234,7 +234,7 @@
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "finished",
       "status_text": "Gujarat Titans won by 1 run",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775656800000,
       "match_date": "Wed, 08 Apr 2026"
     },
@@ -251,7 +251,7 @@
       "venue": "Eden Gardens, Kolkata",
       "status": "finished",
       "status_text": "Lucknow Super Giants won by 3 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775743200000,
       "match_date": "Thu, 09 Apr 2026"
     },
@@ -268,7 +268,7 @@
       "venue": "Barsapara Cricket Stadium, Guwahati",
       "status": "finished",
       "status_text": "Rajasthan Royals won by 6 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775829600000,
       "match_date": "Fri, 10 Apr 2026"
     },
@@ -285,7 +285,7 @@
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "finished",
       "status_text": "Punjab Kings won by 6 wkts",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1775901600000,
       "match_date": "Sat, 11 Apr 2026"
     },
@@ -302,7 +302,7 @@
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "finished",
       "status_text": "Chennai Super Kings won by 23 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1775916000000,
       "match_date": "Sat, 11 Apr 2026"
     },
@@ -319,7 +319,7 @@
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "finished",
       "status_text": "Gujarat Titans won by 7 wkts",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1775988000000,
       "match_date": "Sun, 12 Apr 2026"
     },
@@ -336,7 +336,7 @@
       "venue": "Wankhede Stadium, Mumbai",
       "status": "finished",
       "status_text": "Royal Challengers Bengaluru won by 18 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776002400000,
       "match_date": "Sun, 12 Apr 2026"
     },
@@ -353,7 +353,7 @@
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "finished",
       "status_text": "Sunrisers Hyderabad won by 57 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776088800000,
       "match_date": "Mon, 13 Apr 2026"
     },
@@ -370,7 +370,7 @@
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "finished",
       "status_text": "Chennai Super Kings won by 32 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776175200000,
       "match_date": "Tue, 14 Apr 2026"
     },
@@ -387,7 +387,7 @@
       "venue": "M.Chinnaswamy Stadium, Bengaluru",
       "status": "finished",
       "status_text": "Royal Challengers Bengaluru won by 5 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776261600000,
       "match_date": "Wed, 15 Apr 2026"
     },
@@ -404,7 +404,7 @@
       "venue": "Wankhede Stadium, Mumbai",
       "status": "finished",
       "status_text": "Punjab Kings won by 7 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776348000000,
       "match_date": "Thu, 16 Apr 2026"
     },
@@ -421,7 +421,7 @@
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "finished",
       "status_text": "Gujarat Titans won by 5 wkts",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776434400000,
       "match_date": "Fri, 17 Apr 2026"
     },
@@ -438,7 +438,7 @@
       "venue": "M.Chinnaswamy Stadium, Bengaluru",
       "status": "finished",
       "status_text": "Delhi Capitals won by 6 wkts",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1776506400000,
       "match_date": "Sat, 18 Apr 2026"
     },
@@ -455,7 +455,7 @@
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "finished",
       "status_text": "Sunrisers Hyderabad won by 10 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776520800000,
       "match_date": "Sat, 18 Apr 2026"
     },
@@ -472,7 +472,7 @@
       "venue": "Eden Gardens, Kolkata",
       "status": "finished",
       "status_text": "Kolkata Knight Riders won by 4 wkts",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1776592800000,
       "match_date": "Sun, 19 Apr 2026"
     },
@@ -489,7 +489,7 @@
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "finished",
       "status_text": "Punjab Kings won by 54 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776607200000,
       "match_date": "Sun, 19 Apr 2026"
     },
@@ -506,7 +506,7 @@
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "finished",
       "status_text": "Mumbai Indians won by 99 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776693600000,
       "match_date": "Mon, 20 Apr 2026"
     },
@@ -523,7 +523,7 @@
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "finished",
       "status_text": "Sunrisers Hyderabad won by 47 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776780000000,
       "match_date": "Tue, 21 Apr 2026"
     },
@@ -540,7 +540,7 @@
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "finished",
       "status_text": "Rajasthan Royals won by 40 runs",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1776866400000,
       "match_date": "Wed, 22 Apr 2026"
     },
@@ -556,8 +556,8 @@
       "team2_color": "#1d4ed8",
       "venue": "Wankhede Stadium, Mumbai",
       "status": "live",
-      "status_text": "Mumbai Indians need 121 runs in 42 balls",
-      "start_time": "07:30 PM",
+      "status_text": "Mumbai Indians need 121 runs in 41 balls",
+      "start_time": "02:00 PM",
       "start_epoch": 1776952800000,
       "match_date": "Thu, 23 Apr 2026"
     },
@@ -574,7 +574,7 @@
       "venue": "M.Chinnaswamy Stadium, Bengaluru",
       "status": "upcoming",
       "status_text": "Match starts at Apr 24, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777039200000,
       "match_date": "Fri, 24 Apr 2026"
     },
@@ -591,7 +591,7 @@
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "upcoming",
       "status_text": "Match starts at Apr 25, 10:00 GMT",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1777111200000,
       "match_date": "Sat, 25 Apr 2026"
     },
@@ -608,7 +608,7 @@
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "upcoming",
       "status_text": "Match starts at Apr 25, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777125600000,
       "match_date": "Sat, 25 Apr 2026"
     },
@@ -625,7 +625,7 @@
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "upcoming",
       "status_text": "Match starts at Apr 26, 10:00 GMT",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1777197600000,
       "match_date": "Sun, 26 Apr 2026"
     },
@@ -642,7 +642,7 @@
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "upcoming",
       "status_text": "Match starts at Apr 26, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777212000000,
       "match_date": "Sun, 26 Apr 2026"
     },
@@ -659,7 +659,7 @@
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "upcoming",
       "status_text": "Match starts at Apr 27, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777298400000,
       "match_date": "Mon, 27 Apr 2026"
     },
@@ -676,7 +676,7 @@
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "upcoming",
       "status_text": "Match starts at Apr 28, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777384800000,
       "match_date": "Tue, 28 Apr 2026"
     },
@@ -693,7 +693,7 @@
       "venue": "Wankhede Stadium, Mumbai",
       "status": "upcoming",
       "status_text": "Match starts at Apr 29, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777471200000,
       "match_date": "Wed, 29 Apr 2026"
     },
@@ -710,7 +710,7 @@
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "upcoming",
       "status_text": "Match starts at Apr 30, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777557600000,
       "match_date": "Thu, 30 Apr 2026"
     },
@@ -727,7 +727,7 @@
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "upcoming",
       "status_text": "Match starts at May 01, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777644000000,
       "match_date": "Fri, 01 May 2026"
     },
@@ -744,7 +744,7 @@
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "upcoming",
       "status_text": "Match starts at May 02, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777730400000,
       "match_date": "Sat, 02 May 2026"
     },
@@ -761,7 +761,7 @@
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "upcoming",
       "status_text": "Match starts at May 03, 10:00 GMT",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1777802400000,
       "match_date": "Sun, 03 May 2026"
     },
@@ -778,7 +778,7 @@
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "upcoming",
       "status_text": "Match starts at May 03, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777816800000,
       "match_date": "Sun, 03 May 2026"
     },
@@ -795,7 +795,7 @@
       "venue": "Wankhede Stadium, Mumbai",
       "status": "upcoming",
       "status_text": "Match starts at May 04, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777903200000,
       "match_date": "Mon, 04 May 2026"
     },
@@ -812,7 +812,7 @@
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "upcoming",
       "status_text": "Match starts at May 05, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1777989600000,
       "match_date": "Tue, 05 May 2026"
     },
@@ -829,7 +829,7 @@
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "upcoming",
       "status_text": "Match starts at May 06, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778076000000,
       "match_date": "Wed, 06 May 2026"
     },
@@ -846,7 +846,7 @@
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "upcoming",
       "status_text": "Match starts at May 07, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778162400000,
       "match_date": "Thu, 07 May 2026"
     },
@@ -863,7 +863,7 @@
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "upcoming",
       "status_text": "Match starts at May 08, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778248800000,
       "match_date": "Fri, 08 May 2026"
     },
@@ -880,7 +880,7 @@
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "upcoming",
       "status_text": "Match starts at May 09, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778335200000,
       "match_date": "Sat, 09 May 2026"
     },
@@ -897,7 +897,7 @@
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "upcoming",
       "status_text": "Match starts at May 10, 10:00 GMT",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1778407200000,
       "match_date": "Sun, 10 May 2026"
     },
@@ -914,7 +914,7 @@
       "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
       "status": "upcoming",
       "status_text": "Match starts at May 10, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778421600000,
       "match_date": "Sun, 10 May 2026"
     },
@@ -931,7 +931,7 @@
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "upcoming",
       "status_text": "Match starts at May 11, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778508000000,
       "match_date": "Mon, 11 May 2026"
     },
@@ -948,7 +948,7 @@
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "upcoming",
       "status_text": "Match starts at May 12, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778594400000,
       "match_date": "Tue, 12 May 2026"
     },
@@ -965,7 +965,7 @@
       "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
       "status": "upcoming",
       "status_text": "Match starts at May 13, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778680800000,
       "match_date": "Wed, 13 May 2026"
     },
@@ -982,7 +982,7 @@
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "upcoming",
       "status_text": "Match starts at May 14, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778767200000,
       "match_date": "Thu, 14 May 2026"
     },
@@ -999,7 +999,7 @@
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "upcoming",
       "status_text": "Match starts at May 15, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778853600000,
       "match_date": "Fri, 15 May 2026"
     },
@@ -1016,7 +1016,7 @@
       "venue": "Eden Gardens, Kolkata",
       "status": "upcoming",
       "status_text": "Match starts at May 16, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1778940000000,
       "match_date": "Sat, 16 May 2026"
     },
@@ -1033,7 +1033,7 @@
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "upcoming",
       "status_text": "Match starts at May 17, 10:00 GMT",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1779012000000,
       "match_date": "Sun, 17 May 2026"
     },
@@ -1050,7 +1050,7 @@
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "upcoming",
       "status_text": "Match starts at May 17, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1779026400000,
       "match_date": "Sun, 17 May 2026"
     },
@@ -1067,7 +1067,7 @@
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "upcoming",
       "status_text": "Match starts at May 18, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1779112800000,
       "match_date": "Mon, 18 May 2026"
     },
@@ -1084,7 +1084,7 @@
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "upcoming",
       "status_text": "Match starts at May 19, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1779199200000,
       "match_date": "Tue, 19 May 2026"
     },
@@ -1101,7 +1101,7 @@
       "venue": "Eden Gardens, Kolkata",
       "status": "upcoming",
       "status_text": "Match starts at May 20, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1779285600000,
       "match_date": "Wed, 20 May 2026"
     },
@@ -1118,7 +1118,7 @@
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "upcoming",
       "status_text": "Match starts at May 21, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1779372000000,
       "match_date": "Thu, 21 May 2026"
     },
@@ -1135,7 +1135,7 @@
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "upcoming",
       "status_text": "Match starts at May 22, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1779458400000,
       "match_date": "Fri, 22 May 2026"
     },
@@ -1152,7 +1152,7 @@
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "upcoming",
       "status_text": "Match starts at May 23, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1779544800000,
       "match_date": "Sat, 23 May 2026"
     },
@@ -1169,7 +1169,7 @@
       "venue": "Wankhede Stadium, Mumbai",
       "status": "upcoming",
       "status_text": "Match starts at May 24, 10:00 GMT",
-      "start_time": "03:30 PM",
+      "start_time": "10:00 AM",
       "start_epoch": 1779616800000,
       "match_date": "Sun, 24 May 2026"
     },
@@ -1186,11 +1186,11 @@
       "venue": "Eden Gardens, Kolkata",
       "status": "upcoming",
       "status_text": "Match starts at May 24, 14:00 GMT",
-      "start_time": "07:30 PM",
+      "start_time": "02:00 PM",
       "start_epoch": 1779631200000,
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "23 Apr, 10:51 PM",
+  "last_updated": "23 Apr, 05:25 PM",
   "error": null
 }

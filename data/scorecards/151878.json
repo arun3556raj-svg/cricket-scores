@@ -270,10 +270,10 @@
       "bowl_team": "Chennai Super Kings",
       "innings_id": 2,
       "score": {
-        "runs": 87,
-        "wickets": 6,
-        "overs": 13,
-        "run_rate": 6.69,
+        "runs": 88,
+        "wickets": 7,
+        "overs": 13.3,
+        "run_rate": 6.52,
         "declared": false
       },
       "extras": {
@@ -323,11 +323,11 @@
         {
           "name": "Suryakumar Yadav",
           "runs": 36,
-          "balls": 29,
+          "balls": 30,
           "fours": 5,
           "sixes": 0,
-          "strike_rate": 124.14,
-          "out_desc": "batting",
+          "strike_rate": 120,
+          "out_desc": "c Sarfaraz Khan b Akeal Hosein",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -381,19 +381,19 @@
           "not_out": false
         },
         {
-          "name": "Jasprit Bumrah",
-          "runs": 0,
-          "balls": 0,
+          "name": "Krish Bhagat",
+          "runs": 1,
+          "balls": 2,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 50,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
-          "name": "Krish Bhagat",
+          "name": "Jasprit Bumrah",
           "runs": 0,
           "balls": 0,
           "fours": 0,
@@ -444,11 +444,11 @@
       "bowlers": [
         {
           "name": "Akeal Hosein",
-          "overs": 3,
+          "overs": 3.3,
           "maidens": 1,
-          "runs": 14,
-          "wickets": 3,
-          "economy": 4.7,
+          "runs": 15,
+          "wickets": 4,
+          "economy": 4.3,
           "wides": 0,
           "no_balls": 0
         },
@@ -529,6 +529,12 @@
           "runs": 85,
           "over": 12.2,
           "wkt_n": 6
+        },
+        {
+          "name": "Suryakumar Yadav",
+          "runs": 87,
+          "over": 13.1,
+          "wkt_n": 7
         }
       ]
     }
