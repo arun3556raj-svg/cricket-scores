@@ -1,0 +1,541 @@
+{
+  "innings": [
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 1,
+      "score": {
+        "runs": 199,
+        "wickets": 5,
+        "overs": 20,
+        "run_rate": 9.95,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "Quinton de Kock",
+          "runs": 13,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 118.18,
+          "out_desc": "c and b Kagiso Rabada",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Danish Malewar",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50,
+          "out_desc": "lbw b Kagiso Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 45,
+          "balls": 32,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 140.62,
+          "out_desc": "c Kagiso Rabada b Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Suryakumar Yadav",
+          "runs": 15,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 150,
+          "out_desc": "b Kagiso Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 101,
+          "balls": 45,
+          "fours": 8,
+          "sixes": 7,
+          "strike_rate": 224.44,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Hardik Pandya",
+          "runs": 15,
+          "balls": 16,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 93.75,
+          "out_desc": "c Glenn Phillips b Mohammed Siraj",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sherfane Rutherford",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mitchell Santner",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Krish Bhagat",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jasprit Bumrah",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "AM Ghazanfar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Kagiso Rabada",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 3,
+          "economy": 8.2,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Ashok Sharma",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 12.7,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Rashid Khan",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Prasidh Krishna",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 54,
+          "wickets": 1,
+          "economy": 13.5,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Washington Sundar",
+          "overs": 1,
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 13,
+          "wides": 0,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Danish Malewar",
+          "runs": 10,
+          "over": 1.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "Quinton de Kock",
+          "runs": 25,
+          "over": 3.3,
+          "wkt_n": 2
+        },
+        {
+          "name": "Suryakumar Yadav",
+          "runs": 44,
+          "over": 5.5,
+          "wkt_n": 3
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 96,
+          "over": 12.3,
+          "wkt_n": 4
+        },
+        {
+          "name": "Hardik Pandya",
+          "runs": 177,
+          "over": 18.5,
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 2,
+      "score": {
+        "runs": 100,
+        "wickets": 10,
+        "overs": 15.5,
+        "run_rate": 6.32,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Sai Sudharsan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Krish Bhagat b Jasprit Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 14,
+          "balls": 13,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 107.69,
+          "out_desc": "c Naman Dhir b Ashwani Kumar",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jos Buttler",
+          "runs": 5,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 83.33,
+          "out_desc": "lbw b Hardik Pandya",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 26,
+          "balls": 17,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 152.94,
+          "out_desc": "c Naman Dhir b Mitchell Santner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Glenn Phillips",
+          "runs": 6,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75,
+          "out_desc": "c and b Mitchell Santner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rahul Tewatia",
+          "runs": 8,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 72.73,
+          "out_desc": "c Quinton de Kock b Ashwani Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shahrukh Khan",
+          "runs": 17,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 130.77,
+          "out_desc": "c Naman Dhir b Ashwani Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 4,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.67,
+          "out_desc": "c (sub)Raj Bawa b Ashwani Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kagiso Rabada",
+          "runs": 12,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 85.71,
+          "out_desc": "st Quinton de Kock b AM Ghazanfar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ashok Sharma",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.33,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mohammed Siraj",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "lbw b AM Ghazanfar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Prasidh Krishna",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Jasprit Bumrah",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 1,
+          "economy": 5,
+          "wides": 2,
+          "no_balls": 0
+        },
+        {
+          "name": "Hardik Pandya",
+          "overs": 1,
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 18,
+          "wides": 2,
+          "no_balls": 0
+        },
+        {
+          "name": "Krish Bhagat",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 5,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Ashwani Kumar",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 4,
+          "economy": 6,
+          "wides": 2,
+          "no_balls": 0
+        },
+        {
+          "name": "AM Ghazanfar",
+          "overs": 2.5,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 2,
+          "economy": 6,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Mitchell Santner",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 2,
+          "economy": 5.3,
+          "wides": 0,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Sai Sudharsan",
+          "runs": 0,
+          "over": 0.1,
+          "wkt_n": 1
+        },
+        {
+          "name": "Jos Buttler",
+          "runs": 5,
+          "over": 1.2,
+          "wkt_n": 2
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 40,
+          "over": 4.4,
+          "wkt_n": 3
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 54,
+          "over": 7.2,
+          "wkt_n": 4
+        },
+        {
+          "name": "Glenn Phillips",
+          "runs": 55,
+          "over": 7.4,
+          "wkt_n": 5
+        },
+        {
+          "name": "Rahul Tewatia",
+          "runs": 79,
+          "over": 10.6,
+          "wkt_n": 6
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 85,
+          "over": 12.2,
+          "wkt_n": 7
+        },
+        {
+          "name": "Shahrukh Khan",
+          "runs": 86,
+          "over": 12.6,
+          "wkt_n": 8
+        },
+        {
+          "name": "Kagiso Rabada",
+          "runs": 99,
+          "over": 15.2,
+          "wkt_n": 9
+        },
+        {
+          "name": "Mohammed Siraj",
+          "runs": 100,
+          "over": 15.5,
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

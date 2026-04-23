@@ -1,0 +1,194 @@
+{
+  "innings": [
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 25,
+        "wickets": 2,
+        "overs": 3.4,
+        "run_rate": 6.82,
+        "declared": false
+      },
+      "extras": {
+        "total": 0,
+        "wides": 0,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Ajinkya Rahane",
+          "runs": 8,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 133.33,
+          "out_desc": "not out",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Finn Allen",
+          "runs": 6,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 85.71,
+          "out_desc": "c Prabhsimran Singh b Xavier Bartlett",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Cameron Green",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200,
+          "out_desc": "c Prabhsimran Singh b Xavier Bartlett",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Angkrish Raghuvanshi",
+          "runs": 7,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Rovman Powell",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rinku Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ramandeep Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Anukul Roy",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Navdeep Saini",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Vaibhav Arora",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kartik Tyagi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 8,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Xavier Bartlett",
+          "overs": 1.4,
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 2,
+          "economy": 5.4,
+          "wides": 0,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Finn Allen",
+          "runs": 12,
+          "over": 1.4,
+          "wkt_n": 1
+        },
+        {
+          "name": "Cameron Green",
+          "runs": 16,
+          "over": 1.6,
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
+  "error": null
+}

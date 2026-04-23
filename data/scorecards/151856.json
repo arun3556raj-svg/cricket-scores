@@ -1,0 +1,529 @@
+{
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 1,
+      "score": {
+        "runs": 242,
+        "wickets": 2,
+        "overs": 20,
+        "run_rate": 12.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 8,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 135,
+          "balls": 68,
+          "fours": 10,
+          "sixes": 10,
+          "strike_rate": 198.53,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Travis Head",
+          "runs": 37,
+          "balls": 26,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 142.31,
+          "out_desc": "c Sameer Rizvi b Axar Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 25,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 192.31,
+          "out_desc": "run out (Nitish Rana)",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 37,
+          "balls": 13,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 284.62,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Salil Arora",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": true
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Shivang Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Harsh Dubey",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Sakib Hussain",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Eshan Malinga",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Dilshan Madushanka",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mukesh Kumar",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 53,
+          "wickets": 0,
+          "economy": 13.2,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Nitish Rana",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 0,
+          "economy": 13.8,
+          "wides": 2,
+          "no_balls": 0
+        },
+        {
+          "name": "Lungi Ngidi",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 0,
+          "economy": 10.2,
+          "wides": 2,
+          "no_balls": 0
+        },
+        {
+          "name": "Axar Patel",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 11.5,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 15,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "T Natarajan",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 10,
+          "wides": 3,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Travis Head",
+          "runs": 97,
+          "over": 8.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 176,
+          "over": 14.4,
+          "wkt_n": 2
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 195,
+        "wickets": 9,
+        "overs": 20,
+        "run_rate": 9.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Pathum Nissanka",
+          "runs": 8,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 133.33,
+          "out_desc": "c (sub)Liam Livingstone b Dilshan Madushanka",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 37,
+          "balls": 23,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 160.87,
+          "out_desc": "c Abhishek Sharma b Sakib Hussain",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Nitish Rana",
+          "runs": 57,
+          "balls": 30,
+          "fours": 7,
+          "sixes": 3,
+          "strike_rate": 190,
+          "out_desc": "c Abhishek Sharma b Eshan Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 41,
+          "balls": 28,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 146.43,
+          "out_desc": "c Dilshan Madushanka b Harsh Dubey",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "David Miller",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "b Eshan Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tristan Stubbs",
+          "runs": 27,
+          "balls": 16,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 168.75,
+          "out_desc": "c Sakib Hussain b Eshan Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 14,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 140,
+          "out_desc": "c Aniket Verma b Eshan Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Axar Patel",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.67,
+          "out_desc": "c Nitish Reddy b Harsh Dubey",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Lungi Ngidi",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Dilshan Madushanka b Harsh Dubey",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mukesh Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "T Natarajan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Dilshan Madushanka",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9,
+          "wides": 4,
+          "no_balls": 0
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 57,
+          "wickets": 0,
+          "economy": 14.2,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Eshan Malinga",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 4,
+          "economy": 8,
+          "wides": 2,
+          "no_balls": 0
+        },
+        {
+          "name": "Sakib Hussain",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Shivang Kumar",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 14,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Harsh Dubey",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 3,
+          "economy": 6,
+          "wides": 0,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Pathum Nissanka",
+          "runs": 21,
+          "over": 2.1,
+          "wkt_n": 1
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 107,
+          "over": 9.4,
+          "wkt_n": 2
+        },
+        {
+          "name": "Nitish Rana",
+          "runs": 107,
+          "over": 10.1,
+          "wkt_n": 3
+        },
+        {
+          "name": "David Miller",
+          "runs": 107,
+          "over": 10.2,
+          "wkt_n": 4
+        },
+        {
+          "name": "Tristan Stubbs",
+          "runs": 166,
+          "over": 15.5,
+          "wkt_n": 5
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 186,
+          "over": 17.6,
+          "wkt_n": 6
+        },
+        {
+          "name": "Axar Patel",
+          "runs": 192,
+          "over": 19.1,
+          "wkt_n": 7
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 195,
+          "over": 19.5,
+          "wkt_n": 8
+        },
+        {
+          "name": "Lungi Ngidi",
+          "runs": 195,
+          "over": 19.6,
+          "wkt_n": 9
+        }
+      ]
+    }
+  ],
+  "error": null
+}

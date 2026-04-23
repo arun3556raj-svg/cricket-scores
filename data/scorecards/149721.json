@@ -1,0 +1,529 @@
+{
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 250,
+        "wickets": 3,
+        "overs": 20,
+        "run_rate": 12.5,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 3,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "Philip Salt",
+          "runs": 46,
+          "balls": 30,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 153.33,
+          "out_desc": "c Noor Ahmad b Shivam Dube",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Virat Kohli",
+          "runs": 28,
+          "balls": 18,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 155.56,
+          "out_desc": "c Shivam Dube b Anshul Kamboj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "runs": 50,
+          "balls": 29,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 172.41,
+          "out_desc": "b Jamie Overton",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rajat Patidar",
+          "runs": 48,
+          "balls": 19,
+          "fours": 1,
+          "sixes": 6,
+          "strike_rate": 252.63,
+          "out_desc": "not out",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tim David",
+          "runs": 70,
+          "balls": 25,
+          "fours": 3,
+          "sixes": 8,
+          "strike_rate": 280,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jitesh Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": true
+        },
+        {
+          "name": "Romario Shepherd",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Krunal Pandya",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Bhuvneshwar Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Abhinandan Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jacob Duffy",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Khaleel Ahmed",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 9.2,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Matt Henry",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 12,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Anshul Kamboj",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 1,
+          "economy": 13,
+          "wides": 1,
+          "no_balls": 1
+        },
+        {
+          "name": "Noor Ahmad",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 49,
+          "wickets": 0,
+          "economy": 12.2,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Jamie Overton",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 1,
+          "economy": 14,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Shivam Dube",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 15,
+          "wides": 1,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Virat Kohli",
+          "runs": 37,
+          "over": 4.3,
+          "wkt_n": 1
+        },
+        {
+          "name": "Philip Salt",
+          "runs": 93,
+          "over": 10.4,
+          "wkt_n": 2
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "runs": 151,
+          "over": 14.1,
+          "wkt_n": 3
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Royal Challengers Bengaluru",
+      "innings_id": 2,
+      "score": {
+        "runs": 207,
+        "wickets": 10,
+        "overs": 19.4,
+        "run_rate": 10.53,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 3,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Sanju Samson",
+          "runs": 9,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 180,
+          "out_desc": "c Devdutt Padikkal b Jacob Duffy",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Ruturaj Gaikwad",
+          "runs": 7,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 233.33,
+          "out_desc": "c Devdutt Padikkal b Jacob Duffy",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ayush Mhatre",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.33,
+          "out_desc": "c Rajat Patidar b Bhuvneshwar Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sarfaraz Khan",
+          "runs": 50,
+          "balls": 25,
+          "fours": 8,
+          "sixes": 2,
+          "strike_rate": 200,
+          "out_desc": "st Jitesh Sharma b Krunal Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kartik Sharma",
+          "runs": 6,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 200,
+          "out_desc": "c Abhinandan Singh b Krunal Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shivam Dube",
+          "runs": 18,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 138.46,
+          "out_desc": "c Jitesh Sharma b Abhinandan Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Prashant Veer",
+          "runs": 43,
+          "balls": 29,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 148.28,
+          "out_desc": "c Rajat Patidar b Bhuvneshwar Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jamie Overton",
+          "runs": 37,
+          "balls": 16,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 231.25,
+          "out_desc": "c (sub)Jacob Bethell b Suyash Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Anshul Kamboj",
+          "runs": 19,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 158.33,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Noor Ahmad",
+          "runs": 8,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 100,
+          "out_desc": "c Virat Kohli b Bhuvneshwar Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Matt Henry",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.67,
+          "out_desc": "c Phil Salt b Abhinandan Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Khaleel Ahmed",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Jacob Duffy",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 58,
+          "wickets": 2,
+          "economy": 14.5,
+          "wides": 2,
+          "no_balls": 1
+        },
+        {
+          "name": "Bhuvneshwar Kumar",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 3,
+          "economy": 10.2,
+          "wides": 1,
+          "no_balls": 1
+        },
+        {
+          "name": "Abhinandan Singh",
+          "overs": 3.4,
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 2,
+          "economy": 8.2,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Krunal Pandya",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 2,
+          "economy": 12,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Suyash Sharma",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Romario Shepherd",
+          "overs": 1,
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 19,
+          "wides": 0,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Ruturaj Gaikwad",
+          "runs": 9,
+          "over": 0.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "Ayush Mhatre",
+          "runs": 10,
+          "over": 1.2,
+          "wkt_n": 2
+        },
+        {
+          "name": "Sanju Samson",
+          "runs": 30,
+          "over": 2.5,
+          "wkt_n": 3
+        },
+        {
+          "name": "Sarfaraz Khan",
+          "runs": 77,
+          "over": 6.1,
+          "wkt_n": 4
+        },
+        {
+          "name": "Kartik Sharma",
+          "runs": 84,
+          "over": 6.5,
+          "wkt_n": 5
+        },
+        {
+          "name": "Shivam Dube",
+          "runs": 108,
+          "over": 9.5,
+          "wkt_n": 6
+        },
+        {
+          "name": "Prashant Veer",
+          "runs": 165,
+          "over": 15.1,
+          "wkt_n": 7
+        },
+        {
+          "name": "Jamie Overton",
+          "runs": 178,
+          "over": 16.1,
+          "wkt_n": 8
+        },
+        {
+          "name": "Noor Ahmad",
+          "runs": 190,
+          "over": 17.6,
+          "wkt_n": 9
+        },
+        {
+          "name": "Matt Henry",
+          "runs": 207,
+          "over": 19.4,
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

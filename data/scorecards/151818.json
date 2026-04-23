@@ -1,0 +1,565 @@
+{
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 194,
+        "wickets": 9,
+        "overs": 20,
+        "run_rate": 9.7,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 5,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 59,
+          "balls": 22,
+          "fours": 6,
+          "sixes": 4,
+          "strike_rate": 268.18,
+          "out_desc": "c Sanju Samson b Jamie Overton",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Travis Head",
+          "runs": 23,
+          "balls": 20,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 115,
+          "out_desc": "c Ruturaj Gaikwad b Mukesh Choudhary",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Ruturaj Gaikwad b Mukesh Choudhary",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 59,
+          "balls": 39,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 151.28,
+          "out_desc": "b Anshul Kamboj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50,
+          "out_desc": "c Noor Ahmad b Jamie Overton",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "runs": 12,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 150,
+          "out_desc": "c Matthew Short b Jamie Overton",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Salil Arora",
+          "runs": 13,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 108.33,
+          "out_desc": "c Dewald Brevis b Gurjapneet Singh",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Liam Livingstone",
+          "runs": 1,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 20,
+          "out_desc": "c Dewald Brevis b Anshul Kamboj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shivang Kumar",
+          "runs": 12,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 150,
+          "out_desc": "c Gurjapneet Singh b Anshul Kamboj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Praful Hinge",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sakib Hussain",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Eshan Malinga",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Matthew Short",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 12.7,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Mukesh Choudhary",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 2,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Anshul Kamboj",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 3,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Noor Ahmad",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 8.2,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Jamie Overton",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 3,
+          "economy": 9.2,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Gurjapneet Singh",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Travis Head",
+          "runs": 75,
+          "over": 5.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 75,
+          "over": 5.6,
+          "wkt_n": 2
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 93,
+          "over": 7.6,
+          "wkt_n": 3
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 112,
+          "over": 10.1,
+          "wkt_n": 4
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "runs": 147,
+          "over": 13.5,
+          "wkt_n": 5
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 177,
+          "over": 17.2,
+          "wkt_n": 6
+        },
+        {
+          "name": "Salil Arora",
+          "runs": 179,
+          "over": 18.1,
+          "wkt_n": 7
+        },
+        {
+          "name": "Shivang Kumar",
+          "runs": 193,
+          "over": 19.4,
+          "wkt_n": 8
+        },
+        {
+          "name": "Liam Livingstone",
+          "runs": 194,
+          "over": 19.6,
+          "wkt_n": 9
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 184,
+        "wickets": 8,
+        "overs": 20,
+        "run_rate": 9.2,
+        "declared": false
+      },
+      "extras": {
+        "total": 18,
+        "wides": 15,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Sanju Samson",
+          "runs": 7,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 233.33,
+          "out_desc": "c Heinrich Klaasen b Nitish Reddy",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Ruturaj Gaikwad",
+          "runs": 19,
+          "balls": 13,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 146.15,
+          "out_desc": "c Salil Arora b Eshan Malinga",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ayush Mhatre",
+          "runs": 30,
+          "balls": 13,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 230.77,
+          "out_desc": "c Heinrich Klaasen b Nitish Reddy",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Matthew Short",
+          "runs": 34,
+          "balls": 30,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 113.33,
+          "out_desc": "c Aniket Verma b Eshan Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sarfaraz Khan",
+          "runs": 25,
+          "balls": 19,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 131.58,
+          "out_desc": "c Nitish Reddy b Eshan Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dewald Brevis",
+          "runs": 0,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Liam Livingstone b Shivang Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shivam Dube",
+          "runs": 21,
+          "balls": 16,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 131.25,
+          "out_desc": "b Sakib Hussain",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jamie Overton",
+          "runs": 16,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 106.67,
+          "out_desc": "c Liam Livingstone b Praful Hinge",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Anshul Kamboj",
+          "runs": 13,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 162.5,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Noor Ahmad",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mukesh Choudhary",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Gurjapneet Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Praful Hinge",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 60,
+          "wickets": 1,
+          "economy": 15,
+          "wides": 2,
+          "no_balls": 2
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 2,
+          "economy": 7.8,
+          "wides": 3,
+          "no_balls": 0
+        },
+        {
+          "name": "Sakib Hussain",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8,
+          "wides": 9,
+          "no_balls": 0
+        },
+        {
+          "name": "Eshan Malinga",
+          "overs": 4,
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 3,
+          "economy": 7.2,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Shivang Kumar",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 6,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Abhishek Sharma",
+          "overs": 1,
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 13,
+          "wides": 0,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Sanju Samson",
+          "runs": 15,
+          "over": 1.1,
+          "wkt_n": 1
+        },
+        {
+          "name": "Ayush Mhatre",
+          "runs": 66,
+          "over": 4.4,
+          "wkt_n": 2
+        },
+        {
+          "name": "Ruturaj Gaikwad",
+          "runs": 66,
+          "over": 5.1,
+          "wkt_n": 3
+        },
+        {
+          "name": "Sarfaraz Khan",
+          "runs": 112,
+          "over": 10.4,
+          "wkt_n": 4
+        },
+        {
+          "name": "Dewald Brevis",
+          "runs": 113,
+          "over": 11.4,
+          "wkt_n": 5
+        },
+        {
+          "name": "Matthew Short",
+          "runs": 148,
+          "over": 15.4,
+          "wkt_n": 6
+        },
+        {
+          "name": "Shivam Dube",
+          "runs": 154,
+          "over": 16.5,
+          "wkt_n": 7
+        },
+        {
+          "name": "Jamie Overton",
+          "runs": 182,
+          "over": 19.4,
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}
