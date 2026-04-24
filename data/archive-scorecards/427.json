@@ -234,16 +234,16 @@
       "score": {
         "runs": 200,
         "wickets": 4,
-        "overs": "17",
-        "run_rate": 12.0,
+        "overs": "16.3",
+        "run_rate": 12.12,
         "declared": false
       },
       "extras": {
         "total": 14,
         "wides": 6,
-        "no_balls": 1,
+        "no_balls": 6,
         "byes": 0,
-        "leg_byes": 7
+        "leg_byes": 2
       },
       "batsmen": [
         {
@@ -285,10 +285,10 @@
         {
           "name": "N Wadhera",
           "runs": 52,
-          "balls": 34,
+          "balls": 33,
           "fours": 4,
           "sixes": 3,
-          "strike_rate": 152.9,
+          "strike_rate": 157.6,
           "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
@@ -363,12 +363,12 @@
         {
           "name": "HV Patel",
           "maidens": 0,
-          "runs": 40,
+          "runs": 45,
           "wickets": 0,
-          "economy": 10.9,
+          "economy": 12.9,
           "wides": 1,
-          "no_balls": 0,
-          "overs": "3.4"
+          "no_balls": 1,
+          "overs": "3.3"
         }
       ],
       "fow": [
@@ -387,13 +387,13 @@
         {
           "name": "SA Yadav",
           "runs": 192,
-          "over": "15.5",
+          "over": "15.4",
           "wkt_n": 3
         },
         {
           "name": "TH David",
           "runs": 192,
-          "over": "16",
+          "over": "15.5",
           "wkt_n": 4
         }
       ]

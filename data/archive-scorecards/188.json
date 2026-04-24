@@ -18,14 +18,14 @@
         "runs": 184,
         "wickets": 8,
         "overs": "20",
-        "run_rate": 9.12,
+        "run_rate": 9.2,
         "declared": false
       },
       "extras": {
         "total": 14,
         "wides": 5,
-        "no_balls": 1,
-        "byes": 5,
+        "no_balls": 6,
+        "byes": 0,
         "leg_byes": 3
       },
       "batsmen": [
@@ -116,10 +116,10 @@
         {
           "name": "AR Patel",
           "runs": 17,
-          "balls": 8,
+          "balls": 7,
           "fours": 2,
           "sixes": 1,
-          "strike_rate": 212.5,
+          "strike_rate": 242.9,
           "out_desc": "c JC Buttler b AJ Tye",
           "is_captain": false,
           "is_keeper": false,
@@ -184,12 +184,12 @@
         {
           "name": "AJ Tye",
           "maidens": 0,
-          "runs": 49,
+          "runs": 54,
           "wickets": 1,
-          "economy": 11.8,
+          "economy": 13.5,
           "wides": 2,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "S Gopal",
@@ -252,13 +252,13 @@
         {
           "name": "AR Patel",
           "runs": 181,
-          "over": "19.1",
+          "over": "19",
           "wkt_n": 7
         },
         {
           "name": "HV Patel",
           "runs": 183,
-          "over": "19.5",
+          "over": "19.4",
           "wkt_n": 8
         }
       ]
@@ -270,16 +270,16 @@
       "score": {
         "runs": 138,
         "wickets": 10,
-        "overs": "20",
-        "run_rate": 6.96,
+        "overs": "19.4",
+        "run_rate": 7.02,
         "declared": false
       },
       "extras": {
         "total": 10,
         "wides": 7,
-        "no_balls": 0,
+        "no_balls": 2,
         "byes": 0,
-        "leg_byes": 3
+        "leg_byes": 1
       },
       "batsmen": [
         {
@@ -369,10 +369,10 @@
         {
           "name": "JC Archer",
           "runs": 2,
-          "balls": 4,
+          "balls": 3,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 50.0,
+          "strike_rate": 66.7,
           "out_desc": "c SS Iyer b K Rabada",
           "is_captain": false,
           "is_keeper": false,
@@ -419,12 +419,12 @@
         {
           "name": "K Rabada",
           "maidens": 0,
-          "runs": 34,
+          "runs": 36,
           "wickets": 3,
-          "economy": 8.9,
+          "economy": 9.8,
           "wides": 2,
-          "no_balls": 0,
-          "overs": "3.5"
+          "no_balls": 1,
+          "overs": "3.4"
         },
         {
           "name": "A Nortje",
@@ -517,25 +517,25 @@
         {
           "name": "JC Archer",
           "runs": 100,
-          "over": "15",
+          "over": "14.5",
           "wkt_n": 7
         },
         {
           "name": "S Gopal",
           "runs": 121,
-          "over": "17.3",
+          "over": "17.2",
           "wkt_n": 8
         },
         {
           "name": "R Tewatia",
           "runs": 136,
-          "over": "19.2",
+          "over": "19.1",
           "wkt_n": 9
         },
         {
           "name": "VR Aaron",
           "runs": 138,
-          "over": "19.5",
+          "over": "19.4",
           "wkt_n": 10
         }
       ]

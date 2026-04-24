@@ -16,16 +16,16 @@
       "innings_id": 1,
       "score": {
         "runs": 197,
-        "wickets": 5,
+        "wickets": 4,
         "overs": "20",
-        "run_rate": 9.77,
+        "run_rate": 9.85,
         "declared": false
       },
       "extras": {
         "total": 10,
         "wides": 8,
-        "no_balls": 0,
-        "byes": 2,
+        "no_balls": 2,
+        "byes": 0,
         "leg_byes": 0
       },
       "batsmen": [
@@ -92,10 +92,10 @@
         {
           "name": "M Shahrukh Khan",
           "runs": 11,
-          "balls": 10,
+          "balls": 9,
           "fours": 1,
           "sixes": 0,
-          "strike_rate": 110.0,
+          "strike_rate": 122.2,
           "out_desc": "c JC Buttler b JO Holder",
           "is_captain": false,
           "is_keeper": false,
@@ -128,12 +128,12 @@
         {
           "name": "KM Asif",
           "maidens": 0,
-          "runs": 53,
+          "runs": 55,
           "wickets": 0,
-          "economy": 12.7,
+          "economy": 13.8,
           "wides": 4,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "R Ashwin",
@@ -188,7 +188,7 @@
         {
           "name": "M Shahrukh Khan",
           "runs": 196,
-          "over": "19.5",
+          "over": "19.4",
           "wkt_n": 4
         }
       ]

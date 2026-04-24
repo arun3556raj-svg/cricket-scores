@@ -18,14 +18,14 @@
         "runs": 215,
         "wickets": 5,
         "overs": "20",
-        "run_rate": 10.66,
+        "run_rate": 10.75,
         "declared": false
       },
       "extras": {
         "total": 16,
         "wides": 2,
-        "no_balls": 2,
-        "byes": 5,
+        "no_balls": 7,
+        "byes": 0,
         "leg_byes": 7
       },
       "batsmen": [
@@ -44,10 +44,10 @@
         {
           "name": "DA Warner",
           "runs": 61,
-          "balls": 44,
+          "balls": 43,
           "fours": 6,
           "sixes": 2,
-          "strike_rate": 138.6,
+          "strike_rate": 141.9,
           "out_desc": "c AM Rahane b UT Yadav",
           "is_captain": false,
           "is_keeper": false,
@@ -148,12 +148,12 @@
         {
           "name": "CV Varun",
           "maidens": 0,
-          "runs": 43,
+          "runs": 48,
           "wickets": 1,
-          "economy": 10.3,
+          "economy": 12.0,
           "wides": 0,
-          "no_balls": 1,
-          "overs": "4.1"
+          "no_balls": 2,
+          "overs": "4"
         },
         {
           "name": "SP Narine",
@@ -196,25 +196,25 @@
         {
           "name": "RR Pant",
           "runs": 148,
-          "over": "13",
+          "over": "12.5",
           "wkt_n": 2
         },
         {
           "name": "Lalit Yadav",
           "runs": 151,
-          "over": "14",
+          "over": "13.5",
           "wkt_n": 3
         },
         {
           "name": "R Powell",
           "runs": 161,
-          "over": "15.2",
+          "over": "15.1",
           "wkt_n": 4
         },
         {
           "name": "DA Warner",
           "runs": 166,
-          "over": "16.5",
+          "over": "16.4",
           "wkt_n": 5
         }
       ]
@@ -226,7 +226,7 @@
       "score": {
         "runs": 171,
         "wickets": 10,
-        "overs": "20",
+        "overs": "19.4",
         "run_rate": 8.69,
         "declared": false
       },

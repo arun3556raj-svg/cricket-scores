@@ -18,15 +18,15 @@
         "runs": 187,
         "wickets": 8,
         "overs": "20",
-        "run_rate": 9.27,
+        "run_rate": 9.35,
         "declared": false
       },
       "extras": {
         "total": 16,
         "wides": 12,
-        "no_balls": 0,
+        "no_balls": 2,
         "byes": 0,
-        "leg_byes": 4
+        "leg_byes": 2
       },
       "batsmen": [
         {
@@ -68,10 +68,10 @@
         {
           "name": "R Ashwin",
           "runs": 13,
-          "balls": 8,
+          "balls": 7,
           "fours": 1,
           "sixes": 1,
-          "strike_rate": 162.5,
+          "strike_rate": 185.7,
           "out_desc": "c SO Hetmyer b PWH de Silva",
           "is_captain": false,
           "is_keeper": false,
@@ -164,12 +164,12 @@
         {
           "name": "Yudhvir Singh",
           "maidens": 0,
-          "runs": 46,
+          "runs": 48,
           "wickets": 3,
-          "economy": 11.0,
+          "economy": 12.0,
           "wides": 0,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "KT Maphaka",
@@ -228,37 +228,37 @@
         {
           "name": "A Mhatre",
           "runs": 68,
-          "over": "6",
+          "over": "5.5",
           "wkt_n": 3
         },
         {
           "name": "R Ashwin",
           "runs": 70,
-          "over": "6.4",
+          "over": "6.3",
           "wkt_n": 4
         },
         {
           "name": "RA Jadeja",
           "runs": 78,
-          "over": "7.5",
+          "over": "7.4",
           "wkt_n": 5
         },
         {
           "name": "D Brevis",
           "runs": 137,
-          "over": "13.5",
+          "over": "13.4",
           "wkt_n": 6
         },
         {
           "name": "S Dube",
           "runs": 180,
-          "over": "19.2",
+          "over": "19.1",
           "wkt_n": 7
         },
         {
           "name": "MS Dhoni",
           "runs": 185,
-          "over": "20",
+          "over": "19.5",
           "wkt_n": 8
         }
       ]
@@ -270,7 +270,7 @@
       "score": {
         "runs": 188,
         "wickets": 4,
-        "overs": "18",
+        "overs": "17.1",
         "run_rate": 10.95,
         "declared": false
       },

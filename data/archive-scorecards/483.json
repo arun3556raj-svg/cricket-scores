@@ -18,14 +18,14 @@
         "runs": 222,
         "wickets": 6,
         "overs": "20",
-        "run_rate": 11.01,
+        "run_rate": 11.1,
         "declared": false
       },
       "extras": {
         "total": 20,
         "wides": 7,
-        "no_balls": 1,
-        "byes": 5,
+        "no_balls": 6,
+        "byes": 0,
         "leg_byes": 7
       },
       "batsmen": [
@@ -104,10 +104,10 @@
         {
           "name": "AD Russell",
           "runs": 27,
-          "balls": 19,
+          "balls": 18,
           "fours": 4,
           "sixes": 0,
-          "strike_rate": 142.1,
+          "strike_rate": 150.0,
           "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
@@ -140,12 +140,12 @@
         {
           "name": "Yash Dayal",
           "maidens": 0,
-          "runs": 55,
+          "runs": 60,
           "wickets": 2,
-          "economy": 13.2,
+          "economy": 15.0,
           "wides": 3,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "LH Ferguson",
@@ -212,7 +212,7 @@
         {
           "name": "SS Iyer",
           "runs": 179,
-          "over": "17.3",
+          "over": "17.2",
           "wkt_n": 6
         }
       ]

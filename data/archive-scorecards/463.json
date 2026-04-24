@@ -262,15 +262,15 @@
       "score": {
         "runs": 166,
         "wickets": 10,
-        "overs": "18",
-        "run_rate": 9.49,
+        "overs": "17.2",
+        "run_rate": 9.58,
         "declared": false
       },
       "extras": {
         "total": 16,
         "wides": 5,
-        "no_balls": 0,
-        "byes": 5,
+        "no_balls": 5,
+        "byes": 0,
         "leg_byes": 6
       },
       "batsmen": [
@@ -337,10 +337,10 @@
         {
           "name": "T Stubbs",
           "runs": 54,
-          "balls": 32,
+          "balls": 31,
           "fours": 4,
           "sixes": 4,
-          "strike_rate": 168.8,
+          "strike_rate": 174.2,
           "out_desc": "c MA Starc b CV Varun",
           "is_captain": false,
           "is_keeper": false,
@@ -451,12 +451,12 @@
         {
           "name": "CV Varun",
           "maidens": 0,
-          "runs": 32,
+          "runs": 37,
           "wickets": 3,
-          "economy": 7.7,
+          "economy": 9.2,
           "wides": 2,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "VR Iyer",
@@ -509,25 +509,25 @@
         {
           "name": "T Stubbs",
           "runs": 159,
-          "over": "15",
+          "over": "14.5",
           "wkt_n": 7
         },
         {
           "name": "Sumit Kumar",
           "runs": 159,
-          "over": "15.2",
+          "over": "15.1",
           "wkt_n": 8
         },
         {
           "name": "Rasikh Salam",
           "runs": 161,
-          "over": "16.2",
+          "over": "16.1",
           "wkt_n": 9
         },
         {
           "name": "A Nortje",
           "runs": 166,
-          "over": "17.3",
+          "over": "17.2",
           "wkt_n": 10
         }
       ]

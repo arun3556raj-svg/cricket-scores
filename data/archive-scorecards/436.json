@@ -16,7 +16,7 @@
       "innings_id": 1,
       "score": {
         "runs": 177,
-        "wickets": 4,
+        "wickets": 3,
         "overs": "20",
         "run_rate": 8.85,
         "declared": false
@@ -193,14 +193,14 @@
         "runs": 172,
         "wickets": 5,
         "overs": "20",
-        "run_rate": 8.53,
+        "run_rate": 8.6,
         "declared": false
       },
       "extras": {
         "total": 15,
         "wides": 8,
-        "no_balls": 1,
-        "byes": 5,
+        "no_balls": 6,
+        "byes": 0,
         "leg_byes": 1
       },
       "batsmen": [
@@ -255,10 +255,10 @@
         {
           "name": "TH David",
           "runs": 32,
-          "balls": 19,
+          "balls": 18,
           "fours": 1,
           "sixes": 3,
-          "strike_rate": 168.4,
+          "strike_rate": 177.8,
           "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
@@ -313,12 +313,12 @@
         {
           "name": "Naveen-ul-Haq",
           "maidens": 0,
-          "runs": 36,
+          "runs": 41,
           "wickets": 0,
-          "economy": 8.6,
+          "economy": 10.2,
           "wides": 0,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "Yash Thakur",

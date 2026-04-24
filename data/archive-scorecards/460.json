@@ -18,15 +18,15 @@
         "runs": 191,
         "wickets": 5,
         "overs": "20",
-        "run_rate": 9.47,
+        "run_rate": 9.55,
         "declared": false
       },
       "extras": {
         "total": 11,
         "wides": 5,
-        "no_balls": 1,
+        "no_balls": 3,
         "byes": 2,
-        "leg_byes": 3
+        "leg_byes": 1
       },
       "batsmen": [
         {
@@ -44,10 +44,10 @@
         {
           "name": "DA Warner",
           "runs": 52,
-          "balls": 35,
+          "balls": 34,
           "fours": 5,
           "sixes": 3,
-          "strike_rate": 148.6,
+          "strike_rate": 152.9,
           "out_desc": "c M Pathirana b Mustafizur Rahman",
           "is_captain": false,
           "is_keeper": false,
@@ -138,12 +138,12 @@
         {
           "name": "Mustafizur Rahman",
           "maidens": 0,
-          "runs": 46,
+          "runs": 48,
           "wickets": 1,
-          "economy": 11.0,
+          "economy": 12.0,
           "wides": 1,
-          "no_balls": 1,
-          "overs": "4.1"
+          "no_balls": 2,
+          "overs": "4"
         },
         {
           "name": "RA Jadeja",
@@ -170,31 +170,31 @@
         {
           "name": "DA Warner",
           "runs": 93,
-          "over": "9.4",
+          "over": "9.3",
           "wkt_n": 1
         },
         {
           "name": "PP Shaw",
           "runs": 103,
-          "over": "10.5",
+          "over": "10.4",
           "wkt_n": 2
         },
         {
           "name": "MR Marsh",
           "runs": 134,
-          "over": "14.5",
+          "over": "14.4",
           "wkt_n": 3
         },
         {
           "name": "T Stubbs",
           "runs": 134,
-          "over": "15.1",
+          "over": "15",
           "wkt_n": 4
         },
         {
           "name": "RR Pant",
           "runs": 178,
-          "over": "19",
+          "over": "18.5",
           "wkt_n": 5
         }
       ]

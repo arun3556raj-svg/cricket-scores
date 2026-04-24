@@ -288,16 +288,16 @@
       "score": {
         "runs": 157,
         "wickets": 3,
-        "overs": "17",
-        "run_rate": 9.42,
+        "overs": "16.3",
+        "run_rate": 9.52,
         "declared": false
       },
       "extras": {
         "total": 4,
         "wides": 1,
-        "no_balls": 0,
+        "no_balls": 2,
         "byes": 0,
-        "leg_byes": 3
+        "leg_byes": 1
       },
       "batsmen": [
         {
@@ -315,10 +315,10 @@
         {
           "name": "SP Narine",
           "runs": 15,
-          "balls": 10,
+          "balls": 9,
           "fours": 3,
           "sixes": 0,
-          "strike_rate": 150.0,
+          "strike_rate": 166.7,
           "out_desc": "c J Fraser-McGurk b AR Patel",
           "is_captain": false,
           "is_keeper": false,
@@ -365,12 +365,12 @@
         {
           "name": "LB Williams",
           "maidens": 0,
-          "runs": 37,
+          "runs": 39,
           "wickets": 1,
-          "economy": 11.7,
+          "economy": 13.0,
           "wides": 1,
-          "no_balls": 0,
-          "overs": "3.1"
+          "no_balls": 1,
+          "overs": "3"
         },
         {
           "name": "KK Ahmed",
@@ -417,19 +417,19 @@
         {
           "name": "SP Narine",
           "runs": 79,
-          "over": "6.2",
+          "over": "6.1",
           "wkt_n": 1
         },
         {
           "name": "PD Salt",
           "runs": 96,
-          "over": "8.2",
+          "over": "8.1",
           "wkt_n": 2
         },
         {
           "name": "RK Singh",
           "runs": 100,
-          "over": "9.3",
+          "over": "9.2",
           "wkt_n": 3
         }
       ]

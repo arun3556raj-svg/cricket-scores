@@ -18,15 +18,15 @@
         "runs": 257,
         "wickets": 5,
         "overs": "20",
-        "run_rate": 12.74,
+        "run_rate": 12.85,
         "declared": false
       },
       "extras": {
         "total": 15,
         "wides": 5,
-        "no_balls": 3,
+        "no_balls": 5,
         "byes": 0,
-        "leg_byes": 7
+        "leg_byes": 5
       },
       "batsmen": [
         {
@@ -68,10 +68,10 @@
         {
           "name": "MP Stoinis",
           "runs": 72,
-          "balls": 40,
+          "balls": 39,
           "fours": 6,
           "sixes": 5,
-          "strike_rate": 180.0,
+          "strike_rate": 184.6,
           "out_desc": "c JM Sharma b SM Curran",
           "is_captain": false,
           "is_keeper": false,
@@ -138,12 +138,12 @@
         {
           "name": "K Rabada",
           "maidens": 0,
-          "runs": 51,
+          "runs": 53,
           "wickets": 2,
-          "economy": 12.2,
+          "economy": 13.2,
           "wides": 2,
-          "no_balls": 1,
-          "overs": "4.1"
+          "no_balls": 2,
+          "overs": "4"
         },
         {
           "name": "Sikandar Raza",
@@ -208,13 +208,13 @@
         {
           "name": "MP Stoinis",
           "runs": 239,
-          "over": "18.3",
+          "over": "18.2",
           "wkt_n": 4
         },
         {
           "name": "N Pooran",
           "runs": 251,
-          "over": "19.5",
+          "over": "19.4",
           "wkt_n": 5
         }
       ]
@@ -226,7 +226,7 @@
       "score": {
         "runs": 201,
         "wickets": 10,
-        "overs": "20",
+        "overs": "19.5",
         "run_rate": 10.13,
         "declared": false
       },

@@ -260,16 +260,16 @@
       "score": {
         "runs": 208,
         "wickets": 4,
-        "overs": "20",
-        "run_rate": 10.58,
+        "overs": "19.3",
+        "run_rate": 10.67,
         "declared": false
       },
       "extras": {
         "total": 8,
         "wides": 3,
-        "no_balls": 0,
+        "no_balls": 2,
         "byes": 0,
-        "leg_byes": 5
+        "leg_byes": 3
       },
       "batsmen": [
         {
@@ -299,10 +299,10 @@
         {
           "name": "KK Nair",
           "runs": 44,
-          "balls": 27,
+          "balls": 26,
           "fours": 5,
           "sixes": 2,
-          "strike_rate": 163.0,
+          "strike_rate": 169.2,
           "out_desc": "b Harpreet Brar",
           "is_captain": false,
           "is_keeper": false,
@@ -379,12 +379,12 @@
         {
           "name": "M Jansen",
           "maidens": 0,
-          "runs": 40,
+          "runs": 42,
           "wickets": 1,
-          "economy": 9.6,
+          "economy": 10.5,
           "wides": 1,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "P Dubey",
@@ -429,7 +429,7 @@
         {
           "name": "KK Nair",
           "runs": 155,
-          "over": "15.1",
+          "over": "15",
           "wkt_n": 4
         }
       ]

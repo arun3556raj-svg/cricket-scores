@@ -223,14 +223,14 @@
         "runs": 190,
         "wickets": 7,
         "overs": "20",
-        "run_rate": 9.42,
+        "run_rate": 9.5,
         "declared": false
       },
       "extras": {
         "total": 14,
         "wides": 8,
-        "no_balls": 1,
-        "byes": 2,
+        "no_balls": 3,
+        "byes": 0,
         "leg_byes": 3
       },
       "batsmen": [
@@ -249,10 +249,10 @@
         {
           "name": "Ishan Kishan",
           "runs": 43,
-          "balls": 34,
+          "balls": 33,
           "fours": 5,
           "sixes": 1,
-          "strike_rate": 126.5,
+          "strike_rate": 130.3,
           "out_desc": "c PK Garg b Umran Malik",
           "is_captain": false,
           "is_keeper": false,
@@ -387,12 +387,12 @@
         {
           "name": "Umran Malik",
           "maidens": 0,
-          "runs": 22,
+          "runs": 24,
           "wickets": 3,
-          "economy": 6.9,
+          "economy": 8.0,
           "wides": 3,
-          "no_balls": 1,
-          "overs": "3.1"
+          "no_balls": 2,
+          "overs": "3"
         },
         {
           "name": "Abhishek Sharma",
@@ -409,43 +409,43 @@
         {
           "name": "RG Sharma",
           "runs": 95,
-          "over": "10.5",
+          "over": "10.4",
           "wkt_n": 1
         },
         {
           "name": "Ishan Kishan",
           "runs": 101,
-          "over": "11.4",
+          "over": "11.3",
           "wkt_n": 2
         },
         {
           "name": "Tilak Varma",
           "runs": 123,
-          "over": "14.2",
+          "over": "14.1",
           "wkt_n": 3
         },
         {
           "name": "DR Sams",
           "runs": 127,
-          "over": "15.1",
+          "over": "15",
           "wkt_n": 4
         },
         {
           "name": "T Stubbs",
           "runs": 144,
-          "over": "16.5",
+          "over": "16.4",
           "wkt_n": 5
         },
         {
           "name": "TH David",
           "runs": 175,
-          "over": "18.1",
+          "over": "18",
           "wkt_n": 6
         },
         {
           "name": "R Sanjay Yadav",
           "runs": 175,
-          "over": "18.3",
+          "over": "18.2",
           "wkt_n": 7
         }
       ]

@@ -1,0 +1,421 @@
+{
+  "match_id": "1188",
+  "source_id": "1527692",
+  "season": 2026,
+  "round": "League",
+  "match_number": 19,
+  "date": "2026-04-12",
+  "team1": "Lucknow Super Giants",
+  "team2": "Gujarat Titans",
+  "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow, Lucknow",
+  "result_text": "Gujarat Titans won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 1,
+      "score": {
+        "runs": 164,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 8.2,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "AK Markram",
+          "runs": 30,
+          "balls": 21,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 142.9,
+          "out_desc": "c Washington Sundar b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 11,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 275.0,
+          "out_desc": "c Shubman Gill b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 18,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 163.6,
+          "out_desc": "c R Tewatia b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Badoni",
+          "runs": 9,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 81.8,
+          "out_desc": "c GD Phillips b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 19,
+          "balls": 21,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 90.5,
+          "out_desc": "c Shubman Gill b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 18,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 81.8,
+          "out_desc": "c GD Phillips b Ashok Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MD Choudhary",
+          "runs": 18,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 128.6,
+          "out_desc": "c JC Buttler b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "GF Linde",
+          "runs": 16,
+          "balls": 10,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 160.0,
+          "out_desc": "c M Shahrukh Khan b Ashok Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mohammed Shami",
+          "runs": 12,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 240.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Avesh Khan",
+          "runs": 4,
+          "balls": 1,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 400.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 4.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 54,
+          "wickets": 1,
+          "economy": 13.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Ashok Sharma",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 2,
+          "economy": 8.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 4,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MR Marsh",
+          "runs": 14,
+          "over": "1.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "RR Pant",
+          "runs": 45,
+          "over": "4.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "AK Markram",
+          "runs": 69,
+          "over": "7",
+          "wkt_n": 3
+        },
+        {
+          "name": "A Badoni",
+          "runs": 74,
+          "over": "8.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "N Pooran",
+          "runs": 109,
+          "over": "14.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 118,
+          "over": "16.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "MD Choudhary",
+          "runs": 131,
+          "over": "18.1",
+          "wkt_n": 7
+        },
+        {
+          "name": "GF Linde",
+          "runs": 157,
+          "over": "19.4",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 2,
+      "score": {
+        "runs": 165,
+        "wickets": 3,
+        "overs": "18.4",
+        "run_rate": 8.84,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 15,
+          "balls": 14,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 107.1,
+          "out_desc": "c Avesh Khan b DS Rathi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 56,
+          "balls": 40,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 140.0,
+          "out_desc": "c RR Pant b Prince Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 60,
+          "balls": 37,
+          "fours": 11,
+          "sixes": 0,
+          "strike_rate": 162.2,
+          "out_desc": "c AK Markram b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 21,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 161.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 10,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Prince Yadav",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DS Rathi",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "GF Linde",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 9.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "AK Markram",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1.4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 45,
+          "over": "5.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 129,
+          "over": "14.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 135,
+          "over": "15.4",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

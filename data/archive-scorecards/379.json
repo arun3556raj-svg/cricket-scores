@@ -263,15 +263,15 @@
         "runs": 205,
         "wickets": 7,
         "overs": "20",
-        "run_rate": 10.17,
+        "run_rate": 10.25,
         "declared": false
       },
       "extras": {
         "total": 18,
         "wides": 13,
-        "no_balls": 2,
+        "no_balls": 4,
         "byes": 0,
-        "leg_byes": 3
+        "leg_byes": 1
       },
       "batsmen": [
         {
@@ -361,10 +361,10 @@
         {
           "name": "K Gowtham",
           "runs": 17,
-          "balls": 11,
+          "balls": 10,
           "fours": 0,
           "sixes": 1,
-          "strike_rate": 154.5,
+          "strike_rate": 170.0,
           "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
@@ -407,12 +407,12 @@
         {
           "name": "TU Deshpande",
           "maidens": 0,
-          "runs": 44,
+          "runs": 46,
           "wickets": 2,
-          "economy": 10.6,
+          "economy": 11.5,
           "wides": 4,
-          "no_balls": 2,
-          "overs": "4.1"
+          "no_balls": 3,
+          "overs": "4"
         },
         {
           "name": "MM Ali",
@@ -495,7 +495,7 @@
         {
           "name": "A Badoni",
           "runs": 195,
-          "over": "19.4",
+          "over": "19.3",
           "wkt_n": 7
         }
       ]
