@@ -12,6 +12,7 @@ STATIC_DIR = DIST_DIR / "static"
 DATA_DIR = DIST_DIR / "data"
 SCORECARD_DIR = DATA_DIR / "scorecards"
 TEMPLATE_PATH = ROOT / "templates" / "index.html"
+ARCHIVE_SOURCE_PATH = ROOT / "data" / "archive.json"
 
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
@@ -56,6 +57,11 @@ def write_json(path: Path, payload: dict) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def copy_archive_data() -> None:
+    if ARCHIVE_SOURCE_PATH.exists():
+        shutil.copy2(ARCHIVE_SOURCE_PATH, DATA_DIR / "archive.json")
+
+
 def collect_scorecard_targets(matches: dict, schedule: dict) -> dict[str, tuple[str, str]]:
     targets: dict[str, tuple[str, str]] = {}
     for bucket in ("live", "upcoming", "finished"):
@@ -82,6 +88,7 @@ def main() -> None:
 
     write_json(DATA_DIR / "matches.json", matches)
     write_json(DATA_DIR / "schedule.json", schedule)
+    copy_archive_data()
     build_scorecards(collect_scorecard_targets(matches, schedule))
 
 

@@ -1221,6 +1221,105 @@ html[data-theme="light"] .sc-table tbody tr { border-top-color: rgba(0,0,0,0.05)
 .sch-row:hover { background: var(--surface); }
 .sch-row--live { border-left: 3px solid var(--live); padding-left: 13px; }
 
+.archive-controls {
+  margin: 0 0 18px;
+}
+
+.archive-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.archive-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.archive-filter span,
+.archive-count,
+.archive-date {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--t4);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.archive-filter select {
+  width: 100%;
+  min-height: 40px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--t1);
+  padding: 0 12px;
+  font: inherit;
+  font-size: 13px;
+}
+
+.archive-count {
+  margin-top: 10px;
+}
+
+.archive-row {
+  gap: 12px;
+}
+
+.archive-row-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.archive-scoreboard {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.archive-score-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.archive-drawer {
+  padding: 20px;
+}
+
+.archive-drawer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  color: var(--t3);
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.archive-drawer-innings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+
+.archive-drawer-result {
+  margin-top: 12px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  color: var(--result);
+  font-weight: 700;
+  font-size: 14px;
+}
+
 .sch-desc {
   font-size: 11px;
   font-weight: 600;
@@ -1302,3 +1401,8 @@ html[data-theme="light"] .sc-table tbody tr { border-top-color: rgba(0,0,0,0.05)
 html[data-theme="light"] .sch-row:hover { background: rgba(0,0,0,0.03); }
 html[data-theme="light"] .sch-date-header { border-bottom-color: rgba(0,0,0,0.08); }
 html[data-theme="light"] .sch-row { border-bottom-color: rgba(0,0,0,0.06); }
+html[data-theme="light"] .archive-filter select { background: rgba(255,255,255,0.8); }
+
+@media (max-width: 720px) {
+  .archive-filter-grid { grid-template-columns: 1fr; }
+}

@@ -24,6 +24,14 @@ The GitHub Pages deployment does not run Flask. Instead, a GitHub Actions workfl
 2. builds JSON files and scorecard payloads into `dist/data`
 3. publishes the static site to the `gh-pages` branch
 
+The archive view is generated from the local Cricsheet/IPL Universe database:
+
+```bash
+python scripts/build_archive_data.py
+```
+
+Set `IPL_UNIVERSE_DB` if the database is not at the default local path.
+
 You can generate the static site locally with:
 
 ```bash
