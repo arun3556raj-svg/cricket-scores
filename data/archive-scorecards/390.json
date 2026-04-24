@@ -1,0 +1,473 @@
+{
+  "match_id": "390",
+  "source_id": "1359491",
+  "season": 2023,
+  "round": "League",
+  "match_number": 17,
+  "date": "2023-04-12",
+  "team1": "Rajasthan Royals",
+  "team2": "Chennai Super Kings",
+  "venue": "MA Chidambaram Stadium, Chepauk, Chennai, Chennai",
+  "result_text": "Rajasthan Royals won by 3 runs",
+  "innings": [
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 175,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 8.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 10,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 10,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "c S Dube b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 52,
+          "balls": 36,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 144.4,
+          "out_desc": "b MM Ali",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 38,
+          "balls": 26,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 146.2,
+          "out_desc": "c DP Conway b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 30,
+          "balls": 22,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 136.4,
+          "out_desc": "c SSB Magala b Akash Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 30,
+          "balls": 18,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 166.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 4,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c S Dube b Akash Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JO Holder",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c DP Conway b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Zampa",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (MS Dhoni / M Theekshana)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Akash Singh",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 2,
+          "economy": 10.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 2,
+          "economy": 9.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 2,
+          "economy": 5.2,
+          "wides": 7,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MM Ali",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "SSB Magala",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 11,
+          "over": "1.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 88,
+          "over": "8.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "SV Samson",
+          "runs": 88,
+          "over": "8.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 135,
+          "over": "15",
+          "wkt_n": 4
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 142,
+          "over": "16.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 167,
+          "over": "19",
+          "wkt_n": 6
+        },
+        {
+          "name": "JO Holder",
+          "runs": 174,
+          "over": "19.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "A Zampa",
+          "runs": 175,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 172,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 8.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 8,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 8,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "c YBK Jaiswal b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DP Conway",
+          "runs": 50,
+          "balls": 38,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 131.6,
+          "out_desc": "c YBK Jaiswal b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 31,
+          "balls": 19,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 163.2,
+          "out_desc": "lbw b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 8,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 88.9,
+          "out_desc": "lbw b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MM Ali",
+          "runs": 7,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 70.0,
+          "out_desc": "c Sandeep Sharma b A Zampa",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c SO Hetmyer b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 25,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 166.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 32,
+          "balls": 17,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 188.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "KR Sen",
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 0,
+          "economy": 4.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "JO Holder",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 12.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "A Zampa",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 10.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 2,
+          "economy": 6.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 2,
+          "economy": 6.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 10,
+          "over": "2.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 78,
+          "over": "9.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Dube",
+          "runs": 92,
+          "over": "11.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "MM Ali",
+          "runs": 102,
+          "over": "13.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 103,
+          "over": "14.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "DP Conway",
+          "runs": 113,
+          "over": "15",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

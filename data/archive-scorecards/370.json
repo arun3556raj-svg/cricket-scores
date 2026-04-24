@@ -1,0 +1,385 @@
+{
+  "match_id": "370",
+  "source_id": "1312197",
+  "season": 2022,
+  "round": "Qualifier 1",
+  "match_number": null,
+  "date": "2022-05-24",
+  "team1": "Rajasthan Royals",
+  "team2": "Gujarat Titans",
+  "venue": "Eden Gardens, Kolkata, Kolkata",
+  "result_text": "Gujarat Titans won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 1,
+      "score": {
+        "runs": 188,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 9.4,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 10,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 3,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 37.5,
+          "out_desc": "c WP Saha b Yash Dayal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 89,
+          "balls": 55,
+          "fours": 12,
+          "sixes": 2,
+          "strike_rate": 161.8,
+          "out_desc": "run out (WP Saha / AS Joseph)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 47,
+          "balls": 26,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 180.8,
+          "out_desc": "c AS Joseph b R Sai Kishore",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 28,
+          "balls": 20,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 140.0,
+          "out_desc": "b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 4,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 57.1,
+          "out_desc": "c R Tewatia b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 4,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "run out (WP Saha / Yash Dayal)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 2,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "TA Boult",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 10.8,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yash Dayal",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 1,
+          "economy": 11.5,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "AS Joseph",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 13.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 3.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Sai Kishore",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 10.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 11,
+          "over": "2",
+          "wkt_n": 1
+        },
+        {
+          "name": "SV Samson",
+          "runs": 79,
+          "over": "9.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 116,
+          "over": "14.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 161,
+          "over": "18.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 185,
+          "over": "19.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "R Parag",
+          "runs": 186,
+          "over": "19.5",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 191,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 9.79,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 11,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "WP Saha",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SV Samson b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 35,
+          "balls": 21,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 166.7,
+          "out_desc": "run out (D Padikkal / SO Hetmyer)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Wade",
+          "runs": 35,
+          "balls": 30,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "c JC Buttler b OC McCoy",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 40,
+          "balls": 27,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 148.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "DA Miller",
+          "runs": 68,
+          "balls": 37,
+          "fours": 3,
+          "sixes": 5,
+          "strike_rate": 183.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 11.4,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "3.3"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "OC McCoy",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 3,
+          "no_balls": 1,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "WP Saha",
+          "runs": 0,
+          "over": "0.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 72,
+          "over": "7.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "MS Wade",
+          "runs": 85,
+          "over": "9.3",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

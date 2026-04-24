@@ -1,0 +1,413 @@
+{
+  "match_id": "570",
+  "source_id": "1473489",
+  "season": 2025,
+  "round": "League",
+  "match_number": 52,
+  "date": "2025-05-03",
+  "team1": "Royal Challengers Bengaluru",
+  "team2": "Chennai Super Kings",
+  "venue": "M Chinnaswamy Stadium, Bengaluru, Bengaluru",
+  "result_text": "Royal Challengers Bengaluru won by 2 runs",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 213,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 10.65,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 4,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "JG Bethell",
+          "runs": 55,
+          "balls": 33,
+          "fours": 8,
+          "sixes": 2,
+          "strike_rate": 166.7,
+          "out_desc": "c D Brevis b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 62,
+          "balls": 33,
+          "fours": 5,
+          "sixes": 5,
+          "strike_rate": 187.9,
+          "out_desc": "c KK Ahmed b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 17,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 113.3,
+          "out_desc": "c RA Jadeja b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 11,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 73.3,
+          "out_desc": "c SM Curran b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 7,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 87.5,
+          "out_desc": "c D Brevis b Noor Ahmad",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TH David",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 53,
+          "balls": 13,
+          "fours": 4,
+          "sixes": 6,
+          "strike_rate": 407.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 65,
+          "wickets": 0,
+          "economy": 21.7,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "A Kamboj",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Noor Ahmad",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 8.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 11.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Pathirana",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 3,
+          "economy": 9.0,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "JG Bethell",
+          "runs": 97,
+          "over": "9.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "V Kohli",
+          "runs": 121,
+          "over": "11.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 144,
+          "over": "15.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 154,
+          "over": "16.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 157,
+          "over": "17.4",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Royal Challengers Bengaluru",
+      "innings_id": 2,
+      "score": {
+        "runs": 211,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 10.55,
+        "declared": false
+      },
+      "extras": {
+        "total": 1,
+        "wides": 0,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "A Mhatre",
+          "runs": 94,
+          "balls": 48,
+          "fours": 9,
+          "sixes": 5,
+          "strike_rate": 195.8,
+          "out_desc": "c KH Pandya b L Ngidi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Rasheed",
+          "runs": 14,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 127.3,
+          "out_desc": "c R Shepherd b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SM Curran",
+          "runs": 5,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c JM Sharma b L Ngidi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 77,
+          "balls": 45,
+          "fours": 8,
+          "sixes": 2,
+          "strike_rate": 171.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "D Brevis",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b L Ngidi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 12,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 150.0,
+          "out_desc": "lbw b Yash Dayal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 8,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 400.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 0,
+          "economy": 13.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yash Dayal",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 1,
+          "economy": 10.2,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "L Ngidi",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 3,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Suyash Sharma",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 0,
+          "economy": 10.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Shepherd",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 18.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SK Rasheed",
+          "runs": 51,
+          "over": "4.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "SM Curran",
+          "runs": 58,
+          "over": "5.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "A Mhatre",
+          "runs": 172,
+          "over": "16.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "D Brevis",
+          "runs": 172,
+          "over": "16.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 201,
+          "over": "19.3",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

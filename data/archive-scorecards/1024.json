@@ -1,0 +1,359 @@
+{
+  "match_id": "1024",
+  "source_id": "733985",
+  "season": 2014,
+  "round": "League",
+  "match_number": 28,
+  "date": "2014-05-07",
+  "team1": "Delhi Daredevils",
+  "team2": "Kolkata Knight Riders",
+  "venue": "Feroz Shah Kotla, Delhi",
+  "result_text": "Kolkata Knight Riders won by 8 wkts",
+  "innings": [
+    {
+      "bat_team": "Delhi Daredevils",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 1,
+      "score": {
+        "runs": 160,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 8.0,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 6
+      },
+      "batsmen": [
+        {
+          "name": "Q de Kock",
+          "runs": 10,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 111.1,
+          "out_desc": "c G Gambhir b UT Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Vijay",
+          "runs": 24,
+          "balls": 20,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 120.0,
+          "out_desc": "c SP Narine b JH Kallis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KP Pietersen",
+          "runs": 6,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "run out (RV Uthappa)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 36,
+          "balls": 22,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 163.6,
+          "out_desc": "c JH Kallis b Shakib Al Hasan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JP Duminy",
+          "runs": 40,
+          "balls": 28,
+          "fours": 0,
+          "sixes": 3,
+          "strike_rate": 142.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "LR Shukla",
+          "runs": 10,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 71.4,
+          "out_desc": "b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 26,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 173.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SA Yadav",
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "JH Kallis",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "UT Yadav",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shakib Al Hasan",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 1,
+          "economy": 3.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SP Narine",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Vinay Kumar",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 10.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Q de Kock",
+          "runs": 14,
+          "over": "2.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "KP Pietersen",
+          "runs": 26,
+          "over": "5.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "M Vijay",
+          "runs": 61,
+          "over": "9",
+          "wkt_n": 3
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 85,
+          "over": "11.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "LR Shukla",
+          "runs": 105,
+          "over": "15.5",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Delhi Daredevils",
+      "innings_id": 2,
+      "score": {
+        "runs": 161,
+        "wickets": 2,
+        "overs": "19",
+        "run_rate": 8.78,
+        "declared": false
+      },
+      "extras": {
+        "total": 12,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 11
+      },
+      "batsmen": [
+        {
+          "name": "RV Uthappa",
+          "runs": 47,
+          "balls": 34,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 138.2,
+          "out_desc": "lbw b WD Parnell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "G Gambhir",
+          "runs": 69,
+          "balls": 56,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 123.2,
+          "out_desc": "c KD Karthik b WD Parnell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 23,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 164.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JH Kallis",
+          "runs": 10,
+          "balls": 6,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 166.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "WD Parnell",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 2,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "LR Shukla",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "S Kaul",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 9.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JP Duminy",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "S Nadeem",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 10.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RV Uthappa",
+          "runs": 106,
+          "over": "11.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "G Gambhir",
+          "runs": 151,
+          "over": "17.2",
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
+  "error": null
+}

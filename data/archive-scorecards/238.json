@@ -1,0 +1,421 @@
+{
+  "match_id": "238",
+  "source_id": "1237180",
+  "season": 2020,
+  "round": "Qualifier 2",
+  "match_number": null,
+  "date": "2020-11-08",
+  "team1": "Delhi Capitals",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+  "result_text": "Delhi Capitals won by 17 runs",
+  "innings": [
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 189,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 9.45,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 3,
+        "no_balls": 2,
+        "byes": 1,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "MP Stoinis",
+          "runs": 38,
+          "balls": 27,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 140.7,
+          "out_desc": "b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 78,
+          "balls": 49,
+          "fours": 6,
+          "sixes": 3,
+          "strike_rate": 159.2,
+          "out_desc": "lbw b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 21,
+          "balls": 20,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 105.0,
+          "out_desc": "c MK Pandey b JO Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 42,
+          "balls": 21,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "RR Pant",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JO Holder",
+          "maidens": 0,
+          "runs": 50,
+          "wickets": 1,
+          "economy": 12.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "S Nadeem",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 2,
+          "overs": "4"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MP Stoinis",
+          "runs": 86,
+          "over": "8.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 126,
+          "over": "14",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 178,
+          "over": "18.3",
+          "wkt_n": 3
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 2,
+      "score": {
+        "runs": 172,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 8.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "PK Garg",
+          "runs": 17,
+          "balls": 12,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 141.7,
+          "out_desc": "b MP Stoinis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Warner",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 21,
+          "balls": 14,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "c A Nortje b MP Stoinis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 67,
+          "balls": 45,
+          "fours": 5,
+          "sixes": 4,
+          "strike_rate": 148.9,
+          "out_desc": "c K Rabada b MP Stoinis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JO Holder",
+          "runs": 11,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 73.3,
+          "out_desc": "c P Dubey b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 33,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 206.2,
+          "out_desc": "c KMA Paul b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 11,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 157.1,
+          "out_desc": "c AR Patel b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SP Goswami",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c MP Stoinis b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Nadeem",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Sandeep Sharma",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 4,
+          "economy": 7.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Nortje",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MP Stoinis",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 3,
+          "economy": 8.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 8.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "P Dubey",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "DA Warner",
+          "runs": 12,
+          "over": "1.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "PK Garg",
+          "runs": 43,
+          "over": "4.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 44,
+          "over": "5",
+          "wkt_n": 3
+        },
+        {
+          "name": "JO Holder",
+          "runs": 90,
+          "over": "11.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 147,
+          "over": "16.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 167,
+          "over": "18.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 167,
+          "over": "18.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "SP Goswami",
+          "runs": 168,
+          "over": "18.5",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

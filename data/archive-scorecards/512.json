@@ -1,0 +1,469 @@
+{
+  "match_id": "512",
+  "source_id": "1426305",
+  "season": 2024,
+  "round": "League",
+  "match_number": 67,
+  "date": "2024-05-17",
+  "team1": "Lucknow Super Giants",
+  "team2": "Mumbai Indians",
+  "venue": "Wankhede Stadium, Mumbai, Mumbai",
+  "result_text": "Lucknow Super Giants won by 18 runs",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 214,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 10.7,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 11,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 55,
+          "balls": 41,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 134.1,
+          "out_desc": "c N Thushara b PP Chawla",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b N Thushara",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 28,
+          "balls": 22,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 127.3,
+          "out_desc": "lbw b PP Chawla",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 11,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 122.2,
+          "out_desc": "c N Wadhera b PP Chawla",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 75,
+          "balls": 29,
+          "fours": 5,
+          "sixes": 8,
+          "strike_rate": 258.6,
+          "out_desc": "c SA Yadav b N Thushara",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Arshad Khan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c N Wadhera b N Thushara",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Badoni",
+          "runs": 22,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 220.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 12,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 171.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "N Thushara",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 3,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Arjun Tendulkar",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 9.4,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2.2"
+        },
+        {
+          "name": "A Kamboj",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 0,
+          "economy": 16.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "PP Chawla",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 3,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "N Wadhera",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 13.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Naman Dhir",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 25.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "0.4"
+        },
+        {
+          "name": "R Shepherd",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "D Padikkal",
+          "runs": 1,
+          "over": "0.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 49,
+          "over": "6",
+          "wkt_n": 2
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 69,
+          "over": "9.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "N Pooran",
+          "runs": 178,
+          "over": "16.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "Arshad Khan",
+          "runs": 178,
+          "over": "17",
+          "wkt_n": 5
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 178,
+          "over": "17.1",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 2,
+      "score": {
+        "runs": 196,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 9.8,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 10,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "RG Sharma",
+          "runs": 68,
+          "balls": 38,
+          "fours": 10,
+          "sixes": 3,
+          "strike_rate": 178.9,
+          "out_desc": "c Mohsin Khan b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Brevis",
+          "runs": 23,
+          "balls": 20,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 115.0,
+          "out_desc": "c KH Pandya b Naveen-ul-Haq",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Ravi Bishnoi b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 14,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 93.3,
+          "out_desc": "b Naveen-ul-Haq",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 16,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 123.1,
+          "out_desc": "c Naveen-ul-Haq b Mohsin Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Wadhera",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c KH Pandya b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 62,
+          "balls": 27,
+          "fours": 4,
+          "sixes": 5,
+          "strike_rate": 229.6,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshad Khan",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 5.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "MJ Henry",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mohsin Khan",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 1,
+          "economy": 11.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Naveen-ul-Haq",
+          "maidens": 0,
+          "runs": 50,
+          "wickets": 2,
+          "economy": 12.5,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 2,
+          "economy": 9.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "D Brevis",
+          "runs": 88,
+          "over": "8.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 89,
+          "over": "9.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 97,
+          "over": "10.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 116,
+          "over": "13.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "N Wadhera",
+          "runs": 120,
+          "over": "14.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 188,
+          "over": "19.3",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,364 @@
+{
+  "match_id": "365",
+  "source_id": "1304112",
+  "season": 2022,
+  "round": "League",
+  "match_number": 66,
+  "date": "2022-05-18",
+  "team1": "Lucknow Super Giants",
+  "team2": "Kolkata Knight Riders",
+  "venue": "Dr DY Patil Sports Academy, Mumbai, Navi Mumbai",
+  "result_text": "Lucknow Super Giants won by 2 runs",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 1,
+      "score": {
+        "runs": 210,
+        "wickets": 0,
+        "overs": "20",
+        "run_rate": 10.5,
+        "declared": false
+      },
+      "extras": {
+        "total": 2,
+        "wides": 1,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Q de Kock",
+          "runs": 140,
+          "balls": 70,
+          "fours": 10,
+          "sixes": 10,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 68,
+          "balls": 50,
+          "fours": 3,
+          "sixes": 4,
+          "strike_rate": 136.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "UT Yadav",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "TG Southee",
+          "maidens": 0,
+          "runs": 57,
+          "wickets": 0,
+          "economy": 14.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SP Narine",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CV Varun",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "AD Russell",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "N Rana",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": []
+    },
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 2,
+      "score": {
+        "runs": 208,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 10.4,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 6,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "VR Iyer",
+          "runs": 0,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Q de Kock b Mohsin Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Tomar",
+          "runs": 4,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c KL Rahul b Mohsin Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 42,
+          "balls": 22,
+          "fours": 9,
+          "sixes": 0,
+          "strike_rate": 190.9,
+          "out_desc": "c MP Stoinis b K Gowtham",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 50,
+          "balls": 29,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 172.4,
+          "out_desc": "c DJ Hooda b MP Stoinis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SW Billings",
+          "runs": 36,
+          "balls": 23,
+          "fours": 2,
+          "sixes": 3,
+          "strike_rate": 156.5,
+          "out_desc": "st Q de Kock b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AD Russell",
+          "runs": 5,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 45.5,
+          "out_desc": "c DJ Hooda b Mohsin Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RK Singh",
+          "runs": 40,
+          "balls": 15,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 266.7,
+          "out_desc": "c E Lewis b MP Stoinis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SP Narine",
+          "runs": 21,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 3,
+          "strike_rate": 300.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "UT Yadav",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b MP Stoinis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohsin Khan",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 3,
+          "economy": 5.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JO Holder",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 0,
+          "economy": 11.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 60,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 3,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "K Gowtham",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 11.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MP Stoinis",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 3,
+          "economy": 11.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "VR Iyer",
+          "runs": 0,
+          "over": "0.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "A Tomar",
+          "runs": 9,
+          "over": "2.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "N Rana",
+          "runs": 65,
+          "over": "7.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 131,
+          "over": "13.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "SW Billings",
+          "runs": 142,
+          "over": "15.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "AD Russell",
+          "runs": 150,
+          "over": "16.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "RK Singh",
+          "runs": 208,
+          "over": "19.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "UT Yadav",
+          "runs": 208,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

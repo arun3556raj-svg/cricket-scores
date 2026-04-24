@@ -1,0 +1,439 @@
+{
+  "match_id": "380",
+  "source_id": "1359481",
+  "season": 2023,
+  "round": "League",
+  "match_number": 7,
+  "date": "2023-04-04",
+  "team1": "Delhi Capitals",
+  "team2": "Gujarat Titans",
+  "venue": "Arun Jaitley Stadium, Delhi, Delhi",
+  "result_text": "Gujarat Titans won by 6 wkts",
+  "innings": [
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 1,
+      "score": {
+        "runs": 162,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 8.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 15,
+        "wides": 11,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "DA Warner",
+          "runs": 37,
+          "balls": 32,
+          "fours": 7,
+          "sixes": 0,
+          "strike_rate": 115.6,
+          "out_desc": "b AS Joseph",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PP Shaw",
+          "runs": 7,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 140.0,
+          "out_desc": "c AS Joseph b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 4,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Khan",
+          "runs": 30,
+          "balls": 34,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 88.2,
+          "out_desc": "c J Little b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Rossouw",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c R Tewatia b AS Joseph",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 20,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 181.8,
+          "out_desc": "b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 36,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 3,
+          "strike_rate": 163.6,
+          "out_desc": "c DA Miller b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Aman Hakim Khan",
+          "runs": 8,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "c HH Pandya b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "A Nortje",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 3,
+          "economy": 10.2,
+          "wides": 10,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "J Little",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AS Joseph",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 2,
+          "economy": 7.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yash Dayal",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 3,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PP Shaw",
+          "runs": 29,
+          "over": "2.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 37,
+          "over": "4.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "DA Warner",
+          "runs": 67,
+          "over": "8.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "RR Rossouw",
+          "runs": 67,
+          "over": "8.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 101,
+          "over": "12.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "SN Khan",
+          "runs": 130,
+          "over": "16.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "Aman Hakim Khan",
+          "runs": 148,
+          "over": "18.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "AR Patel",
+          "runs": 158,
+          "over": "19.4",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 2,
+      "score": {
+        "runs": 163,
+        "wickets": 4,
+        "overs": "19",
+        "run_rate": 8.97,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 4,
+        "no_balls": 2,
+        "byes": 1,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "WP Saha",
+          "runs": 14,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 14,
+          "balls": 12,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 62,
+          "balls": 48,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 129.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 5,
+          "balls": 3,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 166.7,
+          "out_desc": "c Abishek Porel b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Shankar",
+          "runs": 29,
+          "balls": 23,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 126.1,
+          "out_desc": "lbw b MR Marsh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Miller",
+          "runs": 31,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 193.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mukesh Kumar",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Nortje",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 2,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 2,
+          "overs": "4"
+        },
+        {
+          "name": "MR Marsh",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 1,
+          "economy": 7.6,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3.1"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "WP Saha",
+          "runs": 22,
+          "over": "2.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 36,
+          "over": "4.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 54,
+          "over": "6",
+          "wkt_n": 3
+        },
+        {
+          "name": "V Shankar",
+          "runs": 107,
+          "over": "13.2",
+          "wkt_n": 4
+        }
+      ]
+    }
+  ],
+  "error": null
+}

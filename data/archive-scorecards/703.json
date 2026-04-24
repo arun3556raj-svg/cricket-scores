@@ -1,0 +1,523 @@
+{
+  "match_id": "703",
+  "source_id": "392229",
+  "season": 2009,
+  "round": "League",
+  "match_number": 49,
+  "date": "2009-05-17",
+  "team1": "Deccan Chargers",
+  "team2": "Kings XI Punjab",
+  "venue": "New Wanderers Stadium, Johannesburg",
+  "result_text": "Kings XI Punjab won by 1 runs",
+  "innings": [
+    {
+      "bat_team": "Kings XI Punjab",
+      "bowl_team": "Deccan Chargers",
+      "innings_id": 1,
+      "score": {
+        "runs": 134,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 6.7,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 5,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "S Sohal",
+          "runs": 9,
+          "balls": 12,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 75.0,
+          "out_desc": "c RG Sharma b RP Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SM Katich",
+          "runs": 11,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 110.0,
+          "out_desc": "c PP Ojha b A Symonds",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "LA Pomersbach",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "run out (HH Gibbs / AC Gilchrist)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Yuvraj Singh",
+          "runs": 20,
+          "balls": 18,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 111.1,
+          "out_desc": "b Y Venugopal Rao",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KC Sangakkara",
+          "runs": 56,
+          "balls": 42,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 133.3,
+          "out_desc": "c RJ Harris b RP Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "WA Mota",
+          "runs": 12,
+          "balls": 19,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 63.2,
+          "out_desc": "c RJ Harris b TL Suman",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "IK Pathan",
+          "runs": 17,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 154.5,
+          "out_desc": "c HH Gibbs b RP Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Lee",
+          "runs": 0,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "PP Chawla",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "RJ Harris",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RP Singh",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 3,
+          "economy": 6.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Symonds",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 1,
+          "economy": 5.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "RG Sharma",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 11.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "TL Suman",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Y Venugopal Rao",
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 1,
+          "economy": 4.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "PP Ojha",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "S Sohal",
+          "runs": 12,
+          "over": "2",
+          "wkt_n": 1
+        },
+        {
+          "name": "LA Pomersbach",
+          "runs": 15,
+          "over": "2.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "SM Katich",
+          "runs": 26,
+          "over": "4.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "Yuvraj Singh",
+          "runs": 52,
+          "over": "8.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "WA Mota",
+          "runs": 105,
+          "over": "16.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "KC Sangakkara",
+          "runs": 122,
+          "over": "18",
+          "wkt_n": 6
+        },
+        {
+          "name": "IK Pathan",
+          "runs": 131,
+          "over": "19.3",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Deccan Chargers",
+      "bowl_team": "Kings XI Punjab",
+      "innings_id": 2,
+      "score": {
+        "runs": 133,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 6.65,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 2,
+        "no_balls": 2,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "AC Gilchrist",
+          "runs": 23,
+          "balls": 13,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 176.9,
+          "out_desc": "st KC Sangakkara b RR Powar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Gibbs",
+          "runs": 26,
+          "balls": 37,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 70.3,
+          "out_desc": "c PP Chawla b Yuvraj Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TL Suman",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b RR Powar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Symonds",
+          "runs": 25,
+          "balls": 24,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 104.2,
+          "out_desc": "st KC Sangakkara b Yuvraj Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 42,
+          "balls": 25,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 168.0,
+          "out_desc": "b IK Pathan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Y Venugopal Rao",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Yuvraj Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DB Ravi Teja",
+          "runs": 10,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "run out (KC Sangakkara / B Lee)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RJ Harris",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "RP Singh",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c & b IK Pathan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jaskaran Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Lee",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 2,
+          "overs": "4"
+        },
+        {
+          "name": "IK Pathan",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 2,
+          "economy": 9.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "S Sreesanth",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "RR Powar",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 2,
+          "economy": 5.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "PP Chawla",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yuvraj Singh",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 3,
+          "economy": 3.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "WA Mota",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 18.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AC Gilchrist",
+          "runs": 34,
+          "over": "4.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "TL Suman",
+          "runs": 34,
+          "over": "4.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "HH Gibbs",
+          "runs": 73,
+          "over": "12",
+          "wkt_n": 3
+        },
+        {
+          "name": "A Symonds",
+          "runs": 79,
+          "over": "13.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "Y Venugopal Rao",
+          "runs": 79,
+          "over": "13.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "DB Ravi Teja",
+          "runs": 110,
+          "over": "18.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 131,
+          "over": "19.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "RP Singh",
+          "runs": 131,
+          "over": "19.5",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

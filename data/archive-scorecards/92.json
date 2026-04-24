@@ -1,0 +1,405 @@
+{
+  "match_id": "92",
+  "source_id": "1136593",
+  "season": 2018,
+  "round": "League",
+  "match_number": 33,
+  "date": "2018-05-03",
+  "team1": "Chennai Super Kings",
+  "team2": "Kolkata Knight Riders",
+  "venue": "Eden Gardens, Kolkata",
+  "result_text": "Kolkata Knight Riders won by 6 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 1,
+      "score": {
+        "runs": 177,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 8.85,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 4,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "SR Watson",
+          "runs": 36,
+          "balls": 25,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 144.0,
+          "out_desc": "c Shivam Mavi b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 27,
+          "balls": 15,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 180.0,
+          "out_desc": "b PP Chawla",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 31,
+          "balls": 26,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 119.2,
+          "out_desc": "c MG Johnson b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 21,
+          "balls": 17,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 123.5,
+          "out_desc": "b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 43,
+          "balls": 25,
+          "fours": 1,
+          "sixes": 4,
+          "strike_rate": 172.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 12,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c KD Karthik b PP Chawla",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KV Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "MG Johnson",
+          "maidens": 0,
+          "runs": 51,
+          "wickets": 0,
+          "economy": 12.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PP Chawla",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 2,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shivam Mavi",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SP Narine",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 2,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AD Russell",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "F du Plessis",
+          "runs": 48,
+          "over": "5.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SR Watson",
+          "runs": 91,
+          "over": "10.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "SK Raina",
+          "runs": 101,
+          "over": "11.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 119,
+          "over": "14.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 173,
+          "over": "19.5",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 180,
+        "wickets": 4,
+        "overs": "18",
+        "run_rate": 10.19,
+        "declared": false
+      },
+      "extras": {
+        "total": 12,
+        "wides": 11,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "CA Lynn",
+          "runs": 12,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 200.0,
+          "out_desc": "c SR Watson b L Ngidi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SP Narine",
+          "runs": 32,
+          "balls": 20,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 160.0,
+          "out_desc": "c DJ Bravo b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 6,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "c DJ Bravo b KM Asif",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 57,
+          "balls": 36,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 158.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "RK Singh",
+          "runs": 16,
+          "balls": 18,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 88.9,
+          "out_desc": "b Harbhajan Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 45,
+          "balls": 18,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 250.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "L Ngidi",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "KM Asif",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 10.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SR Watson",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harbhajan Singh",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 6.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 13.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "1.4"
+        },
+        {
+          "name": "KV Sharma",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "CA Lynn",
+          "runs": 12,
+          "over": "1",
+          "wkt_n": 1
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 40,
+          "over": "4.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "SP Narine",
+          "runs": 64,
+          "over": "6.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "RK Singh",
+          "runs": 97,
+          "over": "11.4",
+          "wkt_n": 4
+        }
+      ]
+    }
+  ],
+  "error": null
+}

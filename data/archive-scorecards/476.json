@@ -1,0 +1,413 @@
+{
+  "match_id": "476",
+  "source_id": "1426267",
+  "season": 2024,
+  "round": "League",
+  "match_number": 29,
+  "date": "2024-04-14",
+  "team1": "Chennai Super Kings",
+  "team2": "Mumbai Indians",
+  "venue": "Wankhede Stadium, Mumbai, Mumbai",
+  "result_text": "Chennai Super Kings won by 20 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 206,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 10.3,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "AM Rahane",
+          "runs": 5,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 62.5,
+          "out_desc": "c HH Pandya b G Coetzee",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ravindra",
+          "runs": 21,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 131.2,
+          "out_desc": "c Ishan Kishan b S Gopal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 69,
+          "balls": 40,
+          "fours": 5,
+          "sixes": 5,
+          "strike_rate": 172.5,
+          "out_desc": "c Mohammad Nabi b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 66,
+          "balls": 38,
+          "fours": 10,
+          "sixes": 2,
+          "strike_rate": 173.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 17,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 121.4,
+          "out_desc": "c Mohammad Nabi b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 20,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 3,
+          "strike_rate": 500.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammad Nabi",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 6.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "G Coetzee",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Akash Madhwal",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 12.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "S Gopal",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 2,
+          "economy": 14.3,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "R Shepherd",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 16.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AM Rahane",
+          "runs": 8,
+          "over": "1.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "R Ravindra",
+          "runs": 60,
+          "over": "7.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 150,
+          "over": "15.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 186,
+          "over": "19.2",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 186,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 9.3,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "RG Sharma",
+          "runs": 105,
+          "balls": 63,
+          "fours": 11,
+          "sixes": 5,
+          "strike_rate": 166.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 23,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 153.3,
+          "out_desc": "c SN Thakur b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Mustafizur Rahman b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 31,
+          "balls": 20,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 155.0,
+          "out_desc": "c SN Thakur b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 2,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c RA Jadeja b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TH David",
+          "runs": 13,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 260.0,
+          "out_desc": "c R Ravindra b Mustafizur Rahman",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mohammad Nabi",
+          "runs": 4,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 57.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mustafizur Rahman",
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 1,
+          "economy": 13.8,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 9.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Pathirana",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 4,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Ishan Kishan",
+          "runs": 70,
+          "over": "7.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 70,
+          "over": "7.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 130,
+          "over": "13.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 134,
+          "over": "15.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "TH David",
+          "runs": 148,
+          "over": "16.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 157,
+          "over": "17.3",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

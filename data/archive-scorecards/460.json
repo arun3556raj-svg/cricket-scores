@@ -1,0 +1,431 @@
+{
+  "match_id": "460",
+  "source_id": "1422131",
+  "season": 2024,
+  "round": "League",
+  "match_number": 13,
+  "date": "2024-03-31",
+  "team1": "Delhi Capitals",
+  "team2": "Chennai Super Kings",
+  "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam, Visakhapatnam",
+  "result_text": "Delhi Capitals won by 20 runs",
+  "innings": [
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 191,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 9.47,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 5,
+        "no_balls": 1,
+        "byes": 2,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "PP Shaw",
+          "runs": 43,
+          "balls": 27,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 159.3,
+          "out_desc": "c MS Dhoni b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Warner",
+          "runs": 52,
+          "balls": 35,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 148.6,
+          "out_desc": "c M Pathirana b Mustafizur Rahman",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 51,
+          "balls": 32,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 159.4,
+          "out_desc": "c RD Gaikwad b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 18,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 150.0,
+          "out_desc": "b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 7,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 87.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 9,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 180.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mustafizur Rahman",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 1,
+          "economy": 11.0,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4.1"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 10.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Pathirana",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 3,
+          "economy": 7.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "DA Warner",
+          "runs": 93,
+          "over": "9.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "PP Shaw",
+          "runs": 103,
+          "over": "10.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 134,
+          "over": "14.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 134,
+          "over": "15.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "RR Pant",
+          "runs": 178,
+          "over": "19",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 2,
+      "score": {
+        "runs": 171,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 8.55,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 8,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c RR Pant b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ravindra",
+          "runs": 2,
+          "balls": 12,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 16.7,
+          "out_desc": "c T Stubbs b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 45,
+          "balls": 30,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 150.0,
+          "out_desc": "c DA Warner b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 34,
+          "balls": 26,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 130.8,
+          "out_desc": "c & b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 18,
+          "balls": 16,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 112.5,
+          "out_desc": "c T Stubbs b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c KK Ahmed b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 21,
+          "balls": 17,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 123.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 37,
+          "balls": 16,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 231.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KK Ahmed",
+          "maidens": 1,
+          "runs": 21,
+          "wickets": 2,
+          "economy": 5.2,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "I Sharma",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 7.7,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "A Nortje",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 0,
+          "economy": 10.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 6.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Rasikh Salam",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 12.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "MR Marsh",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Mukesh Kumar",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 3,
+          "economy": 7.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 3,
+          "over": "1",
+          "wkt_n": 1
+        },
+        {
+          "name": "R Ravindra",
+          "runs": 7,
+          "over": "2.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 75,
+          "over": "10.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 102,
+          "over": "13.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 102,
+          "over": "13.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "S Dube",
+          "runs": 120,
+          "over": "16.1",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

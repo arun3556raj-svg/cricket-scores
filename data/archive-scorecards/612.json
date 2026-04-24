@@ -1,0 +1,473 @@
+{
+  "match_id": "612",
+  "source_id": "335995",
+  "season": 2008,
+  "round": "League",
+  "match_number": 13,
+  "date": "2008-04-27",
+  "team1": "Kings XI Punjab",
+  "team2": "Delhi Daredevils",
+  "venue": "Punjab Cricket Association Stadium, Mohali, Chandigarh",
+  "result_text": "Kings XI Punjab won by 4 wkts",
+  "innings": [
+    {
+      "bat_team": "Delhi Daredevils",
+      "bowl_team": "Kings XI Punjab",
+      "innings_id": 1,
+      "score": {
+        "runs": 158,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 7.9,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "G Gambhir",
+          "runs": 18,
+          "balls": 14,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 128.6,
+          "out_desc": "c Yuvraj Singh b VRV Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Sehwag",
+          "runs": 6,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "lbw b IK Pathan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c KC Sangakkara b B Lee",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shoaib Malik",
+          "runs": 19,
+          "balls": 17,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 111.8,
+          "out_desc": "c B Lee b VRV Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Tiwary",
+          "runs": 39,
+          "balls": 34,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 114.7,
+          "out_desc": "c Yuvraj Singh b VRV Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 24,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 171.4,
+          "out_desc": "b Yuvraj Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Bhatia",
+          "runs": 17,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 113.3,
+          "out_desc": "b IK Pathan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MF Maharoof",
+          "runs": 18,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "run out (DPMD Jayawardene / KC Sangakkara)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "VY Mahesh",
+          "runs": 6,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 120.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Lee",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 8.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "IK Pathan",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "S Sreesanth",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 12.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "VRV Singh",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 3,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PP Chawla",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 7.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yuvraj Singh",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Sehwag",
+          "runs": 11,
+          "over": "1.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 12,
+          "over": "2.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "G Gambhir",
+          "runs": 45,
+          "over": "6",
+          "wkt_n": 3
+        },
+        {
+          "name": "Shoaib Malik",
+          "runs": 54,
+          "over": "7.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 88,
+          "over": "12",
+          "wkt_n": 5
+        },
+        {
+          "name": "R Bhatia",
+          "runs": 125,
+          "over": "16.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "MK Tiwary",
+          "runs": 139,
+          "over": "17.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "MF Maharoof",
+          "runs": 158,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Kings XI Punjab",
+      "bowl_team": "Delhi Daredevils",
+      "innings_id": 2,
+      "score": {
+        "runs": 162,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 8.31,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 4,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "K Goel",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "lbw b GD McGrath",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SM Katich",
+          "runs": 75,
+          "balls": 51,
+          "fours": 11,
+          "sixes": 1,
+          "strike_rate": 147.1,
+          "out_desc": "run out (V Sehwag / R Bhatia)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KC Sangakkara",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "c KD Karthik b Mohammad Asif",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DPMD Jayawardene",
+          "runs": 15,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 107.1,
+          "out_desc": "c & b Shoaib Malik",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Yuvraj Singh",
+          "runs": 40,
+          "balls": 29,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 137.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "TM Srivastava",
+          "runs": 7,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 77.8,
+          "out_desc": "c KD Karthik b VY Mahesh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "IK Pathan",
+          "runs": 10,
+          "balls": 6,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 166.7,
+          "out_desc": "c KD Karthik b Mohammad Asif",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Lee",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "GD McGrath",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mohammad Asif",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 2,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "MF Maharoof",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 10.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "VY Mahesh",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shoaib Malik",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 9.1,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "3.3"
+        },
+        {
+          "name": "R Bhatia",
+          "maidens": 0,
+          "runs": 5,
+          "wickets": 0,
+          "economy": 5.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "K Goel",
+          "runs": 2,
+          "over": "1",
+          "wkt_n": 1
+        },
+        {
+          "name": "KC Sangakkara",
+          "runs": 11,
+          "over": "2",
+          "wkt_n": 2
+        },
+        {
+          "name": "DPMD Jayawardene",
+          "runs": 69,
+          "over": "7.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "SM Katich",
+          "runs": 119,
+          "over": "14",
+          "wkt_n": 4
+        },
+        {
+          "name": "TM Srivastava",
+          "runs": 141,
+          "over": "16.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "IK Pathan",
+          "runs": 155,
+          "over": "18",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

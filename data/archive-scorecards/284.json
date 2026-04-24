@@ -1,0 +1,427 @@
+{
+  "match_id": "284",
+  "source_id": "1254102",
+  "season": 2021,
+  "round": "League",
+  "match_number": 45,
+  "date": "2021-10-01",
+  "team1": "Kolkata Knight Riders",
+  "team2": "Punjab Kings",
+  "venue": "Dubai International Cricket Stadium, Dubai",
+  "result_text": "Punjab Kings won by 5 wkts",
+  "innings": [
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 165,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 8.25,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 3,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "VR Iyer",
+          "runs": 67,
+          "balls": 49,
+          "fours": 9,
+          "sixes": 1,
+          "strike_rate": 136.7,
+          "out_desc": "c DJ Hooda b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 7,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 34,
+          "balls": 26,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 130.8,
+          "out_desc": "c DJ Hooda b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 31,
+          "balls": 18,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 172.2,
+          "out_desc": "c MA Agarwal b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "EJG Morgan",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "lbw b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 11,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TL Seifert",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "run out (Mohammed Shami)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SP Narine",
+          "runs": 3,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "FA Allen",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 5.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 3,
+          "economy": 8.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "NT Ellis",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 0,
+          "economy": 11.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Shubman Gill",
+          "runs": 18,
+          "over": "2.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 90,
+          "over": "11.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "VR Iyer",
+          "runs": 120,
+          "over": "14.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "EJG Morgan",
+          "runs": 124,
+          "over": "15.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "N Rana",
+          "runs": 149,
+          "over": "17.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "TL Seifert",
+          "runs": 156,
+          "over": "18.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 165,
+          "over": "20",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 2,
+      "score": {
+        "runs": 168,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 8.62,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 3,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 67,
+          "balls": 55,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 121.8,
+          "out_desc": "c Shivam Mavi b VR Iyer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 40,
+          "balls": 26,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 153.8,
+          "out_desc": "c EJG Morgan b CV Varun",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 12,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 171.4,
+          "out_desc": "c Shivam Mavi b CV Varun",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 18,
+          "balls": 16,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 112.5,
+          "out_desc": "c Shubman Gill b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 3,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "c RA Tripathi b Shivam Mavi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 22,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 244.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "FA Allen",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TG Southee",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shivam Mavi",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CV Varun",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 2,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SP Narine",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 8.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "VR Iyer",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "2.3"
+        },
+        {
+          "name": "N Rana",
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MA Agarwal",
+          "runs": 70,
+          "over": "8.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "N Pooran",
+          "runs": 84,
+          "over": "10.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "AK Markram",
+          "runs": 129,
+          "over": "15.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 134,
+          "over": "16.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 162,
+          "over": "19.2",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

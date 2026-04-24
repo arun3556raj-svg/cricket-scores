@@ -1,0 +1,431 @@
+{
+  "match_id": "296",
+  "source_id": "1254114",
+  "season": 2021,
+  "round": "Qualifier 1",
+  "match_number": null,
+  "date": "2021-10-10",
+  "team1": "Delhi Capitals",
+  "team2": "Chennai Super Kings",
+  "venue": "Dubai International Cricket Stadium, Dubai",
+  "result_text": "Chennai Super Kings won by 4 wkts",
+  "innings": [
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 172,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 8.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "PP Shaw",
+          "runs": 60,
+          "balls": 34,
+          "fours": 7,
+          "sixes": 3,
+          "strike_rate": 176.5,
+          "out_desc": "c F du Plessis b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 7,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c MS Dhoni b JR Hazlewood",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 1,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 12.5,
+          "out_desc": "c RD Gaikwad b JR Hazlewood",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 10,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 90.9,
+          "out_desc": "c MJ Santner b MM Ali",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 51,
+          "balls": 35,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 145.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 37,
+          "balls": 24,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 154.2,
+          "out_desc": "c RA Jadeja b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TK Curran",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 8.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JR Hazlewood",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 2,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 7.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "MM Ali",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 6.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 10.3,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "S Dhawan",
+          "runs": 36,
+          "over": "3.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 50,
+          "over": "5.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "AR Patel",
+          "runs": 77,
+          "over": "9.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "PP Shaw",
+          "runs": 80,
+          "over": "10.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 163,
+          "over": "18.4",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 2,
+      "score": {
+        "runs": 173,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 8.8,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 70,
+          "balls": 50,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 140.0,
+          "out_desc": "c AR Patel b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 63,
+          "balls": 44,
+          "fours": 7,
+          "sixes": 2,
+          "strike_rate": 143.2,
+          "out_desc": "c SS Iyer b TK Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SS Iyer b TK Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "run out (SS Iyer / K Rabada)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MM Ali",
+          "runs": 16,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "c K Rabada b TK Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 18,
+          "balls": 6,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 300.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "A Nortje",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 1,
+          "economy": 11.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 7.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 7.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "TK Curran",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 3,
+          "economy": 7.9,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3.4"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "F du Plessis",
+          "runs": 3,
+          "over": "0.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 113,
+          "over": "13.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 117,
+          "over": "14",
+          "wkt_n": 3
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 119,
+          "over": "14.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 149,
+          "over": "18.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "MM Ali",
+          "runs": 160,
+          "over": "19.1",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

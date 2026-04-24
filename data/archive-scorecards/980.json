@@ -1,0 +1,485 @@
+{
+  "match_id": "980",
+  "source_id": "598057",
+  "season": 2013,
+  "round": "League",
+  "match_number": 60,
+  "date": "2013-05-12",
+  "team1": "Kolkata Knight Riders",
+  "team2": "Royal Challengers Bangalore",
+  "venue": "JSCA International Stadium Complex, Ranchi",
+  "result_text": "Kolkata Knight Riders won by 5 wkts",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bangalore",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 1,
+      "score": {
+        "runs": 115,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 5.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "CA Pujara",
+          "runs": 5,
+          "balls": 14,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 35.7,
+          "out_desc": "c L Balaji b SMSM Senanayake",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 33,
+          "balls": 36,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 91.7,
+          "out_desc": "st MS Bisla b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 17,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 121.4,
+          "out_desc": "b JH Kallis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 28,
+          "balls": 22,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 127.3,
+          "out_desc": "c MS Bisla b L Balaji",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MC Henriques",
+          "runs": 11,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c MK Tiwary b JH Kallis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Tiwary",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "lbw b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Vinay Kumar",
+          "runs": 14,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 107.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Rampaul",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Mithun",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c MK Tiwary b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Kartik",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b L Balaji",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JD Unadkat",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SMSM Senanayake",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 4.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "L Balaji",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 5.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SP Narine",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 4,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JH Kallis",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 2,
+          "economy": 4.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RN ten Doeschate",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "YK Pathan",
+          "maidens": 0,
+          "runs": 6,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "R Bhatia",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "CA Pujara",
+          "runs": 15,
+          "over": "4.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "V Kohli",
+          "runs": 46,
+          "over": "8.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 70,
+          "over": "13.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 95,
+          "over": "15.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "SS Tiwary",
+          "runs": 96,
+          "over": "16.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "MC Henriques",
+          "runs": 102,
+          "over": "17.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "R Rampaul",
+          "runs": 106,
+          "over": "18.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "A Mithun",
+          "runs": 108,
+          "over": "18.4",
+          "wkt_n": 8
+        },
+        {
+          "name": "M Kartik",
+          "runs": 112,
+          "over": "19.4",
+          "wkt_n": 9
+        }
+      ]
+    },
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Royal Challengers Bangalore",
+      "innings_id": 2,
+      "score": {
+        "runs": 116,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 6.0,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "MS Bisla",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c MC Henriques b R Rampaul",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "G Gambhir",
+          "runs": 14,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 93.3,
+          "out_desc": "c CH Gayle b R Vinay Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JH Kallis",
+          "runs": 41,
+          "balls": 45,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 91.1,
+          "out_desc": "c MC Henriques b A Mithun",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "YK Pathan",
+          "runs": 18,
+          "balls": 16,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 112.5,
+          "out_desc": "lbw b M Kartik",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Tiwary",
+          "runs": 24,
+          "balls": 27,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 88.9,
+          "out_desc": "c V Kohli b R Vinay Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RN ten Doeschate",
+          "runs": 11,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 157.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Bhatia",
+          "runs": 3,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "R Rampaul",
+          "maidens": 1,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 4.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Mithun",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 1,
+          "economy": 9.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Vinay Kumar",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 2,
+          "economy": 5.1,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3.2"
+        },
+        {
+          "name": "M Kartik",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 4.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MS Bisla",
+          "runs": 0,
+          "over": "0.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "G Gambhir",
+          "runs": 31,
+          "over": "5.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "YK Pathan",
+          "runs": 61,
+          "over": "10.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "JH Kallis",
+          "runs": 96,
+          "over": "16.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "MK Tiwary",
+          "runs": 103,
+          "over": "17.4",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

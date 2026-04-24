@@ -1,0 +1,377 @@
+{
+  "match_id": "455",
+  "source_id": "1422126",
+  "season": 2024,
+  "round": "League",
+  "match_number": 8,
+  "date": "2024-03-27",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Mumbai Indians",
+  "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad, Hyderabad",
+  "result_text": "Sunrisers Hyderabad won by 31 runs",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 277,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 13.85,
+        "declared": false
+      },
+      "extras": {
+        "total": 19,
+        "wides": 12,
+        "no_balls": 2,
+        "byes": 4,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "MA Agarwal",
+          "runs": 11,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 84.6,
+          "out_desc": "c TH David b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TM Head",
+          "runs": 62,
+          "balls": 24,
+          "fours": 9,
+          "sixes": 3,
+          "strike_rate": 258.3,
+          "out_desc": "c Naman Dhir b G Coetzee",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 63,
+          "balls": 22,
+          "fours": 3,
+          "sixes": 7,
+          "strike_rate": 286.4,
+          "out_desc": "c Naman Dhir b PP Chawla",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 42,
+          "balls": 28,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 150.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 80,
+          "balls": 33,
+          "fours": 4,
+          "sixes": 7,
+          "strike_rate": 242.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KT Maphaka",
+          "maidens": 0,
+          "runs": 66,
+          "wickets": 0,
+          "economy": 16.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 1,
+          "economy": 11.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "G Coetzee",
+          "maidens": 0,
+          "runs": 57,
+          "wickets": 1,
+          "economy": 14.2,
+          "wides": 6,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "PP Chawla",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 17.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "SZ Mulani",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 16.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MA Agarwal",
+          "runs": 45,
+          "over": "4.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "TM Head",
+          "runs": 113,
+          "over": "7.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 161,
+          "over": "11",
+          "wkt_n": 3
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 246,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 12.3,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 5,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "RG Sharma",
+          "runs": 26,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 216.7,
+          "out_desc": "c Abhishek Sharma b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 34,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 261.5,
+          "out_desc": "c AK Markram b Shahbaz Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 30,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 214.3,
+          "out_desc": "c PJ Cummins b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 64,
+          "balls": 33,
+          "fours": 2,
+          "sixes": 6,
+          "strike_rate": 193.9,
+          "out_desc": "c MA Agarwal b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 24,
+          "balls": 20,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 120.0,
+          "out_desc": "c H Klaasen b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TH David",
+          "runs": 42,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 3,
+          "strike_rate": 190.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 15,
+          "balls": 6,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 250.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 53,
+          "wickets": 0,
+          "economy": 13.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 2,
+          "economy": 11.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 13.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 2,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Umran Malik",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "M Markande",
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 0,
+          "economy": 13.0,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Ishan Kishan",
+          "runs": 56,
+          "over": "3.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 66,
+          "over": "4.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 150,
+          "over": "10.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 182,
+          "over": "14.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 224,
+          "over": "18",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

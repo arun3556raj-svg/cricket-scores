@@ -1,0 +1,441 @@
+{
+  "match_id": "743",
+  "source_id": "419135",
+  "season": 2010,
+  "round": "League",
+  "match_number": 30,
+  "date": "2010-04-01",
+  "team1": "Kolkata Knight Riders",
+  "team2": "Deccan Chargers",
+  "venue": "Eden Gardens, Kolkata",
+  "result_text": "Kolkata Knight Riders won by 24 runs",
+  "innings": [
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Deccan Chargers",
+      "innings_id": 1,
+      "score": {
+        "runs": 181,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 9.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 14,
+        "wides": 9,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "SC Ganguly",
+          "runs": 88,
+          "balls": 54,
+          "fours": 9,
+          "sixes": 5,
+          "strike_rate": 163.0,
+          "out_desc": "c RG Sharma b PP Ojha",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 4,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 57.1,
+          "out_desc": "c KAJ Roach b A Symonds",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CA Pujara",
+          "runs": 17,
+          "balls": 13,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 130.8,
+          "out_desc": "c PP Ojha b A Symonds",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Tiwary",
+          "runs": 5,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 71.4,
+          "out_desc": "b PP Ojha",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Hussey",
+          "runs": 31,
+          "balls": 26,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 119.2,
+          "out_desc": "c HH Gibbs b Jaskaran Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AD Mathews",
+          "runs": 4,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c HH Gibbs b Jaskaran Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "WP Saha",
+          "runs": 10,
+          "balls": 4,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 250.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "AB Agarkar",
+          "runs": 8,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 160.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KAJ Roach",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Jaskaran Singh",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 2,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "A Symonds",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harmeet Singh",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "RG Sharma",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "PP Ojha",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 2,
+          "economy": 9.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Y Venugopal Rao",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "CH Gayle",
+          "runs": 15,
+          "over": "2.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "CA Pujara",
+          "runs": 46,
+          "over": "6",
+          "wkt_n": 2
+        },
+        {
+          "name": "MK Tiwary",
+          "runs": 68,
+          "over": "8.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "SC Ganguly",
+          "runs": 146,
+          "over": "17",
+          "wkt_n": 4
+        },
+        {
+          "name": "AD Mathews",
+          "runs": 159,
+          "over": "18.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "DJ Hussey",
+          "runs": 163,
+          "over": "18.3",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Deccan Chargers",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 2,
+      "score": {
+        "runs": 157,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 7.85,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "HH Gibbs",
+          "runs": 50,
+          "balls": 45,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 111.1,
+          "out_desc": "c DJ Hussey b SE Bond",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AC Gilchrist",
+          "runs": 9,
+          "balls": 5,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 180.0,
+          "out_desc": "c CA Pujara b AB Agarkar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MD Mishra",
+          "runs": 29,
+          "balls": 16,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 181.2,
+          "out_desc": "c MK Tiwary b AD Mathews",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Symonds",
+          "runs": 45,
+          "balls": 37,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 121.6,
+          "out_desc": "c M Kartik b CH Gayle",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 2,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "b M Kartik",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TL Suman",
+          "runs": 15,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 136.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Y Venugopal Rao",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "MB Parmar",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SE Bond",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AB Agarkar",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Kartik",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AD Mathews",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 6.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CH Gayle",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AC Gilchrist",
+          "runs": 31,
+          "over": "2.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "MD Mishra",
+          "runs": 77,
+          "over": "8.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "HH Gibbs",
+          "runs": 121,
+          "over": "14.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 125,
+          "over": "15.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "A Symonds",
+          "runs": 151,
+          "over": "19.4",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

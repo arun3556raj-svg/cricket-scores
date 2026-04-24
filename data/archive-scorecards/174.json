@@ -1,0 +1,385 @@
+{
+  "match_id": "174",
+  "source_id": "1178430",
+  "season": 2019,
+  "round": "League",
+  "match_number": 55,
+  "date": "2019-05-05",
+  "team1": "Chennai Super Kings",
+  "team2": "Kings XI Punjab",
+  "venue": "Punjab Cricket Association IS Bindra Stadium, Chandigarh",
+  "result_text": "Kings XI Punjab won by 6 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Kings XI Punjab",
+      "innings_id": 1,
+      "score": {
+        "runs": 170,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 8.5,
+        "declared": false
+      },
+      "extras": {
+        "total": 2,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "F du Plessis",
+          "runs": 96,
+          "balls": 55,
+          "fours": 10,
+          "sixes": 4,
+          "strike_rate": 174.5,
+          "out_desc": "b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SR Watson",
+          "runs": 7,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 63.6,
+          "out_desc": "b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 53,
+          "balls": 38,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 139.5,
+          "out_desc": "c Mohammed Shami b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 10,
+          "balls": 12,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 83.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c Mandeep Singh b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Harpreet Brar",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 2,
+          "economy": 5.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 3,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AJ Tye",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 12.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Ashwin",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SR Watson",
+          "runs": 30,
+          "over": "4.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SK Raina",
+          "runs": 150,
+          "over": "16.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 163,
+          "over": "18.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 166,
+          "over": "19.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 167,
+          "over": "19.4",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Kings XI Punjab",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 173,
+        "wickets": 4,
+        "overs": "18",
+        "run_rate": 9.61,
+        "declared": false
+      },
+      "extras": {
+        "total": 14,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 4,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 71,
+          "balls": 36,
+          "fours": 7,
+          "sixes": 5,
+          "strike_rate": 197.2,
+          "out_desc": "c Imran Tahir b Harbhajan Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 28,
+          "balls": 28,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 100.0,
+          "out_desc": "c DR Shorey b Harbhajan Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 36,
+          "balls": 22,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 163.6,
+          "out_desc": "c MS Dhoni b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 7,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "c RA Jadeja b Harbhajan Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mandeep Singh",
+          "runs": 11,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 122.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SM Curran",
+          "runs": 6,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 85.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harbhajan Singh",
+          "maidens": 0,
+          "runs": 57,
+          "wickets": 3,
+          "economy": 14.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Imran Tahir",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "KL Rahul",
+          "runs": 108,
+          "over": "10.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 108,
+          "over": "10.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 118,
+          "over": "12.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "N Pooran",
+          "runs": 164,
+          "over": "16.2",
+          "wkt_n": 4
+        }
+      ]
+    }
+  ],
+  "error": null
+}

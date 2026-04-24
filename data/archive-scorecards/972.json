@@ -1,0 +1,323 @@
+{
+  "match_id": "972",
+  "source_id": "598049",
+  "season": 2013,
+  "round": "League",
+  "match_number": 52,
+  "date": "2013-05-07",
+  "team1": "Rajasthan Royals",
+  "team2": "Delhi Daredevils",
+  "venue": "Sawai Mansingh Stadium, Jaipur",
+  "result_text": "Rajasthan Royals won by 9 wkts",
+  "innings": [
+    {
+      "bat_team": "Delhi Daredevils",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 154,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 7.7,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "DPMD Jayawardene",
+          "runs": 34,
+          "balls": 31,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 109.7,
+          "out_desc": "c R Dravid b SK Trivedi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Sehwag",
+          "runs": 11,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 157.1,
+          "out_desc": "b JP Faulkner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CM Gautam",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c SV Samson b SR Watson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Warner",
+          "runs": 13,
+          "balls": 18,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 72.2,
+          "out_desc": "c Sachin Baby b STR Binny",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "BJ Rohrer",
+          "runs": 64,
+          "balls": 40,
+          "fours": 9,
+          "sixes": 1,
+          "strike_rate": 160.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 23,
+          "balls": 21,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 109.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SW Tait",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 0,
+          "economy": 13.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JP Faulkner",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SR Watson",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "STR Binny",
+          "maidens": 0,
+          "runs": 3,
+          "wickets": 1,
+          "economy": 1.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "PV Tambe",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Trivedi",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Sehwag",
+          "runs": 19,
+          "over": "1.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "CM Gautam",
+          "runs": 22,
+          "over": "2.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "DA Warner",
+          "runs": 47,
+          "over": "7.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "DPMD Jayawardene",
+          "runs": 78,
+          "over": "12",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Delhi Daredevils",
+      "innings_id": 2,
+      "score": {
+        "runs": 155,
+        "wickets": 1,
+        "overs": "18",
+        "run_rate": 8.69,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 9,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "R Dravid",
+          "runs": 53,
+          "balls": 48,
+          "fours": 7,
+          "sixes": 0,
+          "strike_rate": 110.4,
+          "out_desc": "c AB Agarkar b S Kaul",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 63,
+          "balls": 45,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 140.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SR Watson",
+          "runs": 28,
+          "balls": 14,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "S Kaul",
+          "maidens": 1,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.5"
+        },
+        {
+          "name": "UT Yadav",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 9.3,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Morkel",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AB Agarkar",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "P Negi",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "BJ Rohrer",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "R Dravid",
+          "runs": 108,
+          "over": "13.4",
+          "wkt_n": 1
+        }
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,555 @@
+{
+  "match_id": "680",
+  "source_id": "392206",
+  "season": 2009,
+  "round": "League",
+  "match_number": 26,
+  "date": "2009-05-02",
+  "team1": "Chennai Super Kings",
+  "team2": "Delhi Daredevils",
+  "venue": "New Wanderers Stadium, Johannesburg",
+  "result_text": "Chennai Super Kings won by 18 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Delhi Daredevils",
+      "innings_id": 1,
+      "score": {
+        "runs": 163,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 8.15,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 4,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "M Vijay",
+          "runs": 14,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 107.7,
+          "out_desc": "c R Bhatia b A Nehra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "ML Hayden",
+          "runs": 30,
+          "balls": 19,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 157.9,
+          "out_desc": "c AB de Villiers b PJ Sangwan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 32,
+          "balls": 21,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 152.4,
+          "out_desc": "c TM Dilshan b R Bhatia",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 45,
+          "balls": 34,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 132.4,
+          "out_desc": "b R Bhatia",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JA Morkel",
+          "runs": 6,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "c & b A Nehra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 6,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 85.7,
+          "out_desc": "c G Gambhir b DP Nannes",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JDP Oram",
+          "runs": 3,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 42.9,
+          "out_desc": "c AB de Villiers b DP Nannes",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SB Jakati",
+          "runs": 13,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 162.5,
+          "out_desc": "c G Gambhir b DP Nannes",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "L Balaji",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c AB de Villiers b A Nehra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Muralitharan",
+          "runs": 3,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "run out (AB de Villiers / KD Karthik)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Tyagi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DP Nannes",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 3,
+          "economy": 6.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Nehra",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 3,
+          "economy": 6.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PJ Sangwan",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 1,
+          "economy": 13.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "TM Dilshan",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 7.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "A Mishra",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "R Bhatia",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 2,
+          "economy": 5.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "M Vijay",
+          "runs": 36,
+          "over": "4.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "ML Hayden",
+          "runs": 46,
+          "over": "5.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "SK Raina",
+          "runs": 112,
+          "over": "12.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 130,
+          "over": "14.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "JA Morkel",
+          "runs": 134,
+          "over": "15.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "JDP Oram",
+          "runs": 144,
+          "over": "17.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 144,
+          "over": "17.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "L Balaji",
+          "runs": 151,
+          "over": "18.4",
+          "wkt_n": 8
+        },
+        {
+          "name": "SB Jakati",
+          "runs": 162,
+          "over": "19.4",
+          "wkt_n": 9
+        },
+        {
+          "name": "M Muralitharan",
+          "runs": 163,
+          "over": "20",
+          "wkt_n": 10
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Daredevils",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 145,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 7.25,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 0,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "G Gambhir",
+          "runs": 13,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c SK Raina b S Tyagi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Warner",
+          "runs": 51,
+          "balls": 40,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 127.5,
+          "out_desc": "st MS Dhoni b SB Jakati",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b S Tyagi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TM Dilshan",
+          "runs": 13,
+          "balls": 13,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "b SB Jakati",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 52,
+          "balls": 31,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 167.7,
+          "out_desc": "c M Muralitharan b SB Jakati",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Manhas",
+          "runs": 0,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b M Muralitharan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Bhatia",
+          "runs": 2,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 28.6,
+          "out_desc": "c L Balaji b JA Morkel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Sangwan",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b SB Jakati",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Mishra",
+          "runs": 11,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 137.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "A Nehra",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JA Morkel",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "S Tyagi",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 2,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "SB Jakati",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 4,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Muralitharan",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Raina",
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "L Balaji",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 8.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JDP Oram",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "G Gambhir",
+          "runs": 20,
+          "over": "3.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 20,
+          "over": "3.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "TM Dilshan",
+          "runs": 53,
+          "over": "6.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "DA Warner",
+          "runs": 127,
+          "over": "15.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "M Manhas",
+          "runs": 128,
+          "over": "16.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 132,
+          "over": "17.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "PJ Sangwan",
+          "runs": 133,
+          "over": "18",
+          "wkt_n": 7
+        },
+        {
+          "name": "R Bhatia",
+          "runs": 135,
+          "over": "19",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

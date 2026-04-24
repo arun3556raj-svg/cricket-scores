@@ -1,0 +1,499 @@
+{
+  "match_id": "354",
+  "source_id": "1304101",
+  "season": 2022,
+  "round": "League",
+  "match_number": 55,
+  "date": "2022-05-08",
+  "team1": "Chennai Super Kings",
+  "team2": "Delhi Capitals",
+  "venue": "Dr DY Patil Sports Academy, Mumbai, Navi Mumbai",
+  "result_text": "Chennai Super Kings won by 91 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 1,
+      "score": {
+        "runs": 208,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 10.4,
+        "declared": false
+      },
+      "extras": {
+        "total": 12,
+        "wides": 11,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 41,
+          "balls": 32,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 128.1,
+          "out_desc": "c AR Patel b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DP Conway",
+          "runs": 87,
+          "balls": 49,
+          "fours": 8,
+          "sixes": 5,
+          "strike_rate": 177.6,
+          "out_desc": "c RR Pant b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 32,
+          "balls": 19,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 168.4,
+          "out_desc": "c DA Warner b MR Marsh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 5,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 83.3,
+          "out_desc": "c AR Patel b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 21,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 262.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MM Ali",
+          "runs": 9,
+          "balls": 4,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 225.0,
+          "out_desc": "c DA Warner b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c KL Nagarkoti b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 12.7,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 2,
+          "economy": 7.0,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Nortje",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 3,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 7.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 0,
+          "economy": 14.3,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "MR Marsh",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 11.3,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 110,
+          "over": "11",
+          "wkt_n": 1
+        },
+        {
+          "name": "DP Conway",
+          "runs": 169,
+          "over": "16.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Dube",
+          "runs": 170,
+          "over": "17.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 187,
+          "over": "18.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "MM Ali",
+          "runs": 203,
+          "over": "19.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 203,
+          "over": "19.3",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 117,
+        "wickets": 10,
+        "overs": "18",
+        "run_rate": 6.62,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "DA Warner",
+          "runs": 19,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 158.3,
+          "out_desc": "lbw b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Bharat",
+          "runs": 8,
+          "balls": 5,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 160.0,
+          "out_desc": "c MM Ali b Simarjeet Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 25,
+          "balls": 20,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 125.0,
+          "out_desc": "c RD Gaikwad b MM Ali",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 21,
+          "balls": 11,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 190.9,
+          "out_desc": "b MM Ali",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Powell",
+          "runs": 3,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c MS Dhoni b Mukesh Choudhary",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RV Patel",
+          "runs": 6,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "c DP Conway b MM Ali",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "b Mukesh Choudhary",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 24,
+          "balls": 19,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 126.3,
+          "out_desc": "c MS Dhoni b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 5,
+          "balls": 17,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 29.4,
+          "out_desc": "c RV Uthappa b Simarjeet Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Nortje",
+          "runs": 1,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 16.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KK Ahmed",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mukesh Choudhary",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Simarjeet Singh",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 2,
+          "economy": 6.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 2,
+          "economy": 9.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2.4"
+        },
+        {
+          "name": "MM Ali",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 3,
+          "economy": 3.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "KS Bharat",
+          "runs": 16,
+          "over": "1.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "DA Warner",
+          "runs": 36,
+          "over": "4.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 72,
+          "over": "7.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "RR Pant",
+          "runs": 75,
+          "over": "9.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "RV Patel",
+          "runs": 81,
+          "over": "9.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "AR Patel",
+          "runs": 82,
+          "over": "10.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "R Powell",
+          "runs": 85,
+          "over": "10.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 99,
+          "over": "15.2",
+          "wkt_n": 8
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 117,
+          "over": "17.3",
+          "wkt_n": 9
+        },
+        {
+          "name": "KK Ahmed",
+          "runs": 117,
+          "over": "17.4",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

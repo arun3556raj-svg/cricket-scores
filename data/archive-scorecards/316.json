@@ -1,0 +1,395 @@
+{
+  "match_id": "316",
+  "source_id": "1304063",
+  "season": 2022,
+  "round": "League",
+  "match_number": 17,
+  "date": "2022-04-09",
+  "team1": "Chennai Super Kings",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "Dr DY Patil Sports Academy, Mumbai, Mumbai",
+  "result_text": "Sunrisers Hyderabad won by 8 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 154,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 7.7,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "RV Uthappa",
+          "runs": 15,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 136.4,
+          "out_desc": "c AK Markram b Washington Sundar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 16,
+          "balls": 13,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 123.1,
+          "out_desc": "b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MM Ali",
+          "runs": 48,
+          "balls": 35,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 137.1,
+          "out_desc": "c RA Tripathi b AK Markram",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 27,
+          "balls": 27,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c AK Markram b Washington Sundar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 3,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 60.0,
+          "out_desc": "c Umran Malik b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 23,
+          "balls": 15,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 153.3,
+          "out_desc": "c KS Williamson b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 3,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c Umran Malik b M Jansen",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 8,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 160.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "CJ Jordan",
+          "runs": 6,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Jansen",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Washington Sundar",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 2,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 2,
+          "economy": 7.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Umran Malik",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 9.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AK Markram",
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RV Uthappa",
+          "runs": 25,
+          "over": "3.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 36,
+          "over": "5.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 98,
+          "over": "13.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "MM Ali",
+          "runs": 108,
+          "over": "14.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "S Dube",
+          "runs": 110,
+          "over": "15.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 122,
+          "over": "17.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 147,
+          "over": "19.3",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 155,
+        "wickets": 2,
+        "overs": "18",
+        "run_rate": 8.77,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 3,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 75,
+          "balls": 50,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 150.0,
+          "out_desc": "c CJ Jordan b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 32,
+          "balls": 40,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 80.0,
+          "out_desc": "c MM Ali b Mukesh Choudhary",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 39,
+          "balls": 14,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 278.6,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "N Pooran",
+          "runs": 5,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 250.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mukesh Choudhary",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CJ Jordan",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 11.3,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "MM Ali",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 10.9,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "2.4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "KS Williamson",
+          "runs": 89,
+          "over": "12.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 145,
+          "over": "17.1",
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
+  "error": null
+}

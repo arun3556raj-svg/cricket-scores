@@ -1,0 +1,481 @@
+{
+  "match_id": "189",
+  "source_id": "1216501",
+  "season": 2020,
+  "round": "League",
+  "match_number": 21,
+  "date": "2020-10-07",
+  "team1": "Kolkata Knight Riders",
+  "team2": "Chennai Super Kings",
+  "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+  "result_text": "Kolkata Knight Riders won by 10 runs",
+  "innings": [
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 167,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 8.35,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "RA Tripathi",
+          "runs": 81,
+          "balls": 51,
+          "fours": 8,
+          "sixes": 3,
+          "strike_rate": 158.8,
+          "out_desc": "c SR Watson b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 11,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 91.7,
+          "out_desc": "c MS Dhoni b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 9,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 90.0,
+          "out_desc": "c RA Jadeja b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SP Narine",
+          "runs": 17,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 188.9,
+          "out_desc": "c F du Plessis b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "EJG Morgan",
+          "runs": 7,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 70.0,
+          "out_desc": "c MS Dhoni b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AD Russell",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c MS Dhoni b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 12,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 109.1,
+          "out_desc": "c SN Thakur b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 17,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 188.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KL Nagarkoti",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c F du Plessis b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shivam Mavi",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c MS Dhoni b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CV Varun",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 0,
+          "economy": 11.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 2,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KV Sharma",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 2,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 3,
+          "economy": 9.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Shubman Gill",
+          "runs": 37,
+          "over": "4.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "N Rana",
+          "runs": 70,
+          "over": "8.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "SP Narine",
+          "runs": 98,
+          "over": "11",
+          "wkt_n": 3
+        },
+        {
+          "name": "EJG Morgan",
+          "runs": 114,
+          "over": "14",
+          "wkt_n": 4
+        },
+        {
+          "name": "AD Russell",
+          "runs": 128,
+          "over": "15.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 140,
+          "over": "16.5",
+          "wkt_n": 6
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 162,
+          "over": "19",
+          "wkt_n": 7
+        },
+        {
+          "name": "KL Nagarkoti",
+          "runs": 163,
+          "over": "19.2",
+          "wkt_n": 8
+        },
+        {
+          "name": "Shivam Mavi",
+          "runs": 166,
+          "over": "19.5",
+          "wkt_n": 9
+        },
+        {
+          "name": "CV Varun",
+          "runs": 167,
+          "over": "20",
+          "wkt_n": 10
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 2,
+      "score": {
+        "runs": 157,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 7.85,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "SR Watson",
+          "runs": 50,
+          "balls": 40,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 125.0,
+          "out_desc": "lbw b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 17,
+          "balls": 10,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 170.0,
+          "out_desc": "c KD Karthik b Shivam Mavi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 30,
+          "balls": 27,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 111.1,
+          "out_desc": "c Shubman Gill b KL Nagarkoti",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 11,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 91.7,
+          "out_desc": "b CV Varun",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SM Curran",
+          "runs": 17,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 154.5,
+          "out_desc": "c EJG Morgan b AD Russell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 7,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 58.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 21,
+          "balls": 8,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 262.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 6.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shivam Mavi",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 10.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "CV Varun",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KL Nagarkoti",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SP Narine",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AD Russell",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "F du Plessis",
+          "runs": 30,
+          "over": "3.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 99,
+          "over": "12.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "SR Watson",
+          "runs": 101,
+          "over": "13.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 129,
+          "over": "16.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "SM Curran",
+          "runs": 129,
+          "over": "17.1",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

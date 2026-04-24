@@ -1,0 +1,493 @@
+{
+  "match_id": "470",
+  "source_id": "1426261",
+  "season": 2024,
+  "round": "League",
+  "match_number": 23,
+  "date": "2024-04-09",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Punjab Kings",
+  "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Mohali",
+  "result_text": "Sunrisers Hyderabad won by 2 runs",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 182,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 9.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "TM Head",
+          "runs": 21,
+          "balls": 15,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 140.0,
+          "out_desc": "c S Dhawan b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 16,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 145.5,
+          "out_desc": "c Shashank Singh b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c JM Sharma b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 64,
+          "balls": 37,
+          "fours": 4,
+          "sixes": 5,
+          "strike_rate": 173.0,
+          "out_desc": "c K Rabada b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 11,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 78.6,
+          "out_desc": "c JM Sharma b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 9,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c SM Curran b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 25,
+          "balls": 12,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 208.3,
+          "out_desc": "c HV Patel b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "runs": 14,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 3,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Kumar",
+          "runs": 6,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "c JM Bairstow b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JD Unadkat",
+          "runs": 6,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 600.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 4,
+          "economy": 7.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 2,
+          "economy": 10.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HV Patel",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 2,
+          "economy": 7.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harpreet Brar",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "TM Head",
+          "runs": 27,
+          "over": "3.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "AK Markram",
+          "runs": 27,
+          "over": "3.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 39,
+          "over": "5",
+          "wkt_n": 3
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 64,
+          "over": "9.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 100,
+          "over": "13.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 150,
+          "over": "16.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 151,
+          "over": "16.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 155,
+          "over": "17.3",
+          "wkt_n": 8
+        },
+        {
+          "name": "B Kumar",
+          "runs": 176,
+          "over": "19.5",
+          "wkt_n": 9
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 180,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 9.0,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "S Dhawan",
+          "runs": 14,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 87.5,
+          "out_desc": "st H Klaasen b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 4,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c Nithish Kumar Reddy b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SM Curran",
+          "runs": 29,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 131.8,
+          "out_desc": "c PJ Cummins b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sikandar Raza",
+          "runs": 28,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 127.3,
+          "out_desc": "c H Klaasen b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 46,
+          "balls": 25,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 184.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 19,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 172.7,
+          "out_desc": "c Abhishek Sharma b Nithish Kumar Reddy",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 33,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 220.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 1,
+          "runs": 32,
+          "wickets": 2,
+          "economy": 8.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 8.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 11.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 49,
+          "wickets": 1,
+          "economy": 12.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "JM Bairstow",
+          "runs": 2,
+          "over": "1.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 11,
+          "over": "3",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 20,
+          "over": "4.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "SM Curran",
+          "runs": 58,
+          "over": "9.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "Sikandar Raza",
+          "runs": 91,
+          "over": "13.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 114,
+          "over": "15.3",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,509 @@
+{
+  "match_id": "1172",
+  "source_id": "981013",
+  "season": 2016,
+  "round": "Qualifier 1",
+  "match_number": null,
+  "date": "2016-05-24",
+  "team1": "Gujarat Lions",
+  "team2": "Royal Challengers Bangalore",
+  "venue": "M Chinnaswamy Stadium, Bangalore",
+  "result_text": "Royal Challengers Bangalore won by 4 wkts",
+  "innings": [
+    {
+      "bat_team": "Gujarat Lions",
+      "bowl_team": "Royal Challengers Bangalore",
+      "innings_id": 1,
+      "score": {
+        "runs": 158,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 7.9,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 6
+      },
+      "batsmen": [
+        {
+          "name": "AJ Finch",
+          "runs": 4,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c CH Gayle b Iqbal Abdulla",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "BB McCullum",
+          "runs": 1,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "c AB de Villiers b Iqbal Abdulla",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 1,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 11.1,
+          "out_desc": "c S Aravind b SR Watson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 26,
+          "balls": 30,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 86.7,
+          "out_desc": "b CJ Jordan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DR Smith",
+          "runs": 73,
+          "balls": 41,
+          "fours": 5,
+          "sixes": 6,
+          "strike_rate": 178.0,
+          "out_desc": "c V Kohli b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 3,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 42.9,
+          "out_desc": "c CH Gayle b SR Watson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 8,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "b SR Watson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "ER Dwivedi",
+          "runs": 19,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 211.1,
+          "out_desc": "c V Kohli b SR Watson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Kumar",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "b CJ Jordan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DS Kulkarni",
+          "runs": 10,
+          "balls": 4,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 250.0,
+          "out_desc": "run out (Sachin Baby / KL Rahul)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SB Jakati",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "S Aravind",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 4.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Iqbal Abdulla",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 2,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SR Watson",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 4,
+          "economy": 7.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CJ Jordan",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "STR Binny",
+          "maidens": 0,
+          "runs": 4,
+          "wickets": 0,
+          "economy": 4.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "BB McCullum",
+          "runs": 2,
+          "over": "1.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "AJ Finch",
+          "runs": 6,
+          "over": "1.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "SK Raina",
+          "runs": 9,
+          "over": "3.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 94,
+          "over": "13.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 107,
+          "over": "15.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "DR Smith",
+          "runs": 115,
+          "over": "16.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "ER Dwivedi",
+          "runs": 145,
+          "over": "18.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 145,
+          "over": "18.4",
+          "wkt_n": 8
+        },
+        {
+          "name": "P Kumar",
+          "runs": 156,
+          "over": "19.3",
+          "wkt_n": 9
+        },
+        {
+          "name": "DS Kulkarni",
+          "runs": 158,
+          "over": "20",
+          "wkt_n": 10
+        }
+      ]
+    },
+    {
+      "bat_team": "Royal Challengers Bangalore",
+      "bowl_team": "Gujarat Lions",
+      "innings_id": 2,
+      "score": {
+        "runs": 159,
+        "wickets": 6,
+        "overs": "19",
+        "run_rate": 8.67,
+        "declared": false
+      },
+      "extras": {
+        "total": 16,
+        "wides": 8,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 7
+      },
+      "batsmen": [
+        {
+          "name": "CH Gayle",
+          "runs": 9,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "b DS Kulkarni",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b DS Kulkarni",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 79,
+          "balls": 47,
+          "fours": 5,
+          "sixes": 5,
+          "strike_rate": 168.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c DR Smith b DS Kulkarni",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SR Watson",
+          "runs": 1,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 16.7,
+          "out_desc": "c DR Smith b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sachin Baby",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SB Jakati b DS Kulkarni",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "STR Binny",
+          "runs": 21,
+          "balls": 15,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 140.0,
+          "out_desc": "lbw b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Iqbal Abdulla",
+          "runs": 33,
+          "balls": 24,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 137.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "P Kumar",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 9.6,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "3.2"
+        },
+        {
+          "name": "DS Kulkarni",
+          "maidens": 1,
+          "runs": 14,
+          "wickets": 4,
+          "economy": 3.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 2,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SB Jakati",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 8.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "DR Smith",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Kohli",
+          "runs": 12,
+          "over": "1.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 25,
+          "over": "3.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 25,
+          "over": "3.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "SR Watson",
+          "runs": 28,
+          "over": "4.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "Sachin Baby",
+          "runs": 29,
+          "over": "5.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "STR Binny",
+          "runs": 68,
+          "over": "9.4",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

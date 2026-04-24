@@ -1,0 +1,481 @@
+{
+  "match_id": "581",
+  "source_id": "1473501",
+  "season": 2025,
+  "round": "League",
+  "match_number": 63,
+  "date": "2025-05-21",
+  "team1": "Mumbai Indians",
+  "team2": "Delhi Capitals",
+  "venue": "Wankhede Stadium, Mumbai, Mumbai",
+  "result_text": "Mumbai Indians won by 59 runs",
+  "innings": [
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 1,
+      "score": {
+        "runs": 180,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 9.0,
+        "declared": false
+      },
+      "extras": {
+        "total": 2,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "RD Rickelton",
+          "runs": 25,
+          "balls": 18,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 138.9,
+          "out_desc": "c M Tiwari b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 5,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c Abishek Porel b Mustafizur Rahman",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "WG Jacks",
+          "runs": 21,
+          "balls": 13,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 161.5,
+          "out_desc": "c V Nigam b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 73,
+          "balls": 43,
+          "fours": 7,
+          "sixes": 4,
+          "strike_rate": 169.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 27,
+          "balls": 27,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "c Sameer Rizvi b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 3,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c Mukesh Kumar b PVD Chameera",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 24,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 300.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mukesh Kumar",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 2,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PVD Chameera",
+          "maidens": 0,
+          "runs": 54,
+          "wickets": 1,
+          "economy": 13.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mustafizur Rahman",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "V Nigam",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RG Sharma",
+          "runs": 23,
+          "over": "2.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "WG Jacks",
+          "runs": 48,
+          "over": "5.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "RD Rickelton",
+          "runs": 58,
+          "over": "6.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 113,
+          "over": "14.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 123,
+          "over": "16.3",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 2,
+      "score": {
+        "runs": 121,
+        "wickets": 10,
+        "overs": "19",
+        "run_rate": 6.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 1,
+        "wides": 0,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 11,
+          "balls": 6,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 183.3,
+          "out_desc": "c RD Rickelton b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 6,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 85.7,
+          "out_desc": "c MJ Santner b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 6,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "st RD Rickelton b WG Jacks",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 39,
+          "balls": 35,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 111.4,
+          "out_desc": "b MJ Santner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Nigam",
+          "runs": 20,
+          "balls": 10,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "c & b MJ Santner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "lbw b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 18,
+          "balls": 16,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 112.5,
+          "out_desc": "st RD Rickelton b MJ Santner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Tiwari",
+          "runs": 3,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PVD Chameera",
+          "runs": 8,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 7,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 87.5,
+          "out_desc": "c RA Bawa b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mustafizur Rahman",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "WG Jacks",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 1,
+          "economy": 16.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "1"
+        },
+        {
+          "name": "MJ Santner",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 3,
+          "economy": 2.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 3,
+          "economy": 3.6,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.2"
+        },
+        {
+          "name": "KV Sharma",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 10.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "F du Plessis",
+          "runs": 12,
+          "over": "1.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 20,
+          "over": "2.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 27,
+          "over": "4.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "V Nigam",
+          "runs": 55,
+          "over": "8",
+          "wkt_n": 4
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 65,
+          "over": "9.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 103,
+          "over": "14.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 104,
+          "over": "14.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "M Tiwari",
+          "runs": 108,
+          "over": "15.3",
+          "wkt_n": 8
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 120,
+          "over": "18",
+          "wkt_n": 9
+        },
+        {
+          "name": "Mustafizur Rahman",
+          "runs": 121,
+          "over": "18.2",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

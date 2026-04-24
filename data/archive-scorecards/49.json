@@ -1,0 +1,467 @@
+{
+  "match_id": "49",
+  "source_id": "1082640",
+  "season": 2017,
+  "round": "League",
+  "match_number": 50,
+  "date": "2017-05-10",
+  "team1": "Gujarat Lions",
+  "team2": "Delhi Daredevils",
+  "venue": "Green Park, Kanpur",
+  "result_text": "Delhi Daredevils won by 2 wkts",
+  "innings": [
+    {
+      "bat_team": "Gujarat Lions",
+      "bowl_team": "Delhi Daredevils",
+      "innings_id": 1,
+      "score": {
+        "runs": 195,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 9.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 7
+      },
+      "batsmen": [
+        {
+          "name": "DR Smith",
+          "runs": 8,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (A Mishra / Mohammed Shami)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 34,
+          "balls": 25,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 136.0,
+          "out_desc": "c Z Khan b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 6,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 120.0,
+          "out_desc": "b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 40,
+          "balls": 28,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 142.9,
+          "out_desc": "c CJ Anderson b CR Brathwaite",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AJ Finch",
+          "runs": 69,
+          "balls": 39,
+          "fours": 6,
+          "sixes": 4,
+          "strike_rate": 176.9,
+          "out_desc": "b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 13,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 185.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JP Faulkner",
+          "runs": 14,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 175.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Z Khan",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Mishra",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 13.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "CR Brathwaite",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CJ Anderson",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "DR Smith",
+          "runs": 21,
+          "over": "3.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SK Raina",
+          "runs": 46,
+          "over": "5.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 56,
+          "over": "6.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 148,
+          "over": "16.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "AJ Finch",
+          "runs": 180,
+          "over": "18.3",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Daredevils",
+      "bowl_team": "Gujarat Lions",
+      "innings_id": 2,
+      "score": {
+        "runs": 197,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 10.02,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "SV Samson",
+          "runs": 10,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 142.9,
+          "out_desc": "b PJ Sangwan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KK Nair",
+          "runs": 30,
+          "balls": 15,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "c DR Smith b JP Faulkner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "run out (SK Raina)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 96,
+          "balls": 57,
+          "fours": 15,
+          "sixes": 2,
+          "strike_rate": 168.4,
+          "out_desc": "b Basil Thampi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MN Samuels",
+          "runs": 1,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "run out (RA Jadeja)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CJ Anderson",
+          "runs": 6,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (RA Jadeja)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CR Brathwaite",
+          "runs": 11,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 110.0,
+          "out_desc": "c & b DS Kulkarni",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 24,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 184.6,
+          "out_desc": "c DR Smith b JP Faulkner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mohammed Shami",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "A Mishra",
+          "runs": 8,
+          "balls": 2,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 400.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DS Kulkarni",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PJ Sangwan",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 11.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Basil Thampi",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 11.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3.4"
+        },
+        {
+          "name": "DR Smith",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 17.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JP Faulkner",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 2,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SV Samson",
+          "runs": 11,
+          "over": "1.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "RR Pant",
+          "runs": 15,
+          "over": "1.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "KK Nair",
+          "runs": 72,
+          "over": "7.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "MN Samuels",
+          "runs": 92,
+          "over": "10",
+          "wkt_n": 4
+        },
+        {
+          "name": "CJ Anderson",
+          "runs": 104,
+          "over": "11.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "CR Brathwaite",
+          "runs": 121,
+          "over": "13.5",
+          "wkt_n": 6
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 182,
+          "over": "18.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 189,
+          "over": "19.2",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

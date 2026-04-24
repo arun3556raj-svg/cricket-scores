@@ -1,0 +1,485 @@
+{
+  "match_id": "336",
+  "source_id": "1304083",
+  "season": 2022,
+  "round": "League",
+  "match_number": 37,
+  "date": "2022-04-24",
+  "team1": "Lucknow Super Giants",
+  "team2": "Mumbai Indians",
+  "venue": "Wankhede Stadium, Mumbai, Mumbai",
+  "result_text": "Lucknow Super Giants won by 36 runs",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 168,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 8.4,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Q de Kock",
+          "runs": 10,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 111.1,
+          "out_desc": "c RG Sharma b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 103,
+          "balls": 62,
+          "fours": 12,
+          "sixes": 4,
+          "strike_rate": 166.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 22,
+          "balls": 22,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "c RP Meredith b KA Pollard",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Tilak Varma b DR Sams",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c HR Shokeen b KA Pollard",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 10,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 111.1,
+          "out_desc": "c D Brevis b RP Meredith",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Badoni",
+          "runs": 14,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 127.3,
+          "out_desc": "c KA Pollard b RP Meredith",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JO Holder",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DR Sams",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HR Shokeen",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RP Meredith",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 2,
+          "economy": 10.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KA Pollard",
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 2,
+          "economy": 4.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Q de Kock",
+          "runs": 27,
+          "over": "4",
+          "wkt_n": 1
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 85,
+          "over": "11.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 102,
+          "over": "12.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 103,
+          "over": "13.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 121,
+          "over": "15.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "A Badoni",
+          "runs": 168,
+          "over": "19.4",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 2,
+      "score": {
+        "runs": 132,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 6.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 14,
+        "wides": 12,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Ishan Kishan",
+          "runs": 8,
+          "balls": 20,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 40.0,
+          "out_desc": "c JO Holder b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 39,
+          "balls": 31,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 125.8,
+          "out_desc": "c K Gowtham b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Brevis",
+          "runs": 3,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 60.0,
+          "out_desc": "c PVD Chameera b Mohsin Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 7,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c KL Rahul b A Badoni",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 38,
+          "balls": 27,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 140.7,
+          "out_desc": "c Ravi Bishnoi b JO Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KA Pollard",
+          "runs": 19,
+          "balls": 20,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 95.0,
+          "out_desc": "c DJ Hooda b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DR Sams",
+          "runs": 3,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 42.9,
+          "out_desc": "c Ravi Bishnoi b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JD Unadkat",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (KH Pandya / JO Holder)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HR Shokeen",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JJ Bumrah",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohsin Khan",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 6.8,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PVD Chameera",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 3.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JO Holder",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 3,
+          "economy": 4.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 1,
+          "economy": 9.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "A Badoni",
+          "maidens": 0,
+          "runs": 6,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Ishan Kishan",
+          "runs": 49,
+          "over": "7.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "D Brevis",
+          "runs": 54,
+          "over": "8.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 58,
+          "over": "9.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 67,
+          "over": "11.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 124,
+          "over": "17.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "KA Pollard",
+          "runs": 131,
+          "over": "19.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "JD Unadkat",
+          "runs": 132,
+          "over": "19.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "DR Sams",
+          "runs": 132,
+          "over": "19.4",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

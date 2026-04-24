@@ -1,0 +1,333 @@
+{
+  "match_id": "546",
+  "source_id": "1473465",
+  "season": 2025,
+  "round": "League",
+  "match_number": 28,
+  "date": "2025-04-13",
+  "team1": "Rajasthan Royals",
+  "team2": "Royal Challengers Bengaluru",
+  "venue": "Sawai Mansingh Stadium, Jaipur, Jaipur",
+  "result_text": "Royal Challengers Bengaluru won by 9 wkts",
+  "innings": [
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Royal Challengers Bengaluru",
+      "innings_id": 1,
+      "score": {
+        "runs": 173,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 8.65,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 75,
+          "balls": 47,
+          "fours": 10,
+          "sixes": 2,
+          "strike_rate": 159.6,
+          "out_desc": "lbw b JR Hazlewood",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 15,
+          "balls": 19,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 78.9,
+          "out_desc": "st JM Sharma b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 30,
+          "balls": 22,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 136.4,
+          "out_desc": "c V Kohli b Yash Dayal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 35,
+          "balls": 23,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 152.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 9,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 112.5,
+          "out_desc": "c D Padikkal b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 4,
+          "balls": 1,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 400.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yash Dayal",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JR Hazlewood",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 8.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "LS Livingstone",
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Suyash Sharma",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 0,
+          "economy": 9.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SV Samson",
+          "runs": 49,
+          "over": "6.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "R Parag",
+          "runs": 105,
+          "over": "13.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "YBK Jaiswal",
+          "runs": 126,
+          "over": "16",
+          "wkt_n": 3
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 169,
+          "over": "19.5",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 175,
+        "wickets": 1,
+        "overs": "18",
+        "run_rate": 10.0,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 7,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "PD Salt",
+          "runs": 65,
+          "balls": 33,
+          "fours": 5,
+          "sixes": 6,
+          "strike_rate": 197.0,
+          "out_desc": "c YBK Jaiswal b K Kartikeya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 62,
+          "balls": 45,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 137.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 40,
+          "balls": 27,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 148.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JC Archer",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 11.6,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2.3"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "K Kartikeya",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 8.3,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "PWH de Silva",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "R Parag",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PD Salt",
+          "runs": 92,
+          "over": "8.4",
+          "wkt_n": 1
+        }
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,483 @@
+{
+  "match_id": "293",
+  "source_id": "1254111",
+  "season": 2021,
+  "round": "League",
+  "match_number": 32,
+  "date": "2021-09-21",
+  "team1": "Rajasthan Royals",
+  "team2": "Punjab Kings",
+  "venue": "Dubai International Cricket Stadium, Dubai",
+  "result_text": "Rajasthan Royals won by 2 runs",
+  "innings": [
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 185,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 9.25,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "E Lewis",
+          "runs": 36,
+          "balls": 21,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 171.4,
+          "out_desc": "c MA Agarwal b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "YBK Jaiswal",
+          "runs": 49,
+          "balls": 36,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 136.1,
+          "out_desc": "c MA Agarwal b Harpreet Brar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 4,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "c KL Rahul b IC Porel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "LS Livingstone",
+          "runs": 25,
+          "balls": 17,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 147.1,
+          "out_desc": "c FA Allen b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Lomror",
+          "runs": 43,
+          "balls": 17,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 252.9,
+          "out_desc": "c AK Markram b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 4,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "c AK Markram b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 2,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 40.0,
+          "out_desc": "b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CH Morris",
+          "runs": 5,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c AK Markram b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "C Sakariya",
+          "runs": 7,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "c & b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kartik Tyagi",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mustafizur Rahman",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 3,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "IC Porel",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Hooda",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 18.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 5,
+          "economy": 8.0,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AU Rashid",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 11.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Harpreet Brar",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 5.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "E Lewis",
+          "runs": 54,
+          "over": "5.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "SV Samson",
+          "runs": 68,
+          "over": "7.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "LS Livingstone",
+          "runs": 116,
+          "over": "11.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "YBK Jaiswal",
+          "runs": 136,
+          "over": "14.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "R Parag",
+          "runs": 166,
+          "over": "16.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "MK Lomror",
+          "runs": 169,
+          "over": "17.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 175,
+          "over": "18.1",
+          "wkt_n": 7
+        },
+        {
+          "name": "CH Morris",
+          "runs": 178,
+          "over": "18.5",
+          "wkt_n": 8
+        },
+        {
+          "name": "C Sakariya",
+          "runs": 185,
+          "over": "19.5",
+          "wkt_n": 9
+        },
+        {
+          "name": "Kartik Tyagi",
+          "runs": 185,
+          "over": "20",
+          "wkt_n": 10
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 183,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 9.15,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 8,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 49,
+          "balls": 33,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 148.5,
+          "out_desc": "c Kartik Tyagi b C Sakariya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 67,
+          "balls": 42,
+          "fours": 7,
+          "sixes": 2,
+          "strike_rate": 159.5,
+          "out_desc": "c LS Livingstone b R Tewatia",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 26,
+          "balls": 20,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 130.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "N Pooran",
+          "runs": 32,
+          "balls": 22,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 145.5,
+          "out_desc": "c SV Samson b Kartik Tyagi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SV Samson b Kartik Tyagi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "FA Allen",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mustafizur Rahman",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "C Sakariya",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 10.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Kartik Tyagi",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 2,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "CH Morris",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 0,
+          "economy": 11.8,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Tewatia",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 7.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "MK Lomror",
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "R Parag",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 16.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "KL Rahul",
+          "runs": 120,
+          "over": "11.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 126,
+          "over": "13",
+          "wkt_n": 2
+        },
+        {
+          "name": "N Pooran",
+          "runs": 183,
+          "over": "19.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 183,
+          "over": "19.5",
+          "wkt_n": 4
+        }
+      ]
+    }
+  ],
+  "error": null
+}

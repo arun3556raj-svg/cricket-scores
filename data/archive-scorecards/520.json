@@ -1,0 +1,449 @@
+{
+  "match_id": "520",
+  "source_id": "1473439",
+  "season": 2025,
+  "round": "League",
+  "match_number": 2,
+  "date": "2025-03-23",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Rajasthan Royals",
+  "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad, Hyderabad",
+  "result_text": "Sunrisers Hyderabad won by 44 runs",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 286,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 14.18,
+        "declared": false
+      },
+      "extras": {
+        "total": 18,
+        "wides": 10,
+        "no_balls": 2,
+        "byes": 5,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 24,
+          "balls": 11,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 218.2,
+          "out_desc": "c YBK Jaiswal b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TM Head",
+          "runs": 67,
+          "balls": 29,
+          "fours": 9,
+          "sixes": 3,
+          "strike_rate": 231.0,
+          "out_desc": "c SO Hetmyer b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 106,
+          "balls": 47,
+          "fours": 11,
+          "sixes": 6,
+          "strike_rate": 225.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 30,
+          "balls": 15,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "c YBK Jaiswal b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 34,
+          "balls": 14,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 242.9,
+          "out_desc": "c R Parag b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 7,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 233.3,
+          "out_desc": "c JC Archer b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Manohar",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c R Parag b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Fazalhaq Farooqi",
+          "maidens": 0,
+          "runs": 49,
+          "wickets": 0,
+          "economy": 16.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 2,
+          "economy": 13.0,
+          "wides": 3,
+          "no_balls": 2,
+          "overs": "4"
+        },
+        {
+          "name": "JC Archer",
+          "maidens": 0,
+          "runs": 75,
+          "wickets": 0,
+          "economy": 18.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4.1"
+        },
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 51,
+          "wickets": 1,
+          "economy": 12.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "N Rana",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 44,
+          "wickets": 3,
+          "economy": 11.0,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 45,
+          "over": "3.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "TM Head",
+          "runs": 130,
+          "over": "9.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 202,
+          "over": "14.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 258,
+          "over": "18.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 279,
+          "over": "19.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "A Manohar",
+          "runs": 279,
+          "over": "19.4",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 242,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 12.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 7,
+        "no_balls": 2,
+        "byes": 4,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 1,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 20.0,
+          "out_desc": "c A Manohar b Simarjeet Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 66,
+          "balls": 36,
+          "fours": 7,
+          "sixes": 4,
+          "strike_rate": 183.3,
+          "out_desc": "c H Klaasen b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "c PJ Cummins b Simarjeet Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 11,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 137.5,
+          "out_desc": "c PJ Cummins b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 70,
+          "balls": 35,
+          "fours": 5,
+          "sixes": 6,
+          "strike_rate": 200.0,
+          "out_desc": "c Ishan Kishan b A Zampa",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 42,
+          "balls": 23,
+          "fours": 1,
+          "sixes": 4,
+          "strike_rate": 182.6,
+          "out_desc": "c A Manohar b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SB Dubey",
+          "runs": 34,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 4,
+          "strike_rate": 340.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JC Archer",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 11.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Simarjeet Singh",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 2,
+          "economy": 15.3,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 60,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Abhishek Sharma",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "A Zampa",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HV Patel",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 2,
+          "economy": 8.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 20,
+          "over": "1.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "R Parag",
+          "runs": 24,
+          "over": "1.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "N Rana",
+          "runs": 50,
+          "over": "4.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "SV Samson",
+          "runs": 161,
+          "over": "14",
+          "wkt_n": 4
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 161,
+          "over": "14.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 241,
+          "over": "19.5",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

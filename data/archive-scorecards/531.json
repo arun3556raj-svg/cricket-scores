@@ -1,0 +1,395 @@
+{
+  "match_id": "531",
+  "source_id": "1473450",
+  "season": 2025,
+  "round": "League",
+  "match_number": 13,
+  "date": "2025-04-01",
+  "team1": "Lucknow Super Giants",
+  "team2": "Punjab Kings",
+  "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow, Lucknow",
+  "result_text": "Punjab Kings won by 8 wkts",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 171,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 8.55,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "AK Markram",
+          "runs": 28,
+          "balls": 18,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 155.6,
+          "out_desc": "b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c M Jansen b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 44,
+          "balls": 30,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 146.7,
+          "out_desc": "c GJ Maxwell b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 2,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 40.0,
+          "out_desc": "c YS Chahal b GJ Maxwell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Badoni",
+          "runs": 41,
+          "balls": 33,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 124.2,
+          "out_desc": "c GJ Maxwell b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Miller",
+          "runs": 19,
+          "balls": 18,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 105.6,
+          "out_desc": "c P Simran Singh b M Jansen",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 27,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 225.0,
+          "out_desc": "c Priyansh Arya b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 3,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Avesh Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 3,
+          "economy": 10.8,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "LH Ferguson",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 8.7,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "GJ Maxwell",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Jansen",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MP Stoinis",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MR Marsh",
+          "runs": 1,
+          "over": "0.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "AK Markram",
+          "runs": 32,
+          "over": "3.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "RR Pant",
+          "runs": 35,
+          "over": "4.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "N Pooran",
+          "runs": 89,
+          "over": "11.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "DA Miller",
+          "runs": 119,
+          "over": "15.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "A Badoni",
+          "runs": 166,
+          "over": "19.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 167,
+          "over": "19.4",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 2,
+      "score": {
+        "runs": 177,
+        "wickets": 2,
+        "overs": "17",
+        "run_rate": 10.84,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 8,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 88.9,
+          "out_desc": "c SN Thakur b DS Rathi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 69,
+          "balls": 34,
+          "fours": 9,
+          "sixes": 3,
+          "strike_rate": 202.9,
+          "out_desc": "c Ravi Bishnoi b DS Rathi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 52,
+          "balls": 30,
+          "fours": 3,
+          "sixes": 4,
+          "strike_rate": 173.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "N Wadhera",
+          "runs": 43,
+          "balls": 25,
+          "fours": 3,
+          "sixes": 4,
+          "strike_rate": 172.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 0,
+          "economy": 13.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "DS Rathi",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 2,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 0,
+          "economy": 14.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Siddharth",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 9.3,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Abdul Samad",
+          "maidens": 0,
+          "runs": 6,
+          "wickets": 0,
+          "economy": 18.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "0.2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 26,
+          "over": "2.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 110,
+          "over": "10.1",
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
+  "error": null
+}

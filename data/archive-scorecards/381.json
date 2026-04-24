@@ -1,0 +1,433 @@
+{
+  "match_id": "381",
+  "source_id": "1359482",
+  "season": 2023,
+  "round": "League",
+  "match_number": 8,
+  "date": "2023-04-05",
+  "team1": "Punjab Kings",
+  "team2": "Rajasthan Royals",
+  "venue": "Barsapara Cricket Stadium, Guwahati, Guwahati",
+  "result_text": "Punjab Kings won by 5 runs",
+  "innings": [
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 197,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 9.77,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 8,
+        "no_balls": 0,
+        "byes": 2,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "P Simran Singh",
+          "runs": 60,
+          "balls": 34,
+          "fours": 7,
+          "sixes": 3,
+          "strike_rate": 176.5,
+          "out_desc": "c JC Buttler b JO Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 86,
+          "balls": 56,
+          "fours": 9,
+          "sixes": 3,
+          "strike_rate": 153.6,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "PBB Rajapaksa",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "retired hurt",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 27,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 168.8,
+          "out_desc": "c R Parag b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sikandar Raza",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 11,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 110.0,
+          "out_desc": "c JC Buttler b JO Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SM Curran",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KM Asif",
+          "maidens": 0,
+          "runs": 53,
+          "wickets": 0,
+          "economy": 12.7,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4.1"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 6.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JO Holder",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 2,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 50,
+          "wickets": 1,
+          "economy": 12.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "P Simran Singh",
+          "runs": 90,
+          "over": "9.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 158,
+          "over": "15.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "Sikandar Raza",
+          "runs": 159,
+          "over": "16.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 196,
+          "over": "19.5",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 192,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 9.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 9,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 11,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 137.5,
+          "out_desc": "c MW Short b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 0,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c S Dhawan b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 19,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 172.7,
+          "out_desc": "c & b NT Ellis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 42,
+          "balls": 25,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 168.0,
+          "out_desc": "c MW Short b NT Ellis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 21,
+          "balls": 26,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 80.8,
+          "out_desc": "b NT Ellis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 20,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 166.7,
+          "out_desc": "c M Shahrukh Khan b NT Ellis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 36,
+          "balls": 18,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 200.0,
+          "out_desc": "run out (M Shahrukh Khan / SM Curran)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 32,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 213.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JO Holder",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 44,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 2,
+          "economy": 11.8,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harpreet Brar",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "NT Ellis",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 4,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RD Chahar",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Sikandar Raza",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 13,
+          "over": "1.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 26,
+          "over": "3.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 57,
+          "over": "5.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "SV Samson",
+          "runs": 91,
+          "over": "11",
+          "wkt_n": 4
+        },
+        {
+          "name": "R Parag",
+          "runs": 121,
+          "over": "14.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 124,
+          "over": "15",
+          "wkt_n": 6
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 186,
+          "over": "19.3",
+          "wkt_n": 7
+        }
+      ]
+    }
+  ],
+  "error": null
+}

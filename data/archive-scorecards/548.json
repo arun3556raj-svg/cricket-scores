@@ -1,0 +1,437 @@
+{
+  "match_id": "548",
+  "source_id": "1473467",
+  "season": 2025,
+  "round": "League",
+  "match_number": 30,
+  "date": "2025-04-14",
+  "team1": "Lucknow Super Giants",
+  "team2": "Chennai Super Kings",
+  "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow, Lucknow",
+  "result_text": "Chennai Super Kings won by 5 wkts",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 166,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 8.3,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 8,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "AK Markram",
+          "runs": 6,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c RA Tripathi b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 30,
+          "balls": 25,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 120.0,
+          "out_desc": "b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 8,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 88.9,
+          "out_desc": "lbw b A Kamboj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 63,
+          "balls": 49,
+          "fours": 4,
+          "sixes": 4,
+          "strike_rate": 128.6,
+          "out_desc": "c MS Dhoni b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Badoni",
+          "runs": 22,
+          "balls": 16,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 137.5,
+          "out_desc": "st MS Dhoni b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 20,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 181.8,
+          "out_desc": "run out (MS Dhoni)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Miller",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 6,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "c SK Rasheed b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Kamboj",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 6.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "J Overton",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 2,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Noor Ahmad",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 3.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Pathirana",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 2,
+          "economy": 11.2,
+          "wides": 7,
+          "no_balls": 1,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AK Markram",
+          "runs": 6,
+          "over": "1",
+          "wkt_n": 1
+        },
+        {
+          "name": "N Pooran",
+          "runs": 23,
+          "over": "4",
+          "wkt_n": 2
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 73,
+          "over": "9.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "A Badoni",
+          "runs": 105,
+          "over": "13.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 158,
+          "over": "19.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "RR Pant",
+          "runs": 158,
+          "over": "19.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 166,
+          "over": "20",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 2,
+      "score": {
+        "runs": 168,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 8.62,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 8,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "SK Rasheed",
+          "runs": 27,
+          "balls": 19,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 142.1,
+          "out_desc": "c N Pooran b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ravindra",
+          "runs": 37,
+          "balls": 22,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 168.2,
+          "out_desc": "lbw b AK Markram",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 9,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 90.0,
+          "out_desc": "c & b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 7,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 63.6,
+          "out_desc": "c AK Markram b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 43,
+          "balls": 36,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 119.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "V Shankar",
+          "runs": 9,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 112.5,
+          "out_desc": "c Avesh Khan b DS Rathi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 26,
+          "balls": 11,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 236.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 56,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 3,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Akash Deep",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 13.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "DS Rathi",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 5.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 9.1,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3.3"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 2,
+          "economy": 6.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AK Markram",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SK Rasheed",
+          "runs": 52,
+          "over": "4.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "R Ravindra",
+          "runs": 74,
+          "over": "8",
+          "wkt_n": 2
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 76,
+          "over": "8.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 96,
+          "over": "12.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "V Shankar",
+          "runs": 111,
+          "over": "15",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

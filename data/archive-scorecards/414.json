@@ -1,0 +1,413 @@
+{
+  "match_id": "414",
+  "source_id": "1359515",
+  "season": 2023,
+  "round": "League",
+  "match_number": 41,
+  "date": "2023-04-30",
+  "team1": "Chennai Super Kings",
+  "team2": "Punjab Kings",
+  "venue": "MA Chidambaram Stadium, Chepauk, Chennai, Chennai",
+  "result_text": "Punjab Kings won by 4 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 200,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 10.0,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 37,
+          "balls": 31,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 119.4,
+          "out_desc": "st JM Sharma b Sikandar Raza",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DP Conway",
+          "runs": 92,
+          "balls": 52,
+          "fours": 16,
+          "sixes": 1,
+          "strike_rate": 176.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "S Dube",
+          "runs": 28,
+          "balls": 17,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 164.7,
+          "out_desc": "c M Shahrukh Khan b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MM Ali",
+          "runs": 10,
+          "balls": 6,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 166.7,
+          "out_desc": "st JM Sharma b RD Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 12,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 120.0,
+          "out_desc": "c LS Livingstone b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 13,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 325.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 1,
+          "economy": 9.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 1,
+          "economy": 11.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RD Chahar",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Sikandar Raza",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 10.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "LS Livingstone",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 16.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 86,
+          "over": "9.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "S Dube",
+          "runs": 130,
+          "over": "14",
+          "wkt_n": 2
+        },
+        {
+          "name": "MM Ali",
+          "runs": 158,
+          "over": "16.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 185,
+          "over": "19.1",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 201,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 10.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 7
+      },
+      "batsmen": [
+        {
+          "name": "P Simran Singh",
+          "runs": 42,
+          "balls": 24,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 175.0,
+          "out_desc": "st MS Dhoni b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 28,
+          "balls": 15,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 186.7,
+          "out_desc": "c M Pathirana b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Atharva Taide",
+          "runs": 13,
+          "balls": 17,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 76.5,
+          "out_desc": "c & b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "LS Livingstone",
+          "runs": 40,
+          "balls": 24,
+          "fours": 1,
+          "sixes": 4,
+          "strike_rate": 166.7,
+          "out_desc": "c RD Gaikwad b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SM Curran",
+          "runs": 29,
+          "balls": 20,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 145.0,
+          "out_desc": "b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 21,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 210.0,
+          "out_desc": "c SK Rasheed b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Sikandar Raza",
+          "runs": 13,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 185.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Akash Singh",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 11.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 49,
+          "wickets": 3,
+          "economy": 12.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 2,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MM Ali",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "M Pathirana",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "S Dhawan",
+          "runs": 50,
+          "over": "4.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 81,
+          "over": "8.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "Atharva Taide",
+          "runs": 94,
+          "over": "10.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "LS Livingstone",
+          "runs": 151,
+          "over": "15.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "SM Curran",
+          "runs": 170,
+          "over": "17.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 186,
+          "over": "18.4",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

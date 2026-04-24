@@ -1,0 +1,372 @@
+{
+  "match_id": "209",
+  "source_id": "1216521",
+  "season": 2020,
+  "round": "League",
+  "match_number": 41,
+  "date": "2020-10-23",
+  "team1": "Chennai Super Kings",
+  "team2": "Mumbai Indians",
+  "venue": "Sharjah Cricket Stadium",
+  "result_text": "Mumbai Indians won by 10 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 114,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 5.7,
+        "declared": false
+      },
+      "extras": {
+        "total": 12,
+        "wides": 8,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 0,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 1,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 14.3,
+          "out_desc": "c Q de Kock b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c Q de Kock b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Jagadeesan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SA Yadav b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 16,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "c Q de Kock b RD Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 7,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "c KH Pandya b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SM Curran",
+          "runs": 52,
+          "balls": 47,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 110.6,
+          "out_desc": "b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DL Chahar",
+          "runs": 0,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "st Q de Kock b RD Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 11,
+          "balls": 20,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 55.0,
+          "out_desc": "c SA Yadav b NM Coulter-Nile",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Imran Tahir",
+          "runs": 13,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 130.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 1,
+          "runs": 18,
+          "wickets": 4,
+          "economy": 4.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 2,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 5.3,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "RD Chahar",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "NM Coulter-Nile",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 6.2,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KA Pollard",
+          "maidens": 0,
+          "runs": 4,
+          "wickets": 0,
+          "economy": 4.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 0,
+          "over": "0.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 3,
+          "over": "1.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "N Jagadeesan",
+          "runs": 3,
+          "over": "1.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 3,
+          "over": "2.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 21,
+          "over": "5.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 30,
+          "over": "6.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "DL Chahar",
+          "runs": 43,
+          "over": "8.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 71,
+          "over": "14.5",
+          "wkt_n": 8
+        },
+        {
+          "name": "SM Curran",
+          "runs": 114,
+          "over": "20",
+          "wkt_n": 9
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 116,
+        "wickets": 0,
+        "overs": "13",
+        "run_rate": 9.41,
+        "declared": false
+      },
+      "extras": {
+        "total": 2,
+        "wides": 0,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Q de Kock",
+          "runs": 46,
+          "balls": 37,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 124.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 68,
+          "balls": 37,
+          "fours": 6,
+          "sixes": 5,
+          "strike_rate": 183.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JR Hazlewood",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Imran Tahir",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 11.1,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2.2"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": []
+    }
+  ],
+  "error": null
+}

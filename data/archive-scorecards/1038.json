@@ -1,0 +1,395 @@
+{
+  "match_id": "1038",
+  "source_id": "734013",
+  "season": 2014,
+  "round": "League",
+  "match_number": 42,
+  "date": "2014-05-18",
+  "team1": "Chennai Super Kings",
+  "team2": "Royal Challengers Bangalore",
+  "venue": "JSCA International Stadium Complex, Ranchi",
+  "result_text": "Royal Challengers Bangalore won by 5 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Royal Challengers Bangalore",
+      "innings_id": 1,
+      "score": {
+        "runs": 138,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 6.9,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "DR Smith",
+          "runs": 9,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 60.0,
+          "out_desc": "c AB de Villiers b VR Aaron",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "BB McCullum",
+          "runs": 19,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 146.2,
+          "out_desc": "c MA Starc b VR Aaron",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 62,
+          "balls": 48,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 129.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "DJ Hussey",
+          "runs": 25,
+          "balls": 29,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 86.2,
+          "out_desc": "c MA Starc b M Muralitharan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 7,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "c CH Gayle b AN Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 10,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 111.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "M Muralitharan",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MA Starc",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "VR Aaron",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 2,
+          "economy": 9.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AN Ahmed",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 4.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "S Rana",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "BB McCullum",
+          "runs": 29,
+          "over": "4.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "DR Smith",
+          "runs": 29,
+          "over": "4.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "DJ Hussey",
+          "runs": 104,
+          "over": "14.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 115,
+          "over": "16.2",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Royal Challengers Bangalore",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 142,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 7.16,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 8
+      },
+      "batsmen": [
+        {
+          "name": "CH Gayle",
+          "runs": 46,
+          "balls": 50,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 92.0,
+          "out_desc": "b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PA Patel",
+          "runs": 10,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 71.4,
+          "out_desc": "c SK Raina b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 27,
+          "balls": 29,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 93.1,
+          "out_desc": "st MS Dhoni b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 28,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 200.0,
+          "out_desc": "c RA Jadeja b DJ Hussey",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Yuvraj Singh",
+          "runs": 13,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 144.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "S Rana",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c BB McCullum b DJ Hussey",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AN Ahmed",
+          "runs": 4,
+          "balls": 1,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 400.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "MM Sharma",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 1,
+          "runs": 16,
+          "wickets": 2,
+          "economy": 4.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "S Badree",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 5.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SK Raina",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Hussey",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 2,
+          "economy": 13.4,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2.5"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PA Patel",
+          "runs": 14,
+          "over": "3.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "V Kohli",
+          "runs": 75,
+          "over": "14.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 110,
+          "over": "17",
+          "wkt_n": 3
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 125,
+          "over": "18",
+          "wkt_n": 4
+        },
+        {
+          "name": "S Rana",
+          "runs": 138,
+          "over": "19.4",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

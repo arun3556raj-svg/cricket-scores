@@ -1,0 +1,403 @@
+{
+  "match_id": "537",
+  "source_id": "1473456",
+  "season": 2025,
+  "round": "League",
+  "match_number": 21,
+  "date": "2025-04-08",
+  "team1": "Lucknow Super Giants",
+  "team2": "Kolkata Knight Riders",
+  "venue": "Eden Gardens, Kolkata, Kolkata",
+  "result_text": "Lucknow Super Giants won by 4 runs",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 1,
+      "score": {
+        "runs": 238,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 11.9,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 8,
+        "no_balls": 0,
+        "byes": 2,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "AK Markram",
+          "runs": 47,
+          "balls": 28,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 167.9,
+          "out_desc": "b Harshit Rana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 81,
+          "balls": 48,
+          "fours": 6,
+          "sixes": 5,
+          "strike_rate": 168.8,
+          "out_desc": "c RK Singh b AD Russell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 87,
+          "balls": 36,
+          "fours": 7,
+          "sixes": 8,
+          "strike_rate": 241.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 6,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "b Harshit Rana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Miller",
+          "runs": 4,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "VG Arora",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 8.8,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SH Johnson",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 0,
+          "economy": 15.3,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "CV Varun",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harshit Rana",
+          "maidens": 0,
+          "runs": 51,
+          "wickets": 2,
+          "economy": 12.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SP Narine",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 12.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AD Russell",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 16.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AK Markram",
+          "runs": 99,
+          "over": "10.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 170,
+          "over": "15.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 221,
+          "over": "18.2",
+          "wkt_n": 3
+        }
+      ]
+    },
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 2,
+      "score": {
+        "runs": 234,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 11.7,
+        "declared": false
+      },
+      "extras": {
+        "total": 22,
+        "wides": 20,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Q de Kock",
+          "runs": 15,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 166.7,
+          "out_desc": "lbw b Akash Deep",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SP Narine",
+          "runs": 30,
+          "balls": 13,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 230.8,
+          "out_desc": "c AK Markram b DS Rathi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 61,
+          "balls": 35,
+          "fours": 8,
+          "sixes": 2,
+          "strike_rate": 174.3,
+          "out_desc": "c N Pooran b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "VR Iyer",
+          "runs": 45,
+          "balls": 29,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 155.2,
+          "out_desc": "c AK Markram b Akash Deep",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ramandeep Singh",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c AK Markram b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Raghuvanshi",
+          "runs": 5,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "c RR Pant b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AD Russell",
+          "runs": 7,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 175.0,
+          "out_desc": "c DA Miller b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RK Singh",
+          "runs": 38,
+          "balls": 15,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 253.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Harshit Rana",
+          "runs": 10,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 111.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Akash Deep",
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 2,
+          "economy": 13.8,
+          "wides": 7,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 2,
+          "economy": 13.0,
+          "wides": 8,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 1,
+          "economy": 11.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DS Rathi",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 8.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 1,
+          "economy": 11.8,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Q de Kock",
+          "runs": 37,
+          "over": "2.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "SP Narine",
+          "runs": 91,
+          "over": "6.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 162,
+          "over": "13",
+          "wkt_n": 3
+        },
+        {
+          "name": "Ramandeep Singh",
+          "runs": 166,
+          "over": "14",
+          "wkt_n": 4
+        },
+        {
+          "name": "A Raghuvanshi",
+          "runs": 173,
+          "over": "15",
+          "wkt_n": 5
+        },
+        {
+          "name": "VR Iyer",
+          "runs": 177,
+          "over": "15.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "AD Russell",
+          "runs": 185,
+          "over": "16.1",
+          "wkt_n": 7
+        }
+      ]
+    }
+  ],
+  "error": null
+}

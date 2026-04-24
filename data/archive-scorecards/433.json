@@ -1,0 +1,471 @@
+{
+  "match_id": "433",
+  "source_id": "1359534",
+  "season": 2023,
+  "round": "League",
+  "match_number": 60,
+  "date": "2023-05-14",
+  "team1": "Royal Challengers Bangalore",
+  "team2": "Rajasthan Royals",
+  "venue": "Sawai Mansingh Stadium, Jaipur, Jaipur",
+  "result_text": "Royal Challengers Bangalore won by 112 runs",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bangalore",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 171,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 8.55,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "V Kohli",
+          "runs": 18,
+          "balls": 19,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 94.7,
+          "out_desc": "c YBK Jaiswal b KM Asif",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 55,
+          "balls": 44,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 125.0,
+          "out_desc": "c YBK Jaiswal b KM Asif",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 54,
+          "balls": 33,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 163.6,
+          "out_desc": "b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Lomror",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c Dhruv Jurel b A Zampa",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b A Zampa",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MG Bracewell",
+          "runs": 9,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Anuj Rawat",
+          "runs": 29,
+          "balls": 11,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 263.6,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Zampa",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 2,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 9.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 8.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KM Asif",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 2,
+          "economy": 10.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Kohli",
+          "runs": 50,
+          "over": "7",
+          "wkt_n": 1
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 119,
+          "over": "14.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "MK Lomror",
+          "runs": 120,
+          "over": "15.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 120,
+          "over": "15.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 137,
+          "over": "17.3",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Royal Challengers Bangalore",
+      "innings_id": 2,
+      "score": {
+        "runs": 59,
+        "wickets": 10,
+        "overs": "11",
+        "run_rate": 5.62,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c V Kohli b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Mohammed Siraj b WD Parnell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 4,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "c Anuj Rawat b WD Parnell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JE Root",
+          "runs": 10,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "lbw b WD Parnell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 4,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c Mohammed Siraj b MG Bracewell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 35,
+          "balls": 19,
+          "fours": 1,
+          "sixes": 4,
+          "strike_rate": 184.2,
+          "out_desc": "c MG Bracewell b GJ Maxwell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 1,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 14.3,
+          "out_desc": "c MK Lomror b MG Bracewell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "run out (Anuj Rawat / Mohammed Siraj)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Zampa",
+          "runs": 2,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sandeep Sharma",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KM Asif",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c V Kohli b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 1,
+          "economy": 5.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "WD Parnell",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 3,
+          "economy": 3.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "MG Bracewell",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 2,
+          "economy": 5.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "KV Sharma",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 2,
+          "economy": 12.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1.3"
+        },
+        {
+          "name": "GJ Maxwell",
+          "maidens": 0,
+          "runs": 3,
+          "wickets": 1,
+          "economy": 3.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 1,
+          "over": "0.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 6,
+          "over": "1.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "SV Samson",
+          "runs": 7,
+          "over": "1.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 20,
+          "over": "4.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "JE Root",
+          "runs": 28,
+          "over": "5.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 31,
+          "over": "7",
+          "wkt_n": 6
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 50,
+          "over": "8",
+          "wkt_n": 7
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 59,
+          "over": "9.5",
+          "wkt_n": 8
+        },
+        {
+          "name": "A Zampa",
+          "runs": 59,
+          "over": "10.1",
+          "wkt_n": 9
+        },
+        {
+          "name": "KM Asif",
+          "runs": 59,
+          "over": "10.3",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

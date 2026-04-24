@@ -1,0 +1,509 @@
+{
+  "match_id": "230",
+  "source_id": "1216542",
+  "season": 2020,
+  "round": "League",
+  "match_number": 22,
+  "date": "2020-10-08",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Kings XI Punjab",
+  "venue": "Dubai International Cricket Stadium",
+  "result_text": "Sunrisers Hyderabad won by 69 runs",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Kings XI Punjab",
+      "innings_id": 1,
+      "score": {
+        "runs": 201,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 10.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 9,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "DA Warner",
+          "runs": 52,
+          "balls": 39,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 133.3,
+          "out_desc": "c GJ Maxwell b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 97,
+          "balls": 55,
+          "fours": 7,
+          "sixes": 6,
+          "strike_rate": 176.4,
+          "out_desc": "lbw b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 8,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 114.3,
+          "out_desc": "c Arshdeep Singh b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c & b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 20,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "PK Garg",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c N Pooran b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 12,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "c GJ Maxwell b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SS Cottrell",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Mujeeb Ur Rahman",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 0,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "GJ Maxwell",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 13.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 3,
+          "economy": 9.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 2,
+          "economy": 8.2,
+          "wides": 3,
+          "no_balls": 1,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "DA Warner",
+          "runs": 160,
+          "over": "15.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 160,
+          "over": "15.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 161,
+          "over": "16.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 173,
+          "over": "17.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "PK Garg",
+          "runs": 175,
+          "over": "18.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 199,
+          "over": "19.5",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Kings XI Punjab",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 132,
+        "wickets": 10,
+        "overs": "17",
+        "run_rate": 7.84,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 11,
+          "balls": 16,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 68.8,
+          "out_desc": "c KS Williamson b Abhishek Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 9,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 11,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 137.5,
+          "out_desc": "c PK Garg b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 77,
+          "balls": 37,
+          "fours": 5,
+          "sixes": 7,
+          "strike_rate": 208.1,
+          "out_desc": "c T Natarajan b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 7,
+          "balls": 12,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 58.3,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mandeep Singh",
+          "runs": 6,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mujeeb Ur Rahman",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c JM Bairstow b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "runs": 6,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 85.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mohammed Shami",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Cottrell",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Arshdeep Singh",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c DA Warner b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 2,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 2,
+          "economy": 6.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3.5"
+        },
+        {
+          "name": "Abhishek Sharma",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 1,
+          "economy": 15.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 1,
+          "runs": 12,
+          "wickets": 3,
+          "economy": 3.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Abdul Samad",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 28.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MA Agarwal",
+          "runs": 11,
+          "over": "1.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 31,
+          "over": "4.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 58,
+          "over": "6.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 105,
+          "over": "11",
+          "wkt_n": 4
+        },
+        {
+          "name": "Mandeep Singh",
+          "runs": 115,
+          "over": "12.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "Mujeeb Ur Rahman",
+          "runs": 126,
+          "over": "13.5",
+          "wkt_n": 6
+        },
+        {
+          "name": "N Pooran",
+          "runs": 126,
+          "over": "14.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "Mohammed Shami",
+          "runs": 126,
+          "over": "15",
+          "wkt_n": 8
+        },
+        {
+          "name": "SS Cottrell",
+          "runs": 132,
+          "over": "16.2",
+          "wkt_n": 9
+        },
+        {
+          "name": "Arshdeep Singh",
+          "runs": 132,
+          "over": "16.5",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

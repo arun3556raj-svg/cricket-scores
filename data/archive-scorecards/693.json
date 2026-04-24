@@ -1,0 +1,419 @@
+{
+  "match_id": "693",
+  "source_id": "392219",
+  "season": 2009,
+  "round": "League",
+  "match_number": 39,
+  "date": "2009-05-10",
+  "team1": "Delhi Daredevils",
+  "team2": "Kolkata Knight Riders",
+  "venue": "New Wanderers Stadium, Johannesburg",
+  "result_text": "Delhi Daredevils won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Delhi Daredevils",
+      "innings_id": 1,
+      "score": {
+        "runs": 123,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 6.15,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 5,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "BB McCullum",
+          "runs": 6,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "lbw b A Nehra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SC Ganguly",
+          "runs": 44,
+          "balls": 44,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 100.0,
+          "out_desc": "c DA Warner b DP Nannes",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "BJ Hodge",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c AB de Villiers b A Nehra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MN van Wyk",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c R Bhatia b DP Nannes",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Yashpal Singh",
+          "runs": 13,
+          "balls": 20,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 65.0,
+          "out_desc": "c R Bhatia b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "WP Saha",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c KD Karthik b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MC Henriques",
+          "runs": 2,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "st KD Karthik b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB Agarkar",
+          "runs": 39,
+          "balls": 29,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 134.5,
+          "out_desc": "c M Manhas b PJ Sangwan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Kartik",
+          "runs": 11,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 110.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "A Nehra",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 2,
+          "economy": 7.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DP Nannes",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 2,
+          "economy": 3.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PJ Sangwan",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 10.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "TM Dilshan",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 4.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Mishra",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 3,
+          "economy": 3.5,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "R Bhatia",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 13.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "BB McCullum",
+          "runs": 7,
+          "over": "0.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "BJ Hodge",
+          "runs": 7,
+          "over": "1",
+          "wkt_n": 2
+        },
+        {
+          "name": "MN van Wyk",
+          "runs": 9,
+          "over": "1.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "Yashpal Singh",
+          "runs": 45,
+          "over": "7.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "WP Saha",
+          "runs": 46,
+          "over": "8",
+          "wkt_n": 5
+        },
+        {
+          "name": "MC Henriques",
+          "runs": 56,
+          "over": "11.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "SC Ganguly",
+          "runs": 88,
+          "over": "16.1",
+          "wkt_n": 7
+        },
+        {
+          "name": "AB Agarkar",
+          "runs": 123,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Daredevils",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 2,
+      "score": {
+        "runs": 125,
+        "wickets": 3,
+        "overs": "18",
+        "run_rate": 7.28,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 2,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "G Gambhir",
+          "runs": 18,
+          "balls": 24,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "c BJ Hodge b MC Henriques",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Warner",
+          "runs": 36,
+          "balls": 23,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 156.5,
+          "out_desc": "c MN van Wyk b I Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 40,
+          "balls": 32,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "TM Dilshan",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c MC Henriques b I Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 17,
+          "balls": 22,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 77.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "I Sharma",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 2,
+          "economy": 5.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MC Henriques",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 8.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AB Agarkar",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 6.3,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SS Sarkar",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 16.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1.1"
+        },
+        {
+          "name": "BJ Hodge",
+          "maidens": 0,
+          "runs": 2,
+          "wickets": 0,
+          "economy": 2.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "M Kartik",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "G Gambhir",
+          "runs": 53,
+          "over": "6.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "DA Warner",
+          "runs": 66,
+          "over": "8.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "TM Dilshan",
+          "runs": 69,
+          "over": "9",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,449 @@
+{
+  "match_id": "961",
+  "source_id": "598038",
+  "season": 2013,
+  "round": "League",
+  "match_number": 42,
+  "date": "2013-04-30",
+  "team1": "Pune Warriors",
+  "team2": "Chennai Super Kings",
+  "venue": "Subrata Roy Sahara Stadium, Pune",
+  "result_text": "Chennai Super Kings won by 37 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Pune Warriors",
+      "innings_id": 1,
+      "score": {
+        "runs": 164,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 8.2,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "MEK Hussey",
+          "runs": 5,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 62.5,
+          "out_desc": "b KW Richardson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "WP Saha",
+          "runs": 13,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 86.7,
+          "out_desc": "lbw b R Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 63,
+          "balls": 50,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 126.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 34,
+          "balls": 31,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 109.7,
+          "out_desc": "c SPD Smith b LJ Wright",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 45,
+          "balls": 16,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 281.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "R Sharma",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "B Kumar",
+          "maidens": 1,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KW Richardson",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AB Dinda",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 0,
+          "economy": 10.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AM Nayar",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 7.7,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "LJ Wright",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MEK Hussey",
+          "runs": 6,
+          "over": "2.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "WP Saha",
+          "runs": 28,
+          "over": "5.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 103,
+          "over": "15.3",
+          "wkt_n": 3
+        }
+      ]
+    },
+    {
+      "bat_team": "Pune Warriors",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 127,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 6.35,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 4,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "RV Uthappa",
+          "runs": 10,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 90.9,
+          "out_desc": "run out (SK Raina)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AJ Finch",
+          "runs": 15,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 187.5,
+          "out_desc": "c MS Dhoni b MM Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TL Suman",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b MM Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Yuvraj Singh",
+          "runs": 5,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "c MS Dhoni b MM Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 35,
+          "balls": 39,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 89.7,
+          "out_desc": "c & b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "LJ Wright",
+          "runs": 2,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "run out (JA Morkel)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AM Nayar",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "run out (JA Morkel / R Ashwin)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KW Richardson",
+          "runs": 26,
+          "balls": 20,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 130.0,
+          "out_desc": "c SK Raina b CH Morris",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Kumar",
+          "runs": 24,
+          "balls": 24,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Sharma",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SK Raina b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB Dinda",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "JA Morkel",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 6.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "MM Sharma",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 3,
+          "economy": 5.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CH Morris",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 4.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AJ Finch",
+          "runs": 26,
+          "over": "2.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "TL Suman",
+          "runs": 26,
+          "over": "3",
+          "wkt_n": 2
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 29,
+          "over": "3.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "Yuvraj Singh",
+          "runs": 43,
+          "over": "4.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "LJ Wright",
+          "runs": 54,
+          "over": "7.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "AM Nayar",
+          "runs": 61,
+          "over": "9.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 92,
+          "over": "14.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "KW Richardson",
+          "runs": 118,
+          "over": "18.4",
+          "wkt_n": 8
+        },
+        {
+          "name": "R Sharma",
+          "runs": 124,
+          "over": "19.3",
+          "wkt_n": 9
+        }
+      ]
+    }
+  ],
+  "error": null
+}

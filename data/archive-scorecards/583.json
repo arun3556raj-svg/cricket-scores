@@ -1,0 +1,509 @@
+{
+  "match_id": "583",
+  "source_id": "1473503",
+  "season": 2025,
+  "round": "League",
+  "match_number": 65,
+  "date": "2025-05-23",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Royal Challengers Bengaluru",
+  "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow, Lucknow",
+  "result_text": "Sunrisers Hyderabad won by 42 runs",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Royal Challengers Bengaluru",
+      "innings_id": 1,
+      "score": {
+        "runs": 231,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 11.55,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 2,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 34,
+          "balls": 16,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 212.5,
+          "out_desc": "c PD Salt b L Ngidi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TM Head",
+          "runs": 17,
+          "balls": 10,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 170.0,
+          "out_desc": "c R Shepherd b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 94,
+          "balls": 48,
+          "fours": 7,
+          "sixes": 5,
+          "strike_rate": 195.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 24,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 184.6,
+          "out_desc": "c R Shepherd b Suyash Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 26,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 288.9,
+          "out_desc": "c B Kumar b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 4,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 57.1,
+          "out_desc": "c KH Pandya b R Shepherd",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Manohar",
+          "runs": 12,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 109.1,
+          "out_desc": "c PD Salt b R Shepherd",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 13,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 216.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Yash Dayal",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 10.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "L Ngidi",
+          "maidens": 0,
+          "runs": 51,
+          "wickets": 1,
+          "economy": 12.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Suyash Sharma",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 1,
+          "economy": 15.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Shepherd",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 2,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 54,
+          "over": "4",
+          "wkt_n": 1
+        },
+        {
+          "name": "TM Head",
+          "runs": 54,
+          "over": "4.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 102,
+          "over": "8.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 145,
+          "over": "11.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 164,
+          "over": "14.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "A Manohar",
+          "runs": 188,
+          "over": "17",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 189,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 9.53,
+        "declared": false
+      },
+      "extras": {
+        "total": 16,
+        "wides": 4,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 11
+      },
+      "batsmen": [
+        {
+          "name": "PD Salt",
+          "runs": 62,
+          "balls": 31,
+          "fours": 4,
+          "sixes": 5,
+          "strike_rate": 200.0,
+          "out_desc": "c HV Patel b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 43,
+          "balls": 25,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 172.0,
+          "out_desc": "c Abhishek Sharma b Harsh Dubey",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 11,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 110.0,
+          "out_desc": "c Ishan Kishan b Nithish Kumar Reddy",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 18,
+          "balls": 16,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 112.5,
+          "out_desc": "run out (E Malinga)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 24,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 160.0,
+          "out_desc": "c A Manohar b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c & b E Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 8,
+          "balls": 6,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "hit wicket b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TH David",
+          "runs": 1,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 20.0,
+          "out_desc": "c H Klaasen b E Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Kumar",
+          "runs": 3,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Yash Dayal",
+          "runs": 3,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c Aniket Verma b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "L Ngidi",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 3,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 1,
+          "economy": 10.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HV Patel",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 10.2,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "3.5"
+        },
+        {
+          "name": "E Malinga",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 2,
+          "economy": 9.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harsh Dubey",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Kohli",
+          "runs": 80,
+          "over": "7",
+          "wkt_n": 1
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 120,
+          "over": "10.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "PD Salt",
+          "runs": 129,
+          "over": "11.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 173,
+          "over": "15.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 174,
+          "over": "16",
+          "wkt_n": 5
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 174,
+          "over": "16.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "TH David",
+          "runs": 179,
+          "over": "17.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "B Kumar",
+          "runs": 186,
+          "over": "18.1",
+          "wkt_n": 8
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 187,
+          "over": "18.4",
+          "wkt_n": 9
+        },
+        {
+          "name": "Yash Dayal",
+          "runs": 189,
+          "over": "19.5",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

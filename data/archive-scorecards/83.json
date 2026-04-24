@@ -1,0 +1,477 @@
+{
+  "match_id": "83",
+  "source_id": "1136584",
+  "season": 2018,
+  "round": "League",
+  "match_number": 24,
+  "date": "2018-04-25",
+  "team1": "Royal Challengers Bangalore",
+  "team2": "Chennai Super Kings",
+  "venue": "M.Chinnaswamy Stadium, Bengaluru",
+  "result_text": "Chennai Super Kings won by 5 wkts",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bangalore",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 205,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 10.25,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 4,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Q de Kock",
+          "runs": 53,
+          "balls": 37,
+          "fours": 1,
+          "sixes": 4,
+          "strike_rate": 143.2,
+          "out_desc": "c & b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 18,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 120.0,
+          "out_desc": "c RA Jadeja b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 68,
+          "balls": 30,
+          "fours": 2,
+          "sixes": 8,
+          "strike_rate": 226.7,
+          "out_desc": "c SW Billings b Imran Tahir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CJ Anderson",
+          "runs": 2,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "c Harbhajan Singh b Imran Tahir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mandeep Singh",
+          "runs": 32,
+          "balls": 17,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 188.2,
+          "out_desc": "c RA Jadeja b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "C de Grandhomme",
+          "runs": 11,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 157.1,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Negi",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 13,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 325.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "UT Yadav",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SW Billings b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mohammed Siraj",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 1,
+          "runs": 46,
+          "wickets": 2,
+          "economy": 11.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harbhajan Singh",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "SR Watson",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Imran Tahir",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 2,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 1,
+          "runs": 33,
+          "wickets": 2,
+          "economy": 8.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Kohli",
+          "runs": 35,
+          "over": "4.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "Q de Kock",
+          "runs": 138,
+          "over": "13.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 142,
+          "over": "14.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "CJ Anderson",
+          "runs": 142,
+          "over": "15",
+          "wkt_n": 4
+        },
+        {
+          "name": "Mandeep Singh",
+          "runs": 191,
+          "over": "19",
+          "wkt_n": 5
+        },
+        {
+          "name": "C de Grandhomme",
+          "runs": 191,
+          "over": "19.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "P Negi",
+          "runs": 192,
+          "over": "19.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "UT Yadav",
+          "runs": 193,
+          "over": "19.3",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Royal Challengers Bangalore",
+      "innings_id": 2,
+      "score": {
+        "runs": 207,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 10.53,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 8,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "SR Watson",
+          "runs": 7,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 175.0,
+          "out_desc": "c Mohammed Siraj b P Negi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 82,
+          "balls": 52,
+          "fours": 3,
+          "sixes": 8,
+          "strike_rate": 157.7,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 11,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 122.2,
+          "out_desc": "c Mandeep Singh b UT Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SW Billings",
+          "runs": 9,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 128.6,
+          "out_desc": "st Q de Kock b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 3,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 60.0,
+          "out_desc": "b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 70,
+          "balls": 34,
+          "fours": 1,
+          "sixes": 7,
+          "strike_rate": 205.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 14,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "P Negi",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "UT Yadav",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Washington Sundar",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "CJ Anderson",
+          "maidens": 0,
+          "runs": 58,
+          "wickets": 0,
+          "economy": 15.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3.4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SR Watson",
+          "runs": 8,
+          "over": "1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SK Raina",
+          "runs": 50,
+          "over": "5.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "SW Billings",
+          "runs": 59,
+          "over": "6.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 74,
+          "over": "9",
+          "wkt_n": 4
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 175,
+          "over": "17.5",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

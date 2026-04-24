@@ -1,0 +1,409 @@
+{
+  "match_id": "559",
+  "source_id": "1473478",
+  "season": 2025,
+  "round": "League",
+  "match_number": 41,
+  "date": "2025-04-23",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Mumbai Indians",
+  "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad, Hyderabad",
+  "result_text": "Mumbai Indians won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 143,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 7.15,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "TM Head",
+          "runs": 0,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Naman Dhir b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 8,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "c V Puthur b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 1,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "c RD Rickelton b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 2,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c MJ Santner b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 71,
+          "balls": 44,
+          "fours": 9,
+          "sixes": 2,
+          "strike_rate": 161.4,
+          "out_desc": "c Tilak Varma b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 12,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 85.7,
+          "out_desc": "c RD Rickelton b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Manohar",
+          "runs": 43,
+          "balls": 37,
+          "fours": 2,
+          "sixes": 3,
+          "strike_rate": 116.2,
+          "out_desc": "hit wicket b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HV Patel",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 2,
+          "economy": 3.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 4,
+          "economy": 6.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MJ Santner",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 4.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 10.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "V Puthur",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "TM Head",
+          "runs": 2,
+          "over": "1.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 9,
+          "over": "2.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 13,
+          "over": "3.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 13,
+          "over": "4.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 35,
+          "over": "8.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 134,
+          "over": "19",
+          "wkt_n": 6
+        },
+        {
+          "name": "A Manohar",
+          "runs": 142,
+          "over": "19.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 143,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 146,
+        "wickets": 3,
+        "overs": "16",
+        "run_rate": 9.32,
+        "declared": false
+      },
+      "extras": {
+        "total": 1,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "RD Rickelton",
+          "runs": 11,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 137.5,
+          "out_desc": "c & b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 70,
+          "balls": 46,
+          "fours": 8,
+          "sixes": 3,
+          "strike_rate": 152.2,
+          "out_desc": "c Abhishek Sharma b E Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "WG Jacks",
+          "runs": 22,
+          "balls": 19,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 115.8,
+          "out_desc": "c A Manohar b Zeeshan Ansari",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 40,
+          "balls": 19,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 210.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 10.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "HV Patel",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "E Malinga",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 11.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Zeeshan Ansari",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Rickelton",
+          "runs": 13,
+          "over": "1.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "WG Jacks",
+          "runs": 77,
+          "over": "9.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 130,
+          "over": "14.4",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

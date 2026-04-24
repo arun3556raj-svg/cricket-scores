@@ -1,0 +1,429 @@
+{
+  "match_id": "291",
+  "source_id": "1254109",
+  "season": 2021,
+  "round": "League",
+  "match_number": 49,
+  "date": "2021-10-03",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Kolkata Knight Riders",
+  "venue": "Dubai International Cricket Stadium, Dubai",
+  "result_text": "Kolkata Knight Riders won by 6 wkts",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 1,
+      "score": {
+        "runs": 115,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 5.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 0,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "JJ Roy",
+          "runs": 10,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 83.3,
+          "out_desc": "c TG Southee b Shivam Mavi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "WP Saha",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b TG Southee",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 26,
+          "balls": 21,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 123.8,
+          "out_desc": "run out (Shakib Al Hasan)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PK Garg",
+          "runs": 21,
+          "balls": 31,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 67.7,
+          "out_desc": "c RA Tripathi b CV Varun",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 6,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 60.0,
+          "out_desc": "st KD Karthik b Shakib Al Hasan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 25,
+          "balls": 18,
+          "fours": 0,
+          "sixes": 3,
+          "strike_rate": 138.9,
+          "out_desc": "c Shubman Gill b TG Southee",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JO Holder",
+          "runs": 2,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 22.2,
+          "out_desc": "c VR Iyer b CV Varun",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 8,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "c VR Iyer b Shivam Mavi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Kumar",
+          "runs": 7,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "S Kaul",
+          "runs": 7,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 140.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TG Southee",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shivam Mavi",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 2,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "CV Varun",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shakib Al Hasan",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SP Narine",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 3.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "WP Saha",
+          "runs": 1,
+          "over": "0.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "JJ Roy",
+          "runs": 16,
+          "over": "3.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 38,
+          "over": "6.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 51,
+          "over": "10.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "PK Garg",
+          "runs": 70,
+          "over": "14.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "JO Holder",
+          "runs": 80,
+          "over": "16.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 95,
+          "over": "17.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 103,
+          "over": "18.2",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 119,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 6.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 2,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Shubman Gill",
+          "runs": 57,
+          "balls": 51,
+          "fours": 10,
+          "sixes": 0,
+          "strike_rate": 111.8,
+          "out_desc": "c JO Holder b S Kaul",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "VR Iyer",
+          "runs": 8,
+          "balls": 14,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 57.1,
+          "out_desc": "c KS Williamson b JO Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 7,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "c Abhishek Sharma b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 25,
+          "balls": 33,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 75.8,
+          "out_desc": "c WP Saha b JO Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 18,
+          "balls": 12,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "EJG Morgan",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JO Holder",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 2,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Umran Malik",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "S Kaul",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 4.6,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "VR Iyer",
+          "runs": 23,
+          "over": "4.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 38,
+          "over": "6.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 93,
+          "over": "16.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "N Rana",
+          "runs": 106,
+          "over": "18",
+          "wkt_n": 4
+        }
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,419 @@
+{
+  "match_id": "582",
+  "source_id": "1473502",
+  "season": 2025,
+  "round": "League",
+  "match_number": 64,
+  "date": "2025-05-22",
+  "team1": "Lucknow Super Giants",
+  "team2": "Gujarat Titans",
+  "venue": "Narendra Modi Stadium, Ahmedabad, Ahmedabad",
+  "result_text": "Lucknow Super Giants won by 33 runs",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 1,
+      "score": {
+        "runs": 235,
+        "wickets": 2,
+        "overs": "20",
+        "run_rate": 11.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 6,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "AK Markram",
+          "runs": 36,
+          "balls": 24,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 150.0,
+          "out_desc": "c M Shahrukh Khan b R Sai Kishore",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 117,
+          "balls": 64,
+          "fours": 10,
+          "sixes": 8,
+          "strike_rate": 182.8,
+          "out_desc": "c SE Rutherford b Arshad Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 56,
+          "balls": 26,
+          "fours": 4,
+          "sixes": 5,
+          "strike_rate": 215.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "RR Pant",
+          "runs": 16,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 266.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 9.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Arshad Khan",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 0,
+          "economy": 11.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 44,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Sai Kishore",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 11.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 18.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AK Markram",
+          "runs": 91,
+          "over": "9.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 212,
+          "over": "18.2",
+          "wkt_n": 2
+        }
+      ]
+    },
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 2,
+      "score": {
+        "runs": 202,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 10.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 21,
+          "balls": 16,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 131.2,
+          "out_desc": "c AK Markram b W O'Rourke",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 35,
+          "balls": 20,
+          "fours": 7,
+          "sixes": 0,
+          "strike_rate": 175.0,
+          "out_desc": "c Abdul Samad b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 33,
+          "balls": 18,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 183.3,
+          "out_desc": "b Akash Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 38,
+          "balls": 22,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 172.7,
+          "out_desc": "c Ravi Bishnoi b W O'Rourke",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 57,
+          "balls": 29,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 196.6,
+          "out_desc": "c Ravi Bishnoi b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c Himmat Singh b W O'Rourke",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Arshad Khan",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c W O'Rourke b Shahbaz Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 4,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "K Rabada",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "b A Badoni",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Sai Kishore",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "b A Badoni",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Akash Singh",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 9.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.1"
+        },
+        {
+          "name": "Akash Deep",
+          "maidens": 0,
+          "runs": 49,
+          "wickets": 0,
+          "economy": 12.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "W O'Rourke",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 3,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 51,
+          "wickets": 2,
+          "economy": 13.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.5"
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 1,
+          "economy": 10.2,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Badoni",
+          "maidens": 0,
+          "runs": 4,
+          "wickets": 2,
+          "economy": 4.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 46,
+          "over": "4.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 85,
+          "over": "8",
+          "wkt_n": 2
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 96,
+          "over": "9.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 182,
+          "over": "16.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 186,
+          "over": "17",
+          "wkt_n": 5
+        },
+        {
+          "name": "Arshad Khan",
+          "runs": 193,
+          "over": "18",
+          "wkt_n": 6
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 197,
+          "over": "18.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "K Rabada",
+          "runs": 200,
+          "over": "19.3",
+          "wkt_n": 8
+        },
+        {
+          "name": "R Sai Kishore",
+          "runs": 202,
+          "over": "20",
+          "wkt_n": 9
+        }
+      ]
+    }
+  ],
+  "error": null
+}
