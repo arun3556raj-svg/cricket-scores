@@ -1,0 +1,557 @@
+{
+  "match_id": "500",
+  "source_id": "1426291",
+  "season": 2024,
+  "round": "League",
+  "match_number": 53,
+  "date": "2024-05-05",
+  "team1": "Chennai Super Kings",
+  "team2": "Punjab Kings",
+  "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala, Dharamsala",
+  "result_text": "Chennai Super Kings won by 28 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 167,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 8.35,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "AM Rahane",
+          "runs": 9,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 128.6,
+          "out_desc": "c K Rabada b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 32,
+          "balls": 21,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 152.4,
+          "out_desc": "c JM Sharma b RD Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 30,
+          "balls": 19,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 157.9,
+          "out_desc": "lbw b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c JM Sharma b RD Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MM Ali",
+          "runs": 17,
+          "balls": 20,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 85.0,
+          "out_desc": "c JM Bairstow b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 43,
+          "balls": 26,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 165.4,
+          "out_desc": "c SM Curran b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MJ Santner",
+          "runs": 11,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c SM Curran b RD Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 17,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 154.5,
+          "out_desc": "b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TU Deshpande",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "RJ Gleeson",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 2,
+          "economy": 10.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harpreet Brar",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 19.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "RD Chahar",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 3,
+          "economy": 5.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HV Patel",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 3,
+          "economy": 6.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AM Rahane",
+          "runs": 12,
+          "over": "1.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 69,
+          "over": "7.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Dube",
+          "runs": 69,
+          "over": "7.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 75,
+          "over": "8.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "MM Ali",
+          "runs": 101,
+          "over": "12.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "MJ Santner",
+          "runs": 122,
+          "over": "16",
+          "wkt_n": 6
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 150,
+          "over": "18.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 150,
+          "over": "18.5",
+          "wkt_n": 8
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 164,
+          "over": "19.4",
+          "wkt_n": 9
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 139,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 6.95,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "P Simran Singh",
+          "runs": 30,
+          "balls": 23,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 130.4,
+          "out_desc": "c Sameer Rizvi b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 7,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Rossouw",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 27,
+          "balls": 20,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 135.0,
+          "out_desc": "c Simarjeet Singh b MJ Santner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SM Curran",
+          "runs": 7,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 63.6,
+          "out_desc": "c MJ Santner b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c MS Dhoni b Simarjeet Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 3,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 30.0,
+          "out_desc": "c Simarjeet Singh b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Harpreet Brar",
+          "runs": 17,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 130.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "HV Patel",
+          "runs": 12,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 92.3,
+          "out_desc": "c Sameer Rizvi b Simarjeet Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RD Chahar",
+          "runs": 16,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 160.0,
+          "out_desc": "b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "K Rabada",
+          "runs": 11,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 110.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "MJ Santner",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 1,
+          "economy": 3.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 2,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RJ Gleeson",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 0,
+          "economy": 10.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 3,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Simarjeet Singh",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 2,
+          "economy": 5.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "JM Bairstow",
+          "runs": 9,
+          "over": "1.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "RR Rossouw",
+          "runs": 9,
+          "over": "2",
+          "wkt_n": 2
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 62,
+          "over": "8",
+          "wkt_n": 3
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 68,
+          "over": "9",
+          "wkt_n": 4
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 69,
+          "over": "9.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "SM Curran",
+          "runs": 77,
+          "over": "12.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 78,
+          "over": "12.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "HV Patel",
+          "runs": 90,
+          "over": "14.4",
+          "wkt_n": 8
+        },
+        {
+          "name": "RD Chahar",
+          "runs": 117,
+          "over": "17.3",
+          "wkt_n": 9
+        }
+      ]
+    }
+  ],
+  "error": null
+}

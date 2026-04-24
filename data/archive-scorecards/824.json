@@ -1,0 +1,455 @@
+{
+  "match_id": "824",
+  "source_id": "501249",
+  "season": 2011,
+  "round": "League",
+  "match_number": 52,
+  "date": "2011-05-09",
+  "team1": "Rajasthan Royals",
+  "team2": "Chennai Super Kings",
+  "venue": "Sawai Mansingh Stadium, Jaipur",
+  "result_text": "Chennai Super Kings won by 63 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 196,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 9.8,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "MEK Hussey",
+          "runs": 46,
+          "balls": 30,
+          "fours": 8,
+          "sixes": 0,
+          "strike_rate": 153.3,
+          "out_desc": "b J Botha",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Vijay",
+          "runs": 53,
+          "balls": 40,
+          "fours": 2,
+          "sixes": 3,
+          "strike_rate": 132.5,
+          "out_desc": "run out (J Botha)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 43,
+          "balls": 27,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 159.3,
+          "out_desc": "b A Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 41,
+          "balls": 19,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 215.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JA Morkel",
+          "runs": 5,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "AL Menaria",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "A Singh",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SR Watson",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 0,
+          "economy": 11.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "J Botha",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 5.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Warne",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Trivedi",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 16.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MEK Hussey",
+          "runs": 77,
+          "over": "9.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "M Vijay",
+          "runs": 135,
+          "over": "14.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "SK Raina",
+          "runs": 179,
+          "over": "18.3",
+          "wkt_n": 3
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 133,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 6.82,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "SR Watson",
+          "runs": 11,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 110.0,
+          "out_desc": "c SB Jakati b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Dravid",
+          "runs": 20,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "c MS Dhoni b DE Bollinger",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 52,
+          "balls": 36,
+          "fours": 7,
+          "sixes": 0,
+          "strike_rate": 144.4,
+          "out_desc": "c SK Raina b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "LRPL Taylor",
+          "runs": 6,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "c WP Saha b JA Morkel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AL Menaria",
+          "runs": 2,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 40.0,
+          "out_desc": "c MS Dhoni b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "J Botha",
+          "runs": 14,
+          "balls": 17,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 82.4,
+          "out_desc": "c & b DE Bollinger",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AS Raut",
+          "runs": 19,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 135.7,
+          "out_desc": "run out (WP Saha / R Ashwin)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DH Yagnik",
+          "runs": 3,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 42.9,
+          "out_desc": "b DE Bollinger",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Singh",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c & b SK Raina",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Trivedi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SK Warne",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c DJ Bravo b SK Raina",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JA Morkel",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "DE Bollinger",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 3,
+          "economy": 5.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 2,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SB Jakati",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Raina",
+          "maidens": 0,
+          "runs": 0,
+          "wickets": 2,
+          "economy": 0.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "0.3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "R Dravid",
+          "runs": 27,
+          "over": "3.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "SR Watson",
+          "runs": 48,
+          "over": "5.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "LRPL Taylor",
+          "runs": 63,
+          "over": "8.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "AL Menaria",
+          "runs": 70,
+          "over": "9.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 105,
+          "over": "14.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "AS Raut",
+          "runs": 129,
+          "over": "17.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "DH Yagnik",
+          "runs": 132,
+          "over": "18.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "J Botha",
+          "runs": 133,
+          "over": "19",
+          "wkt_n": 8
+        },
+        {
+          "name": "A Singh",
+          "runs": 133,
+          "over": "19.1",
+          "wkt_n": 9
+        },
+        {
+          "name": "SK Warne",
+          "runs": 133,
+          "over": "19.3",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

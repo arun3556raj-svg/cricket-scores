@@ -1,0 +1,469 @@
+{
+  "match_id": "919",
+  "source_id": "548380",
+  "season": 2012,
+  "round": "Qualifier 2",
+  "match_number": null,
+  "date": "2012-05-25",
+  "team1": "Delhi Daredevils",
+  "team2": "Chennai Super Kings",
+  "venue": "MA Chidambaram Stadium, Chepauk, Chennai",
+  "result_text": "Chennai Super Kings won by 86 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Delhi Daredevils",
+      "innings_id": 1,
+      "score": {
+        "runs": 222,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 11.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "M Vijay",
+          "runs": 113,
+          "balls": 58,
+          "fours": 15,
+          "sixes": 4,
+          "strike_rate": 194.8,
+          "out_desc": "run out (DA Warner / NV Ojha)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MEK Hussey",
+          "runs": 20,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 90.9,
+          "out_desc": "c NV Ojha b VR Aaron",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 27,
+          "balls": 17,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 158.8,
+          "out_desc": "c & b P Negi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 23,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 230.0,
+          "out_desc": "c P Negi b VR Aaron",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JA Morkel",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c NV Ojha b UT Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 33,
+          "balls": 12,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 275.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Sunny Gupta",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 0,
+          "economy": 15.7,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "UT Yadav",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AD Russell",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "VR Aaron",
+          "maidens": 0,
+          "runs": 63,
+          "wickets": 2,
+          "economy": 15.8,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "P Negi",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 8.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "V Sehwag",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 21.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MEK Hussey",
+          "runs": 68,
+          "over": "8.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SK Raina",
+          "runs": 137,
+          "over": "13.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 173,
+          "over": "16.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "JA Morkel",
+          "runs": 183,
+          "over": "17.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "M Vijay",
+          "runs": 222,
+          "over": "20",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Daredevils",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 136,
+        "wickets": 10,
+        "overs": "17",
+        "run_rate": 8.08,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "DPMD Jayawardene",
+          "runs": 55,
+          "balls": 38,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 144.7,
+          "out_desc": "b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Warner",
+          "runs": 3,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 42.9,
+          "out_desc": "c M Vijay b BW Hilfenhaus",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Sehwag",
+          "runs": 1,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 16.7,
+          "out_desc": "c MEK Hussey b JA Morkel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "LRPL Taylor",
+          "runs": 24,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 171.4,
+          "out_desc": "c SK Raina b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AD Russell",
+          "runs": 16,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 145.5,
+          "out_desc": "c DJ Bravo b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "NV Ojha",
+          "runs": 7,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 140.0,
+          "out_desc": "c M Vijay b SB Jakati",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Y Venugopal Rao",
+          "runs": 10,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 142.9,
+          "out_desc": "run out (DJ Bravo / R Ashwin)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Negi",
+          "runs": 8,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 133.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Sunny Gupta",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "st MS Dhoni b SB Jakati",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "UT Yadav",
+          "runs": 1,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "VR Aaron",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "run out (MS Dhoni)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "BW Hilfenhaus",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 5.7,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JA Morkel",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 1,
+          "economy": 9.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SB Jakati",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 2,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 3,
+          "economy": 6.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3.5"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "DA Warner",
+          "runs": 17,
+          "over": "2.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "V Sehwag",
+          "runs": 22,
+          "over": "3.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "LRPL Taylor",
+          "runs": 74,
+          "over": "8.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "AD Russell",
+          "runs": 106,
+          "over": "11.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "NV Ojha",
+          "runs": 117,
+          "over": "13.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "DPMD Jayawardene",
+          "runs": 127,
+          "over": "14.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "Y Venugopal Rao",
+          "runs": 127,
+          "over": "14.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "Sunny Gupta",
+          "runs": 135,
+          "over": "15.5",
+          "wkt_n": 8
+        },
+        {
+          "name": "UT Yadav",
+          "runs": 136,
+          "over": "16.3",
+          "wkt_n": 9
+        },
+        {
+          "name": "VR Aaron",
+          "runs": 136,
+          "over": "16.5",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

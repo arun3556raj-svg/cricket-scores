@@ -1,0 +1,431 @@
+{
+  "match_id": "590",
+  "source_id": "1473510",
+  "season": 2025,
+  "round": "Qualifier 2",
+  "match_number": null,
+  "date": "2025-06-01",
+  "team1": "Mumbai Indians",
+  "team2": "Punjab Kings",
+  "venue": "Narendra Modi Stadium, Ahmedabad, Ahmedabad",
+  "result_text": "Punjab Kings won by 5 wkts",
+  "innings": [
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 203,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 10.15,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 4,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "RG Sharma",
+          "runs": 8,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 114.3,
+          "out_desc": "c Vijaykumar Vyshak b MP Stoinis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 38,
+          "balls": 24,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 158.3,
+          "out_desc": "c JP Inglis b Vijaykumar Vyshak",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 44,
+          "balls": 27,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 163.0,
+          "out_desc": "c Priyansh Arya b KA Jamieson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 44,
+          "balls": 26,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 169.2,
+          "out_desc": "c N Wadhera b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 15,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 115.4,
+          "out_desc": "c JP Inglis b Azmatullah Omarzai",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 37,
+          "balls": 18,
+          "fours": 7,
+          "sixes": 0,
+          "strike_rate": 205.6,
+          "out_desc": "c MP Stoinis b Azmatullah Omarzai",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Bawa",
+          "runs": 8,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MJ Santner",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 44,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KA Jamieson",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MP Stoinis",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 1,
+          "economy": 14.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "1"
+        },
+        {
+          "name": "Azmatullah Omarzai",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 2,
+          "economy": 10.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Vijaykumar Vyshak",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RG Sharma",
+          "runs": 19,
+          "over": "2.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 70,
+          "over": "7",
+          "wkt_n": 2
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 142,
+          "over": "13.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 142,
+          "over": "14.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 180,
+          "over": "18",
+          "wkt_n": 5
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 197,
+          "over": "19.3",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 2,
+      "score": {
+        "runs": 207,
+        "wickets": 5,
+        "overs": "19",
+        "run_rate": 10.89,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 3,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 20,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "c HH Pandya b Ashwani Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 6,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c RJW Topley b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JP Inglis",
+          "runs": 38,
+          "balls": 21,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 181.0,
+          "out_desc": "c JM Bairstow b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 87,
+          "balls": 40,
+          "fours": 5,
+          "sixes": 8,
+          "strike_rate": 217.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "N Wadhera",
+          "runs": 48,
+          "balls": 29,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 165.5,
+          "out_desc": "c MJ Santner b Ashwani Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "run out (HH Pandya)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RJW Topley",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 13.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Ashwani Kumar",
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 2,
+          "economy": 13.8,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "MJ Santner",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "P Simran Singh",
+          "runs": 13,
+          "over": "2.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "Priyansh Arya",
+          "runs": 55,
+          "over": "5.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "JP Inglis",
+          "runs": 72,
+          "over": "7.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "N Wadhera",
+          "runs": 156,
+          "over": "15.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 169,
+          "over": "16.4",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

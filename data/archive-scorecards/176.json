@@ -1,0 +1,367 @@
+{
+  "match_id": "176",
+  "source_id": "1181764",
+  "season": 2019,
+  "round": "Qualifier 1",
+  "match_number": null,
+  "date": "2019-05-07",
+  "team1": "Chennai Super Kings",
+  "team2": "Mumbai Indians",
+  "venue": "MA Chidambaram Stadium, Chennai",
+  "result_text": "Mumbai Indians won by 6 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 131,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 6.55,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 1,
+        "no_balls": 3,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "F du Plessis",
+          "runs": 6,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 54.5,
+          "out_desc": "c Anmolpreet Singh b RD Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SR Watson",
+          "runs": 10,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 76.9,
+          "out_desc": "c J Yadav b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 5,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 83.3,
+          "out_desc": "c & b J Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Vijay",
+          "runs": 26,
+          "balls": 26,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "st Q de Kock b RD Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 42,
+          "balls": 36,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 116.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 37,
+          "balls": 28,
+          "fours": 0,
+          "sixes": 3,
+          "strike_rate": 132.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SL Malinga",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 8.7,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RD Chahar",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 2,
+          "economy": 3.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "J Yadav",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "F du Plessis",
+          "runs": 6,
+          "over": "2.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SK Raina",
+          "runs": 12,
+          "over": "3.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "SR Watson",
+          "runs": 32,
+          "over": "6",
+          "wkt_n": 3
+        },
+        {
+          "name": "M Vijay",
+          "runs": 65,
+          "over": "12.1",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 132,
+        "wickets": 4,
+        "overs": "19",
+        "run_rate": 7.14,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "RG Sharma",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "lbw b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Q de Kock",
+          "runs": 8,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c F du Plessis b Harbhajan Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 71,
+          "balls": 54,
+          "fours": 10,
+          "sixes": 0,
+          "strike_rate": 131.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 28,
+          "balls": 31,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 90.3,
+          "out_desc": "b Imran Tahir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c & b Imran Tahir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 13,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 118.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 8.6,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.3"
+        },
+        {
+          "name": "Harbhajan Singh",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 6.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 4.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Imran Tahir",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 2,
+          "economy": 8.2,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RG Sharma",
+          "runs": 4,
+          "over": "0.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "Q de Kock",
+          "runs": 21,
+          "over": "3.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 101,
+          "over": "13.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 101,
+          "over": "14",
+          "wkt_n": 4
+        }
+      ]
+    }
+  ],
+  "error": null
+}

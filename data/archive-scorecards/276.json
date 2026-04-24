@@ -1,0 +1,403 @@
+{
+  "match_id": "276",
+  "source_id": "1254094",
+  "season": 2021,
+  "round": "League",
+  "match_number": 53,
+  "date": "2021-10-07",
+  "team1": "Chennai Super Kings",
+  "team2": "Punjab Kings",
+  "venue": "Dubai International Cricket Stadium, Dubai",
+  "result_text": "Punjab Kings won by 6 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 134,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 6.7,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 8,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 12,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 85.7,
+          "out_desc": "c M Shahrukh Khan b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 76,
+          "balls": 55,
+          "fours": 8,
+          "sixes": 2,
+          "strike_rate": 138.2,
+          "out_desc": "c KL Rahul b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MM Ali",
+          "runs": 0,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c KL Rahul b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 2,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c Harpreet Brar b CJ Jordan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 4,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "c Arshdeep Singh b CJ Jordan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 12,
+          "balls": 15,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 15,
+          "balls": 17,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 88.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harpreet Brar",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 5.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 2,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CJ Jordan",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 2,
+          "economy": 6.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 6.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MC Henriques",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 18,
+          "over": "3.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "MM Ali",
+          "runs": 29,
+          "over": "5.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 32,
+          "over": "6.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 42,
+          "over": "8.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 61,
+          "over": "12",
+          "wkt_n": 5
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 128,
+          "over": "19.3",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 139,
+        "wickets": 4,
+        "overs": "13",
+        "run_rate": 10.69,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 98,
+          "balls": 42,
+          "fours": 7,
+          "sixes": 8,
+          "strike_rate": 233.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 12,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "lbw b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Khan",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c F du Plessis b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 8,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 80.0,
+          "out_desc": "c DJ Bravo b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 13,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 162.5,
+          "out_desc": "c MS Dhoni b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MC Henriques",
+          "runs": 3,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JR Hazlewood",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 3,
+          "economy": 9.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 16.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MA Agarwal",
+          "runs": 46,
+          "over": "4.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "SN Khan",
+          "runs": 46,
+          "over": "5",
+          "wkt_n": 2
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 80,
+          "over": "9",
+          "wkt_n": 3
+        },
+        {
+          "name": "AK Markram",
+          "runs": 126,
+          "over": "12.1",
+          "wkt_n": 4
+        }
+      ]
+    }
+  ],
+  "error": null
+}

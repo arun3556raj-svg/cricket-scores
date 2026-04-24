@@ -1,0 +1,469 @@
+{
+  "match_id": "231",
+  "source_id": "1216543",
+  "season": 2020,
+  "round": "League",
+  "match_number": 30,
+  "date": "2020-10-14",
+  "team1": "Delhi Capitals",
+  "team2": "Rajasthan Royals",
+  "venue": "Dubai International Cricket Stadium",
+  "result_text": "Delhi Capitals won by 13 runs",
+  "innings": [
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 161,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 8.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 6,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "PP Shaw",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b JC Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 57,
+          "balls": 32,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 178.1,
+          "out_desc": "c Kartik Tyagi b S Gopal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 2,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 22.2,
+          "out_desc": "c RV Uthappa b JC Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 53,
+          "balls": 42,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 126.2,
+          "out_desc": "c JC Archer b Kartik Tyagi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 18,
+          "balls": 19,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 94.7,
+          "out_desc": "c R Tewatia b JC Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Carey",
+          "runs": 14,
+          "balls": 13,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 107.7,
+          "out_desc": "c JC Archer b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 7,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 175.0,
+          "out_desc": "c Kartik Tyagi b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JC Archer",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 3,
+          "economy": 4.8,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 2,
+          "economy": 10.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Kartik Tyagi",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "BA Stokes",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 2,
+          "overs": "2"
+        },
+        {
+          "name": "S Gopal",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Tewatia",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 7.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PP Shaw",
+          "runs": 0,
+          "over": "0.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 10,
+          "over": "2.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 95,
+          "over": "11.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 132,
+          "over": "16",
+          "wkt_n": 4
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 153,
+          "over": "19",
+          "wkt_n": 5
+        },
+        {
+          "name": "AT Carey",
+          "runs": 157,
+          "over": "19.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "AR Patel",
+          "runs": 161,
+          "over": "20",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 2,
+      "score": {
+        "runs": 148,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 7.4,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 3,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "BA Stokes",
+          "runs": 41,
+          "balls": 35,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 117.1,
+          "out_desc": "c Lalit Yadav b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 22,
+          "balls": 9,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 244.4,
+          "out_desc": "b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 1,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "c & b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 25,
+          "balls": 17,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 147.1,
+          "out_desc": "b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 32,
+          "balls": 27,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 118.5,
+          "out_desc": "b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 14,
+          "balls": 18,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 77.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JC Archer",
+          "runs": 1,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "c AM Rahane b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Gopal",
+          "runs": 6,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "c Lalit Yadav b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 2,
+          "economy": 9.2,
+          "wides": 3,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "A Nortje",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 2,
+          "economy": 8.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 4.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "JC Buttler",
+          "runs": 37,
+          "over": "3",
+          "wkt_n": 1
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 40,
+          "over": "4",
+          "wkt_n": 2
+        },
+        {
+          "name": "BA Stokes",
+          "runs": 86,
+          "over": "10.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "SV Samson",
+          "runs": 97,
+          "over": "11.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "R Parag",
+          "runs": 110,
+          "over": "13.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 135,
+          "over": "17.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "JC Archer",
+          "runs": 138,
+          "over": "18.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "S Gopal",
+          "runs": 148,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

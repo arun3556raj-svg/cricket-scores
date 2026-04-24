@@ -1,0 +1,497 @@
+{
+  "match_id": "308",
+  "source_id": "1304055",
+  "season": 2022,
+  "round": "League",
+  "match_number": 9,
+  "date": "2022-04-02",
+  "team1": "Rajasthan Royals",
+  "team2": "Mumbai Indians",
+  "venue": "Dr DY Patil Sports Academy, Mumbai, Mumbai",
+  "result_text": "Rajasthan Royals won by 23 runs",
+  "innings": [
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 193,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 9.65,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "JC Buttler",
+          "runs": 100,
+          "balls": 68,
+          "fours": 11,
+          "sixes": 5,
+          "strike_rate": 147.1,
+          "out_desc": "b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "YBK Jaiswal",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c TH David b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 7,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c RG Sharma b TS Mills",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 30,
+          "balls": 21,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 142.9,
+          "out_desc": "c Tilak Varma b KA Pollard",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 35,
+          "balls": 14,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 250.0,
+          "out_desc": "c Tilak Varma b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 5,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "c TH David b TS Mills",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (Ishan Kishan / Tilak Varma)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Navdeep Saini",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c Ishan Kishan b TS Mills",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TA Boult",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 3,
+          "economy": 4.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DR Sams",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Basil Thampi",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 26.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "M Ashwin",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 10.7,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "TS Mills",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 3,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KA Pollard",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 1,
+          "economy": 11.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 13,
+          "over": "2.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 48,
+          "over": "6",
+          "wkt_n": 2
+        },
+        {
+          "name": "SV Samson",
+          "runs": 130,
+          "over": "14.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 183,
+          "over": "18.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 184,
+          "over": "18.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 185,
+          "over": "19",
+          "wkt_n": 6
+        },
+        {
+          "name": "Navdeep Saini",
+          "runs": 188,
+          "over": "19.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "R Parag",
+          "runs": 193,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 170,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 8.5,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 8,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Ishan Kishan",
+          "runs": 54,
+          "balls": 42,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 128.6,
+          "out_desc": "c Navdeep Saini b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 10,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "c R Parag b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Anmolpreet Singh",
+          "runs": 5,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "c D Padikkal b Navdeep Saini",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 61,
+          "balls": 33,
+          "fours": 3,
+          "sixes": 5,
+          "strike_rate": 184.8,
+          "out_desc": "b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KA Pollard",
+          "runs": 22,
+          "balls": 23,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 95.7,
+          "out_desc": "c JC Buttler b Navdeep Saini",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TH David",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "lbw b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DR Sams",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c JC Buttler b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Ashwin",
+          "runs": 6,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "run out (SV Samson)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JJ Bumrah",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 1,
+          "economy": 9.2,
+          "wides": 5,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Navdeep Saini",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 2,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Parag",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RG Sharma",
+          "runs": 15,
+          "over": "1.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "Anmolpreet Singh",
+          "runs": 40,
+          "over": "4",
+          "wkt_n": 2
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 121,
+          "over": "13",
+          "wkt_n": 3
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 135,
+          "over": "14.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "TH David",
+          "runs": 136,
+          "over": "15.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "DR Sams",
+          "runs": 136,
+          "over": "15.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "M Ashwin",
+          "runs": 165,
+          "over": "18.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "KA Pollard",
+          "runs": 170,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

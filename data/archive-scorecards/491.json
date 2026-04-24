@@ -1,0 +1,377 @@
+{
+  "match_id": "491",
+  "source_id": "1426282",
+  "season": 2024,
+  "round": "League",
+  "match_number": 44,
+  "date": "2024-04-27",
+  "team1": "Lucknow Super Giants",
+  "team2": "Rajasthan Royals",
+  "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow, Lucknow",
+  "result_text": "Rajasthan Royals won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 196,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 9.8,
+        "declared": false
+      },
+      "extras": {
+        "total": 18,
+        "wides": 15,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Q de Kock",
+          "runs": 8,
+          "balls": 3,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 266.7,
+          "out_desc": "b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 76,
+          "balls": 47,
+          "fours": 8,
+          "sixes": 2,
+          "strike_rate": 161.7,
+          "out_desc": "c TA Boult b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 0,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 50,
+          "balls": 31,
+          "fours": 7,
+          "sixes": 0,
+          "strike_rate": 161.3,
+          "out_desc": "c R Powell b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 11,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c TA Boult b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Badoni",
+          "runs": 18,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 138.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 15,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 136.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 1,
+          "economy": 10.2,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 2,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 0,
+          "economy": 10.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Q de Kock",
+          "runs": 8,
+          "over": "0.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 11,
+          "over": "2",
+          "wkt_n": 2
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 126,
+          "over": "12.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "N Pooran",
+          "runs": 150,
+          "over": "15.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 173,
+          "over": "17.2",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 2,
+      "score": {
+        "runs": 199,
+        "wickets": 3,
+        "overs": "19",
+        "run_rate": 10.47,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 24,
+          "balls": 18,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 133.3,
+          "out_desc": "c Ravi Bishnoi b MP Stoinis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 34,
+          "balls": 18,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 188.9,
+          "out_desc": "b Yash Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 71,
+          "balls": 33,
+          "fours": 7,
+          "sixes": 4,
+          "strike_rate": 215.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Parag",
+          "runs": 14,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 127.3,
+          "out_desc": "c A Badoni b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 52,
+          "balls": 34,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 152.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "MJ Henry",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 10.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Mohsin Khan",
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 0,
+          "economy": 13.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yash Thakur",
+          "maidens": 0,
+          "runs": 50,
+          "wickets": 1,
+          "economy": 12.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MP Stoinis",
+          "maidens": 0,
+          "runs": 3,
+          "wickets": 1,
+          "economy": 3.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Mishra",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 16.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "JC Buttler",
+          "runs": 60,
+          "over": "5.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "YBK Jaiswal",
+          "runs": 60,
+          "over": "6.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "R Parag",
+          "runs": 78,
+          "over": "8.4",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

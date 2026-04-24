@@ -1,0 +1,527 @@
+{
+  "match_id": "245",
+  "source_id": "1254063",
+  "season": 2021,
+  "round": "League",
+  "match_number": 6,
+  "date": "2021-04-14",
+  "team1": "Royal Challengers Bangalore",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "MA Chidambaram Stadium, Chepauk, Chennai, Chennai",
+  "result_text": "Royal Challengers Bangalore won by 6 runs",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bangalore",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 149,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 7.45,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "V Kohli",
+          "runs": 33,
+          "balls": 29,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 113.8,
+          "out_desc": "c V Shankar b JO Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 11,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 84.6,
+          "out_desc": "c S Nadeem b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "runs": 14,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 140.0,
+          "out_desc": "c Rashid Khan b S Nadeem",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 59,
+          "balls": 41,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 143.9,
+          "out_desc": "c WP Saha b JO Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 1,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 20.0,
+          "out_desc": "c DA Warner b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 8,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 72.7,
+          "out_desc": "c MK Pandey b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DT Christian",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c WP Saha b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KA Jamieson",
+          "runs": 12,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "c MK Pandey b JO Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HV Patel",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JO Holder",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 3,
+          "economy": 7.5,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "S Nadeem",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 2,
+          "economy": 4.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "D Padikkal",
+          "runs": 19,
+          "over": "2.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "runs": 47,
+          "over": "6.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "V Kohli",
+          "runs": 91,
+          "over": "12.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 95,
+          "over": "13.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 105,
+          "over": "15.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "DT Christian",
+          "runs": 109,
+          "over": "16.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "KA Jamieson",
+          "runs": 136,
+          "over": "19.1",
+          "wkt_n": 7
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 149,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Royal Challengers Bangalore",
+      "innings_id": 2,
+      "score": {
+        "runs": 143,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 7.15,
+        "declared": false
+      },
+      "extras": {
+        "total": 12,
+        "wides": 4,
+        "no_balls": 2,
+        "byes": 4,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "WP Saha",
+          "runs": 1,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 11.1,
+          "out_desc": "c GJ Maxwell b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Warner",
+          "runs": 54,
+          "balls": 37,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 145.9,
+          "out_desc": "c DT Christian b KA Jamieson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 38,
+          "balls": 39,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 97.4,
+          "out_desc": "c HV Patel b Shahbaz Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 12,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 92.3,
+          "out_desc": "c AB de Villiers b Shahbaz Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c & b Shahbaz Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Shankar",
+          "runs": 3,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 60.0,
+          "out_desc": "c V Kohli b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JO Holder",
+          "runs": 4,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c DT Christian b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 17,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 212.5,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Kumar",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "S Nadeem",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Shahbaz Ahmed b HV Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "T Natarajan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 1,
+          "runs": 25,
+          "wickets": 2,
+          "economy": 6.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KA Jamieson",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Washington Sundar",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 7.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HV Patel",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 2,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 2,
+          "overs": "4"
+        },
+        {
+          "name": "DT Christian",
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 3,
+          "economy": 3.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "WP Saha",
+          "runs": 13,
+          "over": "2.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "DA Warner",
+          "runs": 96,
+          "over": "13.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 115,
+          "over": "16.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 115,
+          "over": "16.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 116,
+          "over": "17",
+          "wkt_n": 5
+        },
+        {
+          "name": "V Shankar",
+          "runs": 123,
+          "over": "18",
+          "wkt_n": 6
+        },
+        {
+          "name": "JO Holder",
+          "runs": 130,
+          "over": "18.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 142,
+          "over": "19.4",
+          "wkt_n": 8
+        },
+        {
+          "name": "S Nadeem",
+          "runs": 142,
+          "over": "19.5",
+          "wkt_n": 9
+        }
+      ]
+    }
+  ],
+  "error": null
+}

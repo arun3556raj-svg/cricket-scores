@@ -1,0 +1,491 @@
+{
+  "match_id": "38",
+  "source_id": "1082629",
+  "season": 2017,
+  "round": "League",
+  "match_number": 39,
+  "date": "2017-05-01",
+  "team1": "Rising Pune Supergiant",
+  "team2": "Gujarat Lions",
+  "venue": "Maharashtra Cricket Association Stadium, Pune",
+  "result_text": "Rising Pune Supergiant won by 5 wkts",
+  "innings": [
+    {
+      "bat_team": "Gujarat Lions",
+      "bowl_team": "Rising Pune Supergiant",
+      "innings_id": 1,
+      "score": {
+        "runs": 161,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 8.12,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "Ishan Kishan",
+          "runs": 31,
+          "balls": 24,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 129.2,
+          "out_desc": "c Washington Sundar b Imran Tahir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "BB McCullum",
+          "runs": 45,
+          "balls": 27,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 166.7,
+          "out_desc": "c AM Rahane b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 8,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (AM Rahane / MS Dhoni)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AJ Finch",
+          "runs": 13,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 216.7,
+          "out_desc": "c & b Imran Tahir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DR Smith",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Imran Tahir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 29,
+          "balls": 26,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 111.5,
+          "out_desc": "run out (MS Dhoni)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 19,
+          "balls": 12,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 158.3,
+          "out_desc": "c JD Unadkat b DT Christian",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JP Faulkner",
+          "runs": 6,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 85.7,
+          "out_desc": "c MK Tiwary b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Sangwan",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c RA Tripathi b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Basil Thampi",
+          "runs": 2,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 40.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ankit Soni",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 3,
+          "economy": 7.6,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.5"
+        },
+        {
+          "name": "Washington Sundar",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "BA Stokes",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Imran Tahir",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 3,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 8.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "DT Christian",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Ishan Kishan",
+          "runs": 55,
+          "over": "6",
+          "wkt_n": 1
+        },
+        {
+          "name": "SK Raina",
+          "runs": 71,
+          "over": "8",
+          "wkt_n": 2
+        },
+        {
+          "name": "AJ Finch",
+          "runs": 94,
+          "over": "9.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "DR Smith",
+          "runs": 94,
+          "over": "10",
+          "wkt_n": 4
+        },
+        {
+          "name": "BB McCullum",
+          "runs": 109,
+          "over": "11.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 135,
+          "over": "15",
+          "wkt_n": 6
+        },
+        {
+          "name": "JP Faulkner",
+          "runs": 146,
+          "over": "17.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "PJ Sangwan",
+          "runs": 148,
+          "over": "17.5",
+          "wkt_n": 8
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 161,
+          "over": "19.4",
+          "wkt_n": 9
+        },
+        {
+          "name": "Ankit Soni",
+          "runs": 161,
+          "over": "19.5",
+          "wkt_n": 10
+        }
+      ]
+    },
+    {
+      "bat_team": "Rising Pune Supergiant",
+      "bowl_team": "Gujarat Lions",
+      "innings_id": 2,
+      "score": {
+        "runs": 167,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 8.42,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "AM Rahane",
+          "runs": 4,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "lbw b PJ Sangwan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 6,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 85.7,
+          "out_desc": "run out (AJ Finch)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "c Ankit Soni b PJ Sangwan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Tiwary",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b Basil Thampi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "BA Stokes",
+          "runs": 103,
+          "balls": 63,
+          "fours": 7,
+          "sixes": 6,
+          "strike_rate": 163.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 26,
+          "balls": 33,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 78.8,
+          "out_desc": "c BB McCullum b Basil Thampi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DT Christian",
+          "runs": 17,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 212.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "PJ Sangwan",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 2,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Basil Thampi",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 2,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JP Faulkner",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 10.6,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2.5"
+        },
+        {
+          "name": "Ankit Soni",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 4.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "DR Smith",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 8.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AM Rahane",
+          "runs": 4,
+          "over": "0.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 8,
+          "over": "1",
+          "wkt_n": 2
+        },
+        {
+          "name": "MK Tiwary",
+          "runs": 10,
+          "over": "1.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 42,
+          "over": "5.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 118,
+          "over": "16.1",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,439 @@
+{
+  "match_id": "440",
+  "source_id": "1359541",
+  "season": 2023,
+  "round": "League",
+  "match_number": 67,
+  "date": "2023-05-20",
+  "team1": "Chennai Super Kings",
+  "team2": "Delhi Capitals",
+  "venue": "Arun Jaitley Stadium, Delhi, Delhi",
+  "result_text": "Chennai Super Kings won by 77 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 1,
+      "score": {
+        "runs": 223,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 11.15,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 7,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 79,
+          "balls": 50,
+          "fours": 3,
+          "sixes": 7,
+          "strike_rate": 158.0,
+          "out_desc": "c RR Rossouw b C Sakariya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DP Conway",
+          "runs": 87,
+          "balls": 51,
+          "fours": 11,
+          "sixes": 3,
+          "strike_rate": 170.6,
+          "out_desc": "c Aman Hakim Khan b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 22,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 3,
+          "strike_rate": 244.4,
+          "out_desc": "c Lalit Yadav b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 5,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 166.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 20,
+          "balls": 7,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 285.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 1,
+          "economy": 11.2,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Lalit Yadav",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 16.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 10.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "A Nortje",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 10.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "C Sakariya",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 3,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 11.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 141,
+          "over": "14.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "S Dube",
+          "runs": 195,
+          "over": "18",
+          "wkt_n": 2
+        },
+        {
+          "name": "DP Conway",
+          "runs": 195,
+          "over": "18.2",
+          "wkt_n": 3
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 146,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 7.3,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 8,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "PP Shaw",
+          "runs": 5,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 71.4,
+          "out_desc": "c AT Rayudu b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Warner",
+          "runs": 86,
+          "balls": 58,
+          "fours": 7,
+          "sixes": 5,
+          "strike_rate": 148.3,
+          "out_desc": "c RD Gaikwad b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PD Salt",
+          "runs": 3,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c AM Rahane b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Rossouw",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "YV Dhull",
+          "runs": 13,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 86.7,
+          "out_desc": "c TU Deshpande b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 15,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 187.5,
+          "out_desc": "c RD Gaikwad b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Aman Hakim Khan",
+          "runs": 7,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 77.8,
+          "out_desc": "c MM Ali b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Lalit Yadav",
+          "runs": 6,
+          "balls": 12,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c MM Ali b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Nortje",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "C Sakariya",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 3,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 1,
+          "runs": 23,
+          "wickets": 2,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 50,
+          "wickets": 1,
+          "economy": 12.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Pathirana",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 5.5,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PP Shaw",
+          "runs": 5,
+          "over": "1.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "PD Salt",
+          "runs": 26,
+          "over": "4.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "RR Rossouw",
+          "runs": 26,
+          "over": "4.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "YV Dhull",
+          "runs": 75,
+          "over": "10.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "AR Patel",
+          "runs": 109,
+          "over": "13.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "Aman Hakim Khan",
+          "runs": 131,
+          "over": "16.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "DA Warner",
+          "runs": 144,
+          "over": "18.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "Lalit Yadav",
+          "runs": 146,
+          "over": "19.3",
+          "wkt_n": 8
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 146,
+          "over": "19.4",
+          "wkt_n": 9
+        }
+      ]
+    }
+  ],
+  "error": null
+}

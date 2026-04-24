@@ -1,0 +1,431 @@
+{
+  "match_id": "259",
+  "source_id": "1254077",
+  "season": 2021,
+  "round": "League",
+  "match_number": 20,
+  "date": "2021-04-25",
+  "team1": "Delhi Capitals",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "MA Chidambaram Stadium, Chepauk, Chennai, Chennai",
+  "result_text": "No result",
+  "innings": [
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 159,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 7.95,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 2,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "PP Shaw",
+          "runs": 53,
+          "balls": 39,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 135.9,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 28,
+          "balls": 26,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 107.7,
+          "out_desc": "b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 37,
+          "balls": 26,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 142.3,
+          "out_desc": "c J Suchith b S Kaul",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 34,
+          "balls": 25,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 136.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c KS Williamson b S Kaul",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Abhishek Sharma",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "S Kaul",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 2,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "J Suchith",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "V Shankar",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 6.3,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "S Dhawan",
+          "runs": 81,
+          "over": "10.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "PP Shaw",
+          "runs": 84,
+          "over": "11.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "RR Pant",
+          "runs": 142,
+          "over": "18.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 145,
+          "over": "19",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 2,
+      "score": {
+        "runs": 159,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 7.95,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 2,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "DA Warner",
+          "runs": 6,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 38,
+          "balls": 18,
+          "fours": 3,
+          "sixes": 4,
+          "strike_rate": 211.1,
+          "out_desc": "c S Dhawan b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 66,
+          "balls": 51,
+          "fours": 8,
+          "sixes": 0,
+          "strike_rate": 129.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Virat Singh",
+          "runs": 4,
+          "balls": 14,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 28.6,
+          "out_desc": "c MP Stoinis b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 9,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "st RR Pant b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 5,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 83.3,
+          "out_desc": "lbw b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Shankar",
+          "runs": 8,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 114.3,
+          "out_desc": "b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "J Suchith",
+          "runs": 14,
+          "balls": 6,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 233.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 8.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MP Stoinis",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 3,
+          "economy": 8.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Mishra",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "DA Warner",
+          "runs": 28,
+          "over": "3.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 56,
+          "over": "5.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "Virat Singh",
+          "runs": 84,
+          "over": "11.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 104,
+          "over": "14.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 117,
+          "over": "16.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 117,
+          "over": "16.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "V Shankar",
+          "runs": 136,
+          "over": "18.3",
+          "wkt_n": 7
+        }
+      ]
+    }
+  ],
+  "error": null
+}

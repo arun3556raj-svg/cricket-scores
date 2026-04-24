@@ -1,0 +1,395 @@
+{
+  "match_id": "268",
+  "source_id": "1254086",
+  "season": 2021,
+  "round": "League",
+  "match_number": 29,
+  "date": "2021-05-02",
+  "team1": "Punjab Kings",
+  "team2": "Delhi Capitals",
+  "venue": "Narendra Modi Stadium, Ahmedabad, Ahmedabad",
+  "result_text": "Delhi Capitals won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 1,
+      "score": {
+        "runs": 166,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 8.3,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "P Simran Singh",
+          "runs": 12,
+          "balls": 16,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 75.0,
+          "out_desc": "c SPD Smith b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 99,
+          "balls": 58,
+          "fours": 8,
+          "sixes": 4,
+          "strike_rate": 170.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 13,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 144.4,
+          "out_desc": "b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Malan",
+          "runs": 26,
+          "balls": 26,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 4,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "c SO Hetmyer b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CJ Jordan",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c Lalit Yadav b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Harpreet Brar",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "I Sharma",
+          "maidens": 1,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 9.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MP Stoinis",
+          "maidens": 0,
+          "runs": 6,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 3,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Lalit Yadav",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "P Simran Singh",
+          "runs": 17,
+          "over": "3.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 35,
+          "over": "5.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "DJ Malan",
+          "runs": 87,
+          "over": "13.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 88,
+          "over": "13.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 129,
+          "over": "17.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "CJ Jordan",
+          "runs": 143,
+          "over": "19",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 167,
+        "wickets": 3,
+        "overs": "18",
+        "run_rate": 9.45,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "PP Shaw",
+          "runs": 39,
+          "balls": 22,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 177.3,
+          "out_desc": "b Harpreet Brar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 69,
+          "balls": 47,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 146.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 24,
+          "balls": 22,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 109.1,
+          "out_desc": "c DJ Malan b RP Meredith",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 14,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 127.3,
+          "out_desc": "c MA Agarwal b CJ Jordan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 16,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 400.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "RP Meredith",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "3.4"
+        },
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 12.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CJ Jordan",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Harpreet Brar",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 6.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "DJ Hooda",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PP Shaw",
+          "runs": 63,
+          "over": "6.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 111,
+          "over": "13",
+          "wkt_n": 2
+        },
+        {
+          "name": "RR Pant",
+          "runs": 147,
+          "over": "16.3",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

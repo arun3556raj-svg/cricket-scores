@@ -1,0 +1,238 @@
+{
+  "match_id": "418",
+  "source_id": "1359519",
+  "season": 2023,
+  "round": "League",
+  "match_number": 45,
+  "date": "2023-05-03",
+  "team1": "Lucknow Super Giants",
+  "team2": "Chennai Super Kings",
+  "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow, Lucknow",
+  "result_text": "No result",
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 125,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 6.47,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "M Vohra",
+          "runs": 10,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 90.9,
+          "out_desc": "b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KR Mayers",
+          "runs": 14,
+          "balls": 17,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 82.4,
+          "out_desc": "c RD Gaikwad b MM Ali",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Sharma",
+          "runs": 9,
+          "balls": 16,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 56.2,
+          "out_desc": "c & b MM Ali",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c AM Rahane b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 6,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 20,
+          "balls": 31,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 64.5,
+          "out_desc": "c MM Ali b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Badoni",
+          "runs": 59,
+          "balls": 33,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 178.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "K Gowtham",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c AM Rahane b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 0,
+          "economy": 10.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 1,
+          "wickets": 0,
+          "economy": 1.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "MM Ali",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 2,
+          "economy": 3.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 2,
+          "economy": 9.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 1,
+          "economy": 3.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Pathirana",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 6.6,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "3.2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "KR Mayers",
+          "runs": 18,
+          "over": "3.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "M Vohra",
+          "runs": 27,
+          "over": "5.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 27,
+          "over": "5.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 34,
+          "over": "6.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "KS Sharma",
+          "runs": 44,
+          "over": "9.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "N Pooran",
+          "runs": 103,
+          "over": "17.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "K Gowtham",
+          "runs": 125,
+          "over": "19.2",
+          "wkt_n": 7
+        }
+      ]
+    }
+  ],
+  "error": null
+}

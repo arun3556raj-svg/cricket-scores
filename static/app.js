@@ -7,6 +7,7 @@ const PITCH_CONFIG = window.PITCH_CONFIG || {};
 const IS_STATIC_MODE = PITCH_CONFIG.mode === 'static';
 const DATA_BASE_PATH = (PITCH_CONFIG.dataBasePath || './data').replace(/\/+$/, '');
 const SCORECARD_BASE_PATH = (PITCH_CONFIG.scorecardBasePath || `${DATA_BASE_PATH}/scorecards`).replace(/\/+$/, '');
+const ARCHIVE_SCORECARD_BASE_PATH = (PITCH_CONFIG.archiveScorecardBasePath || `${DATA_BASE_PATH}/archive-scorecards`).replace(/\/+$/, '');
 
 function joinPath(base, leaf) {
   return `${base.replace(/\/+$/, '')}/${String(leaf).replace(/^\/+/, '')}`;
@@ -26,6 +27,10 @@ function getScheduleUrl(forceRefresh = false) {
 
 function getArchiveUrl() {
   return joinPath(DATA_BASE_PATH, 'archive.json');
+}
+
+function getArchiveScorecardUrl(matchId) {
+  return joinPath(ARCHIVE_SCORECARD_BASE_PATH, `${matchId}.json`);
 }
 
 function getScorecardUrl(matchId) {
@@ -520,10 +525,21 @@ function renderScorecard(data) {
   }
 
   const html = `
+    ${renderScorecardSummary(data)}
     ${renderInningsSwitcher(innings)}
     ${renderInnings(innings[drawerSelectedInningsIndex])}`;
 
   $('drawerBody').innerHTML = html;
+}
+
+function renderScorecardSummary(data) {
+  if (!data.result_text && !data.date && !data.venue) return '';
+  const meta = [data.date, data.venue].filter(Boolean).map(item => `<span>${esc(item)}</span>`).join('');
+  return `
+    <div class="scorecard-summary">
+      ${meta ? `<div class="scorecard-summary-meta">${meta}</div>` : ''}
+      ${data.result_text ? `<div class="scorecard-summary-result">${esc(data.result_text)}</div>` : ''}
+    </div>`;
 }
 
 function hasValidDrawerInningsSelection(innings) {
@@ -818,6 +834,7 @@ function archiveMatchRow(match) {
       <div class="archive-scoreboard">${scoreRows}</div>
       <div class="sch-footer">
         <span class="sch-result">${esc(match.result_text)}</span>
+        <span class="archive-card-action">Full scorecard</span>
         ${match.venue ? `<span class="sch-venue">${esc(match.venue)}</span>` : ''}
       </div>
     </div>`;
@@ -921,7 +938,7 @@ async function loadArchive() {
   }
 }
 
-function openArchiveScoreboard(el) {
+async function openArchiveScoreboard(el) {
   const raw = el.getAttribute('data-match');
   if (!raw) return;
   const match = JSON.parse(decodeURIComponent(raw));
@@ -934,10 +951,31 @@ function openArchiveScoreboard(el) {
   $('drawerTeams').textContent = `${match.team1} vs ${match.team2}`;
   $('drawerMeta').textContent = `${match.season} · ${match.round}${match.match_number ? ' · Match ' + match.match_number : ''}`;
   $('drawerLiveBar').style.display = 'none';
-  $('drawerBody').innerHTML = renderArchiveScoreboard(match);
+  $('drawerBody').innerHTML = `
+    <div class="sc-loading">
+      <div class="sc-spin"></div>
+      <span>Loading archive scorecard...</span>
+    </div>`;
   $('drawerBackdrop').classList.add('open');
   $('drawer').classList.add('open');
   document.body.style.overflow = 'hidden';
+  stopScRefresh();
+
+  try {
+    const res = await fetchJson(getArchiveScorecardUrl(match.id));
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (!drawerOpen || drawerMatchId !== match.id) return;
+    renderScorecard(data);
+  } catch (err) {
+    if (!drawerOpen || drawerMatchId !== match.id) return;
+    $('drawerBody').innerHTML = `
+      ${renderArchiveScoreboard(match)}
+      <div class="sc-empty archive-scorecard-fallback">
+        Full scorecard is not available yet.<br>
+        <span style="font-size:12px;color:var(--t4)">Showing the match summary instead. ${esc(err.message)}</span>
+      </div>`;
+  }
 }
 
 function renderArchiveScoreboard(match) {

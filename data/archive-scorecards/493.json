@@ -1,0 +1,455 @@
+{
+  "match_id": "493",
+  "source_id": "1426284",
+  "season": 2024,
+  "round": "League",
+  "match_number": 46,
+  "date": "2024-04-28",
+  "team1": "Chennai Super Kings",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "MA Chidambaram Stadium, Chepauk, Chennai, Chennai",
+  "result_text": "Chennai Super Kings won by 78 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 212,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 10.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "AM Rahane",
+          "runs": 9,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "c Shahbaz Ahmed b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 98,
+          "balls": 54,
+          "fours": 10,
+          "sixes": 3,
+          "strike_rate": 181.5,
+          "out_desc": "c Nithish Kumar Reddy b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 52,
+          "balls": 32,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 162.5,
+          "out_desc": "c Nithish Kumar Reddy b JD Unadkat",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 39,
+          "balls": 20,
+          "fours": 1,
+          "sixes": 4,
+          "strike_rate": 195.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 5,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 250.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 10.8,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 49,
+          "wickets": 0,
+          "economy": 12.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AM Rahane",
+          "runs": 19,
+          "over": "2.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 126,
+          "over": "13.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 200,
+          "over": "19.2",
+          "wkt_n": 3
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 134,
+        "wickets": 10,
+        "overs": "19",
+        "run_rate": 7.12,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 2,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "TM Head",
+          "runs": 13,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 185.7,
+          "out_desc": "c DJ Mitchell b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 15,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 166.7,
+          "out_desc": "c DJ Mitchell b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Anmolpreet Singh",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c MM Ali b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 32,
+          "balls": 25,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 128.0,
+          "out_desc": "b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 15,
+          "balls": 15,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c MS Dhoni b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 20,
+          "balls": 21,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 95.2,
+          "out_desc": "c DJ Mitchell b M Pathirana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 19,
+          "balls": 18,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 105.6,
+          "out_desc": "c Sameer Rizvi b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "runs": 7,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 140.0,
+          "out_desc": "c DJ Mitchell b Mustafizur Rahman",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 5,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 71.4,
+          "out_desc": "c DJ Mitchell b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Kumar",
+          "runs": 4,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JD Unadkat",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c MM Ali b Mustafizur Rahman",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 4,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Mustafizur Rahman",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 2,
+          "economy": 6.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2.5"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "M Pathirana",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 2,
+          "economy": 8.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "TM Head",
+          "runs": 21,
+          "over": "1.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "Anmolpreet Singh",
+          "runs": 21,
+          "over": "2",
+          "wkt_n": 2
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 40,
+          "over": "3.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 72,
+          "over": "8.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "AK Markram",
+          "runs": 85,
+          "over": "10.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 117,
+          "over": "15.5",
+          "wkt_n": 6
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 119,
+          "over": "16.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 124,
+          "over": "17.3",
+          "wkt_n": 8
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "runs": 132,
+          "over": "18.2",
+          "wkt_n": 9
+        },
+        {
+          "name": "JD Unadkat",
+          "runs": 134,
+          "over": "18.5",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

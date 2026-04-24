@@ -1,0 +1,473 @@
+{
+  "match_id": "527",
+  "source_id": "1473446",
+  "season": 2025,
+  "round": "League",
+  "match_number": 9,
+  "date": "2025-03-29",
+  "team1": "Gujarat Titans",
+  "team2": "Mumbai Indians",
+  "venue": "Narendra Modi Stadium, Ahmedabad, Ahmedabad",
+  "result_text": "Gujarat Titans won by 36 runs",
+  "innings": [
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 196,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 9.8,
+        "declared": false
+      },
+      "extras": {
+        "total": 15,
+        "wides": 14,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 63,
+          "balls": 41,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 153.7,
+          "out_desc": "lbw b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 38,
+          "balls": 27,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 140.7,
+          "out_desc": "c Naman Dhir b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 39,
+          "balls": 24,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 162.5,
+          "out_desc": "c RD Rickelton b Mujeeb Ur Rahman",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 9,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 128.6,
+          "out_desc": "c Tilak Varma b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 18,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 163.6,
+          "out_desc": "c MJ Santner b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "run out (HH Pandya)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 6,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 150.0,
+          "out_desc": "c HH Pandya b PVSN Raju",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "K Rabada",
+          "runs": 7,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 140.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Sai Kishore",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (RD Rickelton)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mujeeb Ur Rahman",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 1,
+          "economy": 14.0,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 2,
+          "economy": 7.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MJ Santner",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "PVSN Raju",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 1,
+          "economy": 13.3,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Shubman Gill",
+          "runs": 78,
+          "over": "8.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 129,
+          "over": "13.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 146,
+          "over": "15.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 179,
+          "over": "18",
+          "wkt_n": 4
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 179,
+          "over": "18.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 179,
+          "over": "18.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 194,
+          "over": "19.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "R Sai Kishore",
+          "runs": 196,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 2,
+      "score": {
+        "runs": 160,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 8.0,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "RG Sharma",
+          "runs": 8,
+          "balls": 4,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RD Rickelton",
+          "runs": 6,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 39,
+          "balls": 36,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 108.3,
+          "out_desc": "c R Tewatia b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 48,
+          "balls": 28,
+          "fours": 1,
+          "sixes": 4,
+          "strike_rate": 171.4,
+          "out_desc": "c Shubman Gill b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Minz",
+          "runs": 3,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c I Sharma b R Sai Kishore",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 11,
+          "balls": 17,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 64.7,
+          "out_desc": "c Mohammed Siraj b K Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 18,
+          "balls": 11,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 163.6,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MJ Santner",
+          "runs": 18,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 2,
+          "economy": 8.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "I Sharma",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 5.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "R Sai Kishore",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 1,
+          "economy": 9.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 2,
+          "economy": 4.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RG Sharma",
+          "runs": 8,
+          "over": "0.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "RD Rickelton",
+          "runs": 35,
+          "over": "4.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 97,
+          "over": "11.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "R Minz",
+          "runs": 108,
+          "over": "13",
+          "wkt_n": 4
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 120,
+          "over": "16",
+          "wkt_n": 5
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 124,
+          "over": "17",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

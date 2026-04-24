@@ -1,0 +1,509 @@
+{
+  "match_id": "503",
+  "source_id": "1426294",
+  "season": 2024,
+  "round": "League",
+  "match_number": 56,
+  "date": "2024-05-07",
+  "team1": "Delhi Capitals",
+  "team2": "Rajasthan Royals",
+  "venue": "Arun Jaitley Stadium, Delhi, Delhi",
+  "result_text": "Delhi Capitals won by 20 runs",
+  "innings": [
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 221,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 11.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 1,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "J Fraser-McGurk",
+          "runs": 50,
+          "balls": 20,
+          "fours": 7,
+          "sixes": 3,
+          "strike_rate": 250.0,
+          "out_desc": "c D Ferreira b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 65,
+          "balls": 36,
+          "fours": 7,
+          "sixes": 3,
+          "strike_rate": 180.6,
+          "out_desc": "c Sandeep Sharma b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SD Hope",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (Sandeep Sharma)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 15,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 150.0,
+          "out_desc": "c R Parag b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 15,
+          "balls": 13,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 115.4,
+          "out_desc": "c TA Boult b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 41,
+          "balls": 20,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 205.0,
+          "out_desc": "lbw b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Gulbadin Naib",
+          "runs": 19,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 126.7,
+          "out_desc": "c R Ashwin b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rasikh Salam",
+          "runs": 9,
+          "balls": 3,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 300.0,
+          "out_desc": "run out (SV Samson / SB Dubey)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 5,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 250.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 0,
+          "economy": 21.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 3,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Parag",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "J Fraser-McGurk",
+          "runs": 60,
+          "over": "4.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "SD Hope",
+          "runs": 68,
+          "over": "5.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "AR Patel",
+          "runs": 110,
+          "over": "9.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 144,
+          "over": "12.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "RR Pant",
+          "runs": 150,
+          "over": "13.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "Gulbadin Naib",
+          "runs": 195,
+          "over": "18.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 215,
+          "over": "19.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "Rasikh Salam",
+          "runs": 221,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 2,
+      "score": {
+        "runs": 201,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 10.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 15,
+        "wides": 10,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "c AR Patel b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 19,
+          "balls": 17,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 111.8,
+          "out_desc": "b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 86,
+          "balls": 45,
+          "fours": 8,
+          "sixes": 6,
+          "strike_rate": 191.1,
+          "out_desc": "c SD Hope b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 27,
+          "balls": 22,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 122.7,
+          "out_desc": "b Rasikh Salam",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SB Dubey",
+          "runs": 25,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 208.3,
+          "out_desc": "c T Stubbs b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Powell",
+          "runs": 13,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 130.0,
+          "out_desc": "b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Ferreira",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "lbw b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c SD Hope b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TA Boult",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Avesh Khan",
+          "runs": 7,
+          "balls": 3,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 233.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 2,
+          "economy": 11.8,
+          "wides": 7,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "I Sharma",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 11.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Mukesh Kumar",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 2,
+          "economy": 10.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 2,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Rasikh Salam",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 4,
+          "over": "0.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 67,
+          "over": "5.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "R Parag",
+          "runs": 103,
+          "over": "11",
+          "wkt_n": 3
+        },
+        {
+          "name": "SV Samson",
+          "runs": 162,
+          "over": "15.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "SB Dubey",
+          "runs": 180,
+          "over": "16.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "D Ferreira",
+          "runs": 181,
+          "over": "17.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 185,
+          "over": "18",
+          "wkt_n": 7
+        },
+        {
+          "name": "R Powell",
+          "runs": 194,
+          "over": "19.2",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

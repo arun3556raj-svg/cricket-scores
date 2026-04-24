@@ -1,0 +1,377 @@
+{
+  "match_id": "221",
+  "source_id": "1216533",
+  "season": 2020,
+  "round": "League",
+  "match_number": 37,
+  "date": "2020-10-19",
+  "team1": "Chennai Super Kings",
+  "team2": "Rajasthan Royals",
+  "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+  "result_text": "Rajasthan Royals won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 125,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 6.25,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 1,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "SM Curran",
+          "runs": 22,
+          "balls": 25,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 88.0,
+          "out_desc": "c JC Buttler b S Gopal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 10,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 111.1,
+          "out_desc": "c JC Buttler b JC Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SR Watson",
+          "runs": 8,
+          "balls": 3,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 266.7,
+          "out_desc": "c R Tewatia b Kartik Tyagi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 13,
+          "balls": 18,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 72.2,
+          "out_desc": "c SV Samson b R Tewatia",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 28,
+          "balls": 28,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 35,
+          "balls": 30,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 4,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 57.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JC Archer",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AS Rajpoot",
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Kartik Tyagi",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "BA Stokes",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "S Gopal",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 1,
+          "economy": 3.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Tewatia",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 4.5,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "F du Plessis",
+          "runs": 13,
+          "over": "3",
+          "wkt_n": 1
+        },
+        {
+          "name": "SR Watson",
+          "runs": 26,
+          "over": "4",
+          "wkt_n": 2
+        },
+        {
+          "name": "SM Curran",
+          "runs": 53,
+          "over": "8.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 56,
+          "over": "10",
+          "wkt_n": 4
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 107,
+          "over": "17.4",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 126,
+        "wickets": 3,
+        "overs": "18",
+        "run_rate": 7.2,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 6
+      },
+      "batsmen": [
+        {
+          "name": "BA Stokes",
+          "runs": 19,
+          "balls": 11,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 172.7,
+          "out_desc": "b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 4,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 44.4,
+          "out_desc": "c MS Dhoni b JR Hazlewood",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c MS Dhoni b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SPD Smith",
+          "runs": 26,
+          "balls": 34,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 76.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 70,
+          "balls": 48,
+          "fours": 7,
+          "sixes": 2,
+          "strike_rate": 145.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 1,
+          "runs": 18,
+          "wickets": 2,
+          "economy": 4.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JR Hazlewood",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 4.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1.3"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 6,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "PP Chawla",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 10.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "BA Stokes",
+          "runs": 26,
+          "over": "3",
+          "wkt_n": 1
+        },
+        {
+          "name": "RV Uthappa",
+          "runs": 28,
+          "over": "3.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "SV Samson",
+          "runs": 28,
+          "over": "4.3",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

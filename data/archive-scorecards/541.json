@@ -1,0 +1,499 @@
+{
+  "match_id": "541",
+  "source_id": "1473460",
+  "season": 2025,
+  "round": "League",
+  "match_number": 23,
+  "date": "2025-04-09",
+  "team1": "Gujarat Titans",
+  "team2": "Rajasthan Royals",
+  "venue": "Narendra Modi Stadium, Ahmedabad, Ahmedabad",
+  "result_text": "Gujarat Titans won by 58 runs",
+  "innings": [
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 217,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 10.85,
+        "declared": false
+      },
+      "extras": {
+        "total": 18,
+        "wides": 17,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 82,
+          "balls": 53,
+          "fours": 8,
+          "sixes": 3,
+          "strike_rate": 154.7,
+          "out_desc": "c SV Samson b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "b JC Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 36,
+          "balls": 25,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 144.0,
+          "out_desc": "lbw b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 36,
+          "balls": 20,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 180.0,
+          "out_desc": "st SV Samson b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 7,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 233.3,
+          "out_desc": "c SV Samson b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 24,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 12,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 300.0,
+          "out_desc": "c YBK Jaiswal b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Arshad Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JC Archer",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Fazalhaq Farooqi",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 53,
+          "wickets": 2,
+          "economy": 13.2,
+          "wides": 7,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 1,
+          "economy": 10.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 54,
+          "wickets": 2,
+          "economy": 13.5,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Shubman Gill",
+          "runs": 14,
+          "over": "2.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 94,
+          "over": "10",
+          "wkt_n": 2
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 156,
+          "over": "15.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 163,
+          "over": "16.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 187,
+          "over": "18.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 201,
+          "over": "19",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 2,
+      "score": {
+        "runs": 159,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 8.22,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 9,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 6,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 85.7,
+          "out_desc": "c Rashid Khan b Arshad Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 41,
+          "balls": 28,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 146.4,
+          "out_desc": "c R Sai Kishore b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c K Khejroliya b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 26,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 185.7,
+          "out_desc": "c JC Buttler b K Khejroliya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 5,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "c B Sai Sudharsan b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 52,
+          "balls": 32,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 162.5,
+          "out_desc": "c R Sai Kishore b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SB Dubey",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "lbw b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Archer",
+          "runs": 4,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c Shubman Gill b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Theekshana",
+          "runs": 5,
+          "balls": 13,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 38.5,
+          "out_desc": "c B Sai Sudharsan b R Sai Kishore",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TU Deshpande",
+          "runs": 3,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c Rashid Khan b R Sai Kishore",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sandeep Sharma",
+          "runs": 6,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 120.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 7.5,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Arshad Khan",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 3,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "K Khejroliya",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 9.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 2,
+          "economy": 9.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Sai Kishore",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 2,
+          "economy": 8.6,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2.2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 10,
+          "over": "1.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "N Rana",
+          "runs": 12,
+          "over": "2.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "R Parag",
+          "runs": 60,
+          "over": "6.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 68,
+          "over": "7.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "SV Samson",
+          "runs": 116,
+          "over": "12.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "SB Dubey",
+          "runs": 119,
+          "over": "13.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "JC Archer",
+          "runs": 144,
+          "over": "15.3",
+          "wkt_n": 7
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 145,
+          "over": "16",
+          "wkt_n": 8
+        },
+        {
+          "name": "TU Deshpande",
+          "runs": 150,
+          "over": "16.5",
+          "wkt_n": 9
+        },
+        {
+          "name": "M Theekshana",
+          "runs": 159,
+          "over": "19.2",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

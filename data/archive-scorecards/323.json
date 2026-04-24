@@ -1,0 +1,477 @@
+{
+  "match_id": "323",
+  "source_id": "1304070",
+  "season": 2022,
+  "round": "League",
+  "match_number": 24,
+  "date": "2022-04-14",
+  "team1": "Gujarat Titans",
+  "team2": "Rajasthan Royals",
+  "venue": "Dr DY Patil Sports Academy, Mumbai, Mumbai",
+  "result_text": "Gujarat Titans won by 37 runs",
+  "innings": [
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 192,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 9.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 3,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "MS Wade",
+          "runs": 12,
+          "balls": 6,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "run out (HE van der Dussen)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 13,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c SO Hetmyer b R Parag",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Shankar",
+          "runs": 2,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 28.6,
+          "out_desc": "c SV Samson b KR Sen",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 87,
+          "balls": 52,
+          "fours": 8,
+          "sixes": 4,
+          "strike_rate": 167.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "A Manohar",
+          "runs": 43,
+          "balls": 28,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 153.6,
+          "out_desc": "c R Ashwin b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Miller",
+          "runs": 31,
+          "balls": 14,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 221.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JDS Neesham",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 9.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "KR Sen",
+          "maidens": 0,
+          "runs": 51,
+          "wickets": 1,
+          "economy": 12.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Parag",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 8.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MS Wade",
+          "runs": 12,
+          "over": "1.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "V Shankar",
+          "runs": 15,
+          "over": "2.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 53,
+          "over": "6.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "A Manohar",
+          "runs": 139,
+          "over": "15.5",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 2,
+      "score": {
+        "runs": 155,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 7.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "JC Buttler",
+          "runs": 54,
+          "balls": 24,
+          "fours": 8,
+          "sixes": 3,
+          "strike_rate": 225.0,
+          "out_desc": "b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Shubman Gill b Yash Dayal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 8,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "c DA Miller b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 11,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "run out (HH Pandya)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HE van der Dussen",
+          "runs": 6,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 60.0,
+          "out_desc": "c MS Wade b Yash Dayal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 29,
+          "balls": 17,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 170.6,
+          "out_desc": "c R Tewatia b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 18,
+          "balls": 16,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 112.5,
+          "out_desc": "c Shubman Gill b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JDS Neesham",
+          "runs": 17,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 113.3,
+          "out_desc": "c & b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "runs": 4,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 57.1,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "YS Chahal",
+          "runs": 5,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 62.5,
+          "out_desc": "c V Shankar b Yash Dayal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KR Sen",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yash Dayal",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 3,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "LH Ferguson",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 3,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Tewatia",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2.3"
+        },
+        {
+          "name": "V Shankar",
+          "maidens": 0,
+          "runs": 1,
+          "wickets": 0,
+          "economy": 2.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "0.3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "D Padikkal",
+          "runs": 28,
+          "over": "2",
+          "wkt_n": 1
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 56,
+          "over": "5.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 65,
+          "over": "6",
+          "wkt_n": 3
+        },
+        {
+          "name": "SV Samson",
+          "runs": 74,
+          "over": "7.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "HE van der Dussen",
+          "runs": 90,
+          "over": "10.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 116,
+          "over": "12.5",
+          "wkt_n": 6
+        },
+        {
+          "name": "R Parag",
+          "runs": 138,
+          "over": "16",
+          "wkt_n": 7
+        },
+        {
+          "name": "JDS Neesham",
+          "runs": 147,
+          "over": "17.2",
+          "wkt_n": 8
+        },
+        {
+          "name": "YS Chahal",
+          "runs": 155,
+          "over": "19.3",
+          "wkt_n": 9
+        }
+      ]
+    }
+  ],
+  "error": null
+}

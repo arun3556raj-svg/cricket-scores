@@ -1,0 +1,437 @@
+{
+  "match_id": "568",
+  "source_id": "1473487",
+  "season": 2025,
+  "round": "League",
+  "match_number": 50,
+  "date": "2025-05-01",
+  "team1": "Mumbai Indians",
+  "team2": "Rajasthan Royals",
+  "venue": "Sawai Mansingh Stadium, Jaipur, Jaipur",
+  "result_text": "Mumbai Indians won by 100 runs",
+  "innings": [
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 217,
+        "wickets": 2,
+        "overs": "20",
+        "run_rate": 10.85,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "RD Rickelton",
+          "runs": 61,
+          "balls": 38,
+          "fours": 7,
+          "sixes": 3,
+          "strike_rate": 160.5,
+          "out_desc": "b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 53,
+          "balls": 36,
+          "fours": 9,
+          "sixes": 0,
+          "strike_rate": 147.2,
+          "out_desc": "c YBK Jaiswal b R Parag",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 48,
+          "balls": 23,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 208.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 48,
+          "balls": 23,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 208.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JC Archer",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Fazalhaq Farooqi",
+          "maidens": 0,
+          "runs": 54,
+          "wickets": 0,
+          "economy": 13.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 1,
+          "economy": 11.8,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "K Kartikeya",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Akash Madhwal",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 0,
+          "economy": 9.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Parag",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Rickelton",
+          "runs": 116,
+          "over": "11.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 123,
+          "over": "12.4",
+          "wkt_n": 2
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 2,
+      "score": {
+        "runs": 117,
+        "wickets": 10,
+        "overs": "17",
+        "run_rate": 7.24,
+        "declared": false
+      },
+      "extras": {
+        "total": 15,
+        "wides": 8,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 7
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 13,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 216.7,
+          "out_desc": "b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Suryavanshi",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c WG Jacks b DL Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 9,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 81.8,
+          "out_desc": "c Tilak Varma b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 16,
+          "balls": 8,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "c RG Sharma b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 11,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 100.0,
+          "out_desc": "c & b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SA Yadav b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SB Dubey",
+          "runs": 15,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 166.7,
+          "out_desc": "c TA Boult b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Archer",
+          "runs": 30,
+          "balls": 27,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 111.1,
+          "out_desc": "c JJ Bumrah b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Theekshana",
+          "runs": 2,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 22.2,
+          "out_desc": "c SA Yadav b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "K Kartikeya",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c DL Chahar b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Akash Madhwal",
+          "runs": 4,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 44.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 7,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 3,
+          "economy": 12.9,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2.1"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 2,
+          "economy": 3.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "C Bosch",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 9.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 2,
+          "wickets": 1,
+          "economy": 2.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "KV Sharma",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 3,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Suryavanshi",
+          "runs": 1,
+          "over": "0.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "YBK Jaiswal",
+          "runs": 18,
+          "over": "1.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "N Rana",
+          "runs": 41,
+          "over": "4",
+          "wkt_n": 3
+        },
+        {
+          "name": "R Parag",
+          "runs": 47,
+          "over": "4.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 47,
+          "over": "4.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "SB Dubey",
+          "runs": 64,
+          "over": "7.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 76,
+          "over": "9",
+          "wkt_n": 7
+        },
+        {
+          "name": "M Theekshana",
+          "runs": 87,
+          "over": "11.1",
+          "wkt_n": 8
+        },
+        {
+          "name": "K Kartikeya",
+          "runs": 91,
+          "over": "11.5",
+          "wkt_n": 9
+        },
+        {
+          "name": "JC Archer",
+          "runs": 117,
+          "over": "16.1",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

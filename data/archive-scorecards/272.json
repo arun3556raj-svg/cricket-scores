@@ -1,0 +1,467 @@
+{
+  "match_id": "272",
+  "source_id": "1254090",
+  "season": 2021,
+  "round": "League",
+  "match_number": 48,
+  "date": "2021-10-03",
+  "team1": "Royal Challengers Bangalore",
+  "team2": "Punjab Kings",
+  "venue": "Sharjah Cricket Stadium, Sharjah",
+  "result_text": "Royal Challengers Bangalore won by 6 runs",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bangalore",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 164,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 8.2,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "V Kohli",
+          "runs": 25,
+          "balls": 24,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 104.2,
+          "out_desc": "b MC Henriques",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 40,
+          "balls": 38,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 105.3,
+          "out_desc": "c KL Rahul b MC Henriques",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DT Christian",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SN Khan b MC Henriques",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 57,
+          "balls": 33,
+          "fours": 3,
+          "sixes": 4,
+          "strike_rate": 172.7,
+          "out_desc": "c SN Khan b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 23,
+          "balls": 18,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 127.8,
+          "out_desc": "run out (SN Khan)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "runs": 8,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Bharat",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "GHS Garton",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HV Patel",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "AK Markram",
+          "maidens": 0,
+          "runs": 5,
+          "wickets": 0,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 3,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Harpreet Brar",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MC Henriques",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 3,
+          "economy": 3.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Kohli",
+          "runs": 68,
+          "over": "9.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "DT Christian",
+          "runs": 68,
+          "over": "9.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 73,
+          "over": "11.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 146,
+          "over": "18.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 157,
+          "over": "19.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "runs": 163,
+          "over": "19.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "GHS Garton",
+          "runs": 163,
+          "over": "19.5",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Royal Challengers Bangalore",
+      "innings_id": 2,
+      "score": {
+        "runs": 158,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 7.9,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 5,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 39,
+          "balls": 35,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 111.4,
+          "out_desc": "c HV Patel b Shahbaz Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 57,
+          "balls": 41,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 139.0,
+          "out_desc": "c Mohammed Siraj b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 3,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 42.9,
+          "out_desc": "c D Padikkal b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 20,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 142.9,
+          "out_desc": "c DT Christian b GHS Garton",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Khan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 16,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 145.5,
+          "out_desc": "run out (HV Patel)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MC Henriques",
+          "runs": 12,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 133.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Harpreet Brar",
+          "runs": 3,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 8.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "GHS Garton",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 6.8,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 9.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "HV Patel",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 3,
+          "economy": 7.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DT Christian",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "KL Rahul",
+          "runs": 91,
+          "over": "10.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "N Pooran",
+          "runs": 99,
+          "over": "12.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 114,
+          "over": "15.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "SN Khan",
+          "runs": 121,
+          "over": "15.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "AK Markram",
+          "runs": 127,
+          "over": "16.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "M Shahrukh Khan",
+          "runs": 146,
+          "over": "19.1",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

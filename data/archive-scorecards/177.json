@@ -1,0 +1,521 @@
+{
+  "match_id": "177",
+  "source_id": "1181766",
+  "season": 2019,
+  "round": "Eliminator",
+  "match_number": null,
+  "date": "2019-05-08",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Delhi Capitals",
+  "venue": "Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
+  "result_text": "Delhi Capitals won by 2 wkts",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 1,
+      "score": {
+        "runs": 162,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 8.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 10,
+        "wides": 7,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "WP Saha",
+          "runs": 8,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 88.9,
+          "out_desc": "c SS Iyer b I Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MJ Guptill",
+          "runs": 36,
+          "balls": 19,
+          "fours": 1,
+          "sixes": 4,
+          "strike_rate": 189.5,
+          "out_desc": "c KMA Paul b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 30,
+          "balls": 36,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 83.3,
+          "out_desc": "c SE Rutherford b KMA Paul",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 28,
+          "balls": 27,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 103.7,
+          "out_desc": "b I Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Shankar",
+          "runs": 25,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 227.3,
+          "out_desc": "c AR Patel b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mohammad Nabi",
+          "runs": 20,
+          "balls": 12,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 166.7,
+          "out_desc": "c AR Patel b KMA Paul",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 4,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c RR Pant b KMA Paul",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Basil Thampi",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 1,
+          "economy": 12.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "I Sharma",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 2,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "A Mishra",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 1,
+          "economy": 4.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KMA Paul",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 3,
+          "economy": 8.0,
+          "wides": 5,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "SE Rutherford",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "WP Saha",
+          "runs": 31,
+          "over": "3.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "MJ Guptill",
+          "runs": 56,
+          "over": "6.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 90,
+          "over": "13.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 111,
+          "over": "15.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "V Shankar",
+          "runs": 147,
+          "over": "18.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "Mohammad Nabi",
+          "runs": 160,
+          "over": "19.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "DJ Hooda",
+          "runs": 161,
+          "over": "19.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 161,
+          "over": "19.5",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 165,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 8.32,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "PP Shaw",
+          "runs": 56,
+          "balls": 38,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 147.4,
+          "out_desc": "c V Shankar b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dhawan",
+          "runs": 17,
+          "balls": 16,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 106.2,
+          "out_desc": "st WP Saha b DJ Hooda",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 8,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "c WP Saha b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 49,
+          "balls": 21,
+          "fours": 2,
+          "sixes": 5,
+          "strike_rate": 233.3,
+          "out_desc": "c Mohammad Nabi b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "C Munro",
+          "runs": 14,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 107.7,
+          "out_desc": "lbw b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 9,
+          "balls": 12,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 75.0,
+          "out_desc": "c Mohammad Nabi b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KMA Paul",
+          "runs": 5,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 125.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "A Mishra",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "obstructing the field",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TA Boult",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 2,
+          "economy": 10.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mohammad Nabi",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 2,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2.5"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 1,
+          "runs": 15,
+          "wickets": 2,
+          "economy": 3.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Basil Thampi",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 0,
+          "economy": 10.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Hooda",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 1,
+          "economy": 13.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "S Dhawan",
+          "runs": 66,
+          "over": "7.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 84,
+          "over": "10.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "PP Shaw",
+          "runs": 87,
+          "over": "11",
+          "wkt_n": 3
+        },
+        {
+          "name": "C Munro",
+          "runs": 111,
+          "over": "14.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "AR Patel",
+          "runs": 111,
+          "over": "14.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 151,
+          "over": "18.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "RR Pant",
+          "runs": 158,
+          "over": "18.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "A Mishra",
+          "runs": 161,
+          "over": "19.4",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

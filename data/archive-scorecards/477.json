@@ -1,0 +1,423 @@
+{
+  "match_id": "477",
+  "source_id": "1426268",
+  "season": 2024,
+  "round": "League",
+  "match_number": 30,
+  "date": "2024-04-15",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Royal Challengers Bengaluru",
+  "venue": "M Chinnaswamy Stadium, Bengaluru, Bengaluru",
+  "result_text": "Sunrisers Hyderabad won by 25 runs",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Royal Challengers Bengaluru",
+      "innings_id": 1,
+      "score": {
+        "runs": 287,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 14.35,
+        "declared": false
+      },
+      "extras": {
+        "total": 15,
+        "wides": 12,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 34,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 154.5,
+          "out_desc": "c LH Ferguson b RJW Topley",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TM Head",
+          "runs": 102,
+          "balls": 41,
+          "fours": 9,
+          "sixes": 8,
+          "strike_rate": 248.8,
+          "out_desc": "c F du Plessis b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 67,
+          "balls": 31,
+          "fours": 2,
+          "sixes": 7,
+          "strike_rate": 216.1,
+          "out_desc": "c Vijaykumar Vyshak b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 32,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 37,
+          "balls": 10,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 370.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "WG Jacks",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 10.7,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "RJW Topley",
+          "maidens": 0,
+          "runs": 68,
+          "wickets": 1,
+          "economy": 17.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yash Dayal",
+          "maidens": 0,
+          "runs": 51,
+          "wickets": 0,
+          "economy": 12.8,
+          "wides": 3,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "LH Ferguson",
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 2,
+          "economy": 13.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Vijaykumar Vyshak",
+          "maidens": 0,
+          "runs": 64,
+          "wickets": 0,
+          "economy": 16.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MK Lomror",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 18.0,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 108,
+          "over": "8.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "TM Head",
+          "runs": 165,
+          "over": "12.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 231,
+          "over": "17",
+          "wkt_n": 3
+        }
+      ]
+    },
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 262,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 13.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 14,
+        "wides": 13,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "V Kohli",
+          "runs": 42,
+          "balls": 20,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 210.0,
+          "out_desc": "b M Markande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 62,
+          "balls": 28,
+          "fours": 7,
+          "sixes": 4,
+          "strike_rate": 221.4,
+          "out_desc": "c H Klaasen b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "WG Jacks",
+          "runs": 7,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 175.0,
+          "out_desc": "run out (JD Unadkat)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 9,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 180.0,
+          "out_desc": "c Nithish Kumar Reddy b M Markande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Saurav Chauhan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 83,
+          "balls": 35,
+          "fours": 5,
+          "sixes": 7,
+          "strike_rate": 237.1,
+          "out_desc": "c H Klaasen b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Lomror",
+          "runs": 19,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 172.7,
+          "out_desc": "b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Anuj Rawat",
+          "runs": 25,
+          "balls": 14,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 178.6,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Vijaykumar Vyshak",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Abhishek Sharma",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 60,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 18.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 1,
+          "economy": 11.8,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 3,
+          "economy": 10.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Markande",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 2,
+          "economy": 11.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 0,
+          "economy": 18.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Kohli",
+          "runs": 80,
+          "over": "6.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "WG Jacks",
+          "runs": 100,
+          "over": "8",
+          "wkt_n": 2
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 111,
+          "over": "9",
+          "wkt_n": 3
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 121,
+          "over": "9.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "Saurav Chauhan",
+          "runs": 122,
+          "over": "10",
+          "wkt_n": 5
+        },
+        {
+          "name": "MK Lomror",
+          "runs": 181,
+          "over": "14.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 244,
+          "over": "18.5",
+          "wkt_n": 7
+        }
+      ]
+    }
+  ],
+  "error": null
+}

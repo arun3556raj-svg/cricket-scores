@@ -1,0 +1,537 @@
+{
+  "match_id": "482",
+  "source_id": "1426273",
+  "season": 2024,
+  "round": "League",
+  "match_number": 35,
+  "date": "2024-04-20",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Delhi Capitals",
+  "venue": "Arun Jaitley Stadium, Delhi, Delhi",
+  "result_text": "Sunrisers Hyderabad won by 67 runs",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 1,
+      "score": {
+        "runs": 266,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 13.3,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "TM Head",
+          "runs": 89,
+          "balls": 32,
+          "fours": 11,
+          "sixes": 6,
+          "strike_rate": 278.1,
+          "out_desc": "c T Stubbs b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 46,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 6,
+          "strike_rate": 383.3,
+          "out_desc": "c AR Patel b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c AR Patel b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 15,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 187.5,
+          "out_desc": "b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 37,
+          "balls": 27,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 137.0,
+          "out_desc": "c DA Warner b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "runs": 59,
+          "balls": 29,
+          "fours": 2,
+          "sixes": 5,
+          "strike_rate": 203.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 13,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 162.5,
+          "out_desc": "c A Nortje b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (T Stubbs / Mukesh Kumar)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 51,
+          "wickets": 0,
+          "economy": 17.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Lalit Yadav",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 0,
+          "economy": 20.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "A Nortje",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 10.3,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 4,
+          "economy": 13.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mukesh Kumar",
+          "maidens": 0,
+          "runs": 57,
+          "wickets": 1,
+          "economy": 14.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 131,
+          "over": "6.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "AK Markram",
+          "runs": 133,
+          "over": "7",
+          "wkt_n": 2
+        },
+        {
+          "name": "TM Head",
+          "runs": 154,
+          "over": "9",
+          "wkt_n": 3
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 154,
+          "over": "9.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 221,
+          "over": "17",
+          "wkt_n": 5
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 250,
+          "over": "19.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 256,
+          "over": "19.4",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 199,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 10.38,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "PP Shaw",
+          "runs": 16,
+          "balls": 5,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 320.0,
+          "out_desc": "c Abdul Samad b Washington Sundar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Warner",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c PJ Cummins b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "J Fraser-McGurk",
+          "runs": 65,
+          "balls": 18,
+          "fours": 5,
+          "sixes": 7,
+          "strike_rate": 361.1,
+          "out_desc": "c H Klaasen b M Markande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 42,
+          "balls": 22,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 190.9,
+          "out_desc": "st H Klaasen b M Markande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 10,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 90.9,
+          "out_desc": "c Shahbaz Ahmed b Nithish Kumar Reddy",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 44,
+          "balls": 35,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 125.7,
+          "out_desc": "c T Natarajan b Nithish Kumar Reddy",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Lalit Yadav",
+          "runs": 7,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 87.5,
+          "out_desc": "b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 6,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "c PJ Cummins b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Nortje",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mukesh Kumar",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Washington Sundar",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 1,
+          "economy": 23.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 8.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 1,
+          "runs": 19,
+          "wickets": 4,
+          "economy": 4.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Markande",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 13.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 22.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 2,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2.1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PP Shaw",
+          "runs": 16,
+          "over": "0.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "DA Warner",
+          "runs": 25,
+          "over": "2",
+          "wkt_n": 2
+        },
+        {
+          "name": "J Fraser-McGurk",
+          "runs": 109,
+          "over": "7",
+          "wkt_n": 3
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 135,
+          "over": "8.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 154,
+          "over": "12.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "Lalit Yadav",
+          "runs": 166,
+          "over": "15",
+          "wkt_n": 6
+        },
+        {
+          "name": "AR Patel",
+          "runs": 199,
+          "over": "18.1",
+          "wkt_n": 7
+        },
+        {
+          "name": "A Nortje",
+          "runs": 199,
+          "over": "18.3",
+          "wkt_n": 8
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 199,
+          "over": "18.4",
+          "wkt_n": 9
+        },
+        {
+          "name": "RR Pant",
+          "runs": 199,
+          "over": "19.1",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

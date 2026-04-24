@@ -1,0 +1,365 @@
+{
+  "match_id": "701",
+  "source_id": "392227",
+  "season": 2009,
+  "round": "League",
+  "match_number": 47,
+  "date": "2009-05-16",
+  "team1": "Chennai Super Kings",
+  "team2": "Mumbai Indians",
+  "venue": "St George's Park, Port Elizabeth",
+  "result_text": "Chennai Super Kings won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 147,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 7.35,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 1,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "ST Jayasuriya",
+          "runs": 30,
+          "balls": 16,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 187.5,
+          "out_desc": "c SK Raina b S Tyagi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 5,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 62.5,
+          "out_desc": "b JA Morkel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JP Duminy",
+          "runs": 62,
+          "balls": 54,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 114.8,
+          "out_desc": "run out (JA Morkel)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SR Tendulkar",
+          "runs": 11,
+          "balls": 14,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 78.6,
+          "out_desc": "c L Balaji b SK Raina",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AM Nayar",
+          "runs": 33,
+          "balls": 27,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 122.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Harbhajan Singh",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (ML Hayden / MS Dhoni)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JA Morkel",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "S Tyagi",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 9.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Muralitharan",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 4.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Raina",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SB Jakati",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 8.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "L Balaji",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "DJ Bravo",
+          "runs": 7,
+          "over": "2.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "ST Jayasuriya",
+          "runs": 49,
+          "over": "6",
+          "wkt_n": 2
+        },
+        {
+          "name": "SR Tendulkar",
+          "runs": 74,
+          "over": "10.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "JP Duminy",
+          "runs": 139,
+          "over": "19.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "Harbhajan Singh",
+          "runs": 147,
+          "over": "20",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 2,
+      "score": {
+        "runs": 151,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 7.88,
+        "declared": false
+      },
+      "extras": {
+        "total": 26,
+        "wides": 10,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 16
+      },
+      "batsmen": [
+        {
+          "name": "PA Patel",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b SL Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "ML Hayden",
+          "runs": 60,
+          "balls": 57,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 105.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SK Raina",
+          "runs": 20,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 166.7,
+          "out_desc": "c & b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 22,
+          "balls": 23,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 95.7,
+          "out_desc": "c YV Takawale b DS Kulkarni",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 23,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 104.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SL Malinga",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 4.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DS Kulkarni",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 1,
+          "economy": 11.2,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3.1"
+        },
+        {
+          "name": "Harbhajan Singh",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JP Duminy",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 4.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "C Nanda",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PA Patel",
+          "runs": 0,
+          "over": "0.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SK Raina",
+          "runs": 24,
+          "over": "3.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 64,
+          "over": "10.5",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

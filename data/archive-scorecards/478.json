@@ -1,0 +1,475 @@
+{
+  "match_id": "478",
+  "source_id": "1426269",
+  "season": 2024,
+  "round": "League",
+  "match_number": 31,
+  "date": "2024-04-16",
+  "team1": "Kolkata Knight Riders",
+  "team2": "Rajasthan Royals",
+  "venue": "Eden Gardens, Kolkata, Kolkata",
+  "result_text": "Rajasthan Royals won by 2 wkts",
+  "innings": [
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 223,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 11.15,
+        "declared": false
+      },
+      "extras": {
+        "total": 21,
+        "wides": 13,
+        "no_balls": 0,
+        "byes": 4,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "PD Salt",
+          "runs": 10,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 76.9,
+          "out_desc": "c & b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SP Narine",
+          "runs": 109,
+          "balls": 56,
+          "fours": 13,
+          "sixes": 6,
+          "strike_rate": 194.6,
+          "out_desc": "b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Raghuvanshi",
+          "runs": 30,
+          "balls": 18,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 166.7,
+          "out_desc": "c R Ashwin b KR Sen",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 11,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 157.1,
+          "out_desc": "lbw b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AD Russell",
+          "runs": 13,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 130.0,
+          "out_desc": "c Dhruv Jurel b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RK Singh",
+          "runs": 20,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 222.2,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "VR Iyer",
+          "runs": 8,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "c Dhruv Jurel b KR Sen",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ramandeep Singh",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 2,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KR Sen",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 2,
+          "economy": 11.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 54,
+          "wickets": 1,
+          "economy": 13.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 49,
+          "wickets": 0,
+          "economy": 12.2,
+          "wides": 9,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PD Salt",
+          "runs": 21,
+          "over": "3.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "A Raghuvanshi",
+          "runs": 106,
+          "over": "10.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 133,
+          "over": "13",
+          "wkt_n": 3
+        },
+        {
+          "name": "AD Russell",
+          "runs": 184,
+          "over": "16.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "SP Narine",
+          "runs": 195,
+          "over": "17.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "VR Iyer",
+          "runs": 215,
+          "over": "19.2",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 2,
+      "score": {
+        "runs": 224,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 11.2,
+        "declared": false
+      },
+      "extras": {
+        "total": 16,
+        "wides": 14,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 19,
+          "balls": 9,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 211.1,
+          "out_desc": "c VR Iyer b VG Arora",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 107,
+          "balls": 59,
+          "fours": 9,
+          "sixes": 6,
+          "strike_rate": 181.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SV Samson",
+          "runs": 12,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "c SP Narine b Harshit Rana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 34,
+          "balls": 14,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 242.9,
+          "out_desc": "c AD Russell b Harshit Rana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "lbw b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 8,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 72.7,
+          "out_desc": "c A Raghuvanshi b CV Varun",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c SS Iyer b CV Varun",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Powell",
+          "runs": 26,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 200.0,
+          "out_desc": "lbw b SP Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TA Boult",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "run out (SS Iyer / MA Starc)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Avesh Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "MA Starc",
+          "maidens": 0,
+          "runs": 50,
+          "wickets": 0,
+          "economy": 12.5,
+          "wides": 9,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "VG Arora",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 1,
+          "economy": 15.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "Harshit Rana",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 2,
+          "economy": 11.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SP Narine",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 2,
+          "economy": 7.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CV Varun",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 2,
+          "economy": 9.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AD Russell",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 17.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 22,
+          "over": "1.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "SV Samson",
+          "runs": 47,
+          "over": "4.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "R Parag",
+          "runs": 97,
+          "over": "7.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 100,
+          "over": "8.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "R Ashwin",
+          "runs": 121,
+          "over": "12.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 121,
+          "over": "12.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "R Powell",
+          "runs": 178,
+          "over": "16.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "TA Boult",
+          "runs": 186,
+          "over": "17.3",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

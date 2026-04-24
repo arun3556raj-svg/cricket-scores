@@ -1,0 +1,459 @@
+{
+  "match_id": "513",
+  "source_id": "1426306",
+  "season": 2024,
+  "round": "League",
+  "match_number": 68,
+  "date": "2024-05-18",
+  "team1": "Royal Challengers Bengaluru",
+  "team2": "Chennai Super Kings",
+  "venue": "M Chinnaswamy Stadium, Bengaluru, Bengaluru",
+  "result_text": "Royal Challengers Bengaluru won by 27 runs",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 218,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 10.9,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "V Kohli",
+          "runs": 47,
+          "balls": 29,
+          "fours": 3,
+          "sixes": 4,
+          "strike_rate": 162.1,
+          "out_desc": "c DJ Mitchell b MJ Santner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 54,
+          "balls": 39,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 138.5,
+          "out_desc": "run out (MJ Santner)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 41,
+          "balls": 23,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 178.3,
+          "out_desc": "c DJ Mitchell b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "C Green",
+          "runs": 38,
+          "balls": 17,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 223.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 14,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 233.3,
+          "out_desc": "c MS Dhoni b TU Deshpande",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 16,
+          "balls": 5,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 320.0,
+          "out_desc": "c MS Dhoni b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Lomror",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TU Deshpande",
+          "maidens": 0,
+          "runs": 49,
+          "wickets": 1,
+          "economy": 12.2,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 61,
+          "wickets": 2,
+          "economy": 15.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 6.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MJ Santner",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 13.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Simarjeet Singh",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 19.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Kohli",
+          "runs": 78,
+          "over": "9.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 113,
+          "over": "13",
+          "wkt_n": 2
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 184,
+          "over": "17.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 201,
+          "over": "18.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 218,
+          "over": "19.5",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Royal Challengers Bengaluru",
+      "innings_id": 2,
+      "score": {
+        "runs": 191,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 9.55,
+        "declared": false
+      },
+      "extras": {
+        "total": 15,
+        "wides": 8,
+        "no_balls": 2,
+        "byes": 4,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Yash Dayal b GJ Maxwell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Ravindra",
+          "runs": 61,
+          "balls": 36,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 169.4,
+          "out_desc": "run out (Swapnil Singh / KD Karthik)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 4,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c V Kohli b Yash Dayal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 33,
+          "balls": 22,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 150.0,
+          "out_desc": "c F du Plessis b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 7,
+          "balls": 15,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 46.7,
+          "out_desc": "c LH Ferguson b C Green",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 42,
+          "balls": 22,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 190.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MJ Santner",
+          "runs": 3,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75.0,
+          "out_desc": "c F du Plessis b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 25,
+          "balls": 12,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 208.3,
+          "out_desc": "c Swapnil Singh b Yash Dayal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Thakur",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "GJ Maxwell",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 6.2,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yash Dayal",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 2,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Swapnil Singh",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 6.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "KV Sharma",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "LH Ferguson",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 13.0,
+          "wides": 0,
+          "no_balls": 2,
+          "overs": "3"
+        },
+        {
+          "name": "C Green",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 0,
+          "over": "0.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "DJ Mitchell",
+          "runs": 19,
+          "over": "2.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "AM Rahane",
+          "runs": 85,
+          "over": "9.1",
+          "wkt_n": 3
+        },
+        {
+          "name": "R Ravindra",
+          "runs": 115,
+          "over": "13",
+          "wkt_n": 4
+        },
+        {
+          "name": "S Dube",
+          "runs": 119,
+          "over": "13.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "MJ Santner",
+          "runs": 129,
+          "over": "15",
+          "wkt_n": 6
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 190,
+          "over": "19.2",
+          "wkt_n": 7
+        }
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,431 @@
+{
+  "match_id": "538",
+  "source_id": "1473457",
+  "season": 2025,
+  "round": "League",
+  "match_number": 19,
+  "date": "2025-04-06",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Gujarat Titans",
+  "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad, Hyderabad",
+  "result_text": "Gujarat Titans won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 1,
+      "score": {
+        "runs": 152,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 7.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 18,
+          "balls": 16,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 112.5,
+          "out_desc": "c R Tewatia b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TM Head",
+          "runs": 8,
+          "balls": 5,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 160.0,
+          "out_desc": "c B Sai Sudharsan b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 17,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 121.4,
+          "out_desc": "c I Sharma b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 31,
+          "balls": 34,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 91.2,
+          "out_desc": "c Rashid Khan b R Sai Kishore",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 27,
+          "balls": 19,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 142.1,
+          "out_desc": "b R Sai Kishore",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 18,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 128.6,
+          "out_desc": "lbw b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PHKD Mendis",
+          "runs": 1,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 20.0,
+          "out_desc": "c B Sai Sudharsan b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 22,
+          "balls": 9,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 244.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Simarjeet Singh",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mohammed Shami",
+          "runs": 6,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 300.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 4,
+          "economy": 4.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "I Sharma",
+          "maidens": 0,
+          "runs": 53,
+          "wickets": 0,
+          "economy": 13.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 2,
+          "economy": 6.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Sai Kishore",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 2,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "TM Head",
+          "runs": 9,
+          "over": "1",
+          "wkt_n": 1
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 38,
+          "over": "4.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 50,
+          "over": "7.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 100,
+          "over": "13.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "Nithish Kumar Reddy",
+          "runs": 105,
+          "over": "15.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "PHKD Mendis",
+          "runs": 120,
+          "over": "17",
+          "wkt_n": 6
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 135,
+          "over": "18.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "Simarjeet Singh",
+          "runs": 135,
+          "over": "19",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 153,
+        "wickets": 3,
+        "overs": "17",
+        "run_rate": 9.18,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 5,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 55.6,
+          "out_desc": "c Aniket Verma b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 61,
+          "balls": 43,
+          "fours": 9,
+          "sixes": 0,
+          "strike_rate": 141.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c H Klaasen b PJ Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 49,
+          "balls": 29,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 169.0,
+          "out_desc": "c Aniket Verma b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 35,
+          "balls": 16,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 218.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 2,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 7.1,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3.4"
+        },
+        {
+          "name": "Simarjeet Singh",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 20.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "JD Unadkat",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Zeeshan Ansari",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 8.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PHKD Mendis",
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "Abhishek Sharma",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 18.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 15,
+          "over": "2.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 16,
+          "over": "3.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 106,
+          "over": "13.1",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

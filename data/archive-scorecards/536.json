@@ -1,0 +1,467 @@
+{
+  "match_id": "536",
+  "source_id": "1473455",
+  "season": 2025,
+  "round": "League",
+  "match_number": 18,
+  "date": "2025-04-05",
+  "team1": "Rajasthan Royals",
+  "team2": "Punjab Kings",
+  "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Mohali",
+  "result_text": "Rajasthan Royals won by 50 runs",
+  "innings": [
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 205,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 10.25,
+        "declared": false
+      },
+      "extras": {
+        "total": 12,
+        "wides": 10,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "YBK Jaiswal",
+          "runs": 67,
+          "balls": 45,
+          "fours": 3,
+          "sixes": 5,
+          "strike_rate": 148.9,
+          "out_desc": "b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 38,
+          "balls": 26,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 146.2,
+          "out_desc": "c SS Iyer b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Parag",
+          "runs": 43,
+          "balls": 25,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 172.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "N Rana",
+          "runs": 12,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 171.4,
+          "out_desc": "c GJ Maxwell b M Jansen",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 20,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 166.7,
+          "out_desc": "c GJ Maxwell b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 13,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 260.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Jansen",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 1,
+          "economy": 11.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "LH Ferguson",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 2,
+          "economy": 9.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "GJ Maxwell",
+          "maidens": 0,
+          "runs": 6,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 10.7,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "MP Stoinis",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SV Samson",
+          "runs": 89,
+          "over": "10.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "YBK Jaiswal",
+          "runs": 123,
+          "over": "13.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "N Rana",
+          "runs": 138,
+          "over": "14.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "SO Hetmyer",
+          "runs": 185,
+          "over": "18.5",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 155,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 7.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 15,
+        "wides": 9,
+        "no_balls": 0,
+        "byes": 5,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b JC Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 17,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 106.2,
+          "out_desc": "c PWH de Silva b K Kartikeya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 10,
+          "balls": 5,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "b JC Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 1,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 14.3,
+          "out_desc": "c & b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Wadhera",
+          "runs": 62,
+          "balls": 41,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 151.2,
+          "out_desc": "c Dhruv Jurel b PWH de Silva",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 30,
+          "balls": 21,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 142.9,
+          "out_desc": "c YBK Jaiswal b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 10,
+          "balls": 13,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 76.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c SO Hetmyer b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Jansen",
+          "runs": 3,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c SO Hetmyer b M Theekshana",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Arshdeep Singh",
+          "runs": 1,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 20.0,
+          "out_desc": "c PWH de Silva b JC Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "LH Ferguson",
+          "runs": 4,
+          "balls": 1,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 400.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JC Archer",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 3,
+          "economy": 6.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yudhvir Singh",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 2,
+          "economy": 5.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Theekshana",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 2,
+          "economy": 6.5,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "K Kartikeya",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "PWH de Silva",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 0,
+          "over": "0.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 11,
+          "over": "1",
+          "wkt_n": 2
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 26,
+          "over": "3.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 43,
+          "over": "6.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 131,
+          "over": "15",
+          "wkt_n": 5
+        },
+        {
+          "name": "N Wadhera",
+          "runs": 131,
+          "over": "15.1",
+          "wkt_n": 6
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 136,
+          "over": "16.1",
+          "wkt_n": 7
+        },
+        {
+          "name": "M Jansen",
+          "runs": 145,
+          "over": "17.4",
+          "wkt_n": 8
+        },
+        {
+          "name": "Arshdeep Singh",
+          "runs": 151,
+          "over": "19.5",
+          "wkt_n": 9
+        }
+      ]
+    }
+  ],
+  "error": null
+}

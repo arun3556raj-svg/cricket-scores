@@ -1,0 +1,507 @@
+{
+  "match_id": "742",
+  "source_id": "419134",
+  "season": 2010,
+  "round": "League",
+  "match_number": 29,
+  "date": "2010-03-31",
+  "team1": "Delhi Daredevils",
+  "team2": "Rajasthan Royals",
+  "venue": "Feroz Shah Kotla, Delhi",
+  "result_text": "Delhi Daredevils won by 67 runs",
+  "innings": [
+    {
+      "bat_team": "Delhi Daredevils",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 188,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 9.4,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 4,
+        "no_balls": 5,
+        "byes": 0,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "DA Warner",
+          "runs": 4,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "b S Narwal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Sehwag",
+          "runs": 19,
+          "balls": 12,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 158.3,
+          "out_desc": "c P Dogra b S Narwal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "G Gambhir",
+          "runs": 43,
+          "balls": 37,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 116.2,
+          "out_desc": "c YK Pathan b S Narwal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PD Collingwood",
+          "runs": 16,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "run out (AC Voges / NV Ojha)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 10,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 111.1,
+          "out_desc": "c YK Pathan b SK Warne",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 69,
+          "balls": 37,
+          "fours": 6,
+          "sixes": 4,
+          "strike_rate": 186.5,
+          "out_desc": "c AS Raut b SW Tait",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB McDonald",
+          "runs": 14,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 155.6,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "YK Pathan",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "S Narwal",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 3,
+          "economy": 9.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AC Voges",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "SW Tait",
+          "maidens": 0,
+          "runs": 53,
+          "wickets": 1,
+          "economy": 13.2,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "SK Warne",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Trivedi",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "DA Warner",
+          "runs": 24,
+          "over": "3.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "V Sehwag",
+          "runs": 25,
+          "over": "3.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "PD Collingwood",
+          "runs": 50,
+          "over": "5.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "KM Jadhav",
+          "runs": 67,
+          "over": "8.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "G Gambhir",
+          "runs": 146,
+          "over": "16.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 188,
+          "over": "20",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Delhi Daredevils",
+      "innings_id": 2,
+      "score": {
+        "runs": 121,
+        "wickets": 10,
+        "overs": "18",
+        "run_rate": 6.85,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "MJ Lumb",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c DA Warner b MF Maharoof",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "NV Ojha",
+          "runs": 27,
+          "balls": 14,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 192.9,
+          "out_desc": "c KD Karthik b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "FY Fazal",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b MF Maharoof",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AA Jhunjhunwala",
+          "runs": 2,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 40.0,
+          "out_desc": "run out (S Ladda / KD Karthik)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AC Voges",
+          "runs": 15,
+          "balls": 17,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 88.2,
+          "out_desc": "c DA Warner b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "YK Pathan",
+          "runs": 24,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 171.4,
+          "out_desc": "c DA Warner b A Mishra",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Dogra",
+          "runs": 20,
+          "balls": 25,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 80.0,
+          "out_desc": "st KD Karthik b S Ladda",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Warne",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "run out (DA Warner)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Narwal",
+          "runs": 12,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "c DA Warner b PD Collingwood",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SW Tait",
+          "runs": 11,
+          "balls": 12,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 91.7,
+          "out_desc": "st KD Karthik b V Sehwag",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Trivedi",
+          "runs": 7,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 140.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "MF Maharoof",
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 2,
+          "economy": 4.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AB McDonald",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "A Mishra",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 3,
+          "economy": 6.2,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "UT Yadav",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "S Ladda",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 1,
+          "economy": 9.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "PD Collingwood",
+          "maidens": 0,
+          "runs": 6,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "V Sehwag",
+          "maidens": 0,
+          "runs": 2,
+          "wickets": 1,
+          "economy": 3.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "0.4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MJ Lumb",
+          "runs": 0,
+          "over": "0.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "FY Fazal",
+          "runs": 1,
+          "over": "0.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "NV Ojha",
+          "runs": 29,
+          "over": "3.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "AA Jhunjhunwala",
+          "runs": 32,
+          "over": "4.1",
+          "wkt_n": 4
+        },
+        {
+          "name": "YK Pathan",
+          "runs": 66,
+          "over": "8.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "AC Voges",
+          "runs": 71,
+          "over": "10.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "SK Warne",
+          "runs": 73,
+          "over": "10.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "S Narwal",
+          "runs": 96,
+          "over": "13.3",
+          "wkt_n": 8
+        },
+        {
+          "name": "P Dogra",
+          "runs": 113,
+          "over": "16.2",
+          "wkt_n": 9
+        },
+        {
+          "name": "SW Tait",
+          "runs": 121,
+          "over": "17.4",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

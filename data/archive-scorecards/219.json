@@ -1,0 +1,377 @@
+{
+  "match_id": "219",
+  "source_id": "1216531",
+  "season": 2020,
+  "round": "League",
+  "match_number": 31,
+  "date": "2020-10-15",
+  "team1": "Royal Challengers Bangalore",
+  "team2": "Kings XI Punjab",
+  "venue": "Sharjah Cricket Stadium",
+  "result_text": "Kings XI Punjab won by 8 wkts",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bangalore",
+      "bowl_team": "Kings XI Punjab",
+      "innings_id": 1,
+      "score": {
+        "runs": 171,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 8.55,
+        "declared": false
+      },
+      "extras": {
+        "total": 12,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 4,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "AJ Finch",
+          "runs": 20,
+          "balls": 18,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 111.1,
+          "out_desc": "b M Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 18,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 150.0,
+          "out_desc": "c N Pooran b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 48,
+          "balls": 39,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 123.1,
+          "out_desc": "c KL Rahul b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 13,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 92.9,
+          "out_desc": "c CJ Jordan b M Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 23,
+          "balls": 19,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 121.1,
+          "out_desc": "c KL Rahul b CJ Jordan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 2,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 40.0,
+          "out_desc": "c DJ Hooda b Mohammed Shami",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CH Morris",
+          "runs": 25,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 312.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "I Udana",
+          "runs": 10,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "GJ Maxwell",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 2,
+          "economy": 11.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 9.7,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Ashwin",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 2,
+          "economy": 5.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "CJ Jordan",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 6.7,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "D Padikkal",
+          "runs": 38,
+          "over": "4.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "AJ Finch",
+          "runs": 62,
+          "over": "6.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 86,
+          "over": "10.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "S Dube",
+          "runs": 127,
+          "over": "16",
+          "wkt_n": 4
+        },
+        {
+          "name": "AB de Villiers",
+          "runs": 134,
+          "over": "17.3",
+          "wkt_n": 5
+        },
+        {
+          "name": "V Kohli",
+          "runs": 136,
+          "over": "17.5",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Kings XI Punjab",
+      "bowl_team": "Royal Challengers Bangalore",
+      "innings_id": 2,
+      "score": {
+        "runs": 177,
+        "wickets": 2,
+        "overs": "20",
+        "run_rate": 8.85,
+        "declared": false
+      },
+      "extras": {
+        "total": 12,
+        "wides": 9,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 61,
+          "balls": 49,
+          "fours": 1,
+          "sixes": 5,
+          "strike_rate": 124.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 45,
+          "balls": 25,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 180.0,
+          "out_desc": "b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 53,
+          "balls": 45,
+          "fours": 1,
+          "sixes": 5,
+          "strike_rate": 117.8,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 6,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 600.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "CH Morris",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 5.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Navdeep Saini",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 11.7,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "I Udana",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 44,
+          "wickets": 0,
+          "economy": 14.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Washington Sundar",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "MA Agarwal",
+          "runs": 78,
+          "over": "8",
+          "wkt_n": 1
+        },
+        {
+          "name": "CH Gayle",
+          "runs": 171,
+          "over": "19.5",
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
+  "error": null
+}

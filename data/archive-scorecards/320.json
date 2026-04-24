@@ -1,0 +1,395 @@
+{
+  "match_id": "320",
+  "source_id": "1304067",
+  "season": 2022,
+  "round": "League",
+  "match_number": 21,
+  "date": "2022-04-11",
+  "team1": "Gujarat Titans",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "Dr DY Patil Sports Academy, Mumbai, Mumbai",
+  "result_text": "Sunrisers Hyderabad won by 8 wkts",
+  "innings": [
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 162,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 8.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 22,
+        "wides": 20,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "MS Wade",
+          "runs": 19,
+          "balls": 19,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "lbw b Umran Malik",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 7,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 77.8,
+          "out_desc": "c RA Tripathi b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 11,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 122.2,
+          "out_desc": "c KS Williamson b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 50,
+          "balls": 42,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 119.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "DA Miller",
+          "runs": 12,
+          "balls": 15,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 80.0,
+          "out_desc": "c Abhishek Sharma b M Jansen",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Manohar",
+          "runs": 35,
+          "balls": 21,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 166.7,
+          "out_desc": "c RA Tripathi b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 6,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "run out (N Pooran / T Natarajan)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 2,
+          "economy": 9.2,
+          "wides": 12,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Jansen",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 6.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Washington Sundar",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 4.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 2,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Umran Malik",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 5,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AK Markram",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Shubman Gill",
+          "runs": 24,
+          "over": "2.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 47,
+          "over": "5.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "MS Wade",
+          "runs": 64,
+          "over": "8",
+          "wkt_n": 3
+        },
+        {
+          "name": "DA Miller",
+          "runs": 104,
+          "over": "13.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "A Manohar",
+          "runs": 154,
+          "over": "18.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 161,
+          "over": "19.4",
+          "wkt_n": 6
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 162,
+          "over": "20",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 2,
+      "score": {
+        "runs": 168,
+        "wickets": 3,
+        "overs": "20",
+        "run_rate": 8.77,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 1,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 42,
+          "balls": 32,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 131.2,
+          "out_desc": "c B Sai Sudharsan b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 57,
+          "balls": 46,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 123.9,
+          "out_desc": "c R Tewatia b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 17,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 154.5,
+          "out_desc": "retired hurt",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 34,
+          "balls": 18,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 188.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "AK Markram",
+          "runs": 12,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 6.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "LH Ferguson",
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 0,
+          "economy": 11.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DG Nalkande",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 0,
+          "economy": 10.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2.1"
+        },
+        {
+          "name": "R Tewatia",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 64,
+          "over": "8.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 129,
+          "over": "16.1",
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
+  "error": null
+}

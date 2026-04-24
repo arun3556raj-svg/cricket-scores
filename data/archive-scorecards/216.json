@@ -1,0 +1,485 @@
+{
+  "match_id": "216",
+  "source_id": "1216528",
+  "season": 2020,
+  "round": "League",
+  "match_number": 29,
+  "date": "2020-10-13",
+  "team1": "Chennai Super Kings",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "Dubai International Cricket Stadium",
+  "result_text": "Chennai Super Kings won by 20 runs",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 167,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 8.35,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "SM Curran",
+          "runs": 31,
+          "balls": 21,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 147.6,
+          "out_desc": "b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c JM Bairstow b Sandeep Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SR Watson",
+          "runs": 42,
+          "balls": 38,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 110.5,
+          "out_desc": "c MK Pandey b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 41,
+          "balls": 34,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 120.6,
+          "out_desc": "c DA Warner b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 21,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 161.5,
+          "out_desc": "c KS Williamson b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 25,
+          "balls": 10,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 250.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DL Chahar",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Sandeep Sharma",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 2,
+          "economy": 4.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 2,
+          "economy": 11.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "S Nadeem",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 7.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 2,
+          "economy": 10.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "F du Plessis",
+          "runs": 10,
+          "over": "2.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SM Curran",
+          "runs": 35,
+          "over": "4.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 116,
+          "over": "15.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "SR Watson",
+          "runs": 120,
+          "over": "16.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 152,
+          "over": "19",
+          "wkt_n": 5
+        },
+        {
+          "name": "DJ Bravo",
+          "runs": 152,
+          "over": "19.1",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 147,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 7.35,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "DA Warner",
+          "runs": 9,
+          "balls": 13,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 69.2,
+          "out_desc": "c & b SM Curran",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 23,
+          "balls": 24,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 95.8,
+          "out_desc": "b RA Jadeja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 4,
+          "balls": 3,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 57,
+          "balls": 39,
+          "fours": 7,
+          "sixes": 0,
+          "strike_rate": 146.2,
+          "out_desc": "c SN Thakur b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PK Garg",
+          "runs": 16,
+          "balls": 18,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 88.9,
+          "out_desc": "c RA Jadeja b KV Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Shankar",
+          "runs": 12,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 171.4,
+          "out_desc": "c RA Jadeja b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 14,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 175.0,
+          "out_desc": "hit wicket b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Nadeem",
+          "runs": 5,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c & b DJ Bravo",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sandeep Sharma",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "T Natarajan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 1,
+          "economy": 5.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "KV Sharma",
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 2,
+          "economy": 9.2,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DJ Bravo",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 2,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "PP Chawla",
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "DA Warner",
+          "runs": 23,
+          "over": "3.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 27,
+          "over": "4",
+          "wkt_n": 2
+        },
+        {
+          "name": "JM Bairstow",
+          "runs": 59,
+          "over": "9.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "PK Garg",
+          "runs": 99,
+          "over": "14.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "V Shankar",
+          "runs": 117,
+          "over": "16.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "KS Williamson",
+          "runs": 126,
+          "over": "17.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 146,
+          "over": "19",
+          "wkt_n": 7
+        },
+        {
+          "name": "S Nadeem",
+          "runs": 146,
+          "over": "19.3",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

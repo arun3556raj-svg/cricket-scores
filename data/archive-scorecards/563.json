@@ -1,0 +1,527 @@
+{
+  "match_id": "563",
+  "source_id": "1473482",
+  "season": 2025,
+  "round": "League",
+  "match_number": 45,
+  "date": "2025-04-27",
+  "team1": "Mumbai Indians",
+  "team2": "Lucknow Super Giants",
+  "venue": "Wankhede Stadium, Mumbai, Mumbai",
+  "result_text": "Mumbai Indians won by 54 runs",
+  "innings": [
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 1,
+      "score": {
+        "runs": 215,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 10.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "RD Rickelton",
+          "runs": 58,
+          "balls": 32,
+          "fours": 6,
+          "sixes": 4,
+          "strike_rate": 181.2,
+          "out_desc": "c A Badoni b DS Rathi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 12,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 240.0,
+          "out_desc": "c Prince Yadav b MP Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "WG Jacks",
+          "runs": 29,
+          "balls": 21,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 138.1,
+          "out_desc": "b Prince Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 54,
+          "balls": 28,
+          "fours": 4,
+          "sixes": 4,
+          "strike_rate": 192.9,
+          "out_desc": "c MR Marsh b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 6,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 120.0,
+          "out_desc": "c Prince Yadav b Ravi Bishnoi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 5,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 71.4,
+          "out_desc": "b MP Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 25,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 227.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "C Bosch",
+          "runs": 20,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "c N Pooran b Avesh Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DL Chahar",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "MP Yadav",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 2,
+          "economy": 10.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Prince Yadav",
+          "maidens": 0,
+          "runs": 44,
+          "wickets": 1,
+          "economy": 11.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DS Rathi",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 1,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 1,
+          "economy": 10.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Avesh Khan",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 2,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RG Sharma",
+          "runs": 33,
+          "over": "2.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "RD Rickelton",
+          "runs": 88,
+          "over": "8.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "WG Jacks",
+          "runs": 116,
+          "over": "11.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 137,
+          "over": "13",
+          "wkt_n": 4
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 157,
+          "over": "15.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 180,
+          "over": "17.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "C Bosch",
+          "runs": 208,
+          "over": "19.4",
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 2,
+      "score": {
+        "runs": 161,
+        "wickets": 10,
+        "overs": "20",
+        "run_rate": 8.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 5,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "MR Marsh",
+          "runs": 34,
+          "balls": 23,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 147.8,
+          "out_desc": "c Tilak Varma b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 9,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 81.8,
+          "out_desc": "c Naman Dhir b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Pooran",
+          "runs": 27,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 180.0,
+          "out_desc": "c SA Yadav b WG Jacks",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RR Pant",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "c KV Sharma b WG Jacks",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Badoni",
+          "runs": 35,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 159.1,
+          "out_desc": "c WG Jacks b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Miller",
+          "runs": 24,
+          "balls": 16,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "c C Bosch b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "runs": 13,
+          "balls": 14,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 92.9,
+          "out_desc": "b C Bosch",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Avesh Khan",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b JJ Bumrah",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Prince Yadav",
+          "runs": 4,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 44.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "DS Rathi",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 3,
+          "economy": 5.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "DL Chahar",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 12.7,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 4,
+          "economy": 5.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "WG Jacks",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 2,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "KV Sharma",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 12.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "C Bosch",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 3,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AK Markram",
+          "runs": 18,
+          "over": "2.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "N Pooran",
+          "runs": 60,
+          "over": "6.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "RR Pant",
+          "runs": 64,
+          "over": "6.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 110,
+          "over": "11.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "A Badoni",
+          "runs": 135,
+          "over": "14.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "DA Miller",
+          "runs": 141,
+          "over": "15.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "Abdul Samad",
+          "runs": 142,
+          "over": "15.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "Avesh Khan",
+          "runs": 142,
+          "over": "16",
+          "wkt_n": 8
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "runs": 157,
+          "over": "18.5",
+          "wkt_n": 9
+        },
+        {
+          "name": "DS Rathi",
+          "runs": 161,
+          "over": "20",
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}

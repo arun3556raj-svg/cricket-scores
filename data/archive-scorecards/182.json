@@ -1,0 +1,381 @@
+{
+  "match_id": "182",
+  "source_id": "1216494",
+  "season": 2020,
+  "round": "League",
+  "match_number": 39,
+  "date": "2020-10-21",
+  "team1": "Kolkata Knight Riders",
+  "team2": "Royal Challengers Bangalore",
+  "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+  "result_text": "Royal Challengers Bangalore won by 8 wkts",
+  "innings": [
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Royal Challengers Bangalore",
+      "innings_id": 1,
+      "score": {
+        "runs": 84,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 4.2,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Shubman Gill",
+          "runs": 1,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 16.7,
+          "out_desc": "c CH Morris b Navdeep Saini",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 1,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 20.0,
+          "out_desc": "c AB de Villiers b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "T Banton",
+          "runs": 10,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 125.0,
+          "out_desc": "c AB de Villiers b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 4,
+          "balls": 14,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 28.6,
+          "out_desc": "lbw b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "EJG Morgan",
+          "runs": 30,
+          "balls": 34,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 88.2,
+          "out_desc": "c Gurkeerat Singh b Washington Sundar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 4,
+          "balls": 17,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 23.5,
+          "out_desc": "c D Padikkal b YS Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 12,
+          "balls": 19,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 63.2,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "LH Ferguson",
+          "runs": 19,
+          "balls": 16,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 118.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "CH Morris",
+          "maidens": 1,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 4.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 2,
+          "runs": 8,
+          "wickets": 3,
+          "economy": 2.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Navdeep Saini",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 7.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "I Udana",
+          "maidens": 0,
+          "runs": 6,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 2,
+          "economy": 3.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Washington Sundar",
+          "maidens": 1,
+          "runs": 14,
+          "wickets": 1,
+          "economy": 3.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RA Tripathi",
+          "runs": 3,
+          "over": "1.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "N Rana",
+          "runs": 3,
+          "over": "1.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 3,
+          "over": "2.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "T Banton",
+          "runs": 14,
+          "over": "3.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "KD Karthik",
+          "runs": 32,
+          "over": "8.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "PJ Cummins",
+          "runs": 40,
+          "over": "12.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "EJG Morgan",
+          "runs": 57,
+          "over": "15.4",
+          "wkt_n": 7
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 84,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Royal Challengers Bangalore",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 2,
+      "score": {
+        "runs": 85,
+        "wickets": 2,
+        "overs": "14",
+        "run_rate": 6.3,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "D Padikkal",
+          "runs": 25,
+          "balls": 17,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 147.1,
+          "out_desc": "run out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AJ Finch",
+          "runs": 16,
+          "balls": 21,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 76.2,
+          "out_desc": "c KD Karthik b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Gurkeerat Singh",
+          "runs": 21,
+          "balls": 26,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 80.8,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "V Kohli",
+          "runs": 18,
+          "balls": 17,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 105.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "PJ Cummins",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2.3"
+        },
+        {
+          "name": "CV Varun",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "LH Ferguson",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 4.2,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "AJ Finch",
+          "runs": 46,
+          "over": "6.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 46,
+          "over": "6.4",
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
+  "error": null
+}

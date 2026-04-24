@@ -1,0 +1,441 @@
+{
+  "match_id": "540",
+  "source_id": "1473459",
+  "season": 2025,
+  "round": "League",
+  "match_number": 22,
+  "date": "2025-04-08",
+  "team1": "Punjab Kings",
+  "team2": "Chennai Super Kings",
+  "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, Mohali",
+  "result_text": "Punjab Kings won by 18 runs",
+  "innings": [
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 219,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 10.95,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 2,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 103,
+          "balls": 41,
+          "fours": 7,
+          "sixes": 9,
+          "strike_rate": 251.2,
+          "out_desc": "c V Shankar b Noor Ahmad",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "P Simran Singh",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Mukesh Choudhary",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 9,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 128.6,
+          "out_desc": "b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 4,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 57.1,
+          "out_desc": "c DP Conway b KK Ahmed",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Wadhera",
+          "runs": 9,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 150.0,
+          "out_desc": "c MS Dhoni b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c & b R Ashwin",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 52,
+          "balls": 36,
+          "fours": 2,
+          "sixes": 3,
+          "strike_rate": 144.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "M Jansen",
+          "runs": 34,
+          "balls": 19,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 178.9,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "KK Ahmed",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 2,
+          "economy": 11.2,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Mukesh Choudhary",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "R Ashwin",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 2,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "3"
+        },
+        {
+          "name": "Noor Ahmad",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 10.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Pathirana",
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 0,
+          "economy": 13.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        }
+      ],
+      "fow": [
+        {
+          "name": "P Simran Singh",
+          "runs": 17,
+          "over": "1.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "SS Iyer",
+          "runs": 32,
+          "over": "2.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "MP Stoinis",
+          "runs": 54,
+          "over": "5",
+          "wkt_n": 3
+        },
+        {
+          "name": "N Wadhera",
+          "runs": 81,
+          "over": "7.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "GJ Maxwell",
+          "runs": 83,
+          "over": "8",
+          "wkt_n": 5
+        },
+        {
+          "name": "Priyansh Arya",
+          "runs": 154,
+          "over": "13.4",
+          "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 201,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 10.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 15,
+        "wides": 9,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "R Ravindra",
+          "runs": 36,
+          "balls": 22,
+          "fours": 6,
+          "sixes": 0,
+          "strike_rate": 163.6,
+          "out_desc": "st P Simran Singh b GJ Maxwell",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DP Conway",
+          "runs": 69,
+          "balls": 49,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 140.8,
+          "out_desc": "retired out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c Shashank Singh b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 42,
+          "balls": 27,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 155.6,
+          "out_desc": "b LH Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 27,
+          "balls": 12,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 225.0,
+          "out_desc": "c YS Chahal b Yash Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 9,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 180.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "V Shankar",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 0,
+          "economy": 9.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Yash Thakur",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "GJ Maxwell",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "M Jansen",
+          "maidens": 0,
+          "runs": 48,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "LH Ferguson",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 2,
+          "economy": 10.0,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MP Stoinis",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "1"
+        },
+        {
+          "name": "YS Chahal",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "R Ravindra",
+          "runs": 61,
+          "over": "6.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "RD Gaikwad",
+          "runs": 62,
+          "over": "7.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Dube",
+          "runs": 151,
+          "over": "15.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "DP Conway",
+          "runs": 171,
+          "over": "17.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 192,
+          "over": "19.1",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

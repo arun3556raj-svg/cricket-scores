@@ -11,8 +11,10 @@ DIST_DIR = ROOT / "dist"
 STATIC_DIR = DIST_DIR / "static"
 DATA_DIR = DIST_DIR / "data"
 SCORECARD_DIR = DATA_DIR / "scorecards"
+ARCHIVE_SCORECARD_DIR = DATA_DIR / "archive-scorecards"
 TEMPLATE_PATH = ROOT / "templates" / "index.html"
 ARCHIVE_SOURCE_PATH = ROOT / "data" / "archive.json"
+ARCHIVE_SCORECARD_SOURCE_DIR = ROOT / "data" / "archive-scorecards"
 
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
@@ -25,7 +27,8 @@ STATIC_CONFIG_SNIPPET = """
     window.PITCH_CONFIG = {
       mode: "static",
       dataBasePath: "./data",
-      scorecardBasePath: "./data/scorecards"
+      scorecardBasePath: "./data/scorecards",
+      archiveScorecardBasePath: "./data/archive-scorecards"
     };
   </script>
 """.strip()
@@ -60,6 +63,8 @@ def write_json(path: Path, payload: dict) -> None:
 def copy_archive_data() -> None:
     if ARCHIVE_SOURCE_PATH.exists():
         shutil.copy2(ARCHIVE_SOURCE_PATH, DATA_DIR / "archive.json")
+    if ARCHIVE_SCORECARD_SOURCE_DIR.exists():
+        shutil.copytree(ARCHIVE_SCORECARD_SOURCE_DIR, ARCHIVE_SCORECARD_DIR, dirs_exist_ok=True)
 
 
 def collect_scorecard_targets(matches: dict, schedule: dict) -> dict[str, tuple[str, str]]:

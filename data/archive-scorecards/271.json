@@ -1,0 +1,359 @@
+{
+  "match_id": "271",
+  "source_id": "1254089",
+  "season": 2021,
+  "round": "League",
+  "match_number": 47,
+  "date": "2021-10-02",
+  "team1": "Chennai Super Kings",
+  "team2": "Rajasthan Royals",
+  "venue": "Zayed Cricket Stadium, Abu Dhabi, Abu Dhabi",
+  "result_text": "Rajasthan Royals won by 7 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 189,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 9.45,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "RD Gaikwad",
+          "runs": 101,
+          "balls": 60,
+          "fours": 9,
+          "sixes": 5,
+          "strike_rate": 168.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "F du Plessis",
+          "runs": 25,
+          "balls": 19,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 131.6,
+          "out_desc": "st SV Samson b R Tewatia",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 3,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 60.0,
+          "out_desc": "c S Dube b R Tewatia",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MM Ali",
+          "runs": 21,
+          "balls": 17,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 123.5,
+          "out_desc": "st SV Samson b R Tewatia",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 2,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c GD Phillips b C Sakariya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Jadeja",
+          "runs": 32,
+          "balls": 15,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 213.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Akash Singh",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 0,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "C Sakariya",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mustafizur Rahman",
+          "maidens": 0,
+          "runs": 51,
+          "wickets": 0,
+          "economy": 12.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Tewatia",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 3,
+          "economy": 9.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Markande",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 8.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "GD Phillips",
+          "maidens": 0,
+          "runs": 3,
+          "wickets": 0,
+          "economy": 3.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "F du Plessis",
+          "runs": 47,
+          "over": "6.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "SK Raina",
+          "runs": 57,
+          "over": "8.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "MM Ali",
+          "runs": 114,
+          "over": "14.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "AT Rayudu",
+          "runs": 134,
+          "over": "16.2",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 190,
+        "wickets": 3,
+        "overs": "18",
+        "run_rate": 10.86,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 4,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "E Lewis",
+          "runs": 27,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 225.0,
+          "out_desc": "c JR Hazlewood b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "YBK Jaiswal",
+          "runs": 50,
+          "balls": 21,
+          "fours": 6,
+          "sixes": 3,
+          "strike_rate": 238.1,
+          "out_desc": "c MS Dhoni b KM Asif",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SV Samson",
+          "runs": 28,
+          "balls": 23,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 121.7,
+          "out_desc": "c RD Gaikwad b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Dube",
+          "runs": 64,
+          "balls": 42,
+          "fours": 4,
+          "sixes": 4,
+          "strike_rate": 152.4,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "GD Phillips",
+          "runs": 14,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "SM Curran",
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 0,
+          "economy": 13.8,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "JR Hazlewood",
+          "maidens": 0,
+          "runs": 54,
+          "wickets": 0,
+          "economy": 13.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 2,
+          "economy": 7.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "KM Asif",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "2.1"
+        },
+        {
+          "name": "MM Ali",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 9.9,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2.2"
+        },
+        {
+          "name": "RA Jadeja",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "E Lewis",
+          "runs": 77,
+          "over": "5.2",
+          "wkt_n": 1
+        },
+        {
+          "name": "YBK Jaiswal",
+          "runs": 81,
+          "over": "6.1",
+          "wkt_n": 2
+        },
+        {
+          "name": "SV Samson",
+          "runs": 170,
+          "over": "15.4",
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
+  "error": null
+}

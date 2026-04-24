@@ -1,0 +1,425 @@
+{
+  "match_id": "649",
+  "source_id": "336033",
+  "season": 2008,
+  "round": "League",
+  "match_number": 49,
+  "date": "2008-05-24",
+  "team1": "Chennai Super Kings",
+  "team2": "Rajasthan Royals",
+  "venue": "MA Chidambaram Stadium, Chepauk, Chennai",
+  "result_text": "Rajasthan Royals won by 10 runs",
+  "innings": [
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 211,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 10.55,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 1,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "GC Smith",
+          "runs": 91,
+          "balls": 51,
+          "fours": 9,
+          "sixes": 4,
+          "strike_rate": 178.4,
+          "out_desc": "c MS Dhoni b SK Raina",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Asnodkar",
+          "runs": 41,
+          "balls": 26,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 157.7,
+          "out_desc": "run out (MS Dhoni / PA Patel)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kamran Akmal",
+          "runs": 53,
+          "balls": 28,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 189.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "YK Pathan",
+          "runs": 6,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 120.0,
+          "out_desc": "c M Muralitharan b JA Morkel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Kaif",
+          "runs": 10,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 142.9,
+          "out_desc": "c A Mukund b JA Morkel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "T Kohli",
+          "runs": 3,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (S Badrinath / PA Patel)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "M Ntini",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 0,
+          "economy": 10.8,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "MS Gony",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 10.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JA Morkel",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 2,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Muralitharan",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "L Balaji",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "SK Raina",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 10.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SA Asnodkar",
+          "runs": 127,
+          "over": "11.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "GC Smith",
+          "runs": 150,
+          "over": "14",
+          "wkt_n": 2
+        },
+        {
+          "name": "YK Pathan",
+          "runs": 178,
+          "over": "16.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "M Kaif",
+          "runs": 199,
+          "over": "18.2",
+          "wkt_n": 4
+        },
+        {
+          "name": "T Kohli",
+          "runs": 211,
+          "over": "20",
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 201,
+        "wickets": 7,
+        "overs": "20",
+        "run_rate": 10.05,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 3,
+        "no_balls": 3,
+        "byes": 1,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "PA Patel",
+          "runs": 54,
+          "balls": 39,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 138.5,
+          "out_desc": "st Kamran Akmal b SK Warne",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SP Fleming",
+          "runs": 7,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 175.0,
+          "out_desc": "run out (Sohail Tanvir / Kamran Akmal)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 45,
+          "balls": 24,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 187.5,
+          "out_desc": "c M Kaif b SK Warne",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JA Morkel",
+          "runs": 71,
+          "balls": 39,
+          "fours": 6,
+          "sixes": 4,
+          "strike_rate": 182.1,
+          "out_desc": "c RA Jadeja b Sohail Tanvir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 12,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "c M Kaif b Sohail Tanvir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c T Kohli b MM Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Gony",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "A Mukund",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Sohail Tanvir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Sohail Tanvir",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 3,
+          "economy": 8.2,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "YK Pathan",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 10.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "MM Patel",
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 1,
+          "economy": 13.8,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "Pankaj Singh",
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Warne",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 2,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "D Salunkhe",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 14.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SP Fleming",
+          "runs": 14,
+          "over": "1.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "SK Raina",
+          "runs": 84,
+          "over": "8.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "PA Patel",
+          "runs": 157,
+          "over": "15",
+          "wkt_n": 3
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 182,
+          "over": "17.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 188,
+          "over": "18.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "JA Morkel",
+          "runs": 201,
+          "over": "19.5",
+          "wkt_n": 6
+        },
+        {
+          "name": "A Mukund",
+          "runs": 201,
+          "over": "20",
+          "wkt_n": 7
+        }
+      ]
+    }
+  ],
+  "error": null
+}

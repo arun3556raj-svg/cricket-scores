@@ -1,0 +1,513 @@
+{
+  "match_id": "407",
+  "source_id": "1359508",
+  "season": 2023,
+  "round": "League",
+  "match_number": 34,
+  "date": "2023-04-24",
+  "team1": "Delhi Capitals",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad, Hyderabad",
+  "result_text": "Delhi Capitals won by 7 runs",
+  "innings": [
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 144,
+        "wickets": 9,
+        "overs": "20",
+        "run_rate": 7.2,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "DA Warner",
+          "runs": 21,
+          "balls": 20,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 105.0,
+          "out_desc": "c HC Brook b Washington Sundar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "PD Salt",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c H Klaasen b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 25,
+          "balls": 15,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 166.7,
+          "out_desc": "lbw b T Natarajan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SN Khan",
+          "runs": 10,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 111.1,
+          "out_desc": "c B Kumar b Washington Sundar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 34,
+          "balls": 27,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 125.9,
+          "out_desc": "run out (H Klaasen / Washington Sundar)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Aman Hakim Khan",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200.0,
+          "out_desc": "c Abhishek Sharma b Washington Sundar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AR Patel",
+          "runs": 34,
+          "balls": 34,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RV Patel",
+          "runs": 5,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 83.3,
+          "out_desc": "run out (H Klaasen)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "A Nortje",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (H Klaasen / Umran Malik)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 4,
+          "balls": 3,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "I Sharma",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 2,
+          "economy": 2.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Jansen",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 13.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "Washington Sundar",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 3,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Markande",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Umran Malik",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "AK Markram",
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 0,
+          "economy": 7.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PD Salt",
+          "runs": 1,
+          "over": "0.3",
+          "wkt_n": 1
+        },
+        {
+          "name": "MR Marsh",
+          "runs": 39,
+          "over": "4.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "DA Warner",
+          "runs": 57,
+          "over": "7.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "SN Khan",
+          "runs": 58,
+          "over": "7.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "Aman Hakim Khan",
+          "runs": 62,
+          "over": "8",
+          "wkt_n": 5
+        },
+        {
+          "name": "AR Patel",
+          "runs": 131,
+          "over": "17.5",
+          "wkt_n": 6
+        },
+        {
+          "name": "MK Pandey",
+          "runs": 134,
+          "over": "18.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "A Nortje",
+          "runs": 139,
+          "over": "19.2",
+          "wkt_n": 8
+        },
+        {
+          "name": "RV Patel",
+          "runs": 139,
+          "over": "19.4",
+          "wkt_n": 9
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 2,
+      "score": {
+        "runs": 137,
+        "wickets": 6,
+        "overs": "20",
+        "run_rate": 6.85,
+        "declared": false
+      },
+      "extras": {
+        "total": 1,
+        "wides": 0,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "HC Brook",
+          "runs": 7,
+          "balls": 14,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 49,
+          "balls": 38,
+          "fours": 7,
+          "sixes": 0,
+          "strike_rate": 128.9,
+          "out_desc": "c Aman Hakim Khan b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 15,
+          "balls": 21,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 71.4,
+          "out_desc": "c PD Salt b I Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 5,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c & b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "AK Markram",
+          "runs": 3,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 60.0,
+          "out_desc": "b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 31,
+          "balls": 19,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 163.2,
+          "out_desc": "c Aman Hakim Khan b A Nortje",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 24,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 160.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "M Jansen",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "I Sharma",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "A Nortje",
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 2,
+          "economy": 8.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Mukesh Kumar",
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 9.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 2,
+          "economy": 5.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MR Marsh",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "HC Brook",
+          "runs": 31,
+          "over": "5.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "MA Agarwal",
+          "runs": 69,
+          "over": "11.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "RA Tripathi",
+          "runs": 75,
+          "over": "12.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 79,
+          "over": "13.3",
+          "wkt_n": 4
+        },
+        {
+          "name": "AK Markram",
+          "runs": 85,
+          "over": "14.1",
+          "wkt_n": 5
+        },
+        {
+          "name": "H Klaasen",
+          "runs": 126,
+          "over": "18.3",
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}

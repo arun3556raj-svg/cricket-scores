@@ -1,0 +1,437 @@
+{
+  "match_id": "622",
+  "source_id": "336005",
+  "season": 2008,
+  "round": "League",
+  "match_number": 24,
+  "date": "2008-05-04",
+  "team1": "Rajasthan Royals",
+  "team2": "Chennai Super Kings",
+  "venue": "Sawai Mansingh Stadium, Jaipur",
+  "result_text": "Rajasthan Royals won by 8 wkts",
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 109,
+        "wickets": 10,
+        "overs": "19",
+        "run_rate": 5.74,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 4,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "PA Patel",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b Sohail Tanvir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SP Fleming",
+          "runs": 0,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "lbw b Sohail Tanvir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Vidyut",
+          "runs": 5,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c SK Warne b Sohail Tanvir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SK Raina",
+          "runs": 27,
+          "balls": 27,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c Sohail Tanvir b MM Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 15,
+          "balls": 14,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 107.1,
+          "out_desc": "c & b SR Watson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 1,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 14.3,
+          "out_desc": "c GC Smith b SK Warne",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JA Morkel",
+          "runs": 42,
+          "balls": 33,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 127.3,
+          "out_desc": "b Sohail Tanvir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Joginder Sharma",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "c Sohail Tanvir b MM Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MS Gony",
+          "runs": 1,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "M Muralitharan",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Sohail Tanvir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "M Ntini",
+          "runs": 11,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 91.7,
+          "out_desc": "b Sohail Tanvir",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Sohail Tanvir",
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 6,
+          "economy": 3.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SR Watson",
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 4.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MM Patel",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 2,
+          "economy": 4.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Trivedi",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "SK Warne",
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 9.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "YK Pathan",
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 4.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PA Patel",
+          "runs": 0,
+          "over": "0.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "SP Fleming",
+          "runs": 1,
+          "over": "0.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "S Vidyut",
+          "runs": 11,
+          "over": "2.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "S Badrinath",
+          "runs": 38,
+          "over": "5.5",
+          "wkt_n": 4
+        },
+        {
+          "name": "MS Dhoni",
+          "runs": 44,
+          "over": "7.5",
+          "wkt_n": 5
+        },
+        {
+          "name": "SK Raina",
+          "runs": 88,
+          "over": "14.2",
+          "wkt_n": 6
+        },
+        {
+          "name": "Joginder Sharma",
+          "runs": 91,
+          "over": "14.5",
+          "wkt_n": 7
+        },
+        {
+          "name": "JA Morkel",
+          "runs": 96,
+          "over": "16.1",
+          "wkt_n": 8
+        },
+        {
+          "name": "M Muralitharan",
+          "runs": 96,
+          "over": "16.4",
+          "wkt_n": 9
+        },
+        {
+          "name": "M Ntini",
+          "runs": 109,
+          "over": "19",
+          "wkt_n": 10
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 110,
+        "wickets": 2,
+        "overs": "15",
+        "run_rate": 7.67,
+        "declared": false
+      },
+      "extras": {
+        "total": 21,
+        "wides": 14,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 6
+      },
+      "batsmen": [
+        {
+          "name": "GC Smith",
+          "runs": 35,
+          "balls": 44,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 79.5,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "SA Asnodkar",
+          "runs": 32,
+          "balls": 29,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 110.3,
+          "out_desc": "c M Ntini b S Vidyut",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "YK Pathan",
+          "runs": 8,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 160.0,
+          "out_desc": "c SK Raina b M Muralitharan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SR Watson",
+          "runs": 14,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 175.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "M Ntini",
+          "maidens": 1,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 5.7,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "MS Gony",
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "JA Morkel",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 7,
+          "no_balls": 1,
+          "overs": "1"
+        },
+        {
+          "name": "M Muralitharan",
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 1,
+          "economy": 5.0,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "SK Raina",
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1.2"
+        },
+        {
+          "name": "S Vidyut",
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 11.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "SA Asnodkar",
+          "runs": 78,
+          "over": "10.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "YK Pathan",
+          "runs": 92,
+          "over": "12",
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
+  "error": null
+}
