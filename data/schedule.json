@@ -565,15 +565,15 @@
       "id": "151889",
       "series": "Indian Premier League 2026",
       "match_desc": "34th Match",
-      "team1": "Royal Challengers Bengaluru",
-      "team1_short": "RCB",
-      "team1_color": "#dc2626",
-      "team2": "Gujarat Titans",
-      "team2_short": "GT",
-      "team2_color": "#0f766e",
+      "team1": "Gujarat Titans",
+      "team1_short": "GT",
+      "team1_color": "#0f766e",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
       "venue": "M.Chinnaswamy Stadium, Bengaluru",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 24, 14:00 GMT",
+      "status": "live",
+      "status_text": "Royal Challengers Bengaluru opt to bowl",
       "start_time": "02:00 PM",
       "start_epoch": 1777039200000,
       "match_date": "Fri, 24 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "24 Apr, 12:46 PM",
+  "last_updated": "24 Apr, 02:47 PM",
   "error": null
 }

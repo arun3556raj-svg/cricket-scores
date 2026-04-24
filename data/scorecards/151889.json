@@ -1,4 +1,221 @@
 {
-  "innings": [],
+  "innings": [
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Royal Challengers Bengaluru",
+      "innings_id": 1,
+      "score": {
+        "runs": 112,
+        "wickets": 0,
+        "overs": 10.3,
+        "run_rate": 10.67,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 3,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Sai Sudharsan",
+          "runs": 79,
+          "balls": 43,
+          "fours": 10,
+          "sixes": 4,
+          "strike_rate": 183.72,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 29,
+          "balls": 20,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 145,
+          "out_desc": "batting",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jos Buttler",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": true
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Shahrukh Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jason Holder",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rahul Tewatia",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Manav Suthar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kagiso Rabada",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mohammed Siraj",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Bhuvneshwar Kumar",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 8,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Josh Hazlewood",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Rasikh Salam Dar",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 11.5,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Krunal Pandya",
+          "overs": 2.3,
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 11.2,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Romario Shepherd",
+          "overs": 1,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 17,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Suyash Sharma",
+          "overs": 1,
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10,
+          "wides": 1,
+          "no_balls": 0
+        }
+      ],
+      "fow": []
+    }
+  ],
   "error": null
 }
