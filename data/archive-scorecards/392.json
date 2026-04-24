@@ -209,15 +209,15 @@
         "runs": 205,
         "wickets": 7,
         "overs": "20",
-        "run_rate": 10.17,
+        "run_rate": 10.25,
         "declared": false
       },
       "extras": {
         "total": 10,
         "wides": 6,
-        "no_balls": 1,
+        "no_balls": 3,
         "byes": 0,
-        "leg_byes": 3
+        "leg_byes": 1
       },
       "batsmen": [
         {
@@ -271,10 +271,10 @@
         {
           "name": "N Rana",
           "runs": 75,
-          "balls": 41,
+          "balls": 40,
           "fours": 5,
           "sixes": 6,
-          "strike_rate": 182.9,
+          "strike_rate": 187.5,
           "out_desc": "c Washington Sundar b T Natarajan",
           "is_captain": false,
           "is_keeper": false,
@@ -343,12 +343,12 @@
         {
           "name": "M Jansen",
           "maidens": 0,
-          "runs": 36,
+          "runs": 38,
           "wickets": 2,
-          "economy": 8.6,
+          "economy": 9.5,
           "wides": 4,
-          "no_balls": 1,
-          "overs": "4.1"
+          "no_balls": 2,
+          "overs": "4"
         },
         {
           "name": "T Natarajan",
@@ -419,19 +419,19 @@
         {
           "name": "AD Russell",
           "runs": 96,
-          "over": "10.2",
+          "over": "10.1",
           "wkt_n": 5
         },
         {
           "name": "N Rana",
           "runs": 165,
-          "over": "16.4",
+          "over": "16.3",
           "wkt_n": 6
         },
         {
           "name": "SN Thakur",
           "runs": 197,
-          "over": "19.2",
+          "over": "19.1",
           "wkt_n": 7
         }
       ]

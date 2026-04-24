@@ -573,7 +573,7 @@
       "team2_color": "#dc2626",
       "venue": "M.Chinnaswamy Stadium, Bengaluru",
       "status": "live",
-      "status_text": "Royal Challengers Bengaluru need 149 runs in 85 balls",
+      "status_text": "Royal Challengers Bengaluru need 86 runs in 58 balls",
       "start_time": "02:00 PM",
       "start_epoch": 1777039200000,
       "match_date": "Fri, 24 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "24 Apr, 04:29 PM",
+  "last_updated": "24 Apr, 04:50 PM",
   "error": null
 }

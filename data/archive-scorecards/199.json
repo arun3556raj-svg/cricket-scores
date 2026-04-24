@@ -18,14 +18,14 @@
         "runs": 193,
         "wickets": 4,
         "overs": "20",
-        "run_rate": 9.57,
+        "run_rate": 9.65,
         "declared": false
       },
       "extras": {
         "total": 14,
         "wides": 5,
-        "no_balls": 1,
-        "byes": 6,
+        "no_balls": 6,
+        "byes": 1,
         "leg_byes": 2
       },
       "batsmen": [
@@ -92,10 +92,10 @@
         {
           "name": "HH Pandya",
           "runs": 30,
-          "balls": 18,
+          "balls": 17,
           "fours": 2,
           "sixes": 1,
-          "strike_rate": 166.7,
+          "strike_rate": 176.5,
           "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
@@ -126,12 +126,12 @@
         {
           "name": "JC Archer",
           "maidens": 0,
-          "runs": 33,
+          "runs": 38,
           "wickets": 1,
-          "economy": 7.9,
+          "economy": 9.5,
           "wides": 0,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "Kartik Tyagi",
@@ -198,7 +198,7 @@
       "score": {
         "runs": 136,
         "wickets": 10,
-        "overs": "19",
+        "overs": "18.1",
         "run_rate": 7.49,
         "declared": false
       },

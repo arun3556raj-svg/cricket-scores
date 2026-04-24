@@ -1,0 +1,407 @@
+{
+  "match_id": "1189",
+  "source_id": "1527693",
+  "season": 2026,
+  "round": "League",
+  "match_number": 20,
+  "date": "2026-04-12",
+  "team1": "Royal Challengers Bengaluru",
+  "team2": "Mumbai Indians",
+  "venue": "Wankhede Stadium, Mumbai, Mumbai",
+  "result_text": "Royal Challengers Bengaluru won by 18 runs",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 240,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 12.0,
+        "declared": false
+      },
+      "extras": {
+        "total": 13,
+        "wides": 11,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "PD Salt",
+          "runs": 78,
+          "balls": 36,
+          "fours": 6,
+          "sixes": 6,
+          "strike_rate": 216.7,
+          "out_desc": "c HH Pandya b SN Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 50,
+          "balls": 38,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 131.6,
+          "out_desc": "c SA Yadav b HH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 53,
+          "balls": 20,
+          "fours": 4,
+          "sixes": 5,
+          "strike_rate": 265.0,
+          "out_desc": "c Tilak Varma b MJ Santner",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TH David",
+          "runs": 34,
+          "balls": 15,
+          "fours": 2,
+          "sixes": 3,
+          "strike_rate": 226.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 10,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 111.1,
+          "out_desc": "lbw b TA Boult",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "TA Boult",
+          "maidens": 0,
+          "runs": 50,
+          "wickets": 1,
+          "economy": 12.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "HH Pandya",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 1,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "JJ Bumrah",
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "MJ Santner",
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 10.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "M Markande",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 20.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "SN Thakur",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 16.0,
+          "wides": 6,
+          "no_balls": 0,
+          "overs": "2"
+        }
+      ],
+      "fow": [
+        {
+          "name": "PD Salt",
+          "runs": 120,
+          "over": "10.5",
+          "wkt_n": 1
+        },
+        {
+          "name": "V Kohli",
+          "runs": 185,
+          "over": "14.4",
+          "wkt_n": 2
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 194,
+          "over": "16",
+          "wkt_n": 3
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 231,
+          "over": "19.2",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Royal Challengers Bengaluru",
+      "innings_id": 2,
+      "score": {
+        "runs": 222,
+        "wickets": 5,
+        "overs": "20",
+        "run_rate": 11.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 12,
+        "wides": 9,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "RD Rickelton",
+          "runs": 37,
+          "balls": 22,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 168.2,
+          "out_desc": "c B Kumar b Suyash Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RG Sharma",
+          "runs": 19,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 146.2,
+          "out_desc": "retired hurt",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 33,
+          "balls": 22,
+          "fours": 5,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "c Rasikh Salam b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.3,
+          "out_desc": "c JA Duffy b Suyash Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 40,
+          "balls": 22,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 181.8,
+          "out_desc": "c R Shepherd b JA Duffy",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "SE Rutherford",
+          "runs": 71,
+          "balls": 30,
+          "fours": 1,
+          "sixes": 9,
+          "strike_rate": 236.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "c RM Patidar b Rasikh Salam",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "MJ Santner",
+          "runs": 8,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 133.3,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "JA Duffy",
+          "maidens": 0,
+          "runs": 58,
+          "wickets": 1,
+          "economy": 14.5,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rasikh Salam",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 8.1,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "2.5"
+        },
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Suyash Sharma",
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 2,
+          "economy": 11.8,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "R Shepherd",
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 24.0,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "1.1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "RD Rickelton",
+          "runs": 72,
+          "over": "7.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 74,
+          "over": "7.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "SA Yadav",
+          "runs": 121,
+          "over": "12.2",
+          "wkt_n": 3
+        },
+        {
+          "name": "HH Pandya",
+          "runs": 145,
+          "over": "14.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 154,
+          "over": "15.3",
+          "wkt_n": 5
+        }
+      ]
+    }
+  ],
+  "error": null
+}

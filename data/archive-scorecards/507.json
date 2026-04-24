@@ -243,14 +243,14 @@
         "runs": 139,
         "wickets": 8,
         "overs": "16",
-        "run_rate": 8.6,
+        "run_rate": 8.69,
         "declared": false
       },
       "extras": {
         "total": 12,
         "wides": 5,
-        "no_balls": 0,
-        "byes": 5,
+        "no_balls": 5,
+        "byes": 0,
         "leg_byes": 2
       },
       "batsmen": [
@@ -269,10 +269,10 @@
         {
           "name": "RG Sharma",
           "runs": 19,
-          "balls": 24,
+          "balls": 23,
           "fours": 1,
           "sixes": 1,
-          "strike_rate": 79.2,
+          "strike_rate": 82.6,
           "out_desc": "c SP Narine b CV Varun",
           "is_captain": false,
           "is_keeper": false,
@@ -379,12 +379,12 @@
         {
           "name": "VG Arora",
           "maidens": 0,
-          "runs": 15,
+          "runs": 20,
           "wickets": 0,
-          "economy": 6.9,
+          "economy": 10.0,
           "wides": 1,
-          "no_balls": 0,
-          "overs": "2.1"
+          "no_balls": 1,
+          "overs": "2"
         },
         {
           "name": "MA Starc",
@@ -441,49 +441,49 @@
         {
           "name": "Ishan Kishan",
           "runs": 65,
-          "over": "7",
+          "over": "6.5",
           "wkt_n": 1
         },
         {
           "name": "RG Sharma",
           "runs": 67,
-          "over": "8",
+          "over": "7.5",
           "wkt_n": 2
         },
         {
           "name": "SA Yadav",
           "runs": 87,
-          "over": "11",
+          "over": "10.5",
           "wkt_n": 3
         },
         {
           "name": "HH Pandya",
           "runs": 91,
-          "over": "11.5",
+          "over": "11.4",
           "wkt_n": 4
         },
         {
           "name": "TH David",
           "runs": 92,
-          "over": "12.2",
+          "over": "12.1",
           "wkt_n": 5
         },
         {
           "name": "N Wadhera",
           "runs": 117,
-          "over": "14.1",
+          "over": "14",
           "wkt_n": 6
         },
         {
           "name": "Naman Dhir",
           "runs": 136,
-          "over": "15.2",
+          "over": "15.1",
           "wkt_n": 7
         },
         {
           "name": "Tilak Varma",
           "runs": 137,
-          "over": "15.4",
+          "over": "15.3",
           "wkt_n": 8
         }
       ]

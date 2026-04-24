@@ -223,15 +223,15 @@
         "runs": 135,
         "wickets": 9,
         "overs": "20",
-        "run_rate": 6.69,
+        "run_rate": 6.75,
         "declared": false
       },
       "extras": {
         "total": 6,
         "wides": 3,
-        "no_balls": 1,
+        "no_balls": 3,
         "byes": 0,
-        "leg_byes": 2
+        "leg_byes": 0
       },
       "batsmen": [
         {
@@ -273,10 +273,10 @@
         {
           "name": "RR Pant",
           "runs": 27,
-          "balls": 32,
+          "balls": 31,
           "fours": 2,
           "sixes": 1,
-          "strike_rate": 84.4,
+          "strike_rate": 87.1,
           "out_desc": "c Shubman Gill b CV Varun",
           "is_captain": false,
           "is_keeper": false,
@@ -381,12 +381,12 @@
         {
           "name": "M Prasidh Krishna",
           "maidens": 0,
-          "runs": 18,
+          "runs": 20,
           "wickets": 0,
-          "economy": 8.3,
+          "economy": 10.0,
           "wides": 1,
-          "no_balls": 1,
-          "overs": "2.1"
+          "no_balls": 2,
+          "overs": "2"
         },
         {
           "name": "KL Nagarkoti",
@@ -445,43 +445,43 @@
         {
           "name": "RR Pant",
           "runs": 76,
-          "over": "11.3",
+          "over": "11.2",
           "wkt_n": 3
         },
         {
           "name": "SO Hetmyer",
           "runs": 95,
-          "over": "13.3",
+          "over": "13.2",
           "wkt_n": 4
         },
         {
           "name": "SS Iyer",
           "runs": 95,
-          "over": "13.4",
+          "over": "13.3",
           "wkt_n": 5
         },
         {
           "name": "MP Stoinis",
           "runs": 110,
-          "over": "15.2",
+          "over": "15.1",
           "wkt_n": 6
         },
         {
           "name": "AR Patel",
           "runs": 112,
-          "over": "16",
+          "over": "15.5",
           "wkt_n": 7
         },
         {
           "name": "K Rabada",
           "runs": 132,
-          "over": "19",
+          "over": "18.5",
           "wkt_n": 8
         },
         {
           "name": "TU Deshpande",
           "runs": 135,
-          "over": "20",
+          "over": "19.5",
           "wkt_n": 9
         }
       ]

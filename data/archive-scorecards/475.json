@@ -114,7 +114,7 @@
           "not_out": true
         },
         {
-          "name": "Arshad Khan (2)",
+          "name": "Arshad Khan",
           "runs": 5,
           "balls": 4,
           "fours": 1,
@@ -226,7 +226,7 @@
           "wkt_n": 6
         },
         {
-          "name": "Arshad Khan (2)",
+          "name": "Arshad Khan",
           "runs": 161,
           "over": "20",
           "wkt_n": 7
@@ -240,7 +240,7 @@
       "score": {
         "runs": 162,
         "wickets": 2,
-        "overs": "16",
+        "overs": "15.4",
         "run_rate": 10.34,
         "declared": false
       },
@@ -343,7 +343,7 @@
           "overs": "2"
         },
         {
-          "name": "Arshad Khan (2)",
+          "name": "Arshad Khan",
           "maidens": 0,
           "runs": 24,
           "wickets": 0,

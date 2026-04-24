@@ -17,7 +17,7 @@
       "score": {
         "runs": 112,
         "wickets": 10,
-        "overs": "20",
+        "overs": "19.5",
         "run_rate": 5.65,
         "declared": false
       },
@@ -293,8 +293,8 @@
       "innings_id": 2,
       "score": {
         "runs": 115,
-        "wickets": 3,
-        "overs": "17",
+        "wickets": 2,
+        "overs": "16.5",
         "run_rate": 6.83,
         "declared": false
       },

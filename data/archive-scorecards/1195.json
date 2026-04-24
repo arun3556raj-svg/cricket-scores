@@ -1,0 +1,461 @@
+{
+  "match_id": "1195",
+  "source_id": "1529269",
+  "season": 2026,
+  "round": "League",
+  "match_number": 26,
+  "date": "2026-04-18",
+  "team1": "Royal Challengers Bengaluru",
+  "team2": "Delhi Capitals",
+  "venue": "M Chinnaswamy Stadium, Bengaluru, Bengaluru",
+  "result_text": "Delhi Capitals won by 6 wkts",
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 1,
+      "score": {
+        "runs": 175,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 8.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 11,
+        "wides": 8,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "PD Salt",
+          "runs": 63,
+          "balls": 38,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 165.8,
+          "out_desc": "c T Stubbs b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Kohli",
+          "runs": 19,
+          "balls": 13,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 146.2,
+          "out_desc": "c P Nissanka b L Ngidi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 18,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 138.5,
+          "out_desc": "c DA Miller b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 8,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 200.0,
+          "out_desc": "c KL Rahul b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "TH David",
+          "runs": 26,
+          "balls": 16,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 162.5,
+          "out_desc": "c T Natarajan b AR Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 14,
+          "balls": 20,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 70.0,
+          "out_desc": "c DA Miller b L Ngidi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 1,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25.0,
+          "out_desc": "lbw b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 12,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 120.0,
+          "out_desc": "run out (KL Rahul / L Ngidi)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rasikh Salam",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "B Kumar",
+          "runs": 3,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 150.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Auqib Nabi",
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 12.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Mukesh Kumar",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8.0,
+          "wides": 4,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "L Ngidi",
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 2,
+          "economy": 9.8,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 2,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "2"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 2,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        }
+      ],
+      "fow": [
+        {
+          "name": "V Kohli",
+          "runs": 52,
+          "over": "5.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "D Padikkal",
+          "runs": 99,
+          "over": "10",
+          "wkt_n": 2
+        },
+        {
+          "name": "PD Salt",
+          "runs": 105,
+          "over": "10.4",
+          "wkt_n": 3
+        },
+        {
+          "name": "RM Patidar",
+          "runs": 131,
+          "over": "12.4",
+          "wkt_n": 4
+        },
+        {
+          "name": "TH David",
+          "runs": 146,
+          "over": "15.2",
+          "wkt_n": 5
+        },
+        {
+          "name": "R Shepherd",
+          "runs": 149,
+          "over": "16.3",
+          "wkt_n": 6
+        },
+        {
+          "name": "KH Pandya",
+          "runs": 172,
+          "over": "19.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "JM Sharma",
+          "runs": 172,
+          "over": "19.4",
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Royal Challengers Bengaluru",
+      "innings_id": 2,
+      "score": {
+        "runs": 179,
+        "wickets": 4,
+        "overs": "19.5",
+        "run_rate": 9.03,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 2,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 3
+      },
+      "batsmen": [
+        {
+          "name": "P Nissanka",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50.0,
+          "out_desc": "lbw b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 57,
+          "balls": 34,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 167.6,
+          "out_desc": "c V Kohli b KH Pandya",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KK Nair",
+          "runs": 5,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "c PD Salt b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c JM Sharma b B Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 60,
+          "balls": 47,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 127.7,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "AR Patel",
+          "runs": 26,
+          "balls": 18,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 144.4,
+          "out_desc": "retired hurt",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Miller",
+          "runs": 22,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 220.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "B Kumar",
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 3,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "JR Hazlewood",
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rasikh Salam",
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 10.0,
+          "wides": 2,
+          "no_balls": 1,
+          "overs": "4"
+        },
+        {
+          "name": "KH Pandya",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Suyash Sharma",
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 10.3,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "R Shepherd",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 20.4,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "0.5"
+        }
+      ],
+      "fow": [
+        {
+          "name": "P Nissanka",
+          "runs": 2,
+          "over": "0.4",
+          "wkt_n": 1
+        },
+        {
+          "name": "KK Nair",
+          "runs": 16,
+          "over": "2.2",
+          "wkt_n": 2
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 18,
+          "over": "2.5",
+          "wkt_n": 3
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 87,
+          "over": "10.1",
+          "wkt_n": 4
+        }
+      ]
+    }
+  ],
+  "error": null
+}

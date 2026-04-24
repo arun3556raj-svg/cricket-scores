@@ -240,39 +240,39 @@
       "bowl_team": "Gujarat Titans",
       "innings_id": 2,
       "score": {
-        "runs": 5,
-        "wickets": 0,
-        "overs": 1,
-        "run_rate": 5,
+        "runs": 124,
+        "wickets": 1,
+        "overs": 10.4,
+        "run_rate": 11.62,
         "declared": false
       },
       "extras": {
-        "total": 1,
-        "wides": 0,
+        "total": 3,
+        "wides": 1,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 1
+        "leg_byes": 2
       },
       "batsmen": [
         {
           "name": "Jacob Bethell",
-          "runs": 1,
-          "balls": 3,
-          "fours": 0,
+          "runs": 14,
+          "balls": 10,
+          "fours": 3,
           "sixes": 0,
-          "strike_rate": 33.33,
-          "out_desc": "batting",
+          "strike_rate": 140,
+          "out_desc": "c Shahrukh Khan b Mohammed Siraj",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Virat Kohli",
-          "runs": 3,
-          "balls": 3,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 100,
+          "runs": 54,
+          "balls": 32,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 168.75,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -280,15 +280,15 @@
         },
         {
           "name": "Devdutt Padikkal",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 53,
+          "balls": 22,
+          "fours": 2,
+          "sixes": 6,
+          "strike_rate": 240.91,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Rajat Patidar",
@@ -402,16 +402,63 @@
       "bowlers": [
         {
           "name": "Mohammed Siraj",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 8.3,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Kagiso Rabada",
+          "overs": 2.4,
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 10.9,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Jason Holder",
           "overs": 1,
           "maidens": 0,
-          "runs": 4,
+          "runs": 8,
           "wickets": 0,
-          "economy": 4,
+          "economy": 8,
           "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Prasidh Krishna",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 15.5,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Rashid Khan",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 14.5,
+          "wides": 1,
           "no_balls": 0
         }
       ],
-      "fow": []
+      "fow": [
+        {
+          "name": "Jacob Bethell",
+          "runs": 24,
+          "over": 2.6,
+          "wkt_n": 1
+        }
+      ]
     }
   ],
   "error": null

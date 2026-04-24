@@ -18,14 +18,14 @@
         "runs": 223,
         "wickets": 2,
         "overs": "20",
-        "run_rate": 11.06,
+        "run_rate": 11.15,
         "declared": false
       },
       "extras": {
         "total": 10,
         "wides": 8,
-        "no_balls": 0,
-        "byes": 2,
+        "no_balls": 2,
+        "byes": 0,
         "leg_byes": 0
       },
       "batsmen": [
@@ -44,10 +44,10 @@
         {
           "name": "MA Agarwal",
           "runs": 106,
-          "balls": 50,
+          "balls": 49,
           "fours": 10,
           "sixes": 7,
-          "strike_rate": 212.0,
+          "strike_rate": 216.3,
           "out_desc": "c SV Samson b TK Curran",
           "is_captain": false,
           "is_keeper": false,
@@ -92,12 +92,12 @@
         {
           "name": "AS Rajpoot",
           "maidens": 0,
-          "runs": 38,
+          "runs": 40,
           "wickets": 1,
-          "economy": 9.1,
+          "economy": 10.0,
           "wides": 1,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "JC Archer",
@@ -144,13 +144,13 @@
         {
           "name": "MA Agarwal",
           "runs": 183,
-          "over": "16.4",
+          "over": "16.3",
           "wkt_n": 1
         },
         {
           "name": "KL Rahul",
           "runs": 194,
-          "over": "18.1",
+          "over": "18",
           "wkt_n": 2
         }
       ]
@@ -162,7 +162,7 @@
       "score": {
         "runs": 226,
         "wickets": 6,
-        "overs": "20",
+        "overs": "19.3",
         "run_rate": 11.59,
         "declared": false
       },

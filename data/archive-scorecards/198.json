@@ -18,24 +18,24 @@
         "runs": 206,
         "wickets": 3,
         "overs": "20",
-        "run_rate": 10.21,
+        "run_rate": 10.3,
         "declared": false
       },
       "extras": {
         "total": 11,
         "wides": 4,
-        "no_balls": 0,
-        "byes": 3,
+        "no_balls": 3,
+        "byes": 0,
         "leg_byes": 4
       },
       "batsmen": [
         {
           "name": "KL Rahul",
           "runs": 132,
-          "balls": 69,
+          "balls": 68,
           "fours": 14,
           "sixes": 7,
-          "strike_rate": 191.3,
+          "strike_rate": 194.1,
           "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
@@ -94,12 +94,12 @@
         {
           "name": "UT Yadav",
           "maidens": 0,
-          "runs": 34,
+          "runs": 37,
           "wickets": 0,
-          "economy": 10.7,
+          "economy": 12.3,
           "wides": 1,
-          "no_balls": 0,
-          "overs": "3.1"
+          "no_balls": 1,
+          "overs": "3"
         },
         {
           "name": "DW Steyn",
@@ -162,13 +162,13 @@
         {
           "name": "N Pooran",
           "runs": 114,
-          "over": "13.2",
+          "over": "13.1",
           "wkt_n": 2
         },
         {
           "name": "GJ Maxwell",
           "runs": 128,
-          "over": "15.3",
+          "over": "15.2",
           "wkt_n": 3
         }
       ]

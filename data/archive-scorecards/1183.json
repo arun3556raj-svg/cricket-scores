@@ -1,0 +1,437 @@
+{
+  "match_id": "1183",
+  "source_id": "1527687",
+  "season": 2026,
+  "round": "League",
+  "match_number": 14,
+  "date": "2026-04-08",
+  "team1": "Gujarat Titans",
+  "team2": "Delhi Capitals",
+  "venue": "Arun Jaitley Stadium, Delhi, Delhi",
+  "result_text": "Gujarat Titans won by 1 runs",
+  "innings": [
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 1,
+      "score": {
+        "runs": 210,
+        "wickets": 4,
+        "overs": "20",
+        "run_rate": 10.5,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 5,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 12,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 171.4,
+          "out_desc": "b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 70,
+          "balls": 45,
+          "fours": 4,
+          "sixes": 5,
+          "strike_rate": 155.6,
+          "out_desc": "c N Rana b L Ngidi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 52,
+          "balls": 27,
+          "fours": 3,
+          "sixes": 5,
+          "strike_rate": 192.6,
+          "out_desc": "b Kuldeep Yadav",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 55,
+          "balls": 31,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 177.4,
+          "out_desc": "c N Rana b Mukesh Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "GD Phillips",
+          "runs": 14,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 155.6,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "R Tewatia",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mukesh Kumar",
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 2,
+          "economy": 13.8,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "L Ngidi",
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 1,
+          "economy": 6.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "AR Patel",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 10.7,
+          "wides": 1,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "T Natarajan",
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "V Nigam",
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 0,
+          "economy": 23.0,
+          "wides": 0,
+          "no_balls": 1,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "B Sai Sudharsan",
+          "runs": 19,
+          "over": "2.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "JC Buttler",
+          "runs": 79,
+          "over": "7.3",
+          "wkt_n": 2
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 183,
+          "over": "17.3",
+          "wkt_n": 3
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 205,
+          "over": "19.3",
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 2,
+      "score": {
+        "runs": 209,
+        "wickets": 8,
+        "overs": "20",
+        "run_rate": 10.45,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 8,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "P Nissanka",
+          "runs": 41,
+          "balls": 24,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 170.8,
+          "out_desc": "c R Tewatia b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 92,
+          "balls": 52,
+          "fours": 11,
+          "sixes": 4,
+          "strike_rate": 176.9,
+          "out_desc": "c JC Buttler b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "N Rana",
+          "runs": 5,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 83.3,
+          "out_desc": "c B Sai Sudharsan b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0.0,
+          "out_desc": "b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "DA Miller",
+          "runs": 41,
+          "balls": 20,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 205.0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "AR Patel",
+          "runs": 2,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.7,
+          "out_desc": "c GD Phillips b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 7,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 116.7,
+          "out_desc": "run out (B Sai Sudharsan)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "V Nigam",
+          "runs": 12,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 171.4,
+          "out_desc": "c Shubman Gill b M Prasidh Krishna",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100.0,
+          "out_desc": "run out (JC Buttler)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 1,
+          "economy": 13.0,
+          "wides": 4,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "K Rabada",
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 8.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Rashid Khan",
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 3,
+          "economy": 4.2,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Ashok Sharma",
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 0,
+          "economy": 15.0,
+          "wides": 2,
+          "no_balls": 0,
+          "overs": "3"
+        },
+        {
+          "name": "M Prasidh Krishna",
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 2,
+          "economy": 13.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "4"
+        },
+        {
+          "name": "Washington Sundar",
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 11.0,
+          "wides": 0,
+          "no_balls": 0,
+          "overs": "1"
+        }
+      ],
+      "fow": [
+        {
+          "name": "P Nissanka",
+          "runs": 76,
+          "over": "8.1",
+          "wkt_n": 1
+        },
+        {
+          "name": "N Rana",
+          "runs": 101,
+          "over": "9.5",
+          "wkt_n": 2
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 101,
+          "over": "10",
+          "wkt_n": 3
+        },
+        {
+          "name": "AR Patel",
+          "runs": 134,
+          "over": "14",
+          "wkt_n": 4
+        },
+        {
+          "name": "T Stubbs",
+          "runs": 160,
+          "over": "16.4",
+          "wkt_n": 5
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 166,
+          "over": "17",
+          "wkt_n": 6
+        },
+        {
+          "name": "V Nigam",
+          "runs": 202,
+          "over": "19.2",
+          "wkt_n": 7
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 209,
+          "over": "20",
+          "wkt_n": 8
+        }
+      ]
+    }
+  ],
+  "error": null
+}

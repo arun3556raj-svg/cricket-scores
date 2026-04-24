@@ -18,14 +18,14 @@
         "runs": 286,
         "wickets": 6,
         "overs": "20",
-        "run_rate": 14.18,
+        "run_rate": 14.3,
         "declared": false
       },
       "extras": {
         "total": 18,
         "wides": 10,
-        "no_balls": 2,
-        "byes": 5,
+        "no_balls": 7,
+        "byes": 0,
         "leg_byes": 1
       },
       "batsmen": [
@@ -56,10 +56,10 @@
         {
           "name": "Ishan Kishan",
           "runs": 106,
-          "balls": 47,
+          "balls": 46,
           "fours": 11,
           "sixes": 6,
-          "strike_rate": 225.5,
+          "strike_rate": 230.4,
           "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
@@ -150,12 +150,12 @@
         {
           "name": "JC Archer",
           "maidens": 0,
-          "runs": 75,
+          "runs": 80,
           "wickets": 0,
-          "economy": 18.0,
+          "economy": 20.0,
           "wides": 2,
-          "no_balls": 0,
-          "overs": "4.1"
+          "no_balls": 1,
+          "overs": "4"
         },
         {
           "name": "Sandeep Sharma",
@@ -210,19 +210,19 @@
         {
           "name": "H Klaasen",
           "runs": 258,
-          "over": "18.3",
+          "over": "18.2",
           "wkt_n": 4
         },
         {
           "name": "Aniket Verma",
           "runs": 279,
-          "over": "19.3",
+          "over": "19.2",
           "wkt_n": 5
         },
         {
           "name": "A Manohar",
           "runs": 279,
-          "over": "19.4",
+          "over": "19.3",
           "wkt_n": 6
         }
       ]
