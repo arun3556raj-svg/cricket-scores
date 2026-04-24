@@ -8,6 +8,7 @@ const IS_STATIC_MODE = PITCH_CONFIG.mode === 'static';
 const DATA_BASE_PATH = (PITCH_CONFIG.dataBasePath || './data').replace(/\/+$/, '');
 const SCORECARD_BASE_PATH = (PITCH_CONFIG.scorecardBasePath || `${DATA_BASE_PATH}/scorecards`).replace(/\/+$/, '');
 const ARCHIVE_SCORECARD_BASE_PATH = (PITCH_CONFIG.archiveScorecardBasePath || `${DATA_BASE_PATH}/archive-scorecards`).replace(/\/+$/, '');
+const STATS_BUILDER_PATH = PITCH_CONFIG.statsBuilderPath || joinPath(DATA_BASE_PATH, 'stats-builder.json');
 
 function joinPath(base, leaf) {
   return `${base.replace(/\/+$/, '')}/${String(leaf).replace(/^\/+/, '')}`;
@@ -31,6 +32,10 @@ function getArchiveUrl() {
 
 function getArchiveScorecardUrl(matchId) {
   return joinPath(ARCHIVE_SCORECARD_BASE_PATH, `${matchId}.json`);
+}
+
+function getStatsBuilderUrl() {
+  return STATS_BUILDER_PATH;
 }
 
 function getScorecardUrl(matchId) {
@@ -364,6 +369,7 @@ async function loadMatches(forceRefresh = false) {
     $('content').style.display       = '';
 
     render(data);
+    queueStatsBuilderLoad();
 
     // Update timestamp
     const ts = $('timestamp');
@@ -389,6 +395,446 @@ function showError(msg) {
   $('errorPage').style.display    = '';
   const el = $('errorMsg');
   if (el) el.textContent = msg;
+}
+
+// ================================================================
+// STAT BUILDER
+// ================================================================
+
+const STAT_PRESETS = {
+  batting: [
+    { id: 'orange', label: 'Orange Cap', metric: 'runs', sort: 'desc', minBalls: 0, note: 'Most runs across the selected IPL universe.' },
+    { id: 'strike', label: 'Strike Rate', metric: 'strike_rate', sort: 'desc', minBalls: 100, note: 'Fastest run scoring with a balls-faced qualifier.' },
+    { id: 'average', label: 'Average', metric: 'average', sort: 'desc', minBalls: 100, note: 'Consistency view for batters with dismissals.' },
+    { id: 'sixes', label: 'Six Hitting', metric: 'sixes', sort: 'desc', minBalls: 0, note: 'Boundary power, ranked by sixes.' },
+    { id: 'fifties', label: '50+ Scores', metric: 'fifties', sort: 'desc', minBalls: 0, note: 'Most innings of 50 or more.' },
+  ],
+  bowling: [
+    { id: 'purple', label: 'Purple Cap', metric: 'wickets', sort: 'desc', minBalls: 0, note: 'Most wickets across the selected IPL universe.' },
+    { id: 'economy', label: 'Economy', metric: 'economy', sort: 'asc', minBalls: 120, note: 'Run control with a balls-bowled qualifier.' },
+    { id: 'strike', label: 'Strike Rate', metric: 'strike_rate', sort: 'asc', minBalls: 120, note: 'Wicket-taking frequency.' },
+    { id: 'dots', label: 'Dot Balls', metric: 'dots', sort: 'desc', minBalls: 0, note: 'Pressure balls that produce no runs.' },
+    { id: 'maidens', label: 'Maidens', metric: 'maidens', sort: 'desc', minBalls: 0, note: 'Rare full-over control in T20 cricket.' },
+  ],
+};
+
+let statsLoaded = false;
+let statsLoadQueued = false;
+let statsData = null;
+let statsFilters = {
+  mode: 'batting',
+  preset: 'orange',
+  yearFrom: 'all',
+  yearTo: 'all',
+  team: 'all',
+  opposition: 'all',
+  venue: 'all',
+  round: 'all',
+  minInnings: '5',
+  minBalls: '0',
+};
+
+function currentStatsPreset() {
+  const presets = STAT_PRESETS[statsFilters.mode] || STAT_PRESETS.batting;
+  return presets.find(item => item.id === statsFilters.preset) || presets[0];
+}
+
+function queueStatsBuilderLoad() {
+  if (statsLoadQueued || statsLoaded) return;
+  const section = $('statsBuilderSection');
+  if (!section) return;
+  statsLoadQueued = true;
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      observer.disconnect();
+      loadStatsBuilder();
+    }, { rootMargin: '420px 0px' });
+    observer.observe(section);
+    return;
+  }
+
+  setTimeout(loadStatsBuilder, 800);
+}
+
+async function loadStatsBuilder() {
+  if (statsLoaded) return;
+  statsLoaded = true;
+  try {
+    const res = await fetchJson(getStatsBuilderUrl());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    statsData = await res.json();
+    renderStatsBuilder();
+  } catch (err) {
+    const el = $('statsBuilder');
+    if (el) {
+      el.innerHTML = `<div class="sc-empty">Could not load Stat Builder.<br><span style="font-size:12px;color:var(--t4)">${esc(err.message)}</span></div>`;
+    }
+    statsLoaded = false;
+    statsLoadQueued = false;
+  }
+}
+
+function renderStatsBuilder() {
+  const el = $('statsBuilder');
+  if (!el || !statsData) return;
+  el.innerHTML = `
+    <div class="stats-topline">
+      <div>
+        <div class="stats-eyebrow">Bottom Deck</div>
+        <h2 class="stats-title">IPL Stat Builder</h2>
+        <p class="stats-subtitle">Filter the IPL universe from 2008 onwards, then rank players like a proper records room.</p>
+      </div>
+      <div class="stats-mode-toggle" role="tablist" aria-label="Stat type">
+        ${['batting', 'bowling'].map(mode => `
+          <button type="button" class="stats-mode-btn${statsFilters.mode === mode ? ' is-active' : ''}" onclick="setStatsMode('${mode}')">
+            ${mode === 'batting' ? 'Batting' : 'Bowling'}
+          </button>`).join('')}
+      </div>
+    </div>
+    ${renderStatsPresetRail()}
+    ${renderStatsControls()}
+    <div id="statsResults">${renderStatsResults()}</div>`;
+}
+
+function renderStatsPresetRail() {
+  const presets = STAT_PRESETS[statsFilters.mode] || [];
+  return `
+    <div class="stats-preset-rail" aria-label="Stat presets">
+      ${presets.map(preset => `
+        <button type="button" class="stats-preset${statsFilters.preset === preset.id ? ' is-active' : ''}" onclick="setStatsPreset('${preset.id}')">
+          <span>${esc(preset.label)}</span>
+          <small>${esc(preset.note)}</small>
+        </button>`).join('')}
+    </div>`;
+}
+
+function statsOptions(values, selected, allLabel) {
+  return [`<option value="all">${esc(allLabel)}</option>`]
+    .concat((values || []).map(value => {
+      const stringValue = String(value);
+      return `<option value="${esc(stringValue)}" ${selected === stringValue ? 'selected' : ''}>${esc(stringValue)}</option>`;
+    }))
+    .join('');
+}
+
+function renderStatsControls() {
+  const years = statsData.years || [];
+  const minLabel = statsFilters.mode === 'batting' ? 'Min balls faced' : 'Min balls bowled';
+  return `
+    <div class="stats-filter-panel">
+      <div class="stats-filter-grid">
+        <label class="stats-filter">
+          <span>Season from</span>
+          <select onchange="onStatsFilterChange('yearFrom', this.value)">${statsOptions(years.slice().reverse(), statsFilters.yearFrom, 'Any year')}</select>
+        </label>
+        <label class="stats-filter">
+          <span>Season to</span>
+          <select onchange="onStatsFilterChange('yearTo', this.value)">${statsOptions(years, statsFilters.yearTo, 'Any year')}</select>
+        </label>
+        <label class="stats-filter">
+          <span>Team</span>
+          <select onchange="onStatsFilterChange('team', this.value)">${statsOptions(statsData.teams, statsFilters.team, 'All teams')}</select>
+        </label>
+        <label class="stats-filter">
+          <span>Opposition</span>
+          <select onchange="onStatsFilterChange('opposition', this.value)">${statsOptions(statsData.teams, statsFilters.opposition, 'All opponents')}</select>
+        </label>
+        <label class="stats-filter">
+          <span>Venue</span>
+          <select onchange="onStatsFilterChange('venue', this.value)">${statsOptions(statsData.venues, statsFilters.venue, 'All venues')}</select>
+        </label>
+        <label class="stats-filter">
+          <span>Round</span>
+          <select onchange="onStatsFilterChange('round', this.value)">${statsOptions(statsData.rounds, statsFilters.round, 'All rounds')}</select>
+        </label>
+        <label class="stats-filter">
+          <span>Min innings</span>
+          <input inputmode="numeric" value="${esc(statsFilters.minInnings)}" onchange="onStatsFilterChange('minInnings', this.value)" />
+        </label>
+        <label class="stats-filter">
+          <span>${esc(minLabel)}</span>
+          <input inputmode="numeric" value="${esc(statsFilters.minBalls)}" onchange="onStatsFilterChange('minBalls', this.value)" />
+        </label>
+      </div>
+      <div class="stats-actions">
+        <button type="button" class="stats-reset" onclick="resetStatsBuilder()">Reset</button>
+        <button type="button" class="stats-apply" onclick="applyStatsBuilder()">Apply</button>
+      </div>
+    </div>`;
+}
+
+function setStatsMode(mode) {
+  statsFilters = {
+    ...statsFilters,
+    mode,
+    preset: STAT_PRESETS[mode][0].id,
+    minBalls: String(STAT_PRESETS[mode][0].minBalls),
+  };
+  renderStatsBuilder();
+}
+
+function setStatsPreset(presetId) {
+  const preset = (STAT_PRESETS[statsFilters.mode] || []).find(item => item.id === presetId);
+  if (!preset) return;
+  statsFilters = { ...statsFilters, preset: preset.id, minBalls: String(preset.minBalls) };
+  renderStatsBuilder();
+}
+
+function onStatsFilterChange(key, value) {
+  statsFilters = { ...statsFilters, [key]: value };
+}
+
+function applyStatsBuilder() {
+  const target = $('statsResults');
+  if (target) target.innerHTML = renderStatsResults();
+}
+
+function resetStatsBuilder() {
+  const mode = statsFilters.mode;
+  statsFilters = {
+    mode,
+    preset: STAT_PRESETS[mode][0].id,
+    yearFrom: 'all',
+    yearTo: 'all',
+    team: 'all',
+    opposition: 'all',
+    venue: 'all',
+    round: 'all',
+    minInnings: '5',
+    minBalls: String(STAT_PRESETS[mode][0].minBalls),
+  };
+  renderStatsBuilder();
+}
+
+function statsRecordInRange(record) {
+  const year = Number(record.y);
+  const from = statsFilters.yearFrom === 'all' ? -Infinity : Number(statsFilters.yearFrom);
+  const to = statsFilters.yearTo === 'all' ? Infinity : Number(statsFilters.yearTo);
+  return year >= from &&
+    year <= to &&
+    (statsFilters.team === 'all' || record.t === statsFilters.team) &&
+    (statsFilters.opposition === 'all' || record.o === statsFilters.opposition) &&
+    (statsFilters.venue === 'all' || record.v === statsFilters.venue) &&
+    (statsFilters.round === 'all' || record.r === statsFilters.round);
+}
+
+function aggregateStats() {
+  const records = (statsFilters.mode === 'batting' ? statsData.batting : statsData.bowling || []).filter(statsRecordInRange);
+  return statsFilters.mode === 'batting'
+    ? aggregateBattingStats(records)
+    : aggregateBowlingStats(records);
+}
+
+function aggregateBattingStats(records) {
+  const map = new Map();
+  for (const record of records) {
+    const row = map.get(record.p) || {
+      player: record.p,
+      teams: new Set(),
+      matches: new Set(),
+      seasons: new Set(),
+      innings: 0,
+      runs: 0,
+      balls: 0,
+      outs: 0,
+      fours: 0,
+      sixes: 0,
+      fifties: 0,
+      hundreds: 0,
+      high_score: 0,
+    };
+    row.teams.add(record.t);
+    row.matches.add(record.m);
+    row.seasons.add(record.y);
+    row.innings += 1;
+    row.runs += record.ru || 0;
+    row.balls += record.b || 0;
+    row.outs += record.out || 0;
+    row.fours += record.fo || 0;
+    row.sixes += record.si || 0;
+    row.fifties += record.ru >= 50 ? 1 : 0;
+    row.hundreds += record.ru >= 100 ? 1 : 0;
+    row.high_score = Math.max(row.high_score, record.ru || 0);
+    map.set(record.p, row);
+  }
+  return Array.from(map.values()).map(row => ({
+    ...row,
+    matches_count: row.matches.size,
+    team_label: row.teams.size === 1 ? Array.from(row.teams)[0] : `${row.teams.size} teams`,
+    season_label: seasonLabel(row.seasons),
+    average: row.outs > 0 ? row.runs / row.outs : null,
+    strike_rate: row.balls > 0 ? row.runs * 100 / row.balls : 0,
+  }));
+}
+
+function aggregateBowlingStats(records) {
+  const map = new Map();
+  for (const record of records) {
+    const row = map.get(record.p) || {
+      player: record.p,
+      teams: new Set(),
+      matches: new Set(),
+      seasons: new Set(),
+      innings: 0,
+      balls: 0,
+      runs: 0,
+      wickets: 0,
+      dots: 0,
+      maidens: 0,
+    };
+    row.teams.add(record.t);
+    row.matches.add(record.m);
+    row.seasons.add(record.y);
+    row.innings += 1;
+    row.balls += record.b || 0;
+    row.runs += record.ru || 0;
+    row.wickets += record.w || 0;
+    row.dots += record.d || 0;
+    row.maidens += record.md || 0;
+    map.set(record.p, row);
+  }
+  return Array.from(map.values()).map(row => ({
+    ...row,
+    matches_count: row.matches.size,
+    team_label: row.teams.size === 1 ? Array.from(row.teams)[0] : `${row.teams.size} teams`,
+    season_label: seasonLabel(row.seasons),
+    overs: ballsToOvers(row.balls),
+    average: row.wickets > 0 ? row.runs / row.wickets : null,
+    economy: row.balls > 0 ? row.runs * 6 / row.balls : 0,
+    strike_rate: row.wickets > 0 ? row.balls / row.wickets : null,
+  }));
+}
+
+function seasonLabel(seasons) {
+  const values = Array.from(seasons).map(Number).sort((a, b) => a - b);
+  if (!values.length) return '';
+  return values[0] === values[values.length - 1] ? String(values[0]) : `${values[0]}-${values[values.length - 1]}`;
+}
+
+function ballsToOvers(balls) {
+  const overs = Math.floor((balls || 0) / 6);
+  const rem = (balls || 0) % 6;
+  return rem ? `${overs}.${rem}` : String(overs);
+}
+
+function statMetricValue(row, metric) {
+  if (metric === 'runs') return row.runs;
+  if (metric === 'strike_rate') return row.strike_rate ?? 0;
+  if (metric === 'average') return row.average ?? -1;
+  if (metric === 'sixes') return row.sixes;
+  if (metric === 'fifties') return row.fifties;
+  if (metric === 'wickets') return row.wickets;
+  if (metric === 'economy') return row.economy || Infinity;
+  if (metric === 'dots') return row.dots;
+  if (metric === 'maidens') return row.maidens;
+  return row[metric] ?? 0;
+}
+
+function qualifyStatRow(row, preset) {
+  const minInnings = Math.max(0, Number(statsFilters.minInnings) || 0);
+  const minBalls = Math.max(0, Number(statsFilters.minBalls) || 0);
+  if (row.innings < minInnings) return false;
+  if ((row.balls || 0) < minBalls) return false;
+  if (preset.metric === 'average' && row.average === null) return false;
+  if (preset.metric === 'strike_rate' && statsFilters.mode === 'bowling' && row.strike_rate === null) return false;
+  if (preset.metric === 'economy' && !row.balls) return false;
+  return true;
+}
+
+function rankedStatsRows() {
+  const preset = currentStatsPreset();
+  return aggregateStats()
+    .filter(row => qualifyStatRow(row, preset))
+    .sort((a, b) => {
+      const av = statMetricValue(a, preset.metric);
+      const bv = statMetricValue(b, preset.metric);
+      if (av === bv) {
+        if (statsFilters.mode === 'batting') return b.runs - a.runs || b.strike_rate - a.strike_rate;
+        return b.wickets - a.wickets || a.economy - b.economy;
+      }
+      return preset.sort === 'asc' ? av - bv : bv - av;
+    })
+    .slice(0, 12);
+}
+
+function fmt(value, digits = 1) {
+  if (value === null || value === undefined || !Number.isFinite(value)) return '-';
+  return Number(value).toFixed(digits);
+}
+
+function renderStatsResults() {
+  if (!statsData) return '';
+  const preset = currentStatsPreset();
+  const rows = rankedStatsRows();
+  const modeLabel = statsFilters.mode === 'batting' ? 'Batting' : 'Bowling';
+  const metricLabel = preset.label;
+  if (!rows.length) {
+    return `
+      <div class="stats-results-card">
+        <div class="sc-empty">No players match these filters yet.<br><span style="font-size:12px;color:var(--t4)">Try widening the year range or lowering the qualifiers.</span></div>
+      </div>`;
+  }
+
+  return `
+    <div class="stats-results-card">
+      <div class="stats-results-head">
+        <div>
+          <span class="stats-results-kicker">${esc(modeLabel)} leaderboard</span>
+          <h3>${esc(metricLabel)}</h3>
+        </div>
+        <span class="stats-results-count">Top ${rows.length}</span>
+      </div>
+      <div class="stats-board stats-board--${statsFilters.mode}">
+        <div class="stats-board-head">
+          ${statsFilters.mode === 'batting' ? `
+            <span>#</span><span>Player</span><span>Runs</span><span>Avg</span><span>SR</span><span>Inns</span><span>4s/6s</span><span>HS</span>
+          ` : `
+            <span>#</span><span>Player</span><span>Wkts</span><span>Econ</span><span>Avg</span><span>SR</span><span>Overs</span><span>Dots</span>
+          `}
+        </div>
+        ${rows.map((row, index) => statsFilters.mode === 'batting'
+          ? renderBattingStatRow(row, index)
+          : renderBowlingStatRow(row, index)).join('')}
+      </div>
+    </div>`;
+}
+
+function renderStatPlayerCell(row) {
+  return `
+    <span class="stats-player-cell">
+      <strong>${esc(row.player)}</strong>
+      <small>${esc(row.team_label)} · ${esc(row.season_label)} · ${row.matches_count} matches</small>
+    </span>`;
+}
+
+function renderBattingStatRow(row, index) {
+  return `
+    <div class="stats-board-row">
+      <span class="stats-rank">${index + 1}</span>
+      ${renderStatPlayerCell(row)}
+      <span data-label="Runs">${row.runs}</span>
+      <span data-label="Avg">${row.average === null ? 'no outs' : fmt(row.average, 2)}</span>
+      <span data-label="SR">${fmt(row.strike_rate, 1)}</span>
+      <span data-label="Inns">${row.innings}</span>
+      <span data-label="4s/6s">${row.fours}/${row.sixes}</span>
+      <span data-label="HS">${row.high_score}</span>
+    </div>`;
+}
+
+function renderBowlingStatRow(row, index) {
+  return `
+    <div class="stats-board-row">
+      <span class="stats-rank">${index + 1}</span>
+      ${renderStatPlayerCell(row)}
+      <span data-label="Wkts">${row.wickets}</span>
+      <span data-label="Econ">${fmt(row.economy, 2)}</span>
+      <span data-label="Avg">${fmt(row.average, 2)}</span>
+      <span data-label="SR">${fmt(row.strike_rate, 1)}</span>
+      <span data-label="Overs">${esc(row.overs)}</span>
+      <span data-label="Dots">${row.dots}</span>
+    </div>`;
 }
 
 // ================================================================
