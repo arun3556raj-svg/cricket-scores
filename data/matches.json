@@ -12,21 +12,27 @@
       "team2_short": "RCB",
       "team2_color": "#dc2626",
       "team1_score1": {
-        "display": "111/0",
-        "detail": "(10.2 ov)",
-        "runs": 111,
-        "wickets": 0,
-        "overs": 10.2
+        "display": "205/3",
+        "detail": "(19.6 ov)",
+        "runs": 205,
+        "wickets": 3,
+        "overs": 19.6
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "5/0",
+        "detail": "(0.6 ov)",
+        "runs": 5,
+        "wickets": 0,
+        "overs": 0.6
+      },
       "team2_score2": null,
       "venue": "M.Chinnaswamy Stadium, Bengaluru",
       "status": "live",
-      "status_text": "Royal Challengers Bengaluru opt to bowl",
+      "status_text": "Royal Challengers Bengaluru need 201 runs",
       "start_time": "02:00 PM",
       "start_epoch": 1777039200000,
-      "run_rate": 10.88
+      "run_rate": 8.33
     }
   ],
   "upcoming": [
@@ -111,6 +117,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "24 Apr, 02:47 PM",
+  "last_updated": "24 Apr, 04:08 PM",
   "error": null
 }
