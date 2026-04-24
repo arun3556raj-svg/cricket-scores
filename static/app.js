@@ -24,6 +24,10 @@ function getScheduleUrl(forceRefresh = false) {
     : forceRefresh ? '/api/schedule/refresh' : '/api/schedule';
 }
 
+function getArchiveUrl() {
+  return joinPath(DATA_BASE_PATH, 'archive.json');
+}
+
 function getScorecardUrl(matchId) {
   return IS_STATIC_MODE
     ? joinPath(SCORECARD_BASE_PATH, `${matchId}.json`)
@@ -217,17 +221,20 @@ let currentFilter = 'all';
 let lastData = null;
 let scheduleLoaded = false;
 let scheduleData = null;
+let archiveLoaded = false;
+let archiveData = null;
+let archiveFilters = { year: 'all', team: 'all', round: 'all' };
 
 function isScheduleView(filter = currentFilter) {
-  return filter === 'schedule' || filter === 'historical';
+  return filter === 'schedule' || filter === 'archive';
 }
 
 function getScheduleViewMeta(filter = currentFilter) {
-  if (filter === 'historical') {
+  if (filter === 'archive') {
     return {
-      heading: 'IPL 2026 - Historical Results',
-      loading: 'Loading historical results…',
-      empty: 'No historical matches available yet.',
+      heading: 'IPL Archive - 2008 onwards',
+      loading: 'Loading archive…',
+      empty: 'No archive matches found for these filters.',
     };
   }
 
@@ -243,9 +250,15 @@ function setFilter(f) {
   document.querySelectorAll('.tab').forEach(t => {
     t.classList.toggle('active', t.dataset.filter === f);
   });
-  if (isScheduleView(f)) {
+  if (f === 'archive') {
+    if (!archiveLoaded) loadArchive();
+    else if (archiveData) renderArchive(archiveData);
+  } else if (f === 'schedule') {
     if (!scheduleLoaded) loadSchedule();
     else if (scheduleData) renderSchedule(scheduleData);
+  } else {
+    const controls = $('archiveControls');
+    if (controls) controls.style.display = 'none';
   }
   if (lastData) applyFilter(lastData);
 }
@@ -724,12 +737,13 @@ function renderSchedule(data) {
   const meta = getScheduleViewMeta();
   const heading = $('scheduleHeading');
   if (heading) heading.textContent = meta.heading;
+  const controls = $('archiveControls');
+  if (controls) {
+    controls.style.display = 'none';
+    controls.innerHTML = '';
+  }
 
-  const isHistorical = currentFilter === 'historical';
-  const matches = (data.matches || []).filter(m => {
-    if (isHistorical) return m.status === 'finished';
-    return m.status !== 'finished';
-  });
+  const matches = (data.matches || []).filter(m => m.status !== 'finished');
 
   if (!matches.length) {
     $('scheduleList').innerHTML = `<div class="sc-empty">${meta.empty}</div>`;
@@ -739,7 +753,7 @@ function renderSchedule(data) {
   matches.sort((a, b) => {
     const aEpoch = a.start_epoch || 0;
     const bEpoch = b.start_epoch || 0;
-    return isHistorical ? bEpoch - aEpoch : aEpoch - bEpoch;
+    return aEpoch - bEpoch;
   });
 
   // Group by date
@@ -779,6 +793,175 @@ async function loadSchedule() {
     $('scheduleList').innerHTML = `<div class="sc-empty">Error: ${esc(err.message)}</div>`;
     scheduleLoaded = false; // allow retry
   }
+}
+
+function archiveMatchRow(match) {
+  const scoreRows = (match.innings || []).map(inn => `
+    <div class="archive-score-row">
+      <div class="team-left">
+        <div class="team-badge" style="border-color:${inn.team_color}44;color:${inn.team_color};background:${teamMeta(inn.team_short).bg}">${esc(inn.team_short)}</div>
+        <span class="team-name">${esc(inn.team)}</span>
+      </div>
+      <div class="team-score">
+        <span class="score-num">${esc(inn.display)}</span>
+        <span class="score-ov">${esc(inn.detail)}</span>
+      </div>
+    </div>`).join('');
+
+  const matchJson = encodeURIComponent(JSON.stringify(match));
+  return `
+    <div class="sch-row archive-row" onclick="openArchiveScoreboard(this)" data-match="${matchJson}">
+      <div class="archive-row-head">
+        <span class="sch-desc">${esc(match.season)} · ${esc(match.round)}${match.match_number ? ` · Match ${esc(String(match.match_number))}` : ''}</span>
+        <span class="archive-date">${esc(match.date)}</span>
+      </div>
+      <div class="archive-scoreboard">${scoreRows}</div>
+      <div class="sch-footer">
+        <span class="sch-result">${esc(match.result_text)}</span>
+        ${match.venue ? `<span class="sch-venue">${esc(match.venue)}</span>` : ''}
+      </div>
+    </div>`;
+}
+
+function renderArchiveControls(data, visibleCount) {
+  const yearOptions = ['<option value="all">All years</option>']
+    .concat(data.years.map(year => `<option value="${year}" ${archiveFilters.year === String(year) ? 'selected' : ''}>${year}</option>`))
+    .join('');
+  const teamOptions = ['<option value="all">All teams</option>']
+    .concat(data.teams.map(team => `<option value="${esc(team.name)}" ${archiveFilters.team === team.name ? 'selected' : ''}>${esc(team.name)}</option>`))
+    .join('');
+  const roundOptions = ['<option value="all">All rounds</option>']
+    .concat(data.rounds.map(round => `<option value="${esc(round)}" ${archiveFilters.round === round ? 'selected' : ''}>${esc(round)}</option>`))
+    .join('');
+
+  return `
+    <div class="archive-filter-grid">
+      <label class="archive-filter">
+        <span>Year</span>
+        <select onchange="onArchiveFilterChange('year', this.value)">${yearOptions}</select>
+      </label>
+      <label class="archive-filter">
+        <span>Team</span>
+        <select onchange="onArchiveFilterChange('team', this.value)">${teamOptions}</select>
+      </label>
+      <label class="archive-filter">
+        <span>Round</span>
+        <select onchange="onArchiveFilterChange('round', this.value)">${roundOptions}</select>
+      </label>
+    </div>
+    <div class="archive-count">${visibleCount} matches</div>`;
+}
+
+function getFilteredArchiveMatches(data) {
+  return (data.matches || []).filter(match => {
+    const yearOk = archiveFilters.year === 'all' || String(match.season) === archiveFilters.year;
+    const teamOk = archiveFilters.team === 'all' || match.team1 === archiveFilters.team || match.team2 === archiveFilters.team;
+    const roundOk = archiveFilters.round === 'all' || match.round === archiveFilters.round;
+    return yearOk && teamOk && roundOk;
+  });
+}
+
+function renderArchive(data) {
+  archiveData = data;
+  const meta = getScheduleViewMeta('archive');
+  const heading = $('scheduleHeading');
+  if (heading) heading.textContent = meta.heading;
+
+  const matches = getFilteredArchiveMatches(data);
+  const controls = $('archiveControls');
+  if (controls) {
+    controls.style.display = '';
+    controls.innerHTML = renderArchiveControls(data, matches.length);
+  }
+
+  if (!matches.length) {
+    $('scheduleList').innerHTML = `<div class="sc-empty">${meta.empty}</div>`;
+    return;
+  }
+
+  const byYear = new Map();
+  for (const match of matches) {
+    const year = String(match.season);
+    if (!byYear.has(year)) byYear.set(year, []);
+    byYear.get(year).push(match);
+  }
+
+  $('scheduleList').innerHTML = Array.from(byYear.entries())
+    .map(([year, yearMatches]) => `
+      <div class="sch-date-group">
+        <div class="sch-date-header">${esc(year)}</div>
+        ${yearMatches.map(archiveMatchRow).join('')}
+      </div>`)
+    .join('');
+}
+
+function onArchiveFilterChange(key, value) {
+  archiveFilters = { ...archiveFilters, [key]: value };
+  if (archiveData) renderArchive(archiveData);
+}
+
+async function loadArchive() {
+  archiveLoaded = true;
+  const meta = getScheduleViewMeta('archive');
+  const heading = $('scheduleHeading');
+  if (heading) heading.textContent = meta.heading;
+  const controls = $('archiveControls');
+  if (controls) {
+    controls.style.display = 'none';
+    controls.innerHTML = '';
+  }
+  $('scheduleList').innerHTML = `<div class="sc-loading"><div class="sc-spin"></div><span>${meta.loading}</span></div>`;
+  try {
+    const res = await fetchJson(getArchiveUrl());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    renderArchive(await res.json());
+  } catch (err) {
+    $('scheduleList').innerHTML = `<div class="sc-empty">Error: ${esc(err.message)}</div>`;
+    archiveLoaded = false;
+  }
+}
+
+function openArchiveScoreboard(el) {
+  const raw = el.getAttribute('data-match');
+  if (!raw) return;
+  const match = JSON.parse(decodeURIComponent(raw));
+  drawerMatchId = match.id;
+  drawerOpen = true;
+  drawerScorecardData = null;
+  drawerSelectedInningsIndex = 0;
+  drawerHasManualInningsSelection = false;
+
+  $('drawerTeams').textContent = `${match.team1} vs ${match.team2}`;
+  $('drawerMeta').textContent = `${match.season} · ${match.round}${match.match_number ? ' · Match ' + match.match_number : ''}`;
+  $('drawerLiveBar').style.display = 'none';
+  $('drawerBody').innerHTML = renderArchiveScoreboard(match);
+  $('drawerBackdrop').classList.add('open');
+  $('drawer').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function renderArchiveScoreboard(match) {
+  const innings = (match.innings || []).map(inn => `
+    <div class="archive-drawer-innings">
+      <div>
+        <div class="innings-team">${esc(inn.team)}</div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:2px">
+          <span class="innings-overs">${esc(inn.detail)}</span>
+          ${inn.target ? `<span class="innings-rr">Target ${esc(String(inn.target))}</span>` : ''}
+        </div>
+      </div>
+      <span class="innings-score-line">${esc(inn.display)}</span>
+    </div>`).join('');
+
+  return `
+    <div class="archive-drawer">
+      <div class="archive-drawer-meta">
+        <span>${esc(match.date)}</span>
+        ${match.venue ? `<span>${esc(match.venue)}</span>` : ''}
+      </div>
+      ${innings}
+      <div class="archive-drawer-result">${esc(match.result_text)}</div>
+    </div>`;
 }
 
 function openScheduleScorecard(matchId, el) {

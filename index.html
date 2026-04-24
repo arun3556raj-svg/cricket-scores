@@ -51,7 +51,7 @@
       </button>
       <button class="tab" data-filter="upcoming" onclick="setFilter('upcoming')">Upcoming</button>
       <button class="tab" data-filter="results" onclick="setFilter('results')">Results</button>
-      <button class="tab" data-filter="historical" onclick="setFilter('historical')">Historical</button>
+      <button class="tab" data-filter="archive" onclick="setFilter('archive')">Archive</button>
       <button class="tab" data-filter="schedule" onclick="setFilter('schedule')">Schedule</button>
     </div>
   </div>
@@ -112,6 +112,7 @@
       <section class="section" id="scheduleSection" style="display:none">
         <div class="container">
           <div class="section-label" id="scheduleHeading">IPL 2026 — Schedule</div>
+          <div class="archive-controls" id="archiveControls" style="display:none"></div>
           <div id="scheduleList">
             <div class="sc-loading">
               <div class="sc-spin"></div>
