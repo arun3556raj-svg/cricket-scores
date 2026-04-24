@@ -216,13 +216,37 @@ function heroCard(m) {
 let currentFilter = 'all';
 let lastData = null;
 let scheduleLoaded = false;
+let scheduleData = null;
+
+function isScheduleView(filter = currentFilter) {
+  return filter === 'schedule' || filter === 'historical';
+}
+
+function getScheduleViewMeta(filter = currentFilter) {
+  if (filter === 'historical') {
+    return {
+      heading: 'IPL 2026 - Historical Results',
+      loading: 'Loading historical results…',
+      empty: 'No historical matches available yet.',
+    };
+  }
+
+  return {
+    heading: 'IPL 2026 - Schedule',
+    loading: 'Loading schedule…',
+    empty: 'No schedule data available.',
+  };
+}
 
 function setFilter(f) {
   currentFilter = f;
   document.querySelectorAll('.tab').forEach(t => {
     t.classList.toggle('active', t.dataset.filter === f);
   });
-  if (f === 'schedule' && !scheduleLoaded) loadSchedule();
+  if (isScheduleView(f)) {
+    if (!scheduleLoaded) loadSchedule();
+    else if (scheduleData) renderSchedule(scheduleData);
+  }
   if (lastData) applyFilter(lastData);
 }
 
@@ -231,11 +255,11 @@ function applyFilter(data) {
   const hide = id => $(id) && ($(id).style.display = 'none');
   const f = currentFilter;
 
-  const isSchedule   = f === 'schedule';
-  const showHero     = !isSchedule && (f === 'all' || f === 'live');
-  const showLive     = !isSchedule && (f === 'all' || f === 'live');
-  const showUpcoming = !isSchedule && (f === 'all' || f === 'upcoming');
-  const showResults  = !isSchedule && (f === 'all' || f === 'results');
+  const scheduleView = isScheduleView(f);
+  const showHero     = !scheduleView && (f === 'all' || f === 'live');
+  const showLive     = !scheduleView && (f === 'all' || f === 'live');
+  const showUpcoming = !scheduleView && (f === 'all' || f === 'upcoming');
+  const showResults  = !scheduleView && (f === 'all' || f === 'results');
 
   // Hero
   if (data.live.length > 0 && showHero) show('heroSection');
@@ -255,12 +279,12 @@ function applyFilter(data) {
   else hide('resultsSection');
 
   // Schedule
-  if (isSchedule) show('scheduleSection');
+  if (scheduleView) show('scheduleSection');
   else hide('scheduleSection');
 
   // Empty state (only for non-schedule views)
   const anyVisible =
-    isSchedule ||
+    scheduleView ||
     (data.live.length > 0 && showHero) ||
     (extraLive.length > 0 && showLive) ||
     (data.upcoming.length > 0 && showUpcoming) ||
@@ -629,14 +653,32 @@ function scheduleMatchRow(m) {
 }
 
 function renderSchedule(data) {
-  if (!data.matches || !data.matches.length) {
-    $('scheduleList').innerHTML = `<div class="sc-empty">No schedule data available.</div>`;
+  scheduleData = data;
+
+  const meta = getScheduleViewMeta();
+  const heading = $('scheduleHeading');
+  if (heading) heading.textContent = meta.heading;
+
+  const isHistorical = currentFilter === 'historical';
+  const matches = (data.matches || []).filter(m => {
+    if (isHistorical) return m.status === 'finished';
+    return m.status !== 'finished';
+  });
+
+  if (!matches.length) {
+    $('scheduleList').innerHTML = `<div class="sc-empty">${meta.empty}</div>`;
     return;
   }
 
+  matches.sort((a, b) => {
+    const aEpoch = a.start_epoch || 0;
+    const bEpoch = b.start_epoch || 0;
+    return isHistorical ? bEpoch - aEpoch : aEpoch - bEpoch;
+  });
+
   // Group by date
   const byDate = {};
-  for (const m of data.matches) {
+  for (const m of matches) {
     const d = m.match_date || 'Unknown Date';
     if (!byDate[d]) byDate[d] = [];
     byDate[d].push(m);
@@ -654,7 +696,10 @@ function renderSchedule(data) {
 
 async function loadSchedule() {
   scheduleLoaded = true;
-  $('scheduleList').innerHTML = `<div class="sc-loading"><div class="sc-spin"></div><span>Loading schedule…</span></div>`;
+  const meta = getScheduleViewMeta();
+  const heading = $('scheduleHeading');
+  if (heading) heading.textContent = meta.heading;
+  $('scheduleList').innerHTML = `<div class="sc-loading"><div class="sc-spin"></div><span>${meta.loading}</span></div>`;
   try {
     const res  = await fetchJson(getScheduleUrl(false));
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
