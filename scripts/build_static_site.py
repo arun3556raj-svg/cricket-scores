@@ -15,6 +15,7 @@ ARCHIVE_SCORECARD_DIR = DATA_DIR / "archive-scorecards"
 TEMPLATE_PATH = ROOT / "templates" / "index.html"
 ARCHIVE_SOURCE_PATH = ROOT / "data" / "archive.json"
 ARCHIVE_SCORECARD_SOURCE_DIR = ROOT / "data" / "archive-scorecards"
+STATS_SOURCE_PATH = ROOT / "data" / "stats-builder.json"
 
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
@@ -28,7 +29,8 @@ STATIC_CONFIG_SNIPPET = """
       mode: "static",
       dataBasePath: "./data",
       scorecardBasePath: "./data/scorecards",
-      archiveScorecardBasePath: "./data/archive-scorecards"
+      archiveScorecardBasePath: "./data/archive-scorecards",
+      statsBuilderPath: "./data/stats-builder.json"
     };
   </script>
 """.strip()
@@ -65,6 +67,8 @@ def copy_archive_data() -> None:
         shutil.copy2(ARCHIVE_SOURCE_PATH, DATA_DIR / "archive.json")
     if ARCHIVE_SCORECARD_SOURCE_DIR.exists():
         shutil.copytree(ARCHIVE_SCORECARD_SOURCE_DIR, ARCHIVE_SCORECARD_DIR, dirs_exist_ok=True)
+    if STATS_SOURCE_PATH.exists():
+        shutil.copy2(STATS_SOURCE_PATH, DATA_DIR / "stats-builder.json")
 
 
 def collect_scorecard_targets(matches: dict, schedule: dict) -> dict[str, tuple[str, str]]:

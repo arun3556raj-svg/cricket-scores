@@ -16,6 +16,7 @@ FALLBACK_DB_PATH = Path(
 )
 OUTPUT_PATH = ROOT / "data" / "archive.json"
 SCORECARD_OUTPUT_DIR = ROOT / "data" / "archive-scorecards"
+STATS_OUTPUT_PATH = ROOT / "data" / "stats-builder.json"
 
 BOWLER_WICKET_TYPES = {
     "bowled",
@@ -507,6 +508,139 @@ def write_archive_scorecards(conn: sqlite3.Connection, matches: list[dict]) -> N
     print(f"Wrote {len(written)} archive scorecards to {SCORECARD_OUTPUT_DIR}")
 
 
+def build_stats_builder_data(conn: sqlite3.Connection, archive: dict) -> dict:
+    batting_rows = conn.execute(
+        """
+        select
+            m.match_id,
+            m.season,
+            m.match_type,
+            v.venue_name,
+            i.innings_id,
+            bt.team_name as team,
+            bw.team_name as opposition,
+            d.batter_id as player_id,
+            p.player_name as player,
+            sum(d.runs_batter) as runs,
+            sum(case when d.extras_type not in ('wides', 'noballs') or d.extras_type is null then 1 else 0 end) as balls,
+            sum(d.is_four) as fours,
+            sum(d.is_six) as sixes,
+            max(case when d.player_out_id = d.batter_id and d.wicket_type != 'retired hurt' then 1 else 0 end) as out
+        from deliveries d
+        join innings i on i.innings_id = d.innings_id
+        join matches m on m.match_id = i.match_id
+        join teams bt on bt.team_id = i.batting_team_id
+        join teams bw on bw.team_id = i.bowling_team_id
+        join players p on p.player_id = d.batter_id
+        left join venues v on v.venue_id = m.venue_id
+        where i.is_super_over = 0
+          and m.season >= 2008
+        group by i.innings_id, d.batter_id
+        order by m.season, m.match_id, i.innings_number
+        """
+    ).fetchall()
+
+    bowling_deliveries = conn.execute(
+        """
+        select
+            m.match_id,
+            m.season,
+            m.match_type,
+            v.venue_name,
+            i.innings_id,
+            d.over_number,
+            bt.team_name as opposition,
+            bw.team_name as team,
+            d.bowler_id as player_id,
+            p.player_name as player,
+            d.runs_batter,
+            d.runs_total,
+            d.extras_type,
+            d.is_wicket,
+            d.wicket_type
+        from deliveries d
+        join innings i on i.innings_id = d.innings_id
+        join matches m on m.match_id = i.match_id
+        join teams bt on bt.team_id = i.batting_team_id
+        join teams bw on bw.team_id = i.bowling_team_id
+        join players p on p.player_id = d.bowler_id
+        left join venues v on v.venue_id = m.venue_id
+        where i.is_super_over = 0
+          and m.season >= 2008
+        order by m.season, m.match_id, i.innings_number, d.delivery_id
+        """
+    ).fetchall()
+
+    bowling_groups: dict[tuple[int, int], dict] = {}
+    over_groups: dict[tuple[int, int, int], dict] = defaultdict(lambda: {"balls": 0, "runs": 0})
+    for row in bowling_deliveries:
+        key = (row["innings_id"], row["player_id"])
+        group = bowling_groups.setdefault(
+            key,
+            {
+                "m": row["match_id"],
+                "y": row["season"],
+                "r": format_round(row["match_type"]),
+                "v": row["venue_name"] or "Unknown venue",
+                "t": row["team"],
+                "o": row["opposition"],
+                "p": row["player"],
+                "b": 0,
+                "ru": 0,
+                "w": 0,
+                "d": 0,
+                "md": 0,
+            },
+        )
+        charged_runs = bowler_runs(row)
+        group["ru"] += charged_runs
+        over_key = (row["innings_id"], row["player_id"], row["over_number"])
+        over_groups[over_key]["runs"] += charged_runs
+
+        if legal_delivery(row):
+            group["b"] += 1
+            over_groups[over_key]["balls"] += 1
+            if (row["runs_total"] or 0) == 0:
+                group["d"] += 1
+        if row["is_wicket"] and row["wicket_type"] in BOWLER_WICKET_TYPES:
+            group["w"] += 1
+
+    for (innings_id, player_id, _over_number), over in over_groups.items():
+        if over["balls"] >= 6 and over["runs"] == 0:
+            bowling_groups[(innings_id, player_id)]["md"] += 1
+
+    batting = [
+        {
+            "m": row["match_id"],
+            "y": row["season"],
+            "r": format_round(row["match_type"]),
+            "v": row["venue_name"] or "Unknown venue",
+            "t": row["team"],
+            "o": row["opposition"],
+            "p": row["player"],
+            "ru": row["runs"] or 0,
+            "b": row["balls"] or 0,
+            "fo": row["fours"] or 0,
+            "si": row["sixes"] or 0,
+            "out": row["out"] or 0,
+        }
+        for row in batting_rows
+    ]
+
+    teams = sorted({team["name"] for team in archive["teams"]})
+    venues = sorted({match["venue"] for match in archive["matches"] if match["venue"]})
+    rounds = archive["rounds"]
+
+    return {
+        "years": archive["years"],
+        "teams": teams,
+        "venues": venues,
+        "rounds": rounds,
+        "batting": batting,
+        "bowling": list(bowling_groups.values()),
+    }
+
+
 def main() -> None:
     db_path = resolve_db_path()
     conn = sqlite3.connect(db_path)
@@ -515,8 +649,11 @@ def main() -> None:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(archive, ensure_ascii=False, indent=2), encoding="utf-8")
     write_archive_scorecards(conn, archive["matches"])
+    stats = build_stats_builder_data(conn, archive)
+    STATS_OUTPUT_PATH.write_text(json.dumps(stats, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     conn.close()
     print(f"Wrote {len(archive['matches'])} archive matches to {OUTPUT_PATH}")
+    print(f"Wrote stat builder data to {STATS_OUTPUT_PATH}")
 
 
 if __name__ == "__main__":
