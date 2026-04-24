@@ -1,40 +1,5 @@
 {
-  "live": [
-    {
-      "id": "151889",
-      "series": "IPL 2026",
-      "match_desc": "34th Match",
-      "match_format": "T20",
-      "team1": "Gujarat Titans",
-      "team1_short": "GT",
-      "team1_color": "#0f766e",
-      "team2": "Royal Challengers Bengaluru",
-      "team2_short": "RCB",
-      "team2_color": "#dc2626",
-      "team1_score1": {
-        "display": "205/3",
-        "detail": "(19.6 ov)",
-        "runs": 205,
-        "wickets": 3,
-        "overs": 19.6
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "173/5",
-        "detail": "(15.3 ov)",
-        "runs": 173,
-        "wickets": 5,
-        "overs": 15.3
-      },
-      "team2_score2": null,
-      "venue": "M.Chinnaswamy Stadium, Bengaluru",
-      "status": "live",
-      "status_text": "Royal Challengers Bengaluru need 33 runs in 27 balls",
-      "start_time": "02:00 PM",
-      "start_epoch": 1777039200000,
-      "run_rate": 11.31
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "151891",
@@ -83,40 +48,40 @@
   ],
   "finished": [
     {
-      "id": "151878",
+      "id": "151889",
       "series": "IPL 2026",
-      "match_desc": "33rd Match",
+      "match_desc": "34th Match",
       "match_format": "T20",
-      "team1": "Chennai Super Kings",
-      "team1_short": "CSK",
-      "team1_color": "#d97706",
-      "team2": "Mumbai Indians",
-      "team2_short": "MI",
-      "team2_color": "#1d4ed8",
+      "team1": "Gujarat Titans",
+      "team1_short": "GT",
+      "team1_color": "#0f766e",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
       "team1_score1": {
-        "display": "207/6",
+        "display": "205/3",
         "detail": "(19.6 ov)",
-        "runs": 207,
-        "wickets": 6,
+        "runs": 205,
+        "wickets": 3,
         "overs": 19.6
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "104",
-        "detail": "(18.6 ov)",
-        "runs": 104,
-        "wickets": 10,
-        "overs": 18.6
+        "display": "206/5",
+        "detail": "(18.5 ov)",
+        "runs": 206,
+        "wickets": 5,
+        "overs": 18.5
       },
       "team2_score2": null,
-      "venue": "Wankhede Stadium, Mumbai",
+      "venue": "M.Chinnaswamy Stadium, Bengaluru",
       "status": "finished",
-      "status_text": "Chennai Super Kings won by 103 runs",
+      "status_text": "Royal Challengers Bengaluru won by 5 wkts",
       "start_time": "02:00 PM",
-      "start_epoch": 1776952800000,
+      "start_epoch": 1777039200000,
       "run_rate": null
     }
   ],
-  "last_updated": "24 Apr, 05:14 PM",
+  "last_updated": "24 Apr, 06:03 PM",
   "error": null
 }
