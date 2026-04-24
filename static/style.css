@@ -159,13 +159,19 @@ svg { display: block; flex-shrink: 0; }
   gap: 4px;
   height: 50px;
   align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+.tabbar-inner::-webkit-scrollbar { display: none; }
 @media (max-width: 640px) { .tabbar-inner { padding: 0 16px; } }
 
 .tab {
   display: flex;
   align-items: center;
   gap: 7px;
+  flex: 0 0 auto;
   padding: 6px 16px;
   border-radius: var(--r-sm);
   font-size: 13.5px;
