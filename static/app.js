@@ -379,10 +379,57 @@ function showError(msg) {
 
 let drawerOpen = false;
 let drawerMatchId = null;
+let drawerScorecardData = null;
+let drawerSelectedInningsIndex = 0;
+let drawerHasManualInningsSelection = false;
+
+function getInningsScoreLine(score) {
+  const runs = score?.runs ?? 0;
+  const wickets = score?.wickets ?? 0;
+  const declared = score?.declared ? 'd' : '';
+  return `${runs}/${wickets}${declared}`;
+}
+
+function getDefaultInningsIndex(innings) {
+  return Math.max(0, innings.length - 1);
+}
+
+function renderInningsSwitcher(innings) {
+  if (innings.length <= 1) return '';
+
+  const options = innings.map((inn, index) => {
+    const activeClass = index === drawerSelectedInningsIndex ? ' is-active' : '';
+    const overs = inn.score?.overs ?? 0;
+    return `
+      <button type="button" class="innings-switcher-btn${activeClass}" onclick="selectDrawerInnings(${index})">
+        <span class="innings-switcher-team">${esc(inn.bat_team)}</span>
+        <span class="innings-switcher-meta">
+          <span class="innings-switcher-score">${getInningsScoreLine(inn.score)}</span>
+          <span class="innings-switcher-overs">${esc(String(overs))} ov</span>
+        </span>
+      </button>`;
+  }).join('');
+
+  return `
+    <div class="innings-switcher-wrap">
+      <div class="innings-switcher">
+        ${options}
+      </div>
+    </div>`;
+}
+
+function selectDrawerInnings(index) {
+  drawerHasManualInningsSelection = true;
+  drawerSelectedInningsIndex = index;
+  if (drawerScorecardData) renderScorecard(drawerScorecardData);
+}
 
 function openDrawer(matchId, matchObj) {
   drawerMatchId = matchId;
   drawerOpen = true;
+  drawerScorecardData = null;
+  drawerSelectedInningsIndex = 0;
+  drawerHasManualInningsSelection = false;
 
   // Set header info immediately
   $('drawerTeams').textContent = `${matchObj.team1} vs ${matchObj.team2}`;
@@ -417,6 +464,9 @@ function openDrawer(matchId, matchObj) {
 function closeDrawer() {
   if (!drawerOpen) return;
   drawerOpen = false;
+  drawerScorecardData = null;
+  drawerSelectedInningsIndex = 0;
+  drawerHasManualInningsSelection = false;
   stopScRefresh();
   $('drawerBackdrop').classList.remove('open');
   $('drawer').classList.remove('open');
@@ -449,8 +499,24 @@ function renderScorecard(data) {
     return;
   }
 
-  const html = data.innings.map(inn => renderInnings(inn)).join('');
+  drawerScorecardData = data;
+  const innings = data.innings.filter(Boolean);
+
+  if (!hasValidDrawerInningsSelection(innings)) {
+    drawerSelectedInningsIndex = getDefaultInningsIndex(innings);
+  }
+
+  const html = `
+    ${renderInningsSwitcher(innings)}
+    ${renderInnings(innings[drawerSelectedInningsIndex])}`;
+
   $('drawerBody').innerHTML = html;
+}
+
+function hasValidDrawerInningsSelection(innings) {
+  if (!innings.length) return false;
+  if (!drawerHasManualInningsSelection) return false;
+  return drawerSelectedInningsIndex >= 0 && drawerSelectedInningsIndex < innings.length;
 }
 
 function renderInnings(inn) {
@@ -728,6 +794,9 @@ function openScheduleScorecard(matchId, el) {
 function openDrawerForSchedule(matchId, matchObj) {
   drawerMatchId = matchId;
   drawerOpen = true;
+  drawerScorecardData = null;
+  drawerSelectedInningsIndex = 0;
+  drawerHasManualInningsSelection = false;
 
   $('drawerTeams').textContent = `${matchObj.team1} vs ${matchObj.team2}`;
   $('drawerMeta').textContent  = `IPL 2026${matchObj.match_desc ? ' · ' + matchObj.match_desc : ''}`;
