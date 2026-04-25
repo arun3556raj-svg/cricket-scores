@@ -616,12 +616,12 @@
       "id": "151913",
       "series": "Indian Premier League 2026",
       "match_desc": "37th Match",
-      "team1": "Gujarat Titans",
-      "team1_short": "GT",
-      "team1_color": "#0f766e",
-      "team2": "Chennai Super Kings",
-      "team2_short": "CSK",
-      "team2_color": "#d97706",
+      "team1": "Chennai Super Kings",
+      "team1_short": "CSK",
+      "team1_color": "#d97706",
+      "team2": "Gujarat Titans",
+      "team2_short": "GT",
+      "team2_color": "#0f766e",
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "upcoming",
       "status_text": "Match starts at Apr 26, 10:00 GMT",
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "24 Apr, 11:52 PM",
+  "last_updated": "25 Apr, 02:56 AM",
   "error": null
 }
