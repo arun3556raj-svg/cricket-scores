@@ -12,11 +12,11 @@
       "team2_short": "SRH",
       "team2_color": "#ea580c",
       "team1_score1": {
-        "display": "57/1",
-        "detail": "(4.4 ov)",
-        "runs": 57,
+        "display": "146/1",
+        "detail": "(12.2 ov)",
+        "runs": 146,
         "wickets": 1,
-        "overs": 4.4
+        "overs": 12.2
       },
       "team1_score2": null,
       "team2_score1": null,
@@ -26,7 +26,7 @@
       "status_text": "Sunrisers Hyderabad opt to bowl",
       "start_time": "02:00 PM",
       "start_epoch": 1777125600000,
-      "run_rate": 12.95
+      "run_rate": 11.97
     }
   ],
   "upcoming": [
@@ -145,6 +145,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "25 Apr, 02:24 PM",
+  "last_updated": "25 Apr, 03:10 PM",
   "error": null
 }

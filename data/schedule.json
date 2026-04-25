@@ -589,8 +589,8 @@
       "team2_short": "PBKS",
       "team2_color": "#e11d48",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "live",
-      "status_text": "Punjab Kings need 28 runs in 20 balls",
+      "status": "finished",
+      "status_text": "Punjab Kings won by 6 wkts",
       "start_time": "10:00 AM",
       "start_epoch": 1777111200000,
       "match_date": "Sat, 25 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "25 Apr, 02:24 PM",
+  "last_updated": "25 Apr, 03:10 PM",
   "error": null
 }
