@@ -589,8 +589,8 @@
       "team2_short": "PBKS",
       "team2_color": "#e11d48",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 25, 10:00 GMT",
+      "status": "live",
+      "status_text": "Delhi Capitals opt to bat",
       "start_time": "10:00 AM",
       "start_epoch": 1777111200000,
       "match_date": "Sat, 25 Apr 2026"
@@ -1109,12 +1109,12 @@
       "id": "152229",
       "series": "Indian Premier League 2026",
       "match_desc": "66th Match",
-      "team1": "Chennai Super Kings",
-      "team1_short": "CSK",
-      "team1_color": "#d97706",
-      "team2": "Gujarat Titans",
-      "team2_short": "GT",
-      "team2_color": "#0f766e",
+      "team1": "Gujarat Titans",
+      "team1_short": "GT",
+      "team1_color": "#0f766e",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "upcoming",
       "status_text": "Match starts at May 21, 14:00 GMT",
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "25 Apr, 09:12 AM",
+  "last_updated": "25 Apr, 10:08 AM",
   "error": null
 }
