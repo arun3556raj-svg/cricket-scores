@@ -7,8 +7,8 @@
       "score": {
         "runs": 228,
         "wickets": 6,
-        "overs": 19.5,
-        "run_rate": 11.5,
+        "overs": 20,
+        "run_rate": 11.4,
         "declared": false
       },
       "extras": {
@@ -94,11 +94,11 @@
         {
           "name": "Ravindra Jadeja",
           "runs": 4,
-          "balls": 2,
+          "balls": 3,
           "fours": 1,
           "sixes": 0,
-          "strike_rate": 200,
-          "out_desc": "batting",
+          "strike_rate": 133.33,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -110,7 +110,7 @@
           "fours": 0,
           "sixes": 0,
           "strike_rate": 100,
-          "out_desc": "batting",
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -155,11 +155,11 @@
       "bowlers": [
         {
           "name": "Praful Hinge",
-          "overs": 3.5,
+          "overs": 4,
           "maidens": 0,
           "runs": 49,
           "wickets": 1,
-          "economy": 12.8,
+          "economy": 12.2,
           "wides": 1,
           "no_balls": 0
         },
@@ -250,6 +250,231 @@
           "runs": 225,
           "over": 19.3,
           "wkt_n": 6
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 100,
+        "wickets": 1,
+        "overs": 6.5,
+        "run_rate": 14.63,
+        "declared": false
+      },
+      "extras": {
+        "total": 14,
+        "wides": 9,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 5
+      },
+      "batsmen": [
+        {
+          "name": "Travis Head",
+          "runs": 6,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 120,
+          "out_desc": "c Dhruv Jurel b Jofra Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Abhishek Sharma",
+          "runs": 39,
+          "balls": 19,
+          "fours": 8,
+          "sixes": 1,
+          "strike_rate": 205.26,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 41,
+          "balls": 17,
+          "fours": 8,
+          "sixes": 1,
+          "strike_rate": 241.18,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Salil Arora",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Pat Cummins",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Shivang Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Sakib Hussain",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Praful Hinge",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Eshan Malinga",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Jofra Archer",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 12.5,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Nandre Burger",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 14,
+          "wides": 6,
+          "no_balls": 0
+        },
+        {
+          "name": "Tushar Deshpande",
+          "overs": 1,
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 12,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Brijesh Sharma",
+          "overs": 1,
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 19,
+          "wides": 2,
+          "no_balls": 0
+        },
+        {
+          "name": "Riyan Parag",
+          "overs": 0.5,
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 13.2,
+          "wides": 0,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Travis Head",
+          "runs": 7,
+          "over": 0.5,
+          "wkt_n": 1
         }
       ]
     }
