@@ -258,15 +258,15 @@
       "bowl_team": "Rajasthan Royals",
       "innings_id": 2,
       "score": {
-        "runs": 220,
-        "wickets": 4,
-        "overs": 17.4,
-        "run_rate": 12.45,
+        "runs": 229,
+        "wickets": 5,
+        "overs": 18.3,
+        "run_rate": 12.38,
         "declared": false
       },
       "extras": {
-        "total": 17,
-        "wides": 12,
+        "total": 18,
+        "wides": 13,
         "no_balls": 0,
         "byes": 0,
         "leg_byes": 5
@@ -311,11 +311,11 @@
         {
           "name": "Heinrich Klaasen",
           "runs": 29,
-          "balls": 22,
+          "balls": 24,
           "fours": 3,
           "sixes": 1,
-          "strike_rate": 131.82,
-          "out_desc": "batting",
+          "strike_rate": 120.83,
+          "out_desc": "c Ravi Bishnoi b Brijesh Sharma",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -334,27 +334,27 @@
         },
         {
           "name": "Salil Arora",
-          "runs": 1,
-          "balls": 1,
+          "runs": 8,
+          "balls": 3,
           "fours": 0,
-          "sixes": 0,
-          "strike_rate": 100,
-          "out_desc": "batting",
+          "sixes": 1,
+          "strike_rate": 266.67,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Aniket Verma",
-          "runs": 0,
-          "balls": 0,
+          "runs": 1,
+          "balls": 1,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 100,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Pat Cummins",
@@ -430,12 +430,12 @@
         },
         {
           "name": "Nandre Burger",
-          "overs": 3,
+          "overs": 3.3,
           "maidens": 0,
-          "runs": 41,
+          "runs": 50,
           "wickets": 0,
-          "economy": 13.7,
-          "wides": 6,
+          "economy": 14.3,
+          "wides": 7,
           "no_balls": 0
         },
         {
@@ -450,11 +450,11 @@
         },
         {
           "name": "Brijesh Sharma",
-          "overs": 3.4,
+          "overs": 4,
           "maidens": 0,
           "runs": 44,
-          "wickets": 1,
-          "economy": 12,
+          "wickets": 2,
+          "economy": 11,
           "wides": 3,
           "no_balls": 0
         },
@@ -523,6 +523,12 @@
           "runs": 219,
           "over": 17.2,
           "wkt_n": 4
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 220,
+          "over": 17.6,
+          "wkt_n": 5
         }
       ]
     }

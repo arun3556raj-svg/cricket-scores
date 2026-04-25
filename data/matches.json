@@ -1,40 +1,5 @@
 {
-  "live": [
-    {
-      "id": "151902",
-      "series": "IPL 2026",
-      "match_desc": "36th Match",
-      "match_format": "T20",
-      "team1": "Rajasthan Royals",
-      "team1_short": "RR",
-      "team1_color": "#db2777",
-      "team2": "Sunrisers Hyderabad",
-      "team2_short": "SRH",
-      "team2_color": "#ea580c",
-      "team1_score1": {
-        "display": "228/6",
-        "detail": "(19.6 ov)",
-        "runs": 228,
-        "wickets": 6,
-        "overs": 19.6
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "220/4",
-        "detail": "(17.3 ov)",
-        "runs": 220,
-        "wickets": 4,
-        "overs": 17.3
-      },
-      "team2_score2": null,
-      "venue": "Sawai Mansingh Stadium, Jaipur",
-      "status": "live",
-      "status_text": "Sunrisers Hyderabad need 9 runs in 15 balls",
-      "start_time": "02:00 PM",
-      "start_epoch": 1777125600000,
-      "run_rate": 12.72
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "151913",
@@ -115,8 +80,42 @@
       "start_time": "10:00 AM",
       "start_epoch": 1777111200000,
       "run_rate": null
+    },
+    {
+      "id": "151902",
+      "series": "IPL 2026",
+      "match_desc": "36th Match",
+      "match_format": "T20",
+      "team1": "Rajasthan Royals",
+      "team1_short": "RR",
+      "team1_color": "#db2777",
+      "team2": "Sunrisers Hyderabad",
+      "team2_short": "SRH",
+      "team2_color": "#ea580c",
+      "team1_score1": {
+        "display": "228/6",
+        "detail": "(19.6 ov)",
+        "runs": 228,
+        "wickets": 6,
+        "overs": 19.6
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "229/5",
+        "detail": "(18.3 ov)",
+        "runs": 229,
+        "wickets": 5,
+        "overs": 18.3
+      },
+      "team2_score2": null,
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "status": "finished",
+      "status_text": "Sunrisers Hyderabad won by 5 wkts",
+      "start_time": "02:00 PM",
+      "start_epoch": 1777125600000,
+      "run_rate": null
     }
   ],
-  "last_updated": "25 Apr, 05:49 PM",
+  "last_updated": "25 Apr, 07:02 PM",
   "error": null
 }
