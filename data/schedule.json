@@ -607,7 +607,7 @@
       "team2_color": "#ea580c",
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "live",
-      "status_text": "Sunrisers Hyderabad need 136 runs in 83 balls",
+      "status_text": "Sunrisers Hyderabad need 9 runs in 15 balls",
       "start_time": "02:00 PM",
       "start_epoch": 1777125600000,
       "match_date": "Sat, 25 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "25 Apr, 04:56 PM",
+  "last_updated": "25 Apr, 05:49 PM",
   "error": null
 }
