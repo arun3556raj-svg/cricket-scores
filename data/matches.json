@@ -19,14 +19,20 @@
         "overs": 19.6
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "147/3",
+        "detail": "(9.5 ov)",
+        "runs": 147,
+        "wickets": 3,
+        "overs": 9.5
+      },
       "team2_score2": null,
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Punjab Kings need 118 runs in 61 balls",
       "start_time": "10:00 AM",
       "start_epoch": 1777111200000,
-      "run_rate": 13.47
+      "run_rate": 15.47
     }
   ],
   "upcoming": [
@@ -111,6 +117,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "25 Apr, 11:56 AM",
+  "last_updated": "25 Apr, 01:23 PM",
   "error": null
 }
