@@ -1,42 +1,6 @@
 {
   "live": [
     {
-      "id": "151891",
-      "series": "IPL 2026",
-      "match_desc": "35th Match",
-      "match_format": "T20",
-      "team1": "Delhi Capitals",
-      "team1_short": "DC",
-      "team1_color": "#0ea5e9",
-      "team2": "Punjab Kings",
-      "team2_short": "PBKS",
-      "team2_color": "#e11d48",
-      "team1_score1": {
-        "display": "264/2",
-        "detail": "(19.6 ov)",
-        "runs": 264,
-        "wickets": 2,
-        "overs": 19.6
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "147/3",
-        "detail": "(9.5 ov)",
-        "runs": 147,
-        "wickets": 3,
-        "overs": 9.5
-      },
-      "team2_score2": null,
-      "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "live",
-      "status_text": "Punjab Kings need 118 runs in 61 balls",
-      "start_time": "10:00 AM",
-      "start_epoch": 1777111200000,
-      "run_rate": 15.47
-    }
-  ],
-  "upcoming": [
-    {
       "id": "151902",
       "series": "IPL 2026",
       "match_desc": "36th Match",
@@ -47,17 +11,25 @@
       "team2": "Sunrisers Hyderabad",
       "team2_short": "SRH",
       "team2_color": "#ea580c",
-      "team1_score1": null,
+      "team1_score1": {
+        "display": "57/1",
+        "detail": "(4.4 ov)",
+        "runs": 57,
+        "wickets": 1,
+        "overs": 4.4
+      },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Sawai Mansingh Stadium, Jaipur",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 25, 14:00 GMT",
+      "status": "live",
+      "status_text": "Sunrisers Hyderabad opt to bowl",
       "start_time": "02:00 PM",
       "start_epoch": 1777125600000,
-      "run_rate": null
-    },
+      "run_rate": 12.95
+    }
+  ],
+  "upcoming": [
     {
       "id": "151913",
       "series": "IPL 2026",
@@ -78,6 +50,28 @@
       "status_text": "Match starts at Apr 26, 10:00 GMT",
       "start_time": "10:00 AM",
       "start_epoch": 1777197600000,
+      "run_rate": null
+    },
+    {
+      "id": "151924",
+      "series": "IPL 2026",
+      "match_desc": "38th Match",
+      "match_format": "T20",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Kolkata Knight Riders",
+      "team2_short": "KKR",
+      "team2_color": "#7c3aed",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "status": "upcoming",
+      "status_text": "Match starts at Apr 26, 14:00 GMT",
+      "start_time": "02:00 PM",
+      "start_epoch": 1777212000000,
       "run_rate": null
     }
   ],
@@ -115,8 +109,42 @@
       "start_time": "02:00 PM",
       "start_epoch": 1777039200000,
       "run_rate": null
+    },
+    {
+      "id": "151891",
+      "series": "IPL 2026",
+      "match_desc": "35th Match",
+      "match_format": "T20",
+      "team1": "Delhi Capitals",
+      "team1_short": "DC",
+      "team1_color": "#0ea5e9",
+      "team2": "Punjab Kings",
+      "team2_short": "PBKS",
+      "team2_color": "#e11d48",
+      "team1_score1": {
+        "display": "264/2",
+        "detail": "(19.6 ov)",
+        "runs": 264,
+        "wickets": 2,
+        "overs": 19.6
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "265/4",
+        "detail": "(18.5 ov)",
+        "runs": 265,
+        "wickets": 4,
+        "overs": 18.5
+      },
+      "team2_score2": null,
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "status": "finished",
+      "status_text": "Punjab Kings won by 6 wkts",
+      "start_time": "10:00 AM",
+      "start_epoch": 1777111200000,
+      "run_rate": null
     }
   ],
-  "last_updated": "25 Apr, 01:23 PM",
+  "last_updated": "25 Apr, 02:24 PM",
   "error": null
 }
