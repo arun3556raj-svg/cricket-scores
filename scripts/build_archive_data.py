@@ -322,6 +322,20 @@ def build_bowler_entry(player_id: int, name: str) -> dict:
     }
 
 
+def delivery_marker(row: sqlite3.Row) -> str:
+    if row["is_wicket"] and result_is_fow(row):
+        return "W"
+    if row["is_six"]:
+        return "6"
+    if row["is_four"]:
+        return "4"
+    if row["extras_type"] == "wides":
+        return "Wd"
+    if row["extras_type"] == "noballs":
+        return "Nb"
+    return str(row["runs_total"] or 0)
+
+
 def scorecard_delivery_rows(conn: sqlite3.Connection, innings_id: int) -> list[sqlite3.Row]:
     return conn.execute(
         """
@@ -355,9 +369,12 @@ def build_innings_scorecard(conn: sqlite3.Connection, inn: sqlite3.Row) -> dict:
     extras = defaultdict(int)
     dismissals: dict[int, str] = {}
     fow = []
+    progression = []
     innings_runs = 0
     legal_balls = 0
     fow_count = 0
+    pending_runs = 0
+    pending_markers: list[str] = []
 
     def ensure_batter(player_id: int | None, name: str | None) -> None:
         if player_id and player_id not in batsmen:
@@ -375,7 +392,12 @@ def build_innings_scorecard(conn: sqlite3.Connection, inn: sqlite3.Row) -> dict:
 
         batter = batsmen[row["batter_id"]]
         bowler = bowlers[row["bowler_id"]]
-        innings_runs += row["runs_total"] or 0
+        delivery_runs = row["runs_total"] or 0
+        innings_runs += delivery_runs
+        pending_runs += delivery_runs
+        marker = delivery_marker(row)
+        if marker not in {"0", "1", "2", "3"}:
+            pending_markers.append(marker)
 
         batter["runs"] += row["runs_batter"] or 0
         if batter_ball(row):
@@ -414,6 +436,11 @@ def build_innings_scorecard(conn: sqlite3.Connection, inn: sqlite3.Row) -> dict:
                         "wkt_n": fow_count,
                     }
                 )
+        if legal_delivery(row):
+            marker_text = "/".join(pending_markers) if pending_markers else str(pending_runs)
+            progression.append(f"{legal_balls},{innings_runs},{fow_count},{pending_runs},{marker_text}")
+            pending_runs = 0
+            pending_markers = []
 
     for player_id, batter in batsmen.items():
         batter["out_desc"] = dismissals.get(player_id, "")
@@ -454,6 +481,7 @@ def build_innings_scorecard(conn: sqlite3.Connection, inn: sqlite3.Row) -> dict:
         "batsmen": [{key: value for key, value in batter.items() if key != "player_id"} for batter in batsmen.values()],
         "bowlers": bowler_rows,
         "fow": fow,
+        "progression": progression,
     }
 
 

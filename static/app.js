@@ -747,6 +747,16 @@ function ballsToOvers(balls) {
   return rem ? `${overs}.${rem}` : String(overs);
 }
 
+function teamInitials(name) {
+  return String(name || '')
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 3)
+    .map(part => part[0])
+    .join('')
+    .toUpperCase() || 'TEAM';
+}
+
 function statMetricValue(row, metric) {
   if (metric === 'runs') return row.runs;
   if (metric === 'strike_rate') return row.strike_rate ?? 0;
@@ -874,6 +884,7 @@ let drawerMatchId = null;
 let drawerScorecardData = null;
 let drawerSelectedInningsIndex = 0;
 let drawerHasManualInningsSelection = false;
+let drawerComparisonMode = 'over';
 
 function getInningsScoreLine(score) {
   const runs = score?.runs ?? 0;
@@ -916,12 +927,18 @@ function selectDrawerInnings(index) {
   if (drawerScorecardData) renderScorecard(drawerScorecardData);
 }
 
+function selectComparisonMode(mode) {
+  drawerComparisonMode = mode === 'ball' ? 'ball' : 'over';
+  if (drawerScorecardData) renderScorecard(drawerScorecardData);
+}
+
 function openDrawer(matchId, matchObj) {
   drawerMatchId = matchId;
   drawerOpen = true;
   drawerScorecardData = null;
   drawerSelectedInningsIndex = 0;
   drawerHasManualInningsSelection = false;
+  drawerComparisonMode = 'over';
 
   // Set header info immediately
   $('drawerTeams').textContent = `${matchObj.team1} vs ${matchObj.team2}`;
@@ -959,6 +976,7 @@ function closeDrawer() {
   drawerScorecardData = null;
   drawerSelectedInningsIndex = 0;
   drawerHasManualInningsSelection = false;
+  drawerComparisonMode = 'over';
   stopScRefresh();
   $('drawerBackdrop').classList.remove('open');
   $('drawer').classList.remove('open');
@@ -1000,6 +1018,7 @@ function renderScorecard(data) {
 
   const html = `
     ${renderScorecardSummary(data)}
+    ${renderInningsComparison(innings)}
     ${renderInningsSwitcher(innings)}
     ${renderInnings(innings[drawerSelectedInningsIndex])}`;
 
@@ -1020,6 +1039,111 @@ function hasValidDrawerInningsSelection(innings) {
   if (!innings.length) return false;
   if (!drawerHasManualInningsSelection) return false;
   return drawerSelectedInningsIndex >= 0 && drawerSelectedInningsIndex < innings.length;
+}
+
+function progressionForMode(progression, mode) {
+  const rows = Array.isArray(progression)
+    ? progression.map(normalizeProgressionItem).filter(item => Number(item?.ball) > 0)
+    : [];
+  if (mode === 'ball') return rows;
+
+  const byOver = new Map();
+  for (const item of rows) {
+    const overNumber = Math.ceil(Number(item.ball) / 6);
+    byOver.set(overNumber, item);
+  }
+  return Array.from(byOver.values()).sort((a, b) => Number(a.ball) - Number(b.ball));
+}
+
+function normalizeProgressionItem(item) {
+  if (item && typeof item === 'object') {
+    return { ...item, over: item.over || ballsToOvers(Number(item.ball || 0)) };
+  }
+  if (typeof item !== 'string') return null;
+  const [ball, runs, wickets, deliveryRuns, ...markerParts] = item.split(',');
+  const ballNumber = Number(ball);
+  return {
+    ball: ballNumber,
+    over: ballsToOvers(ballNumber),
+    runs: Number(runs || 0),
+    wickets: Number(wickets || 0),
+    delivery_runs: Number(deliveryRuns || 0),
+    marker: markerParts.join(',') || deliveryRuns || '0',
+  };
+}
+
+function renderInningsComparison(innings) {
+  const comparable = innings
+    .filter(inn => Array.isArray(inn.progression) && inn.progression.length)
+    .slice(0, 2);
+  if (comparable.length < 2) return '';
+
+  const [first, second] = comparable;
+  const firstRows = progressionForMode(first.progression, drawerComparisonMode);
+  const secondRows = progressionForMode(second.progression, drawerComparisonMode);
+  const firstByBall = new Map(firstRows.map(item => [Number(item.ball), item]));
+  const secondByBall = new Map(secondRows.map(item => [Number(item.ball), item]));
+  const keys = Array.from(new Set([...firstByBall.keys(), ...secondByBall.keys()])).sort((a, b) => a - b);
+  const firstShort = teamInitials(first.bat_team);
+  const secondShort = teamInitials(second.bat_team);
+
+  return `
+    <div class="comparison-panel">
+      <div class="comparison-head">
+        <div>
+          <span class="comparison-kicker">Run Race</span>
+          <h3>${drawerComparisonMode === 'ball' ? 'Ball-by-ball comparison' : 'Over-by-over comparison'}</h3>
+          <p>Compare both innings at the same point in the chase.</p>
+        </div>
+        <div class="comparison-toggle" role="tablist" aria-label="Comparison mode">
+          <button type="button" class="${drawerComparisonMode === 'over' ? 'is-active' : ''}" onclick="selectComparisonMode('over')">Overs</button>
+          <button type="button" class="${drawerComparisonMode === 'ball' ? 'is-active' : ''}" onclick="selectComparisonMode('ball')">Balls</button>
+        </div>
+      </div>
+      <div class="comparison-table">
+        <div class="comparison-row comparison-row--head">
+          <span>After</span>
+          <span>${esc(firstShort)}</span>
+          <span>${esc(secondShort)}</span>
+          <span>Edge</span>
+        </div>
+        ${keys.map(key => renderComparisonRow(key, firstByBall.get(key), secondByBall.get(key), firstShort, secondShort)).join('')}
+      </div>
+    </div>`;
+}
+
+function renderComparisonRow(ball, first, second, firstShort, secondShort) {
+  const label = first?.over || second?.over || ballsToOvers(ball);
+  return `
+    <div class="comparison-row">
+      <span class="comparison-over">After ${esc(String(label))} ov</span>
+      ${renderComparisonScore(first, firstShort)}
+      ${renderComparisonScore(second, secondShort)}
+      ${renderComparisonEdge(first, second, firstShort, secondShort)}
+    </div>`;
+}
+
+function renderComparisonScore(item, teamShort) {
+  if (!item) {
+    return `<span class="comparison-score comparison-score--empty" data-team="${esc(teamShort)}"><strong>-</strong><small>Not reached</small></span>`;
+  }
+  const marker = item.marker ? ` · ${item.marker}` : '';
+  const deliveryRuns = Number(item.delivery_runs ?? 0);
+  return `
+    <span class="comparison-score" data-team="${esc(teamShort)}">
+      <strong>${item.runs}/${item.wickets}</strong>
+      <small>${deliveryRuns} run${deliveryRuns === 1 ? '' : 's'}${esc(marker)}</small>
+    </span>`;
+}
+
+function renderComparisonEdge(first, second, firstShort, secondShort) {
+  if (!first || !second) {
+    return `<span class="comparison-edge">Pending</span>`;
+  }
+  const diff = Number(first.runs || 0) - Number(second.runs || 0);
+  if (diff === 0) return `<span class="comparison-edge is-level">Level</span>`;
+  const leader = diff > 0 ? firstShort : secondShort;
+  return `<span class="comparison-edge">${esc(leader)} +${Math.abs(diff)}</span>`;
 }
 
 function renderInnings(inn) {
@@ -1514,6 +1638,7 @@ async function openArchiveScoreboard(el) {
   drawerScorecardData = null;
   drawerSelectedInningsIndex = 0;
   drawerHasManualInningsSelection = false;
+  drawerComparisonMode = 'over';
 
   $('drawerTeams').textContent = `${match.team1} vs ${match.team2}`;
   $('drawerMeta').textContent = `${match.season} · ${match.round}${match.match_number ? ' · Match ' + match.match_number : ''}`;
@@ -1585,6 +1710,7 @@ function openDrawerForSchedule(matchId, matchObj) {
   drawerScorecardData = null;
   drawerSelectedInningsIndex = 0;
   drawerHasManualInningsSelection = false;
+  drawerComparisonMode = 'over';
 
   $('drawerTeams').textContent = `${matchObj.team1} vs ${matchObj.team2}`;
   $('drawerMeta').textContent  = `IPL 2026${matchObj.match_desc ? ' · ' + matchObj.match_desc : ''}`;

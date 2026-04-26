@@ -1590,6 +1590,150 @@ html[data-theme="light"] .sc-table tbody tr { border-top-color: rgba(0,0,0,0.05)
   font-weight: 800;
 }
 
+.comparison-panel {
+  margin: 14px 16px 0;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(45,212,191,0.12), transparent 36%),
+    var(--surface);
+  overflow: hidden;
+}
+
+.comparison-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.comparison-kicker {
+  display: block;
+  color: var(--result);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.comparison-head h3 {
+  color: var(--t1);
+  font-size: 17px;
+  letter-spacing: -0.03em;
+}
+
+.comparison-head p {
+  color: var(--t3);
+  font-size: 11.5px;
+  margin-top: 3px;
+}
+
+.comparison-toggle {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  flex-shrink: 0;
+}
+
+.comparison-toggle button {
+  min-height: 30px;
+  padding: 0 11px;
+  border-radius: 999px;
+  color: var(--t3);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.comparison-toggle button.is-active {
+  color: #06130d;
+  background: linear-gradient(135deg, #4ade80, #2dd4bf);
+}
+
+.comparison-table {
+  display: grid;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) minmax(0, 1fr) 78px;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-top: 1px solid rgba(255,255,255,0.045);
+  color: var(--t2);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.comparison-row--head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-top: 0;
+  background: rgba(10,16,14,0.94);
+  color: var(--t4);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+html[data-theme="light"] .comparison-row--head {
+  background: rgba(255,255,255,0.94);
+}
+
+.comparison-over {
+  color: var(--t3);
+  font-weight: 900;
+}
+
+.comparison-score {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.comparison-score strong {
+  color: var(--t1);
+  font-size: 13px;
+}
+
+.comparison-score small {
+  color: var(--t4);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.comparison-score--empty strong,
+.comparison-score--empty small {
+  color: var(--t4);
+}
+
+.comparison-edge {
+  justify-self: end;
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: rgba(45,212,191,0.10);
+  color: #2dd4bf;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.comparison-edge.is-level {
+  background: rgba(255,255,255,0.06);
+  color: var(--t3);
+}
+
 /* ── Responsive header ───────────────────────────────────────── */
 @media (max-width: 480px) {
   .header-inner { height: 56px; padding: 0 16px; }
@@ -1599,6 +1743,61 @@ html[data-theme="light"] .sc-table tbody tr { border-top-color: rgba(0,0,0,0.05)
   .innings-switcher-wrap { padding: 12px 12px 8px; }
   .innings-switcher-btn { padding: 11px 12px; }
   .innings-switcher-score { font-size: 16px; }
+  .comparison-panel {
+    margin: 10px 10px 0;
+    border-radius: 16px;
+  }
+  .comparison-head {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+  }
+  .comparison-toggle {
+    width: 100%;
+  }
+  .comparison-toggle button {
+    flex: 1;
+  }
+  .comparison-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 10px 12px;
+  }
+  .comparison-row--head {
+    display: none;
+  }
+  .comparison-over {
+    color: var(--result);
+  }
+  .comparison-score,
+  .comparison-edge {
+    width: 100%;
+  }
+  .comparison-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 7px 9px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.035);
+  }
+  .comparison-score::before {
+    content: attr(data-team);
+    color: var(--t4);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .comparison-score small {
+    text-align: right;
+    white-space: normal;
+  }
+  .comparison-edge {
+    justify-self: stretch;
+    text-align: center;
+  }
 }
 
 /* ================================================================
