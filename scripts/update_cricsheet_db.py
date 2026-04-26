@@ -16,6 +16,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DB_PATH = Path(r"C:/Users/91938/Documents/Codex/ipl_universe_v4.db")
 DEFAULT_SOURCE_URL = "https://cricsheet.org/downloads/ipl_json.zip"
+DEFAULT_MATCH_ID_MAP = ROOT / "data" / "archive.json"
 
 TEAM_SHORTS = {
     "Chennai Super Kings": "CSK",
@@ -287,6 +288,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--db", type=Path, default=DEFAULT_DB_PATH, help="SQLite DB path to write.")
     parser.add_argument("--source-url", default=DEFAULT_SOURCE_URL, help="Cricsheet IPL JSON ZIP URL.")
     parser.add_argument("--zip", type=Path, help="Use an already downloaded Cricsheet IPL JSON ZIP.")
+    parser.add_argument(
+        "--match-id-map",
+        type=Path,
+        default=DEFAULT_MATCH_ID_MAP,
+        help="Existing archive JSON used to preserve match IDs when no DB exists.",
+    )
     return parser.parse_args()
 
 
@@ -297,9 +304,24 @@ def download_zip(source_url: str) -> Path:
     return target
 
 
-def read_existing_match_ids(db_path: Path) -> tuple[dict[str, int], int]:
-    if not db_path.exists():
+def read_archive_match_ids(archive_path: Path) -> tuple[dict[str, int], int]:
+    if not archive_path.exists():
         return {}, 0
+    try:
+        data = json.loads(archive_path.read_text(encoding="utf-8"))
+        mapping = {
+            str(match["source_id"]): int(match["id"])
+            for match in data.get("matches", [])
+            if match.get("source_id") and str(match.get("id", "")).isdigit()
+        }
+        return mapping, max(mapping.values(), default=0)
+    except (OSError, json.JSONDecodeError, KeyError, TypeError, ValueError):
+        return {}, 0
+
+
+def read_existing_match_ids(db_path: Path, archive_path: Path) -> tuple[dict[str, int], int]:
+    if not db_path.exists():
+        return read_archive_match_ids(archive_path)
     try:
         conn = sqlite3.connect(db_path)
         rows = conn.execute("select cricsheet_id, match_id from matches").fetchall()
@@ -307,7 +329,7 @@ def read_existing_match_ids(db_path: Path) -> tuple[dict[str, int], int]:
         conn.close()
         return {str(cricsheet_id): int(match_id) for cricsheet_id, match_id in rows}, int(max_id)
     except sqlite3.DatabaseError:
-        return {}, 0
+        return read_archive_match_ids(archive_path)
 
 
 def season_to_int(value: Any, match_date: str | None = None) -> int:
@@ -603,8 +625,8 @@ def load_matches(zip_path: Path) -> list[tuple[str, dict[str, Any]]]:
     )
 
 
-def rebuild_database(zip_path: Path, db_path: Path) -> None:
-    existing_ids, max_existing_id = read_existing_match_ids(db_path)
+def rebuild_database(zip_path: Path, db_path: Path, match_id_map: Path) -> None:
+    existing_ids, max_existing_id = read_existing_match_ids(db_path, match_id_map)
     next_match_id = max_existing_id + 1
     matches = load_matches(zip_path)
     tmp_db = db_path.with_suffix(".tmp.db")
@@ -637,7 +659,7 @@ def rebuild_database(zip_path: Path, db_path: Path) -> None:
 def main() -> None:
     args = parse_args()
     zip_path = args.zip if args.zip else download_zip(args.source_url)
-    rebuild_database(zip_path, args.db)
+    rebuild_database(zip_path, args.db, args.match_id_map)
 
 
 if __name__ == "__main__":

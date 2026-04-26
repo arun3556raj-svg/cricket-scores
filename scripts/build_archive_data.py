@@ -231,7 +231,6 @@ def build_archive(conn: sqlite3.Connection) -> dict:
         join teams t2 on t2.team_id = m.team2_id
         left join teams w on w.team_id = m.winner_id
         left join venues v on v.venue_id = m.venue_id
-        where m.season >= 2008
         order by m.season desc, m.date desc, coalesce(m.match_number, 9999) desc, m.match_id desc
         """
     ).fetchall()
@@ -534,7 +533,6 @@ def build_stats_builder_data(conn: sqlite3.Connection, archive: dict) -> dict:
         join players p on p.player_id = d.batter_id
         left join venues v on v.venue_id = m.venue_id
         where i.is_super_over = 0
-          and m.season >= 2008
         group by i.innings_id, d.batter_id
         order by m.season, m.match_id, i.innings_number
         """
@@ -566,7 +564,6 @@ def build_stats_builder_data(conn: sqlite3.Connection, archive: dict) -> dict:
         join players p on p.player_id = d.bowler_id
         left join venues v on v.venue_id = m.venue_id
         where i.is_super_over = 0
-          and m.season >= 2008
         order by m.season, m.match_id, i.innings_number, d.delivery_id
         """
     ).fetchall()

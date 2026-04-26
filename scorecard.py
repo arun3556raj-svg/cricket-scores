@@ -97,12 +97,14 @@ def _parse_innings(inns: dict) -> dict:
         bowlers.append({
             "name":     bw.get("bowlName", ""),
             "overs":    bw.get("overs", 0),
+            "balls":    bw.get("balls", 0),
             "maidens":  bw.get("maidens", 0),
             "runs":     bw.get("runs", 0),
             "wickets":  bw.get("wickets", 0),
             "economy":  bw.get("economy", 0.0),
             "wides":    bw.get("wides", 0),
             "no_balls": bw.get("no_balls", 0),
+            "dots":     bw.get("dots", 0),
         })
 
     # ── Fall of wickets ──────────────────────────────────────────

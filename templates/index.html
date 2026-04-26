@@ -51,6 +51,7 @@
       </button>
       <button class="tab" data-filter="upcoming" onclick="setFilter('upcoming')">Upcoming</button>
       <button class="tab" data-filter="results" onclick="setFilter('results')">Results</button>
+      <button class="tab" data-filter="points" onclick="setFilter('points')">Points</button>
       <button class="tab" data-filter="archive" onclick="setFilter('archive')">Archive</button>
       <button class="tab" data-filter="schedule" onclick="setFilter('schedule')">Schedule</button>
     </div>
@@ -117,6 +118,19 @@
             <div class="sc-loading">
               <div class="sc-spin"></div>
               <span>Loading schedule…</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Points Table -->
+      <section class="section" id="pointsSection" style="display:none">
+        <div class="container">
+          <div class="section-label">IPL Points Table</div>
+          <div id="pointsTable">
+            <div class="sc-loading">
+              <div class="sc-spin"></div>
+              <span>Loading points table...</span>
             </div>
           </div>
         </div>

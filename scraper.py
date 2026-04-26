@@ -71,19 +71,34 @@ def _fmt_score(innings):
     runs = innings.get("runs", 0)
     wkts = innings.get("wickets", 0)
     overs = innings.get("overs", 0)
-    detail = f"({overs} ov)"
+    display_overs = _normalize_overs(overs)
+    detail = f"({display_overs} ov)"
     if wkts == 10:
-        return {"display": str(runs), "detail": detail, "runs": runs, "wickets": wkts, "overs": overs}
-    return {"display": f"{runs}/{wkts}", "detail": detail, "runs": runs, "wickets": wkts, "overs": overs}
+        return {"display": str(runs), "detail": detail, "runs": runs, "wickets": wkts, "overs": display_overs}
+    return {"display": f"{runs}/{wkts}", "detail": detail, "runs": runs, "wickets": wkts, "overs": display_overs}
+
+
+def _overs_to_balls(overs):
+    try:
+        whole, _, fraction = str(overs).partition(".")
+        return int(whole or 0) * 6 + int((fraction or "0")[0])
+    except Exception:
+        return 0
+
+
+def _normalize_overs(overs):
+    balls = _overs_to_balls(overs)
+    complete, remainder = divmod(balls, 6)
+    return str(complete) if remainder == 0 else f"{complete}.{remainder}"
 
 
 def _calc_rr(innings):
     if not innings:
         return None
     runs = innings.get("runs", 0)
-    overs = innings.get("overs", 0)
-    if overs and overs > 0:
-        return round(runs / overs, 2)
+    balls = _overs_to_balls(innings.get("overs", 0))
+    if balls > 0:
+        return round(runs * 6 / balls, 2)
     return None
 
 
