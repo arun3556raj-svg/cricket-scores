@@ -624,7 +624,7 @@
       "team2_color": "#0f766e",
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "live",
-      "status_text": "Gujarat Titans opt to bowl",
+      "status_text": "Innings Break",
       "start_time": "10:00 AM",
       "start_epoch": 1777197600000,
       "match_date": "Sun, 26 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "26 Apr, 11:06 AM",
+  "last_updated": "26 Apr, 11:57 AM",
   "error": null
 }

@@ -12,21 +12,21 @@
       "team2_short": "GT",
       "team2_color": "#0f766e",
       "team1_score1": {
-        "display": "51/4",
-        "detail": "(12.1 ov)",
-        "runs": 51,
-        "wickets": 4,
-        "overs": 12.1
+        "display": "158/7",
+        "detail": "(19.6 ov)",
+        "runs": 158,
+        "wickets": 7,
+        "overs": 19.6
       },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "live",
-      "status_text": "Gujarat Titans opt to bowl",
+      "status_text": "Innings Break",
       "start_time": "10:00 AM",
       "start_epoch": 1777197600000,
-      "run_rate": 4.21
+      "run_rate": 8.06
     }
   ],
   "upcoming": [
@@ -123,6 +123,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "26 Apr, 11:06 AM",
+  "last_updated": "26 Apr, 11:57 AM",
   "error": null
 }
