@@ -19,7 +19,7 @@
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "upcoming",
       "status_text": "Match starts at Apr 27, 14:00 GMT",
-      "start_time": "02:00 PM",
+      "start_time": "07:30 PM",
       "start_epoch": 1777298400000,
       "run_rate": null
     }
@@ -55,7 +55,7 @@
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "finished",
       "status_text": "Match tied (Kolkata Knight Riders won the Super Over)",
-      "start_time": "02:00 PM",
+      "start_time": "07:30 PM",
       "start_epoch": 1777212000000,
       "run_rate": null,
       "provisional": true,
@@ -91,7 +91,7 @@
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "finished",
       "status_text": "Gujarat Titans won by 8 wkts",
-      "start_time": "10:00 AM",
+      "start_time": "03:30 PM",
       "start_epoch": 1777197600000,
       "run_rate": null,
       "provisional": true,
@@ -206,6 +206,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "26 Apr, 08:31 PM",
+  "last_updated": "27 Apr, 02:04 AM",
   "error": null
 }
