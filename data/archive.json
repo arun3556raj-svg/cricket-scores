@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-151924",
+      "source_id": "151924",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 38,
+      "round": "League",
+      "date": "2026-04-26",
+      "team1": "Kolkata Knight Riders",
+      "team1_short": "KKR",
+      "team1_color": "#7c3aed",
+      "team2": "Lucknow Super Giants",
+      "team2_short": "LSG",
+      "team2_color": "#0284c7",
+      "winner": null,
+      "result_text": "Match tied (Kolkata Knight Riders won the Super Over)",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Kolkata Knight Riders",
+          "team_short": "KKR",
+          "team_color": "#7c3aed",
+          "opponent": "Lucknow Super Giants",
+          "opponent_short": "LSG",
+          "runs": 155,
+          "wickets": 7,
+          "overs": 20,
+          "target": null,
+          "display": "155/7",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Lucknow Super Giants",
+          "team_short": "LSG",
+          "team_color": "#0284c7",
+          "opponent": "Kolkata Knight Riders",
+          "opponent_short": "KKR",
+          "runs": 155,
+          "wickets": 8,
+          "overs": 20,
+          "target": 156,
+          "display": "155/8",
+          "detail": "(20 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-151913",
       "source_id": "151913",
       "source": "cricbuzz",

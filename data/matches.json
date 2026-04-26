@@ -1,40 +1,5 @@
 {
-  "live": [
-    {
-      "id": "151924",
-      "series": "IPL 2026",
-      "match_desc": "38th Match",
-      "match_format": "T20",
-      "team1": "Kolkata Knight Riders",
-      "team1_short": "KKR",
-      "team1_color": "#7c3aed",
-      "team2": "Lucknow Super Giants",
-      "team2_short": "LSG",
-      "team2_color": "#0284c7",
-      "team1_score1": {
-        "display": "155/7",
-        "detail": "(20 ov)",
-        "runs": 155,
-        "wickets": 7,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "120/6",
-        "detail": "(17.3 ov)",
-        "runs": 120,
-        "wickets": 6,
-        "overs": "17.3"
-      },
-      "team2_score2": null,
-      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "status": "live",
-      "status_text": "Lucknow Super Giants need 36 runs in 15 balls",
-      "start_time": "02:00 PM",
-      "start_epoch": 1777212000000,
-      "run_rate": 6.86
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "151935",
@@ -60,6 +25,42 @@
     }
   ],
   "finished": [
+    {
+      "id": "151924",
+      "series": "IPL 2026",
+      "match_desc": "38th Match",
+      "match_format": "T20",
+      "team1": "Kolkata Knight Riders",
+      "team1_short": "KKR",
+      "team1_color": "#7c3aed",
+      "team2": "Lucknow Super Giants",
+      "team2_short": "LSG",
+      "team2_color": "#0284c7",
+      "team1_score1": {
+        "display": "155/7",
+        "detail": "(20 ov)",
+        "runs": 155,
+        "wickets": 7,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "155/8",
+        "detail": "(20 ov)",
+        "runs": 155,
+        "wickets": 8,
+        "overs": "20"
+      },
+      "team2_score2": null,
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "status": "finished",
+      "status_text": "Lucknow Super Giants need 1 run",
+      "start_time": "02:00 PM",
+      "start_epoch": 1777212000000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz"
+    },
     {
       "id": "151913",
       "series": "IPL 2026",
@@ -205,6 +206,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "26 Apr, 05:36 PM",
+  "last_updated": "26 Apr, 06:27 PM",
   "error": null
 }
