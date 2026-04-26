@@ -2,10 +2,12 @@ import re
 import json
 import traceback
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from http_utils import fetch_text
 
 URL          = "https://www.cricbuzz.com/cricket-match/live-scores"
 SCHEDULE_URL = "https://www.cricbuzz.com/cricket-series/9241/indian-premier-league-2026/matches"
+IST = ZoneInfo("Asia/Kolkata")
 
 IPL_TEAMS = {
     "Mumbai Indians":                    {"short": "MI",   "color": "#1d4ed8"},
@@ -92,6 +94,14 @@ def _normalize_overs(overs):
     return str(complete) if remainder == 0 else f"{complete}.{remainder}"
 
 
+def _from_epoch_ist(epoch_ms):
+    return datetime.fromtimestamp(int(epoch_ms) / 1000, tz=IST)
+
+
+def _last_updated():
+    return datetime.now(IST).strftime("%d %b, %I:%M %p")
+
+
 def _calc_rr(innings):
     if not innings:
         return None
@@ -140,7 +150,7 @@ def _parse_match(match_data):
     start_time = start_epoch = None
     if start_ms:
         try:
-            dt = datetime.fromtimestamp(int(start_ms) / 1000)
+            dt = _from_epoch_ist(start_ms)
             start_time  = dt.strftime("%I:%M %p")
             start_epoch = int(start_ms)
         except Exception:
@@ -207,7 +217,7 @@ def get_all_matches():
             "live":         live,
             "upcoming":     upcoming,
             "finished":     finished,
-            "last_updated": datetime.now().strftime("%d %b, %I:%M %p"),
+            "last_updated": _last_updated(),
             "error":        None,
         }
 
@@ -217,7 +227,7 @@ def get_all_matches():
             "live":         [],
             "upcoming":     [],
             "finished":     [],
-            "last_updated": datetime.now().strftime("%d %b, %I:%M %p"),
+            "last_updated": _last_updated(),
             "error":        str(e),
         }
 
@@ -280,7 +290,7 @@ def _parse_schedule_match(info: dict) -> dict:
     start_time = start_epoch = None
     if start_ms:
         try:
-            dt = datetime.fromtimestamp(int(start_ms) / 1000)
+            dt = _from_epoch_ist(start_ms)
             start_time  = dt.strftime("%I:%M %p")
             start_epoch = int(start_ms)
         except Exception:
@@ -330,13 +340,13 @@ def get_schedule() -> dict:
 
         return {
             "matches":      matches,
-            "last_updated": datetime.now().strftime("%d %b, %I:%M %p"),
+            "last_updated": _last_updated(),
             "error":        None,
         }
     except Exception as e:
         traceback.print_exc()
         return {
             "matches":      [],
-            "last_updated": datetime.now().strftime("%d %b, %I:%M %p"),
+            "last_updated": _last_updated(),
             "error":        str(e),
         }
