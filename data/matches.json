@@ -12,21 +12,21 @@
       "team2_short": "LSG",
       "team2_color": "#0284c7",
       "team1_score1": {
-        "display": "81/6",
-        "detail": "(13 ov)",
-        "runs": 81,
-        "wickets": 6,
-        "overs": "13"
+        "display": "155/7",
+        "detail": "(20 ov)",
+        "runs": 155,
+        "wickets": 7,
+        "overs": "20"
       },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "live",
-      "status_text": "Lucknow Super Giants opt to bowl",
+      "status_text": "Innings Break",
       "start_time": "02:00 PM",
       "start_epoch": 1777212000000,
-      "run_rate": 6.23
+      "run_rate": 7.75
     }
   ],
   "upcoming": [
@@ -199,6 +199,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "26 Apr, 03:11 PM",
+  "last_updated": "26 Apr, 03:58 PM",
   "error": null
 }

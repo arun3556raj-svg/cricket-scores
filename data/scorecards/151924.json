@@ -5,15 +5,15 @@
       "bowl_team": "Lucknow Super Giants",
       "innings_id": 1,
       "score": {
-        "runs": 81,
-        "wickets": 6,
-        "overs": 13,
-        "run_rate": 6.23,
+        "runs": 155,
+        "wickets": 7,
+        "overs": 20,
+        "run_rate": 7.75,
         "declared": false
       },
       "extras": {
-        "total": 6,
-        "wides": 5,
+        "total": 8,
+        "wides": 7,
         "no_balls": 0,
         "byes": 0,
         "leg_byes": 1
@@ -81,12 +81,12 @@
         },
         {
           "name": "Rinku Singh",
-          "runs": 17,
-          "balls": 20,
-          "fours": 1,
-          "sixes": 0,
-          "strike_rate": 85,
-          "out_desc": "batting",
+          "runs": 83,
+          "balls": 51,
+          "fours": 7,
+          "sixes": 5,
+          "strike_rate": 162.75,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -105,27 +105,27 @@
         },
         {
           "name": "Ramandeep Singh",
-          "runs": 4,
-          "balls": 6,
+          "runs": 6,
+          "balls": 11,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 66.67,
-          "out_desc": "batting",
+          "strike_rate": 54.55,
+          "out_desc": "c Mitchell Marsh b George Linde",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Sunil Narine",
-          "runs": 0,
-          "balls": 0,
+          "runs": 4,
+          "balls": 6,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 66.67,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Vaibhav Arora",
@@ -155,12 +155,12 @@
       "bowlers": [
         {
           "name": "Mohammed Shami",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 12,
+          "runs": 34,
           "wickets": 0,
-          "economy": 6,
+          "economy": 8.5,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
@@ -179,36 +179,36 @@
         },
         {
           "name": "Prince Yadav",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 10,
+          "runs": 24,
           "wickets": 0,
-          "economy": 5,
+          "economy": 6,
           "wides": 3,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Digvesh Singh Rathi",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 10,
+          "runs": 46,
           "wickets": 0,
-          "economy": 5,
-          "wides": 0,
+          "economy": 11.5,
+          "wides": 2,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "George Linde",
-          "overs": 1,
-          "balls": 6,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 16,
-          "wickets": 0,
-          "economy": 16,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 9,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -262,6 +262,12 @@
           "runs": 73,
           "over": 10.6,
           "wkt_n": 6
+        },
+        {
+          "name": "Ramandeep Singh",
+          "runs": 93,
+          "over": 14.6,
+          "wkt_n": 7
         }
       ]
     }
