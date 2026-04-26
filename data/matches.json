@@ -12,11 +12,11 @@
       "team2_short": "GT",
       "team2_color": "#0f766e",
       "team1_score1": {
-        "display": "5/0",
-        "detail": "(1.3 ov)",
-        "runs": 5,
-        "wickets": 0,
-        "overs": 1.3
+        "display": "51/4",
+        "detail": "(12.1 ov)",
+        "runs": 51,
+        "wickets": 4,
+        "overs": 12.1
       },
       "team1_score2": null,
       "team2_score1": null,
@@ -26,7 +26,7 @@
       "status_text": "Gujarat Titans opt to bowl",
       "start_time": "10:00 AM",
       "start_epoch": 1777197600000,
-      "run_rate": 3.85
+      "run_rate": 4.21
     }
   ],
   "upcoming": [
@@ -123,6 +123,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "26 Apr, 10:08 AM",
+  "last_updated": "26 Apr, 11:06 AM",
   "error": null
 }

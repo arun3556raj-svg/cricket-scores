@@ -5,39 +5,39 @@
       "bowl_team": "Gujarat Titans",
       "innings_id": 1,
       "score": {
-        "runs": 5,
-        "wickets": 0,
-        "overs": 1.3,
-        "run_rate": 3.33,
+        "runs": 51,
+        "wickets": 4,
+        "overs": 12.1,
+        "run_rate": 4.19,
         "declared": false
       },
       "extras": {
-        "total": 0,
-        "wides": 0,
+        "total": 4,
+        "wides": 2,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 2
       },
       "batsmen": [
         {
           "name": "Sanju Samson",
-          "runs": 5,
-          "balls": 9,
-          "fours": 1,
+          "runs": 11,
+          "balls": 15,
+          "fours": 2,
           "sixes": 0,
-          "strike_rate": 55.56,
-          "out_desc": "batting",
+          "strike_rate": 73.33,
+          "out_desc": "c Jos Buttler b Kagiso Rabada",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
         },
         {
           "name": "Ruturaj Gaikwad",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 20,
+          "balls": 37,
+          "fours": 2,
           "sixes": 0,
-          "strike_rate": 0,
+          "strike_rate": 54.05,
           "out_desc": "batting",
           "is_captain": true,
           "is_keeper": false,
@@ -45,39 +45,51 @@
         },
         {
           "name": "Urvil Patel",
+          "runs": 4,
+          "balls": 3,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 133.33,
+          "out_desc": "c Jason Holder b Kagiso Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sarfaraz Khan",
           "runs": 0,
-          "balls": 0,
+          "balls": 1,
           "fours": 0,
           "sixes": 0,
           "strike_rate": 0,
-          "out_desc": "",
+          "out_desc": "c Jos Buttler b Mohammed Siraj",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Dewald Brevis",
-          "runs": 0,
-          "balls": 0,
+          "runs": 2,
+          "balls": 9,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 22.22,
+          "out_desc": "c Shubman Gill b Manav Suthar",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Shivam Dube",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 10,
+          "balls": 8,
+          "fours": 2,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 125,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Kartik Sharma",
@@ -155,26 +167,81 @@
       "bowlers": [
         {
           "name": "Mohammed Siraj",
-          "overs": 1,
+          "overs": 3,
           "maidens": 0,
-          "runs": 1,
-          "wickets": 0,
-          "economy": 1,
+          "runs": 12,
+          "wickets": 1,
+          "economy": 4,
           "wides": 0,
           "no_balls": 0
         },
         {
           "name": "Kagiso Rabada",
-          "overs": 0.3,
+          "overs": 3,
           "maidens": 0,
-          "runs": 4,
+          "runs": 16,
+          "wickets": 2,
+          "economy": 5.3,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Manav Suthar",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 1,
+          "economy": 3.5,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Jason Holder",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 13,
           "wickets": 0,
-          "economy": 8,
+          "economy": 4.3,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Arshad Khan",
+          "overs": 1.1,
+          "maidens": 0,
+          "runs": 1,
+          "wickets": 0,
+          "economy": 0.9,
           "wides": 0,
           "no_balls": 0
         }
       ],
-      "fow": []
+      "fow": [
+        {
+          "name": "Sanju Samson",
+          "runs": 21,
+          "over": 3.3,
+          "wkt_n": 1
+        },
+        {
+          "name": "Urvil Patel",
+          "runs": 25,
+          "over": 3.6,
+          "wkt_n": 2
+        },
+        {
+          "name": "Sarfaraz Khan",
+          "runs": 26,
+          "over": 4.4,
+          "wkt_n": 3
+        },
+        {
+          "name": "Dewald Brevis",
+          "runs": 37,
+          "over": 8.2,
+          "wkt_n": 4
+        }
+      ]
     }
   ],
   "error": null
