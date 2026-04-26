@@ -624,7 +624,7 @@
       "team2_color": "#0f766e",
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Gujarat Titans need 30 runs in 36 balls",
       "start_time": "10:00 AM",
       "start_epoch": 1777197600000,
       "match_date": "Sun, 26 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "26 Apr, 11:57 AM",
+  "last_updated": "26 Apr, 01:25 PM",
   "error": null
 }

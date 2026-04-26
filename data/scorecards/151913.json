@@ -270,6 +270,229 @@
           "wkt_n": 7
         }
       ]
+    },
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 136,
+        "wickets": 1,
+        "overs": 14.3,
+        "run_rate": 9.38,
+        "declared": false
+      },
+      "extras": {
+        "total": 2,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Sai Sudharsan",
+          "runs": 72,
+          "balls": 40,
+          "fours": 4,
+          "sixes": 5,
+          "strike_rate": 180,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 33,
+          "balls": 23,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 143.48,
+          "out_desc": "st Sanju Samson b Noor Ahmad",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jos Buttler",
+          "runs": 29,
+          "balls": 24,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 120.83,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Shahrukh Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jason Holder",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Arshad Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kagiso Rabada",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mohammed Siraj",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Manav Suthar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Akeal Hosein",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 12.7,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Anshul Kamboj",
+          "overs": 3,
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 5.3,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Jamie Overton",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 14,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Gurjapneet Singh",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 10,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Noor Ahmad",
+          "overs": 3.3,
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 7.7,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Shivam Dube",
+          "overs": 1,
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 0,
+          "economy": 7,
+          "wides": 0,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Shubman Gill",
+          "runs": 58,
+          "over": 6.2,
+          "wkt_n": 1
+        }
+      ]
     }
   ],
   "error": null
