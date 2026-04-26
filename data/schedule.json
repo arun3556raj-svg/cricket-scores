@@ -641,7 +641,7 @@
       "team2_color": "#0284c7",
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "live",
-      "status_text": "Lucknow Super Giants need 91 runs in 59 balls",
+      "status_text": "Lucknow Super Giants need 38 runs in 22 balls",
       "start_time": "02:00 PM",
       "start_epoch": 1777212000000,
       "match_date": "Sun, 26 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "26 Apr, 04:54 PM",
+  "last_updated": "26 Apr, 05:36 PM",
   "error": null
 }

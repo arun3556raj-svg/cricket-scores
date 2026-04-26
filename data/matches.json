@@ -20,19 +20,19 @@
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "65/2",
-        "detail": "(10.2 ov)",
-        "runs": 65,
-        "wickets": 2,
-        "overs": "10.2"
+        "display": "120/6",
+        "detail": "(17.3 ov)",
+        "runs": 120,
+        "wickets": 6,
+        "overs": "17.3"
       },
       "team2_score2": null,
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "live",
-      "status_text": "Lucknow Super Giants need 91 runs in 58 balls",
+      "status_text": "Lucknow Super Giants need 36 runs in 15 balls",
       "start_time": "02:00 PM",
       "start_epoch": 1777212000000,
-      "run_rate": 6.29
+      "run_rate": 6.86
     }
   ],
   "upcoming": [
@@ -112,7 +112,7 @@
         "detail": "(20 ov)",
         "runs": 228,
         "wickets": 6,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -120,14 +120,14 @@
         "detail": "(18.3 ov)",
         "runs": 229,
         "wickets": 5,
-        "overs": "18.3"
+        "overs": 18.3
       },
       "team2_score2": null,
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "finished",
       "status_text": "Sunrisers Hyderabad won by 5 wkts",
-      "start_time": "02:00 PM",
-      "start_epoch": 1777125600000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz"
@@ -205,6 +205,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "26 Apr, 04:54 PM",
+  "last_updated": "26 Apr, 05:36 PM",
   "error": null
 }
