@@ -623,8 +623,8 @@
       "team2_short": "GT",
       "team2_color": "#0f766e",
       "venue": "MA Chidambaram Stadium, Chennai",
-      "status": "live",
-      "status_text": "Gujarat Titans need 30 runs in 36 balls",
+      "status": "finished",
+      "status_text": "Gujarat Titans won by 8 wkts",
       "start_time": "10:00 AM",
       "start_epoch": 1777197600000,
       "match_date": "Sun, 26 Apr 2026"
@@ -633,15 +633,15 @@
       "id": "151924",
       "series": "Indian Premier League 2026",
       "match_desc": "38th Match",
-      "team1": "Lucknow Super Giants",
-      "team1_short": "LSG",
-      "team1_color": "#0284c7",
-      "team2": "Kolkata Knight Riders",
-      "team2_short": "KKR",
-      "team2_color": "#7c3aed",
+      "team1": "Kolkata Knight Riders",
+      "team1_short": "KKR",
+      "team1_color": "#7c3aed",
+      "team2": "Lucknow Super Giants",
+      "team2_short": "LSG",
+      "team2_color": "#0284c7",
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 26, 14:00 GMT",
+      "status": "live",
+      "status_text": "Lucknow Super Giants opt to bowl",
       "start_time": "02:00 PM",
       "start_epoch": 1777212000000,
       "match_date": "Sun, 26 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "26 Apr, 01:25 PM",
+  "last_updated": "26 Apr, 02:24 PM",
   "error": null
 }

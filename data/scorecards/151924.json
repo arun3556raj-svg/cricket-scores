@@ -1,4 +1,204 @@
 {
-  "innings": [],
+  "innings": [
+    {
+      "bat_team": "Kolkata Knight Riders",
+      "bowl_team": "Lucknow Super Giants",
+      "innings_id": 1,
+      "score": {
+        "runs": 26,
+        "wickets": 2,
+        "overs": 4.4,
+        "run_rate": 5.57,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Ajinkya Rahane",
+          "runs": 10,
+          "balls": 15,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 66.67,
+          "out_desc": "c Aiden Markram b Mohsin Khan",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tim Seifert",
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Mukul Choudhary b Mohsin Khan",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Angkrish Raghuvanshi",
+          "runs": 9,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 128.57,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Cameron Green",
+          "runs": 4,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 133.33,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rovman Powell",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rinku Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Sunil Narine",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ramandeep Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Anukul Roy",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Vaibhav Arora",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kartik Tyagi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Shami",
+          "overs": 2,
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 0,
+          "economy": 6,
+          "wides": 1,
+          "no_balls": 0
+        },
+        {
+          "name": "Mohsin Khan",
+          "overs": 2,
+          "maidens": 1,
+          "runs": 8,
+          "wickets": 2,
+          "economy": 4,
+          "wides": 0,
+          "no_balls": 0
+        },
+        {
+          "name": "Prince Yadav",
+          "overs": 0.4,
+          "maidens": 0,
+          "runs": 5,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 1,
+          "no_balls": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Tim Seifert",
+          "runs": 3,
+          "over": 1.6,
+          "wkt_n": 1
+        },
+        {
+          "name": "Ajinkya Rahane",
+          "runs": 16,
+          "over": 3.4,
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
   "error": null
 }
