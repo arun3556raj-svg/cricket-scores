@@ -156,62 +156,74 @@
         {
           "name": "Trent Boult",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 38,
           "wickets": 0,
           "economy": 9.5,
           "wides": 3,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Hardik Pandya",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 39,
           "wickets": 1,
           "economy": 13,
           "wides": 2,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "AM Ghazanfar",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 51,
           "wickets": 0,
           "economy": 12.8,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Jasprit Bumrah",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 35,
           "wickets": 0,
           "economy": 8.8,
           "wides": 1,
-          "no_balls": 1
+          "no_balls": 1,
+          "dots": 0
         },
         {
           "name": "Shardul Thakur",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 39,
           "wickets": 3,
           "economy": 9.8,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Mayank Markande",
           "overs": 1,
+          "balls": 6,
           "maidens": 0,
           "runs": 16,
           "wickets": 0,
           "economy": 16,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [
@@ -409,62 +421,74 @@
         {
           "name": "Vaibhav Arora",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 52,
           "wickets": 1,
           "economy": 13,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Blessing Muzarabani",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 34,
           "wickets": 0,
           "economy": 11.3,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Varun Chakaravarthy",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 48,
           "wickets": 0,
           "economy": 12,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Kartik Tyagi",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 43,
           "wickets": 1,
           "economy": 10.8,
           "wides": 0,
-          "no_balls": 1
+          "no_balls": 1,
+          "dots": 0
         },
         {
           "name": "Sunil Narine",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 30,
           "wickets": 1,
           "economy": 10,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Anukul Roy",
           "overs": 1.1,
+          "balls": 7,
           "maidens": 0,
           "runs": 15,
           "wickets": 0,
           "economy": 12.9,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [

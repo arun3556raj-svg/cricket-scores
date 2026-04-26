@@ -156,62 +156,74 @@
         {
           "name": "Mukesh Kumar",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 26,
           "wickets": 2,
           "economy": 8.7,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Lungi Ngidi",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 34,
           "wickets": 1,
           "economy": 8.5,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Axar Patel",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 22,
           "wickets": 1,
           "economy": 5.5,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Vipraj Nigam",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 24,
           "wickets": 1,
           "economy": 8,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Kuldeep Yadav",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 31,
           "wickets": 0,
           "economy": 10.3,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "T Natarajan",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 24,
           "wickets": 1,
           "economy": 8,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [
@@ -421,62 +433,74 @@
         {
           "name": "Deepak Chahar",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 20,
           "wickets": 1,
           "economy": 6.7,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Jasprit Bumrah",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 21,
           "wickets": 0,
           "economy": 5.2,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Mitchell Santner",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 22,
           "wickets": 1,
           "economy": 7.3,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Shardul Thakur",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 41,
           "wickets": 0,
           "economy": 13.7,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Mayank Markande",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 20,
           "wickets": 0,
           "economy": 10,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Corbin Bosch",
           "overs": 3.1,
+          "balls": 19,
           "maidens": 0,
           "runs": 39,
           "wickets": 1,
           "economy": 12.3,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [

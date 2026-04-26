@@ -156,62 +156,74 @@
         {
           "name": "Jofra Archer",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 37,
           "wickets": 2,
           "economy": 9.2,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Nandre Burger",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 31,
           "wickets": 0,
           "economy": 7.8,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Sandeep Sharma",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 52,
           "wickets": 1,
           "economy": 13,
           "wides": 4,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Tushar Deshpande",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 55,
           "wickets": 1,
           "economy": 13.8,
           "wides": 4,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Riyan Parag",
           "overs": 1,
+          "balls": 6,
           "maidens": 0,
           "runs": 5,
           "wickets": 1,
           "economy": 5,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Ravi Bishnoi",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 35,
           "wickets": 0,
           "economy": 11.7,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [
@@ -421,62 +433,74 @@
         {
           "name": "Praful Hinge",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 34,
           "wickets": 4,
           "economy": 8.5,
           "wides": 2,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Sakib Hussain",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 24,
           "wickets": 4,
           "economy": 6,
           "wides": 3,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Eshan Malinga",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 31,
           "wickets": 2,
           "economy": 7.8,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Shivang Kumar",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 28,
           "wickets": 0,
           "economy": 9.3,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Nitish Kumar Reddy",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 19,
           "wickets": 0,
           "economy": 9.5,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Harsh Dubey",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 22,
           "wickets": 0,
           "economy": 11,
           "wides": 2,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [

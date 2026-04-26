@@ -156,62 +156,74 @@
         {
           "name": "Khaleel Ahmed",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 37,
           "wickets": 0,
           "economy": 9.2,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Matt Henry",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 36,
           "wickets": 0,
           "economy": 12,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Anshul Kamboj",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 52,
           "wickets": 1,
           "economy": 13,
           "wides": 1,
-          "no_balls": 1
+          "no_balls": 1,
+          "dots": 0
         },
         {
           "name": "Noor Ahmad",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 49,
           "wickets": 0,
           "economy": 12.2,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Jamie Overton",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 42,
           "wickets": 1,
           "economy": 14,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Shivam Dube",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 30,
           "wickets": 1,
           "economy": 15,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [
@@ -403,62 +415,74 @@
         {
           "name": "Jacob Duffy",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 58,
           "wickets": 2,
           "economy": 14.5,
           "wides": 2,
-          "no_balls": 1
+          "no_balls": 1,
+          "dots": 0
         },
         {
           "name": "Bhuvneshwar Kumar",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 41,
           "wickets": 3,
           "economy": 10.2,
           "wides": 1,
-          "no_balls": 1
+          "no_balls": 1,
+          "dots": 0
         },
         {
           "name": "Abhinandan Singh",
           "overs": 3.4,
+          "balls": 22,
           "maidens": 0,
           "runs": 30,
           "wickets": 2,
           "economy": 8.2,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Krunal Pandya",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 36,
           "wickets": 2,
           "economy": 12,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Suyash Sharma",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 21,
           "wickets": 1,
           "economy": 5.2,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Romario Shepherd",
           "overs": 1,
+          "balls": 6,
           "maidens": 0,
           "runs": 19,
           "wickets": 0,
           "economy": 19,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [

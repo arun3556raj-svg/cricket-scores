@@ -9,20 +9,26 @@ const DATA_BASE_PATH = (PITCH_CONFIG.dataBasePath || './data').replace(/\/+$/, '
 const SCORECARD_BASE_PATH = (PITCH_CONFIG.scorecardBasePath || `${DATA_BASE_PATH}/scorecards`).replace(/\/+$/, '');
 const ARCHIVE_SCORECARD_BASE_PATH = (PITCH_CONFIG.archiveScorecardBasePath || `${DATA_BASE_PATH}/archive-scorecards`).replace(/\/+$/, '');
 const STATS_BUILDER_PATH = PITCH_CONFIG.statsBuilderPath || joinPath(DATA_BASE_PATH, 'stats-builder.json');
+const POINTS_TABLE_PATH = PITCH_CONFIG.pointsTablePath || joinPath(DATA_BASE_PATH, 'points-table.json');
 
 function joinPath(base, leaf) {
   return `${base.replace(/\/+$/, '')}/${String(leaf).replace(/^\/+/, '')}`;
 }
 
+function cacheBust(url) {
+  const sep = url.includes('?') ? '&' : '?';
+  return `${url}${sep}v=${Date.now()}`;
+}
+
 function getMatchesUrl(forceRefresh = false) {
   return IS_STATIC_MODE
-    ? joinPath(DATA_BASE_PATH, 'matches.json')
+    ? cacheBust(joinPath(DATA_BASE_PATH, 'matches.json'))
     : forceRefresh ? '/api/matches/refresh' : '/api/matches';
 }
 
 function getScheduleUrl(forceRefresh = false) {
   return IS_STATIC_MODE
-    ? joinPath(DATA_BASE_PATH, 'schedule.json')
+    ? cacheBust(joinPath(DATA_BASE_PATH, 'schedule.json'))
     : forceRefresh ? '/api/schedule/refresh' : '/api/schedule';
 }
 
@@ -38,15 +44,19 @@ function getStatsBuilderUrl() {
   return STATS_BUILDER_PATH;
 }
 
+function getPointsTableUrl() {
+  return cacheBust(POINTS_TABLE_PATH);
+}
+
 function getScorecardUrl(matchId) {
   return IS_STATIC_MODE
-    ? joinPath(SCORECARD_BASE_PATH, `${matchId}.json`)
+    ? cacheBust(joinPath(SCORECARD_BASE_PATH, `${matchId}.json`))
     : `/api/scorecard/${matchId}`;
 }
 
 function getScheduleScorecardUrl(matchId) {
   return IS_STATIC_MODE
-    ? joinPath(SCORECARD_BASE_PATH, `${matchId}.json`)
+    ? cacheBust(joinPath(SCORECARD_BASE_PATH, `${matchId}.json`))
     : `/api/scorecard/schedule/${matchId}`;
 }
 
@@ -99,6 +109,10 @@ function badge(status) {
   return `<span class="badge badge-result">Result</span>`;
 }
 
+function provisionalBadge(item) {
+  return item?.provisional ? `<span class="badge badge-provisional">Provisional</span>` : '';
+}
+
 // ── Card bar gradient from team colors ─────────────────────────
 function cardBar(t1short, t2short) {
   const c1 = teamMeta(t1short).color;
@@ -133,7 +147,7 @@ function matchCard(m) {
       <div class="card-body">
         <div class="card-head">
           <span class="card-series">${esc(m.match_desc || m.series)}</span>
-          ${badge(m.status)}
+          <span class="card-badges">${badge(m.status)}${provisionalBadge(m)}</span>
         </div>
         <div class="card-teams">
           <div class="team-row">
@@ -234,9 +248,16 @@ let scheduleData = null;
 let archiveLoaded = false;
 let archiveData = null;
 let archiveFilters = { year: 'all', team: 'all', round: 'all' };
+let pointsLoaded = false;
+let pointsData = null;
+let pointsSeason = '2026';
 
 function isScheduleView(filter = currentFilter) {
   return filter === 'schedule' || filter === 'archive';
+}
+
+function isPointsView(filter = currentFilter) {
+  return filter === 'points';
 }
 
 function getScheduleViewMeta(filter = currentFilter) {
@@ -266,6 +287,9 @@ function setFilter(f) {
   } else if (f === 'schedule') {
     if (!scheduleLoaded) loadSchedule();
     else if (scheduleData) renderSchedule(scheduleData);
+  } else if (f === 'points') {
+    if (!pointsLoaded) loadPointsTable();
+    else if (pointsData) renderPointsTable(pointsData);
   } else {
     const controls = $('archiveControls');
     if (controls) controls.style.display = 'none';
@@ -279,6 +303,7 @@ function applyFilter(data) {
   const f = currentFilter;
 
   const scheduleView = isScheduleView(f);
+  const pointsView = isPointsView(f);
   const showHero     = !scheduleView && (f === 'all' || f === 'live');
   const showLive     = !scheduleView && (f === 'all' || f === 'live');
   const showUpcoming = !scheduleView && (f === 'all' || f === 'upcoming');
@@ -305,9 +330,13 @@ function applyFilter(data) {
   if (scheduleView) show('scheduleSection');
   else hide('scheduleSection');
 
+  if (pointsView) show('pointsSection');
+  else hide('pointsSection');
+
   // Empty state (only for non-schedule views)
   const anyVisible =
     scheduleView ||
+    pointsView ||
     (data.live.length > 0 && showHero) ||
     (extraLive.length > 0 && showLive) ||
     (data.upcoming.length > 0 && showUpcoming) ||
@@ -403,14 +432,14 @@ function showError(msg) {
 
 const STAT_PRESETS = {
   batting: [
-    { id: 'orange', label: 'Orange Cap', metric: 'runs', sort: 'desc', minBalls: 0, note: 'Most runs across the selected IPL universe.' },
+    { id: 'orange', label: 'Orange Cap', metric: 'runs', sort: 'desc', minBalls: 0, note: 'Most runs across the selected IPL seasons.' },
     { id: 'strike', label: 'Strike Rate', metric: 'strike_rate', sort: 'desc', minBalls: 100, note: 'Fastest run scoring with a balls-faced qualifier.' },
     { id: 'average', label: 'Average', metric: 'average', sort: 'desc', minBalls: 100, note: 'Consistency view for batters with dismissals.' },
-    { id: 'sixes', label: 'Six Hitting', metric: 'sixes', sort: 'desc', minBalls: 0, note: 'Boundary power, ranked by sixes.' },
+    { id: 'sixes', label: 'Six Hitting', metric: 'sixes', sort: 'desc', minBalls: 0, note: 'Boundary power by sixes.' },
     { id: 'fifties', label: '50+ Scores', metric: 'fifties', sort: 'desc', minBalls: 0, note: 'Most innings of 50 or more.' },
   ],
   bowling: [
-    { id: 'purple', label: 'Purple Cap', metric: 'wickets', sort: 'desc', minBalls: 0, note: 'Most wickets across the selected IPL universe.' },
+    { id: 'purple', label: 'Purple Cap', metric: 'wickets', sort: 'desc', minBalls: 0, note: 'Most wickets across the selected IPL seasons.' },
     { id: 'economy', label: 'Economy', metric: 'economy', sort: 'asc', minBalls: 120, note: 'Run control with a balls-bowled qualifier.' },
     { id: 'strike', label: 'Strike Rate', metric: 'strike_rate', sort: 'asc', minBalls: 120, note: 'Wicket-taking frequency.' },
     { id: 'dots', label: 'Dot Balls', metric: 'dots', sort: 'desc', minBalls: 0, note: 'Pressure balls that produce no runs.' },
@@ -482,9 +511,8 @@ function renderStatsBuilder() {
   el.innerHTML = `
     <div class="stats-topline">
       <div>
-        <div class="stats-eyebrow">Bottom Deck</div>
         <h2 class="stats-title">IPL Stat Builder</h2>
-        <p class="stats-subtitle">Filter the IPL universe from 2008 onwards, then rank players like a proper records room.</p>
+        <p class="stats-subtitle">Filter IPL batting and bowling numbers by season, team, opposition, venue, round, and qualifiers.</p>
       </div>
       <div class="stats-mode-toggle" role="tablist" aria-label="Stat type">
         ${['batting', 'bowling'].map(mode => `
@@ -756,7 +784,7 @@ function rankedStatsRows() {
       }
       return preset.sort === 'asc' ? av - bv : bv - av;
     })
-    .slice(0, 12);
+    .slice(0, 100);
 }
 
 function fmt(value, digits = 1) {
@@ -1154,6 +1182,99 @@ function toggleTheme() {
 }
 
 // ================================================================
+// POINTS TABLE
+// ================================================================
+
+async function loadPointsTable() {
+  pointsLoaded = true;
+  const el = $('pointsTable');
+  if (el) {
+    el.innerHTML = `<div class="sc-loading"><div class="sc-spin"></div><span>Loading points table...</span></div>`;
+  }
+  try {
+    const res = await fetchJson(getPointsTableUrl());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    pointsData = await res.json();
+    if (!pointsData.years?.includes(Number(pointsSeason))) {
+      pointsSeason = String(pointsData.years?.[0] || '2026');
+    }
+    renderPointsTable(pointsData);
+  } catch (err) {
+    if (el) el.innerHTML = `<div class="sc-empty">Error: ${esc(err.message)}</div>`;
+    pointsLoaded = false;
+  }
+}
+
+function renderPointsTable(data) {
+  const el = $('pointsTable');
+  if (!el) return;
+  const seasons = data.years || [];
+  const table = data.tables?.[pointsSeason] || data.tables?.[String(seasons[0])] || { rows: [] };
+  const rows = table.rows || [];
+  const enhanced = Boolean(table.enhanced);
+  const seasonOptions = seasons
+    .map(year => `<option value="${year}" ${String(year) === pointsSeason ? 'selected' : ''}>${year}</option>`)
+    .join('');
+
+  el.innerHTML = `
+    <div class="points-shell">
+      <div class="points-head">
+        <div>
+          <h2 class="points-title">IPL ${esc(pointsSeason)} Points Table</h2>
+          <p class="points-subtitle">${esc(table.source_note || 'League-stage standings.')}</p>
+        </div>
+        <label class="points-season">
+          <span>Season</span>
+          <select onchange="setPointsSeason(this.value)">${seasonOptions}</select>
+        </label>
+      </div>
+      ${rows.length ? renderPointsRows(rows, enhanced) : `<div class="sc-empty">No points table data found for this season.</div>`}
+    </div>`;
+}
+
+function setPointsSeason(season) {
+  pointsSeason = String(season);
+  if (pointsData) renderPointsTable(pointsData);
+}
+
+function renderPointsRows(rows, enhanced) {
+  return `
+    <div class="points-table${enhanced ? ' points-table--enhanced' : ''}">
+      <div class="points-row points-row--head">
+        <span>#</span><span>Team</span><span>P</span><span>W</span><span>L</span><span>NR</span><span>Pts</span><span>NRR</span>
+        ${enhanced ? '<span>For</span><span>Against</span><span>Wkts</span>' : ''}
+      </div>
+      ${rows.map((row, index) => renderPointsRow(row, index, enhanced)).join('')}
+    </div>`;
+}
+
+function renderPointsRow(row, index, enhanced) {
+  const meta = teamMeta(row.team_short);
+  return `
+    <div class="points-row">
+      <span class="points-rank">${index + 1}</span>
+      <span class="points-team">
+        <span class="team-badge" style="border-color:${meta.color}44;color:${meta.color};background:${meta.bg}">${esc(row.team_short)}</span>
+        <span>
+          <strong>${esc(row.team)}</strong>
+          ${row.provisional_matches ? `<small>${row.provisional_matches} provisional result${row.provisional_matches > 1 ? 's' : ''}</small>` : ''}
+        </span>
+      </span>
+      <span data-label="P">${row.played}</span>
+      <span data-label="W">${row.won}</span>
+      <span data-label="L">${row.lost}</span>
+      <span data-label="NR">${row.no_result}</span>
+      <span data-label="Pts">${row.points}</span>
+      <span data-label="NRR">${fmt(row.nrr, 3)}</span>
+      ${enhanced ? `
+        <span data-label="For">${row.runs_for} / ${esc(row.overs_for)} ov</span>
+        <span data-label="Against">${row.runs_against} / ${esc(row.overs_against)} ov</span>
+        <span data-label="Wkts">${row.wickets_lost} lost / ${row.wickets_taken} taken</span>
+      ` : ''}
+    </div>`;
+}
+
+// ================================================================
 // SCHEDULE / HISTORY
 // ================================================================
 
@@ -1275,7 +1396,7 @@ function archiveMatchRow(match) {
     <div class="sch-row archive-row" onclick="openArchiveScoreboard(this)" data-match="${matchJson}">
       <div class="archive-row-head">
         <span class="sch-desc">${esc(match.season)} · ${esc(match.round)}${match.match_number ? ` · Match ${esc(String(match.match_number))}` : ''}</span>
-        <span class="archive-date">${esc(match.date)}</span>
+        <span class="archive-date">${provisionalBadge(match)}${esc(match.date)}</span>
       </div>
       <div class="archive-scoreboard">${scoreRows}</div>
       <div class="sch-footer">

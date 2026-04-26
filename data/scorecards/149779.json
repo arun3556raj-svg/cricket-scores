@@ -156,62 +156,74 @@
         {
           "name": "Arshdeep Singh",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 50,
           "wickets": 2,
           "economy": 12.5,
           "wides": 6,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Xavier Bartlett",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 42,
           "wickets": 1,
           "economy": 10.5,
           "wides": 0,
-          "no_balls": 1
+          "no_balls": 1,
+          "dots": 0
         },
         {
           "name": "Marco Jansen",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 40,
           "wickets": 0,
           "economy": 10,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Vijaykumar Vyshak",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 33,
           "wickets": 0,
           "economy": 16.5,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Shashank Singh",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 20,
           "wickets": 2,
           "economy": 6.7,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Yuzvendra Chahal",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 33,
           "wickets": 0,
           "economy": 11,
           "wides": 3,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [
@@ -421,72 +433,86 @@
         {
           "name": "Harsh Dubey",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 38,
           "wickets": 1,
           "economy": 9.5,
           "wides": 2,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Jaydev Unadkat",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 40,
           "wickets": 0,
           "economy": 13.3,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Eshan Malinga",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 46,
           "wickets": 0,
           "economy": 15.3,
           "wides": 2,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Harshal Patel",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 39,
           "wickets": 0,
           "economy": 19.5,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Shivang Kumar",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 33,
           "wickets": 3,
           "economy": 8.2,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Nitish Kumar Reddy",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 20,
           "wickets": 0,
           "economy": 10,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Abhishek Sharma",
           "overs": 0.5,
+          "balls": 5,
           "maidens": 0,
           "runs": 7,
           "wickets": 0,
           "economy": 8.4,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [

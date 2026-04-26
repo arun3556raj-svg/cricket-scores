@@ -156,62 +156,74 @@
         {
           "name": "Mohammed Siraj",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 25,
           "wickets": 1,
           "economy": 6.2,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Kagiso Rabada",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 33,
           "wickets": 3,
           "economy": 8.2,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Ashok Sharma",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 38,
           "wickets": 0,
           "economy": 12.7,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Rashid Khan",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 31,
           "wickets": 0,
           "economy": 7.8,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Prasidh Krishna",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 54,
           "wickets": 1,
           "economy": 13.5,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Washington Sundar",
           "overs": 1,
+          "balls": 6,
           "maidens": 0,
           "runs": 13,
           "wickets": 0,
           "economy": 13,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [
@@ -415,62 +427,74 @@
         {
           "name": "Jasprit Bumrah",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 15,
           "wickets": 1,
           "economy": 5,
           "wides": 2,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Hardik Pandya",
           "overs": 1,
+          "balls": 6,
           "maidens": 0,
           "runs": 18,
           "wickets": 1,
           "economy": 18,
           "wides": 2,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Krish Bhagat",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 10,
           "wickets": 0,
           "economy": 5,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Ashwani Kumar",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 24,
           "wickets": 4,
           "economy": 6,
           "wides": 2,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "AM Ghazanfar",
           "overs": 2.5,
+          "balls": 17,
           "maidens": 0,
           "runs": 17,
           "wickets": 2,
           "economy": 6,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Mitchell Santner",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 16,
           "wickets": 2,
           "economy": 5.3,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [

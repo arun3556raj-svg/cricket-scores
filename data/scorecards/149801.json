@@ -168,52 +168,62 @@
         {
           "name": "Mohammed Siraj",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 19,
           "wickets": 1,
           "economy": 4.8,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Kagiso Rabada",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 54,
           "wickets": 1,
           "economy": 13.5,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Ashok Sharma",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 32,
           "wickets": 2,
           "economy": 8,
           "wides": 2,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Prasidh Krishna",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 28,
           "wickets": 4,
           "economy": 7,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Rashid Khan",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 25,
           "wickets": 0,
           "economy": 6.2,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [
@@ -435,62 +445,74 @@
         {
           "name": "Mohammed Shami",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 36,
           "wickets": 1,
           "economy": 9,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Prince Yadav",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 31,
           "wickets": 1,
           "economy": 7.8,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Digvesh Singh Rathi",
           "overs": 4,
+          "balls": 24,
           "maidens": 0,
           "runs": 31,
           "wickets": 1,
           "economy": 7.8,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "George Linde",
           "overs": 3,
+          "balls": 18,
           "maidens": 0,
           "runs": 28,
           "wickets": 0,
           "economy": 9.3,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Avesh Khan",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 24,
           "wickets": 0,
           "economy": 12,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Aiden Markram",
           "overs": 1.4,
+          "balls": 10,
           "maidens": 0,
           "runs": 15,
           "wickets": 0,
           "economy": 9,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [

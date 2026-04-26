@@ -5,10 +5,10 @@
       "bowl_team": "Lucknow Super Giants",
       "innings_id": 1,
       "score": {
-        "runs": 26,
+        "runs": 27,
         "wickets": 2,
-        "overs": 4.4,
-        "run_rate": 5.57,
+        "overs": 5,
+        "run_rate": 5.4,
         "declared": false
       },
       "extras": {
@@ -46,10 +46,10 @@
         {
           "name": "Angkrish Raghuvanshi",
           "runs": 9,
-          "balls": 7,
+          "balls": 8,
           "fours": 1,
           "sixes": 0,
-          "strike_rate": 128.57,
+          "strike_rate": 112.5,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -57,11 +57,11 @@
         },
         {
           "name": "Cameron Green",
-          "runs": 4,
-          "balls": 3,
+          "runs": 5,
+          "balls": 4,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 133.33,
+          "strike_rate": 125,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -156,32 +156,38 @@
         {
           "name": "Mohammed Shami",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 12,
           "wickets": 0,
           "economy": 6,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Mohsin Khan",
           "overs": 2,
+          "balls": 12,
           "maidens": 1,
           "runs": 8,
           "wickets": 2,
           "economy": 4,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Prince Yadav",
-          "overs": 0.4,
+          "overs": 1,
+          "balls": 6,
           "maidens": 0,
-          "runs": 5,
+          "runs": 6,
           "wickets": 0,
-          "economy": 7.5,
+          "economy": 6,
           "wides": 1,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [

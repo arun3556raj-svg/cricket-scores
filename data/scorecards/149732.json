@@ -156,22 +156,26 @@
         {
           "name": "Arshdeep Singh",
           "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 16,
           "wickets": 0,
           "economy": 8,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         },
         {
           "name": "Xavier Bartlett",
           "overs": 1.4,
+          "balls": 10,
           "maidens": 0,
           "runs": 9,
           "wickets": 2,
           "economy": 5.4,
           "wides": 0,
-          "no_balls": 0
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [
