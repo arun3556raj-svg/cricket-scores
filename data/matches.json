@@ -19,14 +19,20 @@
         "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "65/2",
+        "detail": "(10.2 ov)",
+        "runs": 65,
+        "wickets": 2,
+        "overs": "10.2"
+      },
       "team2_score2": null,
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Lucknow Super Giants need 91 runs in 58 balls",
       "start_time": "02:00 PM",
       "start_epoch": 1777212000000,
-      "run_rate": 7.75
+      "run_rate": 6.29
     }
   ],
   "upcoming": [
@@ -199,6 +205,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "26 Apr, 03:58 PM",
+  "last_updated": "26 Apr, 04:54 PM",
   "error": null
 }
