@@ -12,11 +12,11 @@
       "team2_short": "LSG",
       "team2_color": "#0284c7",
       "team1_score1": {
-        "display": "27/2",
-        "detail": "(5 ov)",
-        "runs": 27,
-        "wickets": 2,
-        "overs": "5"
+        "display": "81/6",
+        "detail": "(13 ov)",
+        "runs": 81,
+        "wickets": 6,
+        "overs": "13"
       },
       "team1_score2": null,
       "team2_score1": null,
@@ -26,7 +26,7 @@
       "status_text": "Lucknow Super Giants opt to bowl",
       "start_time": "02:00 PM",
       "start_epoch": 1777212000000,
-      "run_rate": 5.4
+      "run_rate": 6.23
     }
   ],
   "upcoming": [
@@ -199,6 +199,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "26 Apr, 02:27 PM",
+  "last_updated": "26 Apr, 03:11 PM",
   "error": null
 }

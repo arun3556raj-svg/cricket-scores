@@ -5,15 +5,15 @@
       "bowl_team": "Lucknow Super Giants",
       "innings_id": 1,
       "score": {
-        "runs": 27,
-        "wickets": 2,
-        "overs": 5,
-        "run_rate": 5.4,
+        "runs": 81,
+        "wickets": 6,
+        "overs": 13,
+        "run_rate": 6.23,
         "declared": false
       },
       "extras": {
-        "total": 3,
-        "wides": 2,
+        "total": 6,
+        "wides": 5,
         "no_balls": 0,
         "byes": 0,
         "leg_byes": 1
@@ -50,73 +50,73 @@
           "fours": 1,
           "sixes": 0,
           "strike_rate": 112.5,
-          "out_desc": "batting",
+          "out_desc": "obs",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Cameron Green",
-          "runs": 5,
-          "balls": 4,
+          "runs": 34,
+          "balls": 21,
           "fours": 0,
-          "sixes": 0,
-          "strike_rate": 125,
-          "out_desc": "batting",
+          "sixes": 3,
+          "strike_rate": 161.9,
+          "out_desc": "c Rishabh Pant b Mohsin Khan",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Rovman Powell",
-          "runs": 0,
-          "balls": 0,
+          "runs": 1,
+          "balls": 4,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 25,
+          "out_desc": "c Rishabh Pant b Mohsin Khan",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Rinku Singh",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 17,
+          "balls": 20,
+          "fours": 1,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 85,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Sunil Narine",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Ramandeep Singh",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Anukul Roy",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Ayush Badoni b Mohsin Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ramandeep Singh",
+          "runs": 4,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.67,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sunil Narine",
           "runs": 0,
           "balls": 0,
           "fours": 0,
@@ -167,25 +167,61 @@
         },
         {
           "name": "Mohsin Khan",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 1,
-          "runs": 8,
-          "wickets": 2,
-          "economy": 4,
-          "wides": 0,
+          "runs": 23,
+          "wickets": 5,
+          "economy": 5.8,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Prince Yadav",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 5,
+          "wides": 3,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Digvesh Singh Rathi",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "George Linde",
           "overs": 1,
           "balls": 6,
           "maidens": 0,
-          "runs": 6,
+          "runs": 16,
           "wickets": 0,
-          "economy": 6,
-          "wides": 1,
+          "economy": 16,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Aiden Markram",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 4.5,
+          "wides": 0,
           "no_balls": 0,
           "dots": 0
         }
@@ -202,6 +238,30 @@
           "runs": 16,
           "over": 3.4,
           "wkt_n": 2
+        },
+        {
+          "name": "Angkrish Raghuvanshi",
+          "runs": 27,
+          "over": 4.6,
+          "wkt_n": 3
+        },
+        {
+          "name": "Rovman Powell",
+          "runs": 31,
+          "over": 6.1,
+          "wkt_n": 4
+        },
+        {
+          "name": "Cameron Green",
+          "runs": 73,
+          "over": 10.5,
+          "wkt_n": 5
+        },
+        {
+          "name": "Anukul Roy",
+          "runs": 73,
+          "over": 10.6,
+          "wkt_n": 6
         }
       ]
     }
