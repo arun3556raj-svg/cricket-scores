@@ -54,7 +54,7 @@
       "team2_score2": null,
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "finished",
-      "status_text": "Lucknow Super Giants need 1 run",
+      "status_text": "Match tied (Kolkata Knight Riders won the Super Over)",
       "start_time": "02:00 PM",
       "start_epoch": 1777212000000,
       "run_rate": null,
@@ -206,6 +206,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "26 Apr, 06:27 PM",
+  "last_updated": "26 Apr, 07:29 PM",
   "error": null
 }
