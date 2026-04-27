@@ -24,7 +24,7 @@
     "2026": {
       "season": 2026,
       "enhanced": true,
-      "source_note": "Includes provisional Cricbuzz results.",
+      "source_note": "Official Cricsheet archive.",
       "rows": [
         {
           "team": "Punjab Kings",
@@ -41,7 +41,7 @@
           "runs_against": 1249,
           "balls_against": 720,
           "wickets_taken": 30,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": 1.333,
           "overs_for": "112",
           "overs_against": "120"
@@ -61,7 +61,7 @@
           "runs_against": 1362,
           "balls_against": 827,
           "wickets_taken": 45,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": 1.101,
           "overs_for": "129.4",
           "overs_against": "137.5"
@@ -81,7 +81,7 @@
           "runs_against": 1513,
           "balls_against": 926,
           "wickets_taken": 56,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": 0.815,
           "overs_for": "158.3",
           "overs_against": "154.2"
@@ -101,7 +101,7 @@
           "runs_against": 1380,
           "balls_against": 895,
           "wickets_taken": 62,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": 0.602,
           "overs_for": "141.1",
           "overs_against": "149.1"
@@ -121,7 +121,7 @@
           "runs_against": 1491,
           "balls_against": 948,
           "wickets_taken": 56,
-          "provisional_matches": 2,
+          "provisional_matches": 0,
           "nrr": -0.475,
           "overs_for": "155",
           "overs_against": "158"
@@ -141,7 +141,7 @@
           "runs_against": 1397,
           "balls_against": 885,
           "wickets_taken": 48,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": -0.121,
           "overs_for": "160",
           "overs_against": "147.3"
@@ -161,7 +161,7 @@
           "runs_against": 1407,
           "balls_against": 833,
           "wickets_taken": 36,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": -0.184,
           "overs_for": "135.1",
           "overs_against": "138.5"
@@ -181,7 +181,7 @@
           "runs_against": 1364,
           "balls_against": 906,
           "wickets_taken": 45,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": -1.106,
           "overs_for": "159.5",
           "overs_against": "151"
@@ -221,7 +221,7 @@
           "runs_against": 1315,
           "balls_against": 833,
           "wickets_taken": 46,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": -0.751,
           "overs_for": "139.4",
           "overs_against": "138.5"
