@@ -657,8 +657,8 @@
       "team2_short": "RCB",
       "team2_color": "#dc2626",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "live",
-      "status_text": "Royal Challengers Bengaluru opt to bowl",
+      "status": "finished",
+      "status_text": "Royal Challengers Bengaluru won by 9 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777298400000,
       "match_date": "Mon, 27 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "27 Apr, 08:47 PM",
+  "last_updated": "27 Apr, 10:29 PM",
   "error": null
 }

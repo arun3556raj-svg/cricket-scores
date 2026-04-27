@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-151935",
+  "source_id": "151935",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 39,
+  "date": "2026-04-27",
+  "team1": "Delhi Capitals",
+  "team2": "Royal Challengers Bengaluru",
+  "venue": "Arun Jaitley Stadium, Delhi",
+  "result_text": "Royal Challengers Bengaluru won by 9 wkts",
   "innings": [
     {
       "bat_team": "Delhi Capitals",
