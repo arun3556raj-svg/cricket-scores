@@ -657,8 +657,8 @@
       "team2_short": "RCB",
       "team2_color": "#dc2626",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 27, 14:00 GMT",
+      "status": "live",
+      "status_text": "Royal Challengers Bengaluru opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1777298400000,
       "match_date": "Mon, 27 Apr 2026"
@@ -675,7 +675,7 @@
       "team2_color": "#db2777",
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "upcoming",
-      "status_text": "Match starts at Apr 28, 14:00 GMT",
+      "status_text": "Preview",
       "start_time": "07:30 PM",
       "start_epoch": 1777384800000,
       "match_date": "Tue, 28 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "27 Apr, 06:35 PM",
+  "last_updated": "27 Apr, 08:47 PM",
   "error": null
 }

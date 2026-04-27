@@ -1,6 +1,5 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "151935",
       "series": "IPL 2026",
@@ -12,53 +11,49 @@
       "team2": "Royal Challengers Bengaluru",
       "team2_short": "RCB",
       "team2_color": "#dc2626",
-      "team1_score1": null,
+      "team1_score1": {
+        "display": "62/8",
+        "detail": "(12.3 ov)",
+        "runs": 62,
+        "wickets": 8,
+        "overs": "12.3"
+      },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 27, 14:00 GMT",
+      "status": "live",
+      "status_text": "Royal Challengers Bengaluru opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1777298400000,
+      "run_rate": 4.96
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "151943",
+      "series": "IPL 2026",
+      "match_desc": "40th Match",
+      "match_format": "T20",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Rajasthan Royals",
+      "team2_short": "RR",
+      "team2_color": "#db2777",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "status": "upcoming",
+      "status_text": "Preview",
+      "start_time": "07:30 PM",
+      "start_epoch": 1777384800000,
       "run_rate": null
     }
   ],
   "finished": [
-    {
-      "id": "151913",
-      "series": "IPL 2026",
-      "match_desc": "37th Match",
-      "match_format": "T20",
-      "team1": "Chennai Super Kings",
-      "team1_short": "CSK",
-      "team1_color": "#d97706",
-      "team2": "Gujarat Titans",
-      "team2_short": "GT",
-      "team2_color": "#0f766e",
-      "team1_score1": {
-        "display": "158/7",
-        "detail": "(20 ov)",
-        "runs": 158,
-        "wickets": 7,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "162/2",
-        "detail": "(16.4 ov)",
-        "runs": 162,
-        "wickets": 2,
-        "overs": "16.4"
-      },
-      "team2_score2": null,
-      "venue": "MA Chidambaram Stadium, Chennai",
-      "status": "finished",
-      "status_text": "Gujarat Titans won by 8 wkts",
-      "start_time": "03:30 PM",
-      "start_epoch": 1777197600000,
-      "run_rate": null
-    },
     {
       "id": "151924",
       "series": "IPL 2026",
@@ -94,6 +89,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "27 Apr, 06:35 PM",
+  "last_updated": "27 Apr, 08:47 PM",
   "error": null
 }
