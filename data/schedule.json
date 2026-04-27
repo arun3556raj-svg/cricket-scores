@@ -641,7 +641,7 @@
       "team2_color": "#0284c7",
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "finished",
-      "status_text": "Match tied (Kolkata Knight Riders won the Super Over)",
+      "status_text": "Match tied (KKR won the Super Over)",
       "start_time": "07:30 PM",
       "start_epoch": 1777212000000,
       "match_date": "Sun, 26 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "27 Apr, 04:56 PM",
+  "last_updated": "27 Apr, 06:35 PM",
   "error": null
 }
