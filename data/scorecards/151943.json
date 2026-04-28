@@ -240,6 +240,259 @@
           "wkt_n": 4
         }
       ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 220,
+        "wickets": 4,
+        "overs": 18.5,
+        "run_rate": 11.68,
+        "declared": false
+      },
+      "extras": {
+        "total": 6,
+        "wides": 4,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Yashasvi Jaiswal",
+          "runs": 51,
+          "balls": 27,
+          "fours": 7,
+          "sixes": 1,
+          "strike_rate": 188.89,
+          "out_desc": "c Suryansh Shedge b Yuzvendra Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "runs": 43,
+          "balls": 16,
+          "fours": 3,
+          "sixes": 5,
+          "strike_rate": 268.75,
+          "out_desc": "c Shreyas Iyer b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 16,
+          "balls": 20,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 80,
+          "out_desc": "c Marco Jansen b Yuzvendra Chahal",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Riyan Parag",
+          "runs": 29,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 181.25,
+          "out_desc": "c Suryansh Shedge b Yuzvendra Chahal",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Donovan Ferreira",
+          "runs": 46,
+          "balls": 25,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 184,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubham Dubey",
+          "runs": 29,
+          "balls": 10,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 290,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Dasun Shanaka",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jofra Archer",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Nandre Burger",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Brijesh Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Yash Raj Punja",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 68,
+          "wickets": 1,
+          "economy": 17,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Lockie Ferguson",
+          "overs": 3.5,
+          "balls": 23,
+          "maidens": 0,
+          "runs": 56,
+          "wickets": 0,
+          "economy": 14.6,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Marco Jansen",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 11.3,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Harpreet Brar",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 6.2,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Yuzvendra Chahal",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 3,
+          "economy": 9,
+          "wides": 1,
+          "no_balls": 1,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "runs": 51,
+          "over": 3.2,
+          "wkt_n": 1
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 105,
+          "over": 9.4,
+          "wkt_n": 2
+        },
+        {
+          "name": "Yashasvi Jaiswal",
+          "runs": 123,
+          "over": 11.2,
+          "wkt_n": 3
+        },
+        {
+          "name": "Riyan Parag",
+          "runs": 151,
+          "over": 13.6,
+          "wkt_n": 4
+        }
+      ]
     }
   ],
   "error": null

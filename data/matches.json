@@ -19,14 +19,20 @@
         "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "215/4",
+        "detail": "(18.2 ov)",
+        "runs": 215,
+        "wickets": 4,
+        "overs": "18.2"
+      },
       "team2_score2": null,
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Rajasthan Royals need 8 runs in 10 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1777384800000,
-      "run_rate": 11.1
+      "run_rate": 11.73
     }
   ],
   "upcoming": [
@@ -89,6 +95,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "28 Apr, 09:10 PM",
+  "last_updated": "28 Apr, 10:51 PM",
   "error": null
 }
