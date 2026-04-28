@@ -1064,32 +1064,6 @@ function renderScorecardJumpbar(items) {
     </div>`;
 }
 
-function formatBowlingNumber(value, fallback = '0') {
-  if (value === null || value === undefined || value === '') return fallback;
-  return Number.isFinite(Number(value)) ? String(value) : esc(String(value));
-}
-
-function formatEconomy(value) {
-  const n = Number(value);
-  return Number.isFinite(n) && n > 0 ? n.toFixed(1) : '-';
-}
-
-function renderBowlingSnapshot(bowlers) {
-  if (!bowlers.length) {
-    return `<div class="bowling-snapshot bowling-snapshot--empty">Bowling figures are not available for this innings yet.</div>`;
-  }
-
-  return `
-    <div class="bowling-snapshot" aria-label="Bowling figures">
-      ${bowlers.map(bw => `
-        <div class="bowling-snapshot-card">
-          <span class="bowling-snapshot-name">${esc(bw.name)}</span>
-          <strong>${formatBowlingNumber(bw.overs)}-${formatBowlingNumber(bw.maidens)}-${formatBowlingNumber(bw.runs)}-${formatBowlingNumber(bw.wickets)}</strong>
-          <small>Econ ${formatEconomy(bw.economy)}</small>
-        </div>`).join('')}
-    </div>`;
-}
-
 function hasValidDrawerInningsSelection(innings) {
   if (!innings.length) return false;
   if (!drawerHasManualInningsSelection) return false;
@@ -1201,6 +1175,45 @@ function renderComparisonEdge(first, second, firstShort, secondShort) {
   return `<span class="comparison-edge">${esc(leader)} +${Math.abs(diff)}</span>`;
 }
 
+function isDidNotBatCandidate(batter) {
+  return Boolean(batter?.not_out) &&
+    !String(batter?.out_desc || '').trim() &&
+    Number(batter?.runs || 0) === 0 &&
+    Number(batter?.balls || 0) === 0 &&
+    Number(batter?.fours || 0) === 0 &&
+    Number(batter?.sixes || 0) === 0;
+}
+
+function isScorecardNotOut(batter) {
+  const dismissal = String(batter?.out_desc || '').trim().toLowerCase();
+  return dismissal === 'not out' || (Boolean(batter?.not_out) && !isDidNotBatCandidate(batter));
+}
+
+function splitBattingCardRows(batsmen, score) {
+  const candidates = batsmen.filter(isDidNotBatCandidate);
+  const activeZeroBallNotOuts = new Set();
+  const wickets = Number(score?.wickets || 0);
+  const alreadyActive = batsmen.filter(isScorecardNotOut).length;
+
+  if (wickets < 10 && candidates.length && candidates.length === 1) {
+    const allowance = Math.max(0, 2 - alreadyActive);
+    candidates.slice(0, allowance).forEach(batter => activeZeroBallNotOuts.add(batter));
+  } else if (wickets >= 10 && candidates.length === 1 && batsmen.length <= 11) {
+    activeZeroBallNotOuts.add(candidates[0]);
+  }
+
+  const batters = [];
+  const didNotBat = [];
+  for (const batter of batsmen) {
+    if (isDidNotBatCandidate(batter) && !activeZeroBallNotOuts.has(batter)) {
+      didNotBat.push(batter);
+    } else {
+      batters.push(batter);
+    }
+  }
+  return { batters, didNotBat };
+}
+
 function renderInnings(inn) {
   const { score, bat_team, bowl_team } = inn;
   const batsmen = Array.isArray(inn.batsmen) ? inn.batsmen : [];
@@ -1215,16 +1228,18 @@ function renderInnings(inn) {
     : `${score.runs}/${score.wickets}`;
 
   // ── Batting table ──
-  const batRows = batsmen.map(b => {
+  const { batters: battingRows, didNotBat } = splitBattingCardRows(batsmen, score);
+  const batRows = battingRows.length ? battingRows.map(b => {
+    const isNotOut = isScorecardNotOut(b);
     const nameFlags = [
       b.is_captain ? `<span class="captain-tag">C</span>` : '',
       b.is_keeper  ? `<span class="keeper-tag">WK</span>` : '',
-      b.not_out    ? `<span class="not-out-star">★</span>` : '',
+      isNotOut     ? `<span class="not-out-star">★</span>` : '',
     ].join('');
-    const outInfo = (!b.not_out && b.out_desc)
+    const outInfo = (!isNotOut && b.out_desc)
       ? `<span class="out-desc">${esc(b.out_desc)}</span>`
       : `<span class="out-desc" style="color:var(--result)">not out</span>`;
-    const runsClass = b.not_out ? 'sc-runs sc-not-out' : 'sc-runs';
+    const runsClass = isNotOut ? 'sc-runs sc-not-out' : 'sc-runs';
     return `
       <tr>
         <td>
@@ -1239,7 +1254,15 @@ function renderInnings(inn) {
         <td>${b.sixes}</td>
         <td>${b.strike_rate > 0 ? b.strike_rate.toFixed(1) : '—'}</td>
       </tr>`;
-  }).join('');
+  }).join('') : `
+      <tr>
+        <td class="sc-empty-row" colspan="6">Batting data is not available for this innings yet.</td>
+      </tr>`;
+  const didNotBatHtml = didNotBat.length ? `
+    <div class="did-not-bat">
+      <span>Did not bat</span>
+      <p>${didNotBat.map(batter => esc(batter.name)).join(', ')}</p>
+    </div>` : '';
 
   // Extras + total
   const extraStr = `b ${extras.byes}, lb ${extras.leg_byes}, w ${extras.wides}, nb ${extras.no_balls}`;
@@ -1282,11 +1305,10 @@ function renderInnings(inn) {
       </div>
 
         ${renderScorecardJumpbar([
-          { id: battingId, label: 'Batting', count: batsmen.length },
+          { id: battingId, label: 'Batting', count: battingRows.length },
           { id: bowlingId, label: 'Bowling', count: bowlers.length },
           { id: fowId, label: 'Wickets', count: fow.length },
         ])}
-        ${renderBowlingSnapshot(bowlers)}
 
         <div class="sc-section-label" id="${battingId}">Batting — vs ${esc(bowl_team)}</div>
         <div class="sc-table-wrap">
@@ -1310,6 +1332,7 @@ function renderInnings(inn) {
             </tbody>
           </table>
         </div>
+        ${didNotBatHtml}
 
         <div class="sc-section-label" id="${bowlingId}" style="margin-top:16px">Bowling — ${esc(bowl_team)}</div>
         <div class="sc-table-wrap">
