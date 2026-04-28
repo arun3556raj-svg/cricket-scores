@@ -1,4 +1,246 @@
 {
-  "innings": [],
+  "innings": [
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 222,
+        "wickets": 4,
+        "overs": 20,
+        "run_rate": 11.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 4,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "Prabhsimran Singh",
+          "runs": 59,
+          "balls": 44,
+          "fours": 6,
+          "sixes": 1,
+          "strike_rate": 134.09,
+          "out_desc": "c Riyan Parag b Yash Raj Punja",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Priyansh Arya",
+          "runs": 29,
+          "balls": 11,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 263.64,
+          "out_desc": "c Nandre Burger b Jofra Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Cooper Connolly",
+          "runs": 30,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 3,
+          "strike_rate": 214.29,
+          "out_desc": "c Donovan Ferreira b Yash Raj Punja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shreyas Iyer",
+          "runs": 30,
+          "balls": 27,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 111.11,
+          "out_desc": "c Dhruv Jurel b Nandre Burger",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Marcus Stoinis",
+          "runs": 62,
+          "balls": 22,
+          "fours": 4,
+          "sixes": 6,
+          "strike_rate": 281.82,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 3,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 150,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nehal Wadhera",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Marco Jansen",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Lockie Ferguson",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Arshdeep Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Yuzvendra Chahal",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Jofra Archer",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 1,
+          "economy": 10,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Nandre Burger",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 59,
+          "wickets": 1,
+          "economy": 14.8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Brijesh Sharma",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 42,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Yash Raj Punja",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 2,
+          "economy": 10.2,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 0,
+          "economy": 8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 37,
+          "over": 2.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "Cooper Connolly",
+          "runs": 96,
+          "over": 8.2,
+          "wkt_n": 2
+        },
+        {
+          "name": "Prabhsimran Singh",
+          "runs": 144,
+          "over": 13.6,
+          "wkt_n": 3
+        },
+        {
+          "name": "Shreyas Iyer",
+          "runs": 181,
+          "over": 17.6,
+          "wkt_n": 4
+        }
+      ]
+    }
+  ],
   "error": null
 }

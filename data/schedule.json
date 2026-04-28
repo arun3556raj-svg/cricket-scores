@@ -674,8 +674,8 @@
       "team2_short": "RR",
       "team2_color": "#db2777",
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 28, 14:00 GMT",
+      "status": "live",
+      "status_text": "Rajasthan Royals opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1777384800000,
       "match_date": "Tue, 28 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "28 Apr, 06:45 PM",
+  "last_updated": "28 Apr, 09:10 PM",
   "error": null
 }

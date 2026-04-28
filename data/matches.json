@@ -1,6 +1,5 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "151943",
       "series": "IPL 2026",
@@ -12,15 +11,45 @@
       "team2": "Rajasthan Royals",
       "team2_short": "RR",
       "team2_color": "#db2777",
-      "team1_score1": null,
+      "team1_score1": {
+        "display": "222/4",
+        "detail": "(20 ov)",
+        "runs": 222,
+        "wickets": 4,
+        "overs": "20"
+      },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 28, 14:00 GMT",
+      "status": "live",
+      "status_text": "Innings Break",
       "start_time": "07:30 PM",
       "start_epoch": 1777384800000,
+      "run_rate": 11.1
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "151954",
+      "series": "IPL 2026",
+      "match_desc": "41st Match",
+      "match_format": "T20",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Sunrisers Hyderabad",
+      "team2_short": "SRH",
+      "team2_color": "#ea580c",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Wankhede Stadium, Mumbai",
+      "status": "upcoming",
+      "status_text": "Match starts at Apr 29, 14:00 GMT",
+      "start_time": "07:30 PM",
+      "start_epoch": 1777471200000,
       "run_rate": null
     }
   ],
@@ -60,6 +89,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "28 Apr, 06:44 PM",
+  "last_updated": "28 Apr, 09:10 PM",
   "error": null
 }
