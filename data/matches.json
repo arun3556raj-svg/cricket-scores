@@ -1,40 +1,5 @@
 {
-  "live": [
-    {
-      "id": "151943",
-      "series": "IPL 2026",
-      "match_desc": "40th Match",
-      "match_format": "T20",
-      "team1": "Punjab Kings",
-      "team1_short": "PBKS",
-      "team1_color": "#e11d48",
-      "team2": "Rajasthan Royals",
-      "team2_short": "RR",
-      "team2_color": "#db2777",
-      "team1_score1": {
-        "display": "222/4",
-        "detail": "(20 ov)",
-        "runs": 222,
-        "wickets": 4,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "215/4",
-        "detail": "(18.2 ov)",
-        "runs": 215,
-        "wickets": 4,
-        "overs": "18.2"
-      },
-      "team2_score2": null,
-      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
-      "status": "live",
-      "status_text": "Rajasthan Royals need 8 runs in 10 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1777384800000,
-      "run_rate": 11.73
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "151954",
@@ -61,40 +26,42 @@
   ],
   "finished": [
     {
-      "id": "151935",
+      "id": "151943",
       "series": "IPL 2026",
-      "match_desc": "39th Match",
+      "match_desc": "40th Match",
       "match_format": "T20",
-      "team1": "Delhi Capitals",
-      "team1_short": "DC",
-      "team1_color": "#0ea5e9",
-      "team2": "Royal Challengers Bengaluru",
-      "team2_short": "RCB",
-      "team2_color": "#dc2626",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Rajasthan Royals",
+      "team2_short": "RR",
+      "team2_color": "#db2777",
       "team1_score1": {
-        "display": "75",
-        "detail": "(16.3 ov)",
-        "runs": 75,
-        "wickets": 10,
-        "overs": "16.3"
+        "display": "222/4",
+        "detail": "(20 ov)",
+        "runs": 222,
+        "wickets": 4,
+        "overs": "20"
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "77/1",
-        "detail": "(6.3 ov)",
-        "runs": 77,
-        "wickets": 1,
-        "overs": "6.3"
+        "display": "228/4",
+        "detail": "(19.2 ov)",
+        "runs": 228,
+        "wickets": 4,
+        "overs": "19.2"
       },
       "team2_score2": null,
-      "venue": "Arun Jaitley Stadium, Delhi",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "finished",
-      "status_text": "Royal Challengers Bengaluru won by 9 wkts",
+      "status_text": "Rajasthan Royals won by 6 wkts",
       "start_time": "07:30 PM",
-      "start_epoch": 1777298400000,
-      "run_rate": null
+      "start_epoch": 1777384800000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz"
     }
   ],
-  "last_updated": "28 Apr, 10:51 PM",
+  "last_updated": "29 Apr, 12:28 AM",
   "error": null
 }

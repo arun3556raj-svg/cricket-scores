@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-151943",
+      "source_id": "151943",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 40,
+      "round": "League",
+      "date": "2026-04-28",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Rajasthan Royals",
+      "team2_short": "RR",
+      "team2_color": "#db2777",
+      "winner": "Rajasthan Royals",
+      "result_text": "Rajasthan Royals won by 6 wkts",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Punjab Kings",
+          "team_short": "PBKS",
+          "team_color": "#e11d48",
+          "opponent": "Rajasthan Royals",
+          "opponent_short": "RR",
+          "runs": 222,
+          "wickets": 4,
+          "overs": 20,
+          "target": null,
+          "display": "222/4",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Rajasthan Royals",
+          "team_short": "RR",
+          "team_color": "#db2777",
+          "opponent": "Punjab Kings",
+          "opponent_short": "PBKS",
+          "runs": 228,
+          "wickets": 4,
+          "overs": 19.2,
+          "target": 223,
+          "display": "228/4",
+          "detail": "(19.2 ov)"
+        }
+      ]
+    },
+    {
       "id": "1208",
       "source_id": "1529282",
       "season": 2026,
