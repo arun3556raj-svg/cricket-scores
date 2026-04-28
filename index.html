@@ -6,21 +6,42 @@
   <title>Pitch — IPL Live Scores</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="static/style.css" />
 </head>
 <body>
+<div class="app">
 
   <!-- ── Header ── -->
-  <header class="header">
-    <div class="header-inner">
-      <div class="header-brand">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8.5c2.2-4.1 7.8-4.1 10 0-2.2 4.1-7.8 4.1-10 0Z" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="8" cy="8.5" r="2" fill="currentColor"/>
+          </svg>
+        </span>
         <span class="wordmark">Pitch</span>
-        <span class="brand-tag">IPL 2026</span>
+        <span class="brand-badge mono-xs">IPL 2026</span>
       </div>
-      <div class="header-actions">
-        <span class="timestamp" id="timestamp">—</span>
-        <button class="btn-theme" id="themeBtn" onclick="toggleTheme()" title="Toggle light/dark mode">
+
+      <nav class="tabs" aria-label="Score filters">
+        <button class="tab active" data-filter="all" onclick="setFilter('all')">All</button>
+        <button class="tab" data-filter="live" onclick="setFilter('live')">
+          Live <span class="tab-count" id="livePill" style="display:none">0</span>
+        </button>
+        <button class="tab" data-filter="upcoming" onclick="setFilter('upcoming')">Upcoming</button>
+        <button class="tab" data-filter="results" onclick="setFilter('results')">Results</button>
+        <button class="tab" data-filter="points" onclick="setFilter('points')">Points</button>
+        <a class="tab tab-anchor" href="#statsBuilderSection">Stats</a>
+        <button class="tab" data-filter="archive" onclick="setFilter('archive')">Archive</button>
+        <button class="tab" data-filter="schedule" onclick="setFilter('schedule')">Schedule</button>
+      </nav>
+
+      <div class="topbar-actions">
+        <span class="stamp timestamp mono-xs" id="timestamp"><span class="stamp-label">Updated</span> —</span>
+        <button class="btn-theme icon-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle light/dark mode">
           <svg class="icon-moon" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M13 9.5A6 6 0 1 1 5.5 2a4.5 4.5 0 0 0 7.5 7.5z"/>
           </svg>
@@ -30,7 +51,7 @@
           </svg>
           <span class="theme-label">Light</span>
         </button>
-        <button class="btn-refresh" id="refreshBtn" onclick="refreshMatches()" title="Refresh">
+        <button class="btn-refresh icon-btn" id="refreshBtn" onclick="refreshMatches()" title="Refresh">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
             <path d="M13 2v4h-4"/>
             <path d="M1 12v-4h4"/>
@@ -41,21 +62,6 @@
       </div>
     </div>
   </header>
-
-  <!-- ── Tab bar ── -->
-  <div class="tabbar">
-    <div class="tabbar-inner">
-      <button class="tab active" data-filter="all" onclick="setFilter('all')">All Matches</button>
-      <button class="tab" data-filter="live" onclick="setFilter('live')">
-        Live <span class="tab-pill" id="livePill" style="display:none">0</span>
-      </button>
-      <button class="tab" data-filter="upcoming" onclick="setFilter('upcoming')">Upcoming</button>
-      <button class="tab" data-filter="results" onclick="setFilter('results')">Results</button>
-      <button class="tab" data-filter="points" onclick="setFilter('points')">Points</button>
-      <button class="tab" data-filter="archive" onclick="setFilter('archive')">Archive</button>
-      <button class="tab" data-filter="schedule" onclick="setFilter('schedule')">Schedule</button>
-    </div>
-  </div>
 
   <!-- ── Main content ── -->
   <main class="main" id="main">
@@ -177,8 +183,12 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <span>Pitch · IPL 2026 · Data from Cricbuzz</span>
+    <div class="footer-inner">
+      <strong>Pitch</strong>
+      <span class="muted-3 mono-xs">IPL 2026 · Data from Cricbuzz</span>
+      <span class="footer-spacer"></span>
+      <a class="footer-link mono-xs" href="#main">Top</a>
+      <a class="footer-link mono-xs" href="#statsBuilderSection">Stats</a>
     </div>
   </footer>
 
@@ -232,5 +242,6 @@
     };
   </script>
   <script src="static/app.js"></script>
+</div>
 </body>
 </html>

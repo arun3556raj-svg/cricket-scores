@@ -57,11 +57,9 @@
       "status_text": "Royal Challengers Bengaluru won by 9 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777298400000,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
+      "run_rate": null
     }
   ],
-  "last_updated": "28 Apr, 10:17 AM",
+  "last_updated": "28 Apr, 11:48 AM",
   "error": null
 }
