@@ -1022,9 +1022,9 @@ function renderScorecard(data) {
 
   const html = `
     ${renderScorecardSummary(data)}
-    ${renderInningsComparison(innings)}
     ${renderInningsSwitcher(innings)}
-    ${renderInnings(innings[drawerSelectedInningsIndex])}`;
+    ${renderInnings(innings[drawerSelectedInningsIndex])}
+    ${renderInningsComparison(innings)}`;
 
   $('drawerBody').innerHTML = html;
 }
@@ -1036,6 +1036,57 @@ function renderScorecardSummary(data) {
     <div class="scorecard-summary">
       ${meta ? `<div class="scorecard-summary-meta">${meta}</div>` : ''}
       ${data.result_text ? `<div class="scorecard-summary-result">${esc(data.result_text)}</div>` : ''}
+    </div>`;
+}
+
+function scorecardSectionId(prefix, inn) {
+  const team = String(inn?.bat_team || 'innings')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+  return `${prefix}-${team}-${inn?.innings_id || 'scorecard'}`;
+}
+
+function scrollScorecardSection(id) {
+  const target = document.getElementById(id);
+  if (!target) return;
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderScorecardJumpbar(items) {
+  return `
+    <div class="scorecard-jumpbar" aria-label="Scorecard sections">
+      ${items.map(item => `
+        <button type="button" onclick="scrollScorecardSection('${item.id}')">
+          <span>${esc(item.label)}</span>
+          <strong>${esc(String(item.count))}</strong>
+        </button>`).join('')}
+    </div>`;
+}
+
+function formatBowlingNumber(value, fallback = '0') {
+  if (value === null || value === undefined || value === '') return fallback;
+  return Number.isFinite(Number(value)) ? String(value) : esc(String(value));
+}
+
+function formatEconomy(value) {
+  const n = Number(value);
+  return Number.isFinite(n) && n > 0 ? n.toFixed(1) : '-';
+}
+
+function renderBowlingSnapshot(bowlers) {
+  if (!bowlers.length) {
+    return `<div class="bowling-snapshot bowling-snapshot--empty">Bowling figures are not available for this innings yet.</div>`;
+  }
+
+  return `
+    <div class="bowling-snapshot" aria-label="Bowling figures">
+      ${bowlers.map(bw => `
+        <div class="bowling-snapshot-card">
+          <span class="bowling-snapshot-name">${esc(bw.name)}</span>
+          <strong>${formatBowlingNumber(bw.overs)}-${formatBowlingNumber(bw.maidens)}-${formatBowlingNumber(bw.runs)}-${formatBowlingNumber(bw.wickets)}</strong>
+          <small>Econ ${formatEconomy(bw.economy)}</small>
+        </div>`).join('')}
     </div>`;
 }
 
@@ -1151,7 +1202,14 @@ function renderComparisonEdge(first, second, firstShort, secondShort) {
 }
 
 function renderInnings(inn) {
-  const { score, bat_team, bowl_team, batsmen, bowlers, extras, fow } = inn;
+  const { score, bat_team, bowl_team } = inn;
+  const batsmen = Array.isArray(inn.batsmen) ? inn.batsmen : [];
+  const bowlers = Array.isArray(inn.bowlers) ? inn.bowlers : [];
+  const fow = Array.isArray(inn.fow) ? inn.fow : [];
+  const extras = inn.extras || { total: 0, byes: 0, leg_byes: 0, wides: 0, no_balls: 0 };
+  const battingId = scorecardSectionId('batting', inn);
+  const bowlingId = scorecardSectionId('bowling', inn);
+  const fowId = scorecardSectionId('fow', inn);
   const scoreStr = score.declared
     ? `${score.runs}/${score.wickets}d`
     : `${score.runs}/${score.wickets}`;
@@ -1190,7 +1248,7 @@ function renderInnings(inn) {
     : `${score.runs}/${score.wickets} (${score.overs} Ov)`;
 
   // ── Bowling table ──
-  const bowlRows = bowlers.map(bw => `
+  const bowlRows = bowlers.length ? bowlers.map(bw => `
     <tr>
       <td><span class="bowl-name">${esc(bw.name)}</span></td>
       <td>${bw.overs}</td>
@@ -1198,11 +1256,14 @@ function renderInnings(inn) {
       <td>${bw.runs}</td>
       <td style="color:${bw.wickets > 0 ? 'var(--result)' : 'var(--t2)'};font-weight:${bw.wickets > 0 ? 700 : 400}">${bw.wickets}</td>
       <td>${bw.economy > 0 ? bw.economy.toFixed(1) : '—'}</td>
-    </tr>`).join('');
+    </tr>`).join('') : `
+    <tr>
+      <td class="sc-empty-row" colspan="6">Bowling data is not available for this innings yet.</td>
+    </tr>`;
 
   // ── Fall of wickets ──
   const fowHtml = fow.length > 0 ? `
-    <div class="sc-section-label">Fall of Wickets</div>
+    <div class="sc-section-label" id="${fowId}">Fall of Wickets</div>
     <div class="fow-wrap">
       ${fow.map(w => `<span class="fow-chip">${w.runs}-${w.wkt_n} <span>(${esc(w.name)}, ${w.over} ov)</span></span>`).join('')}
     </div>` : '';
@@ -1220,40 +1281,51 @@ function renderInnings(inn) {
         <span class="innings-score-line">${scoreStr}</span>
       </div>
 
-      <div class="sc-section-label">Batting — vs ${esc(bowl_team)}</div>
-      <table class="sc-table">
-        <thead>
-          <tr>
-            <th style="text-align:left">Batter</th>
-            <th>R</th><th>B</th><th>4s</th><th>6s</th><th>SR</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${batRows}
-          <tr class="sc-extras-row">
-            <td>Extras</td>
-            <td colspan="5">${extras.total} (${extraStr})</td>
-          </tr>
-          <tr class="sc-total-row">
-            <td>Total</td>
-            <td colspan="5">${totalStr}</td>
-          </tr>
-        </tbody>
-      </table>
+        ${renderScorecardJumpbar([
+          { id: battingId, label: 'Batting', count: batsmen.length },
+          { id: bowlingId, label: 'Bowling', count: bowlers.length },
+          { id: fowId, label: 'Wickets', count: fow.length },
+        ])}
+        ${renderBowlingSnapshot(bowlers)}
 
-      <div class="sc-section-label" style="margin-top:16px">Bowling</div>
-      <table class="sc-table">
-        <thead>
-          <tr>
-            <th style="text-align:left">Bowler</th>
-            <th>O</th><th>M</th><th>R</th><th>W</th><th>Econ</th>
-          </tr>
-        </thead>
-        <tbody>${bowlRows}</tbody>
-      </table>
+        <div class="sc-section-label" id="${battingId}">Batting — vs ${esc(bowl_team)}</div>
+        <div class="sc-table-wrap">
+          <table class="sc-table">
+            <thead>
+              <tr>
+                <th style="text-align:left">Batter</th>
+                <th>R</th><th>B</th><th>4s</th><th>6s</th><th>SR</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${batRows}
+              <tr class="sc-extras-row">
+                <td>Extras</td>
+                <td colspan="5">${extras.total} (${extraStr})</td>
+              </tr>
+              <tr class="sc-total-row">
+                <td>Total</td>
+                <td colspan="5">${totalStr}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-      ${fowHtml}
-    </div>`;
+        <div class="sc-section-label" id="${bowlingId}" style="margin-top:16px">Bowling — ${esc(bowl_team)}</div>
+        <div class="sc-table-wrap">
+          <table class="sc-table">
+            <thead>
+              <tr>
+                <th style="text-align:left">Bowler</th>
+                <th>O</th><th>M</th><th>R</th><th>W</th><th>Econ</th>
+              </tr>
+            </thead>
+            <tbody>${bowlRows}</tbody>
+          </table>
+        </div>
+
+        ${fowHtml}
+      </div>`;
 }
 
 // Swipe down to close
