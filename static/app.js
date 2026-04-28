@@ -102,22 +102,23 @@ function scoreBlock(s, cls = '') {
 
 // ── Badge HTML ─────────────────────────────────────────────────
 function badge(status) {
-  if (status === 'live')
-    return `<span class="badge badge-live-sm">Live</span>`;
-  if (status === 'upcoming')
-    return `<span class="badge badge-upcoming">Upcoming</span>`;
-  return `<span class="badge badge-result">Result</span>`;
+  if (status === 'live') {
+    return `<span class="status-badge badge-live-sm"><span class="live-dot" style="background:var(--live)"></span>Live</span>`;
+  }
+  if (status === 'upcoming') {
+    return `<span class="status-badge badge-upcoming"><span class="static-dot" style="background:var(--upcoming)"></span>Upcoming</span>`;
+  }
+  return `<span class="status-badge badge-result"><span class="static-dot" style="background:var(--result)"></span>Result</span>`;
 }
 
 function provisionalBadge(item) {
-  return item?.provisional ? `<span class="badge badge-provisional">Provisional</span>` : '';
+  return item?.provisional ? `<span class="status-badge badge-provisional">Provisional</span>` : '';
 }
 
-// ── Card bar gradient from team colors ─────────────────────────
-function cardBar(t1short, t2short) {
-  const c1 = teamMeta(t1short).color;
-  const c2 = teamMeta(t2short).color;
-  return `<div class="card-bar" style="background:linear-gradient(90deg,${c1} 0%,${c1} 50%,${c2} 50%,${c2} 100%)"></div>`;
+function matchAccent(status) {
+  if (status === 'live') return 'var(--live)';
+  if (status === 'upcoming') return 'var(--upcoming)';
+  return 'var(--result)';
 }
 
 // ── Match card ─────────────────────────────────────────────────
@@ -142,37 +143,36 @@ function matchCard(m) {
   const matchJson = encodeURIComponent(JSON.stringify(m));
 
   return `
-    <div class="match-card${liveClass}" onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
-      ${cardBar(m.team1_short, m.team2_short)}
-      <div class="card-body">
-        <div class="card-head">
+    <article class="match-card${liveClass}" onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
+      <div class="card-stripe" style="background:${matchAccent(m.status)}"></div>
+      <header class="match-head">
+        <div class="match-head-left">
+          ${badge(m.status)}${provisionalBadge(m)}
           <span class="card-series">${esc(m.match_desc || m.series)}</span>
-          <span class="card-badges">${badge(m.status)}${provisionalBadge(m)}</span>
         </div>
-        <div class="card-teams">
-          <div class="team-row">
-            <div class="team-left">
-              <div class="team-badge" style="border-color:${t1.color}44;color:${t1.color};background:${t1.bg}">${esc(m.team1_short)}</div>
-              <span class="team-name${t1Dim}">${esc(m.team1)}</span>
-            </div>
-            <div class="team-score">${scoreBlock(m.team1_score1)}</div>
+        ${m.status === 'upcoming' && m.start_time ? `<span class="muted-2 mono-xs">${esc(m.start_time)}</span>` : ''}
+      </header>
+      <div class="match-rows">
+        <div class="match-row">
+          <div class="team-left">
+            <div class="team-badge" style="border-color:${t1.color}44;color:${t1.color};background:${t1.bg}">${esc(m.team1_short)}</div>
+            <span class="team-name-sm${t1Dim}">${esc(m.team1)}</span>
           </div>
-          <div class="team-row">
-            <div class="team-left">
-              <div class="team-badge" style="border-color:${t2.color}44;color:${t2.color};background:${t2.bg}">${esc(m.team2_short)}</div>
-              <span class="team-name${t2Dim}">${esc(m.team2)}</span>
-            </div>
-            <div class="team-score">${scoreBlock(m.team2_score1)}</div>
+          <div class="team-score">${scoreBlock(m.team1_score1)}</div>
+        </div>
+        <div class="match-row">
+          <div class="team-left">
+            <div class="team-badge" style="border-color:${t2.color}44;color:${t2.color};background:${t2.bg}">${esc(m.team2_short)}</div>
+            <span class="team-name-sm${t2Dim}">${esc(m.team2)}</span>
           </div>
+          <div class="team-score">${scoreBlock(m.team2_score1)}</div>
         </div>
       </div>
-      <div class="card-sep"></div>
-      <div class="card-footer">
-        <span class="card-status ${statusClass}">${statusText}</span>
-        ${m.venue ? `<span class="card-venue">${esc(m.venue)}</span>` : ''}
-      </div>
-      <span class="card-arrow">Full scorecard →</span>
-    </div>`;
+      <footer class="match-foot">
+        <span class="match-status ${statusClass}">${statusText}</span>
+        ${m.venue ? `<span class="match-venue">${esc(m.venue)}</span>` : ''}
+      </footer>
+    </article>`;
 }
 
 // ── Card click handler ─────────────────────────────────────────
@@ -198,46 +198,50 @@ function heroCard(m) {
 
   const matchJson = encodeURIComponent(JSON.stringify(m));
   return `
-    <div class="hero-card" onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}' style="cursor:pointer">
-      <div class="hero-top">
-        <div>
+    <article class="hero-card" onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
+      <div class="card-stripe" style="background:var(--live)"></div>
+      <header class="hero-top">
+        <div class="hero-meta">
+          ${badge('live')}
+          <span class="meta-dot"></span>
           <span class="hero-series-label">${esc(m.series)}</span>
-          ${m.match_desc ? `<span class="hero-match-desc">· ${esc(m.match_desc)}</span>` : ''}
+          ${m.match_desc ? `<span class="meta-dot"></span><span class="hero-match-desc">${esc(m.match_desc)}</span>` : ''}
+          ${m.venue ? `<span class="meta-dot"></span><span class="hero-match-desc">${esc(m.venue)}</span>` : ''}
         </div>
-        <div class="badge-live">
-          <span class="badge-live-dot"></span>
-          Live Now
+        <div class="hero-meta">
+          ${m.run_rate ? `<span class="chip">CRR ${esc(String(m.run_rate))}</span>` : ''}
         </div>
-      </div>
+      </header>
 
       <div class="hero-matchup">
-        <!-- Team 1 -->
         <div class="hero-team">
           <div class="hero-avatar" style="border-color:${t1.color}55;color:${t1.color};background:${t1.bg}">${esc(m.team1_short)}</div>
-          <span class="hero-team-name">${esc(m.team1)}</span>
-          <div>${heroScoreInner(m.team1_score1)}</div>
+          <div class="hero-team-meta">
+            <span class="hero-team-name">${esc(m.team1)}</span>
+            <span class="team-overs mono-xs muted-2">${m.team1_score1?.detail ? esc(m.team1_score1.detail) : 'Yet to bat'}</span>
+          </div>
+          <div class="hero-score">${heroScoreInner(m.team1_score1)}</div>
         </div>
 
-        <!-- VS divider -->
         <div class="hero-vs-col">
-          <span class="hero-vs-text">vs</span>
-          ${m.run_rate ? `<span style="font-size:11px;color:var(--t4);background:var(--surface-hi);border:1px solid var(--border);border-radius:20px;padding:2px 8px">RR ${m.run_rate}</span>` : ''}
+          <span class="hero-vs-text">VS</span>
         </div>
 
-        <!-- Team 2 -->
         <div class="hero-team hero-team--right">
+          <div class="hero-score">${heroScoreInner(m.team2_score1)}</div>
+          <div class="hero-team-meta is-right">
+            <span class="hero-team-name">${esc(m.team2)}</span>
+            <span class="team-overs mono-xs muted-2">${m.team2_score1?.detail ? esc(m.team2_score1.detail) : 'Yet to bat'}</span>
+          </div>
           <div class="hero-avatar" style="border-color:${t2.color}55;color:${t2.color};background:${t2.bg}">${esc(m.team2_short)}</div>
-          <span class="hero-team-name">${esc(m.team2)}</span>
-          <div style="text-align:right">${heroScoreInner(m.team2_score1)}</div>
         </div>
       </div>
 
-      <div class="hero-bottom">
+      <footer class="hero-bottom">
         <span class="hero-status">${esc(m.status_text)}</span>
-        ${m.venue ? `<span class="hero-venue">📍 ${esc(m.venue)}</span>` : ''}
-        <span class="hero-cta">Full scorecard →</span>
-      </div>
-    </div>`;
+        <span class="hero-cta">View scorecard →</span>
+      </footer>
+    </article>`;
 }
 
 // ── Filter state ──────────────────────────────────────────────
