@@ -129,6 +129,53 @@
   ],
   "matches": [
     {
+      "id": "1208",
+      "source_id": "1529282",
+      "season": 2026,
+      "match_number": 39,
+      "round": "League",
+      "date": "2026-04-27",
+      "team1": "Delhi Capitals",
+      "team1_short": "DC",
+      "team1_color": "#0ea5e9",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
+      "winner": "Royal Challengers Bengaluru",
+      "result_text": "Royal Challengers Bengaluru won by 9 wkts",
+      "venue": "Arun Jaitley Stadium, Delhi, Delhi",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Delhi Capitals",
+          "team_short": "DC",
+          "team_color": "#0ea5e9",
+          "opponent": "Royal Challengers Bengaluru",
+          "opponent_short": "RCB",
+          "runs": 75,
+          "wickets": 10,
+          "overs": 16.3,
+          "target": null,
+          "display": "75",
+          "detail": "(16.3 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Royal Challengers Bengaluru",
+          "team_short": "RCB",
+          "team_color": "#dc2626",
+          "opponent": "Delhi Capitals",
+          "opponent_short": "DC",
+          "runs": 77,
+          "wickets": 1,
+          "overs": 6.3,
+          "target": 76,
+          "display": "77/1",
+          "detail": "(6.3 ov)"
+        }
+      ]
+    },
+    {
       "id": "1207",
       "source_id": "1529281",
       "season": 2026,
