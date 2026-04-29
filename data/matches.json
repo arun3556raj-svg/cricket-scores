@@ -1,40 +1,5 @@
 {
-  "live": [
-    {
-      "id": "151954",
-      "series": "IPL 2026",
-      "match_desc": "41st Match",
-      "match_format": "T20",
-      "team1": "Mumbai Indians",
-      "team1_short": "MI",
-      "team1_color": "#1d4ed8",
-      "team2": "Sunrisers Hyderabad",
-      "team2_short": "SRH",
-      "team2_color": "#ea580c",
-      "team1_score1": {
-        "display": "243/5",
-        "detail": "(20 ov)",
-        "runs": 243,
-        "wickets": 5,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "110/0",
-        "detail": "(6.4 ov)",
-        "runs": 110,
-        "wickets": 0,
-        "overs": "6.4"
-      },
-      "team2_score2": null,
-      "venue": "Wankhede Stadium, Mumbai",
-      "status": "live",
-      "status_text": "Sunrisers Hyderabad need 134 runs in 80 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1777471200000,
-      "run_rate": 16.5
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "151965",
@@ -61,40 +26,42 @@
   ],
   "finished": [
     {
-      "id": "151943",
+      "id": "151954",
       "series": "IPL 2026",
-      "match_desc": "40th Match",
+      "match_desc": "41st Match",
       "match_format": "T20",
-      "team1": "Punjab Kings",
-      "team1_short": "PBKS",
-      "team1_color": "#e11d48",
-      "team2": "Rajasthan Royals",
-      "team2_short": "RR",
-      "team2_color": "#db2777",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Sunrisers Hyderabad",
+      "team2_short": "SRH",
+      "team2_color": "#ea580c",
       "team1_score1": {
-        "display": "222/4",
+        "display": "243/5",
         "detail": "(20 ov)",
-        "runs": 222,
-        "wickets": 4,
+        "runs": 243,
+        "wickets": 5,
         "overs": "20"
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "228/4",
-        "detail": "(19.2 ov)",
-        "runs": 228,
+        "display": "249/4",
+        "detail": "(18.4 ov)",
+        "runs": 249,
         "wickets": 4,
-        "overs": "19.2"
+        "overs": "18.4"
       },
       "team2_score2": null,
-      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "venue": "Wankhede Stadium, Mumbai",
       "status": "finished",
-      "status_text": "Rajasthan Royals won by 6 wkts",
+      "status_text": "Sunrisers Hyderabad won by 6 wkts",
       "start_time": "07:30 PM",
-      "start_epoch": 1777384800000,
-      "run_rate": null
+      "start_epoch": 1777471200000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz"
     }
   ],
-  "last_updated": "29 Apr, 10:26 PM",
+  "last_updated": "29 Apr, 11:44 PM",
   "error": null
 }

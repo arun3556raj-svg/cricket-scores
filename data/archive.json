@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-151954",
+      "source_id": "151954",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 41,
+      "round": "League",
+      "date": "2026-04-29",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Sunrisers Hyderabad",
+      "team2_short": "SRH",
+      "team2_color": "#ea580c",
+      "winner": "Sunrisers Hyderabad",
+      "result_text": "Sunrisers Hyderabad won by 6 wkts",
+      "venue": "Wankhede Stadium, Mumbai",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Mumbai Indians",
+          "team_short": "MI",
+          "team_color": "#1d4ed8",
+          "opponent": "Sunrisers Hyderabad",
+          "opponent_short": "SRH",
+          "runs": 243,
+          "wickets": 5,
+          "overs": 20,
+          "target": null,
+          "display": "243/5",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Sunrisers Hyderabad",
+          "team_short": "SRH",
+          "team_color": "#ea580c",
+          "opponent": "Mumbai Indians",
+          "opponent_short": "MI",
+          "runs": 249,
+          "wickets": 4,
+          "overs": 18.4,
+          "target": 244,
+          "display": "249/4",
+          "detail": "(18.4 ov)"
+        }
+      ]
+    },
+    {
       "id": "1209",
       "source_id": "1529283",
       "season": 2026,
