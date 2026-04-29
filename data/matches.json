@@ -57,11 +57,9 @@
       "status_text": "Rajasthan Royals won by 6 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777384800000,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
+      "run_rate": null
     }
   ],
-  "last_updated": "29 Apr, 10:14 AM",
+  "last_updated": "29 Apr, 12:42 PM",
   "error": null
 }

@@ -129,10 +129,8 @@
   ],
   "matches": [
     {
-      "id": "prov-151943",
-      "source_id": "151943",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1209",
+      "source_id": "1529283",
       "season": 2026,
       "match_number": 40,
       "round": "League",
@@ -145,7 +143,7 @@
       "team2_color": "#db2777",
       "winner": "Rajasthan Royals",
       "result_text": "Rajasthan Royals won by 6 wkts",
-      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh, New Chandigarh",
       "innings": [
         {
           "number": 1,
@@ -156,10 +154,10 @@
           "opponent_short": "RR",
           "runs": 222,
           "wickets": 4,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "222/4",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
