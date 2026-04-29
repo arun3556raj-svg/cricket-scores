@@ -12,21 +12,27 @@
       "team2_short": "SRH",
       "team2_color": "#ea580c",
       "team1_score1": {
-        "display": "165/3",
-        "detail": "(13.4 ov)",
-        "runs": 165,
-        "wickets": 3,
-        "overs": "13.4"
+        "display": "243/5",
+        "detail": "(20 ov)",
+        "runs": 243,
+        "wickets": 5,
+        "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "110/0",
+        "detail": "(6.4 ov)",
+        "runs": 110,
+        "wickets": 0,
+        "overs": "6.4"
+      },
       "team2_score2": null,
       "venue": "Wankhede Stadium, Mumbai",
       "status": "live",
-      "status_text": "Mumbai Indians opt to bat",
+      "status_text": "Sunrisers Hyderabad need 134 runs in 80 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1777471200000,
-      "run_rate": 12.07
+      "run_rate": 16.5
     }
   ],
   "upcoming": [
@@ -89,6 +95,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "29 Apr, 08:49 PM",
+  "last_updated": "29 Apr, 10:26 PM",
   "error": null
 }
