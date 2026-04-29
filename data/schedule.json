@@ -691,8 +691,8 @@
       "team2_short": "SRH",
       "team2_color": "#ea580c",
       "venue": "Wankhede Stadium, Mumbai",
-      "status": "upcoming",
-      "status_text": "upcoming",
+      "status": "live",
+      "status_text": "Mumbai Indians opt to bat",
       "start_time": "07:30 PM",
       "start_epoch": 1777471200000,
       "match_date": "Wed, 29 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "29 Apr, 06:27 PM",
+  "last_updated": "29 Apr, 08:49 PM",
   "error": null
 }

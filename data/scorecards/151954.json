@@ -1,4 +1,252 @@
 {
-  "innings": [],
+  "innings": [
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 167,
+        "wickets": 3,
+        "overs": 14,
+        "run_rate": 11.93,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Will Jacks",
+          "runs": 46,
+          "balls": 22,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 209.09,
+          "out_desc": "c Ishan Kishan b Nitish Reddy",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ryan Rickelton",
+          "runs": 88,
+          "balls": 39,
+          "fours": 7,
+          "sixes": 6,
+          "strike_rate": 225.64,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Suryakumar Yadav",
+          "runs": 5,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "c Abhishek Sharma b Eshan Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 22,
+          "balls": 17,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 129.41,
+          "out_desc": "c Harsh Dubey b Praful Hinge",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Hardik Pandya",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "batting",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Robin Minz",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Trent Boult",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jasprit Bumrah",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "AM Ghazanfar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ashwani Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Pat Cummins",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 0,
+          "economy": 11,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Praful Hinge",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Eshan Malinga",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 1,
+          "economy": 5.3,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Harsh Dubey",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 50,
+          "wickets": 0,
+          "economy": 16.7,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Sakib Hussain",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 15.5,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 17,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Will Jacks",
+          "runs": 93,
+          "over": 7.1,
+          "wkt_n": 1
+        },
+        {
+          "name": "Suryakumar Yadav",
+          "runs": 110,
+          "over": 8.3,
+          "wkt_n": 2
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 165,
+          "over": 13.4,
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
   "error": null
 }
