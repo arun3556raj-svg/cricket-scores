@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-151965",
+  "source_id": "151965",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 42,
+  "date": "2026-04-30",
+  "team1": "Royal Challengers Bengaluru",
+  "team2": "Gujarat Titans",
+  "venue": "Narendra Modi Stadium, Ahmedabad",
+  "result_text": "Gujarat Titans won by 4 wkts",
   "innings": [
     {
       "bat_team": "Royal Challengers Bengaluru",

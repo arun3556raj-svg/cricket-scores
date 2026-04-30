@@ -708,8 +708,8 @@
       "team2_short": "GT",
       "team2_color": "#0f766e",
       "venue": "Narendra Modi Stadium, Ahmedabad",
-      "status": "live",
-      "status_text": "Innings Break",
+      "status": "finished",
+      "status_text": "Gujarat Titans won by 4 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777557600000,
       "match_date": "Thu, 30 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "30 Apr, 09:35 PM",
+  "last_updated": "30 Apr, 11:12 PM",
   "error": null
 }
