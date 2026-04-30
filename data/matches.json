@@ -12,21 +12,27 @@
       "team2_short": "GT",
       "team2_color": "#0f766e",
       "team1_score1": {
-        "display": "57/2",
-        "detail": "(5.4 ov)",
-        "runs": 57,
-        "wickets": 2,
-        "overs": "5.4"
+        "display": "155",
+        "detail": "(19.2 ov)",
+        "runs": 155,
+        "wickets": 10,
+        "overs": "19.2"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "5/0",
+        "detail": "(0.2 ov)",
+        "runs": 5,
+        "wickets": 0,
+        "overs": "0.2"
+      },
       "team2_score2": null,
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "live",
-      "status_text": "Gujarat Titans opt to bowl",
+      "status_text": "Gujarat Titans need 151 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1777557600000,
-      "run_rate": 10.06
+      "run_rate": 15.0
     }
   ],
   "upcoming": [
@@ -91,6 +97,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "30 Apr, 07:58 PM",
+  "last_updated": "30 Apr, 09:35 PM",
   "error": null
 }
