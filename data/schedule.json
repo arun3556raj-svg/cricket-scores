@@ -701,15 +701,15 @@
       "id": "151965",
       "series": "Indian Premier League 2026",
       "match_desc": "42nd Match",
-      "team1": "Gujarat Titans",
-      "team1_short": "GT",
-      "team1_color": "#0f766e",
-      "team2": "Royal Challengers Bengaluru",
-      "team2_short": "RCB",
-      "team2_color": "#dc2626",
+      "team1": "Royal Challengers Bengaluru",
+      "team1_short": "RCB",
+      "team1_color": "#dc2626",
+      "team2": "Gujarat Titans",
+      "team2_short": "GT",
+      "team2_color": "#0f766e",
       "venue": "Narendra Modi Stadium, Ahmedabad",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 30, 14:00 GMT",
+      "status": "live",
+      "status_text": "Gujarat Titans opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1777557600000,
       "match_date": "Thu, 30 Apr 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "30 Apr, 05:50 PM",
+  "last_updated": "30 Apr, 07:58 PM",
   "error": null
 }

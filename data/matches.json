@@ -1,26 +1,55 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "151965",
       "series": "IPL 2026",
       "match_desc": "42nd Match",
       "match_format": "T20",
-      "team1": "Gujarat Titans",
-      "team1_short": "GT",
-      "team1_color": "#0f766e",
-      "team2": "Royal Challengers Bengaluru",
-      "team2_short": "RCB",
-      "team2_color": "#dc2626",
-      "team1_score1": null,
+      "team1": "Royal Challengers Bengaluru",
+      "team1_short": "RCB",
+      "team1_color": "#dc2626",
+      "team2": "Gujarat Titans",
+      "team2_short": "GT",
+      "team2_color": "#0f766e",
+      "team1_score1": {
+        "display": "57/2",
+        "detail": "(5.4 ov)",
+        "runs": 57,
+        "wickets": 2,
+        "overs": "5.4"
+      },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Narendra Modi Stadium, Ahmedabad",
-      "status": "upcoming",
-      "status_text": "Match starts at Apr 30, 14:00 GMT",
+      "status": "live",
+      "status_text": "Gujarat Titans opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1777557600000,
+      "run_rate": 10.06
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "151976",
+      "series": "IPL 2026",
+      "match_desc": "43rd Match",
+      "match_format": "T20",
+      "team1": "Rajasthan Royals",
+      "team1_short": "RR",
+      "team1_color": "#db2777",
+      "team2": "Delhi Capitals",
+      "team2_short": "DC",
+      "team2_color": "#0ea5e9",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "status": "upcoming",
+      "status_text": "Match starts at May 01, 14:00 GMT",
+      "start_time": "07:30 PM",
+      "start_epoch": 1777644000000,
       "run_rate": null
     }
   ],
@@ -62,6 +91,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "30 Apr, 05:50 PM",
+  "last_updated": "30 Apr, 07:58 PM",
   "error": null
 }

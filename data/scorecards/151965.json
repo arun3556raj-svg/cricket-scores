@@ -1,4 +1,198 @@
 {
-  "innings": [],
+  "innings": [
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 1,
+      "score": {
+        "runs": 57,
+        "wickets": 2,
+        "overs": 5.4,
+        "run_rate": 10.06,
+        "declared": false
+      },
+      "extras": {
+        "total": 2,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Jacob Bethell",
+          "runs": 5,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "c Rashid Khan b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Virat Kohli",
+          "runs": 28,
+          "balls": 13,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 215.38,
+          "out_desc": "c Rashid Khan b Kagiso Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "runs": 14,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 175,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rajat Patidar",
+          "runs": 8,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "batting",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jitesh Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": true
+        },
+        {
+          "name": "Tim David",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Romario Shepherd",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Krunal Pandya",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Bhuvneshwar Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Suyash Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Josh Hazlewood",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 8.7,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Kagiso Rabada",
+          "overs": 2.4,
+          "balls": 16,
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 11.2,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Jacob Bethell",
+          "runs": 34,
+          "over": 2.4,
+          "wkt_n": 1
+        },
+        {
+          "name": "Virat Kohli",
+          "runs": 35,
+          "over": 3.2,
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
   "error": null
 }
