@@ -57,47 +57,9 @@
       "status_text": "Gujarat Titans won by 4 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777557600000,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
-    },
-    {
-      "id": "151954",
-      "series": "IPL 2026",
-      "match_desc": "41th Match",
-      "match_format": "T20",
-      "team1": "Mumbai Indians",
-      "team1_short": "MI",
-      "team1_color": "#1d4ed8",
-      "team2": "Sunrisers Hyderabad",
-      "team2_short": "SRH",
-      "team2_color": "#ea580c",
-      "team1_score1": {
-        "display": "243/5",
-        "detail": "(20 ov)",
-        "runs": 243,
-        "wickets": 5,
-        "overs": 20
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "249/4",
-        "detail": "(18.4 ov)",
-        "runs": 249,
-        "wickets": 4,
-        "overs": 18.4
-      },
-      "team2_score2": null,
-      "venue": "Wankhede Stadium, Mumbai",
-      "status": "finished",
-      "status_text": "Sunrisers Hyderabad won by 6 wkts",
-      "start_time": null,
-      "start_epoch": null,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
+      "run_rate": null
     }
   ],
-  "last_updated": "01 May, 09:44 AM",
+  "last_updated": "01 May, 12:16 PM",
   "error": null
 }

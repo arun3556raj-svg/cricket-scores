@@ -129,10 +129,8 @@
   ],
   "matches": [
     {
-      "id": "prov-151965",
-      "source_id": "151965",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1211",
+      "source_id": "1529285",
       "season": 2026,
       "match_number": 42,
       "round": "League",
@@ -145,7 +143,7 @@
       "team2_color": "#0f766e",
       "winner": "Gujarat Titans",
       "result_text": "Gujarat Titans won by 4 wkts",
-      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "venue": "Narendra Modi Stadium, Ahmedabad, Ahmedabad",
       "innings": [
         {
           "number": 1,
@@ -178,10 +176,8 @@
       ]
     },
     {
-      "id": "prov-151954",
-      "source_id": "151954",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1210",
+      "source_id": "1529284",
       "season": 2026,
       "match_number": 41,
       "round": "League",
@@ -194,7 +190,7 @@
       "team2_color": "#ea580c",
       "winner": "Sunrisers Hyderabad",
       "result_text": "Sunrisers Hyderabad won by 6 wkts",
-      "venue": "Wankhede Stadium, Mumbai",
+      "venue": "Wankhede Stadium, Mumbai, Mumbai",
       "innings": [
         {
           "number": 1,
@@ -205,10 +201,10 @@
           "opponent_short": "SRH",
           "runs": 243,
           "wickets": 5,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "243/5",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
