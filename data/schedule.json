@@ -725,8 +725,8 @@
       "team2_short": "DC",
       "team2_color": "#0ea5e9",
       "venue": "Sawai Mansingh Stadium, Jaipur",
-      "status": "upcoming",
-      "status_text": "Match starts at May 01, 14:00 GMT",
+      "status": "live",
+      "status_text": "Rajasthan Royals opt to bat",
       "start_time": "07:30 PM",
       "start_epoch": 1777644000000,
       "match_date": "Fri, 01 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "01 May, 06:09 PM",
+  "last_updated": "01 May, 07:35 PM",
   "error": null
 }
