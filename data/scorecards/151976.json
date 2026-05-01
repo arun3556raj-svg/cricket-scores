@@ -5,18 +5,18 @@
       "bowl_team": "Delhi Capitals",
       "innings_id": 1,
       "score": {
-        "runs": 130,
-        "wickets": 3,
-        "overs": 14,
-        "run_rate": 9.29,
+        "runs": 225,
+        "wickets": 6,
+        "overs": 20,
+        "run_rate": 11.25,
         "declared": false
       },
       "extras": {
-        "total": 3,
-        "wides": 1,
+        "total": 9,
+        "wides": 6,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 2
+        "leg_byes": 3
       },
       "batsmen": [
         {
@@ -57,63 +57,63 @@
         },
         {
           "name": "Riyan Parag",
-          "runs": 68,
-          "balls": 41,
-          "fours": 4,
+          "runs": 90,
+          "balls": 50,
+          "fours": 8,
           "sixes": 5,
-          "strike_rate": 165.85,
-          "out_desc": "batting",
+          "strike_rate": 180,
+          "out_desc": "c Axar Patel b Mitchell Starc",
           "is_captain": true,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Ravindra Jadeja",
-          "runs": 7,
-          "balls": 8,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 87.5,
-          "out_desc": "batting",
+          "runs": 20,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 142.86,
+          "out_desc": "c Ashutosh Sharma b Mitchell Starc",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Donovan Ferreira",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 47,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 6,
+          "strike_rate": 335.71,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Shubham Dubey",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 6,
+          "balls": 6,
+          "fours": 1,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 100,
+          "out_desc": "c Ashutosh Sharma b T Natarajan",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Jofra Archer",
-          "runs": 0,
-          "balls": 0,
+          "runs": 1,
+          "balls": 1,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 100,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Ravi Bishnoi",
@@ -155,24 +155,24 @@
       "bowlers": [
         {
           "name": "Mitchell Starc",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 16,
-          "wickets": 1,
-          "economy": 8,
-          "wides": 0,
+          "runs": 40,
+          "wickets": 3,
+          "economy": 10,
+          "wides": 3,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Kyle Jamieson",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 33,
+          "runs": 48,
           "wickets": 1,
-          "economy": 11,
+          "economy": 12,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -191,25 +191,25 @@
         },
         {
           "name": "Kuldeep Yadav",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 21,
+          "runs": 41,
           "wickets": 0,
-          "economy": 7,
+          "economy": 10.2,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "T Natarajan",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 19,
-          "wickets": 0,
-          "economy": 9.5,
-          "wides": 1,
+          "runs": 54,
+          "wickets": 1,
+          "economy": 13.5,
+          "wides": 3,
           "no_balls": 0,
           "dots": 0
         }
@@ -232,8 +232,206 @@
           "runs": 114,
           "over": 11.4,
           "wkt_n": 3
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "runs": 167,
+          "over": 16.2,
+          "wkt_n": 4
+        },
+        {
+          "name": "Riyan Parag",
+          "runs": 168,
+          "over": 16.4,
+          "wkt_n": 5
+        },
+        {
+          "name": "Shubham Dubey",
+          "runs": 208,
+          "over": 19.1,
+          "wkt_n": 6
         }
       ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 15,
+        "wickets": 0,
+        "overs": 1.4,
+        "run_rate": 9,
+        "declared": false
+      },
+      "extras": {
+        "total": 1,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Pathum Nissanka",
+          "runs": 10,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 166.67,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 4,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Nitish Rana",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Tristan Stubbs",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Axar Patel",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kyle Jamieson",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mitchell Starc",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "T Natarajan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Jofra Archer",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 11,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Nandre Burger",
+          "overs": 0.4,
+          "balls": 4,
+          "maidens": 0,
+          "runs": 4,
+          "wickets": 0,
+          "economy": 6,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": []
     }
   ],
   "error": null

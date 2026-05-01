@@ -12,21 +12,27 @@
       "team2_short": "DC",
       "team2_color": "#0ea5e9",
       "team1_score1": {
-        "display": "130/3",
-        "detail": "(14 ov)",
-        "runs": 130,
-        "wickets": 3,
-        "overs": "14"
+        "display": "225/6",
+        "detail": "(20 ov)",
+        "runs": 225,
+        "wickets": 6,
+        "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "15/0",
+        "detail": "(1.2 ov)",
+        "runs": 15,
+        "wickets": 0,
+        "overs": "1.2"
+      },
       "team2_score2": null,
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "live",
-      "status_text": "Rajasthan Royals opt to bat",
+      "status_text": "Delhi Capitals need 211 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1777644000000,
-      "run_rate": 9.29
+      "run_rate": 11.25
     }
   ],
   "upcoming": [
@@ -89,6 +95,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "01 May, 08:42 PM",
+  "last_updated": "01 May, 09:40 PM",
   "error": null
 }
