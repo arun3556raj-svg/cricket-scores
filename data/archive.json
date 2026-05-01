@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-151976",
+      "source_id": "151976",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 43,
+      "round": "League",
+      "date": "2026-05-01",
+      "team1": "Rajasthan Royals",
+      "team1_short": "RR",
+      "team1_color": "#db2777",
+      "team2": "Delhi Capitals",
+      "team2_short": "DC",
+      "team2_color": "#0ea5e9",
+      "winner": "Delhi Capitals",
+      "result_text": "Delhi Capitals won by 7 wkts",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Rajasthan Royals",
+          "team_short": "RR",
+          "team_color": "#db2777",
+          "opponent": "Delhi Capitals",
+          "opponent_short": "DC",
+          "runs": 225,
+          "wickets": 6,
+          "overs": 20,
+          "target": null,
+          "display": "225/6",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Delhi Capitals",
+          "team_short": "DC",
+          "team_color": "#0ea5e9",
+          "opponent": "Rajasthan Royals",
+          "opponent_short": "RR",
+          "runs": 226,
+          "wickets": 3,
+          "overs": 19.1,
+          "target": 226,
+          "display": "226/3",
+          "detail": "(19.1 ov)"
+        }
+      ]
+    },
+    {
       "id": "1211",
       "source_id": "1529285",
       "season": 2026,
