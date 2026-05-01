@@ -258,39 +258,39 @@
       "bowl_team": "Rajasthan Royals",
       "innings_id": 2,
       "score": {
-        "runs": 15,
-        "wickets": 0,
-        "overs": 1.4,
-        "run_rate": 9,
+        "runs": 165,
+        "wickets": 1,
+        "overs": 13.5,
+        "run_rate": 11.93,
         "declared": false
       },
       "extras": {
-        "total": 1,
+        "total": 2,
         "wides": 1,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 1
       },
       "batsmen": [
         {
           "name": "Pathum Nissanka",
-          "runs": 10,
-          "balls": 6,
-          "fours": 1,
-          "sixes": 1,
-          "strike_rate": 166.67,
-          "out_desc": "batting",
+          "runs": 62,
+          "balls": 33,
+          "fours": 6,
+          "sixes": 3,
+          "strike_rate": 187.88,
+          "out_desc": "lbw b Ravindra Jadeja",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "KL Rahul",
-          "runs": 4,
-          "balls": 4,
-          "fours": 1,
-          "sixes": 0,
-          "strike_rate": 100,
+          "runs": 68,
+          "balls": 34,
+          "fours": 5,
+          "sixes": 5,
+          "strike_rate": 200,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": true,
@@ -298,15 +298,15 @@
         },
         {
           "name": "Nitish Rana",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 33,
+          "balls": 16,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 206.25,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Sameer Rizvi",
@@ -408,30 +408,85 @@
       "bowlers": [
         {
           "name": "Jofra Archer",
-          "overs": 1,
-          "balls": 6,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 11,
+          "runs": 26,
           "wickets": 0,
-          "economy": 11,
+          "economy": 13,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Nandre Burger",
-          "overs": 0.4,
-          "balls": 4,
+          "overs": 2.5,
+          "balls": 17,
           "maidens": 0,
-          "runs": 4,
+          "runs": 40,
           "wickets": 0,
-          "economy": 6,
+          "economy": 14.1,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Tushar Deshpande",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Brijesh Sharma",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 9,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Ravi Bishnoi",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 0,
+          "economy": 14,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 11,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         }
       ],
-      "fow": []
+      "fow": [
+        {
+          "name": "Pathum Nissanka",
+          "runs": 110,
+          "over": 9.3,
+          "wkt_n": 1
+        }
+      ]
     }
   ],
   "error": null

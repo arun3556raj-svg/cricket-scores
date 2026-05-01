@@ -726,7 +726,7 @@
       "team2_color": "#0ea5e9",
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "live",
-      "status_text": "Delhi Capitals need 215 runs",
+      "status_text": "Delhi Capitals need 68 runs in 40 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1777644000000,
       "match_date": "Fri, 01 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "01 May, 09:40 PM",
+  "last_updated": "01 May, 10:43 PM",
   "error": null
 }
