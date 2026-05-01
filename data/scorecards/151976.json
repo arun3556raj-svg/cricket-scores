@@ -5,18 +5,18 @@
       "bowl_team": "Delhi Capitals",
       "innings_id": 1,
       "score": {
-        "runs": 6,
-        "wickets": 1,
-        "overs": 0.5,
-        "run_rate": 7.2,
+        "runs": 130,
+        "wickets": 3,
+        "overs": 14,
+        "run_rate": 9.29,
         "declared": false
       },
       "extras": {
-        "total": 0,
-        "wides": 0,
+        "total": 3,
+        "wides": 1,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 2
       },
       "batsmen": [
         {
@@ -33,54 +33,54 @@
         },
         {
           "name": "Vaibhav Sooryavanshi",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "batting",
+          "strike_rate": 200,
+          "out_desc": "b Kyle Jamieson",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Dhruv Jurel",
-          "runs": 0,
-          "balls": 2,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "batting",
+          "runs": 42,
+          "balls": 30,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 140,
+          "out_desc": "c Tristan Stubbs b Axar Patel",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
         },
         {
           "name": "Riyan Parag",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 68,
+          "balls": 41,
+          "fours": 4,
+          "sixes": 5,
+          "strike_rate": 165.85,
+          "out_desc": "batting",
           "is_captain": true,
           "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Donovan Ferreira",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Ravindra Jadeja",
+          "runs": 7,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 87.5,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Donovan Ferreira",
           "runs": 0,
           "balls": 0,
           "fours": 0,
@@ -155,13 +155,61 @@
       "bowlers": [
         {
           "name": "Mitchell Starc",
-          "overs": 0.5,
-          "balls": 5,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 6,
+          "runs": 16,
           "wickets": 1,
-          "economy": 7.2,
+          "economy": 8,
           "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Kyle Jamieson",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 11,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Axar Patel",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 9.8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 7,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "T Natarajan",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         }
@@ -172,6 +220,18 @@
           "runs": 6,
           "over": 0.3,
           "wkt_n": 1
+        },
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "runs": 12,
+          "over": 1.5,
+          "wkt_n": 2
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 114,
+          "over": 11.4,
+          "wkt_n": 3
         }
       ]
     }

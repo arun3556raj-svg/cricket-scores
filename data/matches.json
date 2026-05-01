@@ -12,11 +12,11 @@
       "team2_short": "DC",
       "team2_color": "#0ea5e9",
       "team1_score1": {
-        "display": "6/1",
-        "detail": "(0.3 ov)",
-        "runs": 6,
-        "wickets": 1,
-        "overs": "0.3"
+        "display": "130/3",
+        "detail": "(14 ov)",
+        "runs": 130,
+        "wickets": 3,
+        "overs": "14"
       },
       "team1_score2": null,
       "team2_score1": null,
@@ -26,7 +26,7 @@
       "status_text": "Rajasthan Royals opt to bat",
       "start_time": "07:30 PM",
       "start_epoch": 1777644000000,
-      "run_rate": 12.0
+      "run_rate": 9.29
     }
   ],
   "upcoming": [
@@ -89,6 +89,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "01 May, 07:35 PM",
+  "last_updated": "01 May, 08:42 PM",
   "error": null
 }
