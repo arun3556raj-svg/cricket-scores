@@ -57,11 +57,9 @@
       "status_text": "Delhi Capitals won by 7 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777644000000,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
+      "run_rate": null
     }
   ],
-  "last_updated": "02 May, 09:58 AM",
+  "last_updated": "02 May, 11:56 AM",
   "error": null
 }

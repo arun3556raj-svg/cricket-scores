@@ -24,7 +24,7 @@
     "2026": {
       "season": 2026,
       "enhanced": true,
-      "source_note": "Includes provisional Cricbuzz results.",
+      "source_note": "Official Cricsheet archive.",
       "rows": [
         {
           "team": "Royal Challengers Bengaluru",
@@ -101,7 +101,7 @@
           "runs_against": 1828,
           "balls_against": 1130,
           "wickets_taken": 69,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": 0.51,
           "overs_for": "180.3",
           "overs_against": "188.2"
@@ -141,7 +141,7 @@
           "runs_against": 1709,
           "balls_against": 992,
           "wickets_taken": 43,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": -0.895,
           "overs_for": "174.2",
           "overs_against": "165.2"

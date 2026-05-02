@@ -129,10 +129,8 @@
   ],
   "matches": [
     {
-      "id": "prov-151976",
-      "source_id": "151976",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1212",
+      "source_id": "1529286",
       "season": 2026,
       "match_number": 43,
       "round": "League",
@@ -145,7 +143,7 @@
       "team2_color": "#0ea5e9",
       "winner": "Delhi Capitals",
       "result_text": "Delhi Capitals won by 7 wkts",
-      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "venue": "Sawai Mansingh Stadium, Jaipur, Jaipur",
       "innings": [
         {
           "number": 1,
@@ -156,10 +154,10 @@
           "opponent_short": "DC",
           "runs": 225,
           "wickets": 6,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "225/6",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
