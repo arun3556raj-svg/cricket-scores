@@ -735,15 +735,15 @@
       "id": "151987",
       "series": "Indian Premier League 2026",
       "match_desc": "44th Match",
-      "team1": "Chennai Super Kings",
-      "team1_short": "CSK",
-      "team1_color": "#d97706",
-      "team2": "Mumbai Indians",
-      "team2_short": "MI",
-      "team2_color": "#1d4ed8",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
       "venue": "MA Chidambaram Stadium, Chennai",
-      "status": "upcoming",
-      "status_text": "Match starts at May 02, 14:00 GMT",
+      "status": "live",
+      "status_text": "Mumbai Indians opt to bat",
       "start_time": "07:30 PM",
       "start_epoch": 1777730400000,
       "match_date": "Sat, 02 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "02 May, 05:29 PM",
+  "last_updated": "02 May, 07:10 PM",
   "error": null
 }

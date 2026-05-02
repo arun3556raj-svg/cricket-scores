@@ -1,28 +1,29 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "151987",
       "series": "IPL 2026",
       "match_desc": "44th Match",
       "match_format": "T20",
-      "team1": "Chennai Super Kings",
-      "team1_short": "CSK",
-      "team1_color": "#d97706",
-      "team2": "Mumbai Indians",
-      "team2_short": "MI",
-      "team2_color": "#1d4ed8",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
       "team1_score1": null,
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "MA Chidambaram Stadium, Chennai",
-      "status": "upcoming",
-      "status_text": "Match starts at May 02, 14:00 GMT",
+      "status": "live",
+      "status_text": "Mumbai Indians opt to bat",
       "start_time": "07:30 PM",
       "start_epoch": 1777730400000,
       "run_rate": null
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "151998",
       "series": "IPL 2026",
@@ -82,6 +83,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "02 May, 05:29 PM",
+  "last_updated": "02 May, 07:10 PM",
   "error": null
 }
