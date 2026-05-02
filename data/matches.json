@@ -1,40 +1,5 @@
 {
-  "live": [
-    {
-      "id": "151987",
-      "series": "IPL 2026",
-      "match_desc": "44th Match",
-      "match_format": "T20",
-      "team1": "Mumbai Indians",
-      "team1_short": "MI",
-      "team1_color": "#1d4ed8",
-      "team2": "Chennai Super Kings",
-      "team2_short": "CSK",
-      "team2_color": "#d97706",
-      "team1_score1": {
-        "display": "159/7",
-        "detail": "(20 ov)",
-        "runs": 159,
-        "wickets": 7,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "107/2",
-        "detail": "(12 ov)",
-        "runs": 107,
-        "wickets": 2,
-        "overs": "12"
-      },
-      "team2_score2": null,
-      "venue": "MA Chidambaram Stadium, Chennai",
-      "status": "live",
-      "status_text": "Chennai Super Kings need 53 runs in 48 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1777730400000,
-      "run_rate": 8.92
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "151998",
@@ -83,40 +48,42 @@
   ],
   "finished": [
     {
-      "id": "151976",
+      "id": "151987",
       "series": "IPL 2026",
-      "match_desc": "43rd Match",
+      "match_desc": "44th Match",
       "match_format": "T20",
-      "team1": "Rajasthan Royals",
-      "team1_short": "RR",
-      "team1_color": "#db2777",
-      "team2": "Delhi Capitals",
-      "team2_short": "DC",
-      "team2_color": "#0ea5e9",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
       "team1_score1": {
-        "display": "225/6",
+        "display": "159/7",
         "detail": "(20 ov)",
-        "runs": 225,
-        "wickets": 6,
+        "runs": 159,
+        "wickets": 7,
         "overs": "20"
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "226/3",
-        "detail": "(19.1 ov)",
-        "runs": 226,
-        "wickets": 3,
-        "overs": "19.1"
+        "display": "160/2",
+        "detail": "(18.1 ov)",
+        "runs": 160,
+        "wickets": 2,
+        "overs": "18.1"
       },
       "team2_score2": null,
-      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "venue": "MA Chidambaram Stadium, Chennai",
       "status": "finished",
-      "status_text": "Delhi Capitals won by 7 wkts",
+      "status_text": "Chennai Super Kings won by 8 wkts",
       "start_time": "07:30 PM",
-      "start_epoch": 1777644000000,
-      "run_rate": null
+      "start_epoch": 1777730400000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz"
     }
   ],
-  "last_updated": "02 May, 10:37 PM",
+  "last_updated": "02 May, 11:31 PM",
   "error": null
 }

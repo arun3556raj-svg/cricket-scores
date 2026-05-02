@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-151987",
+      "source_id": "151987",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 44,
+      "round": "League",
+      "date": "2026-05-02",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
+      "winner": "Chennai Super Kings",
+      "result_text": "Chennai Super Kings won by 8 wkts",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Mumbai Indians",
+          "team_short": "MI",
+          "team_color": "#1d4ed8",
+          "opponent": "Chennai Super Kings",
+          "opponent_short": "CSK",
+          "runs": 159,
+          "wickets": 7,
+          "overs": 20,
+          "target": null,
+          "display": "159/7",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Chennai Super Kings",
+          "team_short": "CSK",
+          "team_color": "#d97706",
+          "opponent": "Mumbai Indians",
+          "opponent_short": "MI",
+          "runs": 160,
+          "wickets": 2,
+          "overs": 18.1,
+          "target": 160,
+          "display": "160/2",
+          "detail": "(18.1 ov)"
+        }
+      ]
+    },
+    {
       "id": "1212",
       "source_id": "1529286",
       "season": 2026,
