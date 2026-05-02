@@ -276,15 +276,15 @@
       "bowl_team": "Mumbai Indians",
       "innings_id": 2,
       "score": {
-        "runs": 1,
-        "wickets": 0,
-        "overs": 0.2,
-        "run_rate": 3,
+        "runs": 109,
+        "wickets": 2,
+        "overs": 12.1,
+        "run_rate": 8.96,
         "declared": false
       },
       "extras": {
-        "total": 0,
-        "wides": 0,
+        "total": 2,
+        "wides": 2,
         "no_balls": 0,
         "byes": 0,
         "leg_byes": 0
@@ -292,23 +292,23 @@
       "batsmen": [
         {
           "name": "Sanju Samson",
-          "runs": 1,
-          "balls": 1,
-          "fours": 0,
+          "runs": 11,
+          "balls": 9,
+          "fours": 2,
           "sixes": 0,
-          "strike_rate": 100,
-          "out_desc": "batting",
+          "strike_rate": 122.22,
+          "out_desc": "c Ryan Rickelton b Jasprit Bumrah",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
         },
         {
           "name": "Ruturaj Gaikwad",
-          "runs": 0,
-          "balls": 1,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
+          "runs": 46,
+          "balls": 30,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 153.33,
           "out_desc": "batting",
           "is_captain": true,
           "is_keeper": false,
@@ -316,15 +316,27 @@
         },
         {
           "name": "Urvil Patel",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 24,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 200,
+          "out_desc": "b AM Ghazanfar",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Kartik Sharma",
+          "runs": 26,
+          "balls": 22,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 118.18,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
         },
         {
           "name": "Dewald Brevis",
@@ -426,18 +438,91 @@
       "bowlers": [
         {
           "name": "Trent Boult",
-          "overs": 0.2,
-          "balls": 2,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 1,
+          "runs": 24,
           "wickets": 0,
-          "economy": 3,
+          "economy": 12,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Jasprit Bumrah",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 1,
+          "economy": 6.5,
           "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Krish Bhagat",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 18,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "AM Ghazanfar",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 1,
+          "economy": 9,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Raghu Sharma",
+          "overs": 3.1,
+          "balls": 19,
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 0,
+          "economy": 6,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Hardik Pandya",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         }
       ],
-      "fow": []
+      "fow": [
+        {
+          "name": "Sanju Samson",
+          "runs": 13,
+          "over": 1.6,
+          "wkt_n": 1
+        },
+        {
+          "name": "Urvil Patel",
+          "runs": 62,
+          "over": 5.4,
+          "wkt_n": 2
+        }
+      ]
     }
   ],
   "error": null

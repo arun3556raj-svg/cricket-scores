@@ -743,7 +743,7 @@
       "team2_color": "#d97706",
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "live",
-      "status_text": "Chennai Super Kings need 159 runs",
+      "status_text": "Chennai Super Kings need 53 runs in 48 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1777730400000,
       "match_date": "Sat, 02 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "02 May, 09:41 PM",
+  "last_updated": "02 May, 10:37 PM",
   "error": null
 }
