@@ -759,8 +759,8 @@
       "team2_short": "KKR",
       "team2_color": "#7c3aed",
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "status": "upcoming",
-      "status_text": "Match starts at May 03, 10:00 GMT",
+      "status": "live",
+      "status_text": "Sunrisers Hyderabad opt to bat",
       "start_time": "03:30 PM",
       "start_epoch": 1777802400000,
       "match_date": "Sun, 03 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "03 May, 01:52 PM",
+  "last_updated": "03 May, 03:13 PM",
   "error": null
 }

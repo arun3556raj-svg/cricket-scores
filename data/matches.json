@@ -1,6 +1,5 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "151998",
       "series": "IPL 2026",
@@ -17,12 +16,14 @@
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "status": "upcoming",
-      "status_text": "Match starts at May 03, 10:00 GMT",
+      "status": "live",
+      "status_text": "Sunrisers Hyderabad opt to bat",
       "start_time": "03:30 PM",
       "start_epoch": 1777802400000,
       "run_rate": null
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "152009",
       "series": "IPL 2026",
@@ -84,6 +85,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "03 May, 01:52 PM",
+  "last_updated": "03 May, 03:13 PM",
   "error": null
 }
