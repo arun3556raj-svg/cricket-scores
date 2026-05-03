@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-151998",
+      "source_id": "151998",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 45,
+      "round": "League",
+      "date": "2026-05-03",
+      "team1": "Sunrisers Hyderabad",
+      "team1_short": "SRH",
+      "team1_color": "#ea580c",
+      "team2": "Kolkata Knight Riders",
+      "team2_short": "KKR",
+      "team2_color": "#7c3aed",
+      "winner": "Kolkata Knight Riders",
+      "result_text": "Kolkata Knight Riders won by 7 wkts",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Sunrisers Hyderabad",
+          "team_short": "SRH",
+          "team_color": "#ea580c",
+          "opponent": "Kolkata Knight Riders",
+          "opponent_short": "KKR",
+          "runs": 165,
+          "wickets": 10,
+          "overs": 19,
+          "target": null,
+          "display": "165",
+          "detail": "(19 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Kolkata Knight Riders",
+          "team_short": "KKR",
+          "team_color": "#7c3aed",
+          "opponent": "Sunrisers Hyderabad",
+          "opponent_short": "SRH",
+          "runs": 169,
+          "wickets": 3,
+          "overs": 18.2,
+          "target": 166,
+          "display": "169/3",
+          "detail": "(18.2 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-151987",
       "source_id": "151987",
       "source": "cricbuzz",

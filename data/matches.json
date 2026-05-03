@@ -1,6 +1,31 @@
 {
   "live": [
     {
+      "id": "152009",
+      "series": "IPL 2026",
+      "match_desc": "46th Match",
+      "match_format": "T20",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Gujarat Titans",
+      "team2_short": "GT",
+      "team2_color": "#0f766e",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "status": "live",
+      "status_text": "Gujarat Titans opt to bowl",
+      "start_time": "07:30 PM",
+      "start_epoch": 1777816800000,
+      "run_rate": null
+    }
+  ],
+  "upcoming": [],
+  "finished": [
+    {
       "id": "151998",
       "series": "IPL 2026",
       "match_desc": "45th Match",
@@ -20,46 +45,22 @@
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "14/0",
-        "detail": "(2 ov)",
-        "runs": 14,
-        "wickets": 0,
-        "overs": "2"
+        "display": "169/3",
+        "detail": "(18.2 ov)",
+        "runs": 169,
+        "wickets": 3,
+        "overs": "18.2"
       },
       "team2_score2": null,
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "status": "live",
-      "status_text": "Kolkata Knight Riders need 152 runs",
+      "status": "finished",
+      "status_text": "Kolkata Knight Riders won by 7 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1777802400000,
-      "run_rate": 7.0
-    }
-  ],
-  "upcoming": [
-    {
-      "id": "152009",
-      "series": "IPL 2026",
-      "match_desc": "46th Match",
-      "match_format": "T20",
-      "team1": "Gujarat Titans",
-      "team1_short": "GT",
-      "team1_color": "#0f766e",
-      "team2": "Punjab Kings",
-      "team2_short": "PBKS",
-      "team2_color": "#e11d48",
-      "team1_score1": null,
-      "team1_score2": null,
-      "team2_score1": null,
-      "team2_score2": null,
-      "venue": "Narendra Modi Stadium, Ahmedabad",
-      "status": "upcoming",
-      "status_text": "Match starts at May 03, 14:00 GMT",
-      "start_time": "07:30 PM",
-      "start_epoch": 1777816800000,
-      "run_rate": null
-    }
-  ],
-  "finished": [
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz"
+    },
     {
       "id": "151987",
       "series": "IPL 2026",
@@ -97,6 +98,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "03 May, 05:36 PM",
+  "last_updated": "03 May, 07:16 PM",
   "error": null
 }

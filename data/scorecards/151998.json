@@ -294,67 +294,79 @@
       "bowl_team": "Sunrisers Hyderabad",
       "innings_id": 2,
       "score": {
-        "runs": 20,
-        "wickets": 0,
-        "overs": 2.3,
-        "run_rate": 8,
+        "runs": 169,
+        "wickets": 3,
+        "overs": 18.2,
+        "run_rate": 9.22,
         "declared": false
       },
       "extras": {
-        "total": 0,
-        "wides": 0,
+        "total": 13,
+        "wides": 12,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 1
       },
       "batsmen": [
         {
           "name": "Ajinkya Rahane",
-          "runs": 13,
-          "balls": 8,
-          "fours": 1,
+          "runs": 43,
+          "balls": 36,
+          "fours": 4,
           "sixes": 1,
-          "strike_rate": 162.5,
-          "out_desc": "batting",
+          "strike_rate": 119.44,
+          "out_desc": "c Smaran Ravichandran b Sakib Hussain",
           "is_captain": true,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Finn Allen",
-          "runs": 7,
-          "balls": 7,
-          "fours": 1,
-          "sixes": 0,
-          "strike_rate": 100,
-          "out_desc": "batting",
+          "runs": 29,
+          "balls": 13,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 223.08,
+          "out_desc": "c Heinrich Klaasen b Pat Cummins",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Angkrish Raghuvanshi",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 59,
+          "balls": 47,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 125.53,
+          "out_desc": "c Eshan Malinga b Shivang Kumar",
           "is_captain": false,
           "is_keeper": true,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Rinku Singh",
+          "runs": 22,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 200,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
         },
         {
           "name": "Cameron Green",
-          "runs": 0,
-          "balls": 0,
+          "runs": 3,
+          "balls": 3,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 100,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Rovman Powell",
@@ -370,18 +382,6 @@
         },
         {
           "name": "Manish Pandey",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Rinku Singh",
           "runs": 0,
           "balls": 0,
           "fours": 0,
@@ -456,42 +456,97 @@
       "bowlers": [
         {
           "name": "Abhishek Sharma",
-          "overs": 1,
-          "balls": 6,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 8,
+          "runs": 14,
           "wickets": 0,
-          "economy": 8,
+          "economy": 7,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Pat Cummins",
-          "overs": 1,
-          "balls": 6,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 6,
-          "wickets": 0,
-          "economy": 6,
-          "wides": 0,
+          "runs": 47,
+          "wickets": 1,
+          "economy": 11.8,
+          "wides": 7,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Eshan Malinga",
-          "overs": 0.3,
-          "balls": 3,
+          "overs": 3.2,
+          "balls": 20,
           "maidens": 0,
-          "runs": 6,
+          "runs": 42,
           "wickets": 0,
-          "economy": 12,
+          "economy": 12.6,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Shivang Kumar",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
           "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Harshal Patel",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Sakib Hussain",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 5.7,
+          "wides": 2,
           "no_balls": 0,
           "dots": 0
         }
       ],
-      "fow": []
+      "fow": [
+        {
+          "name": "Finn Allen",
+          "runs": 49,
+          "over": 3.6,
+          "wkt_n": 1
+        },
+        {
+          "name": "Ajinkya Rahane",
+          "runs": 133,
+          "over": 14.6,
+          "wkt_n": 2
+        },
+        {
+          "name": "Angkrish Raghuvanshi",
+          "runs": 151,
+          "over": 16.4,
+          "wkt_n": 3
+        }
+      ]
     }
   ],
   "error": null
