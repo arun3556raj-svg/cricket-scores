@@ -777,7 +777,7 @@
       "team2_color": "#0f766e",
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "live",
-      "status_text": "Gujarat Titans need 152 runs",
+      "status_text": "Gujarat Titans need 65 runs in 48 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1777816800000,
       "match_date": "Sun, 03 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "03 May, 09:41 PM",
+  "last_updated": "03 May, 10:38 PM",
   "error": null
 }
