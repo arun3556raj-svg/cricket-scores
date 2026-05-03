@@ -1,0 +1,589 @@
+{
+  "match_id": "prov-152009",
+  "source_id": "152009",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 46,
+  "date": "2026-05-03",
+  "team1": "Punjab Kings",
+  "team2": "Gujarat Titans",
+  "venue": "Narendra Modi Stadium, Ahmedabad",
+  "result_text": "Gujarat Titans won by 4 wkts",
+  "innings": [
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 1,
+      "score": {
+        "runs": 163,
+        "wickets": 9,
+        "overs": 20,
+        "run_rate": 8.15,
+        "declared": false
+      },
+      "extras": {
+        "total": 8,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 2,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "c Nishant Sindhu b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Prabhsimran Singh",
+          "runs": 15,
+          "balls": 14,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 107.14,
+          "out_desc": "c Manav Suthar b Kagiso Rabada",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Cooper Connolly",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Jos Buttler b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shreyas Iyer",
+          "runs": 19,
+          "balls": 21,
+          "fours": 3,
+          "sixes": 0,
+          "strike_rate": 90.48,
+          "out_desc": "b Jason Holder",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nehal Wadhera",
+          "runs": 0,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Jos Buttler b Jason Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 57,
+          "balls": 29,
+          "fours": 3,
+          "sixes": 5,
+          "strike_rate": 196.55,
+          "out_desc": "c Jos Buttler b Kagiso Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Marcus Stoinis",
+          "runs": 40,
+          "balls": 31,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 129.03,
+          "out_desc": "c Washington Sundar b Jason Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Marco Jansen",
+          "runs": 20,
+          "balls": 11,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 181.82,
+          "out_desc": "c Shubman Gill b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Xavier Bartlett",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "b Jason Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Vijaykumar Vyshak",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.33,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Arshdeep Singh",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Yuzvendra Chahal",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 2,
+          "economy": 7,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Kagiso Rabada",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 1,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 5.5,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Jason Holder",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 4,
+          "economy": 6,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Arshad Khan",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 9.7,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Rashid Khan",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Manav Suthar",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 27,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 2,
+          "over": 0.2,
+          "wkt_n": 1
+        },
+        {
+          "name": "Cooper Connolly",
+          "runs": 2,
+          "over": 0.3,
+          "wkt_n": 2
+        },
+        {
+          "name": "Prabhsimran Singh",
+          "runs": 35,
+          "over": 5.2,
+          "wkt_n": 3
+        },
+        {
+          "name": "Nehal Wadhera",
+          "runs": 36,
+          "over": 6.3,
+          "wkt_n": 4
+        },
+        {
+          "name": "Shreyas Iyer",
+          "runs": 47,
+          "over": 8.4,
+          "wkt_n": 5
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 126,
+          "over": 15.6,
+          "wkt_n": 6
+        },
+        {
+          "name": "Marcus Stoinis",
+          "runs": 141,
+          "over": 17.4,
+          "wkt_n": 7
+        },
+        {
+          "name": "Xavier Bartlett",
+          "runs": 141,
+          "over": 17.5,
+          "wkt_n": 8
+        },
+        {
+          "name": "Marco Jansen",
+          "runs": 162,
+          "over": 19.5,
+          "wkt_n": 9
+        }
+      ]
+    },
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 167,
+        "wickets": 6,
+        "overs": 19.5,
+        "run_rate": 8.42,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Sai Sudharsan",
+          "runs": 57,
+          "balls": 41,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 139.02,
+          "out_desc": "c Xavier Bartlett b Vijaykumar Vyshak",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 5,
+          "balls": 4,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 125,
+          "out_desc": "c Cooper Connolly b Arshdeep Singh",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jos Buttler",
+          "runs": 26,
+          "balls": 22,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 118.18,
+          "out_desc": "c Shreyas Iyer b Vijaykumar Vyshak",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Nishant Sindhu",
+          "runs": 15,
+          "balls": 11,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 136.36,
+          "out_desc": "c Vijaykumar Vyshak b Marcus Stoinis",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 40,
+          "balls": 23,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 173.91,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rahul Tewatia",
+          "runs": 2,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.33,
+          "out_desc": "c Xavier Bartlett b Marco Jansen",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jason Holder",
+          "runs": 5,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 71.43,
+          "out_desc": "c Cooper Connolly b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Arshad Khan",
+          "runs": 8,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 160,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kagiso Rabada",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mohammed Siraj",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Manav Suthar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Xavier Bartlett",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 38,
+          "wickets": 0,
+          "economy": 9.5,
+          "wides": 5,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Arshdeep Singh",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 2,
+          "economy": 6,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Marco Jansen",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 8.2,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Vijaykumar Vyshak",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 2,
+          "economy": 7.8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Marcus Stoinis",
+          "overs": 2.5,
+          "balls": 17,
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 9.2,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Yuzvendra Chahal",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 13,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Shubman Gill",
+          "runs": 16,
+          "over": 1.3,
+          "wkt_n": 1
+        },
+        {
+          "name": "Jos Buttler",
+          "runs": 69,
+          "over": 8.1,
+          "wkt_n": 2
+        },
+        {
+          "name": "Nishant Sindhu",
+          "runs": 94,
+          "over": 11.3,
+          "wkt_n": 3
+        },
+        {
+          "name": "Sai Sudharsan",
+          "runs": 124,
+          "over": 14.5,
+          "wkt_n": 4
+        },
+        {
+          "name": "Rahul Tewatia",
+          "runs": 140,
+          "over": 16.6,
+          "wkt_n": 5
+        },
+        {
+          "name": "Jason Holder",
+          "runs": 152,
+          "over": 18.5,
+          "wkt_n": 6
+        }
+      ]
+    }
+  ],
+  "error": null
+}
