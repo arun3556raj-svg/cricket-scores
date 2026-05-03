@@ -5,17 +5,17 @@
       "bowl_team": "Kolkata Knight Riders",
       "innings_id": 1,
       "score": {
-        "runs": 97,
-        "wickets": 1,
-        "overs": 8.2,
-        "run_rate": 11.64,
+        "runs": 156,
+        "wickets": 7,
+        "overs": 16.5,
+        "run_rate": 9.27,
         "declared": false
       },
       "extras": {
-        "total": 1,
-        "wides": 1,
+        "total": 4,
+        "wides": 3,
         "no_balls": 0,
-        "byes": 0,
+        "byes": 1,
         "leg_byes": 0
       },
       "batsmen": [
@@ -33,99 +33,99 @@
         },
         {
           "name": "Travis Head",
-          "runs": 55,
-          "balls": 25,
+          "runs": 61,
+          "balls": 28,
           "fours": 9,
-          "sixes": 2,
-          "strike_rate": 220,
-          "out_desc": "batting",
+          "sixes": 3,
+          "strike_rate": 217.86,
+          "out_desc": "c Cameron Green b Varun Chakaravarthy",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Ishan Kishan",
-          "runs": 26,
-          "balls": 15,
-          "fours": 3,
-          "sixes": 1,
-          "strike_rate": 173.33,
-          "out_desc": "batting",
+          "runs": 42,
+          "balls": 29,
+          "fours": 4,
+          "sixes": 2,
+          "strike_rate": 144.83,
+          "out_desc": "c Anukul Roy b Sunil Narine",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
         },
         {
           "name": "Heinrich Klaasen",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 11,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 137.5,
+          "out_desc": "c Rovman Powell b Cameron Green",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Salil Arora",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Aniket Verma",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Smaran Ravichandran",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 4,
+          "balls": 4,
+          "fours": 1,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 100,
+          "out_desc": "c Ajinkya Rahane b Varun Chakaravarthy",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 6,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 75,
+          "out_desc": "c Ajinkya Rahane b Varun Chakaravarthy",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Salil Arora",
+          "runs": 2,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.33,
+          "out_desc": "b Sunil Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
         },
         {
           "name": "Pat Cummins",
-          "runs": 0,
-          "balls": 0,
+          "runs": 10,
+          "balls": 7,
           "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "sixes": 1,
+          "strike_rate": 142.86,
+          "out_desc": "batting",
           "is_captain": true,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Shivang Kumar",
-          "runs": 0,
-          "balls": 0,
+          "runs": 1,
+          "balls": 1,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 100,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Harshal Patel",
@@ -155,12 +155,12 @@
       "bowlers": [
         {
           "name": "Sunil Narine",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 20,
-          "wickets": 0,
-          "economy": 10,
+          "runs": 31,
+          "wickets": 2,
+          "economy": 7.8,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -179,36 +179,48 @@
         },
         {
           "name": "Kartik Tyagi",
-          "overs": 2,
-          "balls": 12,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 20,
+          "runs": 24,
           "wickets": 1,
-          "economy": 10,
+          "economy": 8,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Cameron Green",
-          "overs": 1,
-          "balls": 6,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 14,
-          "wickets": 0,
-          "economy": 14,
-          "wides": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 11.3,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Varun Chakaravarthy",
-          "overs": 1.2,
-          "balls": 8,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 21,
+          "runs": 36,
+          "wickets": 3,
+          "economy": 9,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Anukul Roy",
+          "overs": 0.5,
+          "balls": 5,
+          "maidens": 0,
+          "runs": 8,
           "wickets": 0,
-          "economy": 15.8,
+          "economy": 9.6,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -220,6 +232,42 @@
           "runs": 44,
           "over": 3.4,
           "wkt_n": 1
+        },
+        {
+          "name": "Travis Head",
+          "runs": 105,
+          "over": 8.6,
+          "wkt_n": 2
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 117,
+          "over": 10.4,
+          "wkt_n": 3
+        },
+        {
+          "name": "Smaran Ravichandran",
+          "runs": 122,
+          "over": 11.3,
+          "wkt_n": 4
+        },
+        {
+          "name": "Aniket Verma",
+          "runs": 135,
+          "over": 13.4,
+          "wkt_n": 5
+        },
+        {
+          "name": "Salil Arora",
+          "runs": 139,
+          "over": 15.1,
+          "wkt_n": 6
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 148,
+          "over": 15.6,
+          "wkt_n": 7
         }
       ]
     }
