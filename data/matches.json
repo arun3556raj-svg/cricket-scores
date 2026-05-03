@@ -12,21 +12,27 @@
       "team2_short": "KKR",
       "team2_color": "#7c3aed",
       "team1_score1": {
-        "display": "156/7",
-        "detail": "(16.5 ov)",
-        "runs": 156,
-        "wickets": 7,
-        "overs": "16.5"
+        "display": "165",
+        "detail": "(19 ov)",
+        "runs": 165,
+        "wickets": 10,
+        "overs": "19"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "14/0",
+        "detail": "(2 ov)",
+        "runs": 14,
+        "wickets": 0,
+        "overs": "2"
+      },
       "team2_score2": null,
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "live",
-      "status_text": "Sunrisers Hyderabad opt to bat",
+      "status_text": "Kolkata Knight Riders need 152 runs",
       "start_time": "03:30 PM",
       "start_epoch": 1777802400000,
-      "run_rate": 9.27
+      "run_rate": 7.0
     }
   ],
   "upcoming": [
@@ -91,6 +97,6 @@
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "03 May, 04:56 PM",
+  "last_updated": "03 May, 05:36 PM",
   "error": null
 }

@@ -760,7 +760,7 @@
       "team2_color": "#7c3aed",
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "live",
-      "status_text": "Sunrisers Hyderabad opt to bat",
+      "status_text": "Kolkata Knight Riders need 156 runs",
       "start_time": "03:30 PM",
       "start_epoch": 1777802400000,
       "match_date": "Sun, 03 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "03 May, 04:56 PM",
+  "last_updated": "03 May, 05:36 PM",
   "error": null
 }
