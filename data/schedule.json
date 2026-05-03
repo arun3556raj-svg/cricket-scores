@@ -777,7 +777,7 @@
       "team2_color": "#0f766e",
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "live",
-      "status_text": "Gujarat Titans opt to bowl",
+      "status_text": "Gujarat Titans need 152 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1777816800000,
       "match_date": "Sun, 03 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "03 May, 08:58 PM",
+  "last_updated": "03 May, 09:41 PM",
   "error": null
 }
