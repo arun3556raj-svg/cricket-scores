@@ -5,15 +5,15 @@
       "bowl_team": "Gujarat Titans",
       "innings_id": 1,
       "score": {
-        "runs": 38,
-        "wickets": 4,
-        "overs": 6.5,
-        "run_rate": 5.56,
+        "runs": 133,
+        "wickets": 6,
+        "overs": 16.5,
+        "run_rate": 7.9,
         "declared": false
       },
       "extras": {
-        "total": 3,
-        "wides": 2,
+        "total": 5,
+        "wides": 4,
         "no_balls": 0,
         "byes": 0,
         "leg_byes": 1
@@ -57,12 +57,12 @@
         },
         {
           "name": "Shreyas Iyer",
-          "runs": 17,
-          "balls": 17,
+          "runs": 19,
+          "balls": 21,
           "fours": 3,
           "sixes": 0,
-          "strike_rate": 100,
-          "out_desc": "batting",
+          "strike_rate": 90.48,
+          "out_desc": "b Jason Holder",
           "is_captain": true,
           "is_keeper": false,
           "not_out": false
@@ -81,6 +81,30 @@
         },
         {
           "name": "Suryansh Shedge",
+          "runs": 57,
+          "balls": 29,
+          "fours": 3,
+          "sixes": 5,
+          "strike_rate": 196.55,
+          "out_desc": "c Jos Buttler b Kagiso Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Marcus Stoinis",
+          "runs": 34,
+          "balls": 27,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 125.93,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Marco Jansen",
           "runs": 1,
           "balls": 1,
           "fours": 0,
@@ -90,30 +114,6 @@
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
-        },
-        {
-          "name": "Marcus Stoinis",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Marco Jansen",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
         },
         {
           "name": "Xavier Bartlett",
@@ -155,36 +155,72 @@
       "bowlers": [
         {
           "name": "Mohammed Siraj",
-          "overs": 3,
-          "balls": 18,
+          "overs": 3.5,
+          "balls": 23,
           "maidens": 0,
-          "runs": 20,
+          "runs": 27,
           "wickets": 2,
-          "economy": 6.7,
-          "wides": 0,
+          "economy": 7,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Kagiso Rabada",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 1,
-          "runs": 14,
-          "wickets": 1,
-          "economy": 4.7,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 5.5,
           "wides": 2,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Jason Holder",
-          "overs": 0.5,
-          "balls": 5,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 3,
-          "wickets": 1,
-          "economy": 3.6,
+          "runs": 17,
+          "wickets": 2,
+          "economy": 5.7,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Arshad Khan",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 0,
+          "economy": 10.5,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Rashid Khan",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 6,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Manav Suthar",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 27,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -214,6 +250,18 @@
           "runs": 36,
           "over": 6.3,
           "wkt_n": 4
+        },
+        {
+          "name": "Shreyas Iyer",
+          "runs": 47,
+          "over": 8.4,
+          "wkt_n": 5
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 126,
+          "over": 15.6,
+          "wkt_n": 6
         }
       ]
     }
