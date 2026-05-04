@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-152020",
+  "source_id": "152020",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 47,
+  "date": "2026-05-04",
+  "team1": "Lucknow Super Giants",
+  "team2": "Mumbai Indians",
+  "venue": "Wankhede Stadium, Mumbai",
+  "result_text": "Mumbai Indians won by 6 wkts",
   "innings": [
     {
       "bat_team": "Lucknow Super Giants",
