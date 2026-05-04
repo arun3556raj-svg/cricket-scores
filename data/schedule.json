@@ -786,15 +786,15 @@
       "id": "152020",
       "series": "Indian Premier League 2026",
       "match_desc": "47th Match",
-      "team1": "Mumbai Indians",
-      "team1_short": "MI",
-      "team1_color": "#1d4ed8",
-      "team2": "Lucknow Super Giants",
-      "team2_short": "LSG",
-      "team2_color": "#0284c7",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Mumbai Indians",
+      "team2_short": "MI",
+      "team2_color": "#1d4ed8",
       "venue": "Wankhede Stadium, Mumbai",
-      "status": "upcoming",
-      "status_text": "Match starts at May 04, 14:00 GMT",
+      "status": "live",
+      "status_text": "Mumbai Indians opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1777903200000,
       "match_date": "Mon, 04 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "04 May, 06:30 PM",
+  "last_updated": "04 May, 08:45 PM",
   "error": null
 }
