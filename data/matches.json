@@ -18,7 +18,7 @@
       "team2_score2": null,
       "venue": "Wankhede Stadium, Mumbai",
       "status": "upcoming",
-      "status_text": "Preview",
+      "status_text": "Match starts at May 04, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1777903200000,
       "run_rate": null
@@ -94,6 +94,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "04 May, 04:48 PM",
+  "last_updated": "04 May, 06:30 PM",
   "error": null
 }
