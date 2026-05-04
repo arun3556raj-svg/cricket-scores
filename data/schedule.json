@@ -794,7 +794,7 @@
       "team2_color": "#1d4ed8",
       "venue": "Wankhede Stadium, Mumbai",
       "status": "live",
-      "status_text": "Mumbai Indians opt to bowl",
+      "status_text": "Mumbai Indians need 86 runs in 55 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1777903200000,
       "match_date": "Mon, 04 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "04 May, 08:45 PM",
+  "last_updated": "04 May, 10:33 PM",
   "error": null
 }

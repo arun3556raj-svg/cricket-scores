@@ -1,6 +1,5 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "152020",
       "series": "IPL 2026",
@@ -13,22 +12,30 @@
       "team2_short": "MI",
       "team2_color": "#1d4ed8",
       "team1_score1": {
-        "display": "164/5",
-        "detail": "(13 ov)",
-        "runs": 164,
+        "display": "228/5",
+        "detail": "(20 ov)",
+        "runs": 228,
         "wickets": 5,
-        "overs": "13"
+        "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "144/1",
+        "detail": "(11 ov)",
+        "runs": 144,
+        "wickets": 1,
+        "overs": "11"
+      },
       "team2_score2": null,
       "venue": "Wankhede Stadium, Mumbai",
-      "status": "upcoming",
-      "status_text": "Strategic Timeout",
+      "status": "live",
+      "status_text": "Mumbai Indians need 85 runs in 54 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1777903200000,
-      "run_rate": null
-    },
+      "run_rate": 13.09
+    }
+  ],
+  "upcoming": [
     {
       "id": "152031",
       "series": "IPL 2026",
@@ -88,6 +95,6 @@
       "run_rate": null
     }
   ],
-  "last_updated": "04 May, 08:45 PM",
+  "last_updated": "04 May, 10:33 PM",
   "error": null
 }
