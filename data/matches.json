@@ -18,49 +18,13 @@
       "team2_score2": null,
       "venue": "Wankhede Stadium, Mumbai",
       "status": "upcoming",
-      "status_text": "Match starts at May 04, 14:00 GMT",
+      "status_text": "Preview",
       "start_time": "07:30 PM",
       "start_epoch": 1777903200000,
       "run_rate": null
     }
   ],
   "finished": [
-    {
-      "id": "152009",
-      "series": "IPL 2026",
-      "match_desc": "46th Match",
-      "match_format": "T20",
-      "team1": "Punjab Kings",
-      "team1_short": "PBKS",
-      "team1_color": "#e11d48",
-      "team2": "Gujarat Titans",
-      "team2_short": "GT",
-      "team2_color": "#0f766e",
-      "team1_score1": {
-        "display": "163/9",
-        "detail": "(20 ov)",
-        "runs": 163,
-        "wickets": 9,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "167/6",
-        "detail": "(19.5 ov)",
-        "runs": 167,
-        "wickets": 6,
-        "overs": "19.5"
-      },
-      "team2_score2": null,
-      "venue": "Narendra Modi Stadium, Ahmedabad",
-      "status": "finished",
-      "status_text": "Gujarat Titans won by 4 wkts",
-      "start_time": "07:30 PM",
-      "start_epoch": 1777816800000,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
-    },
     {
       "id": "151998",
       "series": "IPL 2026",
@@ -93,47 +57,43 @@
       "status_text": "Kolkata Knight Riders won by 7 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1777802400000,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
+      "run_rate": null
     },
     {
-      "id": "151987",
+      "id": "152009",
       "series": "IPL 2026",
-      "match_desc": "44th Match",
+      "match_desc": "46th Match",
       "match_format": "T20",
-      "team1": "Mumbai Indians",
-      "team1_short": "MI",
-      "team1_color": "#1d4ed8",
-      "team2": "Chennai Super Kings",
-      "team2_short": "CSK",
-      "team2_color": "#d97706",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Gujarat Titans",
+      "team2_short": "GT",
+      "team2_color": "#0f766e",
       "team1_score1": {
-        "display": "159/7",
+        "display": "163/9",
         "detail": "(20 ov)",
-        "runs": 159,
-        "wickets": 7,
-        "overs": 20
+        "runs": 163,
+        "wickets": 9,
+        "overs": "20"
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "160/2",
-        "detail": "(18.1 ov)",
-        "runs": 160,
-        "wickets": 2,
-        "overs": 18.1
+        "display": "167/6",
+        "detail": "(19.5 ov)",
+        "runs": 167,
+        "wickets": 6,
+        "overs": "19.5"
       },
       "team2_score2": null,
-      "venue": "MA Chidambaram Stadium, Chennai",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "finished",
-      "status_text": "Chennai Super Kings won by 8 wkts",
-      "start_time": null,
-      "start_epoch": null,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
+      "status_text": "Gujarat Titans won by 4 wkts",
+      "start_time": "07:30 PM",
+      "start_epoch": 1777816800000,
+      "run_rate": null
     }
   ],
-  "last_updated": "04 May, 09:34 AM",
+  "last_updated": "04 May, 12:21 PM",
   "error": null
 }

@@ -794,7 +794,7 @@
       "team2_color": "#0284c7",
       "venue": "Wankhede Stadium, Mumbai",
       "status": "upcoming",
-      "status_text": "Match starts at May 04, 14:00 GMT",
+      "status_text": "Preview",
       "start_time": "07:30 PM",
       "start_epoch": 1777903200000,
       "match_date": "Mon, 04 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "04 May, 09:34 AM",
+  "last_updated": "04 May, 12:21 PM",
   "error": null
 }
