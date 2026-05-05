@@ -1,40 +1,5 @@
 {
-  "live": [
-    {
-      "id": "152031",
-      "series": "IPL 2026",
-      "match_desc": "48th Match",
-      "match_format": "T20",
-      "team1": "Delhi Capitals",
-      "team1_short": "DC",
-      "team1_color": "#0ea5e9",
-      "team2": "Chennai Super Kings",
-      "team2_short": "CSK",
-      "team2_color": "#d97706",
-      "team1_score1": {
-        "display": "155/7",
-        "detail": "(20 ov)",
-        "runs": 155,
-        "wickets": 7,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "96/2",
-        "detail": "(12 ov)",
-        "runs": 96,
-        "wickets": 2,
-        "overs": "12"
-      },
-      "team2_score2": null,
-      "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "live",
-      "status_text": "Chennai Super Kings need 60 runs in 48 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1777989600000,
-      "run_rate": 8.0
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "152042",
@@ -61,6 +26,42 @@
   ],
   "finished": [
     {
+      "id": "152031",
+      "series": "IPL 2026",
+      "match_desc": "48th Match",
+      "match_format": "T20",
+      "team1": "Delhi Capitals",
+      "team1_short": "DC",
+      "team1_color": "#0ea5e9",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
+      "team1_score1": {
+        "display": "155/7",
+        "detail": "(20 ov)",
+        "runs": 155,
+        "wickets": 7,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "159/2",
+        "detail": "(17.3 ov)",
+        "runs": 159,
+        "wickets": 2,
+        "overs": "17.3"
+      },
+      "team2_score2": null,
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "status": "finished",
+      "status_text": "Chennai Super Kings won by 8 wkts",
+      "start_time": "07:30 PM",
+      "start_epoch": 1777989600000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz"
+    },
+    {
       "id": "152020",
       "series": "IPL 2026",
       "match_desc": "47th Match",
@@ -76,7 +77,7 @@
         "detail": "(20 ov)",
         "runs": 228,
         "wickets": 5,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -84,19 +85,19 @@
         "detail": "(18.4 ov)",
         "runs": 229,
         "wickets": 4,
-        "overs": "18.4"
+        "overs": 18.4
       },
       "team2_score2": null,
       "venue": "Wankhede Stadium, Mumbai",
       "status": "finished",
       "status_text": "Mumbai Indians won by 6 wkts",
-      "start_time": "07:30 PM",
-      "start_epoch": 1777903200000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "05 May, 10:28 PM",
+  "last_updated": "05 May, 11:45 PM",
   "error": null
 }

@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152031",
+      "source_id": "152031",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 48,
+      "round": "League",
+      "date": "2026-05-05",
+      "team1": "Delhi Capitals",
+      "team1_short": "DC",
+      "team1_color": "#0ea5e9",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
+      "winner": "Chennai Super Kings",
+      "result_text": "Chennai Super Kings won by 8 wkts",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Delhi Capitals",
+          "team_short": "DC",
+          "team_color": "#0ea5e9",
+          "opponent": "Chennai Super Kings",
+          "opponent_short": "CSK",
+          "runs": 155,
+          "wickets": 7,
+          "overs": 20,
+          "target": null,
+          "display": "155/7",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Chennai Super Kings",
+          "team_short": "CSK",
+          "team_color": "#d97706",
+          "opponent": "Delhi Capitals",
+          "opponent_short": "DC",
+          "runs": 159,
+          "wickets": 2,
+          "overs": 17.3,
+          "target": 156,
+          "display": "159/2",
+          "detail": "(17.3 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152020",
       "source_id": "152020",
       "source": "cricbuzz",

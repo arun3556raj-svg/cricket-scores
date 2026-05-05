@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-152031",
+  "source_id": "152031",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 48,
+  "date": "2026-05-05",
+  "team1": "Delhi Capitals",
+  "team2": "Chennai Super Kings",
+  "venue": "Arun Jaitley Stadium, Delhi",
+  "result_text": "Chennai Super Kings won by 8 wkts",
   "innings": [
     {
       "bat_team": "Delhi Capitals",
