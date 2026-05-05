@@ -810,8 +810,8 @@
       "team2_short": "CSK",
       "team2_color": "#d97706",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "upcoming",
-      "status_text": "Match starts at May 05, 14:00 GMT",
+      "status": "live",
+      "status_text": "Chennai Super Kings need 60 runs in 48 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1777989600000,
       "match_date": "Tue, 05 May 2026"
@@ -1191,6 +1191,6 @@
       "match_date": "Sun, 24 May 2026"
     }
   ],
-  "last_updated": "05 May, 06:29 PM",
+  "last_updated": "05 May, 10:28 PM",
   "error": null
 }

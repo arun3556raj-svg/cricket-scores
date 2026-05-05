@@ -1,4 +1,517 @@
 {
-  "innings": [],
+  "innings": [
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 155,
+        "wickets": 7,
+        "overs": 20,
+        "run_rate": 7.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 2,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Pathum Nissanka",
+          "runs": 19,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 126.67,
+          "out_desc": "c Dewald Brevis b Mukesh Choudhary",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 12,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 92.31,
+          "out_desc": "c Ruturaj Gaikwad b Akeal Hosein",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Nitish Rana",
+          "runs": 15,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 115.38,
+          "out_desc": "c Kartik Sharma b Noor Ahmad",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Karun Nair",
+          "runs": 13,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "c Gurjapneet Singh b Noor Ahmad",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Axar Patel",
+          "runs": 2,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.33,
+          "out_desc": "c Akeal Hosein b Gurjapneet Singh",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tristan Stubbs",
+          "runs": 38,
+          "balls": 31,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 122.58,
+          "out_desc": "c Mukesh Choudhary b Jamie Overton",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sameer Rizvi",
+          "runs": 40,
+          "balls": 24,
+          "fours": 0,
+          "sixes": 4,
+          "strike_rate": 166.67,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 14,
+          "balls": 5,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 280,
+          "out_desc": "run out (Ruturaj Gaikwad)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mitchell Starc",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Lungi Ngidi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "T Natarajan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Akeal Hosein",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 4.8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Mukesh Choudhary",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Anshul Kamboj",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 49,
+          "wickets": 0,
+          "economy": 12.2,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Noor Ahmad",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Gurjapneet Singh",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 1,
+          "economy": 7.2,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Jamie Overton",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 5,
+          "wickets": 1,
+          "economy": 5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Pathum Nissanka",
+          "runs": 29,
+          "over": 3.6,
+          "wkt_n": 1
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 36,
+          "over": 5.1,
+          "wkt_n": 2
+        },
+        {
+          "name": "Karun Nair",
+          "runs": 52,
+          "over": 7.6,
+          "wkt_n": 3
+        },
+        {
+          "name": "Nitish Rana",
+          "runs": 61,
+          "over": 9.3,
+          "wkt_n": 4
+        },
+        {
+          "name": "Axar Patel",
+          "runs": 69,
+          "over": 10.6,
+          "wkt_n": 5
+        },
+        {
+          "name": "Tristan Stubbs",
+          "runs": 134,
+          "over": 18.5,
+          "wkt_n": 6
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 149,
+          "over": 19.5,
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Delhi Capitals",
+      "innings_id": 2,
+      "score": {
+        "runs": 100,
+        "wickets": 2,
+        "overs": 12.1,
+        "run_rate": 8.22,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 6,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Sanju Samson",
+          "runs": 54,
+          "balls": 33,
+          "fours": 4,
+          "sixes": 4,
+          "strike_rate": 163.64,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Ruturaj Gaikwad",
+          "runs": 6,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 46.15,
+          "out_desc": "c Sameer Rizvi b Lungi Ngidi",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Urvil Patel",
+          "runs": 17,
+          "balls": 9,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 188.89,
+          "out_desc": "st KL Rahul b Axar Patel",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kartik Sharma",
+          "runs": 16,
+          "balls": 18,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 88.89,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dewald Brevis",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jamie Overton",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Akeal Hosein",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Noor Ahmad",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Anshul Kamboj",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mukesh Choudhary",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Gurjapneet Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mitchell Starc",
+          "overs": 2.1,
+          "balls": 13,
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 6.5,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Axar Patel",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 1,
+          "economy": 6.2,
+          "wides": 5,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Lungi Ngidi",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 1,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Kuldeep Yadav",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 0,
+          "economy": 11.3,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "T Natarajan",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 9,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Ruturaj Gaikwad",
+          "runs": 24,
+          "over": 3.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "Urvil Patel",
+          "runs": 45,
+          "over": 6.3,
+          "wkt_n": 2
+        }
+      ]
+    }
+  ],
   "error": null
 }
