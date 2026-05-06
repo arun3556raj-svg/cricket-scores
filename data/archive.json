@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152042",
+      "source_id": "152042",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 49,
+      "round": "League",
+      "date": "2026-05-06",
+      "team1": "Sunrisers Hyderabad",
+      "team1_short": "SRH",
+      "team1_color": "#ea580c",
+      "team2": "Punjab Kings",
+      "team2_short": "PBKS",
+      "team2_color": "#e11d48",
+      "winner": "Sunrisers Hyderabad",
+      "result_text": "Sunrisers Hyderabad won by 33 runs",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Sunrisers Hyderabad",
+          "team_short": "SRH",
+          "team_color": "#ea580c",
+          "opponent": "Punjab Kings",
+          "opponent_short": "PBKS",
+          "runs": 235,
+          "wickets": 4,
+          "overs": 20,
+          "target": null,
+          "display": "235/4",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Punjab Kings",
+          "team_short": "PBKS",
+          "team_color": "#e11d48",
+          "opponent": "Sunrisers Hyderabad",
+          "opponent_short": "SRH",
+          "runs": 202,
+          "wickets": 7,
+          "overs": 20,
+          "target": 236,
+          "display": "202/7",
+          "detail": "(20 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152031",
       "source_id": "152031",
       "source": "cricbuzz",

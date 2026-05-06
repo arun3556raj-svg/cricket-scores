@@ -1,40 +1,5 @@
 {
-  "live": [
-    {
-      "id": "152042",
-      "series": "IPL 2026",
-      "match_desc": "49th Match",
-      "match_format": "T20",
-      "team1": "Sunrisers Hyderabad",
-      "team1_short": "SRH",
-      "team1_color": "#ea580c",
-      "team2": "Punjab Kings",
-      "team2_short": "PBKS",
-      "team2_color": "#e11d48",
-      "team1_score1": {
-        "display": "235/4",
-        "detail": "(20 ov)",
-        "runs": 235,
-        "wickets": 4,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "125/6",
-        "detail": "(13.5 ov)",
-        "runs": 125,
-        "wickets": 6,
-        "overs": "13.5"
-      },
-      "team2_score2": null,
-      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "status": "live",
-      "status_text": "Punjab Kings need 111 runs in 37 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1778076000000,
-      "run_rate": 9.04
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "152053",
@@ -61,6 +26,42 @@
   ],
   "finished": [
     {
+      "id": "152042",
+      "series": "IPL 2026",
+      "match_desc": "49th Match",
+      "match_format": "T20",
+      "team1": "Sunrisers Hyderabad",
+      "team1_short": "SRH",
+      "team1_color": "#ea580c",
+      "team2": "Punjab Kings",
+      "team2_short": "PBKS",
+      "team2_color": "#e11d48",
+      "team1_score1": {
+        "display": "235/4",
+        "detail": "(20 ov)",
+        "runs": 235,
+        "wickets": 4,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "202/7",
+        "detail": "(20 ov)",
+        "runs": 202,
+        "wickets": 7,
+        "overs": "20"
+      },
+      "team2_score2": null,
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "status": "finished",
+      "status_text": "Sunrisers Hyderabad won by 33 runs",
+      "start_time": "07:30 PM",
+      "start_epoch": 1778076000000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz"
+    },
+    {
       "id": "152031",
       "series": "IPL 2026",
       "match_desc": "48th Match",
@@ -76,7 +77,7 @@
         "detail": "(20 ov)",
         "runs": 155,
         "wickets": 7,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -84,19 +85,19 @@
         "detail": "(17.3 ov)",
         "runs": 159,
         "wickets": 2,
-        "overs": "17.3"
+        "overs": 17.3
       },
       "team2_score2": null,
       "venue": "Arun Jaitley Stadium, Delhi",
       "status": "finished",
       "status_text": "Chennai Super Kings won by 8 wkts",
-      "start_time": "07:30 PM",
-      "start_epoch": 1777989600000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz"
     }
   ],
-  "last_updated": "06 May, 10:37 PM",
+  "last_updated": "07 May, 12:26 AM",
   "error": null
 }

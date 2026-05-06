@@ -1,0 +1,541 @@
+{
+  "match_id": "prov-152042",
+  "source_id": "152042",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 49,
+  "date": "2026-05-06",
+  "team1": "Sunrisers Hyderabad",
+  "team2": "Punjab Kings",
+  "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+  "result_text": "Sunrisers Hyderabad won by 33 runs",
+  "innings": [
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 235,
+        "wickets": 4,
+        "overs": 20,
+        "run_rate": 11.75,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 2,
+        "leg_byes": 2
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 35,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 269.23,
+          "out_desc": "c Shreyas Iyer b Lockie Ferguson",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Travis Head",
+          "runs": 38,
+          "balls": 19,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 200,
+          "out_desc": "c Marco Jansen b Yuzvendra Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 55,
+          "balls": 32,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 171.88,
+          "out_desc": "c Suryansh Shedge b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 69,
+          "balls": 43,
+          "fours": 3,
+          "sixes": 4,
+          "strike_rate": 160.47,
+          "out_desc": "c Marco Jansen b Vijaykumar Vyshak",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "runs": 29,
+          "balls": 13,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 223.08,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Salil Arora",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Smaran Ravichandran",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Pat Cummins",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Shivang Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Eshan Malinga",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Sakib Hussain",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 43,
+          "wickets": 1,
+          "economy": 10.8,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Marco Jansen",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 61,
+          "wickets": 0,
+          "economy": 15.2,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Lockie Ferguson",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 41,
+          "wickets": 1,
+          "economy": 10.2,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Yuzvendra Chahal",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 8,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Vijaykumar Vyshak",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 54,
+          "wickets": 1,
+          "economy": 13.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 54,
+          "over": 3.3,
+          "wkt_n": 1
+        },
+        {
+          "name": "Travis Head",
+          "runs": 84,
+          "over": 6.4,
+          "wkt_n": 2
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 172,
+          "over": 14.4,
+          "wkt_n": 3
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 235,
+          "over": 19.6,
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Punjab Kings",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 2,
+      "score": {
+        "runs": 202,
+        "wickets": 7,
+        "overs": 20,
+        "run_rate": 10.1,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 7,
+        "no_balls": 2,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.33,
+          "out_desc": "c Eshan Malinga b Pat Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Prabhsimran Singh",
+          "runs": 3,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75,
+          "out_desc": "c Pat Cummins b Nitish Reddy",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Cooper Connolly",
+          "runs": 107,
+          "balls": 59,
+          "fours": 7,
+          "sixes": 8,
+          "strike_rate": 181.36,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shreyas Iyer",
+          "runs": 5,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "c Pat Cummins b Eshan Malinga",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Marcus Stoinis",
+          "runs": 28,
+          "balls": 14,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 200,
+          "out_desc": "c Ishan Kishan b Shivang Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 25,
+          "balls": 17,
+          "fours": 1,
+          "sixes": 2,
+          "strike_rate": 147.06,
+          "out_desc": "c Abhishek Sharma b Pat Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 4,
+          "balls": 3,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 133.33,
+          "out_desc": "c Nitish Reddy b Sakib Hussain",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Marco Jansen",
+          "runs": 19,
+          "balls": 16,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 118.75,
+          "out_desc": "c Harsh Dubey b Shivang Kumar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Vijaykumar Vyshak",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Lockie Ferguson",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Arshdeep Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Yuzvendra Chahal",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Pat Cummins",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 2,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 1,
+          "dots": 0
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 1,
+          "economy": 5.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Eshan Malinga",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Sakib Hussain",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 1,
+          "economy": 10,
+          "wides": 2,
+          "no_balls": 1,
+          "dots": 0
+        },
+        {
+          "name": "Shivang Kumar",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 2,
+          "economy": 11.2,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Harsh Dubey",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 36,
+          "wickets": 0,
+          "economy": 18,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Priyansh Arya",
+          "runs": 4,
+          "over": 0.6,
+          "wkt_n": 1
+        },
+        {
+          "name": "Prabhsimran Singh",
+          "runs": 4,
+          "over": 1.1,
+          "wkt_n": 2
+        },
+        {
+          "name": "Shreyas Iyer",
+          "runs": 23,
+          "over": 3.2,
+          "wkt_n": 3
+        },
+        {
+          "name": "Marcus Stoinis",
+          "runs": 63,
+          "over": 6.4,
+          "wkt_n": 4
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 110,
+          "over": 11.4,
+          "wkt_n": 5
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 119,
+          "over": 12.3,
+          "wkt_n": 6
+        },
+        {
+          "name": "Marco Jansen",
+          "runs": 187,
+          "over": 19.1,
+          "wkt_n": 7
+        }
+      ]
+    }
+  ],
+  "error": null
+}

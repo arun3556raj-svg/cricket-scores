@@ -827,8 +827,8 @@
       "team2_short": "PBKS",
       "team2_color": "#e11d48",
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "status": "live",
-      "status_text": "Punjab Kings need 113 runs in 39 balls",
+      "status": "finished",
+      "status_text": "Sunrisers Hyderabad won by 33 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1778076000000,
       "match_date": "Wed, 06 May 2026"
@@ -1259,6 +1259,6 @@
       "match_date": "Sun, 31 May 2026"
     }
   ],
-  "last_updated": "06 May, 10:37 PM",
+  "last_updated": "07 May, 12:26 AM",
   "error": null
 }
