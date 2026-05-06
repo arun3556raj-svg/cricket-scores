@@ -827,8 +827,8 @@
       "team2_short": "PBKS",
       "team2_color": "#e11d48",
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "status": "upcoming",
-      "status_text": "Match starts at May 06, 14:00 GMT",
+      "status": "live",
+      "status_text": "Punjab Kings opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778076000000,
       "match_date": "Wed, 06 May 2026"
@@ -1259,6 +1259,6 @@
       "match_date": "Sun, 31 May 2026"
     }
   ],
-  "last_updated": "06 May, 06:35 PM",
+  "last_updated": "06 May, 09:01 PM",
   "error": null
 }
