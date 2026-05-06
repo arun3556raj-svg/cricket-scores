@@ -129,6 +129,53 @@
   ],
   "matches": [
     {
+      "id": "1216",
+      "source_id": "1529290",
+      "season": 2026,
+      "match_number": 47,
+      "round": "League",
+      "date": "2026-05-04",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Mumbai Indians",
+      "team2_short": "MI",
+      "team2_color": "#1d4ed8",
+      "winner": "Mumbai Indians",
+      "result_text": "Mumbai Indians won by 6 wkts",
+      "venue": "Wankhede Stadium, Mumbai, Mumbai",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Lucknow Super Giants",
+          "team_short": "LSG",
+          "team_color": "#0284c7",
+          "opponent": "Mumbai Indians",
+          "opponent_short": "MI",
+          "runs": 228,
+          "wickets": 5,
+          "overs": 20.0,
+          "target": null,
+          "display": "228/5",
+          "detail": "(20.0 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Mumbai Indians",
+          "team_short": "MI",
+          "team_color": "#1d4ed8",
+          "opponent": "Lucknow Super Giants",
+          "opponent_short": "LSG",
+          "runs": 229,
+          "wickets": 4,
+          "overs": 18.4,
+          "target": 229,
+          "display": "229/4",
+          "detail": "(18.4 ov)"
+        }
+      ]
+    },
+    {
       "id": "1215",
       "source_id": "1529289",
       "season": 2026,
