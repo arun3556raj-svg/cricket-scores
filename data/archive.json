@@ -178,10 +178,8 @@
       ]
     },
     {
-      "id": "prov-152020",
-      "source_id": "152020",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1216",
+      "source_id": "1529290",
       "season": 2026,
       "match_number": 47,
       "round": "League",
@@ -194,7 +192,7 @@
       "team2_color": "#1d4ed8",
       "winner": "Mumbai Indians",
       "result_text": "Mumbai Indians won by 6 wkts",
-      "venue": "Wankhede Stadium, Mumbai",
+      "venue": "Wankhede Stadium, Mumbai, Mumbai",
       "innings": [
         {
           "number": 1,
@@ -205,10 +203,10 @@
           "opponent_short": "MI",
           "runs": 228,
           "wickets": 5,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "228/5",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,

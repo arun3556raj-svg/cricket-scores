@@ -60,44 +60,8 @@
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz"
-    },
-    {
-      "id": "152020",
-      "series": "IPL 2026",
-      "match_desc": "47th Match",
-      "match_format": "T20",
-      "team1": "Lucknow Super Giants",
-      "team1_short": "LSG",
-      "team1_color": "#0284c7",
-      "team2": "Mumbai Indians",
-      "team2_short": "MI",
-      "team2_color": "#1d4ed8",
-      "team1_score1": {
-        "display": "228/5",
-        "detail": "(20 ov)",
-        "runs": 228,
-        "wickets": 5,
-        "overs": 20
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "229/4",
-        "detail": "(18.4 ov)",
-        "runs": 229,
-        "wickets": 4,
-        "overs": 18.4
-      },
-      "team2_score2": null,
-      "venue": "Wankhede Stadium, Mumbai",
-      "status": "finished",
-      "status_text": "Mumbai Indians won by 6 wkts",
-      "start_time": null,
-      "start_epoch": null,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
     }
   ],
-  "last_updated": "06 May, 09:29 AM",
+  "last_updated": "06 May, 12:08 PM",
   "error": null
 }
