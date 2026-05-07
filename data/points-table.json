@@ -24,7 +24,7 @@
     "2026": {
       "season": 2026,
       "enhanced": true,
-      "source_note": "Includes provisional Cricbuzz results.",
+      "source_note": "Official Cricsheet archive.",
       "rows": [
         {
           "team": "Sunrisers Hyderabad",
@@ -41,7 +41,7 @@
           "runs_against": 2127,
           "balls_against": 1276,
           "wickets_taken": 71,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": 0.737,
           "overs_for": "217.1",
           "overs_against": "212.4"
@@ -81,7 +81,7 @@
           "runs_against": 1879,
           "balls_against": 1075,
           "wickets_taken": 44,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": 0.571,
           "overs_for": "172",
           "overs_against": "179.1"
@@ -141,7 +141,7 @@
           "runs_against": 1711,
           "balls_against": 1125,
           "wickets_taken": 62,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": 0.151,
           "overs_for": "195.4",
           "overs_against": "187.3"
@@ -161,7 +161,7 @@
           "runs_against": 1868,
           "balls_against": 1097,
           "wickets_taken": 45,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": -0.949,
           "overs_for": "194.2",
           "overs_against": "182.5"
