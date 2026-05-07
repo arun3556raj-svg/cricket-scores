@@ -24,7 +24,7 @@
     "2026": {
       "season": 2026,
       "enhanced": true,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "Includes provisional Cricbuzz results.",
       "rows": [
         {
           "team": "Sunrisers Hyderabad",
@@ -50,21 +50,21 @@
           "team": "Royal Challengers Bengaluru",
           "team_short": "RCB",
           "team_color": "#dc2626",
-          "played": 9,
+          "played": 10,
           "won": 6,
           "lost": 3,
-          "no_result": 0,
-          "points": 12,
-          "runs_for": 1656,
-          "balls_for": 937,
-          "wickets_lost": 48,
-          "runs_against": 1595,
-          "balls_against": 1042,
-          "wickets_taken": 61,
-          "provisional_matches": 0,
-          "nrr": 1.42,
-          "overs_for": "156.1",
-          "overs_against": "173.4"
+          "no_result": 1,
+          "points": 13,
+          "runs_for": 1859,
+          "balls_for": 1051,
+          "wickets_lost": 54,
+          "runs_against": 1804,
+          "balls_against": 1156,
+          "wickets_taken": 64,
+          "provisional_matches": 1,
+          "nrr": 1.249,
+          "overs_for": "175.1",
+          "overs_against": "192.4"
         },
         {
           "team": "Punjab Kings",
@@ -187,6 +187,26 @@
           "overs_against": "182.3"
         },
         {
+          "team": "Lucknow Super Giants",
+          "team_short": "LSG",
+          "team_color": "#0284c7",
+          "played": 10,
+          "won": 2,
+          "lost": 6,
+          "no_result": 2,
+          "points": 6,
+          "runs_for": 1704,
+          "balls_for": 1193,
+          "wickets_lost": 71,
+          "runs_against": 1796,
+          "balls_against": 1132,
+          "wickets_taken": 55,
+          "provisional_matches": 1,
+          "nrr": -0.949,
+          "overs_for": "198.5",
+          "overs_against": "188.4"
+        },
+        {
           "team": "Kolkata Knight Riders",
           "team_short": "KKR",
           "team_color": "#7c3aed",
@@ -205,26 +225,6 @@
           "nrr": -0.539,
           "overs_for": "158",
           "overs_against": "158.5"
-        },
-        {
-          "team": "Lucknow Super Giants",
-          "team_short": "LSG",
-          "team_color": "#0284c7",
-          "played": 9,
-          "won": 2,
-          "lost": 6,
-          "no_result": 1,
-          "points": 5,
-          "runs_for": 1495,
-          "balls_for": 1079,
-          "wickets_lost": 68,
-          "runs_against": 1593,
-          "balls_against": 1018,
-          "wickets_taken": 49,
-          "provisional_matches": 0,
-          "nrr": -1.076,
-          "overs_for": "179.5",
-          "overs_against": "169.4"
         }
       ]
     },

@@ -1,40 +1,5 @@
 {
-  "live": [
-    {
-      "id": "152053",
-      "series": "IPL 2026",
-      "match_desc": "50th Match",
-      "match_format": "T20",
-      "team1": "Lucknow Super Giants",
-      "team1_short": "LSG",
-      "team1_color": "#0284c7",
-      "team2": "Royal Challengers Bengaluru",
-      "team2_short": "RCB",
-      "team2_color": "#dc2626",
-      "team1_score1": {
-        "display": "209/3",
-        "detail": "(19 ov)",
-        "runs": 209,
-        "wickets": 3,
-        "overs": "19"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "105/3",
-        "detail": "(10.3 ov)",
-        "runs": 105,
-        "wickets": 3,
-        "overs": "10.3"
-      },
-      "team2_score2": null,
-      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "status": "live",
-      "status_text": "Royal Challengers Bengaluru need 108 runs in 51 balls - 19 Overs game due to rain, DLS Target 213",
-      "start_time": "07:30 PM",
-      "start_epoch": 1778162400000,
-      "run_rate": 10.0
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "152064",
@@ -59,7 +24,44 @@
       "run_rate": null
     }
   ],
-  "finished": [],
-  "last_updated": "07 May, 11:39 PM",
+  "finished": [
+    {
+      "id": "152053",
+      "series": "IPL 2026",
+      "match_desc": "50th Match",
+      "match_format": "T20",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
+      "team1_score1": {
+        "display": "209/3",
+        "detail": "(19 ov)",
+        "runs": 209,
+        "wickets": 3,
+        "overs": "19"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "203/6",
+        "detail": "(19 ov)",
+        "runs": 203,
+        "wickets": 6,
+        "overs": "19"
+      },
+      "team2_score2": null,
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "status": "finished",
+      "status_text": "LSG won by 9 runs (19 Overs game due to rain, DLS Target 213)",
+      "start_time": "07:30 PM",
+      "start_epoch": 1778162400000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz"
+    }
+  ],
+  "last_updated": "08 May, 01:23 AM",
   "error": null
 }

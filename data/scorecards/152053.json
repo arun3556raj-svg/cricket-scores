@@ -252,18 +252,18 @@
       "bowl_team": "Lucknow Super Giants",
       "innings_id": 2,
       "score": {
-        "runs": 106,
-        "wickets": 3,
-        "overs": 10.4,
-        "run_rate": 9.94,
+        "runs": 203,
+        "wickets": 6,
+        "overs": 19,
+        "run_rate": 10.68,
         "declared": false
       },
       "extras": {
-        "total": 6,
-        "wides": 4,
+        "total": 12,
+        "wides": 8,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 2
+        "leg_byes": 4
       },
       "batsmen": [
         {
@@ -305,11 +305,11 @@
         {
           "name": "Rajat Patidar",
           "runs": 61,
-          "balls": 30,
+          "balls": 31,
           "fours": 3,
           "sixes": 6,
-          "strike_rate": 203.33,
-          "out_desc": "batting",
+          "strike_rate": 196.77,
+          "out_desc": "c Aiden Markram b Shahbaz Ahmed",
           "is_captain": true,
           "is_keeper": false,
           "not_out": false
@@ -317,38 +317,50 @@
         {
           "name": "Jitesh Sharma",
           "runs": 1,
-          "balls": 2,
+          "balls": 3,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 50,
-          "out_desc": "batting",
+          "strike_rate": 33.33,
+          "out_desc": "c Rishabh Pant b Prince Yadav",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
         },
         {
-          "name": "Krunal Pandya",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "name": "Tim David",
+          "runs": 40,
+          "balls": 17,
+          "fours": 4,
+          "sixes": 3,
+          "strike_rate": 235.29,
+          "out_desc": "c Digvesh Singh Rathi b Shahbaz Ahmed",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Krunal Pandya",
+          "runs": 28,
+          "balls": 16,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 175,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
         },
         {
           "name": "Romario Shepherd",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 23,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 153.33,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Bhuvneshwar Kumar",
@@ -402,49 +414,61 @@
       "bowlers": [
         {
           "name": "Mohammed Shami",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 19,
+          "runs": 33,
           "wickets": 1,
-          "economy": 6.3,
+          "economy": 8.2,
           "wides": 3,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Prince Yadav",
-          "overs": 2.4,
-          "balls": 16,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 20,
-          "wickets": 2,
-          "economy": 7.5,
+          "runs": 33,
+          "wickets": 3,
+          "economy": 8.2,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Mayank Yadav",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 33,
+          "runs": 50,
           "wickets": 0,
-          "economy": 11,
+          "economy": 12.5,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Digvesh Singh Rathi",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 32,
+          "runs": 50,
           "wickets": 0,
-          "economy": 16,
-          "wides": 0,
+          "economy": 12.5,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 2,
+          "economy": 11,
+          "wides": 3,
           "no_balls": 0,
           "dots": 0
         }
@@ -467,6 +491,24 @@
           "runs": 104,
           "over": 10.1,
           "wkt_n": 3
+        },
+        {
+          "name": "Jitesh Sharma",
+          "runs": 106,
+          "over": 10.5,
+          "wkt_n": 4
+        },
+        {
+          "name": "Rajat Patidar",
+          "runs": 112,
+          "over": 11.3,
+          "wkt_n": 5
+        },
+        {
+          "name": "Tim David",
+          "runs": 158,
+          "over": 15.3,
+          "wkt_n": 6
         }
       ]
     }
