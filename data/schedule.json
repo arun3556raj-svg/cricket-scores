@@ -844,8 +844,8 @@
       "team2_short": "RCB",
       "team2_color": "#dc2626",
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "status": "upcoming",
-      "status_text": "Match starts at May 07, 14:00 GMT",
+      "status": "live",
+      "status_text": "Royal Challengers Bengaluru opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778162400000,
       "match_date": "Thu, 07 May 2026"
@@ -1259,6 +1259,6 @@
       "match_date": "Sun, 31 May 2026"
     }
   ],
-  "last_updated": "07 May, 05:32 PM",
+  "last_updated": "07 May, 08:13 PM",
   "error": null
 }
