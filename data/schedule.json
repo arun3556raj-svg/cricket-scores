@@ -844,8 +844,8 @@
       "team2_short": "RCB",
       "team2_color": "#dc2626",
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "status": "upcoming",
-      "status_text": "Rain stops play",
+      "status": "live",
+      "status_text": "Royal Challengers Bengaluru need 109 runs in 53 balls - 19 Overs game due to rain, DLS Target 213",
       "start_time": "07:30 PM",
       "start_epoch": 1778162400000,
       "match_date": "Thu, 07 May 2026"
@@ -1259,6 +1259,6 @@
       "match_date": "Sun, 31 May 2026"
     }
   ],
-  "last_updated": "07 May, 09:58 PM",
+  "last_updated": "07 May, 11:39 PM",
   "error": null
 }
