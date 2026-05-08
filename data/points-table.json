@@ -1,0 +1,69 @@
+{
+  "years": [2026, 2025, 2024, 2023],
+  "tables": {
+    "2026": {
+      "source_note": "League stage · Match 50 of 70 completed",
+      "enhanced": true,
+      "rows": [
+        { "team_short": "RR",   "played": 10, "won": 7, "lost": 3, "no_result": 0, "points": 14, "nrr":  0.521, "trend":  1, "last_5": ["W","W","L","W","W"], "qualification_pct": 87, "runs_for": 1842, "overs_for": 98.2, "runs_against": 1690, "overs_against": 100, "wickets_lost": 61, "wickets_taken": 82 },
+        { "team_short": "CSK",  "played": 10, "won": 6, "lost": 4, "no_result": 0, "points": 12, "nrr":  0.312, "trend":  1, "last_5": ["W","L","W","W","L"], "qualification_pct": 74, "runs_for": 1783, "overs_for": 99.4, "runs_against": 1712, "overs_against": 100, "wickets_lost": 68, "wickets_taken": 75 },
+        { "team_short": "GT",   "played": 10, "won": 6, "lost": 4, "no_result": 0, "points": 12, "nrr":  0.156, "trend":  0, "last_5": ["L","W","W","L","W"], "qualification_pct": 72, "runs_for": 1756, "overs_for": 100,   "runs_against": 1710, "overs_against": 100, "wickets_lost": 72, "wickets_taken": 78 },
+        { "team_short": "MI",   "played": 10, "won": 6, "lost": 4, "no_result": 0, "points": 12, "nrr":  0.089, "trend": -1, "last_5": ["W","L","L","W","W"], "qualification_pct": 68, "runs_for": 1748, "overs_for": 100,   "runs_against": 1723, "overs_against": 100, "wickets_lost": 74, "wickets_taken": 76 },
+        { "team_short": "SRH",  "played": 10, "won": 5, "lost": 5, "no_result": 0, "points": 10, "nrr": -0.045, "trend":  0, "last_5": ["L","L","W","W","L"], "qualification_pct": 42, "runs_for": 1701, "overs_for": 100,   "runs_against": 1714, "overs_against": 100, "wickets_lost": 77, "wickets_taken": 73 },
+        { "team_short": "KKR",  "played": 10, "won": 5, "lost": 5, "no_result": 0, "points": 10, "nrr": -0.123, "trend":  1, "last_5": ["W","W","L","L","W"], "qualification_pct": 38, "runs_for": 1688, "overs_for": 100,   "runs_against": 1712, "overs_against": 100, "wickets_lost": 79, "wickets_taken": 71 },
+        { "team_short": "DC",   "played":  9, "won": 4, "lost": 5, "no_result": 0, "points":  8, "nrr": -0.234, "trend": -1, "last_5": ["L","W","L","L","W"], "qualification_pct": 28, "runs_for": 1490, "overs_for": 89.3,  "runs_against": 1538, "overs_against": 90,  "wickets_lost": 71, "wickets_taken": 62 },
+        { "team_short": "RCB",  "played": 10, "won": 4, "lost": 6, "no_result": 0, "points":  8, "nrr": -0.312, "trend":  0, "last_5": ["L","L","W","L","L"], "qualification_pct": 22, "runs_for": 1659, "overs_for": 100,   "runs_against": 1721, "overs_against": 100, "wickets_lost": 83, "wickets_taken": 67 },
+        { "team_short": "PBKS", "played": 10, "won": 3, "lost": 7, "no_result": 0, "points":  6, "nrr": -0.456, "trend":  0, "last_5": ["L","L","L","W","L"], "qualification_pct":  8, "runs_for": 1612, "overs_for": 100,   "runs_against": 1758, "overs_against": 100, "wickets_lost": 87, "wickets_taken": 62 },
+        { "team_short": "LSG",  "played": 10, "won": 3, "lost": 7, "no_result": 0, "points":  6, "nrr": -0.567, "trend": -1, "last_5": ["L","L","L","L","W"], "qualification_pct":  5, "runs_for": 1589, "overs_for": 100,   "runs_against": 1742, "overs_against": 100, "wickets_lost": 90, "wickets_taken": 60 }
+      ]
+    },
+    "2025": {
+      "source_note": "Final league-stage standings · IPL 2025",
+      "enhanced": false,
+      "rows": [
+        { "team_short": "RCB",  "played": 14, "won": 10, "lost": 4,  "no_result": 0, "points": 20, "nrr":  0.631, "trend": 0, "last_5": ["W","W","W","L","W"], "qualification_pct": 100 },
+        { "team_short": "KKR",  "played": 14, "won":  9, "lost": 5,  "no_result": 0, "points": 18, "nrr":  0.412, "trend": 0, "last_5": ["W","L","W","W","L"], "qualification_pct": 100 },
+        { "team_short": "GT",   "played": 14, "won":  8, "lost": 5,  "no_result": 1, "points": 17, "nrr":  0.287, "trend": 0, "last_5": ["W","W","L","W","W"], "qualification_pct": 100 },
+        { "team_short": "MI",   "played": 14, "won":  8, "lost": 6,  "no_result": 0, "points": 16, "nrr":  0.124, "trend": 0, "last_5": ["L","W","W","L","W"], "qualification_pct": 100 },
+        { "team_short": "CSK",  "played": 14, "won":  7, "lost": 7,  "no_result": 0, "points": 14, "nrr":  0.045, "trend": 0, "last_5": ["L","L","W","L","W"], "qualification_pct": 0 },
+        { "team_short": "SRH",  "played": 14, "won":  6, "lost": 8,  "no_result": 0, "points": 12, "nrr": -0.098, "trend": 0, "last_5": ["L","L","L","W","L"], "qualification_pct": 0 },
+        { "team_short": "RR",   "played": 14, "won":  5, "lost": 9,  "no_result": 0, "points": 10, "nrr": -0.234, "trend": 0, "last_5": ["L","W","L","L","L"], "qualification_pct": 0 },
+        { "team_short": "DC",   "played": 14, "won":  5, "lost": 9,  "no_result": 0, "points": 10, "nrr": -0.312, "trend": 0, "last_5": ["L","L","W","L","L"], "qualification_pct": 0 },
+        { "team_short": "LSG",  "played": 14, "won":  4, "lost": 10, "no_result": 0, "points":  8, "nrr": -0.445, "trend": 0, "last_5": ["L","L","L","L","W"], "qualification_pct": 0 },
+        { "team_short": "PBKS", "played": 14, "won":  3, "lost": 11, "no_result": 0, "points":  6, "nrr": -0.589, "trend": 0, "last_5": ["L","L","L","L","L"], "qualification_pct": 0 }
+      ]
+    },
+    "2024": {
+      "source_note": "Final league-stage standings · IPL 2024",
+      "enhanced": false,
+      "rows": [
+        { "team_short": "KKR",  "played": 14, "won": 9, "lost": 5,  "no_result": 0, "points": 18, "nrr":  1.428, "trend": 0, "last_5": ["W","W","W","L","W"], "qualification_pct": 100 },
+        { "team_short": "RR",   "played": 14, "won": 8, "lost": 5,  "no_result": 1, "points": 17, "nrr":  0.360, "trend": 0, "last_5": ["W","L","W","W","W"], "qualification_pct": 100 },
+        { "team_short": "SRH",  "played": 14, "won": 8, "lost": 6,  "no_result": 0, "points": 16, "nrr":  0.416, "trend": 0, "last_5": ["W","W","L","W","L"], "qualification_pct": 100 },
+        { "team_short": "CSK",  "played": 14, "won": 7, "lost": 7,  "no_result": 0, "points": 14, "nrr":  0.328, "trend": 0, "last_5": ["W","L","W","L","W"], "qualification_pct": 100 },
+        { "team_short": "DC",   "played": 14, "won": 7, "lost": 7,  "no_result": 0, "points": 14, "nrr": -0.377, "trend": 0, "last_5": ["L","W","L","W","L"], "qualification_pct": 0 },
+        { "team_short": "LSG",  "played": 14, "won": 7, "lost": 7,  "no_result": 0, "points": 14, "nrr": -0.531, "trend": 0, "last_5": ["L","L","W","L","W"], "qualification_pct": 0 },
+        { "team_short": "MI",   "played": 14, "won": 6, "lost": 8,  "no_result": 0, "points": 12, "nrr": -0.048, "trend": 0, "last_5": ["L","L","L","W","L"], "qualification_pct": 0 },
+        { "team_short": "GT",   "played": 14, "won": 5, "lost": 9,  "no_result": 0, "points": 10, "nrr": -0.414, "trend": 0, "last_5": ["L","L","L","L","W"], "qualification_pct": 0 },
+        { "team_short": "PBKS", "played": 14, "won": 4, "lost": 10, "no_result": 0, "points":  8, "nrr": -0.564, "trend": 0, "last_5": ["L","W","L","L","L"], "qualification_pct": 0 },
+        { "team_short": "RCB",  "played": 14, "won": 4, "lost": 10, "no_result": 0, "points":  8, "nrr": -0.386, "trend": 0, "last_5": ["L","L","L","W","L"], "qualification_pct": 0 }
+      ]
+    },
+    "2023": {
+      "source_note": "Final league-stage standings · IPL 2023",
+      "enhanced": false,
+      "rows": [
+        { "team_short": "GT",   "played": 14, "won": 10, "lost": 4,  "no_result": 0, "points": 20, "nrr":  0.809, "trend": 0, "last_5": ["W","W","W","W","L"], "qualification_pct": 100 },
+        { "team_short": "CSK",  "played": 14, "won":  8, "lost": 5,  "no_result": 1, "points": 17, "nrr":  0.652, "trend": 0, "last_5": ["W","W","L","W","W"], "qualification_pct": 100 },
+        { "team_short": "LSG",  "played": 14, "won":  8, "lost": 6,  "no_result": 0, "points": 16, "nrr":  0.284, "trend": 0, "last_5": ["W","L","W","W","L"], "qualification_pct": 100 },
+        { "team_short": "MI",   "played": 14, "won":  8, "lost": 6,  "no_result": 0, "points": 16, "nrr":  0.245, "trend": 0, "last_5": ["L","W","W","L","W"], "qualification_pct": 100 },
+        { "team_short": "RCB",  "played": 14, "won":  7, "lost": 7,  "no_result": 0, "points": 14, "nrr":  0.135, "trend": 0, "last_5": ["W","L","L","W","L"], "qualification_pct": 0 },
+        { "team_short": "KKR",  "played": 14, "won":  6, "lost": 8,  "no_result": 0, "points": 12, "nrr": -0.280, "trend": 0, "last_5": ["L","W","L","L","L"], "qualification_pct": 0 },
+        { "team_short": "DC",   "played": 14, "won":  5, "lost": 8,  "no_result": 1, "points": 11, "nrr": -0.152, "trend": 0, "last_5": ["L","L","W","L","L"], "qualification_pct": 0 },
+        { "team_short": "SRH",  "played": 14, "won":  4, "lost": 9,  "no_result": 1, "points":  9, "nrr": -0.534, "trend": 0, "last_5": ["L","L","L","W","L"], "qualification_pct": 0 },
+        { "team_short": "PBKS", "played": 14, "won":  4, "lost": 10, "no_result": 0, "points":  8, "nrr": -0.303, "trend": 0, "last_5": ["L","L","L","L","W"], "qualification_pct": 0 },
+        { "team_short": "RR",   "played": 14, "won":  4, "lost": 10, "no_result": 0, "points":  8, "nrr": -0.893, "trend": 0, "last_5": ["L","L","L","L","L"], "qualification_pct": 0 }
+      ]
+    }
+  }
+}

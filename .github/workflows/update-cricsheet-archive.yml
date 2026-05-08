@@ -1,0 +1,50 @@
+name: Update Cricsheet Archive
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 07:20 IST. Cricsheet often trails live results, so this keeps the
+    # official archive current without depending on the local Windows task.
+    - cron: "50 1 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cricket-scores-cricsheet-archive
+  cancel-in-progress: false
+
+jobs:
+  update-archive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild official archive data
+        env:
+          IPL_UNIVERSE_DB: ${{ runner.temp }}/ipl_universe_v4.db
+        run: |
+          python scripts/update_cricsheet_db.py --db "$IPL_UNIVERSE_DB" --match-id-map data/archive.json
+          python scripts/build_archive_data.py
+
+      - name: Commit archive update
+        run: |
+          if git diff --quiet -- data/archive.json data/archive-scorecards data/stats-builder.json; then
+            echo "Cricsheet archive already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/archive.json data/archive-scorecards data/stats-builder.json
+          git commit -m "Update Cricsheet archive data"
+          git push origin main
