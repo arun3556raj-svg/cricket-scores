@@ -129,6 +129,53 @@
   ],
   "matches": [
     {
+      "id": "1219",
+      "source_id": "1529293",
+      "season": 2026,
+      "match_number": 50,
+      "round": "League",
+      "date": "2026-05-07",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
+      "winner": "Lucknow Super Giants",
+      "result_text": "Lucknow Super Giants won by 9 runs",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow, Lucknow",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Lucknow Super Giants",
+          "team_short": "LSG",
+          "team_color": "#0284c7",
+          "opponent": "Royal Challengers Bengaluru",
+          "opponent_short": "RCB",
+          "runs": 209,
+          "wickets": 3,
+          "overs": 19.0,
+          "target": null,
+          "display": "209/3",
+          "detail": "(19.0 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Royal Challengers Bengaluru",
+          "team_short": "RCB",
+          "team_color": "#dc2626",
+          "opponent": "Lucknow Super Giants",
+          "opponent_short": "LSG",
+          "runs": 203,
+          "wickets": 6,
+          "overs": 19.0,
+          "target": 213,
+          "display": "203/6",
+          "detail": "(19.0 ov)"
+        }
+      ]
+    },
+    {
       "id": "1218",
       "source_id": "1529292",
       "season": 2026,
