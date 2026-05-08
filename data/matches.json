@@ -57,11 +57,9 @@
       "status_text": "LSG won by 9 runs (19 Overs game due to rain, DLS Target 213)",
       "start_time": "07:30 PM",
       "start_epoch": 1778162400000,
-      "run_rate": null,
-      "provisional": true,
-      "source": "cricbuzz"
+      "run_rate": null
     }
   ],
-  "last_updated": "08 May, 09:21 AM",
+  "last_updated": "08 May, 11:19 AM",
   "error": null
 }

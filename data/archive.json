@@ -129,10 +129,8 @@
   ],
   "matches": [
     {
-      "id": "prov-152053",
-      "source_id": "152053",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1219",
+      "source_id": "1529293",
       "season": 2026,
       "match_number": 50,
       "round": "League",
@@ -143,9 +141,9 @@
       "team2": "Royal Challengers Bengaluru",
       "team2_short": "RCB",
       "team2_color": "#dc2626",
-      "winner": null,
-      "result_text": "LSG won by 9 runs (19 Overs game due to rain, DLS Target 213)",
-      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "winner": "Lucknow Super Giants",
+      "result_text": "Lucknow Super Giants won by 9 runs",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow, Lucknow",
       "innings": [
         {
           "number": 1,
@@ -156,10 +154,10 @@
           "opponent_short": "RCB",
           "runs": 209,
           "wickets": 3,
-          "overs": 19,
+          "overs": 19.0,
           "target": null,
           "display": "209/3",
-          "detail": "(19 ov)"
+          "detail": "(19.0 ov)"
         },
         {
           "number": 2,
@@ -170,10 +168,10 @@
           "opponent_short": "LSG",
           "runs": 203,
           "wickets": 6,
-          "overs": 19,
-          "target": 210,
+          "overs": 19.0,
+          "target": 213,
           "display": "203/6",
-          "detail": "(19 ov)"
+          "detail": "(19.0 ov)"
         }
       ]
     },
