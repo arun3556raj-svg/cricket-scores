@@ -113,6 +113,111 @@ function teamMeta(short) {
   return TEAMS[short] || { color: '#818cf8', color2: '#a78bfa', bg: 'rgba(129,140,248,0.12)' };
 }
 
+
+// ── Match intelligence helpers (real-data derived, no mock inputs) ──
+function pointsRowsForSeason() {
+  const tables = pointsData?.tables || {};
+  const season = tables[pointsSeason] ? pointsSeason : Object.keys(tables).sort().pop();
+  return season && tables[season]?.rows ? tables[season].rows : [];
+}
+
+function standingForTeam(short) {
+  const rows = pointsRowsForSeason();
+  const idx = rows.findIndex(r => r.team_short === short);
+  if (idx < 0) return null;
+  return { ...rows[idx], rank: idx + 1 };
+}
+
+function formPillsHtml(form = []) {
+  const recent = (form || []).slice(-3);
+  if (!recent.length) return '';
+  return `<span class="mini-form-pills">${recent.map(r => {
+    const win = String(r).toUpperCase() === 'W';
+    return `<span class="mini-form-pill ${win ? 'is-win' : 'is-loss'}">${esc(r)}</span>`;
+  }).join('')}</span>`;
+}
+
+function teamMiniIntel(short) {
+  const row = standingForTeam(short);
+  if (!row) return '';
+  return `<span class="team-mini-intel"><span>#${row.rank}</span>${formPillsHtml(row.last_5)}</span>`;
+}
+
+function qualificationBand(row) {
+  if (!row || row.qualification_pct == null) return null;
+  const pct = Number(row.qualification_pct);
+  if (pct >= 85) return { label: 'Strong top-4', tone: 'safe', pct };
+  if (pct >= 65) return { label: 'Top-4 track', tone: 'safe', pct };
+  if (pct >= 40) return { label: 'Bubble', tone: 'warn', pct };
+  if (pct >= 15) return { label: 'Must win', tone: 'danger', pct };
+  return { label: 'Elimination heat', tone: 'danger', pct };
+}
+
+function matchStakes(m) {
+  const a = standingForTeam(m.team1_short);
+  const b = standingForTeam(m.team2_short);
+  if (!a || !b) return { severity: 'Fixture', tone: 'neutral', impact: '', chips: [] };
+
+  const aBand = qualificationBand(a);
+  const bBand = qualificationBand(b);
+  const rankGap = Math.abs(a.rank - b.rank);
+  const topFourClash = a.rank <= 4 && b.rank <= 4;
+  const bubbleClash = [a, b].some(r => r.rank >= 4 && r.rank <= 7);
+  const danger = [aBand, bBand].some(x => x && x.tone === 'danger');
+  const pointsGap = Math.abs((a.points || 0) - (b.points || 0));
+
+  let severity = 'Medium stakes', tone = 'neutral';
+  if (danger || (bubbleClash && pointsGap <= 4)) { severity = 'High stakes'; tone = 'danger'; }
+  if (topFourClash || (rankGap <= 2 && pointsGap <= 2)) { severity = 'Table swing'; tone = 'warn'; }
+  if (danger && bubbleClash) { severity = 'Must-win heat'; tone = 'danger'; }
+
+  const chips = [];
+  if (aBand) chips.push(`${m.team1_short}: ${aBand.pct}%`);
+  if (bBand) chips.push(`${m.team2_short}: ${bBand.pct}%`);
+  if (rankGap <= 2) chips.push('Rank pressure');
+  if (pointsGap <= 2) chips.push('2-pt swing');
+
+  let impact = `${m.team1_short} #${a.rank} (${a.points} pts) vs ${m.team2_short} #${b.rank} (${b.points} pts)`;
+  if (danger) impact = `${impact} · playoff survival pressure`;
+  else if (topFourClash) impact = `${impact} · top-four positioning`;
+  else if (bubbleClash) impact = `${impact} · qualification bubble`;
+
+  return { severity, tone, impact, chips };
+}
+
+function resultMarginBadge(m) {
+  const text = String(m.status_text || '').toLowerCase();
+  let label = 'Result', tone = 'neutral';
+  const runs = text.match(/(\d+)\s+runs?/);
+  const wkts = text.match(/(\d+)\s+(?:wickets?|wkts?)/);
+  if (runs) {
+    const n = Number(runs[1]);
+    if (n <= 5) { label = 'Thriller'; tone = 'danger'; }
+    else if (n <= 20) { label = 'Close'; tone = 'warn'; }
+    else if (n >= 50) { label = 'Dominant'; tone = 'safe'; }
+    else { label = 'Comfortable'; tone = 'safe'; }
+  } else if (wkts) {
+    const n = Number(wkts[1]);
+    if (n <= 2) { label = 'Thriller'; tone = 'danger'; }
+    else if (n <= 4) { label = 'Close'; tone = 'warn'; }
+    else if (n >= 8) { label = 'Dominant'; tone = 'safe'; }
+    else { label = 'Comfortable'; tone = 'safe'; }
+  }
+  return `<span class="match-intel-chip ${tone}">${label}</span>`;
+}
+
+function tableImpactLine(m, t1Winner, t2Winner) {
+  const winner = t1Winner ? m.team1_short : t2Winner ? m.team2_short : null;
+  const loser = t1Winner ? m.team2_short : t2Winner ? m.team1_short : null;
+  const wr = standingForTeam(winner);
+  const lr = standingForTeam(loser);
+  if (!winner || !wr) return '';
+  const parts = [`${winner} now #${wr.rank}`];
+  if (wr.qualification_pct != null) parts.push(`${wr.qualification_pct}% qual`);
+  if (loser && lr) parts.push(`${loser} #${lr.rank}`);
+  return `<div class="match-impact-line">📊 ${esc(parts.join(' · '))}</div>`;
+}
+
 // ── Asset manifest (loaded once at startup from data/asset-manifest.json) ──
 let assetManifest = { team_logos: {}, player_images: {} };
 let playerImageLookup = {};
@@ -519,40 +624,51 @@ function liveCardCK(m) {
   const statusText = esc(m.status_text || (isLive ? 'Live' : ''));
   const statusColor = isResult ? 'rgba(255,255,255,0.5)' : '#22c55e';
   const glowColor   = `${t1.color}15`;
+  const stakes = matchStakes(m);
+  const resultImpact = isResult ? tableImpactLine(m, t1Winner, t2Winner) : '';
 
   const badgeHtml = isLive
     ? `<span style="background:linear-gradient(135deg,#ef4444,#dc2626);color:#fff;font-size:9px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:0.5px;text-transform:uppercase;animation:livePulse 2s infinite;display:inline-block">LIVE</span>`
     : `<span style="background:var(--cbadge);color:var(--ct3);font-size:9px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:0.5px;text-transform:uppercase">RESULT</span>`;
+
+  const metaChips = isResult
+    ? `${resultMarginBadge(m)}${stakes.impact ? `<span class="match-intel-chip ${stakes.tone}">Table impact</span>` : ''}`
+    : `${stakes.severity ? `<span class="match-intel-chip ${stakes.tone}">${esc(stakes.severity)}</span>` : ''}${m.run_rate ? `<span class="match-intel-chip neutral">CRR ${esc(String(m.run_rate))}</span>` : ''}`;
 
   return `
     <article style="background:var(--cbg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--cbd);border-radius:16px;overflow:hidden;cursor:pointer;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s"
              onmouseenter="this.style.borderColor='var(--cbd-h)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px ${glowColor}'"
              onmouseleave="this.style.borderColor='var(--cbd)';this.style.transform='translateY(0)';this.style.boxShadow='none'"
              onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
+      <div style="height:2px;background:linear-gradient(90deg,${t1.color}88,${t2.color}88)"></div>
       <!-- Header -->
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px 0">
-        <span style="font-size:11.5px;color:var(--ct3);font-weight:500">${matchLabel}</span>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px 0;gap:10px">
+        <span style="font-size:11.5px;color:var(--ct3);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${matchLabel}</span>
         ${badgeHtml}
       </div>
+      ${metaChips ? `<div class="match-intel-row">${metaChips}</div>` : ''}
       <!-- Teams & Scores -->
-      <div style="display:flex;align-items:center;justify-content:center;padding:18px 18px 10px;gap:10px">
+      <div style="display:flex;align-items:center;justify-content:center;padding:14px 18px 10px;gap:10px">
         ${teamBadge(m.team1_short, 52)}
         <div style="text-align:center;flex:1;min-width:0">
           <div style="font-size:12px;font-weight:700;color:var(--ct2)">${esc(m.team1_short)}${t1Winner ? ' <span style="color:#22c55e;font-size:10px">✓</span>' : ''}</div>
+          ${teamMiniIntel(m.team1_short)}
           <div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">${m.team1_score1 ? esc(m.team1_score1.display) : '—'}</div>
           <div style="font-size:10.5px;color:var(--ct4)">${m.team1_score1 ? esc(m.team1_score1.detail) : 'Yet to bat'}</div>
         </div>
         <span style="font-size:10px;color:var(--ct5);font-weight:600;flex-shrink:0">vs</span>
         <div style="text-align:center;flex:1;min-width:0">
           <div style="font-size:12px;font-weight:700;color:var(--ct2)">${esc(m.team2_short)}${t2Winner ? ' <span style="color:#22c55e;font-size:10px">✓</span>' : ''}</div>
+          ${teamMiniIntel(m.team2_short)}
           <div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">${m.team2_score1 ? esc(m.team2_score1.display) : '—'}</div>
           <div style="font-size:10.5px;color:var(--ct4)">${m.team2_score1 ? esc(m.team2_score1.detail) : 'Yet to bat'}</div>
         </div>
         ${teamBadge(m.team2_short, 52)}
       </div>
       <!-- Status -->
-      <div style="text-align:center;padding-bottom:14px">
+      <div style="text-align:center;padding:0 18px 14px">
         <span style="font-size:11.5px;font-weight:600;color:${statusColor}">${statusText}</span>
+        ${resultImpact || (stakes.impact && isLive ? `<div class="match-impact-line">★ ${esc(stakes.impact)}</div>` : '')}
       </div>
     </article>`;
 }
@@ -560,6 +676,9 @@ function liveCardCK(m) {
 // ── Crickly Upcoming Row (UpcomingRow style) ──────────────────
 function upcomingRowCK(m) {
   const matchJson = encodeURIComponent(JSON.stringify(m));
+  const t1 = teamMeta(m.team1_short);
+  const t2 = teamMeta(m.team2_short);
+  const stakes = matchStakes(m);
 
   let timeDisplay = m.start_time || 'TBD';
   let dateDisplay = '';
@@ -572,25 +691,47 @@ function upcomingRowCK(m) {
     else dateDisplay = d.toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' });
   }
 
-  const timeStr = dateDisplay ? `${dateDisplay} · ${timeDisplay}` : timeDisplay;
-  const label = `${esc(m.team1_short)} vs ${esc(m.team2_short)}`;
   const sublabelParts = [m.match_desc || m.series, m.venue ? m.venue.split(',')[0] : ''].filter(Boolean);
   const sublabel = esc(sublabelParts.join(' · '));
+  const chipHtml = [
+    stakes.severity ? `<span class="match-intel-chip ${stakes.tone}">${esc(stakes.severity)}</span>` : '',
+    ...stakes.chips.slice(0, 2).map(c => `<span class="match-intel-chip neutral">${esc(c)}</span>`)
+  ].filter(Boolean).join('');
 
   return `
-    <div style="display:flex;align-items:center;gap:14px;padding:13px 18px;background:var(--upbg);border-radius:12px;border:1px solid var(--upbd);cursor:pointer;transition:background 0.15s"
-         onmouseenter="this.style.background='var(--upbg-h)'"
-         onmouseleave="this.style.background='var(--upbg)'"
+    <div class="upcoming-smart-card" style="--t1:${t1.color};--t2:${t2.color}"
          onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
-      <div style="display:flex;gap:6px;flex-shrink:0">
-        ${teamBadge(m.team1_short, 40)}
-        ${teamBadge(m.team2_short, 40)}
+      <div class="upcoming-smart-stripe"></div>
+      <div class="upcoming-smart-head">
+        <div class="upcoming-smart-meta">
+          <span>${esc(m.match_desc || 'Fixture')}</span>
+          ${m.venue ? `<span class="mini-dot"></span><span>${esc(m.venue.split(',')[0])}</span>` : ''}
+        </div>
+        <div class="upcoming-smart-time">
+          <strong>${esc(timeDisplay)}</strong>
+          ${dateDisplay ? `<span>${esc(dateDisplay)}</span>` : ''}
+        </div>
       </div>
-      <div style="flex:1;min-width:0">
-        <div style="font-size:13px;font-weight:600;color:var(--ct)">${label}</div>
-        <div style="font-size:11px;color:var(--ct4);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${sublabel}</div>
+      <div class="upcoming-smart-body">
+        <div class="upcoming-smart-team">
+          ${teamBadge(m.team1_short, 40)}
+          <div>
+            <div class="upcoming-smart-code">${esc(m.team1_short)}</div>
+            ${teamMiniIntel(m.team1_short)}
+          </div>
+        </div>
+        <div class="upcoming-smart-vs"><span>VS</span></div>
+        <div class="upcoming-smart-team is-right">
+          <div>
+            <div class="upcoming-smart-code">${esc(m.team2_short)}</div>
+            ${teamMiniIntel(m.team2_short)}
+          </div>
+          ${teamBadge(m.team2_short, 40)}
+        </div>
       </div>
-      <span style="font-size:11.5px;color:var(--ct2);font-weight:500;white-space:nowrap;text-align:right;flex-shrink:0">${esc(timeStr)}</span>
+      ${chipHtml ? `<div class="match-intel-row in-card">${chipHtml}</div>` : ''}
+      ${stakes.impact ? `<div class="match-impact-line upcoming">★ ${esc(stakes.impact)}</div>` : ''}
+      ${sublabel ? `<div class="upcoming-smart-sub">${sublabel}</div>` : ''}
     </div>`;
 }
 
@@ -931,6 +1072,27 @@ let pointsSeason = '2026';
 let pointsViewMode = 'compact';
 let pointsExpandedRow = null;
 let pointsDetailTabs = {};
+let pointsIntelLoading = false;
+
+async function loadPointsIntel() {
+  if (pointsData || pointsIntelLoading) return;
+  pointsIntelLoading = true;
+  try {
+    const res = await fetchJson(getPointsTableUrl());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    pointsData = await res.json();
+    pointsLoaded = true;
+    if (!pointsData.years?.includes(Number(pointsSeason))) {
+      pointsSeason = String(pointsData.years?.[0] || '2026');
+    }
+    if (currentFilter === 'points') renderPointsTable(pointsData);
+    if (lastData) render(lastData);
+  } catch (_) {
+    // Match cards still work without table intelligence.
+  } finally {
+    pointsIntelLoading = false;
+  }
+}
 
 // ── Hero scorecard (auto-fetched for live match) ───────────────
 let heroScorecardData = null;
@@ -1216,6 +1378,7 @@ async function loadMatches(forceRefresh = false) {
     initRightRail();
 
     render(data);
+    loadPointsIntel();
 
     // Update timestamps (mobile topbar + desktop header + sidebar)
     const updatedText = data.last_updated ? `Updated ${data.last_updated}` : '';
