@@ -115,11 +115,63 @@ function teamMeta(short) {
 
 // ── Asset manifest (loaded once at startup from data/asset-manifest.json) ──
 let assetManifest = { team_logos: {}, player_images: {} };
+let playerImageLookup = {};
+function normalizePlayerKey(name) {
+  return String(name || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+function addPlayerImageAlias(alias, path) {
+  const key = normalizePlayerKey(alias);
+  if (key && path && !playerImageLookup[key]) playerImageLookup[key] = path;
+}
+function buildPlayerImageLookup() {
+  playerImageLookup = {};
+  const images = assetManifest.player_images || {};
+  for (const [name, path] of Object.entries(images)) {
+    addPlayerImageAlias(name, path);
+    const parts = String(name).trim().split(/\s+/).filter(Boolean);
+    if (parts.length >= 2) {
+      const last = parts[parts.length - 1];
+      const initials = parts.slice(0, -1).map(p => p[0]).join('');
+      addPlayerImageAlias(`${initials} ${last}`, path);       // Virat Kohli -> V Kohli, Rohit Sharma -> R Sharma
+      addPlayerImageAlias(`${initials}${last}`, path);        // VKohli
+      if (parts.length >= 3) {
+        addPlayerImageAlias(`${parts[0][0]} ${parts.slice(1).join(' ')}`, path); // Faf du Plessis -> F du Plessis
+      }
+    }
+  }
+  // Common cricket scorecard abbreviations that differ from display/full names.
+  const manualAliases = {
+    'V Kohli': 'Virat Kohli',
+    'RG Sharma': 'Rohit Sharma',
+    'RA Jadeja': 'Ravindra Jadeja',
+    'SP Narine': 'Sunil Narine',
+    'HH Pandya': 'Hardik Pandya',
+    'KH Pandya': 'Krunal Pandya',
+    'JJ Bumrah': 'Jasprit Bumrah',
+    'Ruturaj Gaikwad': 'Ruturaj Gaikwad',
+    'RD Gaikwad': 'Ruturaj Gaikwad',
+    'YS Chahal': 'Yuzvendra Chahal',
+    'RR Pant': 'Rishabh Pant',
+    'SV Samson': 'Sanju Samson',
+    'S Dhawan': 'Shikhar Dhawan',
+    'Shubman Gill': 'Shubman Gill',
+    'KL Rahul': 'KL Rahul',
+    'MS Dhoni': 'MS Dhoni'
+  };
+  for (const [alias, full] of Object.entries(manualAliases)) {
+    const path = images[full] || playerImageLookup[normalizePlayerKey(full)];
+    if (path) addPlayerImageAlias(alias, path);
+  }
+}
+function getPlayerImagePath(playerName) {
+  return (assetManifest.player_images || {})[playerName] || playerImageLookup[normalizePlayerKey(playerName)] || '';
+}
 async function loadAssetManifest() {
   try {
     const r = await fetch(cacheBust(ASSET_MANIFEST_PATH));
     if (r.ok) assetManifest = await r.json();
   } catch (e) { /* use fallbacks silently */ }
+  buildPlayerImageLookup();
 }
 
 // team abbr → logo file extension (only MI uses .jpg, rest .webp)
@@ -152,7 +204,7 @@ function playerAvatar(playerName, teamShort, size = 36) {
     : (playerName || '?').slice(0, 2)
   ).toUpperCase();
 
-  const imgPath = assetManifest.player_images?.[playerName];
+  const imgPath = getPlayerImagePath(playerName);
   if (imgPath) {
     return `<div style="width:${size}px;height:${size}px;border-radius:50%;background:linear-gradient(135deg,${color},${color}88);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden">
       <img src="${joinPath('./', imgPath)}" alt="${esc(playerName)}" style="width:100%;height:100%;object-fit:cover"
@@ -2586,7 +2638,7 @@ function _renderPlayerModal(playerName) {
   const body = $('playerModalBody');
   if (!body) return;
 
-  const imgPath = assetManifest.player_images?.[playerName];
+  const imgPath = getPlayerImagePath(playerName);
 
   // Determine player's team from stats
   let playerTeam = (assetManifest.player_teams || {})[playerName] || '';
