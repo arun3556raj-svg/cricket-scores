@@ -1075,160 +1075,382 @@ let pointsDetailTabs = {};
 
 let pulseStatsData = null;
 let pulseStatsLoaded = false;
+let pulseArchiveData = null;
+let pulseArchiveLoaded = false;
 
-function extractPulseLeaders() {
-  if (!pulseStatsData) return { topRuns: [], topWickets: [], totalMatches: 74, doneMatches: 0 };
-  const yearMap = new Map();
-  // Group by year — use most recent year for pulse
-  let maxYear = 0;
-  const batting = pulseStatsData.batting || [];
-  const bowling = pulseStatsData.bowling || [];
-
-  for (const r of batting) {
-    if (r.y > maxYear) maxYear = r.y;
-    if (!yearMap.has(r.y)) yearMap.set(r.y, {});
-  }
-  for (const r of bowling) {
-    if (r.y > maxYear) maxYear = r.y;
-  }
-
-  const batMap = new Map();
-  for (const r of batting) {
-    if (r.y !== maxYear) continue;
-    const key = r.p;
-    const row = batMap.get(key) || { player: r.p, team: r.t, runs: 0, balls: 0, matches: new Set(), sixes:0 };
-    row.runs += r.ru || 0;
-    row.balls += r.b || 0;
-    row.matches.add(r.m);
-    row.sixes += r.si || 0;
-    batMap.set(key, row);
-  }
-  const topRuns = Array.from(batMap.values())
-    .sort((a, b) => b.runs - a.runs)
-    .slice(0, 5)
-    .map(r => ({ ...r, matches_count: r.matches.size, strike_rate: r.balls > 0 ? r.runs * 100 / r.balls : 0 }));
-
-  const bowlMap = new Map();
-  for (const r of bowling) {
-    if (r.y !== maxYear) continue;
-    const key = r.p;
-    const row = bowlMap.get(key) || { player: r.p, team: r.t, wickets: 0, runs:0, balls:0, matches: new Set(), dots:0, maidens:0 };
-    row.wickets += r.w || 0;
-    row.runs += r.ru || 0;
-    row.balls += r.b || 0;
-    row.matches.add(r.m);
-    row.dots += r.d || 0;
-    row.maidens += r.md || 0;
-    bowlMap.set(key, row);
-  }
-  const topWickets = Array.from(bowlMap.values())
-    .sort((a, b) => b.wickets - a.wickets)
-    .slice(0, 5)
-    .map(r => ({ ...r, matches_count: r.matches.size, economy: r.balls > 0 ? r.runs * 6 / r.balls : 0 }));
-
-  // Estimate match count from points table data
-  let sourceNote = '';
-  try { sourceNote = pointsRowsForSeason()?.length > 0 ? '' : ''; } catch(_) {}
-  // Try to determine total/done from points-table source_note
-  const pts = pointsData?.tables?.[pointsSeason]?.source_note || '';
-  const matchPos = pts.match(/Match (\d+)\s+of\s+(\d+)/i);
-  const doneMatches = matchPos ? Number(matchPos[1]) : 0;
+// ── Broadcast-quality tournament pulse analysis ──────────────
+function tournamentPulseData() {
+  const ptsRows = pointsRowsForSeason();
+  const sourceNote = pointsData?.tables?.[pointsSeason]?.source_note || '';
+  const matchPos = sourceNote.match(/Match (\d+)\s+of\s+(\d+)/i);
+  const doneMatches = matchPos ? Number(matchPos[1]) : ptsRows.length ? ptsRows[0].played : 0;
   const totalMatches = matchPos ? Number(matchPos[2]) : 74;
+  const remainMatches = totalMatches - doneMatches;
+  const progressPct = totalMatches > 0 ? Math.round(doneMatches / totalMatches * 100) : 0;
 
-  return { topRuns, topWickets, doneMatches, totalMatches };
-}
+  // ── Playoff bubble analysis ──
+  const sortedPts = [...ptsRows].sort((a,b) => (b.points||0)-(a.points||0) || (b.nrr||0)-(a.nrr||0));
+  const alive = sortedPts.filter(r => (r.qualification_pct||0) > 5);
+  const top6 = sortedPts.filter(r => (r.rank||99) <= 6);
+  const spread = top6.length >= 2 ? top6[0].points - top6[Math.min(top6.length-1,5)].points : 0;
+  const bubble = sortedPts.filter(r => r.rank >= 4 && r.rank <= 7);
+  const nrrDecider = bubble.length >= 2 ? Math.max(...bubble.map(r=>Math.abs(r.nrr||0))) > 0.1 : false;
+  const tieRisk = bubble.length >= 3 ? bubble.filter(r => Math.abs(r.points - bubble[1].points) <= 2).length >= 3 : false;
 
-function computePlayoffStats() {
-  try {
-    const rows = pointsRowsForSeason();
-    if (!rows.length) return { teamsAlive: 0, pointsSpread: '—' };
-    const alive = rows.filter(r => (r.qualification_pct || 0) > 5).length;
-    const top6 = rows.filter(r => (r.rank || 99) <= 6);
-    const spread = top6.length >= 2 ? Math.abs(top6[0].points - top6[Math.min(top6.length-1, 5)].points) : 0;
-    return { teamsAlive: alive, pointsSpread: spread };
-  } catch(_) { return { teamsAlive: 0, pointsSpread: '—' }; }
-}
-
-async function loadPulseStats() {
-  if (pulseStatsLoaded || pulseStatsData) return;
-  try {
-    const res = await fetchJson(STATS_BUILDER_PATH);
-    if (!res.ok) throw new Error('HTTP '+res.status);
-    pulseStatsData = await res.json();
-    pulseStatsLoaded = true;
-    renderTournamentPulse();
-  } catch(_) {
-    // Pulse can degrade gracefully — just show what we have from points table
+  // ── NRR Pressure Points ──
+  const nrrSwing = sortedPts.filter(r => Math.abs(r.trend||0) >= 1).slice(0, 2);
+  // Teams on same points separated by NRR
+  let nrrWatch = [];
+  for (let i = 0; i < sortedPts.length - 1; i++) {
+    if (sortedPts[i].points === sortedPts[i+1].points) {
+      nrrWatch.push({ t1: sortedPts[i], t2: sortedPts[i+1] });
+      if (nrrWatch.length >= 2) break;
+    }
   }
-}
 
-function groupLeaderStats(leaders) {
-  const already = new Set();
-  return leaders.filter(r => {
-    const k = r.player;
-    if (already.has(k)) return false;
-    already.add(k);
-    return true;
-  });
+  // ── Hot streak ──
+  let bestStreak = { team: '', streak: 0, last5: [] };
+  for (const r of sortedPts) {
+    let streak = 0;
+    for (let k = r.last_5.length-1; k >= 0; k--) {
+      if (r.last_5[k] === 'W') streak++; else break;
+    }
+    if (streak > bestStreak.streak) bestStreak = { team: r.team_short, streak, last5: r.last_5 };
+  }
+  // Best NRR team
+  const nrrLeader = sortedPts.length ? sortedPts[0] : null;
+
+  // ── Stats from stats builder ──
+  let topBat = {}, topBowl = {}, sixHitter = {}, mvpLeader = {};
+  let highestTotal = { team: '', runs: 0, wkts: 0 };
+  if (pulseStatsData) {
+    const bat2026 = (pulseStatsData.batting||[]).filter(r => r.y === 2026);
+    const bowl2026 = (pulseStatsData.bowling||[]).filter(r => r.y === 2026);
+    const batMap = new Map(), bowlMap = new Map(), sixMap = new Map();
+    for (const r of bat2026) {
+      const k = r.p;
+      if (!batMap.has(k)) batMap.set(k, {player:k, team:r.t, runs:0, balls:0, sixes:0, matches:new Set()});
+      const row = batMap.get(k);
+      row.runs += r.ru||0; row.balls += r.b||0; row.sixes += r.si||0; row.matches.add(r.m);
+    }
+    for (const r of bowl2026) {
+      const k = r.p;
+      if (!bowlMap.has(k)) bowlMap.set(k, {player:k, team:r.t, wkts:0, runs:0, balls:0, econ:0, matches:new Set()});
+      const row = bowlMap.get(k);
+      row.wkts += r.w||0; row.runs += r.ru||0; row.balls += r.b||0; row.matches.add(r.m);
+    }
+    for (const r of bat2026) {
+      const k = r.p;
+      if (!sixMap.has(k)) sixMap.set(k, {player:k, sixes:0});
+      sixMap.get(k).sixes += r.si||0;
+    }
+    // De-duplicate names properly
+    const dedupe = (map, valKey) => {
+      const seen = new Set();
+      return Array.from(map.values()).filter(r => { const k=r.player; if(seen.has(k))return false; seen.add(k); return true; })
+        .sort((a,b) => (b[valKey]||0) - (a[valKey]||0));
+    };
+    const batList = dedupe(batMap, 'runs');
+    const bowlList = dedupe(bowlMap, 'wkts');
+    const sixList = dedupe(sixMap, 'sixes');
+    topBat = batList[0] || {};
+    topBowl = bowlList[0] || {};
+    sixHitter = sixList[0] || {};
+    
+    // MVP: runs + wkts*20
+    const mvpMap = new Map();
+    for (const r of bat2026) {
+      const k = r.p;
+      if (!mvpMap.has(k)) mvpMap.set(k, {player:k, runs:0, wkts:0, sixes:0});
+      mvpMap.get(k).runs += r.ru||0;
+      mvpMap.get(k).sixes += r.si||0;
+    }
+    for (const r of bowl2026) {
+      const k = r.p;
+      if (!mvpMap.has(k)) mvpMap.set(k, {player:k, runs:0, wkts:0, sixes:0});
+      mvpMap.get(k).wkts += r.w||0;
+    }
+    const mvpList = Array.from(mvpMap.values())
+      .filter(r => { const s=new Set(); const k=r.player; if(s.has(k))return false; s.add(k); return true; })
+    mvpList.forEach(r => r.score = r.runs + r.wkts*20 + r.sixes*3);
+    mvpList.sort((a,b) => b.score - a.score);
+    mvpLeader = mvpList[0] || {};
+  }
+
+  // ── Archive-sourced entertainment data ──
+  let chaseRate = { won: 0, total: 0 };
+  let highestInn = { team: '', runs: 0, wkts: 0, overs: '' };
+  let closestFinish = { margin: 999, detail: '' };
+  if (pulseArchiveData) {
+    const m26 = (pulseArchiveData.matches||[]).filter(m => m.season === 2026);
+    let chases = 0, chasesWon = 0;
+    for (const m of m26) {
+      const inns = m.innings || [];
+      if (inns.length >= 2) {
+        const winner = m.winner || '';
+        const winnerShort = inns.find(i => i.team === winner)?.team_short || inns.find(i => winner && winner.includes(i.team||''))?.team_short || '';
+        if (winnerShort === inns[1].team_short) chasesWon++;
+        chases++;
+      }
+      for (const inn of inns) {
+        const r = inn.runs || 0;
+        if (r > highestInn.runs) highestInn = { team: inn.team_short, runs: r, wkts: inn.wickets||0, overs: inn.overs||'' };
+      }
+      const txt = m.result_text || '';
+      const rm = txt.match(/(\d+)\s+runs?/);
+      if (rm) {
+        const margin = parseInt(rm[1]);
+        if (margin < closestFinish.margin) closestFinish = { margin, detail: txt, winner: m.winner };
+      }
+    }
+    chaseRate = { won: chasesWon, total: chases };
+  }
+
+  return {
+    doneMatches, totalMatches, remainMatches, progressPct,
+    alive: alive.length, playoff: { spread, nrrDecider, tieRisk },
+    bubble: bubble.length, nrrWatch: nrrWatch.slice(0,2), nrrSwing,
+    bestStreak, nrrLeader,
+    topBat, topBowl, sixHitter, mvpLeader,
+    chaseRate, highestInn, closestFinish,
+  };
 }
 
 function renderTournamentPulse() {
   const pulseEl = $('pulseGrid');
   if (!pulseEl) return;
+  
+  // Kick off lazy data loads
+  if (!pulseStatsLoaded) {
+    pulseStatsLoaded = true;
+    fetchJson(STATS_BUILDER_PATH).then(r => { if(r.ok) return r.json(); }).then(d => { pulseStatsData=d; renderTournamentPulse(); }).catch(()=>{});
+  }
+  if (!pulseArchiveLoaded) {
+    pulseArchiveLoaded = true;
+    fetchJson(getArchiveUrl()).then(r => { if(r.ok) return r.json(); }).then(d => { pulseArchiveData=d; renderTournamentPulse(); }).catch(()=>{});
+  }
 
-  const { topRuns, topWickets, doneMatches, totalMatches } = extractPulseLeaders();
-  const playoff = computePlayoffStats();
-
-  const progressPct = totalMatches > 0 ? Math.round(doneMatches / totalMatches * 100) : 0;
-
-  const topBat = groupLeaderStats(topRuns)[0] || {};
-  const topBowl = groupLeaderStats(topWickets)[0] || {};
-
-  // Load stats in background if not loaded yet
-  if (!pulseStatsLoaded) loadPulseStats();
+  const pt = tournamentPulseData();
 
   pulseEl.innerHTML = `
-    <div class="pulse-cards">
-      <div class="pulse-card">
-        <div class="pulse-label">Matches Done</div>
-        <div class="pulse-value-row">
-          <span class="pulse-primary pulse-primary--big">${doneMatches}</span>
-          <span class="pulse-separator">/</span>
-          <span class="pulse-secondary">${totalMatches}</span>
-        </div>
-        <div class="pulse-progress-wrap">
-          <div class="pulse-progress-bar">
-            <div class="pulse-progress-fill" style="width:${progressPct}%"></div>
-          </div>
+    <div class="pulse-dashboard">
+      <div class="pulse-section">
+        <span class="pulse-section-label">◈ Tournament State</span>
+        <div class="pulse-cards">
+          ${matchesDoneCard(pt)}
+          ${playoffCard(pt)}
         </div>
       </div>
-
-      <div class="pulse-card">
-        <div class="pulse-label">Playoff Race</div>
-        <div class="pulse-value-row">
-          <span class="pulse-primary pulse-primary--orange">${playoff.teamsAlive}</span>
-          <span class="pulse-secondary">teams alive</span>
-        </div>
-        <div class="pulse-subtext">
-          ${playoff.pointsSpread > 0 ? `${playoff.pointsSpread} pts separating #3–#6` : 'Awaiting table data'}
+      <div class="pulse-section">
+        <span class="pulse-section-label">◈ Momentum</span>
+        <div class="pulse-cards">
+          ${momentumCard(pt)}
+          ${nrrPressureCard(pt)}
         </div>
       </div>
-
-      <div class="pulse-card">
-        <div class="pulse-label">Orange Cap</div>
-        <div class="pulse-player-name" style="color:#f97316">${esc(topBat.player || '—')}</div>
-        <div class="pulse-player-stat">${topBat.runs ? `${topBat.runs} runs${topBat.strike_rate ? ' @ SR ' + topBat.strike_rate.toFixed(1) : ''}` : 'Awaiting stats data'}</div>
+      <div class="pulse-section">
+        <span class="pulse-section-label">◈ Race Leaders</span>
+        <div class="pulse-cards">
+          ${orangeCapCard(pt)}
+          ${purpleCapCard(pt)}
+        </div>
       </div>
-
-      <div class="pulse-card">
-        <div class="pulse-label">Purple Cap</div>
-        <div class="pulse-player-name" style="color:#a78bfa">${esc(topBowl.player || '—')}</div>
-        <div class="pulse-player-stat">${topBowl.wickets ? `${topBowl.wickets} wkts${topBowl.economy ? ' @ econ ' + topBowl.economy.toFixed(2) : ''}` : 'Awaiting stats data'}</div>
+      <div class="pulse-section">
+        <span class="pulse-section-label">◈ Entertainment</span>
+        <div class="pulse-cards">
+          ${chaseCard(pt)}
+          ${totalCard(pt)}
+        </div>
       </div>
     </div>`;
 }
 
+function matchesDoneCard(pt) {
+  const pct = pt.progressPct;
+  const rem = pt.remainMatches;
+  return `
+    <div class="pulse-card pulse-card--state">
+      <div class="pulse-label">Matches Completed</div>
+      <div class="pulse-value-row">
+        <span class="pulse-primary pulse-primary--big">${pt.doneMatches}</span>
+        <span class="pulse-separator">/</span>
+        <span class="pulse-secondary">${pt.totalMatches}</span>
+        <span class="pulse-secondary" style="margin-left:auto;color:rgba(255,255,255,.18)">${pct}%</span>
+      </div>
+      <div class="pulse-progress-wrap">
+        <div class="pulse-progress-bar">
+          <div class="pulse-progress-fill" style="width:${pct}%"></div>
+        </div>
+      </div>
+      <div class="pulse-subtext">${rem > 0 ? rem + ' matches remaining in league stage' : 'League stage complete'}</div>
+    </div>`;
+}
 
+function playoffCard(pt) {
+  const sp = pt.playoff;
+  const alive = pt.alive;
+  let subtext = '';
+  if (sp.tieRisk) subtext = `${alive} teams in contention · NRR deciding final spots · ${sp.spread} pts separating #3–#6`;
+  else subtext = `${alive} teams alive · ${sp.spread} pts separating #3–#6`;
+  return `
+    <div class="pulse-card pulse-card--state">
+      <div class="pulse-label">Playoff Race</div>
+      <div class="pulse-value-row">
+        <span class="pulse-primary pulse-primary--orange">${alive}</span>
+        <span class="pulse-secondary">teams in playoff contention</span>
+      </div>
+      <div class="pulse-subtext">${esc(subtext)}</div>
+      ${sp.nrrDecider ? `<div class="pulse-alert" style="border-color:rgba(251,146,60,.25);background:rgba(251,146,60,.06);color:#fb923c">⚡ NRR likely to decide final qualifiers</div>` : ''}
+    </div>`;
+}
+
+function momentumCard(pt) {
+  const s = pt.bestStreak;
+  const nrrL = pt.nrrLeader;
+  if (!s || !s.streak) {
+    // Show most dominant team by NRR instead
+    return `
+      <div class="pulse-card pulse-card--momentum">
+        <div class="pulse-label">Hot Streak</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.3);margin-top:6px">No active streaks</div>
+        ${nrrL ? `<div class="pulse-subtext" style="margin-top:8px">NRR leader: ${esc(nrrL.team_short)} (${nrrL.nrr > 0 ? '+' : ''}${(nrrL.nrr||0).toFixed(3)})</div>` : ''}
+      </div>`;
+  }
+  return `
+    <div class="pulse-card pulse-card--momentum">
+      <div class="pulse-label">Hot Streak</div>
+      <div style="display:flex;align-items:baseline;gap:6px">
+        <span style="font-size:18px;font-weight:800;color:#4ade80">${esc(s.team)}</span>
+        <span class="pulse-separator">·</span>
+        <span style="font-size:22px;font-weight:800;color:#f1f5f9;font-variant-numeric:tabular-nums">${s.streak}</span>
+        <span class="pulse-secondary">consecutive wins</span>
+      </div>
+      <div style="display:flex;gap:4px;margin-top:8px">
+        ${s.last5.slice(-5).map(r => {
+          const w = String(r).toUpperCase() === 'W';
+          return `<span style="width:16px;height:16px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:800;${w ? 'color:#4ade80;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.18)' : 'color:#f87171;background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.18)'}">${r}</span>`;
+        }).join('')}
+      </div>
+      ${nrrL?.team_short !== s.team ? `<div class="pulse-subtext" style="margin-top:8px">NRR leader: ${esc(nrrL?.team_short||'')} (${nrrL?.nrr > 0 ? '+' : ''}${(nrrL?.nrr||0).toFixed(3)})</div>` : `<div class="pulse-subtext" style="margin-top:8px;color:#4ade80">NRR ${(nrrL?.nrr||0).toFixed(3)} · hottest team in the tournament</div>`}
+    </div>`;
+}
+
+function nrrPressureCard(pt) {
+  const watch = pt.nrrWatch;
+  if (!watch || !watch.length) {
+    return `
+      <div class="pulse-card pulse-card--momentum">
+        <div class="pulse-label">NRR Pressure</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.3);margin-top:6px">No teams tied on points</div>
+        ${pt.nrrLeader ? `<div class="pulse-subtext" style="margin-top:8px">Highest NRR: ${esc(pt.nrrLeader.team_short)} (${(pt.nrrLeader.nrr||0).toFixed(3)})</div>` : ''}
+      </div>`;
+  }
+  return `
+    <div class="pulse-card pulse-card--momentum">
+      <div class="pulse-label">NRR Watch</div>
+      ${watch.map(w => `
+        <div style="display:flex;align-items:center;gap:8px;margin-top:6px;padding:6px 8px;border-radius:6px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.04)">
+          <span style="font-size:11px;font-weight:700;color:var(--ct)">${esc(w.t1.team_short)}</span>
+          <span style="font-size:10px;color:rgba(255,255,255,.25)">${w.t1.points}pts</span>
+          <span style="flex:1;text-align:center;font-size:9px;color:rgba(255,255,255,.12)">NRR gap: ${(Math.abs((w.t1.nrr||0) - (w.t2.nrr||0))).toFixed(3)}</span>
+          <span style="font-size:10px;color:rgba(255,255,255,.25)">${w.t2.points}pts</span>
+          <span style="font-size:11px;font-weight:700;color:var(--ct)">${esc(w.t2.team_short)}</span>
+        </div>
+      `).join('')}
+      ${pt.nrrSwing.length ? `<div class="pulse-subtext" style="margin-top:8px">⚡ NRR swing alert: ${pt.nrrSwing.map(r => esc(r.team_short)).join(', ')}</div>` : ''}
+    </div>`;
+}
+
+function orangeCapCard(pt) {
+  const b = pt.topBat;
+  if (!b || !b.runs) {
+    return `
+      <div class="pulse-card pulse-card--race">
+        <div class="pulse-label">Orange Cap</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.3);margin-top:6px">Loading stats data…</div>
+      </div>`;
+  }
+  const sr = b.balls > 0 ? Math.round(b.runs*100/b.balls) : 0;
+  return `
+    <div class="pulse-card pulse-card--race">
+      <div class="pulse-label">Orange Cap</div>
+      <div class="pulse-player-name" style="color:#f97316">${esc(b.player)}</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-top:4px">
+        <span style="font-size:20px;font-weight:800;color:#f1f5f9;font-variant-numeric:tabular-nums">${b.runs}</span>
+        <span class="pulse-secondary">runs</span>
+        <span class="pulse-separator">·</span>
+        <span style="font-size:11px;color:rgba(255,255,255,.3);font-family:var(--mono)">SR ${sr}</span>
+      </div>
+      ${b.sixes ? `<div class="pulse-subtext">${b.sixes} sixes · ${b.matches?.size || '—'} matches</div>` : ''}
+    </div>`;
+}
+
+function purpleCapCard(pt) {
+  const b = pt.topBowl;
+  if (!b || !b.wkts) {
+    return `
+      <div class="pulse-card pulse-card--race">
+        <div class="pulse-label">Purple Cap</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.3);margin-top:6px">Loading stats data…</div>
+      </div>`;
+  }
+  const econ = b.balls > 0 ? Math.round(b.runs*6/b.balls*100)/100 : 0;
+  return `
+    <div class="pulse-card pulse-card--race">
+      <div class="pulse-label">Purple Cap</div>
+      <div class="pulse-player-name" style="color:#a78bfa">${esc(b.player)}</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-top:4px">
+        <span style="font-size:20px;font-weight:800;color:#f1f5f9;font-variant-numeric:tabular-nums">${b.wkts}</span>
+        <span class="pulse-secondary">wickets</span>
+        <span class="pulse-separator">·</span>
+        <span style="font-size:11px;color:rgba(255,255,255,.3);font-family:var(--mono)">Econ ${econ.toFixed(2)}</span>
+      </div>
+      ${b.matches?.size ? `<div class="pulse-subtext">${b.matches.size} matches · last: ${esc(b.team||'')}</div>` : ''}
+    </div>`;
+}
+
+function chaseCard(pt) {
+  const c = pt.chaseRate;
+  if (!c || !c.total) {
+    return `
+      <div class="pulse-card pulse-card--ent">
+        <div class="pulse-label">Chase Success</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.3);margin-top:6px">Loading archive data…</div>
+      </div>`;
+  }
+  const pct = Math.round(c.won/c.total*100);
+  return `
+    <div class="pulse-card pulse-card--ent">
+      <div class="pulse-label">Chase Success Rate</div>
+      <div style="display:flex;align-items:baseline;gap:10px;margin-top:4px">
+        <span style="font-size:28px;font-weight:800;color:#22d3ee;font-variant-numeric:tabular-nums">${pct}%</span>
+        <span class="pulse-secondary">teams batting second ${c.total > 0 ? 'win' : ''}</span>
+      </div>
+      <div class="pulse-subtext">${c.won}/${c.total} chases won ${pt.totalMatches ? '· ' + pt.remainMatches + ' remaining' : ''}</div>
+      ${c.won > 0 && c.total > 0 ? `<div class="pulse-progress-wrap" style="margin-top:8px"><div class="pulse-progress-bar"><div class="pulse-progress-fill" style="width:${pct}%;background:linear-gradient(90deg,#22d3ee,#06b6d4)"></div></div></div>` : ''}
+    </div>`;
+}
+
+function totalCard(pt) {
+  const h = pt.highestInn;
+  const cf = pt.closestFinish;
+  if (!h || !h.runs) {
+    return `
+      <div class="pulse-card pulse-card--ent">
+        <div class="pulse-label">Highest Total</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.3);margin-top:6px">Loading archive data…</div>
+      </div>`;
+  }
+  return `
+    <div class="pulse-card pulse-card--ent">
+      <div class="pulse-label">Highest Total / Closest Finish</div>
+      <div style="display:flex;align-items:baseline;gap:6px;margin-top:4px">
+        <span style="font-size:18px;font-weight:800;color:#22d3ee">${esc(h.team)}</span>
+        <span style="font-size:22px;font-weight:800;color:#f1f5f9;font-variant-numeric:tabular-nums">${h.runs}/${h.wkts}</span>
+      </div>
+      ${cf && cf.margin < 999 ? `<div class="pulse-subtext" style="margin-top:6px">🎯 Closest finish: ${esc(cf.detail)}</div>` : ''}
+    </div>`;
+}
 async function loadPointsIntel() {
   if (pointsData || pointsIntelLoading) return;
   pointsIntelLoading = true;
