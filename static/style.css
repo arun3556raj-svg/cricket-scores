@@ -3313,3 +3313,39 @@ html[data-theme="light"] .player-stats-table .career-row td { border-top-color: 
   .pulse-card { padding:12px; }
   .pulse-primary--big { font-size:24px; }
 }
+
+/* ── Upcoming H2H ─────────────────────────────────────────── */
+.upcoming-h2h {
+  display:block;
+  margin-top:4px;
+  font-size:8px;
+  color:rgba(255,255,255,.15);
+  font-weight:600;
+  letter-spacing:.05em;
+}
+.upcoming-smart-vs { display:flex;flex-direction:column;align-items:center;color:rgba(255,255,255,.12);font-size:9px;font-weight:800;letter-spacing:.11em; }
+
+/* ── Impact line variants ──────────────────────────────────── */
+.match-impact-line.is-significance {
+  margin:8px 0 0;
+  padding:8px 12px;
+  border-radius:8px;
+  background:rgba(99,102,241,.06);
+  border:1px solid rgba(99,102,241,.12);
+  color:rgba(255,255,255,.55);
+  font-size:11px;
+  font-style:italic;
+  font-weight:500;
+  line-height:1.4;
+}
+.match-impact-line.is-significance:before { content:"★";color:#facc15;margin-right:5px; }
+.match-impact-line.upcoming { margin:8px 14px 0; }
+.match-impact-line.in-result {
+  margin:6px 0 0;
+  padding:4px 8px;
+  font-size:10px;
+  font-style:normal;
+  font-weight:500;
+  color:rgba(255,255,255,.4);
+}
+.match-impact-line.in-result div { display:flex;align-items:center;gap:6px; }
