@@ -3769,19 +3769,33 @@ function renderPointsRows(rows) { return renderCompactPointsView(enrichPointsRow
 // SCHEDULE / HISTORY
 // ================================================================
 
+// ══════════════════════════════════════════════════════════════
+// SCHEDULE — redesigned with tournament progress, playoff tabs, standings
+// ══════════════════════════════════════════════════════════════
+
+// ── Schedule filter tabs state ──
+let scheduleFilterMode = 'all'; // 'all' | 'next2' | 'playoff'
+
+function setScheduleFilter(mode) {
+  scheduleFilterMode = mode;
+  if (scheduleData) renderSchedule(scheduleData);
+}
+
 function scheduleMatchRow(m) {
   const t1 = teamMeta(m.team1_short);
   const t2 = teamMeta(m.team2_short);
   const isLive     = m.status === 'live';
   const isFinished = m.status === 'finished';
-  const isUpcoming = !isLive && !isFinished;
+  const stakes = matchStakes(m);
+  const rowA = standingForTeam(m.team1_short);
+  const rowB = standingForTeam(m.team2_short);
+  const hasPlayoffStakes = stakes.tone === 'danger' || stakes.tone === 'warn';
 
-  // Status pill
-  const statusPill = isLive
-    ? `<span class="sch-pill sch-pill--live"><span class="pulse-dot"></span>Live</span>`
-    : isFinished
-      ? `<span class="sch-pill sch-pill--done">Result</span>`
-      : `<span class="sch-pill sch-pill--upcoming">${m.start_time ? esc(m.start_time) : 'TBD'}</span>`;
+  // Format time
+  let timeDisplay = m.start_time || 'TBD';
+  if (m.start_epoch && !isFinished) {
+    timeDisplay = new Date(m.start_epoch).toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true }).toUpperCase();
+  }
 
   const matchJson = encodeURIComponent(JSON.stringify({
     id: m.id, team1: m.team1, team2: m.team2,
@@ -3790,7 +3804,7 @@ function scheduleMatchRow(m) {
     status: m.status, status_text: m.status_text, venue: m.venue,
   }));
 
-  // Determine winner for finished rows
+  // Winner detection
   let t1Win = false, t2Win = false;
   if (isFinished && m.status_text) {
     const st = m.status_text.toLowerCase();
@@ -3798,50 +3812,119 @@ function scheduleMatchRow(m) {
     else if ([m.team2, m.team2_short].some(s => s && st.startsWith(s.toLowerCase()))) t2Win = true;
   }
 
+  const t1Stand = rowA ? `#${rowA.rank}` : '';
+  const t1Pts = rowA ? `${rowA.points}pts` : '';
+  const t1Form = rowA ? rowA.last_5 : [];
+  const t2Stand = rowB ? `#${rowB.rank}` : '';
+  const t2Pts = rowB ? `${rowB.points}pts` : '';
+  const t2Form = rowB ? rowB.last_5 : [];
+
   return `
-    <div class="sch-match${isLive ? ' sch-match--live' : ''}${isFinished ? ' sch-match--done' : ''}"
+    <div class="sch-match-card${hasPlayoffStakes ? ' sch-match-card--stakes' : ''}"
          onclick='openScheduleScorecard(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
-      <div class="sch-match-id">
-        <span class="sch-match-num">${esc(m.match_desc || '')}</span>
-        ${m.venue ? `<span class="sch-match-venue">${esc(m.venue.split(',')[0])}</span>` : ''}
-      </div>
-      <div class="sch-match-teams">
-        <div class="sch-team-line${t1Win ? ' sch-team-line--win' : ''}">
-          <span class="sch-badge" style="color:${t1.color};background:${t1.bg}">${esc(m.team1_short)}</span>
-          <span class="sch-tname">${esc(m.team1)}</span>
-          ${isFinished && m.team1_score1 ? `<span class="sch-score">${esc(m.team1_score1.display)}<span class="sch-score-ov">${esc(m.team1_score1.detail)}</span></span>` : ''}
-          ${t1Win ? `<span class="sch-win-dot"></span>` : ''}
-        </div>
-        <div class="sch-team-line${t2Win ? ' sch-team-line--win' : ''}">
-          <span class="sch-badge" style="color:${t2.color};background:${t2.bg}">${esc(m.team2_short)}</span>
-          <span class="sch-tname">${esc(m.team2)}</span>
-          ${isFinished && m.team2_score1 ? `<span class="sch-score">${esc(m.team2_score1.display)}<span class="sch-score-ov">${esc(m.team2_score1.detail)}</span></span>` : ''}
-          ${t2Win ? `<span class="sch-win-dot"></span>` : ''}
+      <!-- Card header: match number + playoff impact badge + time -->
+      <div class="sch-card-head">
+        <span class="sch-card-meta">${esc(m.match_desc || '')} ${m.venue ? '· ' + esc(m.venue.split(',')[0]) : ''}</span>
+        <div class="sch-card-head-right">
+          ${hasPlayoffStakes ? `<span class="sch-badge-playoff" style="color:#f97316;background:rgba(249,115,22,.12);border-color:rgba(249,115,22,.2)">★ Playoff Impact</span>` : ''}
+          ${isFinished
+            ? `<span class="sch-card-time sch-card-time--done">Result</span>`
+            : isLive
+              ? `<span class="sch-card-time sch-card-time--live"><span class="pulse-dot"></span>Live</span>`
+              : `<span class="sch-card-time">${esc(timeDisplay)}</span>`
+          }
         </div>
       </div>
-      <div class="sch-match-status">
-        ${statusPill}
-        ${isFinished && m.status_text ? `<span class="sch-result-text">${esc(m.status_text)}</span>` : ''}
+      <!-- Teams row -->
+      <div class="sch-card-teams">
+        <div class="sch-card-team${t1Win ? ' sch-card-team--win' : ''}">
+          ${teamBadge(m.team1_short, 42)}
+          <div class="sch-card-team-info">
+            <div class="sch-card-team-name">${esc(m.team1_short)}</div>
+            ${t1Stand && t1Pts ? `<div class="sch-card-team-stand">${t1Stand} · ${t1Pts}</div>` : ''}
+          </div>
+          <div class="sch-card-team-form">${t1Form.length ? formPills(t1Form.slice(-3)) : ''}</div>
+          ${isFinished && m.team1_score1 ? `<div class="sch-card-score${t1Win ? ' sch-card-score--win' : ''}">${esc(m.team1_score1.display)}<span class="sch-card-score-ov">${esc(m.team1_score1.detail)}</span></div>` : ''}
+        </div>
+        <div class="sch-card-vs"><span>VS</span></div>
+        <div class="sch-card-team sch-card-team--right${t2Win ? ' sch-card-team--win' : ''}">
+          ${isFinished && m.team2_score1 ? `<div class="sch-card-score${t2Win ? ' sch-card-score--win' : ''}">${esc(m.team2_score1.display)}<span class="sch-card-score-ov">${esc(m.team2_score1.detail)}</span></div>` : ''}
+          <div class="sch-card-team-form sch-card-team-form--right">${t2Form.length ? formPills(t2Form.slice(-3)) : ''}</div>
+          <div class="sch-card-team-info sch-card-team-info--right">
+            <div class="sch-card-team-name">${esc(m.team2_short)}</div>
+            ${t2Stand && t2Pts ? `<div class="sch-card-team-stand">${t2Stand} · ${t2Pts}</div>` : ''}
+          </div>
+          ${teamBadge(m.team2_short, 42)}
+        </div>
+      </div>
+      <!-- Footer: venue + stakes -->
+      <div class="sch-card-foot">
+        <span class="sch-card-venue">📍 ${esc(m.venue || 'Venue TBD')}</span>
+        ${isFinished && m.status_text ? `<span class="sch-card-result">${esc(m.status_text)}</span>` : ''}
+        ${!isFinished && stakes.headline ? `<span class="sch-card-stakes">★ ${esc(stakes.headline)}</span>` : ''}
       </div>
     </div>`;
 }
 
+function renderScheduleProgress() {
+  let doneMatches = 0, totalMatches = 74;
+  try {
+    const src = ((pointsData?.tables?.[pointsSeason])?.source_note) || '';
+    const m = src.match(/Match (\d+)\s+of\s+(\d+)/i);
+    if (m) { doneMatches = Number(m[1]); totalMatches = Number(m[2]); }
+  } catch(_) {}
+  const remain = totalMatches - doneMatches;
+  const pct = totalMatches > 0 ? Math.round(doneMatches / totalMatches * 100) : 0;
+
+  // Count playoff-stakes matches in schedule
+  const matches = scheduleData?.matches || [];
+  const stakeMatches = matches.filter(m => {
+    const a = standingForTeam(m.team1_short);
+    const b = standingForTeam(m.team2_short);
+    if (!a || !b) return false;
+    const qa = qualificationBand(a);
+    const qb = qualificationBand(b);
+    return (qa?.tone === 'danger' || qb?.tone === 'danger' ||
+            (a.rank <= 4 && b.rank <= 4) ||
+            (Math.abs(a.rank - b.rank) <= 2 && Math.abs((a.points||0) - (b.points||0)) <= 4));
+  }).length;
+
+  return `
+    <div class="sch-progress">
+      <div class="sch-progress-text">
+        <span class="sch-progress-count"><strong>Match ${doneMatches}</strong> of ${totalMatches}</span>
+        <span class="sch-progress-pct">${pct}%</span>
+      </div>
+      <div class="sch-progress-bar"><div class="sch-progress-fill" style="width:${pct}%"></div></div>
+      <div class="sch-progress-labels">
+        <span>League stage</span>
+        <span style="color:#facc15">Playoffs — May 20</span>
+      </div>
+    </div>
+    <div class="sch-summary">
+      <span>${remain} matches remaining${stakeMatches > 0 ? ' · <strong class="sch-stake-count">' + stakeMatches + ' with playoff stakes</strong>' : ''}</span>
+    </div>`;
+}
+
+function scheduleFilterBar() {
+  const tabs = [
+    { id: 'all', label: 'All Matches' },
+    { id: 'next2', label: 'Next 2 Days' },
+    { id: 'playoff', label: '★ Playoff Stakes' },
+  ];
+  return `<div class="sch-filter-bar">${tabs.map(t => `<button class="sch-filter-btn${scheduleFilterMode === t.id ? ' is-active' : ''}" onclick="setScheduleFilter('${t.id}')">${t.label}</button>`).join('')}</div>`;
+}
+
 function renderSchedule(data) {
   scheduleData = data;
-
-  const meta = getScheduleViewMeta();
   const heading = $('scheduleHeading');
-  if (heading) heading.textContent = meta.heading;
+  if (heading) heading.textContent = 'IPL 2026 — Schedule';
   const controls = $('archiveControls');
-  if (controls) {
-    controls.style.display = 'none';
-    controls.innerHTML = '';
-  }
+  if (controls) controls.style.display = 'none';
 
   const matches = (data.matches || []);
-
   if (!matches.length) {
-    $('scheduleList').innerHTML = `<div class="sc-empty">${meta.empty}</div>`;
+    $('scheduleList').innerHTML = '<div class="sc-empty">No schedule data available.</div>';
     return;
   }
 
@@ -3852,21 +3935,65 @@ function renderSchedule(data) {
     .sort((a, b) => (b.start_epoch || 0) - (a.start_epoch || 0));
   const sorted = [...upcoming, ...finished];
 
-  // Group by date
-  const byDate = new Map();
-  for (const m of sorted) {
-    const d = m.match_date || 'TBD';
-    if (!byDate.has(d)) byDate.set(d, []);
-    byDate.get(d).push(m);
+  // Apply filter
+  let filtered = sorted;
+  const now = Date.now();
+  if (scheduleFilterMode === 'next2') {
+    const end2 = now + 172800000; // 48 hours
+    filtered = sorted.filter(m => {
+      if (m.status === 'finished') return false;
+      return (m.start_epoch || 0) >= now && (m.start_epoch || 0) <= end2;
+    });
+  } else if (scheduleFilterMode === 'playoff') {
+    filtered = sorted.filter(m => {
+      const a = standingForTeam(m.team1_short);
+      const b = standingForTeam(m.team2_short);
+      if (!a || !b) return false;
+      const qa = qualificationBand(a);
+      const qb = qualificationBand(b);
+      return (qa?.tone === 'danger' || qb?.tone === 'danger' ||
+              (a.rank <= 4 && b.rank <= 4) ||
+              (Math.abs(a.rank - b.rank) <= 2 && Math.abs((a.points||0) - (b.points||0)) <= 4));
+    });
   }
 
-  let html = '';
-  for (const [date, dayMatches] of byDate) {
+  // Group by date with formatted headers
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const tomorrow = new Date(today); tomorrow.setDate(tomorrow.getDate() + 1);
+
+  const byDate = new Map();
+  for (const m of filtered) {
+    let dateKey = 'TBD';
+    let label = '';
+    if (m.start_epoch) {
+      const d = new Date(m.start_epoch);
+      const dStart = new Date(d); dStart.setHours(0,0,0,0);
+      const time = dStart.getTime();
+      if (Math.abs(time - today.getTime()) < 86400000) { label = 'Today'; dateKey = 'today'; }
+      else if (Math.abs(time - tomorrow.getTime()) < 86400000) { label = 'Tomorrow'; dateKey = 'tomorrow'; }
+      else { label = d.toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' }).toUpperCase(); dateKey = label; }
+    }
+    if (!byDate.has(dateKey)) byDate.set(dateKey, { label, matches: [] });
+    byDate.get(dateKey).matches.push(m);
+  }
+
+  // Build HTML: progress + filter bar + date groups
+  let html = renderScheduleProgress() + scheduleFilterBar();
+  for (const [key, group] of byDate) {
     html += `<div class="sch-date-group">
-      <div class="sch-date-header">${esc(date)}</div>
-      ${dayMatches.map(scheduleMatchRow).join('')}
+      <div class="sch-date-header">
+        <span>${esc(group.label)}</span>
+        <span class="sch-date-count">${group.matches.length} match${group.matches.length > 1 ? 'es' : ''}</span>
+      </div>
+      ${group.matches.map(scheduleMatchRow).join('')}
     </div>`;
   }
+
+  if (!filtered.length) {
+    html = renderScheduleProgress() + scheduleFilterBar() + '<div class="sc-empty" style="margin-top:16px">No matches in this view.</div>';
+  }
+
   $('scheduleList').innerHTML = html;
 }
 
