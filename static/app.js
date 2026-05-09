@@ -156,7 +156,7 @@ function qualificationBand(row) {
 function matchStakes(m) {
   const a = standingForTeam(m.team1_short);
   const b = standingForTeam(m.team2_short);
-  if (!a || !b) return { severity: 'Fixture', tone: 'neutral', impact: '', chips: [] };
+  if (!a || !b) return { severity: 'Fixture', tone: 'neutral', impact: '', chips: [], headline: '' };
 
   const aBand = qualificationBand(a);
   const bBand = qualificationBand(b);
@@ -171,6 +171,20 @@ function matchStakes(m) {
   if (topFourClash || (rankGap <= 2 && pointsGap <= 2)) { severity = 'Table swing'; tone = 'warn'; }
   if (danger && bubbleClash) { severity = 'Must-win heat'; tone = 'danger'; }
 
+  // Generate clean headlines like "RCB win locks them into top 4"
+  let headline = '';
+  if (danger && aBand?.tone === 'danger') headline = `${esc(m.team1_short)} must win to keep playoff hopes alive`;
+  else if (danger && bBand?.tone === 'danger') headline = `${esc(m.team2_short)} must win to keep playoff hopes alive`;
+  else if (topFourClash) {
+    if (a.rank < b.rank) headline = `${esc(m.team1_short)} win locks them into top 4`;
+    else headline = `${esc(m.team2_short)} win locks them into top 4`;
+  }
+  else if (bubbleClash && pointsGap <= 4) headline = `${esc(m.team1_short)} vs ${esc(m.team2_short)} — qualification showdown`;
+  else if (rankGap <= 1 && pointsGap <= 2) headline = `${esc(m.team1_short)} can leapfrog ${esc(m.team2_short)} with a win`;
+  else if (danger) headline = `Playoff survival: ${esc(m.team1_short)} vs ${esc(m.team2_short)}`;
+  else if (a.rank <= 4 && b.rank > 4) headline = `${esc(m.team1_short)} can consolidate top 4 with a win`;
+  else if (b.rank <= 4 && a.rank > 4) headline = `${esc(m.team2_short)} can consolidate top 4 with a win`;
+
   const chips = [];
   if (aBand) chips.push(`${m.team1_short}: ${aBand.pct}%`);
   if (bBand) chips.push(`${m.team2_short}: ${bBand.pct}%`);
@@ -182,18 +196,19 @@ function matchStakes(m) {
   else if (topFourClash) impact = `${impact} · top-four positioning`;
   else if (bubbleClash) impact = `${impact} · qualification bubble`;
 
-  return { severity, tone, impact, chips };
+  return { severity, tone, impact, chips, headline };
 }
 
 function resultMarginBadge(m) {
   const text = String(m.status_text || '').toLowerCase();
-  let label = 'Result', tone = 'neutral';
+  let label = 'Result', tone = 'safe';
   const runs = text.match(/(\d+)\s+runs?/);
   const wkts = text.match(/(\d+)\s+(?:wickets?|wkts?)/);
   if (runs) {
     const n = Number(runs[1]);
     if (n <= 5) { label = 'Thriller'; tone = 'danger'; }
-    else if (n <= 20) { label = 'Close'; tone = 'warn'; }
+    else if (n <= 10) { label = 'Close'; tone = 'warn'; }
+    else if (n <= 20) { label = 'Comfortable'; tone = 'safe'; }
     else if (n >= 50) { label = 'Dominant'; tone = 'safe'; }
     else { label = 'Comfortable'; tone = 'safe'; }
   } else if (wkts) {
@@ -203,7 +218,7 @@ function resultMarginBadge(m) {
     else if (n >= 8) { label = 'Dominant'; tone = 'safe'; }
     else { label = 'Comfortable'; tone = 'safe'; }
   }
-  return `<span class="match-intel-chip ${tone}">${label}</span>`;
+  return `<span class="match-intel-chip ${tone}" style="font-size:10px">${label}</span>`;
 }
 
 function tableImpactLine(m, t1Winner, t2Winner) {
@@ -212,10 +227,13 @@ function tableImpactLine(m, t1Winner, t2Winner) {
   const wr = standingForTeam(winner);
   const lr = standingForTeam(loser);
   if (!winner || !wr) return '';
-  const parts = [`${winner} now #${wr.rank}`];
-  if (wr.qualification_pct != null) parts.push(`${wr.qualification_pct}% qual`);
-  if (loser && lr) parts.push(`${loser} #${lr.rank}`);
-  return `<div class="match-impact-line">📊 ${esc(parts.join(' · '))}</div>`;
+  // Generate a clean narrative line like "GT jump to #2, RR slip to danger zone"
+  const wBand = qualificationBand(wr);
+  const lBand = lr ? qualificationBand(lr) : null;
+  const wText = wBand && wBand.tone === 'safe' ? `${winner} jump to #${wr.rank}` : `${winner} hold at #${wr.rank}`;
+  const lText = lr ? (lBand && lBand.tone === 'danger' ? `${loser} slip to danger zone` : `${loser} drop to #${lr.rank}`) : '';
+  const text = lText ? `${wText}, ${lText}` : wText;
+  return `<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;opacity:.5">📊</span><span>${esc(text)}</span></div>`;
 }
 
 // ── Asset manifest (loaded once at startup from data/asset-manifest.json) ──
@@ -665,11 +683,19 @@ function liveCardCK(m) {
         </div>
         ${teamBadge(m.team2_short, 52)}
       </div>
-      <!-- Status -->
+      <!-- Status & Table Impact -->
+      ${isResult ? `
+      <div style="text-align:center;padding:10px 14px 12px;background:rgba(255,255,255,0.015);margin:0 14px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)">
+        <div style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.5)">${statusText}</div>
+        ${resultImpact ? resultImpact.replace('match-impact-line','match-impact-line in-result') : ''}
+        ${!resultImpact && stakes.impact ? `<div class="match-impact-line in-result">📊 ${esc(stakes.impact)}</div>` : ''}
+      </div>
+      ` : `
       <div style="text-align:center;padding:0 18px 14px">
         <span style="font-size:11.5px;font-weight:600;color:${statusColor}">${statusText}</span>
-        ${resultImpact || (stakes.impact && isLive ? `<div class="match-impact-line">★ ${esc(stakes.impact)}</div>` : '')}
+        ${stakes.impact ? `<div class="match-impact-line">★ ${esc(stakes.impact)}</div>` : ''}
       </div>
+      `}
     </article>`;
 }
 
@@ -693,10 +719,17 @@ function upcomingRowCK(m) {
 
   const sublabelParts = [m.match_desc || m.series, m.venue ? m.venue.split(',')[0] : ''].filter(Boolean);
   const sublabel = esc(sublabelParts.join(' · '));
-  const chipHtml = [
-    stakes.severity ? `<span class="match-intel-chip ${stakes.tone}">${esc(stakes.severity)}</span>` : '',
-    ...stakes.chips.slice(0, 2).map(c => `<span class="match-intel-chip neutral">${esc(c)}</span>`)
-  ].filter(Boolean).join('');
+  // Head-to-head from match data (both teams have complete field) or default
+  const h2h = (m.t1_h2h_wins != null && m.t2_h2h_wins != null) ? `${m.t1_h2h_wins}-${m.t2_h2h_wins}` : null;
+  
+  const chipHtml = (() => {
+    const items = [];
+    if (stakes.severity && stakes.tone === 'danger') items.push(`<span class="match-intel-chip danger">Must-win</span>`);
+    else if (stakes.severity && stakes.tone === 'warn') items.push(`<span class="match-intel-chip warn">Playoff swing</span>`);
+    else if (stakes.severity) items.push(`<span class="match-intel-chip ${stakes.tone}">${esc(stakes.severity)}</span>`);
+    for (const c of (stakes.chips || []).slice(0, 2)) items.push(`<span class="match-intel-chip neutral">${esc(c)}</span>`);
+    return items.join('');
+  })();
 
   return `
     <div class="upcoming-smart-card" style="--t1:${t1.color};--t2:${t2.color}"
@@ -720,7 +753,7 @@ function upcomingRowCK(m) {
             ${teamMiniIntel(m.team1_short)}
           </div>
         </div>
-        <div class="upcoming-smart-vs"><span>VS</span></div>
+        <div class="upcoming-smart-vs"><span>VS</span>${h2h ? `<span class="upcoming-h2h">${esc(h2h)}</span>` : ''}</div>
         <div class="upcoming-smart-team is-right">
           <div>
             <div class="upcoming-smart-code">${esc(m.team2_short)}</div>
@@ -730,7 +763,7 @@ function upcomingRowCK(m) {
         </div>
       </div>
       ${chipHtml ? `<div class="match-intel-row in-card">${chipHtml}</div>` : ''}
-      ${stakes.impact ? `<div class="match-impact-line upcoming">★ ${esc(stakes.impact)}</div>` : ''}
+      ${stakes.headline ? `<div class="match-impact-line upcoming is-significance">★ ${esc(stakes.headline)}</div>` : (stakes.impact ? `<div class="match-impact-line upcoming">📊 ${esc(stakes.impact)}</div>` : '')}
       ${sublabel ? `<div class="upcoming-smart-sub">${sublabel}</div>` : ''}
     </div>`;
 }
