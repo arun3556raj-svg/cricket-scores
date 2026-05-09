@@ -2018,59 +2018,127 @@ html[data-theme="light"] .ck-badge-live { color: var(--live); }
 /* ═══════════════════════════════════════════════════════════════
    GLASS SCHEDULE
 ═══════════════════════════════════════════════════════════════ */
-.sch-shell { display: flex; flex-direction: column; gap: 10px; }
-.sch-group { display: flex; flex-direction: column; gap: 0; }
-.sch-date-head {
-  font-family: var(--mono); font-size: 9.5px; font-weight: 700;
-  letter-spacing: 0.09em; text-transform: uppercase;
-  color: var(--t3); padding: 10px 4px 6px;
+/* ── Schedule (redesigned) ─────────────────────────────── */
+
+/* Progress bar */
+.sch-progress { margin-bottom:14px; }
+.sch-progress-text { display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px; }
+.sch-progress-count { font-size:12px;color:rgba(255,255,255,.3);font-weight:500; }
+.sch-progress-count strong { color:#f1f5f9;font-weight:700; }
+.sch-progress-pct { font-size:11px;font-weight:600;color:rgba(255,255,255,.2);font-family:var(--mono); }
+.sch-progress-bar { height:5px;border-radius:4px;background:rgba(255,255,255,.06);overflow:hidden;margin-bottom:6px; }
+.sch-progress-fill { height:100%;border-radius:4px;background:linear-gradient(90deg,#6366f1,#ec4899);transition:width .8s cubic-bezier(.4,0,.2,1); }
+.sch-progress-labels { display:flex;justify-content:space-between;font-size:9.5px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:rgba(255,255,255,.18); }
+
+.sch-summary { font-size:12px;color:rgba(255,255,255,.25);margin-bottom:16px;line-height:1.4; }
+.sch-stake-count { color:#f97316;font-weight:700; }
+
+/* Filter bar */
+.sch-filter-bar { display:flex;gap:5px;margin-bottom:14px;overflow-x:auto;-webkit-overflow-scrolling:touch; }
+.sch-filter-btn {
+  padding:7px 14px;border-radius:9px;border:1px solid rgba(255,255,255,.07);
+  background:rgba(255,255,255,.035);color:rgba(255,255,255,.35);
+  font-size:11.5px;font-weight:600;font-family:inherit;
+  cursor:pointer;white-space:nowrap;flex-shrink:0;
+  transition:all .15s;
 }
-.sch-list {
-  display: flex; flex-direction: column;
-  background: var(--bg-card);
-  border: 1px solid var(--bd); border-radius: var(--r-lg);
-  overflow: hidden;
+.sch-filter-btn.is-active { background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.14);color:#f1f5f9; }
+.sch-filter-btn:hover { border-color:rgba(255,255,255,.12);color:rgba(255,255,255,.55); }
+
+/* Date groups */
+.sch-date-group { margin-bottom:14px; }
+.sch-date-header {
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 4px 10px;
 }
-.sch-match {
-  display: grid; grid-template-columns: auto 1fr auto;
-  align-items: center; gap: 12px;
-  padding: 13px 16px;
-  border-bottom: 1px solid var(--bd);
-  cursor: pointer; transition: background var(--t);
+.sch-date-header span:first-child {
+  font-size:12px;font-weight:700;color:rgba(255,255,255,.5);
+  text-transform:uppercase;letter-spacing:.08em;
 }
-.sch-match:last-child { border-bottom: 0; }
-.sch-match:hover { background: var(--sf-h); }
-.sch-match--live { border-left: 2px solid var(--live); background: rgba(34,197,94,0.03); }
-.sch-match--done { opacity: 0.85; }
-.sch-match-id { display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; min-width: 40px; }
-.sch-match-num { font-family: var(--mono); font-size: 10px; font-weight: 600; color: var(--t3); }
-.sch-match-venue { font-family: var(--mono); font-size: 9px; color: var(--t4); }
-.sch-match-teams { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
-.sch-team-line {
-  display: flex; align-items: center; gap: 8px; min-width: 0;
+.sch-date-header span:first-child:before { content:"●";margin-right:7px;font-size:4px;vertical-align:middle;color:rgba(255,255,255,.12); }
+.sch-date-count { font-size:10px;font-weight:600;color:rgba(255,255,255,.15);padding:2px 8px;border-radius:8px;background:rgba(255,255,255,.03); }
+
+/* Match cards */
+.sch-match-card {
+  border-radius:11px;border:1px solid rgba(255,255,255,.06);overflow:hidden;
+  background:rgba(255,255,255,.015);cursor:pointer;transition:border-color .15s,background .15s;
+  margin-bottom:8px;
 }
-.sch-team-line--win .sch-tname { font-weight: 700; color: var(--t1); }
-.sch-badge {
-  width: 26px; height: 26px; flex-shrink: 0;
-  display: grid; place-items: center;
-  border-radius: 7px; font-family: var(--mono);
-  font-size: 8px; font-weight: 800;
+.sch-match-card:hover { border-color:rgba(255,255,255,.1);background:rgba(255,255,255,.025); }
+.sch-match-card--stakes { border-left:2px solid rgba(249,115,22,.3); }
+
+/* Card head */
+.sch-card-head {
+  display:flex;justify-content:space-between;align-items:center;
+  padding:13px 14px 0;gap:10px;
 }
-.sch-tname { font-size: 13px; font-weight: 500; color: var(--t2); flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sch-score { margin-left: auto; font-family: var(--mono); font-size: 12.5px; font-weight: 700; color: var(--t1); white-space: nowrap; }
-.sch-score-ov { font-size: 10px; color: var(--t3); margin-left: 3px; }
-.sch-win-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--live); flex-shrink: 0; margin-left: 4px; }
-.sch-match-status { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
-.sch-pill {
-  display: inline-flex; align-items: center; gap: 5px;
-  height: 22px; padding: 0 9px; border-radius: var(--r-pill);
-  font-family: var(--mono); font-size: 9.5px; font-weight: 700;
-  letter-spacing: 0.04em; white-space: nowrap;
+.sch-card-meta { font-size:10px;color:rgba(255,255,255,.25);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+.sch-card-head-right { display:flex;align-items:center;gap:8px;flex-shrink:0; }
+.sch-card-time {
+  font-size:11px;font-weight:600;color:rgba(255,255,255,.35);font-family:var(--mono);
+  padding:3px 9px;border-radius:6px;background:rgba(255,255,255,.04);
+  white-space:nowrap;
 }
-.sch-pill--live { background: var(--live-bg); border: 1px solid var(--live-bd); color: var(--live); }
-.sch-pill--done { background: var(--result-bg); border: 1px solid var(--result-bd); color: var(--result); }
-.sch-pill--upcoming { background: var(--up-bg); border: 1px solid var(--up-bd); color: var(--upcoming); }
-.sch-result-text { font-size: 10px; color: var(--t3); text-align: right; max-width: 110px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sch-card-time--live { background:rgba(239,68,68,.1);color:#ef4444;font-weight:700;display:flex;align-items:center;gap:5px; }
+.sch-card-time--done { background:rgba(255,255,255,.05);color:rgba(255,255,255,.25); }
+
+.sch-badge-playoff {
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:8.5px;font-weight:750;padding:3px 8px;border-radius:5px;
+  letter-spacing:.05em;text-transform:uppercase;
+  border:1px solid;
+  white-space:nowrap;
+}
+
+/* Teams row */
+.sch-card-teams { display:flex;align-items:center;padding:13px 14px 5px;gap:8px; }
+.sch-card-team {
+  display:flex;align-items:center;gap:10px;
+  flex:1;min-width:0;
+}
+.sch-card-team--right { justify-content:flex-end;text-align:right; }
+.sch-card-team--win { opacity:1; }
+.sch-card-team:not(.sch-card-team--right):not(.sch-card-team--win) { opacity:.5; }
+.sch-card-team--right:not(.sch-card-team--win) { opacity:.5; }
+.sch-card-team-info { flex-shrink:0; }
+.sch-card-team-name { font-size:14px;font-weight:800;color:var(--ct);letter-spacing:-.01em; }
+.sch-card-team-stand { font-size:9.5px;color:rgba(255,255,255,.28);font-weight:600;margin-top:2px; }
+.sch-card-team-form { display:flex;gap:1px;flex-shrink:0; }
+.sch-card-team-form--right { order:-1; }
+.sch-card-team-form .form-pill {
+  width:14px;height:14px;border-radius:3px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:7px;font-weight:800;line-height:1;
+}
+.sch-card-team-form .form-pill.win { color:#4ade80;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.18); }
+.sch-card-team-form .form-pill.loss { color:#f87171;background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.18); }
+.sch-card-vs { display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:9px;font-weight:800;color:rgba(255,255,255,.12);letter-spacing:.11em; }
+.sch-card-score { text-align:right;flex-shrink:0; }
+.sch-card-score--win { }
+.sch-card-score .score-num { font-size:20px;font-weight:800;color:var(--ct);font-variant-numeric:tabular-nums;display:block; }
+.sch-card-score .score-ov { font-size:10px;font-family:var(--mono);color:rgba(255,255,255,.25); }
+.sch-card-score-ov { font-size:10px;font-family:var(--mono);color:rgba(255,255,255,.25);display:block; }
+
+/* Footer */
+.sch-card-foot {
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;
+  padding:8px 14px 13px;margin-top:6px;
+  border-top:1px solid rgba(255,255,255,.035);
+}
+.sch-card-venue { font-size:10px;color:rgba(255,255,255,.2);display:flex;align-items:center;gap:4px; }
+.sch-card-result { font-size:10.5px;font-weight:600;color:rgba(255,255,255,.3); }
+.sch-card-stakes { font-size:10px;color:#facc15;font-style:italic;display:flex;align-items:center;gap:4px; }
+.sch-card-stakes:before { content:"★";color:#facc15;font-size:8px; }
+
+@media (max-width: 520px) {
+  .sch-card-teams { gap:5px;padding:11px 12px 3px; }
+  .sch-card-team { gap:7px; }
+  .sch-card-team-name { font-size:13px; }
+  .sch-card-head { padding:11px 12px 0; }
+  .sch-card-foot { padding:6px 12px 12px; }
+  .sch-card-score .score-num { font-size:17px; }
+}
+
 
 /* ═══════════════════════════════════════════════════════════════
    GLASS ARCHIVE
