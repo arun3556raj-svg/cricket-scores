@@ -1072,7 +1072,162 @@ let pointsSeason = '2026';
 let pointsViewMode = 'compact';
 let pointsExpandedRow = null;
 let pointsDetailTabs = {};
-let pointsIntelLoading = false;
+
+let pulseStatsData = null;
+let pulseStatsLoaded = false;
+
+function extractPulseLeaders() {
+  if (!pulseStatsData) return { topRuns: [], topWickets: [], totalMatches: 74, doneMatches: 0 };
+  const yearMap = new Map();
+  // Group by year — use most recent year for pulse
+  let maxYear = 0;
+  const batting = pulseStatsData.batting || [];
+  const bowling = pulseStatsData.bowling || [];
+
+  for (const r of batting) {
+    if (r.y > maxYear) maxYear = r.y;
+    if (!yearMap.has(r.y)) yearMap.set(r.y, {});
+  }
+  for (const r of bowling) {
+    if (r.y > maxYear) maxYear = r.y;
+  }
+
+  const batMap = new Map();
+  for (const r of batting) {
+    if (r.y !== maxYear) continue;
+    const key = r.p;
+    const row = batMap.get(key) || { player: r.p, team: r.t, runs: 0, balls: 0, matches: new Set(), sixes:0 };
+    row.runs += r.ru || 0;
+    row.balls += r.b || 0;
+    row.matches.add(r.m);
+    row.sixes += r.si || 0;
+    batMap.set(key, row);
+  }
+  const topRuns = Array.from(batMap.values())
+    .sort((a, b) => b.runs - a.runs)
+    .slice(0, 5)
+    .map(r => ({ ...r, matches_count: r.matches.size, strike_rate: r.balls > 0 ? r.runs * 100 / r.balls : 0 }));
+
+  const bowlMap = new Map();
+  for (const r of bowling) {
+    if (r.y !== maxYear) continue;
+    const key = r.p;
+    const row = bowlMap.get(key) || { player: r.p, team: r.t, wickets: 0, runs:0, balls:0, matches: new Set(), dots:0, maidens:0 };
+    row.wickets += r.w || 0;
+    row.runs += r.ru || 0;
+    row.balls += r.b || 0;
+    row.matches.add(r.m);
+    row.dots += r.d || 0;
+    row.maidens += r.md || 0;
+    bowlMap.set(key, row);
+  }
+  const topWickets = Array.from(bowlMap.values())
+    .sort((a, b) => b.wickets - a.wickets)
+    .slice(0, 5)
+    .map(r => ({ ...r, matches_count: r.matches.size, economy: r.balls > 0 ? r.runs * 6 / r.balls : 0 }));
+
+  // Estimate match count from points table data
+  let sourceNote = '';
+  try { sourceNote = pointsRowsForSeason()?.length > 0 ? '' : ''; } catch(_) {}
+  // Try to determine total/done from points-table source_note
+  const pts = pointsData?.tables?.[pointsSeason]?.source_note || '';
+  const matchPos = pts.match(/Match (\d+)\s+of\s+(\d+)/i);
+  const doneMatches = matchPos ? Number(matchPos[1]) : 0;
+  const totalMatches = matchPos ? Number(matchPos[2]) : 74;
+
+  return { topRuns, topWickets, doneMatches, totalMatches };
+}
+
+function computePlayoffStats() {
+  try {
+    const rows = pointsRowsForSeason();
+    if (!rows.length) return { teamsAlive: 0, pointsSpread: '—' };
+    const alive = rows.filter(r => (r.qualification_pct || 0) > 5).length;
+    const top6 = rows.filter(r => (r.rank || 99) <= 6);
+    const spread = top6.length >= 2 ? Math.abs(top6[0].points - top6[Math.min(top6.length-1, 5)].points) : 0;
+    return { teamsAlive: alive, pointsSpread: spread };
+  } catch(_) { return { teamsAlive: 0, pointsSpread: '—' }; }
+}
+
+async function loadPulseStats() {
+  if (pulseStatsLoaded || pulseStatsData) return;
+  try {
+    const res = await fetchJson(STATS_BUILDER_PATH);
+    if (!res.ok) throw new Error('HTTP '+res.status);
+    pulseStatsData = await res.json();
+    pulseStatsLoaded = true;
+    renderTournamentPulse();
+  } catch(_) {
+    // Pulse can degrade gracefully — just show what we have from points table
+  }
+}
+
+function groupLeaderStats(leaders) {
+  const already = new Set();
+  return leaders.filter(r => {
+    const k = r.player;
+    if (already.has(k)) return false;
+    already.add(k);
+    return true;
+  });
+}
+
+function renderTournamentPulse() {
+  const pulseEl = $('pulseGrid');
+  if (!pulseEl) return;
+
+  const { topRuns, topWickets, doneMatches, totalMatches } = extractPulseLeaders();
+  const playoff = computePlayoffStats();
+
+  const progressPct = totalMatches > 0 ? Math.round(doneMatches / totalMatches * 100) : 0;
+
+  const topBat = groupLeaderStats(topRuns)[0] || {};
+  const topBowl = groupLeaderStats(topWickets)[0] || {};
+
+  // Load stats in background if not loaded yet
+  if (!pulseStatsLoaded) loadPulseStats();
+
+  pulseEl.innerHTML = `
+    <div class="pulse-cards">
+      <div class="pulse-card">
+        <div class="pulse-label">Matches Done</div>
+        <div class="pulse-value-row">
+          <span class="pulse-primary pulse-primary--big">${doneMatches}</span>
+          <span class="pulse-separator">/</span>
+          <span class="pulse-secondary">${totalMatches}</span>
+        </div>
+        <div class="pulse-progress-wrap">
+          <div class="pulse-progress-bar">
+            <div class="pulse-progress-fill" style="width:${progressPct}%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pulse-card">
+        <div class="pulse-label">Playoff Race</div>
+        <div class="pulse-value-row">
+          <span class="pulse-primary pulse-primary--orange">${playoff.teamsAlive}</span>
+          <span class="pulse-secondary">teams alive</span>
+        </div>
+        <div class="pulse-subtext">
+          ${playoff.pointsSpread > 0 ? `${playoff.pointsSpread} pts separating #3–#6` : 'Awaiting table data'}
+        </div>
+      </div>
+
+      <div class="pulse-card">
+        <div class="pulse-label">Orange Cap</div>
+        <div class="pulse-player-name" style="color:#f97316">${esc(topBat.player || '—')}</div>
+        <div class="pulse-player-stat">${topBat.runs ? `${topBat.runs} runs${topBat.strike_rate ? ' @ SR ' + topBat.strike_rate.toFixed(1) : ''}` : 'Awaiting stats data'}</div>
+      </div>
+
+      <div class="pulse-card">
+        <div class="pulse-label">Purple Cap</div>
+        <div class="pulse-player-name" style="color:#a78bfa">${esc(topBowl.player || '—')}</div>
+        <div class="pulse-player-stat">${topBowl.wickets ? `${topBowl.wickets} wkts${topBowl.economy ? ' @ econ ' + topBowl.economy.toFixed(2) : ''}` : 'Awaiting stats data'}</div>
+      </div>
+    </div>`;
+}
+
 
 async function loadPointsIntel() {
   if (pointsData || pointsIntelLoading) return;
@@ -1245,6 +1400,11 @@ function applyFilter(data) {
   if (data.finished.length > 0 && showResults) show('resultsSection');
   else hide('resultsSection');
 
+  // Tournament Pulse — home only
+  const showPulse = f === 'all';
+  if (showPulse) { show('tournamentPulse'); renderTournamentPulse(); }
+  else hide('tournamentPulse');
+
   // Schedule
   if (scheduleView) show('scheduleSection');
   else hide('scheduleSection');
@@ -1335,6 +1495,9 @@ function render(data) {
 
   // Upcoming preview — always shown on home when there are upcoming matches
   renderUpcomingPreview(data.upcoming);
+
+  // Tournament Pulse — kick off data loading early
+  renderTournamentPulse();
 
   // Live grid (remaining after hero) — Crickly cards
   $('liveGrid').innerHTML = data.live.slice(1).map(liveCardCK).join('');
