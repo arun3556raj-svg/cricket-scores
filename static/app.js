@@ -10,6 +10,8 @@ const SCORECARD_BASE_PATH = (PITCH_CONFIG.scorecardBasePath || `${DATA_BASE_PATH
 const ARCHIVE_SCORECARD_BASE_PATH = (PITCH_CONFIG.archiveScorecardBasePath || `${DATA_BASE_PATH}/archive-scorecards`).replace(/\/+$/, '');
 const STATS_BUILDER_PATH = PITCH_CONFIG.statsBuilderPath || joinPath(DATA_BASE_PATH, 'stats-builder.json');
 const POINTS_TABLE_PATH = PITCH_CONFIG.pointsTablePath || joinPath(DATA_BASE_PATH, 'points-table.json');
+const STATIC_BASE_PATH = (PITCH_CONFIG.staticBasePath || './static').replace(/\/+$/, '');
+const ASSET_MANIFEST_PATH = PITCH_CONFIG.assetManifestPath || joinPath(DATA_BASE_PATH, 'asset-manifest.json');
 
 function joinPath(base, leaf) {
   return `${base.replace(/\/+$/, '')}/${String(leaf).replace(/^\/+/, '')}`;
@@ -115,7 +117,7 @@ function teamMeta(short) {
 let assetManifest = { team_logos: {}, player_images: {} };
 async function loadAssetManifest() {
   try {
-    const r = await fetch(cacheBust('/data/asset-manifest.json'));
+    const r = await fetch(cacheBust(ASSET_MANIFEST_PATH));
     if (r.ok) assetManifest = await r.json();
   } catch (e) { /* use fallbacks silently */ }
 }
@@ -129,7 +131,7 @@ function teamBadge(short, size = 44) {
   const r = Math.round(size * 0.28);
   const fs = Math.round(size * 0.32);
   const ext = TEAM_LOGO_EXT[short] || 'webp';
-  const logoSrc = `/static/team-logos/${short}.${ext}`;
+  const logoSrc = joinPath(STATIC_BASE_PATH, `team-logos/${short}.${ext}`);
 
   // padding: 4% for larger badges, 8% for small ones — keeps logo prominent
   const pad = size >= 60 ? Math.round(size * 0.04) : size >= 40 ? Math.round(size * 0.06) : Math.round(size * 0.08);
@@ -153,7 +155,7 @@ function playerAvatar(playerName, teamShort, size = 36) {
   const imgPath = assetManifest.player_images?.[playerName];
   if (imgPath) {
     return `<div style="width:${size}px;height:${size}px;border-radius:50%;background:linear-gradient(135deg,${color},${color}88);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden">
-      <img src="/${imgPath}" alt="${esc(playerName)}" style="width:100%;height:100%;object-fit:cover"
+      <img src="${joinPath('./', imgPath)}" alt="${esc(playerName)}" style="width:100%;height:100%;object-fit:cover"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <span style="display:none;font-size:${Math.round(size * 0.33)}px;font-weight:700;color:#fff;align-items:center;justify-content:center;width:100%;height:100%">${esc(initials)}</span>
     </div>`;
@@ -2332,7 +2334,7 @@ function renderTeamsSection() {
         return `
           <div class="team-card" onclick="showTeamDetail('${abbr}')">
             <div class="team-card-logo-wrap" style="background:linear-gradient(135deg,${t.color}18,${t.color2||t.color}08)">
-              <img src="/static/team-logos/${abbr}.${ext}" alt="${esc(abbr)}" style="width:100%;height:100%;object-fit:contain"
+              <img src="${joinPath(STATIC_BASE_PATH, `team-logos/${abbr}.${ext}`)}" alt="${esc(abbr)}" style="width:100%;height:100%;object-fit:contain"
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <span style="display:none;font-size:20px;font-weight:800;color:${t.color};width:100%;height:100%;align-items:center;justify-content:center">${esc(abbr)}</span>
             </div>
@@ -2425,7 +2427,7 @@ function showTeamDetail(abbr) {
     <div style="background:linear-gradient(135deg,${t.color}15,${t.color2||t.color}06);border:1px solid ${t.color}22;border-radius:20px;padding:24px;margin-bottom:20px;display:flex;align-items:center;gap:20px;position:relative;overflow:hidden">
       <div style="position:absolute;top:-50px;right:-50px;width:180px;height:180px;background:${t.color}0c;border-radius:50%;filter:blur(60px);pointer-events:none"></div>
       <div style="width:96px;height:96px;border-radius:18px;background:linear-gradient(135deg,${t.color}22,${t.color2||t.color}10);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;box-shadow:0 8px 32px ${t.color}30;padding:8px;box-sizing:border-box;position:relative;z-index:1">
-        <img src="/static/team-logos/${abbr}.${ext}" alt="${esc(abbr)}" style="width:100%;height:100%;object-fit:contain"
+        <img src="${joinPath(STATIC_BASE_PATH, `team-logos/${abbr}.${ext}`)}" alt="${esc(abbr)}" style="width:100%;height:100%;object-fit:contain"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <span style="display:none;font-size:20px;font-weight:800;color:${t.color};width:100%;height:100%;align-items:center;justify-content:center">${esc(abbr)}</span>
       </div>
@@ -2741,7 +2743,7 @@ function _renderPlayerModal(playerName) {
     <div style="display:flex;align-items:center;gap:18px;margin-bottom:22px;padding-bottom:20px;border-bottom:1px solid var(--cdiv)">
       <div style="width:80px;height:80px;border-radius:50%;overflow:hidden;flex-shrink:0;background:linear-gradient(135deg,${t.color}22,${t.color}0a);box-shadow:0 4px 20px ${t.color}28;display:flex;align-items:center;justify-content:center">
         ${imgPath
-          ? `<img src="/${esc(imgPath)}" alt="${esc(playerName)}" style="width:100%;height:100%;object-fit:cover" onerror="this.parentNode.innerHTML='<span style=font-size:26px;font-weight:700;color:${t.color}>${esc(initials)}</span>'">`
+          ? `<img src="${esc(joinPath('./', imgPath))}" alt="${esc(playerName)}" style="width:100%;height:100%;object-fit:cover" onerror="this.parentNode.innerHTML='<span style=font-size:26px;font-weight:700;color:${t.color}>${esc(initials)}</span>'">`
           : `<span style="font-size:26px;font-weight:700;color:${t.color}">${esc(initials)}</span>`}
       </div>
       <div style="flex:1;min-width:0">

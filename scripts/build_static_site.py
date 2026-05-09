@@ -19,6 +19,7 @@ TEMPLATE_PATH = ROOT / "templates" / "index.html"
 ARCHIVE_SOURCE_PATH = ROOT / "data" / "archive.json"
 ARCHIVE_SCORECARD_SOURCE_DIR = ROOT / "data" / "archive-scorecards"
 STATS_SOURCE_PATH = ROOT / "data" / "stats-builder.json"
+ASSET_MANIFEST_SOURCE_PATH = ROOT / "data" / "asset-manifest.json"
 
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
@@ -33,8 +34,10 @@ STATIC_CONFIG_SNIPPET = """
       dataBasePath: "./data",
       scorecardBasePath: "./data/scorecards",
       archiveScorecardBasePath: "./data/archive-scorecards",
+      staticBasePath: "./static",
       statsBuilderPath: "./data/stats-builder.json",
-      pointsTablePath: "./data/points-table.json"
+      pointsTablePath: "./data/points-table.json",
+      assetManifestPath: "./data/asset-manifest.json"
     };
   </script>
 """.strip()
@@ -102,6 +105,8 @@ def copy_archive_data() -> None:
         shutil.copytree(ARCHIVE_SCORECARD_SOURCE_DIR, ARCHIVE_SCORECARD_DIR, dirs_exist_ok=True)
     if STATS_SOURCE_PATH.exists():
         shutil.copy2(STATS_SOURCE_PATH, DATA_DIR / "stats-builder.json")
+    if ASSET_MANIFEST_SOURCE_PATH.exists():
+        shutil.copy2(ASSET_MANIFEST_SOURCE_PATH, DATA_DIR / "asset-manifest.json")
 
 
 def collect_scorecard_targets(matches: dict, schedule: dict) -> dict[str, dict]:
