@@ -3890,19 +3890,23 @@ function renderScheduleProgress() {
   }).length;
 
   return `
-    <div class="sch-progress">
-      <div class="sch-progress-text">
+    <!-- Page title -->
+    <div class="sch-title-block">
+      <h1>IPL 2026 — Schedule</h1>
+      <p>${remain} matches remaining${stakeMatches > 0 ? ' · <strong>' + stakeMatches + ' with playoff stakes</strong>' : ''}</p>
+    </div>
+
+    <!-- Tournament Progress -->
+    <div class="sch-progress-card">
+      <div class="sch-progress-head">
+        <span class="sch-progress-label">Tournament Progress</span>
         <span class="sch-progress-count"><strong>Match ${doneMatches}</strong> of ${totalMatches}</span>
-        <span class="sch-progress-pct">${pct}%</span>
       </div>
       <div class="sch-progress-bar"><div class="sch-progress-fill" style="width:${pct}%"></div></div>
       <div class="sch-progress-labels">
         <span>League stage</span>
-        <span style="color:#facc15">Playoffs — May 20</span>
+        <span class="sch-progress-playoffs">Playoffs — May 20</span>
       </div>
-    </div>
-    <div class="sch-summary">
-      <span>${remain} matches remaining${stakeMatches > 0 ? ' · <strong class="sch-stake-count">' + stakeMatches + ' with playoff stakes</strong>' : ''}</span>
     </div>`;
 }
 
@@ -3974,25 +3978,48 @@ function renderSchedule(data) {
       else if (Math.abs(time - tomorrow.getTime()) < 86400000) { label = 'Tomorrow'; dateKey = 'tomorrow'; }
       else { label = d.toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' }).toUpperCase(); dateKey = label; }
     }
-    if (!byDate.has(dateKey)) byDate.set(dateKey, { label, matches: [] });
+    if (!byDate.has(dateKey)) byDate.set(dateKey, { label, isToday: label==='Today', isTomorrow: label==='Tomorrow', matches: [] });
     byDate.get(dateKey).matches.push(m);
   }
 
   // Build HTML: progress + filter bar + date groups
   let html = renderScheduleProgress() + scheduleFilterBar();
   for (const [key, group] of byDate) {
+    const isPlayoffStage = !group.isToday && !group.isTomorrow && (group.label || '').startsWith('MAY 2');
     html += `<div class="sch-date-group">
-      <div class="sch-date-header">
-        <span>${esc(group.label)}</span>
-        <span class="sch-date-count">${group.matches.length} match${group.matches.length > 1 ? 'es' : ''}</span>
+      <div class="sch-date-header-wrap">
+        <div class="sch-date-header-left">
+          ${group.isToday ? `<span class="sch-date-pill sch-date-pill--today">TODAY</span>` : ''}
+          ${group.isTomorrow ? `<span class="sch-date-pill sch-date-pill--tomorrow">TOMORROW</span>` : ''}
+          <span class="sch-date-label" style="color:${group.isToday ? '#CBD5E1' : 'rgba(255,255,255,.35)'}">${esc(group.label.replace(/_/g,' '))}</span>
+        </div>
+        <div class="sch-date-header-right">
+          <span class="sch-date-divider"></span>
+          <span class="sch-date-count">${group.matches.length} match${group.matches.length > 1 ? 'es' : ''}</span>
+        </div>
       </div>
-      ${group.matches.map(scheduleMatchRow).join('')}
+      <div class="sch-date-cards">
+        ${group.matches.map(scheduleMatchRow).join('')}
+      </div>
     </div>`;
   }
 
   if (!filtered.length) {
     html = renderScheduleProgress() + scheduleFilterBar() + '<div class="sc-empty" style="margin-top:16px">No matches in this view.</div>';
   }
+
+  // Add playoff structure teaser at the bottom
+  html += `<div class="sch-playoff-teaser">
+    <div class="sch-playoff-teaser-head">Playoff Structure</div>
+    <div class="sch-playoff-teaser-list">
+      ${[
+        { label:'Qualifier 1', desc:'#1 vs #2 · Winner → Final', date:'May 20', color:'#22C55E' },
+        { label:'Eliminator', desc:'#3 vs #4 · Loser eliminated', date:'May 21', color:'#EF4444' },
+        { label:'Qualifier 2', desc:'Q1 Loser vs EL Winner', date:'May 23', color:'#F97316' },
+        { label:'Final', desc:'Champion crowned', date:'May 25', color:'#FACC15' },
+      ].map(s => `<div class="sch-playoff-row"><span class="sch-playoff-dot" style="background:${s.color}"></span><span class="sch-playoff-name">${esc(s.label)}</span><span class="sch-playoff-desc">${esc(s.desc)}</span><span class="sch-playoff-date">${esc(s.date)}</span></div>`).join('')}
+    </div>
+  </div>`;
 
   $('scheduleList').innerHTML = html;
 }
