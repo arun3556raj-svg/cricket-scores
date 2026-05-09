@@ -861,8 +861,8 @@
       "team2_short": "KKR",
       "team2_color": "#7c3aed",
       "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "upcoming",
-      "status_text": "Match starts at May 08, 14:00 GMT",
+      "status": "finished",
+      "status_text": "Kolkata Knight Riders won by 8 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1778248800000,
       "match_date": "Fri, 08 May 2026"
@@ -871,15 +871,15 @@
       "id": "152075",
       "series": "Indian Premier League 2026",
       "match_desc": "52nd Match",
-      "team1": "Rajasthan Royals",
-      "team1_short": "RR",
-      "team1_color": "#db2777",
-      "team2": "Gujarat Titans",
-      "team2_short": "GT",
-      "team2_color": "#0f766e",
+      "team1": "Gujarat Titans",
+      "team1_short": "GT",
+      "team1_color": "#0f766e",
+      "team2": "Rajasthan Royals",
+      "team2_short": "RR",
+      "team2_color": "#db2777",
       "venue": "Sawai Mansingh Stadium, Jaipur",
-      "status": "upcoming",
-      "status_text": "Match starts at May 09, 14:00 GMT",
+      "status": "finished",
+      "status_text": "Gujarat Titans won by 77 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1778335200000,
       "match_date": "Sat, 09 May 2026"
@@ -1259,6 +1259,6 @@
       "match_date": "Sun, 31 May 2026"
     }
   ],
-  "last_updated": "08 May, 05:16 PM",
+  "last_updated": "10 May, 01:25 AM",
   "error": null
 }
