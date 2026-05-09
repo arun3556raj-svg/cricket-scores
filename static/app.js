@@ -928,6 +928,9 @@ let archiveFilters = { year: 'all', team: 'all', round: 'all' };
 let pointsLoaded = false;
 let pointsData = null;
 let pointsSeason = '2026';
+let pointsViewMode = 'compact';
+let pointsExpandedRow = null;
+let pointsDetailTabs = {};
 
 // ── Hero scorecard (auto-fetched for live match) ───────────────
 let heroScorecardData = null;
@@ -2859,182 +2862,327 @@ async function loadPointsTable() {
   }
 }
 
+function ptNum(value, fallback = 0) {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : fallback;
+}
+function ptClamp(value, min = 0, max = 100) {
+  return Math.max(min, Math.min(max, value));
+}
+function ptNrr(row) {
+  return ptNum(row.nrr, 0);
+}
+function ptNrrText(nrr) {
+  return `${nrr > 0 ? '+' : ''}${nrr.toFixed(3)}`;
+}
+function getMomentumConfig(m) {
+  const map = {
+    surging: { label: 'Surging', icon: '↗', color: '#22C55E', bg: 'rgba(34,197,94,0.12)' },
+    rising: { label: 'Rising', icon: '↑', color: '#4ADE80', bg: 'rgba(74,222,128,0.10)' },
+    steady: { label: 'Steady', icon: '→', color: '#94A3B8', bg: 'rgba(148,163,184,0.10)' },
+    dipping: { label: 'Dipping', icon: '↘', color: '#FB923C', bg: 'rgba(251,146,60,0.10)' },
+    falling: { label: 'Falling', icon: '↓', color: '#F87171', bg: 'rgba(248,113,113,0.10)' },
+    collapsing: { label: 'Collapsing', icon: '!', color: '#EF4444', bg: 'rgba(239,68,68,0.12)' },
+  };
+  return map[m] || map.steady;
+}
+function getPressureColor(p) {
+  if (p >= 80) return '#EF4444';
+  if (p >= 60) return '#F97316';
+  if (p >= 40) return '#FACC15';
+  return '#22C55E';
+}
+function getQualColor(q) {
+  if (q >= 85) return '#22C55E';
+  if (q >= 60) return '#4ADE80';
+  if (q >= 35) return '#FACC15';
+  if (q >= 10) return '#F97316';
+  return '#EF4444';
+}
+function getDifficultyLabel(d) {
+  if (d >= 70) return 'Tough';
+  if (d >= 50) return 'Moderate';
+  return 'Favorable';
+}
+function getDifficultyColor(d) {
+  if (d >= 70) return '#EF4444';
+  if (d >= 50) return '#F97316';
+  return '#22C55E';
+}
+function getQualDescriptor(q) {
+  if (q >= 90) return 'Almost certain';
+  if (q >= 75) return 'Strong position';
+  if (q >= 45) return 'Competitive';
+  if (q >= 20) return 'Needs results';
+  if (q >= 8) return 'Unlikely';
+  return 'Virtually eliminated';
+}
+function getPressureLabel(p) {
+  if (p >= 80) return 'Must-win territory';
+  if (p >= 60) return 'High stakes';
+  if (p >= 40) return 'Building pressure';
+  return 'Comfortable';
+}
+function getFormFromRow(row) {
+  const raw = Array.isArray(row.last_5) ? row.last_5 : Array.isArray(row.last5) ? row.last5 : [];
+  const cleaned = raw.map(v => String(v || '').trim().toUpperCase()[0]).filter(v => ['W','L','N'].includes(v));
+  if (cleaned.length) return cleaned.slice(-5);
+  const played = Math.max(1, ptNum(row.played || row.p, 0));
+  const wins = ptNum(row.won || row.w, 0);
+  const ratio = wins / played;
+  const winCount = ratio >= 0.72 ? 4 : ratio >= 0.55 ? 3 : ratio >= 0.35 ? 2 : ratio >= 0.18 ? 1 : 0;
+  return Array.from({ length: 5 }, (_, i) => i < winCount ? 'W' : 'L');
+}
+function getStreakType(last5) {
+  if (!last5.length) return '—';
+  const last = last5[last5.length - 1];
+  let count = 0;
+  for (let i = last5.length - 1; i >= 0; i--) {
+    if (last5[i] === last) count++; else break;
+  }
+  return `${last}${count}`;
+}
+function classifyMomentum(last5, nrr, trend = 0) {
+  const wins = last5.filter(v => v === 'W').length;
+  if (wins >= 4 && nrr >= 0.5) return 'surging';
+  if (wins >= 3 && (nrr >= 0 || trend >= 0)) return 'rising';
+  if (wins >= 2 && nrr > -0.2) return 'steady';
+  if (wins >= 2) return 'dipping';
+  if (wins <= 1 && nrr < -0.75) return 'collapsing';
+  return 'falling';
+}
+function makeNrrTrend(nrr, trend = 0) {
+  const direction = trend > 0 ? 1 : trend < 0 ? -1 : nrr >= 0 ? 1 : -1;
+  const base = Math.abs(nrr) < 0.001 ? 0.06 * direction : nrr;
+  return [0.58, 0.70, 0.82, 0.92, 1].map((m, i) => {
+    const wobble = (i - 2) * 0.018 * direction;
+    return Number((base * m + wobble).toFixed(3));
+  });
+}
+function createSparkline(data, color, width = 64, height = 24) {
+  const safe = (data && data.length ? data : [0, 0, 0, 0, 0]).map(Number);
+  const min = Math.min(...safe), max = Math.max(...safe);
+  const range = max - min || 1;
+  const points = safe.map((v, i) => {
+    const x = safe.length === 1 ? width : (i / (safe.length - 1)) * width;
+    const y = height - ((v - min) / range) * (height - 4) - 2;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+  const lastX = width;
+  const lastY = height - ((safe[safe.length - 1] - min) / range) * (height - 4) - 2;
+  return `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" class="pt-spark"><polyline points="${points}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="${lastX}" cy="${lastY.toFixed(1)}" r="2.5" fill="${color}"/></svg>`;
+}
+function createQualRing(value, size = 44, showText = false) {
+  const q = ptClamp(value);
+  const r = (size - 6) / 2;
+  const circ = 2 * Math.PI * r;
+  const offset = circ - (q / 100) * circ;
+  const color = getQualColor(q);
+  const icon = q >= 85 ? '✓' : q < 10 ? '×' : '?';
+  return `<span class="pt-ring-wrap" style="width:${size}px;height:${size}px"><svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><g transform="rotate(-90 ${size/2} ${size/2})"><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="3"/><circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="3" stroke-dasharray="${circ}" stroke-dashoffset="${offset}" stroke-linecap="round" style="transition:stroke-dashoffset .8s ease"/></g></svg><span class="pt-ring-center" style="color:${color}">${showText ? Math.round(q) : icon}</span></span>`;
+}
+function formPills(last5) {
+  return `<div class="pt-form-row">${(last5 || []).map(r => `<span class="form-pill ${r === 'W' ? 'win' : r === 'L' ? 'loss' : 'nr'}">${esc(r)}</span>`).join('')}</div>`;
+}
+function teamBadgePt(short, size = 30) {
+  const meta = teamMeta(short);
+  return `<span class="pt-team-badge" style="--team:${meta.color};width:${size}px;height:${size}px;border-color:${meta.color}33;background:${meta.color}1A;color:${meta.color}">${esc(short)}</span>`;
+}
+function fixtureOpponents(teamShort, rows) {
+  const maxMatches = 14;
+  const team = rows.find(r => r.team_short === teamShort);
+  const left = Math.max(0, maxMatches - ptNum(team?.played, 0));
+  const sorted = rows.filter(r => r.team_short !== teamShort).sort((a,b) => ptNum(b.points)-ptNum(a.points));
+  if (scheduleData?.matches) {
+    const fixtures = scheduleData.matches.filter(m => {
+      const status = String(m.status || '').toLowerCase();
+      const upcoming = !status || status === 'upcoming' || status === 'scheduled';
+      return upcoming && (m.team1_short === teamShort || m.team2_short === teamShort);
+    }).map(m => m.team1_short === teamShort ? m.team2_short : m.team1_short).filter(Boolean);
+    if (fixtures.length) return fixtures.slice(0, left || fixtures.length);
+  }
+  return sorted.slice(0, left).map(r => r.team_short);
+}
+function enrichPointsRows(rows) {
+  const sorted = rows.map((row, idx) => ({ ...row, _origIndex: idx })).sort((a,b) => (ptNum(a.position, 999) - ptNum(b.position, 999)) || (ptNum(b.points)-ptNum(a.points)) || (ptNrr(b)-ptNrr(a)));
+  const fourthPts = ptNum(sorted[3]?.points, 0);
+  return sorted.map((row, idx) => {
+    const short = row.team_short || row.team || '';
+    const played = ptNum(row.played || row.p, 0);
+    const won = ptNum(row.won || row.w, 0);
+    const lost = ptNum(row.lost || row.l, 0);
+    const nr = ptNum(row.no_result ?? row.nr, 0);
+    const points = ptNum(row.points ?? row.pts, won * 2 + nr);
+    const remaining = Math.max(0, 14 - played);
+    const maxPts = points + remaining * 2;
+    const nrr = ptNrr(row);
+    const last5 = getFormFromRow(row);
+    const momentum = classifyMomentum(last5, nrr, ptNum(row.trend, 0));
+    const streakType = getStreakType(last5);
+    const qualBase = row.qualification_pct != null ? ptNum(row.qualification_pct) : (points / 20) * 70 + Math.max(0, 5 - idx) * 7 + nrr * 8;
+    const qualProb = ptClamp(qualBase + (maxPts >= 16 ? 8 : maxPts < fourthPts ? -55 : 0));
+    const pressureIndex = ptClamp(100 - qualProb + Math.max(0, 12 - points) * 2 + (remaining <= 3 && qualProb < 60 ? 10 : 0));
+    const eliminated = maxPts < fourthPts || qualProb < 3;
+    const fixtures = fixtureOpponents(short, sorted);
+    const fixtureRows = fixtures.map(code => sorted.find(r => r.team_short === code)).filter(Boolean);
+    const remainingDifficulty = fixtureRows.length
+      ? ptClamp(fixtureRows.reduce((sum, r) => sum + (100 - ((ptNum(r.position, sorted.indexOf(r)+1) - 1) * 8)) + ptNum(r.points,0) * 2, 0) / fixtureRows.length)
+      : ptClamp(50 + (idx < 4 ? 10 : -5));
+    const bestCase = Math.max(1, idx + 1 - Math.ceil(remaining / 2));
+    const worstCase = Math.min(sorted.length, idx + 1 + Math.max(1, Math.ceil((14 - points) / 4)));
+    return {
+      ...row,
+      rank: idx + 1,
+      team_short: short,
+      full: TEAM_FULL_NAMES[short] || short,
+      played, won, lost, no_result: nr, points, remaining, maxPts, nrr,
+      runs_for: ptNum(row.runs_for, 0), runs_against: ptNum(row.runs_against, 0),
+      wickets_taken: ptNum(row.wickets_taken, 0), wickets_lost: ptNum(row.wickets_lost, 0),
+      last5, momentum, streakType, qualProb, pressureIndex, eliminated,
+      nrrTrend: makeNrrTrend(nrr, ptNum(row.trend, 0)), remainingFixtures: fixtures,
+      remainingDifficulty, virtualRank: [bestCase, worstCase], isTopFour: idx < 4
+    };
+  });
+}
 function renderPointsTable(data) {
   const el = $('pointsTable');
   if (!el) return;
   const seasons = data.years || [];
   const table = data.tables?.[pointsSeason] || data.tables?.[String(seasons[0])] || { rows: [] };
-  const rows = table.rows || [];
-
-  const seasonPills = seasons
-    .map(year => `<button class="pts-v3-season-btn${String(year) === pointsSeason ? ' active' : ''}" onclick="setPointsSeason('${year}')">${year}</button>`)
-    .join('');
-
+  const rows = enrichPointsRows(table.rows || []);
+  const seasonPills = seasons.map(year => `<button class="pts-v3-season-btn${String(year) === pointsSeason ? ' active' : ''}" onclick="setPointsSeason('${year}')">${year}</button>`).join('');
+  const activeView = pointsViewMode || 'compact';
   el.innerHTML = `
-    <div class="pts-v3-shell">
-      <div class="pts-v3-header">
+    <div class="pt-shell">
+      <div class="pts-v3-header pt-intel-head">
         <div>
-          <div class="pts-v3-title">
-            <span class="pts-v3-trophy">🏆</span> Points Table
-          </div>
-          <div class="pts-v3-league">
-            <span class="pts-v3-league-dot"></span>
-            <span class="pts-v3-league-name">TATA IPL ${esc(pointsSeason)}</span>
-          </div>
+          <div class="pts-v3-title"><span class="pts-v3-trophy">🏆</span> Points Table</div>
+          <div class="pts-v3-league"><span class="pts-v3-league-dot"></span><span class="pts-v3-league-name">Tournament Intelligence · IPL ${esc(pointsSeason)}</span></div>
         </div>
-        <button class="pts-v3-filter-btn">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
-          Filter
-        </button>
+        <div class="pt-head-stat"><span>${rows.filter(r => !r.eliminated).length}</span><small>alive</small></div>
       </div>
       <div class="pts-v3-seasons">${seasonPills}</div>
-      <div class="pts-v3-tabs">
-        <button class="pts-v3-tab active" onclick="setPointsView('compact',this)">Compact</button>
-        <button class="pts-v3-tab" onclick="setPointsView('advanced',this)">Advanced</button>
-        <button class="pts-v3-tab" onclick="setPointsView('qualification',this)">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          Qualification
-        </button>
+      <div class="pt-tabs">
+        <button class="pt-tab${activeView === 'compact' ? ' active' : ''}" onclick="setPointsView('compact')">Compact</button>
+        <button class="pt-tab${activeView === 'advanced' ? ' active' : ''}" onclick="setPointsView('advanced')">Advanced</button>
+        <button class="pt-tab${activeView === 'qualification' ? ' active' : ''}" onclick="setPointsView('qualification')">⟡ Qualification</button>
       </div>
-      ${rows.length ? renderPointsRows(rows) : `<div class="sc-empty" style="padding:28px">No data for this season.</div>`}
+      ${rows.length ? renderPointsView(rows, activeView) : `<div class="sc-empty" style="padding:28px">No data for this season.</div>`}
     </div>`;
 }
-
+function renderPointsView(rows, view) {
+  if (view === 'advanced') return renderAdvancedPointsView(rows);
+  if (view === 'qualification') return renderQualificationPointsView(rows);
+  return renderCompactPointsView(rows);
+}
 function setPointsSeason(season) {
   pointsSeason = String(season);
+  pointsExpandedRow = null;
+  pointsDetailTabs = {};
   if (pointsData) renderPointsTable(pointsData);
 }
-
-function setPointsView(view, btn) {
-  document.querySelectorAll('.pts-v3-tab').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+function setPointsView(view) {
+  pointsViewMode = view;
+  pointsExpandedRow = null;
+  if (pointsData) renderPointsTable(pointsData);
 }
-
 function togglePtsRow(i) {
-  const row = document.getElementById('pts-row-' + i);
-  if (row) row.classList.toggle('expanded');
+  pointsExpandedRow = pointsExpandedRow === i ? null : i;
+  if (pointsData) renderPointsTable(pointsData);
 }
-
-function renderPointsRows(rows) {
-  const colHead = `
-    <div class="pts-v3-col-head">
-      <span>#</span><span></span><span class="ch-team">TEAM</span>
-      <span>P</span><span>W</span><span>L</span><span>PTS</span><span>NRR</span><span></span>
-    </div>`;
-
-  const rowsHtml = rows.map((row, i) => {
-    const meta = teamMeta(row.team_short);
-    const qual = i < 4;
-    const nrrVal = typeof row.nrr === 'number' ? row.nrr : parseFloat(row.nrr) || 0;
-    const nrrStr = (nrrVal > 0 ? '+' : '') + nrrVal.toFixed(3);
-    const nrrColor = nrrVal > 0 ? '#22c55e' : nrrVal < 0 ? '#ef4444' : 'var(--ct3)';
-    const rankClass = i === 0 ? 'r1' : i === 1 ? 'r2' : i === 2 ? 'r3' : '';
-
-    const trendVal = row.trend || 0;
-    const trendHtml = trendVal > 0
-      ? '<span style="color:#22c55e;font-size:9px">▲</span>'
-      : trendVal < 0
-        ? '<span style="color:#ef4444;font-size:9px">▼</span>'
-        : '<span style="color:var(--t4)">—</span>';
-
-    const color2 = meta.color2 || meta.color;
-    const circleHtml = `<span class="pts-v3-circle" style="background:linear-gradient(135deg,${meta.color},${color2})">${esc(row.team_short)}</span>`;
-
-    const last5 = row.last_5 || [];
-    const last5Html = last5.length
-      ? `<div class="pts-v3-last5">${last5.map(r => {
-          const cls = r === 'W' ? 'pts-v3-dot-w' : r === 'L' ? 'pts-v3-dot-l' : 'pts-v3-dot-nr';
-          return `<span class="pts-v3-dot ${cls}">${r}</span>`;
-        }).join('')}</div>`
-      : '<span style="color:var(--t4);font-size:11px">—</span>';
-
-    const rfra = row.runs_for != null
-      ? `${Number(row.runs_for).toLocaleString()} / ${Number(row.runs_against).toLocaleString()}` : '—';
-    const wfwa = row.wickets_taken != null
-      ? `${row.wickets_taken} / ${row.wickets_lost}` : '—';
-    const qualPct = row.qualification_pct != null
-      ? `<span class="pts-v3-qual-pct">${row.qualification_pct}%</span>` : '—';
-
-    return `
-      <div class="pts-v3-row${qual ? ' qualifying' : ''}" id="pts-row-${i}">
-        <div class="pts-v3-row-main" onclick="togglePtsRow(${i})">
-          <span class="pts-v3-rank ${rankClass}">${i + 1}</span>
-          <span class="pts-v3-trend">${trendHtml}</span>
-          <span class="pts-v3-team-cell">
-            ${circleHtml}
-            <span class="pts-v3-team-name">${esc(row.team_short)}</span>
-          </span>
-          <span class="pts-v3-stat">${row.played}</span>
-          <span class="pts-v3-stat">${row.won}</span>
-          <span class="pts-v3-stat">${row.lost}</span>
-          <span class="pts-v3-pts">${row.points}</span>
-          <span class="pts-v3-nrr" style="color:${nrrColor}">${nrrStr}</span>
-          <span class="pts-v3-chevron">▾</span>
-        </div>
-        <div class="pts-v3-detail">
-          <div class="pts-v3-detail-item">
-            <span class="pts-v3-detail-icon">📊</span>
-            <span class="pts-v3-detail-label">RF / RA</span>
-            <span class="pts-v3-detail-value">${rfra}</span>
-          </div>
-          <div class="pts-v3-detail-item">
-            <span class="pts-v3-detail-icon">⚡</span>
-            <span class="pts-v3-detail-label">WF / WA</span>
-            <span class="pts-v3-detail-value">${wfwa}</span>
-          </div>
-          <div class="pts-v3-detail-item">
-            <span class="pts-v3-detail-icon">🕐</span>
-            <span class="pts-v3-detail-label">Last 5</span>
-            ${last5Html}
-          </div>
-          <div class="pts-v3-detail-item">
-            <span class="pts-v3-detail-icon">⭐</span>
-            <span class="pts-v3-detail-label">Qualification</span>
-            ${qualPct}
-          </div>
-        </div>
-      </div>`;
-  }).join('');
-
-  return `
-    ${colHead}
-    <div>${rowsHtml}</div>
-    <div class="pts-v3-footer">
-      <div class="pts-v3-legend">
-        <span class="pts-v3-legend-dot"></span>
-        Top 4 advance to playoffs
-      </div>
-      <span class="pts-v3-footer-note">${esc(pointsSeason)} · Tap a row to expand</span>
-    </div>`;
+function setPtsDetailTab(i, tab, event) {
+  if (event) event.stopPropagation();
+  pointsDetailTabs[i] = tab;
+  if (pointsData) renderPointsTable(pointsData);
 }
-
-function renderPointsRow(row, index, enhanced) {
+function renderCompactPointsView(rows) {
+  const colHead = `<div class="pt-compact-head"><span>#</span><span>TEAM</span><span>P</span><span>W</span><span>L</span><span>PTS</span><span>NRR</span><span></span></div>`;
+  const rowsHtml = rows.map((row, i) => renderCompactPointRow(row, i)).join('');
+  return `${colHead}<div class="pt-compact-list">${rowsHtml}</div><div class="pt-legend"><span><i class="pt-lg-playoff"></i>Playoff zone</span><span><i class="pt-lg-elim"></i>Eliminated</span></div>`;
+}
+function renderCompactPointRow(row, i) {
   const meta = teamMeta(row.team_short);
-  const isQualifying = index < 4;
-  const nrrVal = typeof row.nrr === 'number' ? row.nrr : parseFloat(row.nrr) || 0;
-  const nrrClass = nrrVal > 0 ? 'nrr-pos' : nrrVal < 0 ? 'nrr-neg' : '';
-  const nrrStr = (nrrVal > 0 ? '+' : '') + nrrVal.toFixed(3);
-  return `
-    <div class="points-row${isQualifying ? ' is-qualifying' : ''}">
-      <span class="points-rank">${index + 1}</span>
-      <span class="points-team">
-        <span class="team-badge" style="border-color:${meta.color}55;color:${meta.color};background:${meta.bg}">${esc(row.team_short)}</span>
-        <strong class="points-team-short" style="color:${meta.color}">${esc(row.team_short)}</strong>
-        ${row.provisional_matches ? `<small class="points-prov">${row.provisional_matches}p</small>` : ''}
-      </span>
-      <span data-label="P">${row.played}</span>
-      <span data-label="W">${row.won}</span>
-      <span data-label="L">${row.lost}</span>
-      <span data-label="NR">${row.no_result}</span>
-      <span data-label="Pts" style="font-weight:600">${row.points}</span>
-      <span data-label="NRR" class="${nrrClass}" style="font-family:var(--font-mono);font-size:11.5px">${nrrStr}</span>
-      ${enhanced ? `
-        <span data-label="For">${row.runs_for}/${esc(row.overs_for)}</span>
-        <span data-label="Against">${row.runs_against}/${esc(row.overs_against)}</span>
-        <span data-label="Wkts">${row.wickets_lost}/${row.wickets_taken}</span>
-      ` : ''}
-    </div>`;
+  const nrrColor = row.nrr > 0 ? '#4ADE80' : row.nrr < 0 ? '#F87171' : 'var(--t3)';
+  const expanded = pointsExpandedRow === i;
+  return `<div class="pt-row ${row.isTopFour ? 'playoff' : ''} ${row.eliminated ? 'eliminated' : ''} ${expanded ? 'expanded' : ''}" style="--team:${meta.color}" id="pts-row-${i}">
+    <div class="pt-row-main" onclick="togglePtsRow(${i})">
+      <span class="pt-rank">${row.rank}</span>
+      <span class="pt-team-cell">${teamBadgePt(row.team_short)}<span><b>${esc(row.team_short)}</b><small>${esc(row.full)}</small></span></span>
+      <span class="pt-cell">${row.played}</span><span class="pt-cell">${row.won}</span><span class="pt-cell">${row.lost}</span><span class="pt-pts">${row.points}</span>
+      <span class="pt-nrr" style="color:${nrrColor}">${ptNrrText(row.nrr)}</span><span class="pt-chevron">▾</span>
+    </div>
+    ${expanded ? renderPointExpanded(row, i) : ''}
+  </div>`;
 }
+function renderPointExpanded(row, i) {
+  const tab = pointsDetailTabs[i] || 'overview';
+  return `<div class="pt-expanded" onclick="event.stopPropagation()">
+    <div class="pt-inner-tabs">
+      ${['overview','qualification','fixtures'].map(t => `<button class="pt-inner-tab${tab === t ? ' active' : ''}" onclick="setPtsDetailTab(${i}, '${t}', event)">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}
+    </div>
+    ${tab === 'qualification' ? renderExpandedQualification(row) : tab === 'fixtures' ? renderExpandedFixtures(row) : renderExpandedOverview(row)}
+  </div>`;
+}
+function ratioBar(a, b, color = '#4ADE80') {
+  const total = Math.max(1, ptNum(a) + ptNum(b));
+  const pct = ptClamp((ptNum(a) / total) * 100);
+  return `<div class="pt-ratio"><span style="width:${pct}%;background:${color}"></span></div>`;
+}
+function renderExpandedOverview(row) {
+  const mom = getMomentumConfig(row.momentum);
+  const nrrColor = row.nrr >= 0 ? '#4ADE80' : '#F87171';
+  return `<div class="pt-card-grid">
+    <div class="pt-card"><div class="pt-card-label">Runs</div><div class="pt-vs"><b class="good">${row.runs_for.toLocaleString()}</b><span>vs</span><b class="bad">${row.runs_against.toLocaleString()}</b></div><div class="pt-subpair"><span>Scored</span><span>Conceded</span></div>${ratioBar(row.runs_for,row.runs_against)}</div>
+    <div class="pt-card"><div class="pt-card-label">Wickets</div><div class="pt-vs"><b class="good">${row.wickets_taken}</b><span>vs</span><b class="bad">${row.wickets_lost}</b></div><div class="pt-subpair"><span>Taken</span><span>Lost</span></div>${ratioBar(row.wickets_taken,row.wickets_lost)}</div>
+    <div class="pt-card"><div class="pt-card-label">Momentum</div><span class="pt-momentum" style="background:${mom.bg};color:${mom.color}">${mom.icon} ${mom.label}</span><div class="pt-streak">Streak: ${esc(row.streakType)}</div>${formPills(row.last5)}</div>
+    <div class="pt-card"><div class="pt-card-label">NRR Trend</div><div class="pt-spark-wrap">${createSparkline(row.nrrTrend,nrrColor,80,28)}<div><b style="color:${nrrColor}">${ptNrrText(row.nrr)}</b><small>Current</small></div></div></div>
+  </div>`;
+}
+function renderExpandedQualification(row) {
+  const qColor = getQualColor(row.qualProb), pColor = getPressureColor(row.pressureIndex);
+  const neededWins = Math.max(0, Math.ceil((16 - row.points) / 2));
+  const marker = ptClamp(((row.nrr + 2) / 4) * 100);
+  const what = row.eliminated ? 'Mathematically eliminated from playoff contention.' : row.qualProb >= 90 ? `Need ${neededWins} more win${neededWins === 1 ? '' : 's'} from ${row.remaining} remaining to lock top 4.` : row.qualProb >= 60 ? `Need to win ${neededWins} of ${row.remaining} remaining. NRR could be decisive.` : row.qualProb >= 25 ? `Must win ${neededWins} of ${row.remaining} remaining and need other results.` : 'Need to win all remaining and depend heavily on other results.';
+  return `<div class="pt-qual-stack">
+    <div class="pt-card pt-prob"><div><div class="pt-card-label">Playoff Probability</div><div class="pt-big" style="color:${qColor}">${Math.round(row.qualProb)}%</div><p>${getQualDescriptor(row.qualProb)}</p></div>${createQualRing(row.qualProb,52)}</div>
+    <div class="pt-two"><div class="pt-card"><div class="pt-card-label">Virtual Rank</div><div class="pt-rank-range"><b>${row.virtualRank[0]}</b><span>to</span><b class="dim">${row.virtualRank[1]}</b></div><p>Best → worst case</p></div><div class="pt-card"><div class="pt-card-label">Pressure Index</div><div class="pt-pressure"><span style="width:${row.pressureIndex}%;background:${pColor}"></span></div><b style="color:${pColor}">${Math.round(row.pressureIndex)}/100</b><p>${getPressureLabel(row.pressureIndex)}</p></div></div>
+    <div class="pt-card"><div class="pt-card-label">NRR Danger Zone</div><div class="pt-zone"><span class="pt-zone-marker" style="left:${marker}%;background:${teamMeta(row.team_short).color}"></span></div><div class="pt-scale"><span>-2.0</span><span>0.0</span><span>+2.0</span></div></div>
+    <div class="pt-card pt-need ${row.eliminated ? 'danger' : ''}">${esc(what)}</div>
+  </div>`;
+}
+function renderExpandedFixtures(row) {
+  const dColor = getDifficultyColor(row.remainingDifficulty);
+  const fixtures = row.remainingFixtures.length ? row.remainingFixtures : ['TBD'];
+  return `<div class="pt-fixtures"><div class="pt-fixture-head"><div><b>Remaining Difficulty</b><small>${row.remaining} matches left</small></div><span style="background:${dColor}1A;color:${dColor};border-color:${dColor}33">${getDifficultyLabel(row.remainingDifficulty)} (${Math.round(row.remainingDifficulty)}/100)</span></div>${fixtures.map(code => renderFixtureRow(code)).join('')}</div>`;
+}
+function renderFixtureRow(code) {
+  const rows = enrichPointsRows((pointsData?.tables?.[pointsSeason]?.rows) || []);
+  const opp = rows.find(r => r.team_short === code);
+  if (!opp) return `<div class="pt-fixture-row"><span class="pt-fixture-meta">Opponent TBD</span></div>`;
+  return `<div class="pt-fixture-row">${teamBadgePt(opp.team_short,28)}<div><b>${esc(opp.full)}</b><small>Rank ${opp.rank} · ${opp.points} pts · ${ptNrrText(opp.nrr)}</small></div><div class="pt-fixture-form">${formPills(opp.last5.slice(-3))}</div></div>`;
+}
+function renderAdvancedPointsView(rows) {
+  return `<div class="pt-advanced-list">${rows.map(row => { const meta=teamMeta(row.team_short); const mom=getMomentumConfig(row.momentum); const nrrColor=row.nrr>=0?'#4ADE80':'#F87171'; return `<div class="pt-adv-card ${row.isTopFour?'playoff':''} ${row.eliminated?'eliminated':''}" style="--team:${meta.color}"><div class="pt-adv-top"><span class="pt-rank">${row.rank}</span>${teamBadgePt(row.team_short,28)}<div class="pt-adv-team"><b>${esc(row.full)}</b><small>${row.won}W ${row.lost}L · ${row.played}P</small></div><div class="pt-adv-score"><b>${row.points}</b><span style="color:${nrrColor}">${ptNrrText(row.nrr)}</span></div></div><div class="pt-adv-bottom"><span>FORM</span>${formPills(row.last5)}<span class="pt-momentum" style="background:${mom.bg};color:${mom.color}">${mom.icon} ${mom.label}</span></div></div>`; }).join('')}</div>`;
+}
+function raceIntensity(rows) {
+  if (!rows.length) return 0;
+  const fourth = rows[3]?.points || 0;
+  const within = rows.filter(r => Math.abs(r.points - fourth) <= 4).length;
+  const avgRemaining = rows.reduce((s,r)=>s+r.remaining,0)/rows.length;
+  return ptClamp((within / rows.length) * 72 + avgRemaining * 3);
+}
+function renderQualificationPointsView(rows) {
+  const intensity = raceIntensity(rows);
+  const fourth = rows[3]?.points || 0;
+  const within = rows.filter(r => Math.abs(r.points - fourth) <= 4).length;
+  const avgLeft = rows.length ? Math.round(rows.reduce((s,r)=>s+r.remaining,0)/rows.length) : 0;
+  return `<div class="pt-race"><div class="race-banner"><div><span>Playoff Race Intensity</span><b>${Math.round(intensity)}%</b></div><div class="race-bar"><i style="width:${intensity}%"></i></div><p>${within} teams within 4 pts for 4 spots · ${avgLeft} matches left avg.</p></div>${rows.map(row => renderRaceCard(row)).join('')}</div>`;
+}
+function renderRaceCard(row) {
+  const qColor = getQualColor(row.qualProb), pColor = getPressureColor(row.pressureIndex), dColor = getDifficultyColor(row.remainingDifficulty);
+  return `<div class="pt-race-card ${row.eliminated?'eliminated':''}" style="--race:${qColor}"><div class="pt-race-top"><div class="pt-race-team"><span class="pt-rank">${row.rank}</span>${teamBadgePt(row.team_short,28)}<div><b>${esc(row.full)}</b><small>${row.points} pts · ${row.remaining} left</small></div></div>${createQualRing(row.qualProb,40,true)}</div><div class="pt-race-bottom"><div><small>Pressure</small><div class="pt-pressure"><span style="width:${row.pressureIndex}%;background:${pColor}"></span></div></div><i></i><div><small>NRR</small>${createSparkline(row.nrrTrend,row.nrr>=0?'#4ADE80':'#F87171',48,18)}</div><i></i><div><small>Sched.</small><b style="color:${dColor}">${getDifficultyLabel(row.remainingDifficulty)}</b></div></div></div>`;
+}
+function renderPointsRows(rows) { return renderCompactPointsView(enrichPointsRows(rows)); }
 
 // ================================================================
 // SCHEDULE / HISTORY
