@@ -973,8 +973,8 @@ function getScheduleViewMeta(filter = currentFilter) {
 }
 
 const FILTER_TITLES = {
-  all: 'Live Matches', live: 'Live Matches', upcoming: 'Upcoming Matches',
-  results: 'Recent Results', points: 'Points Table', stats: 'Statistics',
+  all: 'Home', live: 'Live', upcoming: 'Upcoming',
+  results: 'Results', points: 'Points', stats: 'Stats',
   archive: 'Archive', schedule: 'Schedule',
   teams: 'Teams', players: 'Players',
 };
