@@ -69,10 +69,13 @@ def reset_dist() -> None:
 
 def write_index() -> None:
     html = TEMPLATE_PATH.read_text(encoding="utf-8")
-    marker = '<script src="static/app.js"></script>'
-    if marker not in html:
+    app_script_re = re.compile(r'(?P<indent>\s*)<script\s+src=["\']static/app\.js(?:\?[^"\']*)?["\']></script>')
+    match = app_script_re.search(html)
+    if not match:
         raise RuntimeError("Could not find app.js script tag in template.")
-    html = html.replace(marker, f"{STATIC_CONFIG_SNIPPET}\n  {marker}", 1)
+    indent = match.group("indent")
+    replacement = f"{indent}{STATIC_CONFIG_SNIPPET}\n{match.group(0)}"
+    html = html[:match.start()] + replacement + html[match.end():]
     (DIST_DIR / "index.html").write_text(html, encoding="utf-8")
 
 
