@@ -4315,6 +4315,8 @@ document.addEventListener('DOMContentLoaded', () => {
   applyTheme(saved);
   // Load asset manifest (team logos + player images) then render
   loadAssetManifest().finally(() => {
+    // Pre-load points table so match cards render with ranks/form/stakes on first pass
+    loadPointsIntel();
     // Generate Crickly-style date tabs
     generateDateTabs();
     loadMatches(false);
