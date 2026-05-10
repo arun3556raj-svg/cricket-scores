@@ -593,7 +593,7 @@ function heroCK(m, sc = null) {
     </div>` : '';
 
   return `
-    <article style="background:${bgGrad};backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:18px;overflow:hidden;position:relative;cursor:pointer"
+    <article class="hero-live-card" style="background:${bgGrad};backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:18px;overflow:hidden;position:relative;cursor:pointer"
              onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
 
       <!-- Glow blobs -->
