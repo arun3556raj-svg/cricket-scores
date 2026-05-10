@@ -4713,7 +4713,7 @@ function renderExpandedFixtures(row) {
   var code = row.team_short;
   var html = '<div class="pt-fixtures">';
 
-  // Load schedule data if not already loaded
+  // Load schedule if not already — points tab preloads it
   if (!scheduleData && !scheduleLoaded) { loadSchedule(); }
 
   // Get all matches from schedule (53 finished) + lastData.finished as fallback
@@ -5088,6 +5088,8 @@ async function loadSchedule() {
       return;
     }
     renderSchedule(data);
+    // Re-render points table if active so fixtures tab gets fresh schedule data
+    if (currentFilter === 'points' && pointsData) renderPointsTable(pointsData);
   } catch (err) {
     $('scheduleList').innerHTML = `<div class="sc-empty">Error: ${esc(err.message)}</div>`;
     scheduleLoaded = false; // allow retry

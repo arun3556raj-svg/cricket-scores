@@ -276,10 +276,10 @@
       "bowl_team": "Mumbai Indians",
       "innings_id": 2,
       "score": {
-        "runs": 47,
+        "runs": 56,
         "wickets": 3,
-        "overs": 6,
-        "run_rate": 7.83,
+        "overs": 8,
+        "run_rate": 7,
         "declared": false
       },
       "extras": {
@@ -292,11 +292,11 @@
       "batsmen": [
         {
           "name": "Jacob Bethell",
-          "runs": 14,
-          "balls": 11,
+          "runs": 18,
+          "balls": 16,
           "fours": 2,
           "sixes": 0,
-          "strike_rate": 127.27,
+          "strike_rate": 112.5,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -340,11 +340,11 @@
         },
         {
           "name": "Krunal Pandya",
-          "runs": 8,
-          "balls": 5,
+          "runs": 13,
+          "balls": 12,
           "fours": 0,
           "sixes": 1,
-          "strike_rate": 160,
+          "strike_rate": 108.33,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -462,12 +462,24 @@
         },
         {
           "name": "Corbin Bosch",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Will Jacks",
           "overs": 1,
           "balls": 6,
           "maidens": 0,
-          "runs": 8,
-          "wickets": 1,
-          "economy": 8,
+          "runs": 4,
+          "wickets": 0,
+          "economy": 4,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
