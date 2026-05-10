@@ -885,7 +885,7 @@ function liveCardCK(m) {
   }
 
   // ── Render ──
-  return '<div style="background:#0d1117;border:1px solid #1f2937;border-radius:12px;overflow:hidden;font-family:var(--font,sans-serif);color:#f9fafb" onclick=\'handleCardClick(' + JSON.stringify(m.id) + ', this)\' data-match=\'' + matchJson + '\'>'
+  return '<div style="background:#0d1117;border:1px solid #1f2937;border-radius:12px;overflow:hidden;font-family:var(--font,sans-serif);color:#f9fafb" onclick=\'openDrawerFromAttr(this)\' data-match=\'' + matchJson + '\'>'
     // ═══ HEADER ═══
     + '<div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px 0">'
     + '<div style="display:flex;align-items:center;gap:6px">'
@@ -1151,7 +1151,7 @@ function matchCardCK(m) {
   const resultImpact = tableImpactLine(m, t1Winner, t2Winner);
   const metaChips = (resultMarginBadge(m) || '') + (stakes.impact ? '<span class="match-intel-chip ' + stakes.tone + '">Table impact</span>' : '');
 
-  return '<article style="background:var(--cbg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--cbd);border-radius:16px;overflow:hidden;cursor:pointer;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s" onmouseenter="this.style.borderColor=\'var(--cbd-h)\';this.style.transform=\'translateY(-2px)\';this.style.boxShadow=\'0 8px 24px ' + t1.color + '15\'" onmouseleave="this.style.borderColor=\'var(--cbd)\';this.style.transform=\'translateY(0)\';this.style.boxShadow=\'none\'" onclick=\'handleCardClick(' + JSON.stringify(m.id) + ', this)\' data-match=\'' + matchJson + '\'>'
+  return '<article style="background:var(--cbg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--cbd);border-radius:16px;overflow:hidden;cursor:pointer;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s" onmouseenter="this.style.borderColor=\'var(--cbd-h)\';this.style.transform=\'translateY(-2px)\';this.style.boxShadow=\'0 8px 24px ' + t1.color + '15\'" onmouseleave="this.style.borderColor=\'var(--cbd)\';this.style.transform=\'translateY(0)\';this.style.boxShadow=\'none\'" onclick=\'openDrawerFromAttr(this)\' data-match=\'' + matchJson + '\'>'
     + '<div style="height:2px;background:linear-gradient(90deg,' + t1.color + '88,' + t2.color + '88)"></div>'
     + '<div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px 0;gap:10px"><span style="font-size:11.5px;color:var(--ct3);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + matchLabel + '</span><span style="background:var(--cbadge);color:var(--ct3);font-size:9px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:0.5px;text-transform:uppercase">RESULT</span></div>'
     + (metaChips ? '<div class="match-intel-row">' + metaChips + '</div>' : '')
@@ -4767,7 +4767,7 @@ function renderExpandedFixtures(row) {
       var s2 = m.team2_score1 ? esc(m.team2_score1.display) : '';
       var margin = m.status_text ? esc(m.status_text.replace(/^.*?(won|lost|tied)/i,'').trim()) : '';
       var wLabel = won ? 'Won' : 'Lost';
-      return '<div class="pt-fixture-row" onclick=\"handleCardClick(' + JSON.stringify(m.id) + ', this)\" data-match="' + encodeURIComponent(JSON.stringify(m)) + '" style="border-left:2px solid ' + (won ? '#22C55E' : '#F87171') + ';background:' + (won ? 'rgba(34,197,94,0.03)' : 'rgba(248,113,113,0.03)') + ';margin-bottom:3px;padding:7px 10px;border-radius:6px;display:flex;align-items:center;gap:8px;cursor:pointer">'
+      return '<div class="pt-fixture-row" onclick=\"openDrawerFromAttr(this)\" data-match="' + encodeURIComponent(JSON.stringify(m)) + '" style="border-left:2px solid ' + (won ? '#22C55E' : '#F87171') + ';background:' + (won ? 'rgba(34,197,94,0.03)' : 'rgba(248,113,113,0.03)') + ';margin-bottom:3px;padding:7px 10px;border-radius:6px;display:flex;align-items:center;gap:8px;cursor:pointer">'
         + '<span style="background:' + (won ? 'rgba(34,197,94,0.15)' : 'rgba(248,113,113,0.15)') + ';color:' + (won ? '#22C55E' : '#F87171') + ';padding:2px 6px;border-radius:4px;font-size:9px;font-weight:800">' + (won ? 'W' : 'L') + '</span>'
         + '<span style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.7);flex:1">' + esc(opp) + '</span>'
         + '<span style="font-size:9px;color:rgba(255,255,255,0.25)">' + (s1 ? s1 : '') + (s1 && s2 ? ' vs ' : '') + (s2 ? s2 : '') + '</span>'
