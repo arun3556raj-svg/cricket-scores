@@ -797,358 +797,264 @@ function liveCardCK(m) {
   const t1 = teamMeta(m.team1_short);
   const t2 = teamMeta(m.team2_short);
   const matchJson = encodeURIComponent(JSON.stringify(m));
-  const isLive   = m.status === 'live';
+  const isLive = m.status === 'live';
   const isResult = m.status === 'finished';
 
-  if (isLive) {
-const t1 = teamMeta(m.team1_short);
-  const t2 = teamMeta(m.team2_short);
-  const matchJson = encodeURIComponent(JSON.stringify(m));
+  if (!isLive) return matchCardCK ? matchCardCK(m) : '';
 
-  if (m.status !== 'live') return matchCardCK ? matchCardCK(m) : '';
-
+  // ── Extract data from API response ──
   const meta   = m.live_meta   || {};
   const sb     = m.score_block || {};
   const proj   = m.projection_data || m.projected || {};
-  const wp     = m.win_prob    || {};
-  const pres   = m.pressure_data || m.pressure || {};
+  const wp     = m.win_prob   || {};
   const part   = m.partnership || {};
-  const fowArr = m.fow_display || [];
   const bt     = m.ball_timeline || {};
+  const fowArr = m.fow_display || [];
 
-  const batCode  = meta.batting_team  || (m.team1_score1 ? m.team1_short : m.team2_short);
+  const batCode = meta.batting_team || (m.team1_score1 ? m.team1_short : m.team2_short);
   const bowlCode = meta.fielding_team || (batCode === m.team1_short ? m.team2_short : m.team1_short);
-  const batT     = teamMeta(batCode);
-  const bowlT    = teamMeta(bowlCode);
+  const batT  = teamMeta(batCode);
+  const bowlT = teamMeta(bowlCode);
 
-  const score    = sb.score    || (m.team1_score1 ? m.team1_score1.runs : 0);
-  const wickets  = sb.wickets  != null ? sb.wickets : (m.team1_score1 ? m.team1_score1.wickets : 0);
+  const score    = sb.score    || (m.team1_score1 ? Number(m.team1_score1.runs) : 0);
+  const wickets  = sb.wickets  != null ? sb.wickets : (m.team1_score1 ? Number(m.team1_score1.wickets) : 0);
   const overs    = sb.overs    || 0;
   const crr      = sb.crr      || Number(m.run_rate) || 0;
+  const rrr      = sb.rrr;
+  const target   = sb.target;
+  const ballsRem = sb.balls_remaining != null ? sb.balls_remaining : 120 - (Math.floor(overs) * 6 + Math.round((overs % 1) * 10));
+
   const innings  = meta.innings || 1;
-  const ballsDone = Math.floor(overs) * 6 + Math.round((overs % 1) * 10);
-  const progressPct = Math.min(100, Math.round(ballsDone / 120 * 100));
+  const displayScore = m.team1_score1 ? esc(m.team1_score1.display) : (m.team2_score1 ? esc(m.team2_score1.display) : '—');
+  const displayOvers = m.team1_score1 ? esc(m.team1_score1.detail) : (m.team2_score1 ? esc(m.team2_score1.detail) : '');
 
-  const activeBatters    = (m.batters || []).filter(b => b.is_active);
-  const dismissedBatters = (m.batters || []).filter(b => !b.is_active && (b.runs != null));
-  const currentBowler    = (m.bowlers || []).filter(b => b.is_current);
-  const otherBowlers     = (m.bowlers || []).filter(b => !b.is_current);
+  // Required runs (2nd innings only)
+  const reqRuns  = target ? Math.max(0, target - score) : null;
+  const reqBalls = ballsRem || null;
 
-  const wpBat  = wp.batting_team  || 50;
-  const wpBowl = wp.fielding_team || 50;
-  const presVal = pres.value || 0;
-  const presLabel = pres.label || '';
-  const presColor = presVal >= 70 ? '#EF4444' : presVal >= 45 ? '#F97316' : '#22C55E';
-  const presCirc = 2 * Math.PI * 22;
-  const presOffset = presCirc - (presVal / 100) * presCirc;
+  // Batters
+  const activeBatters    = (m.batters || []).filter(function(b) { return b.is_active; }).slice(0, 2);
+  const dismissedBatters = (m.batters || []).filter(function(b) { return !b.is_active && b.runs != null; });
 
-  const lastWkt = bt.last_wicket_desc || m.last_wicket || '';
+  // Bowlers
+  const bowlersList  = m.bowlers || [];
+  const currentBwlr  = bowlersList.filter(function(b) { return b.is_current; });
+  const currentBowler = currentBwlr.length ? currentBwlr[0] : (bowlersList.length ? bowlersList[0] : null);
+  const otherBowlers  = currentBowler ? bowlersList.filter(function(b) { return b.name !== currentBowler.name; }) : bowlersList;
+
+  // Dot ball % - compute from bowler dots (best approximation without ball-by-ball)
+  const totalLegalBalls = bowlersList.reduce(function(sum, b) { return sum + (b.overs ? Math.floor(Number(b.overs)) * 6 + Math.round((Number(b.overs) % 1) * 10) : 0); }, 0);
+  const totalDots = bowlersList.reduce(function(sum, b) { return sum + (b.dots || 0); }, 0);
+  const dotPct = totalLegalBalls > 0 ? Math.round(totalDots / totalLegalBalls * 100) : null;
+
+  // Last wicket
+  const lastWktArr = fowArr.length ? fowArr[fowArr.length - 1] : null;
+  const lastWktText = bt.last_wicket_desc || (lastWktArr ? esc(lastWktArr.batter) + ' @ ' + lastWktArr.over + ' · ' + lastWktArr.runs + ' runs' : '');
+
+  // Overs history from ball timeline
   const thisOver = bt.this_over || [];
   const lastOver = bt.last_over || [];
 
-  function srColor(sr) { return sr > 150 ? '#4ADE80' : sr >= 120 ? '#FACC15' : '#F87171'; }
-  function econColor(e) { return e < 7.5 ? '#4ADE80' : e <= 9.5 ? '#FACC15' : '#F87171'; }
-  function ballHtml(b) {
-    const cfg = b === 'W' ? 'background:#EF4444;color:#fff;box-shadow:0 0 8px rgba(239,68,68,0.6)'
-              : b === '6' ? 'background:rgba(34,197,94,0.22);color:#4ADE80;box-shadow:0 0 6px rgba(34,197,94,0.4)'
-              : b === '4' ? 'background:rgba(59,130,246,0.22);color:#60A5FA;box-shadow:0 0 6px rgba(59,130,246,0.4)'
-              : b === '0' ? 'background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.25)'
-              : 'background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8)';
-    return `<span style="width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;${cfg}">${esc(b)}</span>`;
+  // Phase scores - from scorecard phases if available
+  const phases = m.phases || {};
+
+  // Win prob
+  const wpBat = wp.batting_team || 50;
+  const wpBowl = wp.fielding_team || 50;
+  const wpBatColor = wpBat >= 60 ? '#4ADE80' : wpBat >= 45 ? '#FACC15' : '#F87171';
+  const wpBowlColor = wpBowl >= 60 ? '#4ADE80' : wpBowl >= 45 ? '#FACC15' : '#F87171';
+
+  // Helpers
+  function srCol(sr) { return sr > 150 ? '#4ADE80' : sr >= 120 ? '#FACC15' : '#F87171'; }
+  function econCol(e) { return e < 7.5 ? '#4ADE80' : e <= 9.5 ? '#FACC15' : '#F87171'; }
+
+  function ballDot(b) {
+    var cfg = b === 'W' ? 'background:#ef4444;color:#fff'
+      : b === '6' ? 'background:#a78bfa;color:#fff'
+      : b === '4' ? 'background:#34d399;color:#fff'
+      : b === '0' ? 'background:transparent;color:#6b7280;border:1px solid #374151'
+      : 'background:#1f2937;color:#d1d5db';
+    return '<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;font-size:10px;font-weight:700;' + cfg + '">' + esc(b) + '</span>';
   }
 
-  const uid = 'ck_' + (m.id || Math.random().toString(36).slice(2));
+  // ── Render ──
+  return '<div style="background:#0d1117;border:1px solid #1f2937;border-radius:12px;overflow:hidden;font-family:var(--font,sans-serif);color:#f9fafb" onclick=\'handleCardClick(' + JSON.stringify(m.id) + ', this)\' data-match=\'' + matchJson + '\'>'
+    // ═══ HEADER ═══
+    + '<div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px 0">'
+    + '<div style="display:flex;align-items:center;gap:6px">'
+    + '<span style="width:8px;height:8px;border-radius:50%;background:#ef4444;display:inline-block;box-shadow:0 0 8px #ef4444"></span>'
+    + '<span style="font-size:11px;font-weight:700;color:#ef4444;letter-spacing:1px">LIVE</span>'
+    + '<span style="color:#374151;margin:0 4px">·</span>'
+    + '<span style="font-size:11px;color:#9ca3af">' + esc(meta.match_num || m.match_desc || m.series || '') + '</span>'
+    + '</div>'
+    + '<span style="font-size:10px;color:#6b7280">' + esc((meta.venue || m.venue || '').split(',')[0]) + '</span>'
+    + '</div>'
 
-  return `
-<div class="live-ultra-panel" style="border-radius:16px;overflow:hidden;background:#0d0d0f;border:1px solid rgba(255,255,255,0.07);font-family:var(--font,system-ui,sans-serif)"
-     onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}' id="${uid}">
+    // ═══ SCORES ═══
+    + '<div style="display:flex;align-items:center;justify-content:space-between;padding:14px 14px 0">'
+    // Batting team
+    + '<div style="flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:4px">'
+    + teamBadge(batCode, 48)
+    + '<div style="font-size:11px;font-weight:600;color:' + batT.color + '">' + esc(batCode) + '</div>'
+    + '<div style="display:flex;align-items:baseline;gap:4px">'
+    + '<span style="font-size:30px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums">' + score + '</span>'
+    + '<span style="font-size:17px;color:#6b7280">/' + wickets + '</span>'
+    + '</div>'
+    + '<div style="font-size:11px;color:#6b7280">' + overs + ' ov</div>'
+    + '</div>'
+    // VS + Target
+    + '<div style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:0 14px">'
+    + '<span style="font-size:10px;color:#374151;font-weight:700">vs</span>'
+    + '<div style="width:1px;height:30px;background:#1f2937"></div>'
+    + (target ? '<div style="font-size:9px;color:#6b7280;text-align:center">Target<br><span style="font-size:15px;font-weight:800;color:#f9fafb">' + target + '</span></div>' : '')
+    + '</div>'
+    // Fielding team
+    + '<div style="flex:1;display:flex;flex-direction:column;align-items:flex-end;gap:4px">'
+    + teamBadge(bowlCode, 48)
+    + '<div style="font-size:11px;font-weight:600;color:' + bowlT.color + '">' + esc(bowlCode) + '</div>'
+    + '<div style="font-size:11px;color:#6b7280">CRR ' + crr.toFixed(2) + (rrr ? ' · RRR ' + rrr.toFixed(2) : '') + '</div>'
+    + (target ? '<div style="font-size:10px;color:#9ca3af">Need ' + reqRuns + ' in ' + reqBalls + ' balls</div>' : '')
+    + '</div>'
+    + '</div>'
 
-  <!-- TOP BAR -->
-  <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px 0">
-    <div style="display:flex;align-items:center;gap:8px">
-      <span style="width:8px;height:8px;border-radius:50%;background:#EF4444;display:inline-block;animation:livePulse 1.4s infinite"></span>
-      <span style="font-size:11px;font-weight:600;color:#EF4444;letter-spacing:0.03em">LIVE</span>
-      <span style="font-size:11px;color:rgba(255,255,255,0.3)">·</span>
-      <span style="font-size:11px;color:rgba(255,255,255,0.4)">${esc(meta.match_num || m.match_desc || m.series || '')}</span>
-      <span style="font-size:11px;color:rgba(255,255,255,0.3)">·</span>
-      <span style="font-size:11px;color:rgba(255,255,255,0.3)">${esc((meta.venue || m.venue || '').split(',')[0])}</span>
-    </div>
-    ${m.run_rate ? `<span style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.05);padding:3px 8px;border-radius:5px">${esc(String(crr.toFixed(2)))}</span>` : ''}
-  </div>
+    // ═══ STATUS BAR ═══
+    + (meta.toss ? '<div style="margin:10px 14px 0;padding:8px 12px;background:#0f172a;border-radius:8px;font-size:12px;color:#9ca3af;font-style:italic">' + esc(batCode) + (innings === 2 && target ? ' need <strong>' + reqRuns + ' runs</strong> in ' + reqBalls + ' balls' : '') + ' · ' + esc(meta.toss) + '</div>' : '')
 
-  <!-- SCORE HEADER -->
-  <div style="display:flex;align-items:flex-start;justify-content:space-between;padding:12px 14px 0;gap:10px">
-    <div style="display:flex;align-items:flex-start;gap:10px">
-      ${teamBadge(batCode, 36)}
-      <div>
-        <div style="font-size:10px;color:rgba(255,255,255,0.3);margin-bottom:4px">Innings ${innings} · Batting</div>
-        <div style="display:flex;align-items:baseline;gap:6px">
-          <span style="font-size:44px;font-weight:800;color:#fff;letter-spacing:-2px;line-height:1;font-variant-numeric:tabular-nums">${score}</span>
-          <span style="font-size:28px;font-weight:400;color:rgba(255,255,255,0.35);letter-spacing:-1px">/${wickets}</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:8px;margin-top:4px">
-          <span style="font-size:12px;color:rgba(255,255,255,0.4)">${overs} OV</span>
-          <span style="font-size:12px;color:rgba(255,255,255,0.2)">|</span>
-          <span style="font-size:12px;font-weight:700;color:${batT.color}">CRR ${crr.toFixed(2)}</span>
-        </div>
-      </div>
-    </div>
-    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">
-      ${proj.projected_score ? `<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:8px 12px;text-align:center">
-        <div style="font-size:8px;font-weight:700;color:rgba(255,255,255,0.3);letter-spacing:0.08em;text-transform:uppercase">Projected</div>
-        <div style="font-size:22px;font-weight:800;color:#fff;line-height:1.1;font-variant-numeric:tabular-nums">${proj.projected_score}</div>
-        ${proj.range_low ? `<div style="font-size:9px;color:rgba(255,255,255,0.2)">Range: ${proj.range_low}–${proj.range_high}</div>` : ''}
-      </div>` : ''}
-      <div style="display:flex;flex-direction:column;align-items:center;gap:3px">
-        <div style="font-size:8px;color:rgba(255,255,255,0.2);text-transform:uppercase;letter-spacing:0.06em">Fielding</div>
-        ${teamBadge(bowlCode, 28)}
-      </div>
-    </div>
-  </div>
+    // ═══ CURRENT BATTERS ═══
+    + (activeBatters.length ? '<div style="padding:14px 14px"><div style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px">Current Batters</div>'
+    + activeBatters.map(function(b) {
+      return '<div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid #1f2937">'
+        + '<div style="display:flex;align-items:center;gap:6px">'
+        + (b.is_striker ? '<span style="width:6px;height:6px;border-radius:50%;background:' + batT.color + '"></span>' : '<span style="width:6px"></span>')
+        + '<span style="font-size:13px;font-weight:600;color:#f9fafb">' + esc(b.name) + '</span>'
+        + '</div>'
+        + '<div style="display:flex;align-items:center;gap:12px">'
+        + '<span style="font-size:14px;font-weight:700;color:#f9fafb">' + b.runs + '</span>'
+        + '<span style="font-size:11px;color:#6b7280">' + b.balls + '</span>'
+        + '<span style="font-size:11px;color:#6b7280">' + (b.fours || 0) + '/' + (b.sixes || 0) + '</span>'
+        + '<span style="font-size:11px;font-weight:600;color:' + srCol(b.sr) + '">' + (b.sr || 0).toFixed(1) + '</span>'
+        + '</div></div>';
+    }).join('') + '</div>' : '')
 
-  <!-- PROGRESS BAR -->
-  <div style="margin:10px 14px 0;height:3px;border-radius:2px;background:rgba(255,255,255,0.06);overflow:hidden">
-    <div style="height:100%;width:${progressPct}%;background:linear-gradient(90deg,${batT.color},${batT.color}88);border-radius:2px"></div>
-  </div>
+    // ═══ CURRENT BOWLER ═══
+    + (currentBowler ? '<div style="padding:0 14px 14px"><div style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px">Current Bowler</div>'
+    + '<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:#0f172a;border-radius:8px">'
+    + '<span style="font-size:13px;font-weight:600;color:#f9fafb">' + esc(currentBowler.name) + '</span>'
+    + '<div style="display:flex;align-items:center;gap:10px">'
+    + '<span style="font-size:12px;color:#6b7280">' + currentBowler.overs + '</span>'
+    + '<span style="font-size:12px;color:#6b7280">' + currentBowler.runs + '</span>'
+    + '<span style="font-size:12px;font-weight:700;color:' + (currentBowler.wickets > 0 ? '#4ADE80' : '#6b7280') + '">' + currentBowler.wickets + '</span>'
+    + '<span style="font-size:12px;font-weight:600;color:' + econCol(currentBowler.econ || 0) + '">' + (currentBowler.econ || 0).toFixed(2) + '</span>'
+    + (currentBowler.dots != null ? '<span style="font-size:12px;color:#6b7280">' + currentBowler.dots + ' dots</span>' : '')
+    + '</div></div>'
+    // This over
+    + (thisOver.length ? '<div style="display:flex;gap:4px;margin-top:8px;align-items:center"><span style="font-size:9px;color:#6b7280">This over:</span>' + thisOver.map(ballDot).join('') + '</div>' : '')
+    + '</div>' : '')
 
-  <!-- TOSS NOTE -->
-  ${meta.toss ? `<div style="padding:5px 14px;font-size:10px;color:rgba(255,255,255,0.2);font-style:italic">${esc(meta.toss)}</div>` : ''}
+    // ═══ WIN PROBABILITY ═══
+    + '<div style="padding:0 14px 14px">'
+    + '<div style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px">Win Probability</div>'
+    + '<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">'
+    + '<span style="font-size:13px;font-weight:700;color:' + wpBatColor + '">' + esc(batCode) + ' ' + wpBat + '%</span>'
+    + '<div style="flex:1;height:6px;border-radius:3px;background:#1f2937;overflow:hidden;display:flex">'
+    + '<div style="width:' + wpBat + '%;background:' + wpBatColor + ';border-radius:3px"></div>'
+    + '</div>'
+    + '<span style="font-size:13px;font-weight:700;color:' + wpBowlColor + '">' + esc(bowlCode) + ' ' + wpBowl + '%</span>'
+    + '</div>'
+    + '</div>'
 
-  <!-- TAB ROW -->
-  <div style="display:flex;gap:0;padding:10px 14px 0;border-bottom:1px solid rgba(255,255,255,0.06);overflow-x:auto" id="${uid}_tabs">
-    ${['intel','now','bat','bowl'].map((t,i) => `
-      <button onclick="event.stopPropagation();ckTab('${uid}','${t}')"
-        id="${uid}_tab_${t}"
-        style="padding:7px 14px;font-size:11px;font-weight:600;border:none;background:none;cursor:pointer;white-space:nowrap;border-bottom:2px solid ${i===0 ? batT.color : 'transparent'};color:${i===0 ? '#fff' : 'rgba(255,255,255,0.3)'};transition:all 0.2s">
-        ${t.charAt(0).toUpperCase()+t.slice(1)}
-      </button>`).join('')}
-  </div>
+    // ═══ DOT BALL % ═══
+    + (dotPct != null ? '<div style="padding:0 14px 14px;display:flex;align-items:center;justify-content:space-between">'
+    + '<span style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase">Dot Ball %</span>'
+    + '<span style="font-size:14px;font-weight:700;color:' + (dotPct >= 40 ? '#ef4444' : dotPct >= 30 ? '#f97316' : '#6b7280') + '">' + dotPct + '%</span>'
+    + '</div>' : '')
 
-  <!-- TAB PANELS -->
+    // ═══ PARTNERSHIP & LAST WICKET ═══
+    + '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 14px">'
+    + (part.runs != null ? '<div style="padding:8px 10px;background:#0f172a;border-radius:8px"><div style="font-size:8px;font-weight:700;color:#6b7280;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">Partnership</div><span style="font-size:14px;font-weight:700;color:#f9fafb">' + part.runs + '</span><span style="font-size:11px;color:#6b7280;margin-left:4px">(' + (part.balls || '—') + ' balls)</span></div>' : '')
+    + (lastWktText ? '<div style="padding:8px 10px;background:#0f172a;border-radius:8px"><div style="font-size:8px;font-weight:700;color:#6b7280;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">Last Wicket</div><span style="font-size:12px;color:#9ca3af">' + lastWktText + '</span></div>' : '')
+    + '</div>'
 
-  <!-- INTEL -->
-  <div id="${uid}_panel_intel" style="padding:14px;display:flex;flex-direction:column;gap:10px">
-    <!-- Win prob -->
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
-        <div style="display:flex;flex-direction:column;gap:1px">
-          <span style="font-size:9px;font-weight:700;color:${batT.color};letter-spacing:0.05em">${esc(batCode)}</span>
-          <span style="font-size:22px;font-weight:800;color:${batT.color};line-height:1;font-variant-numeric:tabular-nums">${wpBat}%</span>
-        </div>
-        <div style="text-align:center">
-          <div style="font-size:8px;color:rgba(255,255,255,0.2);text-transform:uppercase;letter-spacing:0.08em">Win Probability</div>
-          <div style="font-size:9px;color:rgba(255,255,255,0.15)">based on current state</div>
-        </div>
-        <div style="text-align:right;display:flex;flex-direction:column;gap:1px">
-          <span style="font-size:9px;font-weight:700;color:${bowlT.color};letter-spacing:0.05em">${esc(bowlCode)}</span>
-          <span style="font-size:22px;font-weight:800;color:${bowlT.color};line-height:1;font-variant-numeric:tabular-nums">${wpBowl}%</span>
-        </div>
-      </div>
-      <div style="height:6px;border-radius:3px;overflow:hidden;background:${bowlT.color}30;display:flex">
-        <div style="width:${wpBat}%;background:linear-gradient(90deg,${batT.color},${batT.color}cc);border-radius:3px 0 0 3px;box-shadow:0 0 8px ${batT.color}60;transition:width 1.2s cubic-bezier(0.34,1.1,0.64,1)"></div>
-      </div>
-    </div>
-    <!-- Momentum + Pressure -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-      ${(() => {
-        const mom = liveMomentum(m.last_6_balls);
-        if (!mom) {
-          return '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px;justify-content:center;min-height:120px"><span style="font-size:11px;color:rgba(255,255,255,0.15)">Ball-by-ball data needed</span></div>';
-        }
-        const mv = mom.value;
-        const ml = mom.label;
-        const mc = mv >= 65 ? "#22C55E" : mv >= 45 ? "#FACC15" : "#EF4444";
-        return '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px">'
-          + '<div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.08em;align-self:flex-start">' + esc(batCode) + ' Momentum</div>'
-          + '<div style="position:relative;width:72px;height:72px"><svg width="72" height="72" viewBox="0 0 72 72" style="transform:rotate(135deg)">'
-          + '<circle cx="36" cy="36" r="28" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="5" stroke-dasharray="131.95 176" stroke-linecap="round"/>'
-          + '<circle cx="36" cy="36" r="28" fill="none" stroke="' + mc + '" stroke-width="5" stroke-dasharray="' + ((mv/100)*131.95) + ' 176" stroke-linecap="round" style="filter:drop-shadow(0 0 5px ' + mc + '80)"/></svg>'
-          + '<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:16px;font-weight:800;color:' + mc + ';line-height:1">' + mv + '</span><span style="font-size:8px;color:rgba(255,255,255,0.3)">MOM</span></div></div>'
-          + '<span style="font-size:11px;font-weight:600;color:' + mc + '">' + esc(ml) + '</span></div>';
-      })()}
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px">
-        <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.08em">Pressure Index</div>
-        <div style="position:relative;width:64px;height:64px">
-          <svg width="64" height="64" viewBox="0 0 64 64" style="transform:rotate(-90deg)">
-            <circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="5"/>
-            <circle cx="32" cy="32" r="26" fill="none" stroke="${presColor}" stroke-width="5"
-              stroke-dasharray="${(presVal/100)*163.36} 163.36" stroke-linecap="round"
-              style="filter:drop-shadow(0 0 4px ${presColor}80);transition:stroke-dasharray 1s ease"/>
-          </svg>
-          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
-            <span style="font-size:15px;font-weight:800;color:${presColor};line-height:1">${presVal}</span>
-            <span style="font-size:8px;color:rgba(255,255,255,0.3)">PSI</span>
-          </div>
-        </div>
-        <span style="font-size:11px;font-weight:600;color:${presColor}">${esc(presLabel)}</span>
-        <span style="font-size:9px;color:rgba(255,255,255,0.2)">${esc(batCode)} ${presVal < 40 ? 'in control' : presVal < 70 ? 'under pressure' : 'desperate'}</span>
-      </div>
-    </div>
-  </div>
+    // ═══ PROJECTED SCORE ═══
+    + (proj.projected_score ? '<div style="padding:0 14px 14px">'
+    + '<div style="display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:#0f172a;border-radius:8px">'
+    + '<span style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase">Projected Score</span>'
+    + '<div style="text-align:right">'
+    + '<span style="font-size:18px;font-weight:800;color:#f9fafb">' + proj.projected_score + '</span>'
+    + '<br><span style="font-size:10px;color:#6b7280">Range ' + (proj.range_low || '—') + '–' + (proj.range_high || '—') + '</span>'
+    + '</div></div></div>' : '')
 
-  <!-- NOW -->
-  <div id="${uid}_panel_now" style="padding:14px;display:none;flex-direction:column;gap:10px">
-    ${thisOver.length || lastOver.length ? `
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px">
-      ${lastOver.length ? `<div style="margin-bottom:10px"><div style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px">Previous over</div><div style="display:flex;gap:5px;flex-wrap:wrap">${lastOver.map(ballHtml).join('')}</div></div>` : ''}
-      ${thisOver.length ? `<div><div style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px">This over</div><div style="display:flex;gap:5px;flex-wrap:wrap">${thisOver.map(ballHtml).join('')}</div></div>` : ''}
-    </div>` : `<div style="padding:20px;text-align:center;color:rgba(255,255,255,0.2);font-size:12px">Ball-by-ball data unavailable</div>`}
-    ${part.runs != null ? `
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between">
-      <span style="font-size:11px;color:rgba(255,255,255,0.3)">Partnership</span>
-      <span style="font-size:14px;font-weight:700;color:#fff">${part.runs} off ${part.balls || '–'} balls</span>
-    </div>` : ''}
-    ${lastWkt ? `
-    <div style="background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.12);border-radius:12px;padding:12px 14px">
-      <div style="font-size:9px;color:rgba(239,68,68,0.5);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px">Last Wicket</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.6)">${esc(lastWkt)}</div>
-    </div>` : ''}
-  </div>
+    // ═══ PHASE SCORES ═══
+    + (phases.powerplay ? '<div style="padding:0 14px 14px"><div style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px">Phase Scores</div>'
+    + '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">'
+    + ['powerplay','middle','death'].map(function(ph) {
+      var p = phases[ph] || {};
+      return '<div style="padding:8px;background:#0f172a;border-radius:6px;text-align:center"><div style="font-size:8px;font-weight:700;color:#6b7280;text-transform:uppercase">' + ph + '</div><div style="font-size:12px;font-weight:700;color:#f9fafb">' + (p.runs != null ? p.runs + '/' + (p.wickets || 0) : '—') + '</div><div style="font-size:9px;color:#6b7280">RPO ' + (p.rpo != null ? p.rpo.toFixed(2) : '—') + '</div></div>';
+    }).join('') + '</div></div>' : '')
 
-  <!-- BAT -->
-  <div id="${uid}_panel_bat" style="padding:14px;display:none;flex-direction:column;gap:6px">
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden">
-      <div style="display:flex;justify-content:space-between;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.05)">
-        <span style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em">Batter</span>
-        <div style="display:flex;gap:14px">
-          ${['R','B','4s','6s','SR'].map(h => `<span style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em;min-width:22px;text-align:right">${h}</span>`).join('')}
-        </div>
-      </div>
-      ${activeBatters.map(b => `
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:${b.is_striker ? batT.color+'0a' : 'transparent'};border-bottom:1px solid rgba(255,255,255,0.03)">
-        <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0">
-          ${b.is_striker ? `<span style="width:6px;height:6px;border-radius:50%;background:${batT.color};flex-shrink:0"></span>` : '<span style="width:6px;flex-shrink:0"></span>'}
-          <span style="font-size:12px;font-weight:${b.is_striker ? 700 : 500};color:${b.is_striker ? '#fff' : 'rgba(255,255,255,0.7)'};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(b.name)}</span>
-        </div>
-        <div style="display:flex;gap:14px">
-          <span style="font-size:13px;font-weight:800;color:#fff;min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.runs}</span>
-          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.balls}</span>
-          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right">${b.fours}</span>
-          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right">${b.sixes}</span>
-          <span style="font-size:12px;font-weight:600;color:${srColor(b.sr)};min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${(b.sr||0).toFixed(1)}</span>
-        </div>
-      </div>`).join('')}
-      ${dismissedBatters.length ? `
-      <div style="padding:6px 12px;background:rgba(0,0,0,0.2)">
-        <span style="font-size:9px;color:rgba(255,255,255,0.15);text-transform:uppercase;letter-spacing:0.07em">Dismissed</span>
-      </div>
-      ${dismissedBatters.map(b => `
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.02);opacity:0.45">
-        <div style="flex:1;min-width:0">
-          <div style="font-size:11px;color:rgba(255,255,255,0.5);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(b.name)}</div>
-          ${b.dismissal ? `<div style="font-size:9px;color:rgba(255,255,255,0.2)">${esc(b.dismissal)}</div>` : ''}
-        </div>
-        <div style="display:flex;gap:14px">
-          <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.4);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.runs}</span>
-          <span style="font-size:11px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.balls}</span>
-          <span style="font-size:11px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right">${b.fours}</span>
-          <span style="font-size:11px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right">${b.sixes}</span>
-          <span style="font-size:11px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${(b.sr||0).toFixed(1)}</span>
-        </div>
-      </div>`).join('')}` : ''}
-    </div>
-  </div>
+    // ═══ OVER HISTORY (mini bar chart) ═══
+    + (false ? '' : '')  // Placeholder for over history — needs per-over data from API
 
-  <!-- BOWL -->
-  <div id="${uid}_panel_bowl" style="padding:14px;display:none;flex-direction:column;gap:10px">
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden">
-      <div style="display:flex;justify-content:space-between;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.05)">
-        <span style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em">Bowler</span>
-        <div style="display:flex;gap:14px">
-          ${['O','R','W','Econ','Dots'].map(h => `<span style="font-size:9px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right;text-transform:uppercase;letter-spacing:0.07em">${h}</span>`).join('')}
-        </div>
-      </div>
-      ${[...currentBowler, ...otherBowlers].map(b => `
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-bottom:1px solid rgba(255,255,255,0.03);background:${b.is_current ? bowlT.color+'08' : 'transparent'}">
-        <span style="font-size:12px;font-weight:${b.is_current ? 700 : 400};color:${b.is_current ? '#E2E8F0' : 'rgba(255,255,255,0.45)'};flex:1">${esc(b.name)}${b.is_current ? ' <span style="color:'+bowlT.color+';font-size:9px">▶</span>' : ''}</span>
-        <div style="display:flex;gap:14px">
-          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right">${b.overs}</span>
-          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.runs}</span>
-          <span style="font-size:12px;font-weight:${b.wickets > 0 ? 800 : 400};color:${b.wickets > 0 ? '#4ADE80' : 'rgba(255,255,255,0.35)'};min-width:22px;text-align:right">${b.wickets}</span>
-          <span style="font-size:12px;color:${econColor(b.econ)};min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${(b.econ||0).toFixed(2)}</span>
-          <span style="font-size:12px;color:rgba(255,255,255,0.35);min-width:22px;text-align:right">${b.dots||0}</span>
-        </div>
-      </div>`).join('')}
-    </div>
-    ${fowArr.length ? `
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px">
-      <div style="font-size:9px;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.08em;font-weight:700;margin-bottom:10px">Fall of Wickets</div>
-      ${fowArr.map(w => `
-      <div style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;margin-bottom:4px;background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.1)">
-        <div style="width:22px;height:22px;border-radius:5px;background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.2);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#F87171;flex-shrink:0">${w.wicket||w.wkt}</div>
-        <div style="flex:1">
-          <div style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.6)">${esc(w.batter)}</div>
-          <div style="font-size:9px;color:rgba(255,255,255,0.25)">Over ${w.over} · ${w.runs} runs</div>
-        </div>
-        <span style="font-size:15px;font-weight:800;color:#F87171;font-variant-numeric:tabular-nums">${w.score}</span>
-      </div>`).join('')}
-    </div>` : ''}
-  </div>
-
-  <!-- FOOTER -->
-  <div style="padding:10px 14px;border-top:1px solid rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:flex-end">
-    <span style="font-size:11px;color:rgba(255,255,255,0.25);font-weight:500">Full scorecard →</span>
-  </div>
-</div>`;
+    // ═══ SCORECARD TABS (bat/bowl) ═══
+    + '<div style="border-top:1px solid #1f2937;padding:0 14px">'
+    + '<div style="display:flex;gap:0;border-bottom:1px solid #1f2937">'
+    + '<button onclick="event.stopPropagation();ckScTab(\'' + m.id + '\',\'bat\',this)" class="sctab_' + m.id + ' bat" style="background:none;border:none;cursor:pointer;font-size:12px;font-weight:700;color:#f9fafb;padding:10px 14px 8px;border-bottom:2px solid #ef4444;font-family:inherit">Bat</button>'
+    + '<button onclick="event.stopPropagation();ckScTab(\'' + m.id + '\',\'bowl\',this)" class="sctab_' + m.id + ' bowl" style="background:none;border:none;cursor:pointer;font-size:12px;font-weight:500;color:#6b7280;padding:10px 14px 8px;border-bottom:2px solid transparent;font-family:inherit">Bowl</button>'
+    + '</div>'
+    + '<div id="scpanel_' + m.id + '_bat" class="scpanel_' + m.id + ' bat">'
+    // Batting scorecard
+    + '<table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr style="color:#6b7280;font-size:9px;text-transform:uppercase">'
+    + '<th style="text-align:left;padding:8px 4px">Batter</th><th style="padding:8px 4px">R</th><th style="padding:8px 4px">B</th><th style="padding:8px 4px">4s</th><th style="padding:8px 4px">6s</th><th style="padding:8px 4px">SR</th>'
+    + '</tr></thead><tbody>'
+    + (m.batters || []).map(function(b) {
+      return '<tr><td style="padding:6px 4px;color:' + (b.is_active ? '#f9fafb' : '#6b7280') + '">' + esc(b.name) + (b.is_striker ? ' <span style="color:' + batT.color + '">*</span>' : '') + (b.dismissal ? '<br><span style="font-size:9px;color:#6b7280">' + esc(b.dismissal) + '</span>' : '') + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:#f9fafb;font-weight:700">' + b.runs + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:#6b7280">' + b.balls + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:#6b7280">' + (b.fours || 0) + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:#6b7280">' + (b.sixes || 0) + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:' + srCol(b.sr) + '">' + (b.sr || 0).toFixed(1) + '</td></tr>';
+    }).join('') + '</tbody></table>'
+    + '</div>'
+    + '<div id="scpanel_' + m.id + '_bowl" class="scpanel_' + m.id + ' bowl" style="display:none">'
+    // Bowling scorecard
+    + '<table style="width:100%;border-collapse:collapse;font-size:11px"><thead><tr style="color:#6b7280;font-size:9px;text-transform:uppercase">'
+    + '<th style="text-align:left;padding:8px 4px">Bowler</th><th style="padding:8px 4px">O</th><th style="padding:8px 4px">R</th><th style="padding:8px 4px">W</th><th style="padding:8px 4px">Econ</th><th style="padding:8px 4px">Dots</th>'
+    + '</tr></thead><tbody>'
+    + (m.bowlers || []).map(function(b) {
+      return '<tr><td style="padding:6px 4px;color:' + (b.is_current ? '#f9fafb' : '#6b7280') + '">' + esc(b.name) + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:#6b7280">' + b.overs + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:#6b7280">' + b.runs + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:' + (b.wickets > 0 ? '#4ADE80' : '#6b7280') + ';font-weight:' + (b.wickets > 0 ? '700' : '400') + '">' + b.wickets + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:' + econCol(b.econ || 0) + '">' + (b.econ || 0).toFixed(2) + '</td>'
+        + '<td style="padding:6px 4px;text-align:center;color:#6b7280">' + (b.dots || 0) + '</td></tr>';
+    }).join('') + '</tbody></table>'
+    + '</div>'
+    + '</div>'
+    + '<div style="padding:10px 14px;border-top:1px solid #1f2937;display:flex;align-items:center;justify-content:flex-end">'
+    + '<span style="font-size:11px;color:#6b7280;font-weight:500">Full scorecard →</span>'
+    + '</div>'
+    + '</div>';
 }
 
-function ckTab(uid, tab) {
-  ['intel','now','bat','bowl'].forEach(function(t) {
-    var panel = document.getElementById(uid + '_panel_' + t);
-    var btn   = document.getElementById(uid + '_tab_'   + t);
-    if (!panel || !btn) return;
-    var isActive = t === tab;
-    panel.style.display = isActive ? 'flex' : 'none';
-    var batCode = btn.closest('.live-ultra-panel')
-                    ?.querySelector('[id$="_panel_intel"]')
-                    ?.style.getPropertyValue('--bat-color') || '#fff';
-    btn.style.borderBottomColor = isActive ? (batCode || '#6366f1') : 'transparent';
-    btn.style.color = isActive ? '#fff' : 'rgba(255,255,255,0.3)';
+function ckScTab(matchId, tab, btn) {
+  // Hide all panels for this match
+  document.querySelectorAll('.scpanel_' + matchId).forEach(function(el) {
+    el.style.display = 'none';
   });
-  }
-  let t1Winner = false, t2Winner = false;
-  if (isResult && m.status_text) {
-    const st = m.status_text.toLowerCase();
-    if ([m.team1, m.team1_short].filter(Boolean).some(s => st.startsWith(s.toLowerCase()))) t1Winner = true;
-    else if ([m.team2, m.team2_short].filter(Boolean).some(s => st.startsWith(s.toLowerCase()))) t2Winner = true;
-  }
-
-  const matchLabel = esc(m.match_desc || m.series || '');
-  const statusText = esc(m.status_text || '');
-  const glowColor = `${t1.color}15`;
-  const stakes = matchStakes(m);
-  const resultImpact = tableImpactLine(m, t1Winner, t2Winner);
-  const metaChips = `${resultMarginBadge(m)}${stakes.impact ? `<span class="match-intel-chip ${stakes.tone}">Table impact</span>` : ''}`;
-
-  return `
-    <article style="background:var(--cbg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--cbd);border-radius:16px;overflow:hidden;cursor:pointer;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s"
-             onmouseenter="this.style.borderColor='var(--cbd-h)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px ${glowColor}'"
-             onmouseleave="this.style.borderColor='var(--cbd)';this.style.transform='translateY(0)';this.style.boxShadow='none'"
-             onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
-      <div style="height:2px;background:linear-gradient(90deg,${t1.color}88,${t2.color}88)"></div>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px 0;gap:10px"><span style="font-size:11.5px;color:var(--ct3);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${matchLabel}</span><span style="background:var(--cbadge);color:var(--ct3);font-size:9px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:0.5px;text-transform:uppercase">RESULT</span></div>
-      ${metaChips ? `<div class="match-intel-row">${metaChips}</div>` : ''}
-      <div style="display:flex;align-items:center;justify-content:center;padding:14px 18px 10px;gap:10px">
-        ${teamBadge(m.team1_short, 52)}<div style="text-align:center;flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--ct2)">${esc(m.team1_short)}${t1Winner ? ' <span style="color:#22c55e;font-size:10px">✓</span>' : ''}</div>${teamMiniIntel(m.team1_short)}<div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">${m.team1_score1 ? esc(m.team1_score1.display) : '—'}</div><div style="font-size:10.5px;color:var(--ct4)">${m.team1_score1 ? esc(m.team1_score1.detail) : 'Yet to bat'}</div></div>
-        <span style="font-size:10px;color:var(--ct5);font-weight:600;flex-shrink:0">vs</span>
-        <div style="text-align:center;flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--ct2)">${esc(m.team2_short)}${t2Winner ? ' <span style="color:#22c55e;font-size:10px">✓</span>' : ''}</div>${teamMiniIntel(m.team2_short)}<div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">${m.team2_score1 ? esc(m.team2_score1.display) : '—'}</div><div style="font-size:10.5px;color:var(--ct4)">${m.team2_score1 ? esc(m.team2_score1.detail) : 'Yet to bat'}</div></div>${teamBadge(m.team2_short, 52)}
-      </div>
-      <div style="text-align:center;padding:10px 14px 12px;background:rgba(255,255,255,0.015);margin:0 14px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)"><div style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.5)">${statusText}</div>${resultImpact ? resultImpact.replace('match-impact-line','match-impact-line in-result') : ''}${!resultImpact && stakes.impact ? `<div class="match-impact-line in-result">📊 ${esc(stakes.impact)}</div>` : ''}</div>
-    </article>`;
+  // Show target panel
+  var panel = document.getElementById('scpanel_' + matchId + '_' + tab);
+  if (panel) panel.style.display = '';
+  // Update tab styles
+  document.querySelectorAll('.sctab_' + matchId).forEach(function(el) {
+    el.style.fontWeight = '500';
+    el.style.color = '#6b7280';
+    el.style.borderBottomColor = 'transparent';
+  });
+  btn.style.fontWeight = '700';
+  btn.style.color = '#f9fafb';
+  btn.style.borderBottomColor = '#ef4444';
 }
 
-
-function ckTab(uid, tab) {
- ['intel','now','bat','bowl'].forEach(function(t) {
- var panel = document.getElementById(uid + '_panel_' + t);
- var btn = document.getElementById(uid + '_tab_' + t);
- if (!panel || !btn) return;
- var isActive = t === tab;
- panel.style.display = isActive ? 'flex' : 'none';
- btn.style.borderBottomColor = isActive ? '#6366f1' : 'transparent';
- btn.style.color = isActive ? '#fff' : 'rgba(255,255,255,0.3)';
- });
-}
 
 function upcomingRowCK(m) {
   const matchJson = encodeURIComponent(JSON.stringify(m));
