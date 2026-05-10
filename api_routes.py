@@ -1,6 +1,7 @@
 import os
 import json as _json
 import time
+from datetime import datetime
 from flask import Blueprint, jsonify
 
 from scraper import get_all_matches, get_schedule
@@ -336,3 +337,189 @@ def api_scorecard_schedule(match_id):
     scorecard["match_desc"]  = match["match_desc"]
     scorecard["venue"]       = match["venue"]
     return jsonify(scorecard)
+
+# ── Live match intelligence endpoint ──────────────────────────
+def _compute_projection(score, overs, wickets, crr):
+    if not score or not overs:
+        return None
+    total_balls = int(overs) * 6 + int(round((overs - int(overs)) * 10))
+    balls_rem = 120 - total_balls
+    if balls_rem <= 0:
+        return None
+    rem_overs = balls_rem / 6
+    proj = score + (crr * rem_overs)
+    proj -= wickets * 0.4 * rem_overs
+    if overs >= 16:
+        proj *= 1.05
+    r = round(proj)
+    return {"projected_score": r, "range_low": r - 7, "range_high": r + 7, "proj_target": r + 1, "balls_remaining": balls_rem}
+
+def _compute_win_prob(score, overs, wickets, crr, innings, target=None, rrr=None):
+    if innings == 1:
+        balls_rem = live_balls_remaining(overs)
+        proj = score + crr * (balls_rem / 6)
+        delta = (proj - 175) / 35
+        bp = max(10, min(90, round(50 + delta * 20)))
+        return {"batting_team": bp, "fielding_team": 100 - bp}
+    else:
+        if rrr is None and target and overs:
+            balls_rem = live_balls_remaining(overs)
+            rrr_val = (target - score) / (balls_rem / 6)
+        else:
+            rrr_val = rrr
+        if rrr_val is None or crr is None:
+            return {"batting_team": 50, "fielding_team": 50}
+        rate_diff = rrr_val - crr
+        bp = max(5, min(95, round(50 - rate_diff * 10 - wickets * 3)))
+        return {"batting_team": bp, "fielding_team": 100 - bp}
+
+def live_balls_remaining(overs):
+    return 120 - (int(overs) * 6 + int(round((overs - int(overs)) * 10)))
+
+def _compute_partnership(innings):
+    if not innings:
+        return {"runs": 0, "balls": 0}
+    score = innings.get("score", {})
+    runs = score.get("runs", 0)
+    fow = innings.get("fow", [])
+    if fow:
+        last_wkt_runs = fow[-1].get("runs", 0)
+        part_runs = runs - last_wkt_runs
+    else:
+        part_runs = runs
+    return {"runs": max(0, part_runs), "balls": 0}
+
+def _compute_pressure(innings, score, over, crr, target, rrr):
+    base = 0
+    if innings == 1:
+        base += (score.get("wickets", 0) or 0) * 10
+        if over > 10 and crr and crr < 8.0:
+            base += 15
+        if over > 16:
+            base += 10
+    else:
+        if rrr and crr:
+            base += max(0, (rrr - crr) * 8)
+        base += (score.get("wickets", 0) or 0) * 8
+        balls_left = (20 - over) * 6
+        if target and balls_left < 24 and (target - score.get("runs", 0)) > 30:
+            base += 20
+    v = min(100, max(0, base))
+    label = "High pressure" if v >= 70 else "Medium" if v >= 45 else "Low" if v >= 20 else "Comfortable"
+    return {"value": v, "label": label}
+
+def _enrich_batters(batsmen):
+    result = []
+    for b in (batsmen or []):
+        sr = round((b.get("runs", 0) / b.get("balls", 1)) * 100, 1) if b.get("balls", 0) > 0 else 0.0
+        result.append({
+            "name": b.get("name", ""),
+            "runs": b.get("runs", 0),
+            "balls": b.get("balls", 0),
+            "fours": b.get("fours", 0),
+            "sixes": b.get("sixes", 0),
+            "sr": sr,
+            "is_active": not bool(b.get("out_desc", "")),
+            "is_striker": False,
+            "dismissal": b.get("out_desc", None),
+        })
+    return result
+
+def _enrich_bowlers(bowl_data):
+    result = []
+    for b in (bowl_data or []):
+        overs = float(b.get("overs", 0))
+        econ = round(b.get("runs", 0) / overs, 2) if overs > 0 else 0.0
+        result.append({
+            "name": b.get("name", ""),
+            "overs": overs,
+            "runs": b.get("runs", 0),
+            "wickets": b.get("wickets", 0),
+            "econ": econ,
+            "dots": b.get("dots", 0),
+            "is_current": False,
+        })
+    return result
+
+@api_bp.route("/api/live/<match_id>")
+def api_live_intel(match_id):
+    data = fetch_cached_matches()
+    all_matches = data.get("live", []) + data.get("upcoming", []) + data.get("finished", [])
+    match = next((m for m in all_matches if m.get("id") == match_id), None)
+    if not match:
+        return jsonify({"error": "Match not found"}), 404
+
+    sc = fetch_cached_scorecard(match_id, match["team1_short"], match["team2_short"])
+    innings_list = sc.get("innings", [])
+
+    # Determine active innings (usually the last one)
+    active_inn = innings_list[-1] if innings_list else None
+
+    # Get basic score info
+    bat_score = match.get("team1_score1") or {}
+    t1s = match.get("team1_short", "")
+    t2s = match.get("team2_short", "")
+    batting_is_t1 = bool(bat_score) or not match.get("team2_score1")
+    bat_code = t1s if batting_is_t1 else t2s
+    bowl_code = t2s if batting_is_t1 else t1s
+    score = bat_score.get("runs", 0) or 0
+    overs = float(bat_score.get("overs", 0) or 0)
+    wickets = bat_score.get("wickets", 0) or 0
+    crr = float(match.get("run_rate") or 0)
+
+    # Compute rich fields
+    batsmen = _enrich_batters(active_inn.get("batsmen", []) if active_inn else [])
+    bowlers = _enrich_bowlers(active_inn.get("bowlers", []) if active_inn else [])
+    fow = active_inn.get("fow", []) if active_inn else []
+    projected = _compute_projection(score, overs, wickets, crr)
+    wp = _compute_win_prob(score, overs, wickets, crr, 1)
+    pressure = _compute_pressure(
+        active_inn or {}, {"runs": score, "wickets": wickets}, overs, crr, None, None
+    )
+    partnership = _compute_partnership(active_inn)
+
+    # Mark first batter as striker (approximation)
+    if batsmen:
+        batsmen[0]["is_striker"] = True
+
+    payload = {
+        "match_meta": {
+            "match_num": match.get("match_desc", ""),
+            "t1": t1s,
+            "t2": t2s,
+            "t1_full": match.get("team1", ""),
+            "t2_full": match.get("team2", ""),
+            "venue": match.get("venue", ""),
+            "toss": match.get("status_text", ""),
+            "innings": 1,
+            "batting_team": bat_code,
+            "fielding_team": bowl_code,
+            "is_live": match.get("status") == "live",
+        },
+        "score_block": {
+            "score": score,
+            "wickets": wickets,
+            "overs": overs,
+            "crr": crr,
+            "rrr": None,
+            "target": None,
+            "balls_remaining": live_balls_remaining(overs),
+        },
+        "projected": projected,
+        "win_probability": wp,
+        "win_probability_history": [],
+        "momentum": None,
+        "pressure": pressure,
+        "ball_timeline": {"this_over": [], "last_over": [], "last_wicket_desc": fow[-1].get("name", "") + " @" + str(fow[-1].get("over", "")) if fow else ""},
+        "batters": batsmen,
+        "bowlers": bowlers,
+        "partnership": partnership,
+        "fall_of_wickets": [{"wicket": w.get("wkt_n", i+1), "score": w.get("runs", 0), "over": str(w.get("over", 0)), "batter": w.get("name", ""), "runs": w.get("runs", 0)} for i, w in enumerate(fow)],
+        "phases": {},
+        "worm_chart": {},
+        "dot_analysis": {},
+        "key_matchup": None,
+        "ticker_items": [],
+        "last_updated": datetime.utcnow().isoformat() + "Z",
+    }
+    return jsonify(payload)
