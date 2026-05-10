@@ -1,5 +1,6 @@
 {
-  "live": [
+  "live": [],
+  "upcoming": [
     {
       "id": "152097",
       "series": "IPL 2026",
@@ -12,21 +13,21 @@
       "team2_short": "RCB",
       "team2_color": "#dc2626",
       "team1_score1": {
-        "display": "46/3",
-        "detail": "(5.2 ov)",
-        "runs": 46,
+        "display": "74/3",
+        "detail": "(8.5 ov)",
+        "runs": 74,
         "wickets": 3,
-        "overs": "5.2"
+        "overs": "8.5"
       },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "status": "live",
-      "status_text": "Royal Challengers Bengaluru opt to bowl",
+      "status": "upcoming",
+      "status_text": "Strategic Timeout",
       "start_time": "07:30 PM",
       "start_epoch": 1778421600000,
-      "run_rate": 8.62,
+      "run_rate": null,
       "t1_h2h_wins": 19,
       "t2_h2h_wins": 15,
       "team1_rank": 10,
@@ -49,9 +50,7 @@
         "L"
       ],
       "team2_qualification_pct": 86
-    }
-  ],
-  "upcoming": [
+    },
     {
       "id": "152108",
       "series": "IPL 2026",
@@ -273,6 +272,6 @@
       "team2_qualification_pct": 20
     }
   ],
-  "last_updated": "10 May, 07:59 PM",
+  "last_updated": "10 May, 08:21 PM",
   "error": null
 }
