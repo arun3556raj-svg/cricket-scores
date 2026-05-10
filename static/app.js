@@ -5089,7 +5089,12 @@ async function loadSchedule() {
     }
     renderSchedule(data);
     // Re-render points table if active so fixtures tab gets fresh schedule data
-    if (currentFilter === 'points' && pointsData) renderPointsTable(pointsData);
+    // Preserve expanded row so user doesn't lose their place
+    if (currentFilter === 'points' && pointsData) {
+      var savedRow = pointsExpandedRow;
+      renderPointsTable(pointsData);
+      pointsExpandedRow = savedRow;
+    }
   } catch (err) {
     $('scheduleList').innerHTML = `<div class="sc-empty">Error: ${esc(err.message)}</div>`;
     scheduleLoaded = false; // allow retry
