@@ -4635,13 +4635,11 @@ function renderPointsTable(data) {
       <div class="pts-v3-seasons">${seasonPills}</div>
       <div class="pt-tabs">
         <button class="pt-tab${activeView === 'compact' ? ' active' : ''}" onclick="setPointsView('compact')">Compact</button>
-        <button class="pt-tab${activeView === 'qualification' ? ' active' : ''}" onclick="setPointsView('qualification')">⟡ Qualification</button>
       </div>
       ${rows.length ? renderPointsView(rows, activeView) : `<div class="sc-empty" style="padding:28px">No data for this season.</div>`}
     </div>`;
 }
 function renderPointsView(rows, view) {
-  if (view === 'qualification') return renderQualificationPointsView(rows);
   return renderCompactPointsView(rows);
 }
 function setPointsSeason(season) {
@@ -4707,18 +4705,7 @@ function renderExpandedOverview(row) {
     <div class="pt-card"><div class="pt-card-label">NRR Trend</div><div class="pt-spark-wrap">${createSparkline(row.nrrTrend,nrrColor,80,28)}<div><b style="color:${nrrColor}">${ptNrrText(row.nrr)}</b><small>Current</small></div></div></div>
   </div>`;
 }
-function renderExpandedQualification(row) {
-  const qColor = getQualColor(row.qualProb), pColor = getPressureColor(row.pressureIndex);
-  const neededWins = Math.max(0, Math.ceil((16 - row.points) / 2));
-  const marker = ptClamp(((row.nrr + 2) / 4) * 100);
-  const what = row.eliminated ? 'Mathematically eliminated from playoff contention.' : row.qualProb >= 90 ? `Need ${neededWins} more win${neededWins === 1 ? '' : 's'} from ${row.remaining} remaining to lock top 4.` : row.qualProb >= 60 ? `Need to win ${neededWins} of ${row.remaining} remaining. NRR could be decisive.` : row.qualProb >= 25 ? `Must win ${neededWins} of ${row.remaining} remaining and need other results.` : 'Need to win all remaining and depend heavily on other results.';
-  return `<div class="pt-qual-stack">
-    <div class="pt-card pt-prob"><div><div class="pt-card-label">Playoff Probability</div><div class="pt-big" style="color:${qColor}">${Math.round(row.qualProb)}%</div><p>${getQualDescriptor(row.qualProb)}</p></div>${createQualRing(row.qualProb,52)}</div>
-    <div class="pt-two"><div class="pt-card"><div class="pt-card-label">Virtual Rank</div><div class="pt-rank-range"><b>${row.virtualRank[0]}</b><span>to</span><b class="dim">${row.virtualRank[1]}</b></div><p>Best → worst case</p></div><div class="pt-card"><div class="pt-card-label">Pressure Index</div><div class="pt-pressure"><span style="width:${row.pressureIndex}%;background:${pColor}"></span></div><b style="color:${pColor}">${Math.round(row.pressureIndex)}/100</b><p>${getPressureLabel(row.pressureIndex)}</p></div></div>
-    <div class="pt-card"><div class="pt-card-label">NRR Danger Zone</div><div class="pt-zone"><span class="pt-zone-marker" style="left:${marker}%;background:${teamMeta(row.team_short).color}"></span></div><div class="pt-scale"><span>-2.0</span><span>0.0</span><span>+2.0</span></div></div>
-    <div class="pt-card pt-need ${row.eliminated ? 'danger' : ''}">${esc(what)}</div>
-  </div>`;
-}
+
 function renderExpandedFixtures(row) {
   const dColor = getDifficultyColor(row.remainingDifficulty);
   const fixtures = row.remainingFixtures.length ? row.remainingFixtures : ['TBD'];
@@ -4740,13 +4727,7 @@ function raceIntensity(rows) {
   const avgRemaining = rows.reduce((s,r)=>s+r.remaining,0)/rows.length;
   return ptClamp((within / rows.length) * 72 + avgRemaining * 3);
 }
-function renderQualificationPointsView(rows) {
-  const intensity = raceIntensity(rows);
-  const fourth = rows[3]?.points || 0;
-  const within = rows.filter(r => Math.abs(r.points - fourth) <= 4).length;
-  const avgLeft = rows.length ? Math.round(rows.reduce((s,r)=>s+r.remaining,0)/rows.length) : 0;
-  return `<div class="pt-race"><div class="race-banner"><div><span>Playoff Race Intensity</span><b>${Math.round(intensity)}%</b></div><div class="race-bar"><i style="width:${intensity}%"></i></div><p>${within} teams within 4 pts for 4 spots · ${avgLeft} matches left avg.</p></div>${rows.map(row => renderRaceCard(row)).join('')}</div>`;
-}
+
 function renderRaceCard(row) {
   const qColor = getQualColor(row.qualProb), pColor = getPressureColor(row.pressureIndex), dColor = getDifficultyColor(row.remainingDifficulty);
   return `<div class="pt-race-card ${row.eliminated?'eliminated':''}" style="--race:${qColor}"><div class="pt-race-top"><div class="pt-race-team"><span class="pt-rank">${row.rank}</span>${teamBadgePt(row.team_short,28)}<div><b>${esc(row.full)}</b><small>${row.points} pts · ${row.remaining} left</small></div></div>${createQualRing(row.qualProb,40,true)}</div><div class="pt-race-bottom"><div><small>Pressure</small><div class="pt-pressure"><span style="width:${row.pressureIndex}%;background:${pColor}"></span></div></div><i></i><div><small>NRR</small>${createSparkline(row.nrrTrend,row.nrr>=0?'#4ADE80':'#F87171',48,18)}</div><i></i><div><small>Sched.</small><b style="color:${dColor}">${getDifficultyLabel(row.remainingDifficulty)}</b></div></div></div>`;
