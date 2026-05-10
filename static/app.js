@@ -4635,11 +4635,13 @@ function renderPointsTable(data) {
       <div class="pts-v3-seasons">${seasonPills}</div>
       <div class="pt-tabs">
         <button class="pt-tab${activeView === 'compact' ? ' active' : ''}" onclick="setPointsView('compact')">Compact</button>
+        <button class="pt-tab${activeView === 'qualification' ? ' active' : ''}" onclick="setPointsView('qualification')">⟡ Qualification</button>
       </div>
       ${rows.length ? renderPointsView(rows, activeView) : `<div class="sc-empty" style="padding:28px">No data for this season.</div>`}
     </div>`;
 }
 function renderPointsView(rows, view) {
+  if (view === 'qualification') return renderQualificationPointsView(rows);
   return renderCompactPointsView(rows);
 }
 function setPointsSeason(season) {
@@ -4685,9 +4687,9 @@ function renderPointExpanded(row, i) {
   const tab = pointsDetailTabs[i] || 'overview';
   return `<div class="pt-expanded" onclick="event.stopPropagation()">
     <div class="pt-inner-tabs">
-      ${['overview','qualification','fixtures'].map(t => `<button class="pt-inner-tab${tab === t ? ' active' : ''}" onclick="setPtsDetailTab(${i}, '${t}', event)">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}
+      ${['overview','fixtures'].map(t => `<button class="pt-inner-tab${tab === t ? ' active' : ''}" onclick="setPtsDetailTab(${i}, '${t}', event)">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}
     </div>
-    ${tab === 'qualification' ? renderExpandedQualification(row) : tab === 'fixtures' ? renderExpandedFixtures(row) : renderExpandedOverview(row)}
+    ${tab === 'fixtures' ? renderExpandedFixtures(row) : renderExpandedOverview(row)}
   </div>`;
 }
 function ratioBar(a, b, color = '#4ADE80') {
@@ -4761,6 +4763,14 @@ function renderFixtureRow(code) {
 function renderAdvancedPointsView(rows) {
   return `<div class="pt-advanced-list">${rows.map(row => { const meta=teamMeta(row.team_short); const mom=getMomentumConfig(row.momentum); const nrrColor=row.nrr>=0?'#4ADE80':'#F87171'; return `<div class="pt-adv-card ${row.isTopFour?'playoff':''} ${row.eliminated?'eliminated':''}" style="--team:${meta.color}"><div class="pt-adv-top"><span class="pt-rank">${row.rank}</span>${teamBadgePt(row.team_short,28)}<div class="pt-adv-team"><b>${esc(row.full)}</b><small>${row.won}W ${row.lost}L · ${row.played}P</small></div><div class="pt-adv-score"><b>${row.points}</b><span style="color:${nrrColor}">${ptNrrText(row.nrr)}</span></div></div><div class="pt-adv-bottom"><span>FORM</span>${formPills(row.last5)}<span class="pt-momentum" style="background:${mom.bg};color:${mom.color}">${mom.icon} ${mom.label}</span></div></div>`; }).join('')}</div>`;
 }
+function renderQualificationPointsView(rows) {
+  const intensity = raceIntensity(rows);
+  const fourth = rows[3] ? rows[3].points || 0 : 0;
+  const within = rows.filter(function(r) { return Math.abs(r.points - fourth) <= 4; }).length;
+  const avgLeft = rows.length ? Math.round(rows.reduce(function(s,r) { return s + r.remaining; }, 0) / rows.length) : 0;
+  return '<div class="pt-race"><div class="race-banner"><div><span>Playoff Race Intensity</span><b>' + Math.round(intensity) + '%</b></div><div class="race-bar"><i style="width:' + intensity + '%"></i></div><p>' + within + ' teams within 4 pts for 4 spots · ' + avgLeft + ' matches left avg.</p></div>' + rows.map(function(row) { return renderRaceCard(row); }).join('') + '</div>';
+}
+
 function raceIntensity(rows) {
   if (!rows.length) return 0;
   const fourth = rows[3]?.points || 0;
