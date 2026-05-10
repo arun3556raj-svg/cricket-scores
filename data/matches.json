@@ -1,0 +1,167 @@
+{
+  "live": [],
+  "upcoming": [
+    {
+      "id": "152108",
+      "series": "IPL 2026",
+      "match_desc": "55th Match",
+      "match_format": "T20",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Delhi Capitals",
+      "team2_short": "DC",
+      "team2_color": "#0ea5e9",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "status": "upcoming",
+      "status_text": "Match starts at May 11, 14:00 GMT",
+      "start_time": "07:30 PM",
+      "start_epoch": 1778508000000,
+      "run_rate": null,
+      "t1_h2h_wins": 5,
+      "t2_h2h_wins": 7,
+      "team1_rank": 4,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 90,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
+    }
+  ],
+  "finished": [
+    {
+      "id": "152086",
+      "series": "IPL 2026",
+      "match_desc": "53rd Match",
+      "match_format": "T20",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
+      "team1_score1": {
+        "display": "203/8",
+        "detail": "(20 ov)",
+        "runs": 203,
+        "wickets": 8,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "208/5",
+        "detail": "(19.2 ov)",
+        "runs": 208,
+        "wickets": 5,
+        "overs": "19.2"
+      },
+      "team2_score2": null,
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "status": "finished",
+      "status_text": "Chennai Super Kings won by 5 wkts",
+      "start_time": "03:30 PM",
+      "start_epoch": 1778407200000,
+      "run_rate": null,
+      "provisional": true,
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 3,
+      "team1_rank": 9,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "N",
+        "L",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 1,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 67
+    },
+    {
+      "id": "152097",
+      "series": "IPL 2026",
+      "match_desc": "54th Match",
+      "match_format": "T20",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
+      "team1_score1": {
+        "display": "166/7",
+        "detail": "(20 ov)",
+        "runs": 166,
+        "wickets": 7,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "167/8",
+        "detail": "(20 ov)",
+        "runs": 167,
+        "wickets": 8,
+        "overs": "20"
+      },
+      "team2_score2": null,
+      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+      "status": "finished",
+      "status_text": "Royal Challengers Bengaluru won by 2 wkts",
+      "start_time": "07:30 PM",
+      "start_epoch": 1778421600000,
+      "run_rate": null,
+      "provisional": true,
+      "t1_h2h_wins": 19,
+      "t2_h2h_wins": 16,
+      "team1_rank": 10,
+      "team1_points": 6,
+      "team1_last_5": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 1,
+      "team2_rank": 1,
+      "team2_points": 14,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 99
+    }
+  ],
+  "last_updated": "11 May, 12:15 AM",
+  "error": null
+}

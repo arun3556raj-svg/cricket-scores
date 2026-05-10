@@ -1180,7 +1180,24 @@ function upcomingRowCK(m) {
     else dateDisplay = d.toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' });
   }
   const venue = m.venue ? m.venue.split(',')[0] : '';
-  const h2h1 = Number(m.t1_h2h_wins || 0), h2h2 = Number(m.t2_h2h_wins || 0);
+  // Look up H2H from match data first, then fall back to schedule data
+  var h2h1 = Number(m.t1_h2h_wins || 0), h2h2 = Number(m.t2_h2h_wins || 0);
+  if (!h2h1 && !h2h2 && scheduleData && scheduleData.matches) {
+    var histMatches = scheduleData.matches.filter(function(sm) {
+      return sm.status === 'finished' && (
+        (sm.team1_short === t1.code && sm.team2_short === t2.code) ||
+        (sm.team1_short === t2.code && sm.team2_short === t1.code)
+      );
+    });
+    h2h1 = histMatches.filter(function(sm) { return Number(sm.t1_h2h_wins || 0) > 0 && sm.team1_short === t1.code; }).length;
+    h2h2 = histMatches.filter(function(sm) { return Number(sm.t2_h2h_wins || 0) > 0 && sm.team2_short === t1.code; }).length;
+    // Alternative: just use the first match's H2H data if available
+    if (histMatches.length && histMatches[0].t1_h2h_wins != null) {
+      var hm = histMatches[0];
+      h2h1 = hm.team1_short === t1.code ? (hm.t1_h2h_wins || 0) : (hm.t2_h2h_wins || 0);
+      h2h2 = hm.team1_short === t2.code ? (hm.t1_h2h_wins || 0) : (hm.t2_h2h_wins || 0);
+    }
+  }
   const h2hTotal = h2h1 + h2h2;
   const h2hPct = h2hTotal ? Math.round(h2h1 / h2hTotal * 100) : 50;
   const mustWin = [t1, t2].filter(team => Number(team.qual) < 15 || stakes.tone === 'danger' && (Number(team.qual) < 40));

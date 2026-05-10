@@ -1,0 +1,571 @@
+{
+  "match_id": "prov-152075",
+  "source_id": "152075",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 52,
+  "date": "2026-05-09",
+  "team1": "Gujarat Titans",
+  "team2": "Rajasthan Royals",
+  "venue": "Sawai Mansingh Stadium, Jaipur",
+  "result_text": "Gujarat Titans won by 77 runs",
+  "innings": [
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 1,
+      "score": {
+        "runs": 229,
+        "wickets": 4,
+        "overs": 20,
+        "run_rate": 11.45,
+        "declared": false
+      },
+      "extras": {
+        "total": 19,
+        "wides": 16,
+        "no_balls": 1,
+        "byes": 1,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Sai Sudharsan",
+          "runs": 55,
+          "balls": 36,
+          "fours": 6,
+          "sixes": 2,
+          "strike_rate": 152.78,
+          "out_desc": "c Jofra Archer b Yash Raj Punja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 84,
+          "balls": 44,
+          "fours": 9,
+          "sixes": 3,
+          "strike_rate": 190.91,
+          "out_desc": "c Tushar Deshpande b Brijesh Sharma",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jos Buttler",
+          "runs": 13,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 130,
+          "out_desc": "c Donovan Ferreira b Ravindra Jadeja",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 37,
+          "balls": 20,
+          "fours": 2,
+          "sixes": 3,
+          "strike_rate": 185,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jason Holder",
+          "runs": 7,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "c Yashasvi Jaiswal b Brijesh Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rahul Tewatia",
+          "runs": 14,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 350,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nishant Sindhu",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Arshad Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kagiso Rabada",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mohammed Siraj",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Jofra Archer",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 0,
+          "economy": 15.3,
+          "wides": 9,
+          "no_balls": 1,
+          "dots": 0
+        },
+        {
+          "name": "Tushar Deshpande",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 52,
+          "wickets": 0,
+          "economy": 13,
+          "wides": 3,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Brijesh Sharma",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 2,
+          "economy": 11.8,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Yash Raj Punja",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 1,
+          "economy": 9.2,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Donovan Ferreira",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 0,
+          "economy": 11,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Sai Sudharsan",
+          "runs": 118,
+          "over": 10.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "Jos Buttler",
+          "runs": 150,
+          "over": 13.2,
+          "wkt_n": 2
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 185,
+          "over": 16.2,
+          "wkt_n": 3
+        },
+        {
+          "name": "Jason Holder",
+          "runs": 205,
+          "over": 18.1,
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Gujarat Titans",
+      "innings_id": 2,
+      "score": {
+        "runs": 152,
+        "wickets": 10,
+        "overs": 16.3,
+        "run_rate": 9.21,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 2,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 1
+      },
+      "batsmen": [
+        {
+          "name": "Yashasvi Jaiswal",
+          "runs": 3,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75,
+          "out_desc": "c Nishant Sindhu b Kagiso Rabada",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "runs": 36,
+          "balls": 16,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 225,
+          "out_desc": "c Arshad Khan b Mohammed Siraj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 24,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 240,
+          "out_desc": "b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Shimron Hetmyer",
+          "runs": 6,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 85.71,
+          "out_desc": "c Jason Holder b Kagiso Rabada",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "runs": 38,
+          "balls": 25,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 152,
+          "out_desc": "lbw b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Donovan Ferreira",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200,
+          "out_desc": "b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubham Dubey",
+          "runs": 15,
+          "balls": 14,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 107.14,
+          "out_desc": "b Rashid Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dasun Shanaka",
+          "runs": 16,
+          "balls": 11,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 145.45,
+          "out_desc": "c Shubman Gill b Jason Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jofra Archer",
+          "runs": 5,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 83.33,
+          "out_desc": "c Jos Buttler b Jason Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tushar Deshpande",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.33,
+          "out_desc": "c Washington Sundar b Jason Holder",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Brijesh Sharma",
+          "runs": 1,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Yash Raj Punja",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mohammed Siraj",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 55,
+          "wickets": 1,
+          "economy": 13.8,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Kagiso Rabada",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 2,
+          "economy": 11,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Ravisrinivasan Sai Kishore",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 0,
+          "economy": 8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Rashid Khan",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 33,
+          "wickets": 4,
+          "economy": 8.2,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Washington Sundar",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Jason Holder",
+          "overs": 2.3,
+          "balls": 15,
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 3,
+          "economy": 4.8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "runs": 38,
+          "over": 2.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "Yashasvi Jaiswal",
+          "runs": 40,
+          "over": 3.3,
+          "wkt_n": 2
+        },
+        {
+          "name": "Shimron Hetmyer",
+          "runs": 68,
+          "over": 5.4,
+          "wkt_n": 3
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 87,
+          "over": 7.3,
+          "wkt_n": 4
+        },
+        {
+          "name": "Donovan Ferreira",
+          "runs": 91,
+          "over": 7.5,
+          "wkt_n": 5
+        },
+        {
+          "name": "Shubham Dubey",
+          "runs": 115,
+          "over": 11.4,
+          "wkt_n": 6
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "runs": 136,
+          "over": 13.5,
+          "wkt_n": 7
+        },
+        {
+          "name": "Jofra Archer",
+          "runs": 141,
+          "over": 14.5,
+          "wkt_n": 8
+        },
+        {
+          "name": "Dasun Shanaka",
+          "runs": 151,
+          "over": 16.1,
+          "wkt_n": 9
+        },
+        {
+          "name": "Tushar Deshpande",
+          "runs": 152,
+          "over": 16.3,
+          "wkt_n": 10
+        }
+      ]
+    }
+  ],
+  "error": null
+}
