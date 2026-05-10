@@ -4812,7 +4812,113 @@ function renderQualificationPointsView(rows) {
   const fourth = rows[3] ? rows[3].points || 0 : 0;
   const within = rows.filter(function(r) { return Math.abs(r.points - fourth) <= 4; }).length;
   const avgLeft = rows.length ? Math.round(rows.reduce(function(s,r) { return s + r.remaining; }, 0) / rows.length) : 0;
-  return '<div class="pt-race"><div class="race-banner"><div><span>Playoff Race Intensity</span><b>' + Math.round(intensity) + '%</b></div><div class="race-bar"><i style="width:' + intensity + '%"></i></div><p>' + within + ' teams within 4 pts for 4 spots · ' + avgLeft + ' matches left avg.</p></div>' + rows.map(function(row) { return renderRaceCard(row); }).join('') + '</div>';
+
+  // Status helper
+  function qualStatus(row) {
+    var q = row.qualProb || 0;
+    var elim = row.eliminated || (row.maxPts < fourth);
+    if (elim || q < 5) return { label: 'Out', color: '#6B7280', bg: 'rgba(107,114,128,0.06)', border: 'rgba(107,114,128,0.15)' };
+    if (q >= 75) return { label: 'Safe', color: '#22C55E', bg: 'rgba(34,197,94,0.08)', border: 'rgba(34,197,94,0.2)' };
+    if (q >= 50) return { label: 'Likely', color: '#84CC16', bg: 'rgba(132,204,22,0.08)', border: 'rgba(132,204,22,0.2)' };
+    if (q >= 25) return { label: 'Danger', color: '#F59E0B', bg: 'rgba(245,158,11,0.08)', border: 'rgba(245,158,11,0.2)' };
+    return { label: 'Critical', color: '#F97316', bg: 'rgba(249,115,22,0.08)', border: 'rgba(249,115,22,0.2)' };
+  }
+
+  function schedColor(d) {
+    if (d >= 70) return '#F87171';
+    if (d >= 50) return '#F59E0B';
+    return '#22C55E';
+  }
+
+  function sparkline(data, color) {
+    if (!data || !data.length) return '';
+    var W = 54, H = 22;
+    var mn = Math.min.apply(null, data), mx = Math.max.apply(null, data), rng = mx - mn || 0.01;
+    var pts = data.map(function(v, i) {
+      return (i / (data.length - 1)) * W + ',' + (H - ((v - mn) / rng) * H);
+    }).join(' ');
+    var lastX = W, lastY = H - ((data[data.length - 1] - mn) / rng) * H;
+    return '<svg width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '" style="overflow:visible;flex-shrink:0"><polyline points="' + pts + '" fill="none" stroke="' + color + '" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/><circle cx="' + lastX + '" cy="' + lastY + '" r="2.2" fill="' + color + '"/></svg>';
+  }
+
+  function qualRing(prob, color) {
+    var S = 50, r = 18, c = 2 * Math.PI * r, fill = (prob / 100) * c;
+    return '<svg width="' + S + '" height="' + S + '" viewBox="0 0 ' + S + ' ' + S + '" style="transform:rotate(-90deg);flex-shrink:0"><circle cx="' + (S/2) + '" cy="' + (S/2) + '" r="' + r + '" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="4"/><circle cx="' + (S/2) + '" cy="' + (S/2) + '" r="' + r + '" fill="none" stroke="' + color + '" stroke-width="4" stroke-linecap="round" stroke-dasharray="' + fill + ' ' + c + '"/><text x="' + (S/2) + '" y="' + (S/2) + '" text-anchor="middle" dominant-baseline="central" style="transform:rotate(90deg);transform-origin:center;fill:#fff;font-size:10px;font-weight:700;font-family:monospace">' + prob + '%</text></svg>';
+  }
+
+  function formDots(form) {
+    if (!form || !form.length) return '';
+    return '<div style="display:flex;gap:3px">' + form.map(function(r) {
+      var win = r === 'W';
+      return '<div style="width:15px;height:15px;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:800;background:' + (win ? 'rgba(34,197,94,0.15)' : 'rgba(248,113,113,0.15)') + ';border:1px solid ' + (win ? 'rgba(34,197,94,0.4)' : 'rgba(248,113,113,0.4)') + ';color:' + (win ? '#22C55E' : '#F87171') + '">' + esc(r) + '</div>';
+    }).join('') + '</div>';
+  }
+
+  function pressureBar(val) {
+    var c = val < 30 ? '#22C55E' : val < 55 ? '#F59E0B' : val < 78 ? '#F97316' : '#F87171';
+    return '<div style="height:3px;background:rgba(255,255,255,0.07);border-radius:99px;overflow:hidden"><div style="width:' + val + '%;height:100%;background:' + c + ';border-radius:99px"></div></div>';
+  }
+
+  function qualCard(row, idx) {
+    var st = qualStatus(row);
+    var isElim = row.eliminated || row.maxPts < fourth;
+    var schedD = getDifficultyLabel(row.remainingDifficulty);
+    var schedC = schedColor(row.remainingDifficulty);
+    var momColor = getMomentumConfig ? (getMomentumConfig(row.momentum).color || '#F59E0B') : '#F59E0B';
+    var nrrColor = row.nrr >= 0 ? '#22C55E' : '#F87171';
+
+    return '<div class="qual-team-card" style="border-radius:11px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.015);margin-bottom:7px;overflow:hidden;opacity:' + (isElim ? '0.55' : '1') + '" onclick="event.stopPropagation();var e=document.getElementById(\'qual-card-' + idx + '\');if(e)e.style.display=e.style.display===\'none\'?\'\':\'none\'">'
+      + '<div style="display:flex;align-items:center;gap:9px;padding:11px 13px;cursor:pointer">'
+      + '<span style="font-size:10px;color:rgba(255,255,255,0.22);font-family:monospace;width:16px;flex-shrink:0">' + (idx + 1) + '</span>'
+      + '<span style="width:7px;height:7px;border-radius:50%;background:' + row.color + ';flex-shrink:0"></span>'
+      + '<div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:700;color:#fff">' + esc(row.team_short) + '</div><div style="font-size:9px;color:rgba(255,255,255,0.28);margin-top:1px">' + row.points + ' pts · ' + row.remaining + ' left</div></div>'
+      + '<span style="font-size:8px;font-weight:700;padding:3px 8px;border-radius:99px;flex-shrink:0;background:' + st.bg + ';color:' + st.color + ';border:1px solid ' + st.border + ';letter-spacing:0.06em">' + st.label + '</span>'
+      + '<div style="text-align:center;flex-shrink:0"><div style="font-size:7px;color:rgba(255,255,255,0.2);letter-spacing:0.08em;margin-bottom:2px">SCHED.</div><div style="font-size:9px;font-weight:700;color:' + schedC + '">' + esc(schedD) + '</div></div>'
+      + sparkline(row.nrrTrend, row.color)
+      + qualRing(row.qualProb, st.color)
+      + '<span style="color:rgba(255,255,255,0.2);font-size:10px;flex-shrink:0">▼</span>'
+      + '</div>'
+      + '<div id="qual-card-' + idx + '" style="display:none;padding:0 13px 14px">'
+      + '<div style="height:1px;background:linear-gradient(90deg,' + row.color + '40,transparent);margin-bottom:12px"></div>'
+      + '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-bottom:12px">'
+      + '<div style="background:rgba(255,255,255,0.04);border-radius:7px;padding:7px 4px;text-align:center"><div style="font-size:14px;font-weight:800;color:#fff;font-family:monospace">' + row.won + '</div><div style="font-size:7px;color:rgba(255,255,255,0.28);text-transform:uppercase;letter-spacing:0.1em;margin-top:1px">W</div></div>'
+      + '<div style="background:rgba(255,255,255,0.04);border-radius:7px;padding:7px 4px;text-align:center"><div style="font-size:14px;font-weight:800;color:#fff;font-family:monospace">' + row.lost + '</div><div style="font-size:7px;color:rgba(255,255,255,0.28);text-transform:uppercase;letter-spacing:0.1em;margin-top:1px">L</div></div>'
+      + '<div style="background:rgba(255,255,255,0.04);border-radius:7px;padding:7px 4px;text-align:center"><div style="font-size:14px;font-weight:800;color:' + nrrColor + ';font-family:monospace">' + (row.nrr >= 0 ? '+' : '') + row.nrr.toFixed(3) + '</div><div style="font-size:7px;color:rgba(255,255,255,0.28);text-transform:uppercase;letter-spacing:0.1em;margin-top:1px">NRR</div></div>'
+      + '<div style="background:rgba(255,255,255,0.04);border-radius:7px;padding:7px 4px;text-align:center"><div style="font-size:14px;font-weight:800;color:#fff;font-family:monospace">' + row.maxPts + '</div><div style="font-size:7px;color:rgba(255,255,255,0.28);text-transform:uppercase;letter-spacing:0.1em;margin-top:1px">Max</div></div>'
+      + '</div>'
+      + '<div style="display:flex;gap:16px;align-items:center;margin-bottom:12px">'
+      + '<div><div style="font-size:8px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px">Last 5</div>' + formDots(row.last5) + '</div>'
+      + '<div style="flex:1"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:8px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.1em">Pressure index</span><span style="font-size:8px;color:rgba(255,255,255,0.4);font-family:monospace">' + Math.round(row.pressureIndex || 0) + '/100</span></div>' + pressureBar(row.pressureIndex || 50) + '</div>'
+      + '</div>'
+      + '<div style="background:linear-gradient(135deg,' + row.color + '0C,transparent);border:1px solid ' + row.color + '22;border-radius:8px;padding:9px 11px"><div style="font-size:8px;color:' + st.color + ';text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">Qualification scenario</div><div style="font-size:11px;color:rgba(255,255,255,0.75);line-height:1.55;margin-bottom:6px"><span style="color:' + st.color + ';font-weight:700">' + st.label + '</span> · ' + row.points + ' pts, ' + row.remaining + ' left, max ' + row.maxPts + '</div></div>'
+      + '</div>'
+      + '</div>';
+  }
+
+  return '<div class="pt-race">'
+    + '<div style="background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.18);border-radius:10px;padding:11px 13px;margin-bottom:12px">'
+    + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><span style="font-size:8px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.35);text-transform:uppercase">Playoff Race Intensity</span><span style="font-size:18px;font-weight:800;color:#F59E0B;font-family:monospace">' + Math.round(intensity) + '%</span></div>'
+    + '<div style="height:4px;background:rgba(255,255,255,0.06);border-radius:99px;margin-bottom:7px;overflow:hidden"><div style="width:' + intensity + '%;height:100%;background:linear-gradient(90deg,#F59E0B,#F97316,#F87171);border-radius:99px"></div></div>'
+    + '<div style="font-size:10px;color:rgba(255,255,255,0.38)">' + within + ' teams battling for 4 spots · Magic number: <b style="color:rgba(255,255,255,0.65)">' + (fourth + 2) + ' pts</b> · Avg ' + avgLeft + ' matches left</div>'
+    + '</div>'
+    + '<div style="display:flex;align-items:center;gap:8px;padding:0 13px;margin-bottom:6px">'
+    + '<div style="width:16px"></div><div style="width:7px"></div>'
+    + '<div style="flex:1;font-size:8px;color:rgba(255,255,255,0.18);text-transform:uppercase;letter-spacing:0.1em">Team</div>'
+    + '<div style="font-size:8px;color:rgba(255,255,255,0.18);text-transform:uppercase;letter-spacing:0.1em">Status</div>'
+    + '<div style="font-size:8px;color:rgba(255,255,255,0.18);text-transform:uppercase;letter-spacing:0.1em;width:54px;text-align:center">Sched.</div>'
+    + '<div style="font-size:8px;color:rgba(255,255,255,0.18);text-transform:uppercase;letter-spacing:0.1em;width:52px;text-align:center">NRR</div>'
+    + '<div style="font-size:8px;color:rgba(255,255,255,0.18);text-transform:uppercase;letter-spacing:0.1em;width:50px;text-align:center">Qual%</div>'
+    + '<div style="width:16px"></div>'
+    + '</div>'
+    + rows.map(function(row, idx) { return qualCard(row, idx); }).join('')
+    + '<div style="margin-top:10px;padding:8px 11px;background:rgba(255,255,255,0.02);border-radius:9px;border:1px solid rgba(255,255,255,0.05);display:flex;flex-wrap:wrap;gap:10px">'
+    + '<div style="display:flex;align-items:center;gap:4px"><div style="width:5px;height:5px;border-radius:50%;background:#22C55E"></div><span style="font-size:9px;color:rgba(255,255,255,0.35)">Safe</span></div>'
+    + '<div style="display:flex;align-items:center;gap:4px"><div style="width:5px;height:5px;border-radius:50%;background:#84CC16"></div><span style="font-size:9px;color:rgba(255,255,255,0.35)">Likely</span></div>'
+    + '<div style="display:flex;align-items:center;gap:4px"><div style="width:5px;height:5px;border-radius:50%;background:#F59E0B"></div><span style="font-size:9px;color:rgba(255,255,255,0.35)">Danger</span></div>'
+    + '<div style="display:flex;align-items:center;gap:4px"><div style="width:5px;height:5px;border-radius:50%;background:#F97316"></div><span style="font-size:9px;color:rgba(255,255,255,0.35)">Critical</span></div>'
+    + '<div style="display:flex;align-items:center;gap:4px"><div style="width:5px;height:5px;border-radius:50%;background:#6B7280"></div><span style="font-size:9px;color:rgba(255,255,255,0.35)">Out</span></div>'
+    + '</div>'
+    + '</div>';
 }
 
 function raceIntensity(rows) {
