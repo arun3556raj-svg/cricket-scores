@@ -4771,7 +4771,7 @@ function renderExpandedFixtures(row) {
         + '<span style="background:' + (won ? 'rgba(34,197,94,0.15)' : 'rgba(248,113,113,0.15)') + ';color:' + (won ? '#22C55E' : '#F87171') + ';padding:2px 6px;border-radius:4px;font-size:9px;font-weight:800">' + (won ? 'W' : 'L') + '</span>'
         + '<span style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.7);flex:1">' + esc(opp) + '</span>'
         + '<span style="font-size:9px;color:rgba(255,255,255,0.25)">' + (s1 ? s1 : '') + (s1 && s2 ? ' vs ' : '') + (s2 ? s2 : '') + '</span>'
-        + '<span style="font-size:10px;font-weight:700;color:' + (won ? '#22C55E' : '#F87171') + '">' + wLabel + ' ' + margin + '</span>'
+        + '<span style="font-size:9px;color:rgba(255,255,255,0.20);white-space:nowrap">' + (m.match_date || '') + '</span>' + '<span style="font-size:10px;font-weight:700;color:' + (won ? '#22C55E' : '#F87171') + '">' + wLabel + ' ' + margin + '</span>'
         + '</div>';
     }).join('');
   }
