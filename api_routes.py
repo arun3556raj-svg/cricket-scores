@@ -412,6 +412,10 @@ def _enrich_batters(batsmen):
     result = []
     for b in (batsmen or []):
         sr = round((b.get("runs", 0) / b.get("balls", 1)) * 100, 1) if b.get("balls", 0) > 0 else 0.0
+        out_desc = b.get("out_desc", "") or ""
+        is_out = bool(out_desc) and out_desc.strip() not in ("", "batting", "not out")
+        has_batted = b.get("balls", 0) > 0 or b.get("runs", 0) > 0
+        is_active = not is_out
         result.append({
             "name": b.get("name", ""),
             "runs": b.get("runs", 0),
@@ -419,7 +423,7 @@ def _enrich_batters(batsmen):
             "fours": b.get("fours", 0),
             "sixes": b.get("sixes", 0),
             "sr": sr,
-            "is_active": not bool(b.get("out_desc", "")),
+            "is_active": is_active,
             "is_striker": False,
             "dismissal": b.get("out_desc", None),
         })
@@ -495,9 +499,11 @@ def api_live_intel(match_id):
     )
     partnership = _compute_partnership(active_inn)
 
-    # Mark first batter as striker (approximation)
-    if batsmen:
-        batsmen[0]["is_striker"] = True
+    # Mark last two active batters as strikers
+    active = [b for b in batsmen if b.get("is_active")]
+    for i, b in enumerate(active):
+        if i >= len(active) - 2:
+            b["is_striker"] = True
 
     payload = {
         "match_meta": {

@@ -840,7 +840,7 @@ function liveCardCK(m) {
   const reqBalls = ballsRem || null;
 
   // Batters
-  const activeBatters    = (m.batters || []).filter(function(b) { return b.is_active; }).slice(0, 2);
+  const activeBatters    = (m.batters || []).filter(function(b) { return b.is_active && (b.balls > 0 || b.runs > 0); }).slice(0, 2);
   const dismissedBatters = (m.batters || []).filter(function(b) { return !b.is_active && b.runs != null; });
 
   // Bowlers
