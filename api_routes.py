@@ -475,8 +475,8 @@ def api_live_intel(match_id):
         target_val = (s1.get("runs") or 0) + 1
     else:
         bat_score = s1 or s2
-        bowl_code = t1s if bat_score == s1 else t2s
-        bat_code = t2s if bat_score == s1 else t1s
+        bat_code = t1s if bat_score == s1 else t2s
+        bowl_code = t2s if bat_score == s1 else t1s
         innings_num = 1
         target_val = None
     score = bat_score.get("runs", 0) or 0
