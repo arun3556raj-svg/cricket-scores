@@ -484,10 +484,38 @@ function heroCK(m, sc = null) {
   const bgGrad = `linear-gradient(135deg,${t1.color}22,${t2.color}08)`;
 
   // ── Extract batters & bowlers from scorecard ─────────────────
-  let battersHtml = '', bowlersHtml = '', winProbHtml = '';
+  let battersHtml = '', bowlersHtml = '', winProbHtml = '', panelsHtml = '';
+
+  let intelBatters = m.batters || null;
+  let intelBowlers = m.bowlers || null;
+  let intelWp = m.win_prob || null;
+  let intelProj = m.projection_data || null;
+
+  // Build batter/bowler HTML from intel data if available (faster than scorecard fetch)
+  if (intelBatters && intelBatters.length) {
+    battersHtml = intelBatters.slice(0, 2).map(function(b) {
+      var sr = b.sr || (b.balls > 0 ? (b.runs * 100 / b.balls) : 0);
+      return '<div style="display:flex;align-items:center;gap:10px">'
+        + '<div class="player-avatar-fallback" style="width:30px;height:30px;font-size:12px;background:' + (m.team1_color || '#6366f1') + '20;border-color:' + (m.team1_color || '#6366f1') + '40;color:' + (m.team1_color || '#6366f1') + '">' + (b.name ? b.name.split(' ').map(function(s,j){return j===0||j===b.name.split(' ').length-1?s[0]:'';}).filter(Boolean).join('') : '?') + '</span></div>'
+        + '<div style="flex:1;min-width:0"><div style="font-size:12.5px;font-weight:600;color:var(--ct);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + esc(b.name) + '</div><div style="font-size:11px;color:var(--ct3)">SR ' + sr.toFixed(1) + (b.fours ? ' \u00b7 ' + b.fours + '\u00d74' : '') + (b.sixes ? ' ' + b.sixes + '\u00d76' : '') + '</div></div>'
+        + '<span style="font-size:15px;font-weight:800;color:var(--ct);flex-shrink:0">' + (b.runs || 0) + '<span style="font-size:11px;font-weight:500;color:var(--ct4)"> (' + (b.balls || 0) + ')</span></span></div>';
+    }).join('');
+  }
+  if (intelBowlers && intelBowlers.length) {
+    bowlersHtml = intelBowlers.slice(0, 2).map(function(b) {
+      return '<div style="display:flex;align-items:center;gap:10px">'
+        + '<div class="player-avatar-fallback" style="width:30px;height:30px;font-size:12px;background:' + (m.team2_color || '#6366f1') + '20;border-color:' + (m.team2_color || '#6366f1') + '40;color:' + (m.team2_color || '#6366f1') + '">' + (b.name ? b.name.split(' ').map(function(s,j){return j===0||j===b.name.split(' ').length-1?s[0]:'';}).filter(Boolean).join('') : '?') + '</span></div>'
+        + '<div style="flex:1;min-width:0"><div style="font-size:12.5px;font-weight:600;color:var(--ct);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + esc(b.name) + '</div><div style="font-size:11px;color:var(--ct3)">Econ ' + (b.econ || 0).toFixed(2) + '</div></div>'
+        + '<span style="font-size:15px;font-weight:800;color:var(--ct);flex-shrink:0">' + (b.wickets || 0) + '/' + (b.runs || 0) + '</span></div>';
+    }).join('');
+  }
+
+  if (intelWp) {
+    var p1 = intelWp.batting_team, p2 = intelWp.fielding_team;
+    winProbHtml = '<div style="padding:0 24px 18px;position:relative;z-index:1"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><span style="font-size:11px;font-weight:600;color:var(--ct3)">Win Probability</span><div style="display:flex;gap:14px"><span style="font-size:11px;color:' + t1.color + ';font-weight:700">' + esc(m.team1_short) + ' ' + p1 + '%</span><span style="font-size:11px;color:' + t2.color + ';font-weight:700">' + esc(m.team2_short) + ' ' + p2 + '%</span></div></div><div style="height:7px;border-radius:4px;overflow:hidden;display:flex;background:var(--cwpbg)"><div style="width:' + p1 + '%;background:linear-gradient(90deg,' + t1.color + ',' + (t1.color2 || t1.color + 'cc') + ');transition:width 1.5s cubic-bezier(.4,0,.2,1)"></div><div style="flex:1;background:linear-gradient(90deg,' + t2.color + ',' + (t2.color2 || t2.color + 'cc') + ');transition:width 1.5s cubic-bezier(.4,0,.2,1)"></div></div></div>';
+  }
 
   if (sc && sc.innings && sc.innings.length > 0) {
-    const curInn = sc.innings[sc.innings.length - 1];
     const batsmen = (curInn.batsmen || []).filter(b => (b.balls || 0) > 0)
       .sort((a, b) => (b.runs || 0) - (a.runs || 0)).slice(0, 2);
     const bowlers = (curInn.bowlers || [])
@@ -547,7 +575,7 @@ function heroCK(m, sc = null) {
     }
   }
 
-  const panelsHtml = (battersHtml || bowlersHtml) ? `
+  panelsHtml = (battersHtml || bowlersHtml) ? `
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 24px 16px;position:relative;z-index:1">
       <div style="background:var(--csf);border-radius:12px;padding:14px 16px;border:1px solid var(--csfbd)">
         <div style="font-size:10px;font-weight:700;color:var(--ct4);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:10px">Batting</div>

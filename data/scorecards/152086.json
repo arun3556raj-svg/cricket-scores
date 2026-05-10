@@ -5,10 +5,10 @@
       "bowl_team": "Chennai Super Kings",
       "innings_id": 1,
       "score": {
-        "runs": 92,
-        "wickets": 1,
-        "overs": 6.1,
-        "run_rate": 14.92,
+        "runs": 112,
+        "wickets": 3,
+        "overs": 9.1,
+        "run_rate": 12.22,
         "declared": false
       },
       "extras": {
@@ -21,12 +21,12 @@
       "batsmen": [
         {
           "name": "Josh Inglis",
-          "runs": 78,
-          "balls": 26,
-          "fours": 9,
+          "runs": 85,
+          "balls": 33,
+          "fours": 10,
           "sixes": 6,
-          "strike_rate": 300,
-          "out_desc": "batting",
+          "strike_rate": 257.58,
+          "out_desc": "c Sanju Samson b Jamie Overton",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -46,26 +46,26 @@
         {
           "name": "Nicholas Pooran",
           "runs": 1,
-          "balls": 2,
+          "balls": 3,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 50,
-          "out_desc": "batting",
+          "strike_rate": 33.33,
+          "out_desc": "c (sub)Sarfaraz Khan b Noor Ahmad",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Rishabh Pant",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 13,
+          "balls": 10,
+          "fours": 2,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 130,
+          "out_desc": "batting",
           "is_captain": true,
           "is_keeper": true,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Aiden Markram",
@@ -74,10 +74,10 @@
           "fours": 0,
           "sixes": 0,
           "strike_rate": 0,
-          "out_desc": "",
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Akshat Raghuwanshi",
@@ -191,11 +191,23 @@
         },
         {
           "name": "Noor Ahmad",
-          "overs": 0.1,
-          "balls": 1,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 1,
-          "wickets": 0,
+          "runs": 14,
+          "wickets": 1,
+          "economy": 7,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Jamie Overton",
+          "overs": 1.1,
+          "balls": 7,
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 1,
           "economy": 6,
           "wides": 0,
           "no_balls": 0,
@@ -208,6 +220,18 @@
           "runs": 77,
           "over": 5.1,
           "wkt_n": 1
+        },
+        {
+          "name": "Nicholas Pooran",
+          "runs": 92,
+          "over": 6.2,
+          "wkt_n": 2
+        },
+        {
+          "name": "Josh Inglis",
+          "runs": 112,
+          "over": 9.1,
+          "wkt_n": 3
         }
       ]
     }
