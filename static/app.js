@@ -1056,6 +1056,40 @@ function ckScTab(matchId, tab, btn) {
 }
 
 
+function matchCardCK(m) {
+  const t1 = teamMeta(m.team1_short);
+  const t2 = teamMeta(m.team2_short);
+  const matchJson = encodeURIComponent(JSON.stringify(m));
+  const isResult = m.status === 'finished';
+  let t1Winner = false, t2Winner = false;
+  if (isResult && m.status_text) {
+    const st = m.status_text.toLowerCase();
+    if ([m.team1, m.team1_short].filter(Boolean).some(function(s) { return st.startsWith(s.toLowerCase()); })) t1Winner = true;
+    else if ([m.team2, m.team2_short].filter(Boolean).some(function(s) { return st.startsWith(s.toLowerCase()); })) t2Winner = true;
+  }
+  const matchLabel = esc(m.match_desc || m.series || '');
+  const statusText = esc(m.status_text || '');
+  const stakes = matchStakes(m);
+  const resultImpact = tableImpactLine(m, t1Winner, t2Winner);
+  const metaChips = (resultMarginBadge(m) || '') + (stakes.impact ? '<span class="match-intel-chip ' + stakes.tone + '">Table impact</span>' : '');
+
+  return '<article style="background:var(--cbg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--cbd);border-radius:16px;overflow:hidden;cursor:pointer;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s" onmouseenter="this.style.borderColor=\'var(--cbd-h)\';this.style.transform=\'translateY(-2px)\';this.style.boxShadow=\'0 8px 24px ' + t1.color + '15\'" onmouseleave="this.style.borderColor=\'var(--cbd)\';this.style.transform=\'translateY(0)\';this.style.boxShadow=\'none\'" onclick=\'handleCardClick(' + JSON.stringify(m.id) + ', this)\' data-match=\'' + matchJson + '\'>'
+    + '<div style="height:2px;background:linear-gradient(90deg,' + t1.color + '88,' + t2.color + '88)"></div>'
+    + '<div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px 0;gap:10px"><span style="font-size:11.5px;color:var(--ct3);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + matchLabel + '</span><span style="background:var(--cbadge);color:var(--ct3);font-size:9px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:0.5px;text-transform:uppercase">RESULT</span></div>'
+    + (metaChips ? '<div class="match-intel-row">' + metaChips + '</div>' : '')
+    + '<div style="display:flex;align-items:center;justify-content:center;padding:14px 18px 10px;gap:10px">'
+    + teamBadge(m.team1_short, 52)
+    + '<div style="text-align:center;flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--ct2)">' + esc(m.team1_short) + (t1Winner ? ' <span style="color:#22c55e;font-size:10px">\u2713</span>' : '') + '</div>' + teamMiniIntel(m.team1_short) + '<div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">' + (m.team1_score1 ? esc(m.team1_score1.display) : '—') + '</div><div style="font-size:10.5px;color:var(--ct4)">' + (m.team1_score1 ? esc(m.team1_score1.detail) : 'Yet to bat') + '</div></div>'
+    + '<span style="font-size:10px;color:var(--ct5);font-weight:600;flex-shrink:0">vs</span>'
+    + '<div style="text-align:center;flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--ct2)">' + esc(m.team2_short) + (t2Winner ? ' <span style="color:#22c55e;font-size:10px">\u2713</span>' : '') + '</div>' + teamMiniIntel(m.team2_short) + '<div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">' + (m.team2_score1 ? esc(m.team2_score1.display) : '—') + '</div><div style="font-size:10.5px;color:var(--ct4)">' + (m.team2_score1 ? esc(m.team2_score1.detail) : 'Yet to bat') + '</div></div>'
+    + teamBadge(m.team2_short, 52)
+    + '</div>'
+    + '<div style="text-align:center;padding:10px 14px 12px;background:rgba(255,255,255,0.015);margin:0 14px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)"><div style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.5)">' + statusText + '</div>' + (resultImpact ? resultImpact.replace('match-impact-line','match-impact-line in-result') : '') + (!resultImpact && stakes.impact ? '<div class="match-impact-line in-result">📊 ' + esc(stakes.impact) + '</div>' : '') + '</div>'
+    + '</article>';
+}
+
+
+
 function upcomingRowCK(m) {
   const matchJson = encodeURIComponent(JSON.stringify(m));
   const t1 = matchCardTeamInfo(m, 1);

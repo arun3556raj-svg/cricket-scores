@@ -282,15 +282,15 @@
       "bowl_team": "Lucknow Super Giants",
       "innings_id": 2,
       "score": {
-        "runs": 125,
-        "wickets": 1,
-        "overs": 9,
-        "run_rate": 13.89,
+        "runs": 132,
+        "wickets": 2,
+        "overs": 10,
+        "run_rate": 13.2,
         "declared": false
       },
       "extras": {
-        "total": 1,
-        "wides": 1,
+        "total": 2,
+        "wides": 2,
         "no_balls": 0,
         "byes": 0,
         "leg_byes": 0
@@ -310,11 +310,11 @@
         },
         {
           "name": "Ruturaj Gaikwad",
-          "runs": 31,
-          "balls": 18,
+          "runs": 33,
+          "balls": 20,
           "fours": 2,
           "sixes": 2,
-          "strike_rate": 172.22,
+          "strike_rate": 165,
           "out_desc": "batting",
           "is_captain": true,
           "is_keeper": false,
@@ -323,26 +323,26 @@
         {
           "name": "Urvil Patel",
           "runs": 65,
-          "balls": 22,
+          "balls": 23,
           "fours": 2,
           "sixes": 8,
-          "strike_rate": 295.45,
-          "out_desc": "batting",
+          "strike_rate": 282.61,
+          "out_desc": "c Avesh Khan b Shahbaz Ahmed",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Kartik Sharma",
-          "runs": 0,
-          "balls": 0,
+          "runs": 4,
+          "balls": 3,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 133.33,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Dewald Brevis",
@@ -471,21 +471,21 @@
           "overs": 1,
           "balls": 6,
           "maidens": 0,
-          "runs": 25,
+          "runs": 26,
           "wickets": 0,
-          "economy": 25,
-          "wides": 0,
+          "economy": 26,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Shahbaz Ahmed",
-          "overs": 1,
-          "balls": 6,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 13,
-          "wickets": 0,
-          "economy": 13,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 9.5,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -497,6 +497,12 @@
           "runs": 45,
           "over": 3.4,
           "wkt_n": 1
+        },
+        {
+          "name": "Urvil Patel",
+          "runs": 126,
+          "over": 9.2,
+          "wkt_n": 2
         }
       ]
     }
