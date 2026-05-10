@@ -5,15 +5,15 @@
       "bowl_team": "Chennai Super Kings",
       "innings_id": 1,
       "score": {
-        "runs": 167,
-        "wickets": 6,
-        "overs": 17,
-        "run_rate": 9.82,
+        "runs": 203,
+        "wickets": 8,
+        "overs": 20,
+        "run_rate": 10.15,
         "declared": false
       },
       "extras": {
-        "total": 7,
-        "wides": 4,
+        "total": 8,
+        "wides": 5,
         "no_balls": 1,
         "byes": 0,
         "leg_byes": 2
@@ -93,24 +93,24 @@
         },
         {
           "name": "Shahbaz Ahmed",
-          "runs": 9,
-          "balls": 10,
-          "fours": 1,
-          "sixes": 0,
-          "strike_rate": 90,
-          "out_desc": "batting",
+          "runs": 43,
+          "balls": 25,
+          "fours": 3,
+          "sixes": 3,
+          "strike_rate": 172,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Himmat Singh",
-          "runs": 16,
-          "balls": 10,
+          "runs": 17,
+          "balls": 12,
           "fours": 1,
           "sixes": 1,
-          "strike_rate": 160,
-          "out_desc": "batting",
+          "strike_rate": 141.67,
+          "out_desc": "b Anshul Kamboj",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -118,14 +118,26 @@
         {
           "name": "Mohammed Shami",
           "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "run out (Sanju Samson/Anshul Kamboj)",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Avesh Khan",
+          "runs": 0,
           "balls": 0,
           "fours": 0,
           "sixes": 0,
           "strike_rate": 0,
-          "out_desc": "",
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Digvesh Singh Rathi",
@@ -167,24 +179,24 @@
         },
         {
           "name": "Mukesh Choudhary",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 35,
+          "runs": 45,
           "wickets": 0,
-          "economy": 11.7,
-          "wides": 1,
+          "economy": 11.2,
+          "wides": 2,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Anshul Kamboj",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 38,
-          "wickets": 1,
-          "economy": 12.7,
+          "runs": 47,
+          "wickets": 2,
+          "economy": 11.8,
           "wides": 1,
           "no_balls": 1,
           "dots": 0
@@ -203,12 +215,12 @@
         },
         {
           "name": "Jamie Overton",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 19,
+          "runs": 36,
           "wickets": 3,
-          "economy": 6.3,
+          "economy": 9,
           "wides": 2,
           "no_balls": 0,
           "dots": 0
@@ -250,6 +262,18 @@
           "runs": 147,
           "over": 14.2,
           "wkt_n": 6
+        },
+        {
+          "name": "Himmat Singh",
+          "runs": 197,
+          "over": 19.4,
+          "wkt_n": 7
+        },
+        {
+          "name": "Mohammed Shami",
+          "runs": 197,
+          "over": 19.5,
+          "wkt_n": 8
         }
       ]
     }

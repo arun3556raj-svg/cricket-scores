@@ -23,7 +23,7 @@
       "team2_score2": null,
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "live",
-      "status_text": "Chennai Super Kings opt to bowl",
+      "status_text": "Innings Break",
       "start_time": "03:30 PM",
       "start_epoch": 1778407200000,
       "run_rate": 10.15,
@@ -215,6 +215,6 @@
       "team2_qualification_pct": 20
     }
   ],
-  "last_updated": "10 May, 05:29 PM",
+  "last_updated": "10 May, 05:37 PM",
   "error": null
 }

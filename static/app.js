@@ -2193,14 +2193,6 @@ function renderUpcomingPreview(upcoming) {
 function render(data) {
   lastData = data;
 
-  // Re-apply cached live intel to fresh match objects (from auto-refresh)
-  if (data.live) {
-    data.live.forEach(function(m) {
-      if (liveIntelCache && liveIntelCache[m.id] && !(m.batters && m.batters.length)) {
-        applyIntelToMatch(m, liveIntelCache[m.id]);
-      }
-    });
-  }
 
   const totalLive = data.live.length;
 
@@ -2259,71 +2251,46 @@ let liveIntelLoading = {};
 
 
 // ── Live intel helpers ─────────────────────────────────
-function applyIntelToMatch(m, data) {
-  if (!m || !data) return;
-  if (data.batters && data.batters.length) m.batters = data.batters;
-  if (data.bowlers && data.bowlers.length) m.bowlers = data.bowlers;
-  if (data.partnership) m.partnership = data.partnership;
-  if (data.fall_of_wickets && data.fall_of_wickets.length) m.fow_display = data.fall_of_wickets;
-  if (data.pressure) m.pressure_data = data.pressure;
-  if (data.win_probability) m.win_prob = data.win_probability;
-  if (data.projected) m.projection_data = data.projected;
-  if (data.match_meta) m.live_meta = data.match_meta;
-  if (data.ball_timeline) m.ball_timeline = data.ball_timeline;
-  if (data.momentum) m.last_6_balls = data.momentum.last_6_balls;
-}
 
-function reRenderHero() {
-  var heroIn = $('heroInner');
-  if (heroIn && lastData && lastData.live && lastData.live.length > 0 && heroIn.innerHTML) {
-    // Apply intel to the current match object if cached
-    var match = lastData.live[0];
-    if (liveIntelCache[match.id] && !(match.batters && match.batters.length)) {
-      applyIntelToMatch(match, liveIntelCache[match.id]);
-    }
-    heroIn.innerHTML = liveCardCK(match);
-  }
-  var grid = $('liveGrid');
-  if (grid && lastData) {
-    grid.innerHTML = lastData.live.slice(1).map(liveCardCK).join('');
-  }
-}
 
 function loadLiveIntel(match) {
   if (!match || !match.id) return;
-  // Re-apply cached intel if match object is fresh (auto-refresh creates new objects)
-  if (liveIntelCache[match.id]) {
-    if (!(match.batters && match.batters.length)) {
-      applyIntelToMatch(match, liveIntelCache[match.id]);
-      reRenderHero();
-    }
-    return;
-  }
-  if (liveIntelLoading[match.id]) return;
-  liveIntelLoading[match.id] = true;
   var url = '/api/live/' + encodeURIComponent(match.id);
   fetch(url).then(function(r) {
     if (!r.ok) throw new Error('HTTP ' + r.status);
     return r.json();
   }).then(function(data) {
-    liveIntelCache[match.id] = data;
-    // Merge into ALL live match objects (new ones from auto-refresh too)
+    // Apply fresh data to match object
     if (lastData && lastData.live) {
       for (var i = 0; i < lastData.live.length; i++) {
         var m = lastData.live[i];
         if (m.id === match.id) {
-          applyIntelToMatch(m, data);
+          if (data.batters && data.batters.length) m.batters = data.batters;
+          if (data.bowlers && data.bowlers.length) m.bowlers = data.bowlers;
+          if (data.partnership) m.partnership = data.partnership;
+          if (data.fall_of_wickets && data.fall_of_wickets.length) m.fow_display = data.fall_of_wickets;
+          if (data.pressure) m.pressure_data = data.pressure;
+          if (data.win_probability) m.win_prob = data.win_probability;
+          if (data.projected) m.projection_data = data.projected;
+          if (data.match_meta) m.live_meta = data.match_meta;
+          if (data.ball_timeline) m.ball_timeline = data.ball_timeline;
+          if (data.momentum) m.last_6_balls = data.momentum.last_6_balls;
           break;
         }
       }
-      reRenderHero();
+      // Re-render hero + grid
+      var heroIn = document.getElementById('heroInner');
+      if (heroIn && lastData.live.length > 0 && heroIn.innerHTML) {
+        heroIn.innerHTML = liveCardCK(lastData.live[0]);
+      }
+      var grid = document.getElementById('liveGrid');
+      if (grid) grid.innerHTML = lastData.live.slice(1).map(liveCardCK).join('');
     }
   }).catch(function() {
-    // Silently fail — card continues with basic data
-  }).finally(function() {
-    liveIntelLoading[match.id] = false;
+    // Silently fail
   });
 }
+
 
 async function loadMatches(forceRefresh = false) {
   if (fetching) return;
