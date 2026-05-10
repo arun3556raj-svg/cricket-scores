@@ -2025,11 +2025,11 @@ function render(data) {
   const liveBadge = $('liveBadge');
   if (liveBadge) { liveBadge.textContent = totalLive; liveBadge.style.display = totalLive > 0 ? 'inline-flex' : 'none'; }
 
-  // Hero — show Crickly hero card, then auto-fetch scorecard for player data
+  // Hero — show ultra live card, then auto-fetch scorecard for player data
   if (data.live.length > 0) {
     const liveMatch = data.live[0];
     const cachedSc = (heroMatchId === liveMatch.id) ? heroScorecardData : null;
-    $('heroInner').innerHTML = heroCK(liveMatch, cachedSc);
+    $('heroInner').innerHTML = liveCardCK(liveMatch);
     if (!cachedSc || heroMatchId !== liveMatch.id) {
       heroScorecardData = null;
       heroMatchId = liveMatch.id;
@@ -2102,8 +2102,7 @@ function loadLiveIntel(match) {
       if (grid) grid.innerHTML = lastData.live.slice(1).map(liveCardCK).join('');
       var heroIn = $('heroInner');
       if (heroIn && lastData.live.length > 0 && heroIn.innerHTML) {
-        var cachedSc = (heroMatchId === lastData.live[0].id) ? heroScorecardData : null;
-        heroIn.innerHTML = heroCK(lastData.live[0], cachedSc);
+        heroIn.innerHTML = liveCardCK(lastData.live[0]);
       }
     }
   }).catch(function() {
