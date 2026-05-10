@@ -4753,6 +4753,23 @@ function renderExpandedFixtures(row) {
 
 
 
+
+  // Upcoming fixtures — from live scheduleData or remainingFixtures fallback
+  var upcomingCodes = [];
+  if (scheduleData && scheduleData.matches) {
+    upcomingCodes = scheduleData.matches.filter(function(m) {
+      var st = String(m.status || '').toLowerCase();
+      return (st === '' || st === 'upcoming' || st === 'scheduled') && (m.team1_short === code || m.team2_short === code);
+    }).map(function(m) { return m.team1_short === code ? m.team2_short : m.team1_short; }).filter(Boolean);
+  }
+  if (!upcomingCodes.length && row.remainingFixtures && row.remainingFixtures.length) {
+    upcomingCodes = row.remainingFixtures;
+  }
+  if (upcomingCodes.length) {
+    html += '<div style="margin-top:10px;font-size:9px;font-weight:700;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px">Upcoming</div>';
+    html += upcomingCodes.map(function(c) { return renderFixtureRow(c); }).join('');
+  }
+
   html += '</div>';
   return html;
 }
