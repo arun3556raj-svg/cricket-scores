@@ -4635,14 +4635,12 @@ function renderPointsTable(data) {
       <div class="pts-v3-seasons">${seasonPills}</div>
       <div class="pt-tabs">
         <button class="pt-tab${activeView === 'compact' ? ' active' : ''}" onclick="setPointsView('compact')">Compact</button>
-        <button class="pt-tab${activeView === 'advanced' ? ' active' : ''}" onclick="setPointsView('advanced')">Advanced</button>
         <button class="pt-tab${activeView === 'qualification' ? ' active' : ''}" onclick="setPointsView('qualification')">⟡ Qualification</button>
       </div>
       ${rows.length ? renderPointsView(rows, activeView) : `<div class="sc-empty" style="padding:28px">No data for this season.</div>`}
     </div>`;
 }
 function renderPointsView(rows, view) {
-  if (view === 'advanced') return renderAdvancedPointsView(rows);
   if (view === 'qualification') return renderQualificationPointsView(rows);
   return renderCompactPointsView(rows);
 }
