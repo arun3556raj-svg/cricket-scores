@@ -2040,7 +2040,7 @@
       "team2_color": "#d97706",
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Chennai Super Kings need 178 runs",
       "start_time": "03:30 PM",
       "start_epoch": 1778407200000,
       "match_date": "Sun, 10 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "10 May, 05:37 PM",
+  "last_updated": "10 May, 05:58 PM",
   "error": null
 }
