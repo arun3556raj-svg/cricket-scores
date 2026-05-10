@@ -811,7 +811,14 @@ function liveCardCK(m) {
   const bt     = m.ball_timeline || {};
   const fowArr = m.fow_display || [];
 
-  const batCode = meta.batting_team || (m.team1_score1 ? m.team1_short : m.team2_short);
+  // Determine batting team: if both scores exist, the one with overs < 20 is active
+  const batScore1 = m.team1_score1;
+  const batScore2 = m.team2_score1;
+  const batCode = meta.batting_team || (
+    batScore1 && batScore2
+      ? (Number(batScore1.overs) >= 20 ? m.team2_short : m.team1_short)
+      : (batScore1 ? m.team1_short : m.team2_short)
+  );
   const bowlCode = meta.fielding_team || (batCode === m.team1_short ? m.team2_short : m.team1_short);
   const batT  = teamMeta(batCode);
   const bowlT = teamMeta(bowlCode);
