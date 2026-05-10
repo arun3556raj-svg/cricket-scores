@@ -4739,15 +4739,20 @@ function renderExpandedFixtures(row) {
       // Detect winner from status_text (e.g. "RCB won by 6 wkts" or "beat RCB by 6 wkts")
       var wSt = m.status_text || m.result || '';
       var wLow = wSt.toLowerCase();
-      var t1n = (m.team1 || '').toLowerCase();
-      var t2n = (m.team2 || '').toLowerCase();
       var t1s = (m.team1_short || '').toLowerCase();
       var t2s = (m.team2_short || '').toLowerCase();
-      var wonThis = wLow.indexOf(code.toLowerCase()) >= 0 && (wLow.indexOf('won') >= 0 || wLow.indexOf('beat') >= 0 || wLow.indexOf('defeated') >= 0);
-      var lostThis = (!wonThis && wLow.indexOf('won') >= 0) || wLow.indexOf('lost') >= 0;
-      var won = wonThis || (!lostThis && (wLow.indexOf(t1n) >= 0 || wLow.indexOf(t2n) >= 0) && wLow.indexOf('won') >= 0 && (
-        (isT1 && wLow.indexOf(t1s) >= 0) || (!isT1 && wLow.indexOf(t2s) >= 0)
-      ));
+      var t1f = (m.team1 || '').toLowerCase();
+      var t2f = (m.team2 || '').toLowerCase();
+      // Winner is mentioned in status_text (uses full name: "Sunrisers Hyderabad won...")
+      var wonT1 = wLow.indexOf(t1f) >= 0 && wLow.indexOf('won') >= 0;
+      var wonT2 = wLow.indexOf(t2f) >= 0 && wLow.indexOf('won') >= 0;
+      if (isT1) {
+        // Current team is team1 — won if team1 won, lost if team2 won
+        var won = wonT1;
+      } else {
+        // Current team is team2 — won if team2 won, lost if team1 won
+        var won = wonT2;
+      }
       var s1 = m.team1_score1 ? esc(m.team1_score1.display) : '';
       var s2 = m.team2_score1 ? esc(m.team2_score1.display) : '';
       var margin = m.status_text ? esc(m.status_text.replace(/^.*?(won|lost|tied)/i,'').trim()) : '';
