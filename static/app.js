@@ -298,12 +298,12 @@ async function loadAssetManifest() {
 }
 
 // team abbr → logo file extension (only MI uses .jpg, rest .webp)
-const TEAM_LOGO_EXT = { MI: 'jpg' };
+const TEAM_LOGO_EXT = {};
 
 // ── Inline-style team badge with real logo image + text fallback ──
 function teamBadge(short, size = 44) {
   const t = teamMeta(short);
-  const ext = TEAM_LOGO_EXT[short] || 'webp';
+  const ext = TEAM_LOGO_EXT[short] || 'png';
   const logoSrc = joinPath(STATIC_BASE_PATH, `team-logos/${short}.${ext}`);
   return `<img src="${logoSrc}" alt="${esc(short)}" style="width:${size}px;height:${size}px;object-fit:contain;flex-shrink:0;border-radius:${Math.round(size*0.1)}px"
        onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"
@@ -3776,7 +3776,7 @@ function showTeamDetail(abbr) {
   const full = TEAM_FULL_NAMES[abbr] || abbr;
   const el = $('teamsSection');
   if (!el) return;
-  const ext = TEAM_LOGO_EXT[abbr] || 'webp';
+  const ext = TEAM_LOGO_EXT[abbr] || 'png';
 
   // Filter matches from lastData
   const live     = (lastData?.live     || []).filter(m => m.team1_short === abbr || m.team2_short === abbr);
@@ -4555,7 +4555,9 @@ function formPills(last5) {
 }
 function teamBadgePt(short, size = 30) {
   const meta = teamMeta(short);
-  return `<span class="pt-team-badge" style="width:${size}px;height:${size}px;display:inline-flex;align-items:center;justify-content:center;font-weight:800;color:${meta.color};font-size:${Math.max(8, Math.round(size * .3))}px">${esc(short)}</span>`;
+  const ext = TEAM_LOGO_EXT[short] || 'png';
+  const logoSrc = joinPath(STATIC_BASE_PATH, `team-logos/${short}.${ext}`);
+  return `<img src="${logoSrc}" alt="${esc(short)}" style="width:${size}px;height:${size}px;object-fit:contain;flex-shrink:0" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" loading="lazy"><span style="display:none;font-size:${Math.round(size*0.33)}px;font-weight:800;color:${meta.color}">${esc(short)}</span>`;
 }
 function fixtureOpponents(teamShort, rows) {
   const maxMatches = 14;
