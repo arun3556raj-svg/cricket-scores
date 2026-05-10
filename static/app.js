@@ -3150,20 +3150,10 @@ function renderInnings(inn) {
 // ── Theme toggle ──────────────────────────────────────────────
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  const btn = $('themeBtn');
-  if (!btn) return;
-  const moon = btn.querySelector('.icon-moon');
-  const sun  = btn.querySelector('.icon-sun');
-  const lbl  = btn.querySelector('.theme-label');
-  if (theme === 'light') {
-    moon && (moon.style.display = 'none');
-    sun  && (sun.style.display  = '');
-    if (lbl) lbl.textContent = 'Dark';
-  } else {
-    moon && (moon.style.display = '');
-    sun  && (sun.style.display  = 'none');
-    if (lbl) lbl.textContent = 'Light';
-  }
+  const icon = document.getElementById('theme-icon');
+  if (icon) icon.textContent = theme === 'dark' ? '☽' : '☀';
+  const sideIcon = document.getElementById('sidebarThemeIcon');
+  if (sideIcon) sideIcon.textContent = theme === 'dark' ? '☽' : '☀';
 }
 
 function toggleTheme() {
@@ -5180,8 +5170,9 @@ function stopScRefresh() {
 
 // ── Boot ──────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  // Restore saved theme (default dark)
-  const saved = localStorage.getItem('pitch-theme') || 'dark';
+  // Theme restored before first paint via inline <script> in <head>.
+  // Just ensure the icon matches on DOMContentLoaded.
+  const saved = document.documentElement.getAttribute('data-theme') || 'dark';
   applyTheme(saved);
   // Load asset manifest (team logos + player images) then render
   loadAssetManifest().finally(() => {
