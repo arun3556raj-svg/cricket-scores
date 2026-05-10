@@ -919,6 +919,8 @@ function liveCardCK(m) {
     + '<div style="flex:1;display:flex;flex-direction:column;align-items:flex-end;gap:4px">'
     + teamBadge(bowlCode, 48)
     + '<div style="font-size:11px;font-weight:600;color:' + bowlT.color + '">' + esc(bowlCode) + '</div>'
+    // Show opponent's score (1st innings total) in 2nd innings
+    + (innings === 2 && batScore1 ? '<div style="display:flex;align-items:baseline;gap:4px"><span style="font-size:22px;font-weight:700;color:#6b7280">' + (batScore1.runs || 0) + '</span><span style="font-size:13px;color:#6b7280">/' + (batScore1.wickets || 0) + '</span></div><div style="font-size:10px;color:#6b7280">' + esc(batScore1.detail || '') + '</div>' : '')
     + '<div style="font-size:11px;color:#6b7280">CRR ' + crr.toFixed(2) + (rrr ? ' · RRR ' + rrr.toFixed(2) : '') + '</div>'
     + (target ? '<div style="font-size:10px;color:#9ca3af">Need ' + reqRuns + ' in ' + reqBalls + ' balls</div>' : '')
     + '</div>'
