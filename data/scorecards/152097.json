@@ -276,27 +276,27 @@
       "bowl_team": "Mumbai Indians",
       "innings_id": 2,
       "score": {
-        "runs": 24,
+        "runs": 37,
         "wickets": 2,
-        "overs": 3,
-        "run_rate": 8,
+        "overs": 4.4,
+        "run_rate": 7.93,
         "declared": false
       },
       "extras": {
-        "total": 1,
-        "wides": 1,
+        "total": 5,
+        "wides": 3,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 2
       },
       "batsmen": [
         {
           "name": "Jacob Bethell",
-          "runs": 11,
-          "balls": 6,
+          "runs": 13,
+          "balls": 10,
           "fours": 2,
           "sixes": 0,
-          "strike_rate": 183.33,
+          "strike_rate": 130,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -328,11 +328,11 @@
         },
         {
           "name": "Rajat Patidar",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 7,
+          "balls": 6,
+          "fours": 1,
           "sixes": 0,
-          "strike_rate": 0,
+          "strike_rate": 116.67,
           "out_desc": "batting",
           "is_captain": true,
           "is_keeper": false,
@@ -438,25 +438,25 @@
       "bowlers": [
         {
           "name": "Deepak Chahar",
-          "overs": 2,
-          "balls": 12,
+          "overs": 2.4,
+          "balls": 16,
           "maidens": 0,
-          "runs": 20,
+          "runs": 25,
           "wickets": 2,
-          "economy": 10,
+          "economy": 9.4,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Jasprit Bumrah",
-          "overs": 1,
-          "balls": 6,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 4,
+          "runs": 10,
           "wickets": 0,
-          "economy": 4,
-          "wides": 0,
+          "economy": 5,
+          "wides": 2,
           "no_balls": 0,
           "dots": 0
         }
