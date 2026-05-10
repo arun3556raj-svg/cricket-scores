@@ -5,18 +5,18 @@
       "bowl_team": "Chennai Super Kings",
       "innings_id": 1,
       "score": {
-        "runs": 147,
+        "runs": 159,
         "wickets": 6,
-        "overs": 14.3,
-        "run_rate": 10.14,
+        "overs": 15.5,
+        "run_rate": 10.04,
         "declared": false
       },
       "extras": {
-        "total": 6,
+        "total": 7,
         "wides": 4,
         "no_balls": 1,
         "byes": 0,
-        "leg_byes": 1
+        "leg_byes": 2
       },
       "batsmen": [
         {
@@ -93,11 +93,11 @@
         },
         {
           "name": "Shahbaz Ahmed",
-          "runs": 6,
-          "balls": 4,
+          "runs": 7,
+          "balls": 6,
           "fours": 1,
           "sixes": 0,
-          "strike_rate": 150,
+          "strike_rate": 116.67,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -105,11 +105,11 @@
         },
         {
           "name": "Himmat Singh",
-          "runs": 0,
-          "balls": 1,
+          "runs": 10,
+          "balls": 7,
           "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
+          "sixes": 1,
+          "strike_rate": 142.86,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -191,10 +191,10 @@
         },
         {
           "name": "Noor Ahmad",
-          "overs": 3,
-          "balls": 18,
+          "overs": 3.5,
+          "balls": 23,
           "maidens": 0,
-          "runs": 19,
+          "runs": 24,
           "wickets": 1,
           "economy": 6.3,
           "wides": 0,
@@ -203,12 +203,12 @@
         },
         {
           "name": "Jamie Overton",
-          "overs": 2.3,
-          "balls": 15,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 13,
+          "runs": 19,
           "wickets": 3,
-          "economy": 5.2,
+          "economy": 6.3,
           "wides": 2,
           "no_balls": 0,
           "dots": 0
