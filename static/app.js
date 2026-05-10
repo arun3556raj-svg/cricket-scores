@@ -303,18 +303,12 @@ const TEAM_LOGO_EXT = { MI: 'jpg' };
 // ── Inline-style team badge with real logo image + text fallback ──
 function teamBadge(short, size = 44) {
   const t = teamMeta(short);
-  const r = Math.round(size * 0.28);
-  const fs = Math.round(size * 0.32);
   const ext = TEAM_LOGO_EXT[short] || 'webp';
   const logoSrc = joinPath(STATIC_BASE_PATH, `team-logos/${short}.${ext}`);
-
-  // padding: 4% for larger badges, 8% for small ones — keeps logo prominent
-  const pad = size >= 60 ? Math.round(size * 0.04) : size >= 40 ? Math.round(size * 0.06) : Math.round(size * 0.08);
-  return `<div style="width:${size}px;height:${size}px;border-radius:${r}px;background:linear-gradient(135deg,${t.color},${t.color2 || t.color + '88'});display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 20px ${t.color}35;overflow:hidden;padding:${pad}px;box-sizing:border-box">
-    <img src="${logoSrc}" alt="${esc(short)}" style="width:100%;height:100%;object-fit:contain"
-         onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-    <span style="display:none;font-size:${fs}px;font-weight:800;color:#fff;letter-spacing:-0.5px">${esc(short)}</span>
-  </div>`;
+  return `<img src="${logoSrc}" alt="${esc(short)}" style="width:${size}px;height:${size}px;object-fit:contain;flex-shrink:0;border-radius:${Math.round(size*0.1)}px"
+       onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"
+       loading="lazy">
+    <span style="display:none;font-size:${Math.round(size*0.35)}px;font-weight:800;color:${t.color};flex-shrink:0;text-align:center;width:${size}px">${esc(short)}</span>`;
 }
 
 // ── Player avatar: real photo (from manifest) or initials circle ──
@@ -656,9 +650,8 @@ function heroCK(m, sc = null) {
 
 function matchCardTeamBadge(code, size = 44, faded = false) {
   const meta = teamMeta(code);
-  const opacity = faded ? '0.10' : '0.18';
-  const border = faded ? '20' : '30';
-  return `<div class="mc-team-badge" style="width:${size}px;height:${size}px;border-color:${meta.color}${border};background:${meta.color}${opacity};color:${meta.color};font-size:${Math.max(9, Math.round(size * .23))}px">${esc(code || '—')}</div>`;
+  const opacity = faded ? '0.3' : '0.6';
+  return `<span class="mc-team-badge" style="width:${size}px;height:${size}px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:${meta.color};opacity:${opacity};font-size:${Math.max(9, Math.round(size * .23))}px;border-radius:${Math.round(size * .15)}px">${esc(code || '—')}</span>`;
 }
 
 function matchCardFormDots(form = [], align = '') {
@@ -4557,7 +4550,7 @@ function formPills(last5) {
 }
 function teamBadgePt(short, size = 30) {
   const meta = teamMeta(short);
-  return `<span class="pt-team-badge" style="--team:${meta.color};width:${size}px;height:${size}px;border-color:${meta.color}33;background:${meta.color}1A;color:${meta.color}">${esc(short)}</span>`;
+  return `<span class="pt-team-badge" style="width:${size}px;height:${size}px;display:inline-flex;align-items:center;justify-content:center;font-weight:800;color:${meta.color};font-size:${Math.max(8, Math.round(size * .3))}px">${esc(short)}</span>`;
 }
 function fixtureOpponents(teamShort, rows) {
   const maxMatches = 14;
