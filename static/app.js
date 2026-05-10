@@ -4736,17 +4736,27 @@ function renderExpandedFixtures(row) {
     html += prevResults.map(function(m) {
       var isT1 = m.team1_short === code;
       var opp = isT1 ? m.team2_short : m.team1_short;
-      var won = isT1
-        ? (m.winner && (m.winner.indexOf(m.team1_short) >= 0 || m.winner.indexOf(m.team1) >= 0))
-        : (m.winner && (m.winner.indexOf(m.team2_short) >= 0 || m.winner.indexOf(m.team2) >= 0));
+      // Detect winner from status_text (e.g. "RCB won by 6 wkts" or "beat RCB by 6 wkts")
+      var wSt = m.status_text || m.result || '';
+      var wLow = wSt.toLowerCase();
+      var t1n = (m.team1 || '').toLowerCase();
+      var t2n = (m.team2 || '').toLowerCase();
+      var t1s = (m.team1_short || '').toLowerCase();
+      var t2s = (m.team2_short || '').toLowerCase();
+      var wonThis = wLow.indexOf(code.toLowerCase()) >= 0 && (wLow.indexOf('won') >= 0 || wLow.indexOf('beat') >= 0 || wLow.indexOf('defeated') >= 0);
+      var lostThis = (!wonThis && wLow.indexOf('won') >= 0) || wLow.indexOf('lost') >= 0;
+      var won = wonThis || (!lostThis && (wLow.indexOf(t1n) >= 0 || wLow.indexOf(t2n) >= 0) && wLow.indexOf('won') >= 0 && (
+        (isT1 && wLow.indexOf(t1s) >= 0) || (!isT1 && wLow.indexOf(t2s) >= 0)
+      ));
       var s1 = m.team1_score1 ? esc(m.team1_score1.display) : '';
       var s2 = m.team2_score1 ? esc(m.team2_score1.display) : '';
       var margin = m.status_text ? esc(m.status_text.replace(/^.*?(won|lost|tied)/i,'').trim()) : '';
+      var wLabel = won ? 'Won' : 'Lost';
       return '<div class="pt-fixture-row" style="border-left:2px solid ' + (won ? '#22C55E' : '#F87171') + ';background:' + (won ? 'rgba(34,197,94,0.03)' : 'rgba(248,113,113,0.03)') + ';margin-bottom:3px;padding:7px 10px;border-radius:6px;display:flex;align-items:center;gap:8px">'
         + '<span style="background:' + (won ? 'rgba(34,197,94,0.15)' : 'rgba(248,113,113,0.15)') + ';color:' + (won ? '#22C55E' : '#F87171') + ';padding:2px 6px;border-radius:4px;font-size:9px;font-weight:800">' + (won ? 'W' : 'L') + '</span>'
         + '<span style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.7);flex:1">' + esc(opp) + '</span>'
         + '<span style="font-size:9px;color:rgba(255,255,255,0.25)">' + (s1 ? s1 : '') + (s1 && s2 ? ' vs ' : '') + (s2 ? s2 : '') + '</span>'
-        + '<span style="font-size:10px;font-weight:' + (won ? '700' : '400') + ';color:' + (won ? '#22C55E' : '#F87171') + '">' + (won ? margin : (margin || 'Lost')) + '</span>'
+        + '<span style="font-size:10px;font-weight:700;color:' + (won ? '#22C55E' : '#F87171') + '">' + wLabel + ' ' + margin + '</span>'
         + '</div>';
     }).join('');
   }
