@@ -11,15 +11,15 @@ api_bp = Blueprint("api", __name__)
 
 # Match list cache (30s)
 _match_cache = {"data": None, "ts": 0}
-MATCH_TTL = 30
+MATCH_TTL = 10
 
 # Scorecard cache (20s)
 _sc_cache = {}
-SC_TTL = 20
+SC_TTL = 10
 
 # Schedule cache (5 min — changes rarely)
 _schedule_cache = {"data": None, "ts": 0}
-SCHEDULE_TTL = 300
+SCHEDULE_TTL = 60
 
 
 def fetch_cached_matches():
