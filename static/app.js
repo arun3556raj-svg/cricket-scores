@@ -1277,6 +1277,15 @@ function showComingSoon(name) {
 }
 
 // ── Card click handler ─────────────────────────────────────────
+function openDrawerFromAttr(el) {
+  var raw = el.getAttribute('data-match');
+  if (!raw) return;
+  try {
+    var m = JSON.parse(decodeURIComponent(raw));
+    openDrawer(m.id, m);
+  } catch(e) {}
+}
+
 function handleCardClick(matchId, el) {
   const raw = el.getAttribute('data-match');
   if (!raw) return;
