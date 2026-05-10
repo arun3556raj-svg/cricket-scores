@@ -5082,12 +5082,25 @@ function renderQualificationPointsView(rows) {
         return fCodes.map(function(oppCode) {
           var opp = ptsRows.find(function(r) { return r.team_short === oppCode; });
           var oppColor = opp ? (teamMeta(oppCode).color || '#888') : '#888';
-          // Use pre-defined strategies from reference data
-          var strats = FIXTURE_STRATEGIES[row.team_short];
+          // Only show strategies for upcoming fixtures (not completed/live)
           var fxInfo = null;
-          if (strats) {
-            for (var si = 0; si < strats.length; si++) {
-              if (strats[si].opp === oppCode) { fxInfo = strats[si]; break; }
+          var isUpcoming = false;
+          if (scheduleData && scheduleData.matches) {
+            for (var smi = 0; smi < scheduleData.matches.length; smi++) {
+              var sm = scheduleData.matches[smi];
+              if ((sm.team1_short === row.team_short && sm.team2_short === oppCode) ||
+                  (sm.team2_short === row.team_short && sm.team1_short === oppCode)) {
+                if (sm.status === 'upcoming') isUpcoming = true;
+                break;
+              }
+            }
+          }
+          if (isUpcoming) {
+            var strats = FIXTURE_STRATEGIES[row.team_short];
+            if (strats) {
+              for (var si = 0; si < strats.length; si++) {
+                if (strats[si].opp === oppCode) { fxInfo = strats[si]; break; }
+              }
             }
           }
           if (fxInfo) {
