@@ -4751,13 +4751,7 @@ function renderExpandedFixtures(row) {
     }).join('');
   }
 
-  // Upcoming fixtures
-  var upcomingFixtures = myResults.filter(function(m) { return m.status === 'upcoming' || m.status === 'live'; });
-  var remainingCodes = row.remainingFixtures ? row.remainingFixtures : [];
-  if (!upcomingFixtures.length && remainingCodes.length) {
-    html += '<div style="margin-top:10px;font-size:9px;font-weight:700;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px">Upcoming</div>';
-    html += remainingCodes.map(function(c) { return renderFixtureRow(c); }).join('');
-  }
+
 
   html += '</div>';
   return html;
