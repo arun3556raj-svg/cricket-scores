@@ -516,6 +516,7 @@ function heroCK(m, sc = null) {
   }
 
   if (sc && sc.innings && sc.innings.length > 0) {
+    const curInn = sc.innings[sc.innings.length - 1];
     const batsmen = (curInn.batsmen || []).filter(b => (b.balls || 0) > 0)
       .sort((a, b) => (b.runs || 0) - (a.runs || 0)).slice(0, 2);
     const bowlers = (curInn.bowlers || [])
@@ -1356,6 +1357,7 @@ let archiveFilters = { year: 'All', team: 'All', round: 'All', search: '' };
 let archiveViewMode = 'matches';
 let pointsLoaded = false;
 let pointsData = null;
+let pointsIntelLoading = false;
 let pointsSeason = '2026';
 let pointsViewMode = 'compact';
 let pointsExpandedRow = null;
