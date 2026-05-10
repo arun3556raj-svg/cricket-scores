@@ -2018,6 +2018,11 @@ function render(data) {
 
   // Live grid (remaining after hero) — Crickly cards
   $('liveGrid').innerHTML = data.live.slice(1).map(liveCardCK).join('');
+  // Fetch live intelligence for all live matches
+  data.live.forEach(function(m) { loadLiveIntel(m); });
+
+  // Also fetch for the hero match
+  if (data.live.length > 0) loadLiveIntel(data.live[0]);
 
   // Upcoming — Crickly rows (full list in the Upcoming tab)
   $('upcomingGrid').innerHTML = data.upcoming.map(upcomingRowCK).join('');
@@ -2030,6 +2035,53 @@ function render(data) {
 
 // ── Fetch ─────────────────────────────────────────────────────
 let fetching = false;
+
+// ── Live intelligence fetcher ──
+let liveIntelCache = {};
+let liveIntelLoading = {};
+
+function loadLiveIntel(match) {
+  if (!match || !match.id) return;
+  if (liveIntelCache[match.id] || liveIntelLoading[match.id]) return;
+  liveIntelLoading[match.id] = true;
+  var url = '/api/live/' + encodeURIComponent(match.id);
+  fetch(url).then(function(r) {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }).then(function(data) {
+    liveIntelCache[match.id] = data;
+    // Merge into the live match object
+    if (lastData && lastData.live) {
+      for (var i = 0; i < lastData.live.length; i++) {
+        if (lastData.live[i].id === match.id) {
+          // Add rich fields to the match object
+          var m = lastData.live[i];
+          if (data.batters && data.batters.length) m.batters = data.batters;
+          if (data.bowlers && data.bowlers.length) m.bowlers = data.bowlers;
+          if (data.partnership) m.partnership = data.partnership;
+          if (data.fall_of_wickets && data.fall_of_wickets.length) m.fow_display = data.fall_of_wickets;
+          if (data.pressure) m.pressure_data = data.pressure;
+          if (data.win_probability) m.win_prob = data.win_probability;
+          if (data.projected) m.projection_data = data.projected;
+          if (data.match_meta) m.live_meta = data.match_meta;
+          break;
+        }
+      }
+      // Re-render the live section
+      var grid = $('liveGrid');
+      if (grid) grid.innerHTML = lastData.live.slice(1).map(liveCardCK).join('');
+      var heroIn = $('heroInner');
+      if (heroIn && lastData.live.length > 0 && heroIn.innerHTML) {
+        var cachedSc = (heroMatchId === lastData.live[0].id) ? heroScorecardData : null;
+        heroIn.innerHTML = heroCK(lastData.live[0], cachedSc);
+      }
+    }
+  }).catch(function() {
+    // Silently fail — card continues with basic data
+  }).finally(function() {
+    liveIntelLoading[match.id] = false;
+  });
+}
 
 async function loadMatches(forceRefresh = false) {
   if (fetching) return;

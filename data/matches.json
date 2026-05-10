@@ -12,11 +12,11 @@
       "team2_short": "CSK",
       "team2_color": "#d97706",
       "team1_score1": {
-        "display": "91/1",
-        "detail": "(6 ov)",
-        "runs": 91,
-        "wickets": 1,
-        "overs": "6"
+        "display": "97/2",
+        "detail": "(7.3 ov)",
+        "runs": 97,
+        "wickets": 2,
+        "overs": "7.3"
       },
       "team1_score2": null,
       "team2_score1": null,
@@ -26,7 +26,7 @@
       "status_text": "Chennai Super Kings opt to bowl",
       "start_time": "03:30 PM",
       "start_epoch": 1778407200000,
-      "run_rate": 15.17,
+      "run_rate": 12.93,
       "t1_h2h_wins": 3,
       "t2_h2h_wins": 2,
       "team1_rank": 9,
@@ -215,6 +215,6 @@
       "team2_qualification_pct": 20
     }
   ],
-  "last_updated": "10 May, 04:10 PM",
+  "last_updated": "10 May, 04:18 PM",
   "error": null
 }
