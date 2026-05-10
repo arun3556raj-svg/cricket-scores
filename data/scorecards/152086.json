@@ -282,10 +282,10 @@
       "bowl_team": "Lucknow Super Giants",
       "innings_id": 2,
       "score": {
-        "runs": 156,
-        "wickets": 3,
-        "overs": 13.3,
-        "run_rate": 11.56,
+        "runs": 132,
+        "wickets": 2,
+        "overs": 10,
+        "run_rate": 13.2,
         "declared": false
       },
       "extras": {
@@ -310,12 +310,12 @@
         },
         {
           "name": "Ruturaj Gaikwad",
-          "runs": 42,
-          "balls": 28,
-          "fours": 3,
+          "runs": 33,
+          "balls": 20,
+          "fours": 2,
           "sixes": 2,
-          "strike_rate": 150,
-          "out_desc": "b Shahbaz Ahmed",
+          "strike_rate": 165,
+          "out_desc": "batting",
           "is_captain": true,
           "is_keeper": false,
           "not_out": false
@@ -334,11 +334,11 @@
         },
         {
           "name": "Kartik Sharma",
-          "runs": 14,
-          "balls": 14,
+          "runs": 4,
+          "balls": 3,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 100,
+          "strike_rate": 133.33,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -346,15 +346,15 @@
         },
         {
           "name": "Dewald Brevis",
-          "runs": 5,
-          "balls": 2,
-          "fours": 1,
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
           "sixes": 0,
-          "strike_rate": 250,
-          "out_desc": "batting",
+          "strike_rate": 0,
+          "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": false
+          "not_out": true
         },
         {
           "name": "Shivam Dube",
@@ -432,12 +432,12 @@
       "bowlers": [
         {
           "name": "Mohammed Shami",
-          "overs": 4,
-          "balls": 24,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 37,
+          "runs": 31,
           "wickets": 0,
-          "economy": 9.2,
+          "economy": 10.3,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -456,36 +456,36 @@
         },
         {
           "name": "Digvesh Singh Rathi",
-          "overs": 2.3,
-          "balls": 15,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 40,
+          "runs": 37,
           "wickets": 1,
-          "economy": 16,
+          "economy": 18.5,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Avesh Khan",
-          "overs": 2,
-          "balls": 12,
+          "overs": 1,
+          "balls": 6,
           "maidens": 0,
-          "runs": 30,
+          "runs": 26,
           "wickets": 0,
-          "economy": 15,
+          "economy": 26,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Shahbaz Ahmed",
-          "overs": 3,
-          "balls": 18,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 30,
-          "wickets": 2,
-          "economy": 10,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 9.5,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -503,12 +503,6 @@
           "runs": 126,
           "over": 9.2,
           "wkt_n": 2
-        },
-        {
-          "name": "Ruturaj Gaikwad",
-          "runs": 149,
-          "over": 12.5,
-          "wkt_n": 3
         }
       ]
     }
