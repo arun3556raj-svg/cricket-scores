@@ -823,22 +823,23 @@ function liveCardCK(m) {
   const batT  = teamMeta(batCode);
   const bowlT = teamMeta(bowlCode);
 
-  const score    = sb.score    || (m.team1_score1 ? Number(m.team1_score1.runs) : 0);
-  const wickets  = sb.wickets  != null ? sb.wickets : (m.team1_score1 ? Number(m.team1_score1.wickets) : 0);
-  const overs    = sb.overs    || 0;
+  // Use batting team's score (not always team1)
+  var batSc1 = m.team1_score1, batSc2 = m.team2_score1;
+  var batTeam = meta.batting_team || (
+    batSc1 && batSc2 ? (Number(batSc1.overs) >= 20 ? m.team2_short : m.team1_short) : (batSc1 ? m.team1_short : m.team2_short)
+  );
+  var batScoreObj = batTeam === m.team1_short ? batSc1 : batSc2;
+  const score    = sb.score != null ? sb.score : (batScoreObj ? Number(batScoreObj.runs) : 0);
+  const wickets  = sb.wickets != null ? sb.wickets : (batScoreObj ? Number(batScoreObj.wickets) : 0);
+  const overs    = sb.overs != null ? sb.overs : (batScoreObj ? batScoreObj.overs : 0);
   const crr      = sb.crr      || Number(m.run_rate) || 0;
   const rrr      = sb.rrr;
   const target   = sb.target;
   const ballsRem = sb.balls_remaining != null ? sb.balls_remaining : 120 - (Math.floor(overs) * 6 + Math.round((overs % 1) * 10));
 
   const innings  = meta.innings || 1;
-  // Use correct batting team's score (not always team1)
-  var batScores = [m.team1_score1, m.team2_score1];
-  var batScIdx = innings === 2 && batScore1 ? 1 : 0; // If 2nd innings and team1 has score, team2 is batting
-  batScIdx = meta.batting_team === m.team2_short ? 1 : (meta.batting_team === m.team1_short ? 0 : batScIdx);
-  var batScoreObj = batScores[batScIdx] || batScores[0] || {};
-  const displayScore = batScoreObj.display ? esc(batScoreObj.display) : '—';
-  const displayOvers = batScoreObj.detail ? esc(batScoreObj.detail) : '';
+  const displayScore = batScoreObj && batScoreObj.display ? esc(batScoreObj.display) : '—';
+  const displayOvers = batScoreObj && batScoreObj.detail ? esc(batScoreObj.detail) : '';
 
   // Required runs (2nd innings only)
   const reqRuns  = target ? Math.max(0, target - score) : null;
