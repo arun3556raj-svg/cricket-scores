@@ -1282,8 +1282,29 @@ function openDrawerFromAttr(el) {
   if (!raw) return;
   try {
     var m = JSON.parse(decodeURIComponent(raw));
-    // Schedule matches need the schedule scorecard endpoint
     openDrawerForSchedule(m.id, m);
+    // Use schedule-specific scorecard URL
+    var url = IS_STATIC_MODE
+      ? cacheBust(joinPath(SCORECARD_BASE_PATH, m.id + '.json'))
+      : '/api/scorecard/schedule/' + m.id;
+    fetchJson(url).then(function(r) {
+      if (!r.ok) return;
+      return r.json();
+    }).then(function(sc) {
+      if (!sc) return;
+      var body = document.getElementById('drawerBody');
+      if (!body) return;
+      sc.match_id = m.id;
+      sc.team1 = m.team1;
+      sc.team2 = m.team2;
+      sc.team1_short = m.team1_short;
+      sc.team2_short = m.team2_short;
+      sc.status = m.status;
+      sc.series = m.series;
+      sc.match_desc = m.match_desc;
+      sc.venue = m.venue;
+      renderScorecard(body, sc);
+    }).catch(function() {});
   } catch(e) {}
 }
 
