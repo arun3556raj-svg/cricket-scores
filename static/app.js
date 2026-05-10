@@ -1282,7 +1282,8 @@ function openDrawerFromAttr(el) {
   if (!raw) return;
   try {
     var m = JSON.parse(decodeURIComponent(raw));
-    openDrawer(m.id, m);
+    // Schedule matches need the schedule scorecard endpoint
+    openDrawerForSchedule(m.id, m);
   } catch(e) {}
 }
 
