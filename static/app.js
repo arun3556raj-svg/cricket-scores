@@ -4708,8 +4708,49 @@ function renderExpandedOverview(row) {
 
 function renderExpandedFixtures(row) {
   const dColor = getDifficultyColor(row.remainingDifficulty);
-  const fixtures = row.remainingFixtures.length ? row.remainingFixtures : ['TBD'];
-  return `<div class="pt-fixtures"><div class="pt-fixture-head"><div><b>Remaining Difficulty</b><small>${row.remaining} matches left</small></div><span style="background:${dColor}1A;color:${dColor};border-color:${dColor}33">${getDifficultyLabel(row.remainingDifficulty)} (${Math.round(row.remainingDifficulty)}/100)</span></div>${fixtures.map(code => renderFixtureRow(code)).join('')}</div>`;
+  const fixtures = row.remainingFixtures.length ? row.remainingFixtures : [];
+  var html = '<div class="pt-fixtures">';
+
+  // Remaining difficulty header
+  if (fixtures.length) {
+    html += '<div class="pt-fixture-head"><div><b>Remaining Difficulty</b><small>' + row.remaining + ' matches left</small></div><span style="background:' + dColor + '1A;color:' + dColor + ';border-color:' + dColor + '33">' + getDifficultyLabel(row.remainingDifficulty) + ' (' + Math.round(row.remainingDifficulty) + '/100)</span></div>';
+    html += fixtures.map(function(code) { return renderFixtureRow(code); }).join('');
+  }
+
+  // Previous results — from lastData.finished
+  var code = row.team_short;
+  var myResults = [];
+  if (lastData && lastData.finished) {
+    myResults = lastData.finished.filter(function(m) {
+      return m.team1_short === code || m.team2_short === code;
+    }).slice(0, 10);
+  }
+
+  if (myResults.length) {
+    html += '<div style="margin-top:10px;font-size:9px;font-weight:700;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px">Previous Results</div>';
+    html += myResults.map(function(m) {
+      var isT1 = m.team1_short === code;
+      var opp = isT1 ? m.team2_short : m.team1_short;
+      var won = isT1
+        ? (m.winner && (m.winner.includes(m.team1_short) || m.winner.includes(m.team1)))
+        : (m.winner && (m.winner.includes(m.team2_short) || m.winner.includes(m.team2)));
+      var s1 = m.team1_score1 ? esc(m.team1_score1.display) : '';
+      var s2 = m.team2_score1 ? esc(m.team2_score1.display) : '';
+      var oppMeta = teamMeta(opp);
+      var venue = m.venue ? m.venue.split(',')[0] : '';
+      var margin = m.status_text ? esc(m.status_text.replace(/^.*?(won|lost|tied)/i,'').trim()) : '';
+      return '<div class="pt-fixture-row pt-result-row" style="border-left:2px solid ' + (won ? '#22C55E' : '#F87171') + ';background:' + (won ? 'rgba(34,197,94,0.03)' : 'rgba(248,113,113,0.03)') + ';margin-bottom:3px">'
+        + '<span class="pt-result-badge" style="background:' + (won ? 'rgba(34,197,94,0.15)' : 'rgba(248,113,113,0.15)') + ';color:' + (won ? '#22C55E' : '#F87171') + ';padding:2px 6px;border-radius:4px;font-size:9px;font-weight:800">' + (won ? 'W' : 'L') + '</span>'
+        + '<span style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.7);flex:1">' + esc(opp) + '</span>'
+        + '<span style="font-size:9px;color:rgba(255,255,255,0.25)">' + esc(venue) + '</span>'
+        + '<span style="font-size:10px;font-weight:' + (won ? '700' : '400') + ';color:' + (won ? '#22C55E' : '#F87171') + '">' + (won ? margin : (margin || 'Lost')) + '</span>'
+        + '<span style="font-size:9px;color:rgba(255,255,255,0.25);font-family:monospace">' + s1 + (s1 && s2 ? ' vs ' : '') + s2 + '</span>'
+        + '</div>';
+    }).join('');
+  }
+
+  html += '</div>';
+  return html;
 }
 function renderFixtureRow(code) {
   const rows = enrichPointsRows((pointsData?.tables?.[pointsSeason]?.rows) || []);

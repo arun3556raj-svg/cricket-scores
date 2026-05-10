@@ -3767,3 +3767,5 @@ html[data-theme="light"] .player-stats-table .career-row td { border-top-color: 
  0%, 100% { opacity: 1; transform: scale(1); }
  50% { opacity: 0.4; transform: scale(1.4); }
 }
+
+.pt-result-row{display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:6px;margin-bottom:3px}
