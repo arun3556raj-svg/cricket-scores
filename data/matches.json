@@ -12,11 +12,11 @@
       "team2_short": "RCB",
       "team2_color": "#dc2626",
       "team1_score1": {
-        "display": "78/3",
-        "detail": "(9.2 ov)",
-        "runs": 78,
-        "wickets": 3,
-        "overs": "9.2"
+        "display": "114/4",
+        "detail": "(13 ov)",
+        "runs": 114,
+        "wickets": 4,
+        "overs": "13"
       },
       "team1_score2": null,
       "team2_score1": null,
@@ -26,7 +26,7 @@
       "status_text": "Royal Challengers Bengaluru opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778421600000,
-      "run_rate": 8.36,
+      "run_rate": 8.77,
       "t1_h2h_wins": 19,
       "t2_h2h_wins": 15,
       "team1_rank": 10,
@@ -273,6 +273,6 @@
       "team2_qualification_pct": 20
     }
   ],
-  "last_updated": "10 May, 08:24 PM",
+  "last_updated": "10 May, 08:39 PM",
   "error": null
 }
