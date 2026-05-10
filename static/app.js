@@ -624,12 +624,102 @@ function heroCK(m, sc = null) {
 }
 
 // ── Crickly Live / Result Card (CompactMatchCard style) ───────
+
+function matchCardTeamBadge(code, size = 44, faded = false) {
+  const meta = teamMeta(code);
+  const opacity = faded ? '0.10' : '0.18';
+  const border = faded ? '20' : '30';
+  return `<div class="mc-team-badge" style="width:${size}px;height:${size}px;border-color:${meta.color}${border};background:${meta.color}${opacity};color:${meta.color};font-size:${Math.max(9, Math.round(size * .23))}px">${esc(code || '—')}</div>`;
+}
+
+function matchCardFormDots(form = [], align = '') {
+  const recent = (form || []).slice(-5);
+  if (!recent.length) return '<span class="mc-muted">No form</span>';
+  return `<div class="mc-form-dots ${align}">${recent.map(r => {
+    const win = String(r).toUpperCase() === 'W';
+    return `<span class="mc-form-dot ${win ? 'win' : 'loss'}">${esc(r)}</span>`;
+  }).join('')}</div>`;
+}
+
+function matchCardQualColor(value) {
+  const n = Number(value || 0);
+  if (n >= 70) return '#22C55E';
+  if (n >= 40) return '#FACC15';
+  if (n >= 15) return '#F97316';
+  return '#EF4444';
+}
+
+function matchCardQualRing(value, label) {
+  const pct = Math.max(0, Math.min(100, Number(value || 0)));
+  const r = 18;
+  const circ = 2 * Math.PI * r;
+  const offset = circ - (pct / 100) * circ;
+  const color = matchCardQualColor(pct);
+  return `<div class="mc-qual-ring" title="${esc(label)} qualification probability">
+    <svg width="42" height="42" viewBox="0 0 42 42">
+      <circle cx="21" cy="21" r="18" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="3"></circle>
+      <circle cx="21" cy="21" r="18" fill="none" stroke="${color}" stroke-width="3" stroke-linecap="round" stroke-dasharray="${circ.toFixed(2)}" stroke-dashoffset="${offset.toFixed(2)}"></circle>
+    </svg>
+    <span class="mc-ring-num" style="color:${color}">${Math.round(pct)}</span><span class="mc-ring-pct">%</span>
+  </div>`;
+}
+
+function matchCardTeamInfo(m, side) {
+  const code = side === 1 ? m.team1_short : m.team2_short;
+  const row = standingForTeam(code) || {};
+  return {
+    code,
+    rank: m[`team${side}_rank`] ?? row.rank ?? '—',
+    points: m[`team${side}_points`] ?? row.points ?? '—',
+    form: m[`team${side}_last_5`] || row.last_5 || [],
+    qual: m[`team${side}_qualification_pct`] ?? row.qualification_pct ?? 0,
+    nrr: Number(row.nrr || 0),
+    color: teamMeta(code).color,
+  };
+}
+
+function matchCardNrr(nrr) {
+  const val = Number(nrr || 0);
+  return `<span class="${val >= 0 ? 'pos' : 'neg'}">${val >= 0 ? '+' : ''}${val.toFixed(3)}</span>`;
+}
+
+function matchCardKeyPlayer(code) {
+  const map = {
+    RCB:['Virat Kohli','Batter'], MI:['Jasprit Bumrah','Bowler'], CSK:['Ruturaj Gaikwad','Captain · Batter'],
+    LSG:['KL Rahul','Batter'], SRH:['Travis Head','Opener'], RR:['Sanju Samson','Captain'],
+    KKR:['Sunil Narine','All-rounder'], DC:['Axar Patel','All-rounder'], GT:['Shubman Gill','Captain'], PBKS:['Arshdeep Singh','Bowler']
+  };
+  const [name, role] = map[code] || [code, 'Key player'];
+  return { name, surname: name.split(/\s+/).pop(), role };
+}
+
 function liveCardCK(m) {
   const t1 = teamMeta(m.team1_short);
   const t2 = teamMeta(m.team2_short);
   const matchJson = encodeURIComponent(JSON.stringify(m));
   const isLive   = m.status === 'live';
   const isResult = m.status === 'finished';
+
+  if (isLive) {
+    const battingIsT1 = !!m.team1_score1 || !m.team2_score1;
+    const batCode = battingIsT1 ? m.team1_short : m.team2_short;
+    const bowlCode = battingIsT1 ? m.team2_short : m.team1_short;
+    const batScore = battingIsT1 ? m.team1_score1 : m.team2_score1;
+    const crr = m.run_rate || '—';
+    const projected = batScore?.runs && batScore?.overs ? Math.round(Number(batScore.runs) / Math.max(1, Number(batScore.overs)) * 20) : '—';
+    return `
+      <article class="live-red-card" onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
+        <div class="live-red-stripe"></div>
+        <div class="live-red-inner">
+          <div class="live-red-head"><div class="live-pulse"><span></span><i></i><b>LIVE</b></div><div class="live-red-chips"><span>CRR ${esc(String(crr))}</span><span class="proj">PROJ ${esc(String(projected))}</span></div></div>
+          <div class="live-score-block">
+            <div class="live-batting-team">${matchCardTeamBadge(batCode, 48)}<div><div class="live-team-code">${esc(batCode)}</div><div class="live-score-num">${batScore ? esc(batScore.display) : '—'}</div><div class="live-score-overs">${batScore ? esc(batScore.detail) : 'In progress'}</div></div></div>
+            <div class="live-fielding-team">${matchCardTeamBadge(bowlCode, 40, true)}<div><div>${esc(bowlCode)}</div><span>Yet to bat / fielding</span></div></div>
+          </div>
+          <div class="live-status-strip"><b>${esc(m.status_text || 'Match live')}</b><span>Projected score: ${esc(String(projected))}${projected !== '—' ? '' : ' unavailable'}</span><span>Partnership and last wicket update when scorecard feed exposes it.</span></div>
+        </div>
+      </article>`;
+  }
 
   let t1Winner = false, t2Winner = false;
   if (isResult && m.status_text) {
@@ -639,19 +729,11 @@ function liveCardCK(m) {
   }
 
   const matchLabel = esc(m.match_desc || m.series || '');
-  const statusText = esc(m.status_text || (isLive ? 'Live' : ''));
-  const statusColor = isResult ? 'rgba(255,255,255,0.5)' : '#22c55e';
-  const glowColor   = `${t1.color}15`;
+  const statusText = esc(m.status_text || '');
+  const glowColor = `${t1.color}15`;
   const stakes = matchStakes(m);
-  const resultImpact = isResult ? tableImpactLine(m, t1Winner, t2Winner) : '';
-
-  const badgeHtml = isLive
-    ? `<span style="background:linear-gradient(135deg,#ef4444,#dc2626);color:#fff;font-size:9px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:0.5px;text-transform:uppercase;animation:livePulse 2s infinite;display:inline-block">LIVE</span>`
-    : `<span style="background:var(--cbadge);color:var(--ct3);font-size:9px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:0.5px;text-transform:uppercase">RESULT</span>`;
-
-  const metaChips = isResult
-    ? `${resultMarginBadge(m)}${stakes.impact ? `<span class="match-intel-chip ${stakes.tone}">Table impact</span>` : ''}`
-    : `${stakes.severity ? `<span class="match-intel-chip ${stakes.tone}">${esc(stakes.severity)}</span>` : ''}${m.run_rate ? `<span class="match-intel-chip neutral">CRR ${esc(String(m.run_rate))}</span>` : ''}`;
+  const resultImpact = tableImpactLine(m, t1Winner, t2Winner);
+  const metaChips = `${resultMarginBadge(m)}${stakes.impact ? `<span class="match-intel-chip ${stakes.tone}">Table impact</span>` : ''}`;
 
   return `
     <article style="background:var(--cbg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--cbd);border-radius:16px;overflow:hidden;cursor:pointer;transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s"
@@ -659,113 +741,60 @@ function liveCardCK(m) {
              onmouseleave="this.style.borderColor='var(--cbd)';this.style.transform='translateY(0)';this.style.boxShadow='none'"
              onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
       <div style="height:2px;background:linear-gradient(90deg,${t1.color}88,${t2.color}88)"></div>
-      <!-- Header -->
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px 0;gap:10px">
-        <span style="font-size:11.5px;color:var(--ct3);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${matchLabel}</span>
-        ${badgeHtml}
-      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px 0;gap:10px"><span style="font-size:11.5px;color:var(--ct3);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${matchLabel}</span><span style="background:var(--cbadge);color:var(--ct3);font-size:9px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:0.5px;text-transform:uppercase">RESULT</span></div>
       ${metaChips ? `<div class="match-intel-row">${metaChips}</div>` : ''}
-      <!-- Teams & Scores -->
       <div style="display:flex;align-items:center;justify-content:center;padding:14px 18px 10px;gap:10px">
-        ${teamBadge(m.team1_short, 52)}
-        <div style="text-align:center;flex:1;min-width:0">
-          <div style="font-size:12px;font-weight:700;color:var(--ct2)">${esc(m.team1_short)}${t1Winner ? ' <span style="color:#22c55e;font-size:10px">✓</span>' : ''}</div>
-          ${teamMiniIntel(m.team1_short)}
-          <div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">${m.team1_score1 ? esc(m.team1_score1.display) : '—'}</div>
-          <div style="font-size:10.5px;color:var(--ct4)">${m.team1_score1 ? esc(m.team1_score1.detail) : 'Yet to bat'}</div>
-        </div>
+        ${teamBadge(m.team1_short, 52)}<div style="text-align:center;flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--ct2)">${esc(m.team1_short)}${t1Winner ? ' <span style="color:#22c55e;font-size:10px">✓</span>' : ''}</div>${teamMiniIntel(m.team1_short)}<div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">${m.team1_score1 ? esc(m.team1_score1.display) : '—'}</div><div style="font-size:10.5px;color:var(--ct4)">${m.team1_score1 ? esc(m.team1_score1.detail) : 'Yet to bat'}</div></div>
         <span style="font-size:10px;color:var(--ct5);font-weight:600;flex-shrink:0">vs</span>
-        <div style="text-align:center;flex:1;min-width:0">
-          <div style="font-size:12px;font-weight:700;color:var(--ct2)">${esc(m.team2_short)}${t2Winner ? ' <span style="color:#22c55e;font-size:10px">✓</span>' : ''}</div>
-          ${teamMiniIntel(m.team2_short)}
-          <div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">${m.team2_score1 ? esc(m.team2_score1.display) : '—'}</div>
-          <div style="font-size:10.5px;color:var(--ct4)">${m.team2_score1 ? esc(m.team2_score1.detail) : 'Yet to bat'}</div>
-        </div>
-        ${teamBadge(m.team2_short, 52)}
+        <div style="text-align:center;flex:1;min-width:0"><div style="font-size:12px;font-weight:700;color:var(--ct2)">${esc(m.team2_short)}${t2Winner ? ' <span style="color:#22c55e;font-size:10px">✓</span>' : ''}</div>${teamMiniIntel(m.team2_short)}<div style="font-size:22px;font-weight:800;color:var(--ct);letter-spacing:-0.5px">${m.team2_score1 ? esc(m.team2_score1.display) : '—'}</div><div style="font-size:10.5px;color:var(--ct4)">${m.team2_score1 ? esc(m.team2_score1.detail) : 'Yet to bat'}</div></div>${teamBadge(m.team2_short, 52)}
       </div>
-      <!-- Status & Table Impact -->
-      ${isResult ? `
-      <div style="text-align:center;padding:10px 14px 12px;background:rgba(255,255,255,0.015);margin:0 14px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)">
-        <div style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.5)">${statusText}</div>
-        ${resultImpact ? resultImpact.replace('match-impact-line','match-impact-line in-result') : ''}
-        ${!resultImpact && stakes.impact ? `<div class="match-impact-line in-result">📊 ${esc(stakes.impact)}</div>` : ''}
-      </div>
-      ` : `
-      <div style="text-align:center;padding:0 18px 14px">
-        <span style="font-size:11.5px;font-weight:600;color:${statusColor}">${statusText}</span>
-        ${stakes.impact ? `<div class="match-impact-line">★ ${esc(stakes.impact)}</div>` : ''}
-      </div>
-      `}
+      <div style="text-align:center;padding:10px 14px 12px;background:rgba(255,255,255,0.015);margin:0 14px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)"><div style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.5)">${statusText}</div>${resultImpact ? resultImpact.replace('match-impact-line','match-impact-line in-result') : ''}${!resultImpact && stakes.impact ? `<div class="match-impact-line in-result">📊 ${esc(stakes.impact)}</div>` : ''}</div>
     </article>`;
 }
 
-// ── Crickly Upcoming Row (UpcomingRow style) ──────────────────
 function upcomingRowCK(m) {
   const matchJson = encodeURIComponent(JSON.stringify(m));
-  const t1 = teamMeta(m.team1_short);
-  const t2 = teamMeta(m.team2_short);
+  const t1 = matchCardTeamInfo(m, 1);
+  const t2 = matchCardTeamInfo(m, 2);
   const stakes = matchStakes(m);
-
   let timeDisplay = m.start_time || 'TBD';
   let dateDisplay = '';
   if (m.start_epoch) {
     const d = new Date(m.start_epoch);
-    const today    = new Date();
+    const today = new Date();
     const tomorrow = new Date(); tomorrow.setDate(today.getDate() + 1);
-    if (d.toDateString() === today.toDateString())         dateDisplay = 'Today';
+    if (d.toDateString() === today.toDateString()) dateDisplay = 'Today';
     else if (d.toDateString() === tomorrow.toDateString()) dateDisplay = 'Tomorrow';
     else dateDisplay = d.toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' });
   }
-
-  const sublabelParts = [m.match_desc || m.series, m.venue ? m.venue.split(',')[0] : ''].filter(Boolean);
-  const sublabel = esc(sublabelParts.join(' · '));
-  // Head-to-head from match data (both teams have complete field) or default
-  const h2h = (m.t1_h2h_wins != null && m.t2_h2h_wins != null) ? `${m.t1_h2h_wins}-${m.t2_h2h_wins}` : null;
-  
-  const chipHtml = (() => {
-    const items = [];
-    if (stakes.severity && stakes.tone === 'danger') items.push(`<span class="match-intel-chip danger">Must-win</span>`);
-    else if (stakes.severity && stakes.tone === 'warn') items.push(`<span class="match-intel-chip warn">Playoff swing</span>`);
-    else if (stakes.severity) items.push(`<span class="match-intel-chip ${stakes.tone}">${esc(stakes.severity)}</span>`);
-    for (const c of (stakes.chips || []).slice(0, 2)) items.push(`<span class="match-intel-chip neutral">${esc(c)}</span>`);
-    return items.join('');
-  })();
+  const venue = m.venue ? m.venue.split(',')[0] : '';
+  const h2h1 = Number(m.t1_h2h_wins || 0), h2h2 = Number(m.t2_h2h_wins || 0);
+  const h2hTotal = h2h1 + h2h2;
+  const h2hPct = h2hTotal ? Math.round(h2h1 / h2hTotal * 100) : 50;
+  const mustWin = [t1, t2].filter(team => Number(team.qual) < 15 || stakes.tone === 'danger' && (Number(team.qual) < 40));
+  const kp1 = matchCardKeyPlayer(t1.code), kp2 = matchCardKeyPlayer(t2.code);
+  const note = m.toss_note || m.weather_note || (dateDisplay === 'Today' ? 'Dew factor possible — chasing may matter' : '');
 
   return `
-    <div class="upcoming-smart-card" style="--t1:${t1.color};--t2:${t2.color}"
-         onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
-      <div class="upcoming-smart-stripe"></div>
-      <div class="upcoming-smart-head">
-        <div class="upcoming-smart-meta">
-          <span>${esc(m.match_desc || 'Fixture')}</span>
-          ${m.venue ? `<span class="mini-dot"></span><span>${esc(m.venue.split(',')[0])}</span>` : ''}
+    <article class="match-preview-card" style="--t1:${t1.color};--t2:${t2.color}" onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
+      <div class="match-preview-stripe"></div>
+      <div class="match-preview-inner">
+        <div class="mp-row mp-meta"><div class="mp-meta-left"><span>${esc(m.match_desc || 'Fixture')}</span>${venue ? `<i></i><span class="mp-venue">${esc(venue)}</span>` : ''}</div><div class="mp-time"><b>${esc(timeDisplay)}</b>${dateDisplay ? `<span class="${dateDisplay === 'Today' ? 'today' : ''}">${esc(dateDisplay)}</span>` : ''}</div></div>
+        <div class="mp-teams-row">
+          <div class="mp-team">${matchCardTeamBadge(t1.code, 44)}<div><b>${esc(t1.code)}</b><span>#${esc(String(t1.rank))} · ${esc(String(t1.points))}pts</span></div></div>
+          <div class="mp-vs"><b>VS</b>${h2hTotal ? `<span>${h2h1}-${h2h2}</span>` : '<span>H2H</span>'}</div>
+          <div class="mp-team right"><div><b>${esc(t2.code)}</b><span>#${esc(String(t2.rank))} · ${esc(String(t2.points))}pts</span></div>${matchCardTeamBadge(t2.code, 44)}</div>
         </div>
-        <div class="upcoming-smart-time">
-          <strong>${esc(timeDisplay)}</strong>
-          ${dateDisplay ? `<span>${esc(dateDisplay)}</span>` : ''}
-        </div>
+        <div class="mp-form-row"><div class="mp-form-side"><span>FORM</span>${matchCardFormDots(t1.form)}</div><div class="mp-rings">${matchCardQualRing(t1.qual, t1.code)}<i></i>${matchCardQualRing(t2.qual, t2.code)}</div><div class="mp-form-side right"><span>FORM</span>${matchCardFormDots(t2.form, 'right')}</div></div>
+        ${mustWin.length || note ? `<div class="mp-tags">${mustWin.map(team => `<span class="mp-team-pill" style="color:${team.color};border-color:${team.color}33;background:${team.color}12">${esc(team.code)}</span><span class="mp-must-win">MUST-WIN</span>`).join('')}${note ? `<em>💧 ${esc(note)}</em>` : ''}</div>` : ''}
+        ${(stakes.headline || stakes.impact) ? `<div class="mp-significance"><span>★</span><em>${esc(stakes.headline || stakes.impact)}</em></div>` : ''}
       </div>
-      <div class="upcoming-smart-body">
-        <div class="upcoming-smart-team">
-          ${teamBadge(m.team1_short, 40)}
-          <div>
-            <div class="upcoming-smart-code">${esc(m.team1_short)}</div>
-            ${teamMiniIntel(m.team1_short)}
-          </div>
-        </div>
-        <div class="upcoming-smart-vs"><span>VS</span>${h2h ? `<span class="upcoming-h2h">${esc(h2h)}</span>` : ''}</div>
-        <div class="upcoming-smart-team is-right">
-          <div>
-            <div class="upcoming-smart-code">${esc(m.team2_short)}</div>
-            ${teamMiniIntel(m.team2_short)}
-          </div>
-          ${teamBadge(m.team2_short, 40)}
-        </div>
-      </div>
-      ${chipHtml ? `<div class="match-intel-row in-card">${chipHtml}</div>` : ''}
-      ${stakes.headline ? `<div class="match-impact-line upcoming is-significance">★ ${esc(stakes.headline)}</div>` : (stakes.impact ? `<div class="match-impact-line upcoming">📊 ${esc(stakes.impact)}</div>` : '')}
-      ${sublabel ? `<div class="upcoming-smart-sub">${sublabel}</div>` : ''}
-    </div>`;
+      <details class="mp-expand" onclick="event.stopPropagation()"><summary>Match preview <span>⌄</span></summary><div class="mp-expanded">
+        <div class="mp-h2h"><div><b style="color:${t1.color}">${h2h1}</b><span>Head to Head</span><b style="color:${t2.color}">${h2h2}</b></div><div class="mp-h2h-track" style="background:${t2.color}25"><i style="width:${h2hPct}%;background:${t1.color}"></i></div></div>
+        <div class="mp-key-grid"><div class="mp-key" style="border-left-color:${t1.color}"><span>Key Player</span><b>${esc(kp1.surname)}</b><em style="color:${t1.color}">${esc(kp1.role)}</em></div><div class="mp-key" style="border-left-color:${t2.color}"><span>Key Player</span><b>${esc(kp2.surname)}</b><em style="color:${t2.color}">${esc(kp2.role)}</em></div></div>
+        <div class="mp-nrr-weather"><span>${esc(t1.code)} NRR ${matchCardNrr(t1.nrr)}</span><span>${esc(t2.code)} NRR ${matchCardNrr(t2.nrr)}</span><em>☀️ 32°C · ${dateDisplay === 'Today' ? 'Dew expected' : 'Low risk'}</em></div>
+      </div></details>
+    </article>`;
 }
 
 // ── Generate date tabs ─────────────────────────────────────────
