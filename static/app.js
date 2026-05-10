@@ -1916,6 +1916,7 @@ const STAT_PRESETS = {
 
 let statsLoaded = false;
 let statsLoadQueued = false;
+let statsFiltersOpen = false;
 let statsData = null;
 let statsFilters = {
   mode: 'batting',
@@ -1997,45 +1998,55 @@ async function loadStatsBuilder() {
   }
 }
 
+
 function renderStatsBuilder() {
   const el = $('statsBuilder');
   if (!el || !statsData) return;
   const provCount = statsData._provMatchCount || 0;
   const provNote = provCount > 0
-    ? `<span class="stats-prov-note">+${provCount} provisional match${provCount > 1 ? 'es' : ''} included (pending Cricsheets sync)</span>`
+    ? `<span class="stats-prov-note">+${provCount} provisional match${provCount > 1 ? 'es' : ''} included</span>`
     : '';
   el.innerHTML = `
-    <div class="stats-topline">
-      <div>
+    <div class="stats-page">
+      <div class="stats-title-block">
         <h2 class="stats-title">IPL Stat Builder</h2>
-        <p class="stats-subtitle">Filter batting and bowling numbers by season, team, venue, round, and qualifiers.${provNote ? ' ' + provNote : ''}</p>
+        <p class="stats-subtitle">Build batting and bowling leaderboards across seasons.${provNote ? ' ' + provNote : ''}</p>
       </div>
       <div class="stats-mode-toggle" role="tablist" aria-label="Stat type">
-        ${['batting', 'bowling'].map(mode => `
-          <button type="button" class="stats-mode-btn${statsFilters.mode === mode ? ' is-active' : ''}" onclick="setStatsMode('${mode}')">
-            ${mode === 'batting' ? 'Batting' : 'Bowling'}
-          </button>`).join('')}
+        <button type="button" class="stats-mode-btn batting ${statsFilters.mode === 'batting' ? 'active' : ''}" onclick="setStatsMode('batting')">Batting</button>
+        <button type="button" class="stats-mode-btn bowling ${statsFilters.mode === 'bowling' ? 'active' : ''}" onclick="setStatsMode('bowling')">Bowling</button>
       </div>
-    </div>
-    ${renderStatsPresetRail()}
-    ${renderStatsControls()}
-    <div id="statsResults">${renderStatsResults()}</div>`;
+      ${renderStatsPresetRail()}
+      ${renderStatsControls()}
+      <div id="statsResults">${renderStatsResults()}</div>
+    </div>`;
 }
 
 function renderStatsPresetRail() {
-  const presets = STAT_PRESETS[statsFilters.mode] || [];
+  const allowed = statsFilters.mode === 'batting'
+    ? ['orange', 'strike', 'average', 'sixes']
+    : ['purple', 'economy'];
+  const presets = (STAT_PRESETS[statsFilters.mode] || []).filter(p => allowed.includes(p.id));
   return `
-    <div class="stats-preset-rail" aria-label="Stat presets">
+    <div class="stats-cat-scroll" aria-label="Stat categories">
       ${presets.map(preset => `
-        <button type="button"
-          class="stats-preset${statsFilters.preset === preset.id ? ' is-active' : ''}"
-          data-preset="${esc(preset.id)}"
-          onclick="setStatsPreset('${preset.id}')">
-          <span class="preset-icon-area" aria-hidden="true">${esc(preset.icon || '📋')}</span>
-          <span>${esc(preset.label)}</span>
-          <small>${esc(preset.note)}</small>
+        <button type="button" class="stats-cat-card ${statsFilters.preset === preset.id ? 'active' : ''}" onclick="setStatsPreset('${preset.id}')">
+          <span class="stats-cat-icon">${esc(preset.icon || '📋')}</span>
+          <span class="stats-cat-label">${esc(preset.label)}</span>
+          <span class="stats-cat-sub">${esc(statsCatSub(preset.id))}</span>
         </button>`).join('')}
     </div>`;
+}
+
+function statsCatSub(id) {
+  return {
+    orange: 'Most runs across selected seasons',
+    strike: 'Fastest scorers with qualifier',
+    average: 'Most consistent batters',
+    sixes: 'Most sixes in IPL history',
+    purple: 'Most wickets across selected seasons',
+    economy: 'Tightest bowlers with qualifier',
+  }[id] || 'Leaderboard category';
 }
 
 function statsOptions(values, selected, allLabel) {
@@ -2049,47 +2060,99 @@ function statsOptions(values, selected, allLabel) {
 
 function renderStatsControls() {
   const years = statsData.years || [];
-  const minLabel = statsFilters.mode === 'batting' ? 'Min balls faced' : 'Min balls bowled';
   return `
-    <div class="stats-filter-panel">
-      <div class="stats-filter-grid">
-        <label class="stats-filter">
-          <span>Season from</span>
-          <select onchange="onStatsFilterChange('yearFrom', this.value)">${statsOptions(years.slice().reverse(), statsFilters.yearFrom, 'Any year')}</select>
-        </label>
-        <label class="stats-filter">
-          <span>Season to</span>
-          <select onchange="onStatsFilterChange('yearTo', this.value)">${statsOptions(years, statsFilters.yearTo, 'Any year')}</select>
-        </label>
-        <label class="stats-filter">
-          <span>Team</span>
-          <select onchange="onStatsFilterChange('team', this.value)">${statsOptions(statsData.teams, statsFilters.team, 'All teams')}</select>
-        </label>
-        <label class="stats-filter">
-          <span>Opposition</span>
-          <select onchange="onStatsFilterChange('opposition', this.value)">${statsOptions(statsData.teams, statsFilters.opposition, 'All opponents')}</select>
-        </label>
-        <label class="stats-filter">
-          <span>Venue</span>
-          <select onchange="onStatsFilterChange('venue', this.value)">${statsOptions(statsData.venues, statsFilters.venue, 'All venues')}</select>
-        </label>
-        <label class="stats-filter">
-          <span>Round</span>
-          <select onchange="onStatsFilterChange('round', this.value)">${statsOptions(statsData.rounds, statsFilters.round, 'All rounds')}</select>
-        </label>
-        <label class="stats-filter">
-          <span>Min innings</span>
-          <input inputmode="numeric" value="${esc(statsFilters.minInnings)}" onchange="onStatsFilterChange('minInnings', this.value)" />
-        </label>
-        <label class="stats-filter">
-          <span>${esc(minLabel)}</span>
-          <input inputmode="numeric" value="${esc(statsFilters.minBalls)}" onchange="onStatsFilterChange('minBalls', this.value)" />
-        </label>
+    <div class="stats-filter-wrap">
+      <button type="button" class="stats-filter-toggle" onclick="toggleStatsFilters()">⚙ Filters <span>${statsFiltersOpen ? '▴' : '▾'}</span></button>
+      ${statsFiltersOpen ? `
+        <div class="stats-filter-panel stats-filter-panel-new">
+          <div class="stats-filter-grid">
+            <label><span class="stats-filter-label">Season from</span><select class="stats-filter-select" onchange="onStatsFilterChange('yearFrom', this.value)">${statsOptions(years.slice().reverse(), statsFilters.yearFrom, 'Any year')}</select></label>
+            <label><span class="stats-filter-label">Season to</span><select class="stats-filter-select" onchange="onStatsFilterChange('yearTo', this.value)">${statsOptions(years, statsFilters.yearTo, 'Any year')}</select></label>
+            <label><span class="stats-filter-label">Team</span><select class="stats-filter-select" onchange="onStatsFilterChange('team', this.value)">${statsOptions(statsData.teams, statsFilters.team, 'All teams')}</select></label>
+            <label><span class="stats-filter-label">Opposition</span><select class="stats-filter-select" onchange="onStatsFilterChange('opposition', this.value)">${statsOptions(statsData.teams, statsFilters.opposition, 'All opponents')}</select></label>
+          </div>
+          <div class="stats-actions"><button type="button" class="stats-reset-btn" onclick="resetStatsBuilder()">Reset</button><button type="button" class="stats-apply-btn" onclick="applyStatsBuilder()">Apply</button></div>
+        </div>` : ''}
+    </div>`;
+}
+
+function toggleStatsFilters() {
+  statsFiltersOpen = !statsFiltersOpen;
+  renderStatsBuilder();
+}
+
+function statsColumnConfig() {
+  if (statsFilters.mode === 'batting') {
+    return {
+      orange: [{key:'runs', label:'Runs'}, {key:'average', label:'Avg'}, {key:'strike_rate', label:'SR'}],
+      strike: [{key:'strike_rate', label:'SR'}, {key:'runs', label:'Runs'}, {key:'average', label:'Avg'}],
+      average: [{key:'average', label:'Avg'}, {key:'runs', label:'Runs'}, {key:'strike_rate', label:'SR'}],
+      sixes: [{key:'sixes', label:'6s'}, {key:'runs', label:'Runs'}, {key:'strike_rate', label:'SR'}],
+    }[statsFilters.preset] || [{key:'runs', label:'Runs'}, {key:'average', label:'Avg'}, {key:'strike_rate', label:'SR'}];
+  }
+  return {
+    purple: [{key:'wickets', label:'Wkts'}, {key:'average', label:'Avg'}, {key:'economy', label:'Econ'}],
+    economy: [{key:'economy', label:'Econ'}, {key:'wickets', label:'Wkts'}, {key:'average', label:'Avg'}],
+  }[statsFilters.preset] || [{key:'wickets', label:'Wkts'}, {key:'average', label:'Avg'}, {key:'economy', label:'Econ'}];
+}
+
+function statsTeamCode(row) {
+  if (row.teams && row.teams.size) return Array.from(row.teams)[0];
+  const label = String(row.team_label || '').split(' ')[0];
+  return label && label !== 'teams' ? label : 'IPL';
+}
+
+function statsTeamBadge(code) {
+  const meta = teamMeta(code);
+  return `<span class="stats-team-badge" style="background:${meta.color}18;border-color:${meta.color}30;color:${meta.color}">${esc(code)}</span>`;
+}
+
+function statsRank(rank) {
+  return rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : String(rank);
+}
+
+function statsValue(row, key) {
+  const v = row[key];
+  if (key === 'average') return v === null ? '-' : fmt(v, 2);
+  if (key === 'economy') return fmt(v, 2);
+  if (key === 'strike_rate') return fmt(v, 1);
+  if (key === 'runs' || key === 'wickets' || key === 'sixes') return String(Math.round(v || 0));
+  return v == null ? '-' : String(v);
+}
+
+function renderStatsResults() {
+  if (!statsData) return '';
+  const preset = currentStatsPreset();
+  const rows = rankedStatsRows().slice(0, 25);
+  const cols = statsColumnConfig();
+  const modeLabel = statsFilters.mode === 'batting' ? 'Batting' : 'Bowling';
+  const badgeClass = statsFilters.mode === 'batting' ? 'batting' : 'bowling';
+  if (!rows.length) {
+    return `<div class="stats-results-card"><div class="sc-empty">No players match these filters yet.<br><span style="font-size:12px;color:var(--t4)">Try widening the year range or lowering qualifiers.</span></div></div>`;
+  }
+  return `
+    <div class="stats-leaderboard">
+      <div class="stats-lb-header">
+        <div><span class="stats-lb-badge ${badgeClass}">${esc(modeLabel)} leaderboard</span><h3 class="stats-lb-title">${esc(preset.label)}</h3></div>
+        <span class="stats-lb-count">Top ${rows.length}</span>
       </div>
-      <div class="stats-actions">
-        <button type="button" class="stats-reset" onclick="resetStatsBuilder()">Reset</button>
-        <button type="button" class="stats-apply" onclick="applyStatsBuilder()">Apply</button>
-      </div>
+      <div class="stats-col-header"><span style="width:28px">#</span><span class="stats-col-player">Player</span>${cols.map((c,i)=>`<span class="stats-col-label ${i===0?'primary':''}">${esc(c.label)}</span>`).join('')}</div>
+      <div class="stats-row-list">${rows.map((row, index) => renderStatsLeaderboardRow(row, index, cols)).join('')}</div>
+    </div>`;
+}
+
+function renderStatsLeaderboardRow(row, index, cols) {
+  const rank = index + 1;
+  const team = statsTeamCode(row);
+  const meta = statsFilters.mode === 'batting'
+    ? `${row.innings} inns · HS ${row.high_score}`
+    : `${row.innings} inns · BB ${row.best_bowling || '-'}`;
+  return `
+    <div class="stats-row ${rank <= 3 ? 'top3' : ''}">
+      <span class="stats-rank-new">${esc(statsRank(rank))}</span>
+      ${statsTeamBadge(team)}
+      <span class="stats-player-main"><b>${esc(row.player)}</b><small>${esc(meta)}</small></span>
+      ${cols.map((col, i) => `<span class="stats-stat-cell ${i === 0 ? 'primary rank-' + rank : ''}"><b>${esc(statsValue(row, col.key))}</b><small>${esc(col.label)}</small></span>`).join('')}
     </div>`;
 }
 
@@ -2211,6 +2274,8 @@ function aggregateBowlingStats(records) {
       wickets: 0,
       dots: 0,
       maidens: 0,
+      best_wickets: -1,
+      best_runs: 0,
     };
     row.teams.add(record.t);
     row.matches.add(record.m);
@@ -2221,6 +2286,12 @@ function aggregateBowlingStats(records) {
     row.wickets += record.w || 0;
     row.dots += record.d || 0;
     row.maidens += record.md || 0;
+    const wk = record.w || 0;
+    const ru = record.ru || 0;
+    if (wk > row.best_wickets || (wk === row.best_wickets && ru < row.best_runs)) {
+      row.best_wickets = wk;
+      row.best_runs = ru;
+    }
     map.set(record.p, row);
   }
   return Array.from(map.values()).map(row => ({
@@ -2232,6 +2303,7 @@ function aggregateBowlingStats(records) {
     average: row.wickets > 0 ? row.runs / row.wickets : null,
     economy: row.balls > 0 ? row.runs * 6 / row.balls : 0,
     strike_rate: row.wickets > 0 ? row.balls / row.wickets : null,
+    best_bowling: row.best_wickets >= 0 ? `${row.best_wickets}/${row.best_runs}` : '-',
   }));
 }
 
