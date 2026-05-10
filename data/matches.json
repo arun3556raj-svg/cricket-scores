@@ -21,7 +21,29 @@
       "status_text": "Match starts at May 10, 10:00 GMT",
       "start_time": "03:30 PM",
       "start_epoch": 1778407200000,
-      "run_rate": null
+      "run_rate": null,
+      "t1_h2h_wins": 2,
+      "t2_h2h_wins": 3,
+      "team1_rank": 6,
+      "team1_points": 10,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 46,
+      "team2_rank": 9,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "152097",
@@ -43,7 +65,29 @@
       "status_text": "Match starts at May 10, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1778421600000,
-      "run_rate": null
+      "run_rate": null,
+      "t1_h2h_wins": 15,
+      "t2_h2h_wins": 19,
+      "team1_rank": 3,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 86,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     }
   ],
   "finished": [
@@ -81,7 +125,29 @@
       "start_epoch": 1778335200000,
       "run_rate": null,
       "provisional": true,
-      "source": "cricbuzz"
+      "source": "cricbuzz",
+      "t1_h2h_wins": 7,
+      "t2_h2h_wins": 3,
+      "team1_rank": 2,
+      "team1_points": 14,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 67
     },
     {
       "id": "152064",
@@ -117,9 +183,31 @@
       "start_epoch": null,
       "run_rate": null,
       "provisional": true,
-      "source": "cricbuzz"
+      "source": "cricbuzz",
+      "t1_h2h_wins": 6,
+      "t2_h2h_wins": 7,
+      "team1_rank": 7,
+      "team1_points": 8,
+      "team1_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 19,
+      "team2_rank": 8,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 20
     }
   ],
-  "last_updated": "10 May, 01:00 PM",
+  "last_updated": "10 May, 02:18 PM",
   "error": null
 }

@@ -15,7 +15,29 @@
       "status_text": "Royal Challengers Bengaluru won by 6 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1774706400000,
-      "match_date": "Sat, 28 Mar 2026"
+      "match_date": "Sat, 28 Mar 2026",
+      "t1_h2h_wins": 13,
+      "t2_h2h_wins": 12,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 3,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 86
     },
     {
       "id": "149629",
@@ -32,7 +54,29 @@
       "status_text": "Mumbai Indians won by 6 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1774792800000,
-      "match_date": "Sun, 29 Mar 2026"
+      "match_date": "Sun, 29 Mar 2026",
+      "t1_h2h_wins": 11,
+      "t2_h2h_wins": 25,
+      "team1_rank": 8,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 20,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "149640",
@@ -49,7 +93,29 @@
       "status_text": "Rajasthan Royals won by 8 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1774879200000,
-      "match_date": "Mon, 30 Mar 2026"
+      "match_date": "Mon, 30 Mar 2026",
+      "t1_h2h_wins": 16,
+      "t2_h2h_wins": 16,
+      "team1_rank": 6,
+      "team1_points": 10,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 46,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 67
     },
     {
       "id": "149651",
@@ -66,7 +132,29 @@
       "status_text": "Punjab Kings won by 3 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1774965600000,
-      "match_date": "Tue, 31 Mar 2026"
+      "match_date": "Tue, 31 Mar 2026",
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 4,
+      "team1_rank": 2,
+      "team1_points": 14,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 4,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 90
     },
     {
       "id": "149662",
@@ -83,7 +171,29 @@
       "status_text": "Delhi Capitals won by 6 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1775052000000,
-      "match_date": "Wed, 01 Apr 2026"
+      "match_date": "Wed, 01 Apr 2026",
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 5,
+      "team1_rank": 9,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
     },
     {
       "id": "149673",
@@ -100,7 +210,29 @@
       "status_text": "Sunrisers Hyderabad won by 65 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1775138400000,
-      "match_date": "Thu, 02 Apr 2026"
+      "match_date": "Thu, 02 Apr 2026",
+      "t1_h2h_wins": 11,
+      "t2_h2h_wins": 20,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 8,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 20
     },
     {
       "id": "149684",
@@ -117,7 +249,29 @@
       "status_text": "Punjab Kings won by 5 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1775224800000,
-      "match_date": "Fri, 03 Apr 2026"
+      "match_date": "Fri, 03 Apr 2026",
+      "t1_h2h_wins": 16,
+      "t2_h2h_wins": 16,
+      "team1_rank": 6,
+      "team1_points": 10,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 46,
+      "team2_rank": 4,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 90
     },
     {
       "id": "149695",
@@ -134,7 +288,29 @@
       "status_text": "Delhi Capitals won by 6 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1775296800000,
-      "match_date": "Sat, 04 Apr 2026"
+      "match_date": "Sat, 04 Apr 2026",
+      "t1_h2h_wins": 10,
+      "t2_h2h_wins": 6,
+      "team1_rank": 10,
+      "team1_points": 6,
+      "team1_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
     },
     {
       "id": "149699",
@@ -151,7 +327,29 @@
       "status_text": "Rajasthan Royals won by 6 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1775311200000,
-      "match_date": "Sat, 04 Apr 2026"
+      "match_date": "Sat, 04 Apr 2026",
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 7,
+      "team1_rank": 5,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 67,
+      "team2_rank": 2,
+      "team2_points": 14,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "149710",
@@ -168,7 +366,29 @@
       "status_text": "Lucknow Super Giants won by 5 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1775383200000,
-      "match_date": "Sun, 05 Apr 2026"
+      "match_date": "Sun, 05 Apr 2026",
+      "t1_h2h_wins": 2,
+      "t2_h2h_wins": 5,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 9,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "149721",
@@ -185,7 +405,29 @@
       "status_text": "Royal Challengers Bengaluru won by 43 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1775397600000,
-      "match_date": "Sun, 05 Apr 2026"
+      "match_date": "Sun, 05 Apr 2026",
+      "t1_h2h_wins": 14,
+      "t2_h2h_wins": 21,
+      "team1_rank": 3,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 86,
+      "team2_rank": 6,
+      "team2_points": 10,
+      "team2_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 46
     },
     {
       "id": "149732",
@@ -202,7 +444,29 @@
       "status_text": "No result (due to rain)",
       "start_time": "07:30 PM",
       "start_epoch": 1775484000000,
-      "match_date": "Mon, 06 Apr 2026"
+      "match_date": "Mon, 06 Apr 2026",
+      "t1_h2h_wins": 21,
+      "t2_h2h_wins": 13,
+      "team1_rank": 8,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 20,
+      "team2_rank": 4,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 90
     },
     {
       "id": "149743",
@@ -219,7 +483,29 @@
       "status_text": "Rajasthan Royals won by 27 runs  -  11 overs game due to rain",
       "start_time": "07:30 PM",
       "start_epoch": 1775570400000,
-      "match_date": "Tue, 07 Apr 2026"
+      "match_date": "Tue, 07 Apr 2026",
+      "t1_h2h_wins": 15,
+      "t2_h2h_wins": 16,
+      "team1_rank": 5,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 67,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "149746",
@@ -236,7 +522,29 @@
       "status_text": "Gujarat Titans won by 1 run",
       "start_time": "07:30 PM",
       "start_epoch": 1775656800000,
-      "match_date": "Wed, 08 Apr 2026"
+      "match_date": "Wed, 08 Apr 2026",
+      "t1_h2h_wins": 5,
+      "t2_h2h_wins": 3,
+      "team1_rank": 2,
+      "team1_points": 14,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
     },
     {
       "id": "149757",
@@ -253,7 +561,29 @@
       "status_text": "Lucknow Super Giants won by 3 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1775743200000,
-      "match_date": "Thu, 09 Apr 2026"
+      "match_date": "Thu, 09 Apr 2026",
+      "t1_h2h_wins": 2,
+      "t2_h2h_wins": 5,
+      "team1_rank": 8,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 20,
+      "team2_rank": 9,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "149768",
@@ -270,7 +600,29 @@
       "status_text": "Rajasthan Royals won by 6 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1775829600000,
-      "match_date": "Fri, 10 Apr 2026"
+      "match_date": "Fri, 10 Apr 2026",
+      "t1_h2h_wins": 17,
+      "t2_h2h_wins": 15,
+      "team1_rank": 3,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 86,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 67
     },
     {
       "id": "149779",
@@ -287,7 +639,29 @@
       "status_text": "Punjab Kings won by 6 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1775901600000,
-      "match_date": "Sat, 11 Apr 2026"
+      "match_date": "Sat, 11 Apr 2026",
+      "t1_h2h_wins": 18,
+      "t2_h2h_wins": 8,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 4,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 90
     },
     {
       "id": "149790",
@@ -304,7 +678,29 @@
       "status_text": "Chennai Super Kings won by 23 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1775916000000,
-      "match_date": "Sat, 11 Apr 2026"
+      "match_date": "Sat, 11 Apr 2026",
+      "t1_h2h_wins": 9,
+      "t2_h2h_wins": 6,
+      "team1_rank": 6,
+      "team1_points": 10,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 46,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
     },
     {
       "id": "149801",
@@ -321,7 +717,29 @@
       "status_text": "Gujarat Titans won by 7 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1775988000000,
-      "match_date": "Sun, 12 Apr 2026"
+      "match_date": "Sun, 12 Apr 2026",
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 5,
+      "team1_rank": 9,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 2,
+      "team2_points": 14,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "149812",
@@ -338,7 +756,29 @@
       "status_text": "Royal Challengers Bengaluru won by 18 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1776002400000,
-      "match_date": "Sun, 12 Apr 2026"
+      "match_date": "Sun, 12 Apr 2026",
+      "t1_h2h_wins": 15,
+      "t2_h2h_wins": 19,
+      "team1_rank": 3,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 86,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "151752",
@@ -355,7 +795,29 @@
       "status_text": "Sunrisers Hyderabad won by 57 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1776088800000,
-      "match_date": "Mon, 13 Apr 2026"
+      "match_date": "Mon, 13 Apr 2026",
+      "t1_h2h_wins": 14,
+      "t2_h2h_wins": 9,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 67
     },
     {
       "id": "151763",
@@ -372,7 +834,29 @@
       "status_text": "Chennai Super Kings won by 32 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1776175200000,
-      "match_date": "Tue, 14 Apr 2026"
+      "match_date": "Tue, 14 Apr 2026",
+      "t1_h2h_wins": 21,
+      "t2_h2h_wins": 11,
+      "team1_rank": 6,
+      "team1_points": 10,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 46,
+      "team2_rank": 8,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 20
     },
     {
       "id": "151774",
@@ -389,7 +873,29 @@
       "status_text": "Royal Challengers Bengaluru won by 5 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1776261600000,
-      "match_date": "Wed, 15 Apr 2026"
+      "match_date": "Wed, 15 Apr 2026",
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 5,
+      "team1_rank": 9,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 3,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 86
     },
     {
       "id": "151785",
@@ -406,7 +912,29 @@
       "status_text": "Punjab Kings won by 7 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1776348000000,
-      "match_date": "Thu, 16 Apr 2026"
+      "match_date": "Thu, 16 Apr 2026",
+      "t1_h2h_wins": 17,
+      "t2_h2h_wins": 17,
+      "team1_rank": 10,
+      "team1_points": 6,
+      "team1_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 4,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 90
     },
     {
       "id": "151796",
@@ -423,7 +951,29 @@
       "status_text": "Gujarat Titans won by 5 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1776434400000,
-      "match_date": "Fri, 17 Apr 2026"
+      "match_date": "Fri, 17 Apr 2026",
+      "t1_h2h_wins": 1,
+      "t2_h2h_wins": 4,
+      "team1_rank": 8,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 20,
+      "team2_rank": 2,
+      "team2_points": 14,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "151807",
@@ -440,7 +990,29 @@
       "status_text": "Delhi Capitals won by 6 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1776506400000,
-      "match_date": "Sat, 18 Apr 2026"
+      "match_date": "Sat, 18 Apr 2026",
+      "t1_h2h_wins": 7,
+      "t2_h2h_wins": 7,
+      "team1_rank": 3,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 86,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
     },
     {
       "id": "151818",
@@ -457,7 +1029,29 @@
       "status_text": "Sunrisers Hyderabad won by 10 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1776520800000,
-      "match_date": "Sat, 18 Apr 2026"
+      "match_date": "Sat, 18 Apr 2026",
+      "t1_h2h_wins": 8,
+      "t2_h2h_wins": 15,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 6,
+      "team2_points": 10,
+      "team2_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 46
     },
     {
       "id": "151829",
@@ -474,7 +1068,29 @@
       "status_text": "Kolkata Knight Riders won by 4 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1776592800000,
-      "match_date": "Sun, 19 Apr 2026"
+      "match_date": "Sun, 19 Apr 2026",
+      "t1_h2h_wins": 12,
+      "t2_h2h_wins": 17,
+      "team1_rank": 5,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 67,
+      "team2_rank": 8,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 20
     },
     {
       "id": "151840",
@@ -491,7 +1107,29 @@
       "status_text": "Punjab Kings won by 54 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1776607200000,
-      "match_date": "Sun, 19 Apr 2026"
+      "match_date": "Sun, 19 Apr 2026",
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 3,
+      "team1_rank": 4,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 90,
+      "team2_rank": 9,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "151845",
@@ -508,7 +1146,29 @@
       "status_text": "Mumbai Indians won by 99 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1776693600000,
-      "match_date": "Mon, 20 Apr 2026"
+      "match_date": "Mon, 20 Apr 2026",
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 5,
+      "team1_rank": 10,
+      "team1_points": 6,
+      "team1_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 2,
+      "team2_points": 14,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "151856",
@@ -525,7 +1185,29 @@
       "status_text": "Sunrisers Hyderabad won by 47 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1776780000000,
-      "match_date": "Tue, 21 Apr 2026"
+      "match_date": "Tue, 21 Apr 2026",
+      "t1_h2h_wins": 6,
+      "t2_h2h_wins": 7,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
     },
     {
       "id": "151867",
@@ -542,7 +1224,29 @@
       "status_text": "Rajasthan Royals won by 40 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1776866400000,
-      "match_date": "Wed, 22 Apr 2026"
+      "match_date": "Wed, 22 Apr 2026",
+      "t1_h2h_wins": 5,
+      "t2_h2h_wins": 2,
+      "team1_rank": 5,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 67,
+      "team2_rank": 9,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "151878",
@@ -559,7 +1263,29 @@
       "status_text": "Chennai Super Kings won by 103 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1776952800000,
-      "match_date": "Thu, 23 Apr 2026"
+      "match_date": "Thu, 23 Apr 2026",
+      "t1_h2h_wins": 20,
+      "t2_h2h_wins": 21,
+      "team1_rank": 6,
+      "team1_points": 10,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 46,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "151889",
@@ -576,7 +1302,29 @@
       "status_text": "Royal Challengers Bengaluru won by 5 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777039200000,
-      "match_date": "Fri, 24 Apr 2026"
+      "match_date": "Fri, 24 Apr 2026",
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 4,
+      "team1_rank": 2,
+      "team1_points": 14,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 3,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 86
     },
     {
       "id": "151891",
@@ -593,7 +1341,29 @@
       "status_text": "Punjab Kings won by 6 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1777111200000,
-      "match_date": "Sat, 25 Apr 2026"
+      "match_date": "Sat, 25 Apr 2026",
+      "t1_h2h_wins": 7,
+      "t2_h2h_wins": 5,
+      "team1_rank": 7,
+      "team1_points": 8,
+      "team1_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 19,
+      "team2_rank": 4,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 90
     },
     {
       "id": "151902",
@@ -610,7 +1380,29 @@
       "status_text": "Sunrisers Hyderabad won by 5 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777125600000,
-      "match_date": "Sat, 25 Apr 2026"
+      "match_date": "Sat, 25 Apr 2026",
+      "t1_h2h_wins": 9,
+      "t2_h2h_wins": 14,
+      "team1_rank": 5,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 67,
+      "team2_rank": 1,
+      "team2_points": 14,
+      "team2_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "151913",
@@ -627,7 +1419,29 @@
       "status_text": "Gujarat Titans won by 8 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1777197600000,
-      "match_date": "Sun, 26 Apr 2026"
+      "match_date": "Sun, 26 Apr 2026",
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 5,
+      "team1_rank": 6,
+      "team1_points": 10,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 46,
+      "team2_rank": 2,
+      "team2_points": 14,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "151924",
@@ -644,7 +1458,29 @@
       "status_text": "Match tied (KKR won the Super Over)",
       "start_time": "07:30 PM",
       "start_epoch": 1777212000000,
-      "match_date": "Sun, 26 Apr 2026"
+      "match_date": "Sun, 26 Apr 2026",
+      "t1_h2h_wins": 2,
+      "t2_h2h_wins": 5,
+      "team1_rank": 8,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 20,
+      "team2_rank": 9,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "151935",
@@ -661,7 +1497,29 @@
       "status_text": "Royal Challengers Bengaluru won by 9 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777298400000,
-      "match_date": "Mon, 27 Apr 2026"
+      "match_date": "Mon, 27 Apr 2026",
+      "t1_h2h_wins": 7,
+      "t2_h2h_wins": 7,
+      "team1_rank": 7,
+      "team1_points": 8,
+      "team1_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 19,
+      "team2_rank": 3,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 86
     },
     {
       "id": "151943",
@@ -678,7 +1536,29 @@
       "status_text": "Rajasthan Royals won by 6 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777384800000,
-      "match_date": "Tue, 28 Apr 2026"
+      "match_date": "Tue, 28 Apr 2026",
+      "t1_h2h_wins": 12,
+      "t2_h2h_wins": 18,
+      "team1_rank": 4,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 90,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 67
     },
     {
       "id": "151954",
@@ -695,7 +1575,29 @@
       "status_text": "Sunrisers Hyderabad won by 6 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777471200000,
-      "match_date": "Wed, 29 Apr 2026"
+      "match_date": "Wed, 29 Apr 2026",
+      "t1_h2h_wins": 14,
+      "t2_h2h_wins": 11,
+      "team1_rank": 10,
+      "team1_points": 6,
+      "team1_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 1,
+      "team2_points": 14,
+      "team2_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "151965",
@@ -712,7 +1614,29 @@
       "status_text": "Gujarat Titans won by 4 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777557600000,
-      "match_date": "Thu, 30 Apr 2026"
+      "match_date": "Thu, 30 Apr 2026",
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 4,
+      "team1_rank": 3,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 86,
+      "team2_rank": 2,
+      "team2_points": 14,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "151976",
@@ -729,7 +1653,29 @@
       "status_text": "Delhi Capitals won by 7 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777644000000,
-      "match_date": "Fri, 01 May 2026"
+      "match_date": "Fri, 01 May 2026",
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 8,
+      "team1_rank": 5,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 67,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
     },
     {
       "id": "151987",
@@ -746,7 +1692,29 @@
       "status_text": "Chennai Super Kings won by 8 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777730400000,
-      "match_date": "Sat, 02 May 2026"
+      "match_date": "Sat, 02 May 2026",
+      "t1_h2h_wins": 21,
+      "t2_h2h_wins": 20,
+      "team1_rank": 10,
+      "team1_points": 6,
+      "team1_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 6,
+      "team2_points": 10,
+      "team2_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 46
     },
     {
       "id": "151998",
@@ -763,7 +1731,29 @@
       "status_text": "Kolkata Knight Riders won by 7 wkts",
       "start_time": "03:30 PM",
       "start_epoch": 1777802400000,
-      "match_date": "Sun, 03 May 2026"
+      "match_date": "Sun, 03 May 2026",
+      "t1_h2h_wins": 11,
+      "t2_h2h_wins": 20,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 8,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 20
     },
     {
       "id": "152009",
@@ -780,7 +1770,29 @@
       "status_text": "Gujarat Titans won by 4 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777816800000,
-      "match_date": "Sun, 03 May 2026"
+      "match_date": "Sun, 03 May 2026",
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 4,
+      "team1_rank": 4,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 90,
+      "team2_rank": 2,
+      "team2_points": 14,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "152020",
@@ -797,7 +1809,29 @@
       "status_text": "Mumbai Indians won by 6 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777903200000,
-      "match_date": "Mon, 04 May 2026"
+      "match_date": "Mon, 04 May 2026",
+      "t1_h2h_wins": 6,
+      "t2_h2h_wins": 3,
+      "team1_rank": 9,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "152031",
@@ -814,7 +1848,29 @@
       "status_text": "Chennai Super Kings won by 8 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1777989600000,
-      "match_date": "Tue, 05 May 2026"
+      "match_date": "Tue, 05 May 2026",
+      "t1_h2h_wins": 6,
+      "t2_h2h_wins": 9,
+      "team1_rank": 7,
+      "team1_points": 8,
+      "team1_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 19,
+      "team2_rank": 6,
+      "team2_points": 10,
+      "team2_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 46
     },
     {
       "id": "152042",
@@ -831,7 +1887,29 @@
       "status_text": "Sunrisers Hyderabad won by 33 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1778076000000,
-      "match_date": "Wed, 06 May 2026"
+      "match_date": "Wed, 06 May 2026",
+      "t1_h2h_wins": 18,
+      "t2_h2h_wins": 8,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 4,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 90
     },
     {
       "id": "152053",
@@ -848,7 +1926,29 @@
       "status_text": "LSG won by 9 runs (19 Overs game due to rain, DLS Target 213)",
       "start_time": "07:30 PM",
       "start_epoch": 1778162400000,
-      "match_date": "Thu, 07 May 2026"
+      "match_date": "Thu, 07 May 2026",
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 5,
+      "team1_rank": 9,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 3,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 86
     },
     {
       "id": "152064",
@@ -865,7 +1965,29 @@
       "status_text": "Kolkata Knight Riders won by 8 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1778248800000,
-      "match_date": "Fri, 08 May 2026"
+      "match_date": "Fri, 08 May 2026",
+      "t1_h2h_wins": 6,
+      "t2_h2h_wins": 7,
+      "team1_rank": 7,
+      "team1_points": 8,
+      "team1_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 19,
+      "team2_rank": 8,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 20
     },
     {
       "id": "152075",
@@ -882,7 +2004,29 @@
       "status_text": "Gujarat Titans won by 77 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1778335200000,
-      "match_date": "Sat, 09 May 2026"
+      "match_date": "Sat, 09 May 2026",
+      "t1_h2h_wins": 7,
+      "t2_h2h_wins": 3,
+      "team1_rank": 2,
+      "team1_points": 14,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 67
     },
     {
       "id": "152086",
@@ -899,7 +2043,29 @@
       "status_text": "Match starts at May 10, 10:00 GMT",
       "start_time": "03:30 PM",
       "start_epoch": 1778407200000,
-      "match_date": "Sun, 10 May 2026"
+      "match_date": "Sun, 10 May 2026",
+      "t1_h2h_wins": 2,
+      "t2_h2h_wins": 3,
+      "team1_rank": 6,
+      "team1_points": 10,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 46,
+      "team2_rank": 9,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "152097",
@@ -916,7 +2082,29 @@
       "status_text": "Match starts at May 10, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1778421600000,
-      "match_date": "Sun, 10 May 2026"
+      "match_date": "Sun, 10 May 2026",
+      "t1_h2h_wins": 15,
+      "t2_h2h_wins": 19,
+      "team1_rank": 3,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 86,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "152108",
@@ -933,7 +2121,29 @@
       "status_text": "Match starts at May 11, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1778508000000,
-      "match_date": "Mon, 11 May 2026"
+      "match_date": "Mon, 11 May 2026",
+      "t1_h2h_wins": 5,
+      "t2_h2h_wins": 7,
+      "team1_rank": 4,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 90,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
     },
     {
       "id": "152119",
@@ -950,7 +2160,29 @@
       "status_text": "Match starts at May 12, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1778594400000,
-      "match_date": "Tue, 12 May 2026"
+      "match_date": "Tue, 12 May 2026",
+      "t1_h2h_wins": 5,
+      "t2_h2h_wins": 1,
+      "team1_rank": 2,
+      "team1_points": 14,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 1,
+      "team2_points": 14,
+      "team2_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "152130",
@@ -967,7 +2199,29 @@
       "status_text": "Match starts at May 13, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1778680800000,
-      "match_date": "Wed, 13 May 2026"
+      "match_date": "Wed, 13 May 2026",
+      "t1_h2h_wins": 15,
+      "t2_h2h_wins": 20,
+      "team1_rank": 3,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 86,
+      "team2_rank": 8,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 20
     },
     {
       "id": "152141",
@@ -984,7 +2238,29 @@
       "status_text": "Match starts at May 14, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1778767200000,
-      "match_date": "Thu, 14 May 2026"
+      "match_date": "Thu, 14 May 2026",
+      "t1_h2h_wins": 17,
+      "t2_h2h_wins": 17,
+      "team1_rank": 4,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 90,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "152152",
@@ -1001,7 +2277,29 @@
       "status_text": "Match starts at May 15, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1778853600000,
-      "match_date": "Fri, 15 May 2026"
+      "match_date": "Fri, 15 May 2026",
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 2,
+      "team1_rank": 9,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 6,
+      "team2_points": 10,
+      "team2_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 46
     },
     {
       "id": "152163",
@@ -1018,7 +2316,29 @@
       "status_text": "Match starts at May 16, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1778940000000,
-      "match_date": "Sat, 16 May 2026"
+      "match_date": "Sat, 16 May 2026",
+      "t1_h2h_wins": 1,
+      "t2_h2h_wins": 4,
+      "team1_rank": 8,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 20,
+      "team2_rank": 2,
+      "team2_points": 14,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "152174",
@@ -1035,7 +2355,29 @@
       "status_text": "Match starts at May 17, 10:00 GMT",
       "start_time": "03:30 PM",
       "start_epoch": 1779012000000,
-      "match_date": "Sun, 17 May 2026"
+      "match_date": "Sun, 17 May 2026",
+      "t1_h2h_wins": 18,
+      "t2_h2h_wins": 19,
+      "team1_rank": 4,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 90,
+      "team2_rank": 3,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 86
     },
     {
       "id": "152185",
@@ -1052,7 +2394,29 @@
       "status_text": "Match starts at May 17, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779026400000,
-      "match_date": "Sun, 17 May 2026"
+      "match_date": "Sun, 17 May 2026",
+      "t1_h2h_wins": 8,
+      "t2_h2h_wins": 4,
+      "team1_rank": 7,
+      "team1_points": 8,
+      "team1_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 19,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 67
     },
     {
       "id": "152196",
@@ -1069,7 +2433,29 @@
       "status_text": "Match starts at May 18, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779112800000,
-      "match_date": "Mon, 18 May 2026"
+      "match_date": "Mon, 18 May 2026",
+      "t1_h2h_wins": 15,
+      "t2_h2h_wins": 8,
+      "team1_rank": 6,
+      "team1_points": 10,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 46,
+      "team2_rank": 1,
+      "team2_points": 14,
+      "team2_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "152207",
@@ -1086,7 +2472,29 @@
       "status_text": "Match starts at May 19, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779199200000,
-      "match_date": "Tue, 19 May 2026"
+      "match_date": "Tue, 19 May 2026",
+      "t1_h2h_wins": 5,
+      "t2_h2h_wins": 2,
+      "team1_rank": 5,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 67,
+      "team2_rank": 9,
+      "team2_points": 7,
+      "team2_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "152218",
@@ -1103,7 +2511,29 @@
       "status_text": "Match starts at May 20, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779285600000,
-      "match_date": "Wed, 20 May 2026"
+      "match_date": "Wed, 20 May 2026",
+      "t1_h2h_wins": 11,
+      "t2_h2h_wins": 25,
+      "team1_rank": 8,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 20,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 11
     },
     {
       "id": "152229",
@@ -1120,7 +2550,29 @@
       "status_text": "Match starts at May 21, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779372000000,
-      "match_date": "Thu, 21 May 2026"
+      "match_date": "Thu, 21 May 2026",
+      "t1_h2h_wins": 5,
+      "t2_h2h_wins": 4,
+      "team1_rank": 2,
+      "team1_points": 14,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 6,
+      "team2_points": 10,
+      "team2_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 46
     },
     {
       "id": "152240",
@@ -1137,7 +2589,29 @@
       "status_text": "Match starts at May 22, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779458400000,
-      "match_date": "Fri, 22 May 2026"
+      "match_date": "Fri, 22 May 2026",
+      "t1_h2h_wins": 13,
+      "t2_h2h_wins": 12,
+      "team1_rank": 1,
+      "team1_points": 14,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 3,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 86
     },
     {
       "id": "152241",
@@ -1154,7 +2628,29 @@
       "status_text": "Match starts at May 23, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779544800000,
-      "match_date": "Sat, 23 May 2026"
+      "match_date": "Sat, 23 May 2026",
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 4,
+      "team1_rank": 9,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "L",
+        "N",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 4,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 90
     },
     {
       "id": "152252",
@@ -1171,7 +2667,29 @@
       "status_text": "Match starts at May 24, 10:00 GMT",
       "start_time": "03:30 PM",
       "start_epoch": 1779616800000,
-      "match_date": "Sun, 24 May 2026"
+      "match_date": "Sun, 24 May 2026",
+      "t1_h2h_wins": 16,
+      "t2_h2h_wins": 15,
+      "team1_rank": 10,
+      "team1_points": 6,
+      "team1_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 11,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 67
     },
     {
       "id": "152263",
@@ -1188,7 +2706,29 @@
       "status_text": "Match starts at May 24, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779631200000,
-      "match_date": "Sun, 24 May 2026"
+      "match_date": "Sun, 24 May 2026",
+      "t1_h2h_wins": 7,
+      "t2_h2h_wins": 6,
+      "team1_rank": 8,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "W",
+        "N",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 20,
+      "team2_rank": 7,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 19
     },
     {
       "id": "155376",
@@ -1205,7 +2745,9 @@
       "status_text": "Match starts at May 26, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779804000000,
-      "match_date": "Tue, 26 May 2026"
+      "match_date": "Tue, 26 May 2026",
+      "t1_h2h_wins": 0,
+      "t2_h2h_wins": 0
     },
     {
       "id": "155387",
@@ -1222,7 +2764,9 @@
       "status_text": "Match starts at May 27, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779890400000,
-      "match_date": "Wed, 27 May 2026"
+      "match_date": "Wed, 27 May 2026",
+      "t1_h2h_wins": 0,
+      "t2_h2h_wins": 0
     },
     {
       "id": "155398",
@@ -1239,7 +2783,9 @@
       "status_text": "Match starts at May 29, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1780063200000,
-      "match_date": "Fri, 29 May 2026"
+      "match_date": "Fri, 29 May 2026",
+      "t1_h2h_wins": 0,
+      "t2_h2h_wins": 0
     },
     {
       "id": "155409",
@@ -1256,9 +2802,11 @@
       "status_text": "Match starts at May 31, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1780236000000,
-      "match_date": "Sun, 31 May 2026"
+      "match_date": "Sun, 31 May 2026",
+      "t1_h2h_wins": 0,
+      "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "10 May, 01:00 PM",
+  "last_updated": "10 May, 02:18 PM",
   "error": null
 }

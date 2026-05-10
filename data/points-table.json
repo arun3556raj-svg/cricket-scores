@@ -24,7 +24,9 @@
     "2026": {
       "season": 2026,
       "enhanced": true,
-      "source_note": "Includes provisional Cricbuzz results.",
+      "source_note": "League stage · Match 52 of 70 completed · archive + provisional Cricbuzz",
+      "completed_matches": 52,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Sunrisers Hyderabad",
@@ -44,7 +46,18 @@
           "provisional_matches": 0,
           "nrr": 0.737,
           "overs_for": "217.1",
-          "overs_against": "212.4"
+          "overs_against": "212.4",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 3,
+          "qualification_pct": 99
         },
         {
           "team": "Gujarat Titans",
@@ -64,7 +77,18 @@
           "provisional_matches": 1,
           "nrr": 0.228,
           "overs_for": "210.4",
-          "overs_against": "218"
+          "overs_against": "218",
+          "rank": 2,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 3,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bengaluru",
@@ -84,7 +108,18 @@
           "provisional_matches": 0,
           "nrr": 1.249,
           "overs_for": "175.1",
-          "overs_against": "192.4"
+          "overs_against": "192.4",
+          "rank": 3,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 4,
+          "qualification_pct": 86
         },
         {
           "team": "Punjab Kings",
@@ -104,7 +139,18 @@
           "provisional_matches": 0,
           "nrr": 0.571,
           "overs_for": "172",
-          "overs_against": "179.1"
+          "overs_against": "179.1",
+          "rank": 4,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 5,
+          "qualification_pct": 90
         },
         {
           "team": "Rajasthan Royals",
@@ -124,7 +170,18 @@
           "provisional_matches": 1,
           "nrr": 0.082,
           "overs_for": "200.3",
-          "overs_against": "208.2"
+          "overs_against": "208.2",
+          "rank": 5,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 3,
+          "qualification_pct": 67
         },
         {
           "team": "Chennai Super Kings",
@@ -144,7 +201,18 @@
           "provisional_matches": 0,
           "nrr": 0.151,
           "overs_for": "195.4",
-          "overs_against": "187.3"
+          "overs_against": "187.3",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 4,
+          "qualification_pct": 46
         },
         {
           "team": "Delhi Capitals",
@@ -164,7 +232,18 @@
           "provisional_matches": 1,
           "nrr": -1.154,
           "overs_for": "214.2",
-          "overs_against": "197.1"
+          "overs_against": "197.1",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 3,
+          "qualification_pct": 19
         },
         {
           "team": "Kolkata Knight Riders",
@@ -184,7 +263,18 @@
           "provisional_matches": 1,
           "nrr": -0.169,
           "overs_for": "172.2",
-          "overs_against": "178.5"
+          "overs_against": "178.5",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "W",
+            "N",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 5,
+          "qualification_pct": 20
         },
         {
           "team": "Lucknow Super Giants",
@@ -204,7 +294,18 @@
           "provisional_matches": 0,
           "nrr": -0.949,
           "overs_for": "198.5",
-          "overs_against": "188.4"
+          "overs_against": "188.4",
+          "rank": 9,
+          "last_5": [
+            "L",
+            "L",
+            "N",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 4,
+          "qualification_pct": 11
         },
         {
           "team": "Mumbai Indians",
@@ -224,14 +325,27 @@
           "provisional_matches": 0,
           "nrr": -0.649,
           "overs_for": "188.5",
-          "overs_against": "182.3"
+          "overs_against": "182.3",
+          "rank": 10,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 4,
+          "qualification_pct": 11
         }
       ]
     },
     "2025": {
       "season": 2025,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 70 of 70 completed · archive database",
+      "completed_matches": 70,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Punjab Kings",
@@ -251,7 +365,18 @@
           "provisional_matches": 0,
           "nrr": 0.392,
           "overs_for": "266.4",
-          "overs_against": "251.5"
+          "overs_against": "251.5",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "N",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bengaluru",
@@ -271,7 +396,18 @@
           "provisional_matches": 0,
           "nrr": 0.301,
           "overs_for": "243.5",
-          "overs_against": "247.5"
+          "overs_against": "247.5",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 1,
+          "qualification_pct": 99
         },
         {
           "team": "Gujarat Titans",
@@ -291,7 +427,18 @@
           "provisional_matches": 0,
           "nrr": 0.256,
           "overs_for": "271.5",
-          "overs_against": "275.2"
+          "overs_against": "275.2",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -311,7 +458,18 @@
           "provisional_matches": 0,
           "nrr": 1.141,
           "overs_for": "262.2",
-          "overs_against": "276.4"
+          "overs_against": "276.4",
+          "rank": 4,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Delhi Capitals",
@@ -331,7 +489,18 @@
           "provisional_matches": 0,
           "nrr": 0.011,
           "overs_for": "250.4",
-          "overs_against": "256.5"
+          "overs_against": "256.5",
+          "rank": 5,
+          "last_5": [
+            "N",
+            "N",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 1,
+          "qualification_pct": 59
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -351,7 +520,18 @@
           "provisional_matches": 0,
           "nrr": -0.241,
           "overs_for": "255.3",
-          "overs_against": "242.4"
+          "overs_against": "242.4",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "N",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 1,
+          "qualification_pct": 38
         },
         {
           "team": "Lucknow Super Giants",
@@ -371,7 +551,18 @@
           "provisional_matches": 0,
           "nrr": -0.376,
           "overs_for": "275.4",
-          "overs_against": "270.1"
+          "overs_against": "270.1",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Kolkata Knight Riders",
@@ -391,7 +582,18 @@
           "provisional_matches": 0,
           "nrr": -0.392,
           "overs_for": "228.4",
-          "overs_against": "248.5"
+          "overs_against": "248.5",
+          "rank": 8,
+          "last_5": [
+            "N",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 1,
+          "qualification_pct": 1
         },
         {
           "team": "Rajasthan Royals",
@@ -411,7 +613,18 @@
           "provisional_matches": 0,
           "nrr": -0.549,
           "overs_for": "273",
-          "overs_against": "275"
+          "overs_against": "275",
+          "rank": 9,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         },
         {
           "team": "Chennai Super Kings",
@@ -431,14 +644,27 @@
           "provisional_matches": 0,
           "nrr": -0.647,
           "overs_for": "278.2",
-          "overs_against": "261.2"
+          "overs_against": "261.2",
+          "rank": 10,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2024": {
       "season": 2024,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 67 of 70 completed · archive database",
+      "completed_matches": 67,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Kolkata Knight Riders",
@@ -458,7 +684,18 @@
           "provisional_matches": 0,
           "nrr": 1.428,
           "overs_for": "225",
-          "overs_against": "232.2"
+          "overs_against": "232.2",
+          "rank": 1,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 2,
+          "qualification_pct": 99
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -478,7 +715,18 @@
           "provisional_matches": 0,
           "nrr": 0.414,
           "overs_for": "247",
-          "overs_against": "256.3"
+          "overs_against": "256.3",
+          "rank": 2,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 1,
+          "qualification_pct": 99
         },
         {
           "team": "Rajasthan Royals",
@@ -498,7 +746,18 @@
           "provisional_matches": 0,
           "nrr": 0.273,
           "overs_for": "252.1",
-          "overs_against": "257.1"
+          "overs_against": "257.1",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 1,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bengaluru",
@@ -518,7 +777,18 @@
           "provisional_matches": 0,
           "nrr": 0.459,
           "overs_for": "269",
-          "overs_against": "270.1"
+          "overs_against": "270.1",
+          "rank": 4,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 53
         },
         {
           "team": "Chennai Super Kings",
@@ -538,7 +808,18 @@
           "provisional_matches": 0,
           "nrr": 0.392,
           "overs_for": "274.4",
-          "overs_against": "274.3"
+          "overs_against": "274.3",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 43
         },
         {
           "team": "Delhi Capitals",
@@ -558,7 +839,18 @@
           "provisional_matches": 0,
           "nrr": -0.377,
           "overs_for": "267",
-          "overs_against": "275.5"
+          "overs_against": "275.5",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 33
         },
         {
           "team": "Lucknow Super Giants",
@@ -578,7 +870,18 @@
           "provisional_matches": 0,
           "nrr": -0.667,
           "overs_for": "277.5",
-          "overs_against": "262.3"
+          "overs_against": "262.3",
+          "rank": 7,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 33
         },
         {
           "team": "Punjab Kings",
@@ -598,7 +901,18 @@
           "provisional_matches": 0,
           "nrr": -0.353,
           "overs_for": "274.3",
-          "overs_against": "277.3"
+          "overs_against": "277.3",
+          "rank": 8,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         },
         {
           "team": "Gujarat Titans",
@@ -618,7 +932,18 @@
           "provisional_matches": 0,
           "nrr": -1.063,
           "overs_for": "238.2",
-          "overs_against": "218.2"
+          "overs_against": "218.2",
+          "rank": 9,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 2,
+          "qualification_pct": 21
         },
         {
           "team": "Mumbai Indians",
@@ -638,14 +963,27 @@
           "provisional_matches": 0,
           "nrr": -0.318,
           "overs_for": "268.5",
-          "overs_against": "269.3"
+          "overs_against": "269.3",
+          "rank": 10,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2023": {
       "season": 2023,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 70 of 70 completed · archive database",
+      "completed_matches": 70,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Gujarat Titans",
@@ -665,7 +1003,18 @@
           "provisional_matches": 0,
           "nrr": 0.809,
           "overs_for": "268.1",
-          "overs_against": "279.2"
+          "overs_against": "279.2",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Chennai Super Kings",
@@ -685,7 +1034,18 @@
           "provisional_matches": 0,
           "nrr": 0.652,
           "overs_for": "254.3",
-          "overs_against": "257.5"
+          "overs_against": "257.5",
+          "rank": 2,
+          "last_5": [
+            "N",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 1,
+          "qualification_pct": 99
         },
         {
           "team": "Lucknow Super Giants",
@@ -705,7 +1065,18 @@
           "provisional_matches": 0,
           "nrr": 0.284,
           "overs_for": "255.2",
-          "overs_against": "259.3"
+          "overs_against": "259.3",
+          "rank": 3,
+          "last_5": [
+            "N",
+            "L",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 1,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -725,7 +1096,18 @@
           "provisional_matches": 0,
           "nrr": -0.044,
           "overs_for": "270.3",
-          "overs_against": "272.1"
+          "overs_against": "272.1",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Rajasthan Royals",
@@ -745,7 +1127,18 @@
           "provisional_matches": 0,
           "nrr": 0.148,
           "overs_for": "272.1",
-          "overs_against": "273.2"
+          "overs_against": "273.2",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -765,7 +1158,18 @@
           "provisional_matches": 0,
           "nrr": 0.135,
           "overs_for": "275.4",
-          "overs_against": "272.2"
+          "overs_against": "272.2",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Kolkata Knight Riders",
@@ -785,7 +1189,18 @@
           "provisional_matches": 0,
           "nrr": -0.244,
           "overs_for": "274.3",
-          "overs_against": "268"
+          "overs_against": "268",
+          "rank": 7,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Punjab Kings",
@@ -805,7 +1220,18 @@
           "provisional_matches": 0,
           "nrr": -0.299,
           "overs_for": "279.3",
-          "overs_against": "271.3"
+          "overs_against": "271.3",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         },
         {
           "team": "Delhi Capitals",
@@ -825,7 +1251,18 @@
           "provisional_matches": 0,
           "nrr": -0.808,
           "overs_for": "276",
-          "overs_against": "278.1"
+          "overs_against": "278.1",
+          "rank": 9,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -845,14 +1282,27 @@
           "provisional_matches": 0,
           "nrr": -0.59,
           "overs_for": "277.1",
-          "overs_against": "271.2"
+          "overs_against": "271.2",
+          "rank": 10,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2022": {
       "season": 2022,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 70 of 70 completed · archive database",
+      "completed_matches": 70,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Gujarat Titans",
@@ -872,7 +1322,18 @@
           "provisional_matches": 0,
           "nrr": 0.316,
           "overs_for": "278.1",
-          "overs_against": "273.5"
+          "overs_against": "273.5",
+          "rank": 1,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Rajasthan Royals",
@@ -892,7 +1353,18 @@
           "provisional_matches": 0,
           "nrr": 0.298,
           "overs_for": "279.2",
-          "overs_against": "275.5"
+          "overs_against": "275.5",
+          "rank": 2,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Lucknow Super Giants",
@@ -912,7 +1384,18 @@
           "provisional_matches": 0,
           "nrr": 0.251,
           "overs_for": "279.1",
-          "overs_against": "279.4"
+          "overs_against": "279.4",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -932,7 +1415,18 @@
           "provisional_matches": 0,
           "nrr": -0.253,
           "overs_for": "275.4",
-          "overs_against": "266.3"
+          "overs_against": "266.3",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Delhi Capitals",
@@ -952,7 +1446,18 @@
           "provisional_matches": 0,
           "nrr": 0.204,
           "overs_for": "266",
-          "overs_against": "278.5"
+          "overs_against": "278.5",
+          "rank": 5,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Punjab Kings",
@@ -972,7 +1477,18 @@
           "provisional_matches": 0,
           "nrr": 0.126,
           "overs_for": "270.1",
-          "overs_against": "263.3"
+          "overs_against": "263.3",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Kolkata Knight Riders",
@@ -992,7 +1508,18 @@
           "provisional_matches": 0,
           "nrr": 0.146,
           "overs_for": "268.1",
-          "overs_against": "276.1"
+          "overs_against": "276.1",
+          "rank": 7,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -1012,7 +1539,18 @@
           "provisional_matches": 0,
           "nrr": -0.379,
           "overs_for": "261.3",
-          "overs_against": "275.1"
+          "overs_against": "275.1",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         },
         {
           "team": "Chennai Super Kings",
@@ -1032,7 +1570,18 @@
           "provisional_matches": 0,
           "nrr": -0.203,
           "overs_for": "280",
-          "overs_against": "269.1"
+          "overs_against": "269.1",
+          "rank": 9,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         },
         {
           "team": "Mumbai Indians",
@@ -1052,14 +1601,27 @@
           "provisional_matches": 0,
           "nrr": -0.506,
           "overs_for": "273.2",
-          "overs_against": "272.5"
+          "overs_against": "272.5",
+          "rank": 10,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2021": {
       "season": 2021,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 56 of 70 completed · archive database",
+      "completed_matches": 56,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Delhi Capitals",
@@ -1079,7 +1641,18 @@
           "provisional_matches": 0,
           "nrr": 0.481,
           "overs_for": "267",
-          "overs_against": "278"
+          "overs_against": "278",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Chennai Super Kings",
@@ -1099,7 +1672,18 @@
           "provisional_matches": 0,
           "nrr": 0.455,
           "overs_for": "272",
-          "overs_against": "268.5"
+          "overs_against": "268.5",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -1119,7 +1703,18 @@
           "provisional_matches": 0,
           "nrr": -0.14,
           "overs_for": "273.4",
-          "overs_against": "268.1"
+          "overs_against": "268.1",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kolkata Knight Riders",
@@ -1139,7 +1734,18 @@
           "provisional_matches": 0,
           "nrr": 0.587,
           "overs_for": "259.5",
-          "overs_against": "274.5"
+          "overs_against": "274.5",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 53
         },
         {
           "team": "Mumbai Indians",
@@ -1159,7 +1765,18 @@
           "provisional_matches": 0,
           "nrr": 0.116,
           "overs_for": "265.5",
-          "overs_against": "271.1"
+          "overs_against": "271.1",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Punjab Kings",
@@ -1179,7 +1796,18 @@
           "provisional_matches": 0,
           "nrr": -0.001,
           "overs_for": "270.1",
-          "overs_against": "266"
+          "overs_against": "266",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Rajasthan Royals",
@@ -1199,7 +1827,18 @@
           "provisional_matches": 0,
           "nrr": -0.993,
           "overs_for": "276",
-          "overs_against": "259"
+          "overs_against": "259",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -1219,14 +1858,27 @@
           "provisional_matches": 0,
           "nrr": -0.545,
           "overs_for": "277.1",
-          "overs_against": "275.4"
+          "overs_against": "275.4",
+          "rank": 8,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2020": {
       "season": 2020,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 56 of 70 completed · archive database",
+      "completed_matches": 56,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Mumbai Indians",
@@ -1246,7 +1898,18 @@
           "provisional_matches": 0,
           "nrr": 1.107,
           "overs_for": "262.2",
-          "overs_against": "274.5"
+          "overs_against": "274.5",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -1266,7 +1929,18 @@
           "provisional_matches": 0,
           "nrr": 0.608,
           "overs_for": "269.3",
-          "overs_against": "277.5"
+          "overs_against": "277.5",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 93
         },
         {
           "team": "Delhi Capitals",
@@ -1286,7 +1960,18 @@
           "provisional_matches": 0,
           "nrr": -0.109,
           "overs_for": "278.5",
-          "overs_against": "273"
+          "overs_against": "273",
+          "rank": 3,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 88
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -1306,7 +1991,18 @@
           "provisional_matches": 0,
           "nrr": -0.172,
           "overs_for": "272.2",
-          "overs_against": "271"
+          "overs_against": "271",
+          "rank": 4,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 18
         },
         {
           "team": "Kolkata Knight Riders",
@@ -1326,7 +2022,18 @@
           "provisional_matches": 0,
           "nrr": -0.214,
           "overs_for": "278",
-          "overs_against": "269.1"
+          "overs_against": "269.1",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Kings XI Punjab",
@@ -1346,7 +2053,18 @@
           "provisional_matches": 0,
           "nrr": -0.162,
           "overs_for": "277.5",
-          "overs_against": "273.3"
+          "overs_against": "273.3",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Chennai Super Kings",
@@ -1366,7 +2084,18 @@
           "provisional_matches": 0,
           "nrr": -0.455,
           "overs_for": "274.3",
-          "overs_against": "269.4"
+          "overs_against": "269.4",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Rajasthan Royals",
@@ -1386,14 +2115,27 @@
           "provisional_matches": 0,
           "nrr": -0.569,
           "overs_for": "272.4",
-          "overs_against": "277"
+          "overs_against": "277",
+          "rank": 8,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2019": {
       "season": 2019,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 56 of 70 completed · archive database",
+      "completed_matches": 56,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Chennai Super Kings",
@@ -1413,7 +2155,18 @@
           "provisional_matches": 0,
           "nrr": 0.131,
           "overs_for": "274.1",
-          "overs_against": "274.5"
+          "overs_against": "274.5",
+          "rank": 1,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -1433,7 +2186,18 @@
           "provisional_matches": 0,
           "nrr": 0.442,
           "overs_for": "274.3",
-          "overs_against": "277.2"
+          "overs_against": "277.2",
+          "rank": 2,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "N",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Delhi Capitals",
@@ -1453,7 +2217,18 @@
           "provisional_matches": 0,
           "nrr": 0.024,
           "overs_for": "272.5",
-          "overs_against": "277.3"
+          "overs_against": "277.3",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -1473,7 +2248,18 @@
           "provisional_matches": 0,
           "nrr": 0.577,
           "overs_for": "269.2",
-          "overs_against": "277.5"
+          "overs_against": "277.5",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "N",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 23
         },
         {
           "team": "Kolkata Knight Riders",
@@ -1493,7 +2279,18 @@
           "provisional_matches": 0,
           "nrr": 0.028,
           "overs_for": "270.4",
-          "overs_against": "266.2"
+          "overs_against": "266.2",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Kings XI Punjab",
@@ -1513,7 +2310,18 @@
           "provisional_matches": 0,
           "nrr": -0.251,
           "overs_for": "276.3",
-          "overs_against": "277"
+          "overs_against": "277",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Rajasthan Royals",
@@ -1533,7 +2341,18 @@
           "provisional_matches": 0,
           "nrr": -0.47,
           "overs_for": "260.2",
-          "overs_against": "253.2"
+          "overs_against": "253.2",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "N",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -1553,14 +2372,27 @@
           "provisional_matches": 0,
           "nrr": -0.573,
           "overs_for": "263.4",
-          "overs_against": "257.5"
+          "overs_against": "257.5",
+          "rank": 8,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "N",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2018": {
       "season": 2018,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 56 of 70 completed · archive database",
+      "completed_matches": 56,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Sunrisers Hyderabad",
@@ -1580,7 +2412,18 @@
           "provisional_matches": 0,
           "nrr": 0.279,
           "overs_for": "273.4",
-          "overs_against": "278.4"
+          "overs_against": "278.4",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Chennai Super Kings",
@@ -1600,7 +2443,18 @@
           "provisional_matches": 0,
           "nrr": 0.253,
           "overs_for": "275.3",
-          "overs_against": "277.1"
+          "overs_against": "277.1",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kolkata Knight Riders",
@@ -1620,7 +2474,18 @@
           "provisional_matches": 0,
           "nrr": -0.053,
           "overs_for": "272.1",
-          "overs_against": "270"
+          "overs_against": "270",
+          "rank": 3,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Rajasthan Royals",
@@ -1640,7 +2505,18 @@
           "provisional_matches": 0,
           "nrr": -0.31,
           "overs_for": "267.2",
-          "overs_against": "254.4"
+          "overs_against": "254.4",
+          "rank": 4,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 48
         },
         {
           "team": "Mumbai Indians",
@@ -1660,7 +2536,18 @@
           "provisional_matches": 0,
           "nrr": 0.317,
           "overs_for": "278.4",
-          "overs_against": "277.3"
+          "overs_against": "277.3",
+          "rank": 5,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -1680,7 +2567,18 @@
           "provisional_matches": 0,
           "nrr": 0.129,
           "overs_for": "264.4",
-          "overs_against": "275.4"
+          "overs_against": "275.4",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Kings XI Punjab",
@@ -1700,7 +2598,18 @@
           "provisional_matches": 0,
           "nrr": -0.524,
           "overs_for": "268.4",
-          "overs_against": "265.5"
+          "overs_against": "265.5",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Delhi Daredevils",
@@ -1720,14 +2629,27 @@
           "provisional_matches": 0,
           "nrr": -0.127,
           "overs_for": "263.1",
-          "overs_against": "264.2"
+          "overs_against": "264.2",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2017": {
       "season": 2017,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 55 of 70 completed · archive database",
+      "completed_matches": 55,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Mumbai Indians",
@@ -1747,7 +2669,18 @@
           "provisional_matches": 0,
           "nrr": 0.784,
           "overs_for": "272.1",
-          "overs_against": "278.1"
+          "overs_against": "278.1",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Rising Pune Supergiant",
@@ -1767,7 +2700,18 @@
           "provisional_matches": 0,
           "nrr": 0.176,
           "overs_for": "271",
-          "overs_against": "275.1"
+          "overs_against": "275.1",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kolkata Knight Riders",
@@ -1787,7 +2731,18 @@
           "provisional_matches": 0,
           "nrr": 0.641,
           "overs_for": "260.5",
-          "overs_against": "277.3"
+          "overs_against": "277.3",
+          "rank": 3,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -1807,7 +2762,18 @@
           "provisional_matches": 0,
           "nrr": 0.599,
           "overs_for": "252",
-          "overs_against": "257.5"
+          "overs_against": "257.5",
+          "rank": 4,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 1,
+          "qualification_pct": 99
         },
         {
           "team": "Kings XI Punjab",
@@ -1827,7 +2793,18 @@
           "provisional_matches": 0,
           "nrr": -0.009,
           "overs_for": "261.2",
-          "overs_against": "263.4"
+          "overs_against": "263.4",
+          "rank": 5,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Delhi Daredevils",
@@ -1847,7 +2824,18 @@
           "provisional_matches": 0,
           "nrr": -0.512,
           "overs_for": "276.2",
-          "overs_against": "264"
+          "overs_against": "264",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Gujarat Lions",
@@ -1867,7 +2855,18 @@
           "provisional_matches": 0,
           "nrr": -0.412,
           "overs_for": "269.5",
-          "overs_against": "265"
+          "overs_against": "265",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -1887,14 +2886,27 @@
           "provisional_matches": 0,
           "nrr": -1.299,
           "overs_for": "260",
-          "overs_against": "242.1"
+          "overs_against": "242.1",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 1,
+          "qualification_pct": 1
         }
       ]
     },
     "2016": {
       "season": 2016,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 56 of 70 completed · archive database",
+      "completed_matches": 56,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Gujarat Lions",
@@ -1914,7 +2926,18 @@
           "provisional_matches": 0,
           "nrr": -0.374,
           "overs_for": "264.3",
-          "overs_against": "271.1"
+          "overs_against": "271.1",
+          "rank": 1,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -1934,7 +2957,18 @@
           "provisional_matches": 0,
           "nrr": 0.93,
           "overs_for": "271.2",
-          "overs_against": "268.3"
+          "overs_against": "268.3",
+          "rank": 2,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kolkata Knight Riders",
@@ -1954,7 +2988,18 @@
           "provisional_matches": 0,
           "nrr": 0.233,
           "overs_for": "253.2",
-          "overs_against": "265"
+          "overs_against": "265",
+          "rank": 3,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -1974,7 +3019,18 @@
           "provisional_matches": 0,
           "nrr": 0.192,
           "overs_for": "268.5",
-          "overs_against": "267.3"
+          "overs_against": "267.3",
+          "rank": 4,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -1994,7 +3050,18 @@
           "provisional_matches": 0,
           "nrr": -0.146,
           "overs_for": "272.2",
-          "overs_against": "267"
+          "overs_against": "267",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Delhi Daredevils",
@@ -2014,7 +3081,18 @@
           "provisional_matches": 0,
           "nrr": -0.181,
           "overs_for": "268.1",
-          "overs_against": "262.3"
+          "overs_against": "262.3",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Rising Pune Supergiants",
@@ -2034,7 +3112,18 @@
           "provisional_matches": 0,
           "nrr": -0.015,
           "overs_for": "253.3",
-          "overs_against": "259.1"
+          "overs_against": "259.1",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Kings XI Punjab",
@@ -2054,14 +3143,27 @@
           "provisional_matches": 0,
           "nrr": -0.648,
           "overs_for": "269.4",
-          "overs_against": "260.5"
+          "overs_against": "260.5",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2015": {
       "season": 2015,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 55 of 70 completed · archive database",
+      "completed_matches": 55,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Chennai Super Kings",
@@ -2081,7 +3183,18 @@
           "provisional_matches": 0,
           "nrr": 0.709,
           "overs_for": "273.3",
-          "overs_against": "274.1"
+          "overs_against": "274.1",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -2101,7 +3214,18 @@
           "provisional_matches": 0,
           "nrr": -0.043,
           "overs_for": "272.4",
-          "overs_against": "274.2"
+          "overs_against": "274.2",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -2121,7 +3245,18 @@
           "provisional_matches": 0,
           "nrr": 0.843,
           "overs_for": "192.2",
-          "overs_against": "228.2"
+          "overs_against": "228.2",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "N"
+          ],
+          "trend": 0,
+          "remaining": 1,
+          "qualification_pct": 97
         },
         {
           "team": "Rajasthan Royals",
@@ -2141,7 +3276,18 @@
           "provisional_matches": 0,
           "nrr": 0.062,
           "overs_for": "237.3",
-          "overs_against": "236.1"
+          "overs_against": "236.1",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 2,
+          "qualification_pct": 96
         },
         {
           "team": "Kolkata Knight Riders",
@@ -2161,7 +3307,18 @@
           "provisional_matches": 0,
           "nrr": 0.286,
           "overs_for": "236.1",
-          "overs_against": "248.4"
+          "overs_against": "248.4",
+          "rank": 5,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 1,
+          "qualification_pct": 82
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -2181,7 +3338,18 @@
           "provisional_matches": 0,
           "nrr": -0.212,
           "overs_for": "268.2",
-          "overs_against": "251.4"
+          "overs_against": "251.4",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Delhi Daredevils",
@@ -2201,7 +3369,18 @@
           "provisional_matches": 0,
           "nrr": 0.087,
           "overs_for": "270.2",
-          "overs_against": "249.2"
+          "overs_against": "249.2",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "N"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Kings XI Punjab",
@@ -2221,14 +3400,27 @@
           "provisional_matches": 0,
           "nrr": -1.436,
           "overs_for": "270",
-          "overs_against": "258.1"
+          "overs_against": "258.1",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2014": {
       "season": 2014,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 56 of 70 completed · archive database",
+      "completed_matches": 56,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Kings XI Punjab",
@@ -2248,7 +3440,18 @@
           "provisional_matches": 0,
           "nrr": 0.968,
           "overs_for": "268.3",
-          "overs_against": "276.1"
+          "overs_against": "276.1",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kolkata Knight Riders",
@@ -2268,7 +3471,18 @@
           "provisional_matches": 0,
           "nrr": 0.418,
           "overs_for": "264",
-          "overs_against": "276.3"
+          "overs_against": "276.3",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Chennai Super Kings",
@@ -2288,7 +3502,18 @@
           "provisional_matches": 0,
           "nrr": 0.256,
           "overs_for": "272",
-          "overs_against": "269"
+          "overs_against": "269",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -2308,7 +3533,18 @@
           "provisional_matches": 0,
           "nrr": 0.095,
           "overs_for": "271.3",
-          "overs_against": "273.3"
+          "overs_against": "273.3",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 48
         },
         {
           "team": "Rajasthan Royals",
@@ -2328,7 +3564,18 @@
           "provisional_matches": 0,
           "nrr": 0.06,
           "overs_for": "269.5",
-          "overs_against": "273"
+          "overs_against": "273",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -2348,7 +3595,18 @@
           "provisional_matches": 0,
           "nrr": -0.308,
           "overs_for": "263.4",
-          "overs_against": "270.1"
+          "overs_against": "270.1",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -2368,7 +3626,18 @@
           "provisional_matches": 0,
           "nrr": -0.428,
           "overs_for": "273.5",
-          "overs_against": "268"
+          "overs_against": "268",
+          "rank": 7,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Delhi Daredevils",
@@ -2388,14 +3657,27 @@
           "provisional_matches": 0,
           "nrr": -1.106,
           "overs_for": "274",
-          "overs_against": "251"
+          "overs_against": "251",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2013": {
       "season": 2013,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 72 of 70 completed · archive database",
+      "completed_matches": 72,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Chennai Super Kings",
@@ -2415,7 +3697,18 @@
           "provisional_matches": 0,
           "nrr": 0.53,
           "overs_for": "303.5",
-          "overs_against": "305.1"
+          "overs_against": "305.1",
+          "rank": 1,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -2435,7 +3728,18 @@
           "provisional_matches": 0,
           "nrr": 0.462,
           "overs_for": "317.2",
-          "overs_against": "315"
+          "overs_against": "315",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Rajasthan Royals",
@@ -2455,7 +3759,18 @@
           "provisional_matches": 0,
           "nrr": 0.322,
           "overs_for": "310.5",
-          "overs_against": "313.4"
+          "overs_against": "313.4",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Sunrisers Hyderabad",
@@ -2475,7 +3790,18 @@
           "provisional_matches": 0,
           "nrr": 0.003,
           "overs_for": "308.5",
-          "overs_against": "314.4"
+          "overs_against": "314.4",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -2495,7 +3821,18 @@
           "provisional_matches": 0,
           "nrr": 0.457,
           "overs_for": "301",
-          "overs_against": "303.1"
+          "overs_against": "303.1",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kings XI Punjab",
@@ -2515,7 +3852,18 @@
           "provisional_matches": 0,
           "nrr": 0.205,
           "overs_for": "305.2",
-          "overs_against": "312"
+          "overs_against": "312",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 94
         },
         {
           "team": "Kolkata Knight Riders",
@@ -2535,7 +3883,18 @@
           "provisional_matches": 0,
           "nrr": -0.095,
           "overs_for": "313.4",
-          "overs_against": "313.1"
+          "overs_against": "313.1",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Pune Warriors",
@@ -2555,7 +3914,18 @@
           "provisional_matches": 0,
           "nrr": -1.006,
           "overs_for": "318.4",
-          "overs_against": "310.5"
+          "overs_against": "310.5",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         },
         {
           "team": "Delhi Daredevils",
@@ -2575,14 +3945,27 @@
           "provisional_matches": 0,
           "nrr": -0.848,
           "overs_for": "314.5",
-          "overs_against": "306.4"
+          "overs_against": "306.4",
+          "rank": 9,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2012": {
       "season": 2012,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 70 of 70 completed · archive database",
+      "completed_matches": 70,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Delhi Daredevils",
@@ -2602,7 +3985,18 @@
           "provisional_matches": 0,
           "nrr": 0.617,
           "overs_for": "283.5",
-          "overs_against": "306"
+          "overs_against": "306",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kolkata Knight Riders",
@@ -2622,7 +4016,18 @@
           "provisional_matches": 0,
           "nrr": 0.561,
           "overs_for": "285.1",
-          "overs_against": "291.1"
+          "overs_against": "291.1",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -2642,7 +4047,18 @@
           "provisional_matches": 0,
           "nrr": -0.1,
           "overs_for": "312.3",
-          "overs_against": "312.2"
+          "overs_against": "312.2",
+          "rank": 3,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Chennai Super Kings",
@@ -2662,7 +4078,18 @@
           "provisional_matches": 0,
           "nrr": 0.1,
           "overs_for": "293.3",
-          "overs_against": "285.4"
+          "overs_against": "285.4",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -2682,7 +4109,18 @@
           "provisional_matches": 0,
           "nrr": -0.022,
           "overs_for": "296.2",
-          "overs_against": "299.3"
+          "overs_against": "299.3",
+          "rank": 5,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 94
         },
         {
           "team": "Kings XI Punjab",
@@ -2702,7 +4140,18 @@
           "provisional_matches": 0,
           "nrr": -0.216,
           "overs_for": "313.3",
-          "overs_against": "313.1"
+          "overs_against": "313.1",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 94
         },
         {
           "team": "Rajasthan Royals",
@@ -2722,7 +4171,18 @@
           "provisional_matches": 0,
           "nrr": 0.201,
           "overs_for": "316",
-          "overs_against": "309.3"
+          "overs_against": "309.3",
+          "rank": 7,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Deccan Chargers",
@@ -2742,7 +4202,18 @@
           "provisional_matches": 0,
           "nrr": -0.509,
           "overs_for": "298.4",
-          "overs_against": "291.3"
+          "overs_against": "291.3",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 1
         },
         {
           "team": "Pune Warriors",
@@ -2762,14 +4233,27 @@
           "provisional_matches": 0,
           "nrr": -0.551,
           "overs_for": "319.2",
-          "overs_against": "310"
+          "overs_against": "310",
+          "rank": 9,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2011": {
       "season": 2011,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 69 of 70 completed · archive database",
+      "completed_matches": 69,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Royal Challengers Bangalore",
@@ -2789,7 +4273,18 @@
           "provisional_matches": 0,
           "nrr": 0.38,
           "overs_for": "236.5",
-          "overs_against": "251.3"
+          "overs_against": "251.3",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 1,
+          "qualification_pct": 99
         },
         {
           "team": "Chennai Super Kings",
@@ -2809,7 +4304,18 @@
           "provisional_matches": 0,
           "nrr": 0.37,
           "overs_for": "275.1",
-          "overs_against": "262.1"
+          "overs_against": "262.1",
+          "rank": 2,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -2829,7 +4335,18 @@
           "provisional_matches": 0,
           "nrr": 0.04,
           "overs_for": "275.2",
-          "overs_against": "270.2"
+          "overs_against": "270.2",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kolkata Knight Riders",
@@ -2849,7 +4366,18 @@
           "provisional_matches": 0,
           "nrr": 0.411,
           "overs_for": "249.2",
-          "overs_against": "270.3"
+          "overs_against": "270.3",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kings XI Punjab",
@@ -2869,7 +4397,18 @@
           "provisional_matches": 0,
           "nrr": -0.046,
           "overs_for": "275.3",
-          "overs_against": "267.4"
+          "overs_against": "267.4",
+          "rank": 5,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Deccan Chargers",
@@ -2889,7 +4428,18 @@
           "provisional_matches": 0,
           "nrr": 0.222,
           "overs_for": "279.2",
-          "overs_against": "273.5"
+          "overs_against": "273.5",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Kochi Tuskers Kerala",
@@ -2909,7 +4459,18 @@
           "provisional_matches": 0,
           "nrr": -0.203,
           "overs_for": "256.2",
-          "overs_against": "260.4"
+          "overs_against": "260.4",
+          "rank": 7,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 8
         },
         {
           "team": "Rajasthan Royals",
@@ -2929,7 +4490,18 @@
           "provisional_matches": 0,
           "nrr": -0.691,
           "overs_for": "242.2",
-          "overs_against": "235.2"
+          "overs_against": "235.2",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 1,
+          "qualification_pct": 21
         },
         {
           "team": "Pune Warriors",
@@ -2949,7 +4521,18 @@
           "provisional_matches": 0,
           "nrr": -0.138,
           "overs_for": "247.3",
-          "overs_against": "254.1"
+          "overs_against": "254.1",
+          "rank": 9,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "N"
+          ],
+          "trend": 1,
+          "remaining": 1,
+          "qualification_pct": 1
         },
         {
           "team": "Delhi Daredevils",
@@ -2969,14 +4552,27 @@
           "provisional_matches": 0,
           "nrr": -0.448,
           "overs_for": "258.2",
-          "overs_against": "249.5"
+          "overs_against": "249.5",
+          "rank": 10,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "N"
+          ],
+          "trend": -1,
+          "remaining": 1,
+          "qualification_pct": 1
         }
       ]
     },
     "2010": {
       "season": 2010,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 56 of 70 completed · archive database",
+      "completed_matches": 56,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Mumbai Indians",
@@ -2996,7 +4592,18 @@
           "provisional_matches": 0,
           "nrr": 0.987,
           "overs_for": "277",
-          "overs_against": "272.3"
+          "overs_against": "272.3",
+          "rank": 1,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Deccan Chargers",
@@ -3016,7 +4623,18 @@
           "provisional_matches": 0,
           "nrr": -0.297,
           "overs_for": "277.4",
-          "overs_against": "275.4"
+          "overs_against": "275.4",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Chennai Super Kings",
@@ -3036,7 +4654,18 @@
           "provisional_matches": 0,
           "nrr": 0.268,
           "overs_for": "271.2",
-          "overs_against": "276.5"
+          "overs_against": "276.5",
+          "rank": 3,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 88
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -3056,7 +4685,18 @@
           "provisional_matches": 0,
           "nrr": 0.219,
           "overs_for": "260.4",
-          "overs_against": "277.3"
+          "overs_against": "277.3",
+          "rank": 4,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 48
         },
         {
           "team": "Delhi Daredevils",
@@ -3076,7 +4716,18 @@
           "provisional_matches": 0,
           "nrr": 0.127,
           "overs_for": "272.1",
-          "overs_against": "278"
+          "overs_against": "278",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Kolkata Knight Riders",
@@ -3096,7 +4747,18 @@
           "provisional_matches": 0,
           "nrr": -0.341,
           "overs_for": "273",
-          "overs_against": "267.3"
+          "overs_against": "267.3",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 38
         },
         {
           "team": "Rajasthan Royals",
@@ -3116,7 +4778,18 @@
           "provisional_matches": 0,
           "nrr": -0.514,
           "overs_for": "270.4",
-          "overs_against": "259.4"
+          "overs_against": "259.4",
+          "rank": 7,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Kings XI Punjab",
@@ -3136,14 +4809,27 @@
           "provisional_matches": 0,
           "nrr": -0.478,
           "overs_for": "276.2",
-          "overs_against": "271.1"
+          "overs_against": "271.1",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     },
     "2009": {
       "season": 2009,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 54 of 70 completed · archive database",
+      "completed_matches": 54,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Delhi Daredevils",
@@ -3163,7 +4849,18 @@
           "provisional_matches": 0,
           "nrr": 0.292,
           "overs_for": "255.2",
-          "overs_against": "268.5"
+          "overs_against": "268.5",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Chennai Super Kings",
@@ -3183,7 +4880,18 @@
           "provisional_matches": 0,
           "nrr": 0.933,
           "overs_for": "255.3",
-          "overs_against": "256.4"
+          "overs_against": "256.4",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 1,
+          "qualification_pct": 99
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -3203,7 +4911,18 @@
           "provisional_matches": 0,
           "nrr": -0.191,
           "overs_for": "276",
-          "overs_against": "273.2"
+          "overs_against": "273.2",
+          "rank": 3,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Deccan Chargers",
@@ -3223,7 +4942,18 @@
           "provisional_matches": 0,
           "nrr": 0.203,
           "overs_for": "272.4",
-          "overs_against": "278.1"
+          "overs_against": "278.1",
+          "rank": 4,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 48
         },
         {
           "team": "Kings XI Punjab",
@@ -3243,7 +4973,18 @@
           "provisional_matches": 0,
           "nrr": -0.396,
           "overs_for": "268",
-          "overs_against": "248.3"
+          "overs_against": "248.3",
+          "rank": 5,
+          "last_5": [
+            "W",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 33
         },
         {
           "team": "Rajasthan Royals",
@@ -3263,7 +5004,18 @@
           "provisional_matches": 0,
           "nrr": -0.344,
           "overs_for": "252.5",
-          "overs_against": "257.5"
+          "overs_against": "257.5",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 1,
+          "qualification_pct": 8
         },
         {
           "team": "Mumbai Indians",
@@ -3283,7 +5035,18 @@
           "provisional_matches": 0,
           "nrr": 0.164,
           "overs_for": "256.2",
-          "overs_against": "249"
+          "overs_against": "249",
+          "rank": 7,
+          "last_5": [
+            "W",
+            "W",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 1,
+          "qualification_pct": 8
         },
         {
           "team": "Kolkata Knight Riders",
@@ -3303,14 +5066,27 @@
           "provisional_matches": 0,
           "nrr": -0.679,
           "overs_for": "244.1",
-          "overs_against": "248.3"
+          "overs_against": "248.3",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 1,
+          "qualification_pct": 1
         }
       ]
     },
     "2008": {
       "season": 2008,
       "enhanced": false,
-      "source_note": "Official Cricsheet archive.",
+      "source_note": "League stage · Match 55 of 70 completed · archive database",
+      "completed_matches": 55,
+      "total_league_matches": 70,
       "rows": [
         {
           "team": "Rajasthan Royals",
@@ -3330,7 +5106,18 @@
           "provisional_matches": 0,
           "nrr": 0.632,
           "overs_for": "261",
-          "overs_against": "270.1"
+          "overs_against": "270.1",
+          "rank": 1,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Kings XI Punjab",
@@ -3350,7 +5137,18 @@
           "provisional_matches": 0,
           "nrr": 0.499,
           "overs_for": "259.4",
-          "overs_against": "268.5"
+          "overs_against": "268.5",
+          "rank": 2,
+          "last_5": [
+            "W",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Chennai Super Kings",
@@ -3370,7 +5168,18 @@
           "provisional_matches": 0,
           "nrr": -0.166,
           "overs_for": "264.2",
-          "overs_against": "265.1"
+          "overs_against": "265.1",
+          "rank": 3,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 0,
+          "qualification_pct": 99
         },
         {
           "team": "Mumbai Indians",
@@ -3390,7 +5199,18 @@
           "provisional_matches": 0,
           "nrr": 0.575,
           "overs_for": "249.1",
-          "overs_against": "269.4"
+          "overs_against": "269.4",
+          "rank": 4,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 53
         },
         {
           "team": "Delhi Daredevils",
@@ -3410,7 +5230,18 @@
           "provisional_matches": 0,
           "nrr": 0.354,
           "overs_for": "236.2",
-          "overs_against": "246.3"
+          "overs_against": "246.3",
+          "rank": 5,
+          "last_5": [
+            "L",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 1,
+          "qualification_pct": 87
         },
         {
           "team": "Kolkata Knight Riders",
@@ -3430,7 +5261,18 @@
           "provisional_matches": 0,
           "nrr": -0.125,
           "overs_for": "254.4",
-          "overs_against": "221.4"
+          "overs_against": "221.4",
+          "rank": 6,
+          "last_5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "W"
+          ],
+          "trend": 0,
+          "remaining": 1,
+          "qualification_pct": 38
         },
         {
           "team": "Royal Challengers Bangalore",
@@ -3450,7 +5292,18 @@
           "provisional_matches": 0,
           "nrr": -1.16,
           "overs_for": "272.4",
-          "overs_against": "261.3"
+          "overs_against": "261.3",
+          "rank": 7,
+          "last_5": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 1,
+          "remaining": 0,
+          "qualification_pct": 3
         },
         {
           "team": "Deccan Chargers",
@@ -3470,7 +5323,18 @@
           "provisional_matches": 0,
           "nrr": -0.472,
           "overs_for": "270.1",
-          "overs_against": "264.3"
+          "overs_against": "264.3",
+          "rank": 8,
+          "last_5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "trend": -1,
+          "remaining": 0,
+          "qualification_pct": 1
         }
       ]
     }
