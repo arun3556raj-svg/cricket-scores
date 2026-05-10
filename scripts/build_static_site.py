@@ -30,14 +30,14 @@ from scorecard import get_scorecard
 STATIC_CONFIG_SNIPPET = """
   <script>
     window.PITCH_CONFIG = {
-      mode: "static",
-      dataBasePath: "./data",
-      scorecardBasePath: "./data/scorecards",
-      archiveScorecardBasePath: "./data/archive-scorecards",
-      staticBasePath: "./static",
-      statsBuilderPath: "./data/stats-builder.json",
-      pointsTablePath: "./data/points-table.json",
-      assetManifestPath: "./data/asset-manifest.json"
+      mode: "api",
+      dataBasePath: "/data",
+      scorecardBasePath: "/data/scorecards",
+      archiveScorecardBasePath: "/data/archive-scorecards",
+      staticBasePath: "/static",
+      statsBuilderPath: "/data/stats-builder.json",
+      pointsTablePath: "/data/points-table.json",
+      assetManifestPath: "/data/asset-manifest.json"
     };
   </script>
 """.strip()
