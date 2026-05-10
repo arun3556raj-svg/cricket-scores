@@ -474,6 +474,126 @@ def merge_stats(stats: dict, provisional: list[dict], scorecards: dict[str, dict
     return merged
 
 
+
+def match_sort_key(match: dict) -> tuple:
+    return (
+        match.get("date", ""),
+        match.get("match_number") or 0,
+        str(match.get("id", "")),
+    )
+
+
+def result_for_team(match: dict, team: str) -> str:
+    winner = match.get("winner")
+    if winner == team:
+        return "W"
+    if winner and winner != team:
+        return "L"
+    return "N"
+
+
+def qualification_pct(points: int, played: int, nrr: float, rank: int, total_league_matches: int = 14) -> int:
+    remaining = max(0, total_league_matches - played)
+    max_points = points + remaining * 2
+    # Practical IPL heuristic: 16 is usually safe, 14 is bubble, 12 needs NRR/help.
+    if points >= 16:
+        base = 94
+    elif points >= 14:
+        base = 78
+    elif points >= 12:
+        base = 55
+    elif points >= 10:
+        base = 30
+    else:
+        base = 12
+    base += remaining * 4
+    if max_points < 14:
+        base = min(base, 8)
+    elif max_points == 14:
+        base = min(base, 38)
+    if rank <= 4:
+        base += 10
+    elif rank >= 8:
+        base -= 12
+    if nrr > 0.35:
+        base += 5
+    elif nrr < -0.35:
+        base -= 5
+    return max(1, min(99, round(base)))
+
+
+def enrich_points_rows(rows: list[dict], league_matches: list[dict]) -> list[dict]:
+    ordered = sorted(league_matches, key=match_sort_key)
+    for rank, row in enumerate(rows, start=1):
+        team = row["team"]
+        team_matches = [m for m in ordered if team in (m.get("team1"), m.get("team2"))]
+        last_5 = [result_for_team(m, team) for m in team_matches[-5:]]
+        prev_5 = [result_for_team(m, team) for m in team_matches[-10:-5]]
+        recent_wins = last_5.count("W")
+        prev_wins = prev_5.count("W") if prev_5 else recent_wins
+        row["rank"] = rank
+        row["last_5"] = last_5
+        row["trend"] = 1 if recent_wins > prev_wins else (-1 if recent_wins < prev_wins else 0)
+        row["remaining"] = max(0, 14 - int(row.get("played") or 0))
+        row["qualification_pct"] = qualification_pct(
+            int(row.get("points") or 0),
+            int(row.get("played") or 0),
+            float(row.get("nrr") or 0),
+            rank,
+        )
+    return rows
+
+
+def h2h_record(archive: dict, team1: str, team2: str) -> tuple[int, int]:
+    t1_wins = 0
+    t2_wins = 0
+    for match in archive.get("matches", []):
+        teams = {match.get("team1_short"), match.get("team2_short")}
+        if {team1, team2} != teams:
+            continue
+        winner = match.get("winner")
+        if winner == match.get("team1"):
+            winner_short = match.get("team1_short")
+        elif winner == match.get("team2"):
+            winner_short = match.get("team2_short")
+        else:
+            winner_short = None
+        if winner_short == team1:
+            t1_wins += 1
+        elif winner_short == team2:
+            t2_wins += 1
+    return t1_wins, t2_wins
+
+
+def add_match_intelligence(payload: dict, archive: dict, points_table: dict) -> dict:
+    enriched = json.loads(json.dumps(payload))
+    season = str((points_table.get("years") or [2026])[0])
+    rows = points_table.get("tables", {}).get(season, {}).get("rows", [])
+    standings = {row.get("team_short"): row for row in rows}
+
+    def enrich_match(match: dict) -> None:
+        t1 = match.get("team1_short")
+        t2 = match.get("team2_short")
+        if not t1 or not t2:
+            return
+        w1, w2 = h2h_record(archive, t1, t2)
+        match["t1_h2h_wins"] = w1
+        match["t2_h2h_wins"] = w2
+        for prefix, code in (("team1", t1), ("team2", t2)):
+            row = standings.get(code) or {}
+            if row:
+                match[f"{prefix}_rank"] = row.get("rank")
+                match[f"{prefix}_points"] = row.get("points")
+                match[f"{prefix}_last_5"] = row.get("last_5")
+                match[f"{prefix}_qualification_pct"] = row.get("qualification_pct")
+
+    for bucket in ("live", "upcoming", "finished"):
+        for match in enriched.get(bucket, []):
+            enrich_match(match)
+    for match in enriched.get("matches", []):
+        enrich_match(match)
+    return enriched
+
 def build_points_table(archive: dict) -> dict:
     tables: dict[str, dict] = {}
     for year in archive.get("years", []):
@@ -518,10 +638,15 @@ def build_points_table(archive: dict) -> dict:
 
         rows = [finalize_points_row(row) for row in standings.values()]
         rows.sort(key=lambda row: (-row["points"], -row["nrr"], -row["won"], row["team"]))
+        rows = enrich_points_rows(rows, league_matches)
+        completed = len(league_matches)
+        source = "archive + provisional Cricbuzz" if any(row["provisional_matches"] for row in rows) else "archive database"
         tables[str(year)] = {
             "season": year,
             "enhanced": year == 2026,
-            "source_note": "Includes provisional Cricbuzz results." if any(row["provisional_matches"] for row in rows) else "Official Cricsheet archive.",
+            "source_note": f"League stage · Match {completed} of 70 completed · {source}",
+            "completed_matches": completed,
+            "total_league_matches": 70,
             "rows": rows,
         }
     return {"years": archive.get("years", []), "tables": tables}
@@ -581,10 +706,11 @@ def main() -> None:
     combined_archive = merge_archive(official_archive, provisional)
     combined_stats = merge_stats(official_stats, provisional, scorecards)
     points_table = build_points_table(combined_archive)
-    combined_matches = augment_matches_payload(matches, provisional)
+    combined_matches = add_match_intelligence(augment_matches_payload(matches, provisional), combined_archive, points_table)
+    enriched_schedule = add_match_intelligence(schedule, combined_archive, points_table)
 
     write_json(DATA_DIR / "matches.json", combined_matches)
-    write_json(DATA_DIR / "schedule.json", schedule)
+    write_json(DATA_DIR / "schedule.json", enriched_schedule)
     write_json(DATA_DIR / "archive.json", combined_archive)
     write_json(DATA_DIR / "stats-builder.json", combined_stats)
     write_json(DATA_DIR / "points-table.json", points_table)
