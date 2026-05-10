@@ -4890,7 +4890,25 @@ function renderQualificationPointsView(rows) {
       + '<div><div style="font-size:8px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px">Last 5</div>' + formDots(row.last5) + '</div>'
       + '<div style="flex:1"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:8px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.1em">Pressure index</span><span style="font-size:8px;color:rgba(255,255,255,0.4);font-family:monospace">' + Math.round(row.pressureIndex || 0) + '/100</span></div>' + pressureBar(row.pressureIndex || 50) + '</div>'
       + '</div>'
-      + '<div style="background:linear-gradient(135deg,' + row.color + '0C,transparent);border:1px solid ' + row.color + '22;border-radius:8px;padding:9px 11px"><div style="font-size:8px;color:' + st.color + ';text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">Qualification scenario</div><div style="font-size:11px;color:rgba(255,255,255,0.75);line-height:1.55;margin-bottom:6px"><span style="color:' + st.color + ';font-weight:700">' + st.label + '</span> · ' + row.points + ' pts, ' + row.remaining + ' left, max ' + row.maxPts + '</div></div>'
+      + '<div style="background:linear-gradient(135deg,' + row.color + '0C,transparent);border:1px solid ' + row.color + '22;border-radius:8px;padding:9px 11px;margin-bottom:10px">'
+    + '<div style="font-size:8px;color:' + st.color + ';text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">' + st.label + ' scenario</div>'
+    + '<div style="font-size:11px;color:rgba(255,255,255,0.75);line-height:1.55;margin-bottom:8px">' + (function() {
+      var q = row.qualProb || 0;
+      var need = Math.max(0, Math.ceil((((row.points || 0) >= 16) ? 0 : 16 - (row.points || 0)) / 2));
+      if (row.eliminated || row.maxPts < 16) return 'Maximum ' + row.maxPts + ' pts. Needs 16 to have a chance. Season effectively over — ' + Math.round(q) + '% qualification probability.';
+      if (q >= 80) return 'Strong position at ' + row.points + ' pts with ' + row.remaining + ' matches left. Need ' + need + ' more win' + (need > 1 ? 's' : '') + ' to cross 16-pt threshold. NRR at ' + (row.nrr >= 0 ? '+' : '') + row.nrr.toFixed(3) + ' is ' + (row.nrr >= 0.3 ? 'very comfortable' : row.nrr >= 0 ? 'solid' : 'a concern') + '.';
+      if (q >= 50) return 'At ' + row.points + ' pts, ' + row.remaining + ' remaining. Need ' + need + ' more win' + (need > 1 ? 's' : '') + ' to reach 16. NRR at ' + (row.nrr >= 0 ? '+' : '') + row.nrr.toFixed(3) + ' — wins by good margins will help tiebreaker scenarios.';
+      if (q >= 25) return 'Danger zone: ' + row.points + ' pts, ' + row.remaining + ' left. Must win at least ' + need + ' of ' + row.remaining + '. NRR at ' + (row.nrr >= 0 ? '+' : '') + row.nrr.toFixed(3) + ' needs boosting.';
+      return 'Critical: ' + row.points + ' pts, ' + row.remaining + ' left. Maximum ' + row.maxPts + ' pts. Needs everything to go right — win all remaining AND hope other results swing.';
+    })() + '</div>'
+    + '<div style="display:inline-block;font-size:10px;font-weight:700;color:' + st.color + ';background:' + st.bg + ';border:1px solid ' + st.border + ';border-radius:6px;padding:4px 8px">'
+    + (function() {
+      var need = Math.max(0, Math.ceil((((row.points || 0) >= 16) ? 0 : 16 - (row.points || 0)) / 2));
+      if (row.eliminated || row.maxPts < 16) return 'Cannot qualify. Max ' + row.maxPts + ' pts.';
+      var target = Math.min(16 + need, row.maxPts);
+      return need + ' more win' + (need > 1 ? 's' : '') + ' from ' + row.remaining + ' = ' + target + ' pts. ' + (target >= 16 ? 'In contention.' : 'Likely not enough.');
+    })() + '</div>'
+    + '</div>'
       + '</div>'
       + '</div>';
   }
