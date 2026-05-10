@@ -3445,91 +3445,291 @@ function showTeamDetail(abbr) {
 // ================================================================
 
 let playersTeamFilter = 'all';
+let playersRoleFilter = 'all';
+let playersSortMode = 'runs';
+let playersSearch = '';
+
 
 function renderPlayersSection() {
   const el = $('playersSection');
   if (!el) return;
+  if (!statsData && !statsLoaded) { loadStatsBuilder().then(() => renderPlayersSection()); return; }
+  if (!statsData) return;
 
-  // Build player-team map from stats data (most recent year)
-  const playerTeamMap = {}; // playerName → teamAbbr
-  if (statsData) {
-    const latestYearMap = {}; // playerName → latestYear
-    for (const rec of [...(statsData.batting||[]), ...(statsData.bowling||[])]) {
-      if (!rec.p || !rec.t) continue;
-      const yr = Number(rec.y) || 0;
-      if (!latestYearMap[rec.p] || yr > latestYearMap[rec.p]) {
-        latestYearMap[rec.p] = yr;
-        playerTeamMap[rec.p] = rec.t;
-      }
-    }
-  }
-  // Also try manifest player_teams if available
-  const manifestTeams = assetManifest.player_teams || {};
-  Object.assign(playerTeamMap, manifestTeams);
-
-  // Build player run totals for sorting
-  const runMap = new Map();
-  if (statsData) {
-    for (const rec of (statsData.batting || [])) {
-      if (rec.p) runMap.set(rec.p, (runMap.get(rec.p) || 0) + (rec.ru || 0));
-    }
-  }
-
-  // Get players with images from manifest
-  const allPlayers = Object.entries(assetManifest.player_images || {});
-
-  // Filter by team
-  const filtered = playersTeamFilter === 'all'
-    ? allPlayers
-    : allPlayers.filter(([name]) => playerTeamMap[name] === playersTeamFilter);
-
-  // Sort by runs descending, then name
-  const sorted = filtered
-    .map(([name, path]) => ({ name, path, runs: runMap.get(name) || 0, team: playerTeamMap[name] || '' }))
-    .sort((a, b) => b.runs - a.runs || a.name.localeCompare(b.name));
-
+  const all = buildPlayerCardList();
+  const filtered = filterPlayerCardList(all);
   const teamTabs = ['all', ...TEAM_ORDER];
 
   el.innerHTML = `
-    <div class="ck-sec-head"><span class="ck-sec-title">IPL Players</span></div>
-    <!-- Team filter pills -->
-    <div class="team-filter-bar" style="display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;padding-bottom:10px;margin-bottom:16px">
-      ${teamTabs.map(abbr => {
+    <div class="players-v2">
+      <div class="ck-sec-head"><span class="ck-sec-title">IPL Players</span></div>
+      <div class="players-search-wrap">
+        <span class="players-search-icon">🔍</span>
+        <input class="players-search-input" type="text" placeholder="Search players..." value="${esc(playersSearch)}" oninput="setPlayersSearch(this.value)" autocomplete="off">
+      </div>
+      <div class="players-team-pills">${teamTabs.map(abbr => {
         const isAll = abbr === 'all';
+        const tcolor = isAll ? '#818cf8' : teamMeta(abbr).color;
         const isActive = playersTeamFilter === abbr;
-        const tcolor = isAll ? '#818cf8' : (teamMeta(abbr).color);
-        return `<button onclick="setPlayersTeamFilter('${abbr}')"
-          style="flex-shrink:0;padding:6px 14px;border-radius:20px;border:1px solid ${isActive ? tcolor : 'var(--cbd)'};background:${isActive ? tcolor+'22' : 'transparent'};color:${isActive ? tcolor : 'var(--ct3)'};font-size:12px;font-weight:600;cursor:pointer;font-family:var(--font);transition:all 0.15s;white-space:nowrap">
-          ${isAll ? 'All Teams' : esc(abbr)}
-        </button>`;
-      }).join('')}
-    </div>
-    ${sorted.length ? `
-    <div class="players-grid">
-      ${sorted.map(({ name, path, runs, team }) => {
-        const t = teamMeta(team || '');
-        const words = name.split(' ');
-        const initials = (words.length >= 2 ? words[0][0]+words[words.length-1][0] : name.slice(0,2)).toUpperCase();
-        const displayName = words[words.length - 1] || name; // Last name for brevity
-        const safeNameAttr = esc(name).replace(/"/g, '&quot;');
-        return `
-          <div class="player-card" onclick="showPlayerDetail(${JSON.stringify(name)})">
-            <div class="player-card-avatar" style="background:linear-gradient(135deg,${t.color}22,${t.color}0a)">
-              <img src="/${esc(path)}" alt="${esc(name)}" style="width:100%;height:100%;object-fit:cover;border-radius:50%"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span style="display:none;font-size:20px;font-weight:700;color:${t.color};width:100%;height:100%;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(135deg,${t.color}25,${t.color}10)">${esc(initials)}</span>
-            </div>
-            <div class="player-card-name">${esc(displayName)}</div>
-            ${team ? `<div style="font-size:10px;color:${t.color};font-weight:700">${esc(team)}</div>` : ''}
-            ${runs > 0 ? `<div style="font-size:10px;font-weight:600;color:var(--ct4)">${runs} <span style="font-weight:400">runs</span></div>` : ''}
-          </div>`;
-      }).join('')}
-    </div>` : `
-    <div style="text-align:center;padding:60px 20px">
-      <div style="font-size:32px;margin-bottom:12px">🏏</div>
-      <p style="color:var(--ct3);font-size:14px">No players found${playersTeamFilter !== 'all' ? ' for ' + playersTeamFilter : ''}.</p>
-      <p style="color:var(--ct4);font-size:12px;margin-top:6px">Run scripts/download_assets.py to download player images.</p>
-    </div>`}`;
+        return `<button type="button" class="players-team-pill ${isActive?'active':''}" onclick="setPlayersTeamFilter('${abbr}')" style="${isActive ? `--pill-color:${tcolor};background:${tcolor}18;border-color:${tcolor}35;color:${tcolor}` : ''}">${isAll ? 'All' : esc(abbr)}</button>`;
+      }).join('')}</div>
+      <div class="players-filter-row">
+        <select class="players-filter-select" onchange="setPlayersRoleFilter(this.value)">
+          <option value="all" ${playersRoleFilter==='all'?'selected':''}>All Roles</option>
+          <option value="batter" ${playersRoleFilter==='batter'?'selected':''}>Batter</option>
+          <option value="bowler" ${playersRoleFilter==='bowler'?'selected':''}>Bowler</option>
+          <option value="allrounder" ${playersRoleFilter==='allrounder'?'selected':''}>Allrounder</option>
+          <option value="wk" ${playersRoleFilter==='wk'?'selected':''}>WK</option>
+        </select>
+        <select class="players-filter-select" onchange="setPlayersSortMode(this.value)">
+          <option value="runs" ${playersSortMode==='runs'?'selected':''}>Most Runs</option>
+          <option value="wickets" ${playersSortMode==='wickets'?'selected':''}>Most Wickets</option>
+          <option value="avg" ${playersSortMode==='avg'?'selected':''}>Best Avg</option>
+          <option value="sr" ${playersSortMode==='sr'?'selected':''}>Best SR</option>
+        </select>
+      </div>
+      <div class="players-count">${filtered.length} player${filtered.length !== 1 ? 's' : ''}</div>
+      <div class="players-card-list">${filtered.map((pl, idx) => renderPlayerCard(pl, idx)).join('')}
+      </div>
+    </div>`;
+}
+
+// ── Player data builders ──
+
+function buildPlayerCardList() {
+  const players = Object.entries(assetManifest.player_images || {});
+  const teamMap = assetManifest.player_teams || {};
+  const result = [];
+
+  for (const [name, imgPath] of players) {
+    const team = teamMap[name] || '';
+    const t = teamMeta(team);
+    const stats = aggregatePlayerStats(name);
+    const role = detectPlayerRole(name, stats);
+    const impact = computePlayerImpact(role, stats);
+    const lastScores = getPlayerLastScores(name);
+    const lastForm = getPlayerLastForm(team);
+    const words = name.split(' ');
+    const initials = words.length >= 2 ? words[0][0] + words[words.length - 1][0] : name.slice(0, 2);
+    result.push({
+      name, imgPath, team, t, role, impact,
+      stats, lastScores, lastForm, initials,
+    });
+  }
+  return result;
+}
+
+function aggregatePlayerStats(fullName) {
+  const bat = { runs: 0, balls: 0, inns: 0, out: 0, fours: 0, sixes: 0, hs: 0, hsNotOut: false };
+  const bowl = { wickets: 0, balls: 0, runs: 0, inns: 0, dots: 0, md: 0, bestW: 0, bestR: 999 };
+  if (!statsData) return { batting: bat, bowling: bowl };
+  // Build name lookup key
+  const abbr = abbrName(fullName);
+  for (const rec of (statsData.batting || [])) {
+    if (!matchPlayerName(rec.p, fullName, abbr)) continue;
+    bat.runs += rec.ru || 0;
+    bat.balls += rec.b || 0;
+    bat.inns += 1;
+    if (rec.out) bat.out += 1;
+    bat.fours += rec.fo || 0;
+    bat.sixes += rec.si || 0;
+    if (rec.ru > bat.hs) { bat.hs = rec.ru; bat.hsNotOut = !rec.out; }
+  }
+  for (const rec of (statsData.bowling || [])) {
+    if (!matchPlayerName(rec.p, fullName, abbr)) continue;
+    bowl.wickets += rec.w || 0;
+    bowl.balls += rec.b || 0;
+    bowl.runs += rec.ru || 0;
+    bowl.inns += 1;
+    bowl.dots += rec.d || 0;
+    bowl.md += rec.md || 0;
+    if (rec.w > bowl.bestW || (rec.w === bowl.bestW && rec.ru < bowl.bestR)) {
+      bowl.bestW = rec.w; bowl.bestR = rec.ru;
+    }
+  }
+  return { batting: bat, bowling: bowl };
+}
+
+function abbrName(fullName) {
+  if (!fullName) return '';
+  const parts = fullName.trim().split(/\s+/);
+  if (parts.length < 2) return fullName.toLowerCase();
+  return parts[0][0].toUpperCase() + ' ' + parts[parts.length - 1];
+}
+
+function matchPlayerName(statsName, fullName, abbr) {
+  if (statsName === fullName || statsName === abbr) return true;
+  const a = statsName?.toLowerCase().replace(/[^a-z ]/g, '').trim();
+  const b = fullName?.toLowerCase().replace(/[^a-z ]/g, '').trim();
+  if (a === b) return true;
+  const c = abbr?.toLowerCase().replace(/[^a-z ]/g, '').trim();
+  return a === c;
+}
+
+const KNOWN_WK = new Set([
+  'MS Dhoni', 'KL Rahul', 'Rishabh Pant', 'Sanju Samson', 'Ishan Kishan',
+  'Dinesh Karthik', 'Jos Buttler', 'Jonny Bairstow', 'Quinton de Kock',
+  'Nicholas Pooran', 'Heinrich Klaasen', 'Wriddhiman Saha', 'Devon Conway',
+  'Phil Salt', 'Jitesh Sharma', 'Tom Banton', 'Sam Billings', 'Naman Dhir',
+  'Vishnu Vinod', 'Anuj Rawat', 'KS Bharat', 'Kona Srikar Bharat',
+  'Prabhsimran Singh', 'Matthew Wade', 'Rahul Tripathi', 'Glenn Maxwell'
+]);
+
+function detectPlayerRole(name, stats) {
+  const { batting: bat, bowling: bowl } = stats;
+  const hasBat = bat.inns > 0;
+  const hasBowl = bowl.inns > 0;
+  if (KNOWN_WK.has(name)) return 'wk';
+  if (hasBat && hasBowl) return 'allrounder';
+  if (hasBowl) return 'bowler';
+  return 'batter';
+}
+
+function computePlayerImpact(role, stats) {
+  const { batting: bat, bowling: bowl } = stats;
+  if (role === 'bowler' || role === 'allrounder') {
+    const econ = bowl.balls > 0 ? (bowl.runs * 6 / bowl.balls) : 999;
+    if (bowl.wickets > 12 && econ < 8.0) return 'high';
+    if (bowl.wickets > 7 || econ < 8.5) return 'medium';
+    return 'low';
+  }
+  if (role === 'batter' || role === 'wk') {
+    const sr = bat.balls > 0 ? (bat.runs * 100 / bat.balls) : 0;
+    if (bat.runs > 400 && sr > 145) return 'high';
+    if (bat.runs > 200 || sr > 135) return 'medium';
+    return 'low';
+  }
+  return 'low';
+}
+
+function getPlayerLastScores(fullName) {
+  if (!statsData) return [];
+  const abbr = abbrName(fullName);
+  const batRecords = (statsData.batting || [])
+    .filter(r => matchPlayerName(r.p, fullName, abbr))
+    .sort((a, b) => b.m - a.m)
+    .slice(0, 5)
+    .map(r => r.ru || 0);
+  if (batRecords.length >= 2) return batRecords;
+  const bowlRecords = (statsData.bowling || [])
+    .filter(r => matchPlayerName(r.p, fullName, abbr))
+    .sort((a, b) => b.m - a.m)
+    .slice(0, 5)
+    .map(r => r.w || 0);
+  return bowlRecords.length >= 2 ? bowlRecords : batRecords.length ? batRecords : [0,0,0,0,0];
+}
+
+function getPlayerLastForm(teamCode) {
+  if (!teamCode || !lastData?.finished) return [];
+  const matches = lastData.finished
+    .filter(m => m.team1_short === teamCode || m.team2_short === teamCode)
+    .slice(0, 5);
+  return matches.map(m => {
+    const isT1 = m.team1_short === teamCode;
+    const winner = String(m.winner || '');
+    return winner.includes(teamCode) || winner.includes(TEAM_FULL_NAMES[teamCode] || teamCode) ? 'W' : 'L';
+  }).filter(Boolean);
+}
+
+// ── Filter & sort ──
+
+function filterPlayerCardList(players) {
+  let filtered = players;
+  if (playersTeamFilter !== 'all') filtered = filtered.filter(p => p.team === playersTeamFilter);
+  if (playersSearch) {
+    const q = playersSearch.toLowerCase();
+    filtered = filtered.filter(p => p.name.toLowerCase().includes(q));
+  }
+  if (playersRoleFilter !== 'all') filtered = filtered.filter(p => p.role === playersRoleFilter);
+  const sortFns = {
+    runs: (a, b) => b.stats.batting.runs - a.stats.batting.runs || a.name.localeCompare(b.name),
+    wickets: (a, b) => b.stats.bowling.wickets - a.stats.bowling.wickets || a.name.localeCompare(b.name),
+    avg: (a, b) => {
+      const aAvg = a.stats.batting.out > 0 ? (a.stats.batting.runs / a.stats.batting.out) : 0;
+      const bAvg = b.stats.batting.out > 0 ? (b.stats.batting.runs / b.stats.batting.out) : 0;
+      return bAvg - aAvg || a.name.localeCompare(b.name);
+    },
+    sr: (a, b) => {
+      const aSr = a.stats.batting.balls > 0 ? (a.stats.batting.runs * 100 / a.stats.batting.balls) : 0;
+      const bSr = b.stats.batting.balls > 0 ? (b.stats.batting.runs * 100 / b.stats.batting.balls) : 0;
+      return bSr - aSr || a.name.localeCompare(b.name);
+    },
+  };
+  return filtered.sort(sortFns[playersSortMode] || sortFns.runs);
+}
+
+function setPlayersSearch(val) {
+  playersSearch = val;
+  renderPlayersSection();
+}
+function setPlayersRoleFilter(val) {
+  playersRoleFilter = val;
+  renderPlayersSection();
+}
+function setPlayersSortMode(val) {
+  playersSortMode = val;
+  renderPlayersSection();
+}
+
+// ── Player card rendering ──
+
+function renderPlayerCard(pl, idx) {
+  const { name, imgPath, team, t, role, impact, stats, lastScores, lastForm, initials } = pl;
+  const isBatter = role === 'batter' || role === 'wk';
+  const isBowler = role === 'bowler';
+  const primary = isBowler ? String(stats.bowling.wickets) : String(stats.batting.runs);
+  const primaryLabel = isBowler ? 'Wkts' : 'Runs';
+  const sr = stats.batting.balls > 0 ? (stats.batting.runs * 100 / stats.batting.balls).toFixed(1) : '—';
+  const avg = stats.batting.out > 0 ? (stats.batting.runs / stats.batting.out).toFixed(2) : '—';
+  const hs = stats.batting.hs > 0 ? (String(stats.batting.hs) + (stats.batting.hsNotOut ? '*' : '')) : '—';
+  const econ = stats.bowling.balls > 0 ? (stats.bowling.runs * 6 / stats.bowling.balls).toFixed(2) : '—';
+  const wkts = String(stats.bowling.wickets);
+  const bb = stats.bowling.bestW > 0 ? `${stats.bowling.bestW}/${stats.bowling.bestR}` : '—';
+
+  const impactMeta = { high: { icon: '🔥', label: 'High Impact' }, medium: { icon: '📈', label: 'Med Impact' }, low: { icon: '↓', label: 'Low Impact' } }[impact] || { icon: '↓', label: 'Low' };
+  const fullPath = imgPath.startsWith('http') ? imgPath : joinPath(STATIC_BASE_PATH, imgPath);
+
+  // stat cols by role
+  const statCols = isBowler
+    ? [{val: avg, label:'Avg'}, {val: econ, label:'Econ'}, {val: bb, label:'BB'}]
+    : [{val: avg, label:'Avg'}, {val: sr, label:'SR'}, {val: hs, label:'HS'}];
+
+  const imgId = `pi-${idx}`;
+
+  return `
+    <div class="player-card" onclick="showPlayerDetail(${esc(JSON.stringify(name))})" style="--player-color:${t.color}">
+      <div class="player-top-bar"></div>
+      <div class="player-inner">
+        <div class="player-top">
+          <div class="player-avatar" style="border-color:${t.color}30;background:${t.color}10">
+            <img src="${esc(fullPath)}" alt="${esc(name)}" id="${imgId}" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block"
+                 onerror="document.getElementById('${imgId}').style.display='none';document.getElementById('${imgId}f').style.display='flex'">
+            <span class="player-avatar-fallback" id="${imgId}f" style="display:none;background:${t.color}18;border-color:${t.color}30;color:${t.color}">${esc(initials)}</span>
+          </div>
+          <div class="player-info">
+            <div class="player-code-line"><span>${esc(team)}</span><span class="player-role-badge role-${role}">${esc(role === 'wk' ? 'WK' : role === 'allrounder' ? 'AR' : role === 'bowler' ? 'BOWL' : 'BAT')}</span><span class="player-impact impact-${impact}" title="${esc(impactMeta.label)}">${impactMeta.icon}</span></div>
+            <div class="player-name">${esc(name)}</div>
+            <div class="player-meta">${esc(String(stats.batting.inns + stats.bowling.inns))} matches${team ? ' · ' + esc(TEAM_FULL_NAMES[team] || team) : ''}</div>
+            <div class="player-primary-stat"><b>${esc(primary)}</b><span>${primaryLabel}</span></div>
+          </div>
+        </div>
+        <div class="player-stat-row">${statCols.map(col => `<div class="player-stat-col"><span class="player-stat-val">${esc(String(col.val))}</span><span class="player-stat-label">${esc(col.label)}</span></div>`).join('')}</div>
+        <div class="player-bottom">
+          <div class="player-form-pills">${lastForm.length ? lastForm.map(r => `<span class="player-form-pill ${r==='W'?'win':'loss'}">${esc(r)}</span>`).join('') : '<span class="player-form-empty">—</span>'}</div>
+          ${renderPlayerMiniBar(lastScores, t.color)}
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderPlayerMiniBar(scores, color) {
+  const data = scores.slice(0, 5);
+  const peak = Math.max(...data, 1);
+  return `<div class="player-minibar">${data.map((val, i) => {
+    const pct = Math.max(10, (val / peak) * 100);
+    const opacity = i === data.length - 1 ? '1' : '.5';
+    return `<i style="height:${pct.toFixed(0)}%;background:color-mix(in srgb,${color} ${parseFloat(opacity)*100}%,transparent)" title="${esc(String(val))}"></i>`;
+  }).join('')}</div>`;
 }
 
 function setPlayersTeamFilter(abbr) {
