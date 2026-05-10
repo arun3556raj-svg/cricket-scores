@@ -1998,9 +1998,7 @@ async function loadHeroScorecard(match) {
     const sc = await res.json();
     heroScorecardData = sc;
     heroMatchId = match.id;
-    // Re-render hero with ultra card (scorecard data merged into match object)
-    const el = $('heroInner');
-    if (el) el.innerHTML = liveCardCK(match);
+    // Scorecard data available for drawer — no hero overwrite needed (avoids flicker)
   } catch (_) { /* silently ignore — hero still shows without player data */ }
 }
 
