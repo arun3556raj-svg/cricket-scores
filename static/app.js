@@ -2301,7 +2301,12 @@ function loadLiveIntel(match) {
       // Re-render hero + grid
       var heroIn = document.getElementById('heroInner');
       if (heroIn && lastData.live.length > 0 && heroIn.innerHTML) {
-        updateLiveCard(lastData.live[0]);
+        // Check if batter section exists in DOM — if not, full render to create it
+        if (heroIn.innerHTML.indexOf('Current Batters') >= 0) {
+          updateLiveCard(lastData.live[0]);
+        } else {
+          heroIn.innerHTML = liveCardCK(lastData.live[0]);
+        }
       }
       var grid = document.getElementById('liveGrid');
       if (grid) grid.innerHTML = lastData.live.slice(1).map(liveCardCK).join('');
