@@ -840,7 +840,7 @@ function liveCardCK(m) {
   const reqBalls = ballsRem || null;
 
   // Batters
-  const activeBatters    = (m.batters || []).filter(function(b) { return b.is_active && (b.balls > 0 || b.runs > 0); }).slice(0, 2);
+  const activeBatters    = (m.batters || []).filter(function(b) { return b.is_active; }).slice(0, 2);
   const dismissedBatters = (m.batters || []).filter(function(b) { return !b.is_active && b.runs != null; });
 
   // Bowlers
@@ -913,16 +913,16 @@ function liveCardCK(m) {
     + '<div style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:0 14px">'
     + '<span style="font-size:10px;color:#374151;font-weight:700">vs</span>'
     + '<div style="width:1px;height:30px;background:#1f2937"></div>'
-    + (target ? '<div style="font-size:9px;color:#6b7280;text-align:center">Target<br><span style="font-size:15px;font-weight:800;color:#f9fafb">' + target + '</span></div>' : '')
+    + (target ? '<div style="font-size:9px;color:#6b7280;text-align:center">Target<br><span style="font-size:15px;font-weight:800;color:#f9fafb">' + target + '</span></div>' : '<div style="font-size:9px;color:#6b7280;text-align:center">1st Innings</div>')
     + '</div>'
-    // Fielding team
+    // Fielding team — always show score (completed for 1st inns, current for 2nd)
     + '<div style="flex:1;display:flex;flex-direction:column;align-items:flex-end;gap:4px">'
     + teamBadge(bowlCode, 48)
     + '<div style="font-size:11px;font-weight:600;color:' + bowlT.color + '">' + esc(bowlCode) + '</div>'
-    // Show opponent's score (1st innings total) in 2nd innings
-    + (innings === 2 && batScore1 ? '<div style="display:flex;align-items:baseline;gap:4px"><span style="font-size:22px;font-weight:700;color:#6b7280">' + (batScore1.runs || 0) + '</span><span style="font-size:13px;color:#6b7280">/' + (batScore1.wickets || 0) + '</span></div><div style="font-size:10px;color:#6b7280">' + esc(batScore1.detail || '') + '</div>' : '')
-    + '<div style="font-size:11px;color:#6b7280">CRR ' + crr.toFixed(2) + (rrr ? ' · RRR ' + rrr.toFixed(2) : '') + '</div>'
-    + (target ? '<div style="font-size:10px;color:#9ca3af">Need <span data-live="need">' + reqRuns + '</span> in <span data-live="need-balls">' + reqBalls + '</span> balls</div>' : '')
+    + '<div style="display:flex;align-items:baseline;gap:4px"><span data-live="opp-score" style="font-size:22px;font-weight:700;color:#6b7280">' + (innings === 2 && batScore1 ? (batScore1.runs || 0) : (batScore2 ? batScore2.runs || 0 : 0)) + '</span><span data-live="opp-wkts" style="font-size:13px;color:#6b7280">/' + (innings === 2 && batScore1 ? (batScore1.wickets || 0) : (batScore2 ? batScore2.wickets || 0 : 0)) + '</span></div>'
+    + '<div data-live="opp-ov" style="font-size:10px;color:#6b7280">' + (innings === 2 && batScore1 ? esc(batScore1.detail || '') : (batScore2 ? esc(batScore2.detail || '') : '—')) + '</div>'
+    + '<div style="font-size:11px;color:#6b7280">CRR <span data-live="crr">' + crr.toFixed(2) + '</span>' + (rrr ? ' · RRR <span data-live="rrr">' + rrr.toFixed(2) + '</span>' : '') + '</div>'
+    + '<div style="display:none" data-live="need-wrap">Need <span data-live="need">0</span> in <span data-live="need-balls">0</span> balls</div>'
     + '</div>'
     + '</div>'
 
@@ -930,8 +930,8 @@ function liveCardCK(m) {
     + (meta.toss ? '<div style="margin:10px 14px 0;padding:8px 12px;background:#0f172a;border-radius:8px;font-size:12px;color:#9ca3af;font-style:italic">' + esc(batCode) + (innings === 2 && target ? ' need <strong>' + reqRuns + ' runs</strong> in ' + reqBalls + ' balls' : '') + ' · ' + esc(meta.toss) + '</div>' : '')
 
     // ═══ CURRENT BATTERS ═══
-    + (activeBatters.length ? '<div style="padding:14px 14px"><div style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px">Current Batters</div>'
-    + activeBatters.map(function(b) {
+    + (activeBatters.filter(function(x){return x.balls>0||x.runs>0;}).length ? '<div style="padding:14px 14px"><div style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px">Current Batters</div>'
+    + activeBatters.filter(function(x){return x.balls>0||x.runs>0;}).map(function(b) {
       return '<div style="display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid #1f2937">'
         + '<div style="display:flex;align-items:center;gap:6px">'
         + (b.is_striker ? '<span style="width:6px;height:6px;border-radius:50%;background:' + batT.color + '"></span>' : '<span style="width:6px"></span>')
@@ -1049,26 +1049,63 @@ function liveCardCK(m) {
 
 function updateLiveCard(m) {
   if (!m) return;
+  var sb = m.score_block || {};
+  var meta = m.live_meta || {};
   var el;
-  if (el = document.querySelector('[data-live="score"]')) el.textContent = m.score_block ? m.score_block.score : (m.team1_score1 ? m.team1_score1.runs : 0);
-  if (el = document.querySelector('[data-live="wickets"]')) el.textContent = '/' + (m.score_block ? m.score_block.wickets : (m.team1_score1 ? m.team1_score1.wickets : 0));
-  if (el = document.querySelector('[data-live="overs"]')) el.textContent = m.score_block ? m.score_block.overs : (m.team1_score1 ? m.team1_score1.overs : 0);
-  if (el = document.querySelector('[data-live="crr"]')) el.textContent = (m.score_block ? m.score_block.crr : Number(m.run_rate) || 0).toFixed(2);
+  if (el = document.querySelector('[data-live="score"]')) el.textContent = sb.score || (m.team1_score1 ? m.team1_score1.runs : (m.team2_score1 ? m.team2_score1.runs : 0));
+  if (el = document.querySelector('[data-live="wickets"]')) el.textContent = '/' + (sb.wickets != null ? sb.wickets : (m.team1_score1 ? m.team1_score1.wickets : (m.team2_score1 ? m.team2_score1.wickets : 0)));
+  if (el = document.querySelector('[data-live="overs"]')) el.textContent = sb.overs || (m.team1_score1 ? m.team1_score1.overs : (m.team2_score1 ? m.team2_score1.overs : 0));
+  if (el = document.querySelector('[data-live="crr"]')) el.textContent = (sb.crr || Number(m.run_rate) || 0).toFixed(2);
   if (el = document.querySelector('[data-live="rrr"]')) {
-    var rrr = m.score_block ? m.score_block.rrr : null;
-    if (rrr != null) { el.textContent = rrr.toFixed(2); el.parentNode.style.display = ''; }
+    var rrrVal = sb.rrr;
+    if (rrrVal != null) { el.textContent = rrrVal.toFixed(2); el.parentNode ? (el.parentNode.style.display = '') : null; }
   }
+  // Update opponent score
+  if (el = document.querySelector('[data-live="opp-score"]')) {
+    var inns = meta.innings || 1;
+    var s1 = m.team1_score1, s2 = m.team2_score1;
+    if (inns === 2 && s1) el.textContent = s1.runs || 0;
+    else if (s2) el.textContent = s2.runs || 0;
+    else el.textContent = 0;
+  }
+  if (el = document.querySelector('[data-live="opp-wkts"]')) {
+    var inns2 = meta.innings || 1;
+    var s1b = m.team1_score1, s2b = m.team2_score1;
+    if (inns2 === 2 && s1b) el.textContent = '/' + (s1b.wickets || 0);
+    else if (s2b) el.textContent = '/' + (s2b.wickets || 0);
+  }
+  if (el = document.querySelector('[data-live="opp-ov"]')) {
+    var inns3 = meta.innings || 1;
+    var s1c = m.team1_score1, s2c = m.team2_score1;
+    if (inns3 === 2 && s1c) el.textContent = s1c.detail || '';
+    else if (s2c) el.textContent = s2c.detail || '';
+  }
+  // Win prob
   if (el = document.querySelector('[data-live="wp-bar"]')) {
     var wp = m.win_prob || {};
     el.style.width = (wp.batting_team || 50) + '%';
   }
   if (el = document.querySelector('[data-live="wp-bat"]')) {
     var wp2 = m.win_prob || {};
-    el.textContent = (m.live_meta ? m.live_meta.batting_team : '') + ' ' + (wp2.batting_team || 50) + '%';
+    el.textContent = (meta.batting_team || '') + ' ' + (wp2.batting_team || 0) + '%';
   }
   if (el = document.querySelector('[data-live="wp-bowl"]')) {
     var wp3 = m.win_prob || {};
-    el.textContent = (m.live_meta ? m.live_meta.fielding_team : '') + ' ' + (wp3.fielding_team || 50) + '%';
+    el.textContent = (meta.fielding_team || '') + ' ' + (wp3.fielding_team || 0) + '%';
+  }
+  // Need runs
+  if (el = document.querySelector('[data-live="need-wrap"]')) {
+    var tgt = sb.target;
+    var sc = sb.score || 0;
+    if (tgt) {
+      el.style.display = '';
+      var needEl = document.querySelector('[data-live="need"]');
+      var ballEl = document.querySelector('[data-live="need-balls"]');
+      if (needEl) needEl.textContent = Math.max(0, tgt - sc);
+      if (ballEl) ballEl.textContent = sb.balls_remaining || 0;
+    } else {
+      el.style.display = 'none';
+    }
   }
 }
 function ckScTab(matchId, tab, btn) {
