@@ -1140,6 +1140,7 @@ let pulseStatsData = null;
 let pulseStatsLoaded = false;
 let pulseArchiveData = null;
 let pulseArchiveLoaded = false;
+let pulseHeavyLoadQueued = false;
 
 // ── Broadcast-quality tournament pulse analysis ──────────────
 function tournamentPulseData() {
@@ -1282,16 +1283,6 @@ function tournamentPulseData() {
 function renderTournamentPulse() {
   const pulseEl = $('pulseGrid');
   if (!pulseEl) return;
-  
-  // Kick off lazy data loads
-  if (!pulseStatsLoaded) {
-    pulseStatsLoaded = true;
-    fetchJson(STATS_BUILDER_PATH).then(r => { if(r.ok) return r.json(); }).then(d => { pulseStatsData=d; renderTournamentPulse(); }).catch(()=>{});
-  }
-  if (!pulseArchiveLoaded) {
-    pulseArchiveLoaded = true;
-    fetchJson(getArchiveUrl()).then(r => { if(r.ok) return r.json(); }).then(d => { pulseArchiveData=d; renderTournamentPulse(); }).catch(()=>{});
-  }
 
   const pt = tournamentPulseData();
 
@@ -1326,6 +1317,48 @@ function renderTournamentPulse() {
         </div>
       </div>
     </div>`;
+}
+
+function loadTournamentPulseHeavyData() {
+  if (!pulseStatsLoaded) {
+    pulseStatsLoaded = true;
+    fetchJson(STATS_BUILDER_PATH)
+      .then(r => { if (r.ok) return r.json(); })
+      .then(d => { pulseStatsData = d; renderTournamentPulse(); })
+      .catch(() => {});
+  }
+  if (!pulseArchiveLoaded) {
+    pulseArchiveLoaded = true;
+    fetchJson(getArchiveUrl())
+      .then(r => { if (r.ok) return r.json(); })
+      .then(d => { pulseArchiveData = d; renderTournamentPulse(); })
+      .catch(() => {});
+  }
+}
+
+function queueTournamentPulseHeavyLoad() {
+  if (pulseHeavyLoadQueued || (pulseStatsLoaded && pulseArchiveLoaded)) return;
+  const section = $('tournamentPulse');
+  if (!section) return;
+  pulseHeavyLoadQueued = true;
+
+  const start = () => {
+    const run = () => loadTournamentPulseHeavyData();
+    if ('requestIdleCallback' in window) requestIdleCallback(run, { timeout: 3500 });
+    else setTimeout(run, 1800);
+  };
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      observer.disconnect();
+      start();
+    }, { rootMargin: '160px 0px' });
+    observer.observe(section);
+    return;
+  }
+
+  start();
 }
 
 function matchesDoneCard(pt) {
@@ -1687,7 +1720,7 @@ function applyFilter(data) {
 
   // Tournament Pulse — home only
   const showPulse = f === 'all';
-  if (showPulse) { show('tournamentPulse'); renderTournamentPulse(); }
+  if (showPulse) { show('tournamentPulse'); renderTournamentPulse(); queueTournamentPulseHeavyLoad(); }
   else hide('tournamentPulse');
 
   // Schedule
@@ -1781,8 +1814,7 @@ function render(data) {
   // Upcoming preview — always shown on home when there are upcoming matches
   renderUpcomingPreview(data.upcoming);
 
-  // Tournament Pulse — kick off data loading early
-  renderTournamentPulse();
+  // Tournament Pulse renders only when Home tab is active; heavy data lazy-loads near viewport.
 
   // Live grid (remaining after hero) — Crickly cards
   $('liveGrid').innerHTML = data.live.slice(1).map(liveCardCK).join('');
