@@ -5,10 +5,10 @@
       "bowl_team": "Royal Challengers Bengaluru",
       "innings_id": 1,
       "score": {
-        "runs": 132,
-        "wickets": 5,
-        "overs": 15.5,
-        "run_rate": 8.34,
+        "runs": 166,
+        "wickets": 7,
+        "overs": 20,
+        "run_rate": 8.3,
         "declared": false
       },
       "extras": {
@@ -69,12 +69,12 @@
         },
         {
           "name": "Tilak Varma",
-          "runs": 45,
-          "balls": 35,
-          "fours": 1,
+          "runs": 57,
+          "balls": 42,
+          "fours": 3,
           "sixes": 2,
-          "strike_rate": 128.57,
-          "out_desc": "batting",
+          "strike_rate": 135.71,
+          "out_desc": "b Bhuvneshwar Kumar",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -93,39 +93,39 @@
         },
         {
           "name": "Raj Bawa",
-          "runs": 0,
-          "balls": 3,
-          "fours": 0,
+          "runs": 16,
+          "balls": 14,
+          "fours": 1,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "batting",
+          "strike_rate": 114.29,
+          "out_desc": "c Rajat Patidar b Josh Hazlewood",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Corbin Bosch",
-          "runs": 0,
-          "balls": 0,
+          "runs": 5,
+          "balls": 5,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 100,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Deepak Chahar",
-          "runs": 0,
-          "balls": 0,
+          "runs": 1,
+          "balls": 2,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 50,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Jasprit Bumrah",
@@ -155,48 +155,48 @@
       "bowlers": [
         {
           "name": "Bhuvneshwar Kumar",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 17,
-          "wickets": 3,
-          "economy": 5.7,
+          "runs": 23,
+          "wickets": 4,
+          "economy": 5.8,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Josh Hazlewood",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 27,
-          "wickets": 0,
-          "economy": 9,
+          "runs": 33,
+          "wickets": 1,
+          "economy": 8.2,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Rasikh Salam Dar",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 24,
+          "runs": 42,
           "wickets": 1,
-          "economy": 12,
+          "economy": 10.5,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Romario Shepherd",
-          "overs": 2.5,
-          "balls": 17,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 14,
+          "runs": 18,
           "wickets": 1,
-          "economy": 4.9,
+          "economy": 6,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -256,6 +256,205 @@
           "runs": 132,
           "over": 15.2,
           "wkt_n": 5
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 155,
+          "over": 17.6,
+          "wkt_n": 6
+        },
+        {
+          "name": "Raj Bawa",
+          "runs": 161,
+          "over": 18.6,
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 2,
+      "score": {
+        "runs": 10,
+        "wickets": 1,
+        "overs": 0.4,
+        "run_rate": 15,
+        "declared": false
+      },
+      "extras": {
+        "total": 1,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Jacob Bethell",
+          "runs": 9,
+          "balls": 3,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 300,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Virat Kohli",
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Raj Bawa b Deepak Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rajat Patidar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jitesh Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": true
+        },
+        {
+          "name": "Tim David",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Romario Shepherd",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Krunal Pandya",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Bhuvneshwar Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Josh Hazlewood",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Suyash Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rasikh Salam Dar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Deepak Chahar",
+          "overs": 0.4,
+          "balls": 4,
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 1,
+          "economy": 15,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Virat Kohli",
+          "runs": 10,
+          "over": 0.4,
+          "wkt_n": 1
         }
       ]
     }
