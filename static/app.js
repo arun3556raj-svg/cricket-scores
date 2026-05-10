@@ -2061,6 +2061,7 @@ function setFilter(f) {
   } else if (f === 'points') {
     if (!pointsLoaded) loadPointsTable();
     else if (pointsData) renderPointsTable(pointsData);
+    if (!scheduleData && !scheduleLoaded) loadSchedule();
   } else if (f === 'stats') {
     if (!statsLoaded) loadStatsBuilder();
     else if (statsData) renderStatsBuilder();
@@ -4712,24 +4713,27 @@ function renderExpandedFixtures(row) {
   var code = row.team_short;
   var html = '<div class="pt-fixtures">';
 
-  // Upcoming fixtures
-  var fixtures = row.remainingFixtures ? row.remainingFixtures : [];
-  if (fixtures.length) {
-    html += '<div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px">Upcoming</div>';
-    html += fixtures.map(function(c) { return renderFixtureRow(c); }).join('');
+  // Load schedule data if not already loaded
+  if (!scheduleData && !scheduleLoaded) { loadSchedule(); }
+
+  // Get all matches from schedule (53 finished) + lastData.finished as fallback
+  var allMatches = [];
+  if (scheduleData && scheduleData.matches) {
+    allMatches = scheduleData.matches;
+  } else if (lastData && lastData.finished) {
+    allMatches = lastData.finished;
   }
 
-  // All previous results from lastData.finished
-  var allResults = [];
-  if (lastData && lastData.finished) {
-    allResults = lastData.finished.filter(function(m) {
-      return m.team1_short === code || m.team2_short === code;
-    });
-  }
+  // Filter matches for this team
+  var myResults = allMatches.filter(function(m) {
+    return m.team1_short === code || m.team2_short === code;
+  });
 
-  if (allResults.length) {
-    html += '<div style="margin-top:10px;font-size:9px;font-weight:700;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px">Previous</div>';
-    html += allResults.map(function(m) {
+  // Previous results (finished matches)
+  var prevResults = myResults.filter(function(m) { return m.status === 'finished' || m.status === 'completed'; });
+  if (prevResults.length) {
+    html += '<div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px">Previous</div>';
+    html += prevResults.map(function(m) {
       var isT1 = m.team1_short === code;
       var opp = isT1 ? m.team2_short : m.team1_short;
       var won = isT1
@@ -4745,6 +4749,14 @@ function renderExpandedFixtures(row) {
         + '<span style="font-size:10px;font-weight:' + (won ? '700' : '400') + ';color:' + (won ? '#22C55E' : '#F87171') + '">' + (won ? margin : (margin || 'Lost')) + '</span>'
         + '</div>';
     }).join('');
+  }
+
+  // Upcoming fixtures
+  var upcomingFixtures = myResults.filter(function(m) { return m.status === 'upcoming' || m.status === 'live'; });
+  var remainingCodes = row.remainingFixtures ? row.remainingFixtures : [];
+  if (!upcomingFixtures.length && remainingCodes.length) {
+    html += '<div style="margin-top:10px;font-size:9px;font-weight:700;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px">Upcoming</div>';
+    html += remainingCodes.map(function(c) { return renderFixtureRow(c); }).join('');
   }
 
   html += '</div>';
