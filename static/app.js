@@ -808,145 +808,309 @@ function liveCardCK(m) {
   const isResult = m.status === 'finished';
 
   if (isLive) {
-    const battingIsT1 = !!m.team1_score1 || !m.team2_score1;
-    const batCode = battingIsT1 ? m.team1_short : m.team2_short;
-    const bowlCode = battingIsT1 ? m.team2_short : m.team1_short;
-    const batT = battingIsT1 ? t1 : t2;
-    const bowlT = battingIsT1 ? t2 : t1;
-    const batScore = battingIsT1 ? m.team1_score1 : m.team2_score1;
-    const bowlTeam = battingIsT1 ? m.team2_score1 : m.team1_score1;
-    const crr = Number(m.run_rate) || 0;
-    const overs = batScore ? Number(batScore.overs) || 0 : 0;
-    const wickets = batScore ? Number(batScore.wickets) || 0 : 0;
-    const score = batScore ? Number(batScore.runs) || 0 : 0;
-    const proj = liveProjection(score, overs, wickets, crr);
-    const wp = liveWinProb(score, overs, wickets, crr, null, null, 1);
-    const mom = liveMomentum(m.last_6_balls);
-    const pres = livePressure(1, overs, wickets, crr, null, null, score);
-    const ballTimeline = (m.ball_timeline || m.last_6_balls) ? { this_over: (m.ball_timeline?.this_over || m.last_6_balls || []).slice(0,6), last_over: (m.ball_timeline?.last_over || []) } : null;
-    const batColor = batT.color;
-    const bowlColor = bowlT.color;
-    const lastWkt = esc(m.last_wicket || m.status_text || '');
-    const meta = m.match_desc || m.series || '';
-    const venue = m.venue ? m.venue.split(',')[0] : '';
-    return `
-      <div class="live-ultra-panel" onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
-        <div class="live-ultra-top" style="background:linear-gradient(135deg,${batColor}22,${bowlColor}11)">
-          <div class="live-ultra-head">
-            <div class="live-ultra-pulse"><span></span><span></span></div>
-            <div class="live-ultra-meta"><span class="live-ultra-tag">${esc(meta)}</span>${venue ? '<span class="live-ultra-venue">'+esc(venue)+'</span>' : ''}</div>
-            <div class="live-ultra-chips"><span class="live-chip-crr">CRR ${crr.toFixed(2)}</span>${proj ? '<span class="live-chip-proj">PROJ '+proj.projected_score+'</span>' : ''}</div>
-          </div>
-          <div class="live-ultra-scores">
-            <div class="live-ultra-team">
-              ${matchCardTeamBadge(batCode, 56)}
-              <div class="live-ultra-team-info">
-                <div class="live-ultra-code" style="color:${batColor}">${esc(batCode)}</div>
-                <div class="live-ultra-score"><b>${batScore ? esc(batScore.display) : '—'}</b><span>${batScore ? esc(batScore.detail) : 'Yet to bat'}</span></div>
-                ${teamMiniIntel(batCode)}
-              </div>
-            </div>
-            <div class="live-ultra-divider">
-              <span class="live-ultra-vs">VS</span>
-              ${proj ? '<span class="live-ultra-proj">proj '+proj.projected_score+'</span>' : ''}
-            </div>
-            <div class="live-ultra-team live-ultra-team--right">
-              ${matchCardTeamBadge(bowlCode, 50)}
-              <div class="live-ultra-team-info">
-                <div class="live-ultra-code" style="color:${bowlColor}">${esc(bowlCode)}</div>
-                <div class="live-ultra-score"><b>${bowlTeam ? esc(bowlTeam.display) : '—'}</b><span>${bowlTeam ? esc(bowlTeam.detail) : 'Will field'}</span></div>
-                ${teamMiniIntel(bowlCode)}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="live-ultra-body">
-          <div class="live-ultra-stats-row">
-            <div class="live-ultra-stat-card">
-              <div class="live-ultra-stat-header">Win Probability</div>
-              <div class="live-ultra-wp-bar" style="--pct:${wp.batting_team}%;--c1:${batColor};--c2:${bowlColor}"><i></i></div>
-              <div class="live-ultra-wp-labels"><span>${wp.batting_team}% ${esc(batCode)}</span><span>${esc(bowlCode)} ${wp.fielding_team}%</span></div>
-            </div>
-            <div class="live-ultra-gauge-group">
-              ${mom ? `
-              <div class="live-ultra-gauge">
-                <svg width="56" height="56" viewBox="0 0 56 56" style="transform:rotate(135deg)">
-                  <circle cx="28" cy="28" r="22" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4" stroke-dasharray="103.67 138.23" stroke-linecap="round"/>
-                  <circle cx="28" cy="28" r="22" fill="none" stroke="${mom.value >= 65 ? '#22C55E' : mom.value >= 45 ? '#FACC15' : '#EF4444'}" stroke-width="4" stroke-dasharray="${(mom.value/100)*103.67} 138.23" stroke-linecap="round" style="filter:drop-shadow(0 0 4px ${mom.value >= 65 ? '#22C55E80' : mom.value >= 45 ? '#FACC1580' : '#EF444480'});transition:stroke-dasharray 1s ease"/>
-                </svg>
-                <span class="live-ultra-gauge-val" style="color:${mom.value >= 65 ? '#22C55E' : mom.value >= 45 ? '#FACC15' : '#EF4444'}">${mom.value}</span>
-                <span class="live-ultra-gauge-label">Momentum</span>
-              </div>` : ''}
-              <div class="live-ultra-gauge">
-                <svg width="50" height="50" viewBox="0 0 50 50" style="transform:rotate(-90deg)">
-                  <circle cx="25" cy="25" r="20" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="5"/>
-                  <circle cx="25" cy="25" r="20" fill="none" stroke="${pres.value >= 70 ? '#EF4444' : pres.value >= 45 ? '#F97316' : '#22C55E'}" stroke-width="5" stroke-dasharray="${(pres.value/100)*125.66} 125.66" stroke-linecap="round" style="filter:drop-shadow(0 0 3px ${pres.value >= 70 ? '#EF444480' : pres.value >= 45 ? '#F9731680' : '#22C55E80'});transition:stroke-dasharray 1s ease"/>
-                </svg>
-                <span class="live-ultra-gauge-val" style="color:${pres.value >= 70 ? '#EF4444' : pres.value >= 45 ? '#F97316' : '#22C55E'}">${pres.value}</span>
-                <span class="live-ultra-gauge-label">${pres.label}</span>
-              </div>
-              ${mom ? '<span class="live-ultra-mom-label" style="color:'+(mom.value >= 65 ? '#22C55E' : mom.value >= 45 ? '#FACC15' : '#EF4444')+'">'+esc(mom.label)+'</span>' : ''}
-            </div>
-          </div>
-          ${ballTimeline && (ballTimeline.this_over.length || ballTimeline.last_over.length) ? `
-          <div class="live-ultra-ball-row">
-            ${ballTimeline.last_over.length ? `
-            <div class="live-ultra-ball-col">
-              <div class="live-ultra-ball-label">Previous over</div>
-              <div class="live-ultra-balls">${ballTimeline.last_over.map(function(b) {
-                var c = liveBallCfg(b);
-                return '<span class="live-ultra-ball" style="background:' + c.bg + ';color:' + c.tx + ';box-shadow:0 0 6px ' + c.glow + '">' + b + '</span>';
-              }).join('')}</div>
-            </div>` : ''}
-            ${ballTimeline.this_over.length ? `
-            <div class="live-ultra-ball-col">
-              <div class="live-ultra-ball-label">This over ${ballTimeline.this_over.filter(function(b){return b!=='W'&&b!=='0';}).length > 2 ? '<span style="color:#4ade80">●</span>' : ''}</div>
-              <div class="live-ultra-balls">${ballTimeline.this_over.map(function(b) {
-                var c = liveBallCfg(b);
-                return '<span class="live-ultra-ball" style="background:' + c.bg + ';color:' + c.tx + ';box-shadow:0 0 6px ' + c.glow + '">' + b + '</span>';
-              }).join('')}</div>
-            </div>` : ''}
-          </div>` : ''}
-          ${m.batters && m.batters.length ? `
-          <div class="live-ultra-section">
-            <div class="live-ultra-section-h">Batters</div>
-            <div class="live-ultra-batters">${m.batters.map(function(b) {
-              var bName = b.name || b.player || '';
-              var sr = b.sr || (b.balls > 0 ? (b.runs * 100 / b.balls) : 0);
-              var bFours = b.fours || 0;
-              var bSixes = b.sixes || 0;
-              return '<div class="live-ultra-batter ' + (b.is_active ? 'batter-active' : '') + '">' +
-                '<div class="live-ultra-batter-name">' + esc(bName) + (b.is_striker ? ' <span class="live-ultra-strike-dot">●</span>' : '') + '</div>' +
-                '<div class="live-ultra-batter-stats"><b>' + (b.runs || 0) + '</b><span>(' + (b.balls || 0) + ')</span><em style="color:' + liveSrColor(sr) + '">SR ' + sr.toFixed(1) + '</em></div>' +
-                '<div class="live-ultra-batter-detail">' + bFours + '\u00d74 ' + bSixes + '\u00d76' + (b.dots != null ? ' \u00b7 ' + b.dots + ' dots' : '') + (b.boundary_count != null ? ' \u00b7 ' + b.boundary_count + ' boundaries' : '') + '</div></div>';
-            }).join('')}</div>
-          </div>` : ''}
-          ${m.bowlers && m.bowlers.length ? `
-          <div class="live-ultra-section">
-            <div class="live-ultra-section-h">Bowlers</div>
-            <div class="live-ultra-bowlers">${m.bowlers.map(function(b) {
-              var bName = b.name || b.player || '';
-              var econ = b.econ || (b.overs > 0 ? (b.runs / b.overs) : 0);
-              return '<div class="live-ultra-bowler ' + (b.is_current ? 'bowler-current' : '') + '">' +
-                '<div class="live-ultra-bowler-name">' + esc(bName) + (b.is_current ? ' <span class="live-ultra-current-dot">\u25cf</span>' : '') + '</div>' +
-                '<div class="live-ultra-bowler-stats"><b>' + (b.wickets || 0) + '/' + (b.runs || 0) + '</b><span>(' + (b.overs || '0.0') + ')</span><em style="color:' + liveEconColor(econ) + '">Econ ' + econ.toFixed(2) + '</em></div>' +
-                '<div class="live-ultra-bowler-detail">' + (b.dots != null ? b.dots + ' dots' : '') + '</div></div>';
-            }).join('')}</div>
-          </div>` : ''}
-          ${m.partnership ? `
-          <div class="live-ultra-pair">
-            <span class="live-ultra-pair-label">Partnership</span>
-            <span class="live-ultra-pair-val"><b>${m.partnership.runs || 0}</b> off <b>${m.partnership.balls || 0}</b> balls</span>
-            ${m.partnership.run_rate ? '<span class="live-ultra-pair-rr">RR '+m.partnership.run_rate.toFixed(1)+'</span>' : ''}
-            ${m.partnership.batter1 && m.partnership.batter2 ? '<span class="live-ultra-pair-names">'+esc(m.partnership.batter1)+' + '+esc(m.partnership.batter2)+'</span>' : ''}
-          </div>` : ''}
-          ${lastWkt ? '<div class="live-ultra-wkt">⚡ Last wkt: '+lastWkt+'</div>' : ''}
-          ${m.status_text ? '<div class="live-ultra-status">'+esc(m.status_text)+'</div>' : ''}
-        </div>
-      </div>`;
+const t1 = teamMeta(m.team1_short);
+  const t2 = teamMeta(m.team2_short);
+  const matchJson = encodeURIComponent(JSON.stringify(m));
+
+  if (m.status !== 'live') return matchCardCK ? matchCardCK(m) : '';
+
+  const meta   = m.live_meta   || {};
+  const sb     = m.score_block || {};
+  const proj   = m.projection_data || m.projected || {};
+  const wp     = m.win_prob    || {};
+  const pres   = m.pressure_data || m.pressure || {};
+  const part   = m.partnership || {};
+  const fowArr = m.fow_display || [];
+  const bt     = m.ball_timeline || {};
+
+  const batCode  = meta.batting_team  || (m.team1_score1 ? m.team1_short : m.team2_short);
+  const bowlCode = meta.fielding_team || (batCode === m.team1_short ? m.team2_short : m.team1_short);
+  const batT     = teamMeta(batCode);
+  const bowlT    = teamMeta(bowlCode);
+
+  const score    = sb.score    || (m.team1_score1 ? m.team1_score1.runs : 0);
+  const wickets  = sb.wickets  != null ? sb.wickets : (m.team1_score1 ? m.team1_score1.wickets : 0);
+  const overs    = sb.overs    || 0;
+  const crr      = sb.crr      || Number(m.run_rate) || 0;
+  const innings  = meta.innings || 1;
+  const ballsDone = Math.floor(overs) * 6 + Math.round((overs % 1) * 10);
+  const progressPct = Math.min(100, Math.round(ballsDone / 120 * 100));
+
+  const activeBatters    = (m.batters || []).filter(b => b.is_active);
+  const dismissedBatters = (m.batters || []).filter(b => !b.is_active && (b.runs != null));
+  const currentBowler    = (m.bowlers || []).filter(b => b.is_current);
+  const otherBowlers     = (m.bowlers || []).filter(b => !b.is_current);
+
+  const wpBat  = wp.batting_team  || 50;
+  const wpBowl = wp.fielding_team || 50;
+  const presVal = pres.value || 0;
+  const presLabel = pres.label || '';
+  const presColor = presVal >= 70 ? '#EF4444' : presVal >= 45 ? '#F97316' : '#22C55E';
+  const presCirc = 2 * Math.PI * 22;
+  const presOffset = presCirc - (presVal / 100) * presCirc;
+
+  const lastWkt = bt.last_wicket_desc || m.last_wicket || '';
+  const thisOver = bt.this_over || [];
+  const lastOver = bt.last_over || [];
+
+  function srColor(sr) { return sr > 150 ? '#4ADE80' : sr >= 120 ? '#FACC15' : '#F87171'; }
+  function econColor(e) { return e < 7.5 ? '#4ADE80' : e <= 9.5 ? '#FACC15' : '#F87171'; }
+  function ballHtml(b) {
+    const cfg = b === 'W' ? 'background:#EF4444;color:#fff;box-shadow:0 0 8px rgba(239,68,68,0.6)'
+              : b === '6' ? 'background:rgba(34,197,94,0.22);color:#4ADE80;box-shadow:0 0 6px rgba(34,197,94,0.4)'
+              : b === '4' ? 'background:rgba(59,130,246,0.22);color:#60A5FA;box-shadow:0 0 6px rgba(59,130,246,0.4)'
+              : b === '0' ? 'background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.25)'
+              : 'background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8)';
+    return `<span style="width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;${cfg}">${esc(b)}</span>`;
   }
 
+  const uid = 'ck_' + (m.id || Math.random().toString(36).slice(2));
 
+  return `
+<div class="live-ultra-panel" style="border-radius:16px;overflow:hidden;background:#0d0d0f;border:1px solid rgba(255,255,255,0.07);font-family:var(--font,system-ui,sans-serif)"
+     onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}' id="${uid}">
+
+  <!-- TOP BAR -->
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px 0">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="width:8px;height:8px;border-radius:50%;background:#EF4444;display:inline-block;animation:livePulse 1.4s infinite"></span>
+      <span style="font-size:11px;font-weight:600;color:#EF4444;letter-spacing:0.03em">LIVE</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.3)">·</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.4)">${esc(meta.match_num || m.match_desc || m.series || '')}</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.3)">·</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.3)">${esc((meta.venue || m.venue || '').split(',')[0])}</span>
+    </div>
+    ${m.run_rate ? `<span style="font-size:10px;font-weight:600;color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.05);padding:3px 8px;border-radius:5px">${esc(String(crr.toFixed(2)))}</span>` : ''}
+  </div>
+
+  <!-- SCORE HEADER -->
+  <div style="display:flex;align-items:flex-start;justify-content:space-between;padding:12px 14px 0;gap:10px">
+    <div style="display:flex;align-items:flex-start;gap:10px">
+      ${teamBadge(batCode, 36)}
+      <div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.3);margin-bottom:4px">Innings ${innings} · Batting</div>
+        <div style="display:flex;align-items:baseline;gap:6px">
+          <span style="font-size:44px;font-weight:800;color:#fff;letter-spacing:-2px;line-height:1;font-variant-numeric:tabular-nums">${score}</span>
+          <span style="font-size:28px;font-weight:400;color:rgba(255,255,255,0.35);letter-spacing:-1px">/${wickets}</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:4px">
+          <span style="font-size:12px;color:rgba(255,255,255,0.4)">${overs} OV</span>
+          <span style="font-size:12px;color:rgba(255,255,255,0.2)">|</span>
+          <span style="font-size:12px;font-weight:700;color:${batT.color}">CRR ${crr.toFixed(2)}</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">
+      ${proj.projected_score ? `<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:8px 12px;text-align:center">
+        <div style="font-size:8px;font-weight:700;color:rgba(255,255,255,0.3);letter-spacing:0.08em;text-transform:uppercase">Projected</div>
+        <div style="font-size:22px;font-weight:800;color:#fff;line-height:1.1;font-variant-numeric:tabular-nums">${proj.projected_score}</div>
+        ${proj.range_low ? `<div style="font-size:9px;color:rgba(255,255,255,0.2)">Range: ${proj.range_low}–${proj.range_high}</div>` : ''}
+      </div>` : ''}
+      <div style="display:flex;flex-direction:column;align-items:center;gap:3px">
+        <div style="font-size:8px;color:rgba(255,255,255,0.2);text-transform:uppercase;letter-spacing:0.06em">Fielding</div>
+        ${teamBadge(bowlCode, 28)}
+      </div>
+    </div>
+  </div>
+
+  <!-- PROGRESS BAR -->
+  <div style="margin:10px 14px 0;height:3px;border-radius:2px;background:rgba(255,255,255,0.06);overflow:hidden">
+    <div style="height:100%;width:${progressPct}%;background:linear-gradient(90deg,${batT.color},${batT.color}88);border-radius:2px"></div>
+  </div>
+
+  <!-- TOSS NOTE -->
+  ${meta.toss ? `<div style="padding:5px 14px;font-size:10px;color:rgba(255,255,255,0.2);font-style:italic">${esc(meta.toss)}</div>` : ''}
+
+  <!-- TAB ROW -->
+  <div style="display:flex;gap:0;padding:10px 14px 0;border-bottom:1px solid rgba(255,255,255,0.06);overflow-x:auto" id="${uid}_tabs">
+    ${['intel','now','bat','bowl'].map((t,i) => `
+      <button onclick="event.stopPropagation();ckTab('${uid}','${t}')"
+        id="${uid}_tab_${t}"
+        style="padding:7px 14px;font-size:11px;font-weight:600;border:none;background:none;cursor:pointer;white-space:nowrap;border-bottom:2px solid ${i===0 ? batT.color : 'transparent'};color:${i===0 ? '#fff' : 'rgba(255,255,255,0.3)'};transition:all 0.2s">
+        ${t.charAt(0).toUpperCase()+t.slice(1)}
+      </button>`).join('')}
+  </div>
+
+  <!-- TAB PANELS -->
+
+  <!-- INTEL -->
+  <div id="${uid}_panel_intel" style="padding:14px;display:flex;flex-direction:column;gap:10px">
+    <!-- Win prob -->
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+        <div style="display:flex;flex-direction:column;gap:1px">
+          <span style="font-size:9px;font-weight:700;color:${batT.color};letter-spacing:0.05em">${esc(batCode)}</span>
+          <span style="font-size:22px;font-weight:800;color:${batT.color};line-height:1;font-variant-numeric:tabular-nums">${wpBat}%</span>
+        </div>
+        <div style="text-align:center">
+          <div style="font-size:8px;color:rgba(255,255,255,0.2);text-transform:uppercase;letter-spacing:0.08em">Win Probability</div>
+          <div style="font-size:9px;color:rgba(255,255,255,0.15)">based on current state</div>
+        </div>
+        <div style="text-align:right;display:flex;flex-direction:column;gap:1px">
+          <span style="font-size:9px;font-weight:700;color:${bowlT.color};letter-spacing:0.05em">${esc(bowlCode)}</span>
+          <span style="font-size:22px;font-weight:800;color:${bowlT.color};line-height:1;font-variant-numeric:tabular-nums">${wpBowl}%</span>
+        </div>
+      </div>
+      <div style="height:6px;border-radius:3px;overflow:hidden;background:${bowlT.color}30;display:flex">
+        <div style="width:${wpBat}%;background:linear-gradient(90deg,${batT.color},${batT.color}cc);border-radius:3px 0 0 3px;box-shadow:0 0 8px ${batT.color}60;transition:width 1.2s cubic-bezier(0.34,1.1,0.64,1)"></div>
+      </div>
+    </div>
+    <!-- Momentum + Pressure -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px">
+        <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.08em;align-self:flex-start">${esc(batCode)} Momentum</div>
+        <div style="position:relative;width:72px;height:72px">
+          <svg width="72" height="72" viewBox="0 0 72 72" style="transform:rotate(135deg)">
+            <circle cx="36" cy="36" r="28" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="5" stroke-dasharray="131.95 176" stroke-linecap="round"/>
+            <circle cx="36" cy="36" r="28" fill="none" stroke="#22C55E" stroke-width="5" stroke-dasharray="${(65/100)*131.95} 176" stroke-linecap="round" style="filter:drop-shadow(0 0 5px #22C55E80)"/>
+          </svg>
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+            <span style="font-size:16px;font-weight:800;color:#22C55E;line-height:1">65</span>
+            <span style="font-size:8px;color:rgba(255,255,255,0.3)">MOM</span>
+          </div>
+        </div>
+        <span style="font-size:11px;font-weight:600;color:#22C55E">Building</span>
+      </div>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px">
+        <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.08em">Pressure Index</div>
+        <div style="position:relative;width:64px;height:64px">
+          <svg width="64" height="64" viewBox="0 0 64 64" style="transform:rotate(-90deg)">
+            <circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="5"/>
+            <circle cx="32" cy="32" r="26" fill="none" stroke="${presColor}" stroke-width="5"
+              stroke-dasharray="${(presVal/100)*163.36} 163.36" stroke-linecap="round"
+              style="filter:drop-shadow(0 0 4px ${presColor}80);transition:stroke-dasharray 1s ease"/>
+          </svg>
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+            <span style="font-size:15px;font-weight:800;color:${presColor};line-height:1">${presVal}</span>
+            <span style="font-size:8px;color:rgba(255,255,255,0.3)">PSI</span>
+          </div>
+        </div>
+        <span style="font-size:11px;font-weight:600;color:${presColor}">${esc(presLabel)}</span>
+        <span style="font-size:9px;color:rgba(255,255,255,0.2)">${esc(batCode)} ${presVal < 40 ? 'in control' : presVal < 70 ? 'under pressure' : 'desperate'}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOW -->
+  <div id="${uid}_panel_now" style="padding:14px;display:none;flex-direction:column;gap:10px">
+    ${thisOver.length || lastOver.length ? `
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px">
+      ${lastOver.length ? `<div style="margin-bottom:10px"><div style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px">Previous over</div><div style="display:flex;gap:5px;flex-wrap:wrap">${lastOver.map(ballHtml).join('')}</div></div>` : ''}
+      ${thisOver.length ? `<div><div style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px">This over</div><div style="display:flex;gap:5px;flex-wrap:wrap">${thisOver.map(ballHtml).join('')}</div></div>` : ''}
+    </div>` : `<div style="padding:20px;text-align:center;color:rgba(255,255,255,0.2);font-size:12px">Ball-by-ball data unavailable</div>`}
+    ${part.runs != null ? `
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between">
+      <span style="font-size:11px;color:rgba(255,255,255,0.3)">Partnership</span>
+      <span style="font-size:14px;font-weight:700;color:#fff">${part.runs} off ${part.balls || '–'} balls</span>
+    </div>` : ''}
+    ${lastWkt ? `
+    <div style="background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.12);border-radius:12px;padding:12px 14px">
+      <div style="font-size:9px;color:rgba(239,68,68,0.5);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px">Last Wicket</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.6)">${esc(lastWkt)}</div>
+    </div>` : ''}
+  </div>
+
+  <!-- BAT -->
+  <div id="${uid}_panel_bat" style="padding:14px;display:none;flex-direction:column;gap:6px">
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden">
+      <div style="display:flex;justify-content:space-between;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.05)">
+        <span style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em">Batter</span>
+        <div style="display:flex;gap:14px">
+          ${['R','B','4s','6s','SR'].map(h => `<span style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em;min-width:22px;text-align:right">${h}</span>`).join('')}
+        </div>
+      </div>
+      ${activeBatters.map(b => `
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:${b.is_striker ? batT.color+'0a' : 'transparent'};border-bottom:1px solid rgba(255,255,255,0.03)">
+        <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0">
+          ${b.is_striker ? `<span style="width:6px;height:6px;border-radius:50%;background:${batT.color};flex-shrink:0"></span>` : '<span style="width:6px;flex-shrink:0"></span>'}
+          <span style="font-size:12px;font-weight:${b.is_striker ? 700 : 500};color:${b.is_striker ? '#fff' : 'rgba(255,255,255,0.7)'};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(b.name)}</span>
+        </div>
+        <div style="display:flex;gap:14px">
+          <span style="font-size:13px;font-weight:800;color:#fff;min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.runs}</span>
+          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.balls}</span>
+          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right">${b.fours}</span>
+          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right">${b.sixes}</span>
+          <span style="font-size:12px;font-weight:600;color:${srColor(b.sr)};min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${(b.sr||0).toFixed(1)}</span>
+        </div>
+      </div>`).join('')}
+      ${dismissedBatters.length ? `
+      <div style="padding:6px 12px;background:rgba(0,0,0,0.2)">
+        <span style="font-size:9px;color:rgba(255,255,255,0.15);text-transform:uppercase;letter-spacing:0.07em">Dismissed</span>
+      </div>
+      ${dismissedBatters.map(b => `
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.02);opacity:0.45">
+        <div style="flex:1;min-width:0">
+          <div style="font-size:11px;color:rgba(255,255,255,0.5);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(b.name)}</div>
+          ${b.dismissal ? `<div style="font-size:9px;color:rgba(255,255,255,0.2)">${esc(b.dismissal)}</div>` : ''}
+        </div>
+        <div style="display:flex;gap:14px">
+          <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.4);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.runs}</span>
+          <span style="font-size:11px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.balls}</span>
+          <span style="font-size:11px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right">${b.fours}</span>
+          <span style="font-size:11px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right">${b.sixes}</span>
+          <span style="font-size:11px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${(b.sr||0).toFixed(1)}</span>
+        </div>
+      </div>`).join('')}` : ''}
+    </div>
+  </div>
+
+  <!-- BOWL -->
+  <div id="${uid}_panel_bowl" style="padding:14px;display:none;flex-direction:column;gap:10px">
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden">
+      <div style="display:flex;justify-content:space-between;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.05)">
+        <span style="font-size:9px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.07em">Bowler</span>
+        <div style="display:flex;gap:14px">
+          ${['O','R','W','Econ','Dots'].map(h => `<span style="font-size:9px;color:rgba(255,255,255,0.25);min-width:22px;text-align:right;text-transform:uppercase;letter-spacing:0.07em">${h}</span>`).join('')}
+        </div>
+      </div>
+      ${[...currentBowler, ...otherBowlers].map(b => `
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-bottom:1px solid rgba(255,255,255,0.03);background:${b.is_current ? bowlT.color+'08' : 'transparent'}">
+        <span style="font-size:12px;font-weight:${b.is_current ? 700 : 400};color:${b.is_current ? '#E2E8F0' : 'rgba(255,255,255,0.45)'};flex:1">${esc(b.name)}${b.is_current ? ' <span style="color:'+bowlT.color+';font-size:9px">▶</span>' : ''}</span>
+        <div style="display:flex;gap:14px">
+          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right">${b.overs}</span>
+          <span style="font-size:12px;color:rgba(255,255,255,0.4);min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${b.runs}</span>
+          <span style="font-size:12px;font-weight:${b.wickets > 0 ? 800 : 400};color:${b.wickets > 0 ? '#4ADE80' : 'rgba(255,255,255,0.35)'};min-width:22px;text-align:right">${b.wickets}</span>
+          <span style="font-size:12px;color:${econColor(b.econ)};min-width:22px;text-align:right;font-variant-numeric:tabular-nums">${(b.econ||0).toFixed(2)}</span>
+          <span style="font-size:12px;color:rgba(255,255,255,0.35);min-width:22px;text-align:right">${b.dots||0}</span>
+        </div>
+      </div>`).join('')}
+    </div>
+    ${fowArr.length ? `
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px">
+      <div style="font-size:9px;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.08em;font-weight:700;margin-bottom:10px">Fall of Wickets</div>
+      ${fowArr.map(w => `
+      <div style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;margin-bottom:4px;background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.1)">
+        <div style="width:22px;height:22px;border-radius:5px;background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.2);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#F87171;flex-shrink:0">${w.wicket||w.wkt}</div>
+        <div style="flex:1">
+          <div style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.6)">${esc(w.batter)}</div>
+          <div style="font-size:9px;color:rgba(255,255,255,0.25)">Over ${w.over} · ${w.runs} runs</div>
+        </div>
+        <span style="font-size:15px;font-weight:800;color:#F87171;font-variant-numeric:tabular-nums">${w.score}</span>
+      </div>`).join('')}
+    </div>` : ''}
+  </div>
+
+  <!-- FOOTER -->
+  <div style="padding:10px 14px;border-top:1px solid rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:flex-end">
+    <span style="font-size:11px;color:rgba(255,255,255,0.25);font-weight:500">Full scorecard →</span>
+  </div>
+</div>`;
+}
+
+function ckTab(uid, tab) {
+  ['intel','now','bat','bowl'].forEach(function(t) {
+    var panel = document.getElementById(uid + '_panel_' + t);
+    var btn   = document.getElementById(uid + '_tab_'   + t);
+    if (!panel || !btn) return;
+    var isActive = t === tab;
+    panel.style.display = isActive ? 'flex' : 'none';
+    var batCode = btn.closest('.live-ultra-panel')
+                    ?.querySelector('[id$="_panel_intel"]')
+                    ?.style.getPropertyValue('--bat-color') || '#fff';
+    btn.style.borderBottomColor = isActive ? (batCode || '#6366f1') : 'transparent';
+    btn.style.color = isActive ? '#fff' : 'rgba(255,255,255,0.3)';
+  });
+  }
   let t1Winner = false, t2Winner = false;
   if (isResult && m.status_text) {
     const st = m.status_text.toLowerCase();
@@ -976,6 +1140,19 @@ function liveCardCK(m) {
       </div>
       <div style="text-align:center;padding:10px 14px 12px;background:rgba(255,255,255,0.015);margin:0 14px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)"><div style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.5)">${statusText}</div>${resultImpact ? resultImpact.replace('match-impact-line','match-impact-line in-result') : ''}${!resultImpact && stakes.impact ? `<div class="match-impact-line in-result">📊 ${esc(stakes.impact)}</div>` : ''}</div>
     </article>`;
+}
+
+
+function ckTab(uid, tab) {
+ ['intel','now','bat','bowl'].forEach(function(t) {
+ var panel = document.getElementById(uid + '_panel_' + t);
+ var btn = document.getElementById(uid + '_tab_' + t);
+ if (!panel || !btn) return;
+ var isActive = t === tab;
+ panel.style.display = isActive ? 'flex' : 'none';
+ btn.style.borderBottomColor = isActive ? '#6366f1' : 'transparent';
+ btn.style.color = isActive ? '#fff' : 'rgba(255,255,255,0.3)';
+ });
 }
 
 function upcomingRowCK(m) {
