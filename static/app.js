@@ -4807,6 +4807,227 @@ function renderFixtureRow(code) {
 function renderAdvancedPointsView(rows) {
   return `<div class="pt-advanced-list">${rows.map(row => { const meta=teamMeta(row.team_short); const mom=getMomentumConfig(row.momentum); const nrrColor=row.nrr>=0?'#4ADE80':'#F87171'; return `<div class="pt-adv-card ${row.isTopFour?'playoff':''} ${row.eliminated?'eliminated':''}" style="--team:${meta.color}"><div class="pt-adv-top"><span class="pt-rank">${row.rank}</span>${teamBadgePt(row.team_short,28)}<div class="pt-adv-team"><b>${esc(row.full)}</b><small>${row.won}W ${row.lost}L · ${row.played}P</small></div><div class="pt-adv-score"><b>${row.points}</b><span style="color:${nrrColor}">${ptNrrText(row.nrr)}</span></div></div><div class="pt-adv-bottom"><span>FORM</span>${formPills(row.last5)}<span class="pt-momentum" style="background:${mom.bg};color:${mom.color}">${mom.icon} ${mom.label}</span></div></div>`; }).join('')}</div>`;
 }
+var FIXTURE_STRATEGIES = {
+  "SRH": [
+    {
+      "opp": "RCB",
+      "batting": "Win by 20+ runs to maintain NRR buffer",
+      "chasing": "Chase with 15+ balls remaining",
+      "venue": "Away"
+    },
+    {
+      "opp": "MI",
+      "batting": "Win margin matters less \u2014 MI are bottom-half",
+      "chasing": "Any win; NRR already safe",
+      "venue": "Home"
+    },
+    {
+      "opp": "PBKS",
+      "batting": "Win by 15+ runs to edge PBKS on NRR if tied",
+      "chasing": "Chase inside 18 overs",
+      "venue": "Away"
+    }
+  ],
+  "GT": [
+    {
+      "opp": "SRH",
+      "batting": "Win by 20+ runs \u2014 SRH have big NRR too",
+      "chasing": "Chase with 12+ balls to spare",
+      "venue": "Away"
+    },
+    {
+      "opp": "KKR",
+      "batting": "Win by any margin \u2014 KKR's NRR is negative",
+      "chasing": "Any chase is fine here",
+      "venue": "Home"
+    },
+    {
+      "opp": "DC",
+      "batting": "Standard win \u2014 DC are in critical zone",
+      "chasing": "No NRR pressure; just win",
+      "venue": "Away"
+    }
+  ],
+  "PBKS": [
+    {
+      "opp": "MI",
+      "batting": "Win by 30+ runs \u2014 extend that massive NRR lead",
+      "chasing": "Chase inside 16 overs",
+      "venue": "Home"
+    },
+    {
+      "opp": "CSK",
+      "batting": "Win by 15+ runs \u2014 CSK are close on points",
+      "chasing": "Chase with 10+ balls left",
+      "venue": "Away"
+    },
+    {
+      "opp": "RCB",
+      "batting": "Win by 20+ \u2014 RCB's NRR (+1.42) is only one above PBKS",
+      "chasing": "Chase inside 17 overs",
+      "venue": "Home"
+    }
+  ],
+  "RCB": [
+    {
+      "opp": "MI",
+      "batting": "Win by 40+ runs \u2014 massive NRR opportunity vs weakest side",
+      "chasing": "Chase inside 14 overs",
+      "venue": "Away"
+    },
+    {
+      "opp": "KKR",
+      "batting": "Win by 20+ \u2014 KKR in critical zone, must not let them upset",
+      "chasing": "Chase with 12+ balls",
+      "venue": "Home"
+    },
+    {
+      "opp": "PBKS",
+      "batting": "Win by 25+ \u2014 direct NRR rivalry with PBKS",
+      "chasing": "Chase inside 15 overs",
+      "venue": "Away"
+    }
+  ],
+  "RR": [
+    {
+      "opp": "DC",
+      "batting": "Win by 40+ runs \u2014 take maximum NRR vs DC",
+      "chasing": "Chase inside 13 overs",
+      "venue": "Away"
+    },
+    {
+      "opp": "LSG",
+      "batting": "Win by 30+ runs \u2014 LSG eliminated, perfect NRR boost",
+      "chasing": "Chase inside 14 overs",
+      "venue": "Home"
+    },
+    {
+      "opp": "MI",
+      "batting": "Win by 30+ \u2014 MI are at the bottom, boost NRR",
+      "chasing": "Chase inside 15 overs",
+      "venue": "Away"
+    }
+  ],
+  "CSK": [
+    {
+      "opp": "LSG",
+      "batting": "Win by 40+ runs \u2014 LSG eliminated, maximise NRR",
+      "chasing": "Chase inside 12 overs",
+      "venue": "Home"
+    },
+    {
+      "opp": "PBKS",
+      "batting": "Win by 20+ \u2014 PBKS have far superior NRR",
+      "chasing": "Chase inside 15 overs",
+      "venue": "Away"
+    },
+    {
+      "opp": "GT",
+      "batting": "Win by 15+ \u2014 every NRR point counts",
+      "chasing": "Chase with 10+ balls remaining",
+      "venue": "Away"
+    },
+    {
+      "opp": "KKR",
+      "batting": "Win by 25+ runs \u2014 KKR in critical zone",
+      "chasing": "Chase inside 14 overs",
+      "venue": "Home"
+    }
+  ],
+  "DC": [
+    {
+      "opp": "RR",
+      "batting": "Win by 50+ runs \u2014 NRR MUST turn positive",
+      "chasing": "Chase inside 12 overs \u2014 close wins won't cut it",
+      "venue": "Home"
+    },
+    {
+      "opp": "GT",
+      "batting": "Win by 35+ runs \u2014 GT safe but DC need NRR badly",
+      "chasing": "Chase inside 13 overs",
+      "venue": "Home"
+    },
+    {
+      "opp": "KKR",
+      "batting": "Win by 30+ \u2014 both teams in crisis, NRR differential matters",
+      "chasing": "Chase inside 14 overs",
+      "venue": "Away"
+    }
+  ],
+  "KKR": [
+    {
+      "opp": "RCB",
+      "batting": "Win by 30+ \u2014 RCB have massive NRR",
+      "chasing": "Chase inside 13 overs",
+      "venue": "Away"
+    },
+    {
+      "opp": "GT",
+      "batting": "Win by 40+ runs \u2014 GT have superior NRR",
+      "chasing": "Chase inside 12 overs",
+      "venue": "Home"
+    },
+    {
+      "opp": "MI",
+      "batting": "Win by 50+ runs \u2014 MI at bottom, max NRR",
+      "chasing": "Chase inside 11 overs",
+      "venue": "Home"
+    },
+    {
+      "opp": "DC",
+      "batting": "Win by 35+ \u2014 both teams in crisis",
+      "chasing": "Chase inside 13 overs",
+      "venue": "Away"
+    }
+  ],
+  "MI": [
+    {
+      "opp": "PBKS",
+      "batting": "Pride game",
+      "chasing": "Develop young players",
+      "venue": "Away"
+    },
+    {
+      "opp": "KKR",
+      "batting": "Play freely",
+      "chasing": "Try new combinations",
+      "venue": "Away"
+    },
+    {
+      "opp": "RR",
+      "batting": "Final home game of season",
+      "chasing": "Good send-off for fans",
+      "venue": "Home"
+    }
+  ],
+  "LSG": [
+    {
+      "opp": "CSK",
+      "batting": "Can be kingmaker \u2014 a win hurts CSK's chances",
+      "chasing": "Play spoiler, play freely",
+      "venue": "Away"
+    },
+    {
+      "opp": "DC",
+      "batting": "A win eliminates DC's slim chances",
+      "chasing": "No pressure cricket",
+      "venue": "Away"
+    },
+    {
+      "opp": "RR",
+      "batting": "Can end RR's campaign with a win",
+      "chasing": "Build form",
+      "venue": "Away"
+    },
+    {
+      "opp": "MI",
+      "batting": "Season finale \u2014 end on a high",
+      "chasing": "Play next year's XI",
+      "venue": "Home"
+    }
+  ]
+};
+
 function renderQualificationPointsView(rows) {
   const intensity = raceIntensity(rows);
   const fourth = rows[3] ? rows[3].points || 0 : 0;
@@ -4918,24 +5139,21 @@ function renderQualificationPointsView(rows) {
         return fCodes.map(function(oppCode) {
           var opp = ptsRows.find(function(r) { return r.team_short === oppCode; });
           var oppColor = opp ? (teamMeta(oppCode).color || '#888') : '#888';
-          var oppNrr = opp ? opp.nrr : 0;
-          var oppNr = Math.abs(oppNrr || 0);
-          // Generate strategy based on OPPONENT's NRR and position
-          if (opp && opp.isTopFour && oppNrr > 0.5) {
-            var batTarget = 'Win by 30+ runs — keep NRR ahead of ' + oppCode;
-            var chaseTarget = 'Chase inside 14 overs — ' + oppCode + ' have +' + oppNrr.toFixed(3) + ' NRR';
-          } else if (opp && oppNrr > 0.3) {
-            var batTarget = 'Win by 25+ runs vs strong NRR side';
-            var chaseTarget = 'Chase with 12+ balls to spare';
-          } else if (oppNrr > 0) {
-            var batTarget = 'Win by 20+ runs — solid NRR opponent';
-            var chaseTarget = 'Chase with 10+ balls remaining';
-          } else if (oppNrr > -0.3) {
-            var batTarget = 'Win by 15+ runs — manageable NRR opponent';
-            var chaseTarget = 'Chase inside 17 overs';
+          // Use pre-defined strategies from reference data
+          var strats = FIXTURE_STRATEGIES[row.team_short];
+          var fxInfo = null;
+          if (strats) {
+            for (var si = 0; si < strats.length; si++) {
+              if (strats[si].opp === oppCode) { fxInfo = strats[si]; break; }
+            }
+          }
+          if (fxInfo) {
+            var batTarget = fxInfo.batting;
+            var chaseTarget = fxInfo.chasing;
           } else {
-            var batTarget = 'Win by any margin — weak NRR opponent';
-            var chaseTarget = 'Chase freely — ' + oppCode + ' NRR is weak';
+            var oppNrr = opp ? opp.nrr : 0;
+            var batTarget = oppNrr > 0.3 ? 'Win by 20+ runs' : oppNrr > 0 ? 'Win by 15+ runs' : 'Win comfortably';
+            var chaseTarget = oppNrr > 0.3 ? 'Chase inside 16 overs' : oppNrr > 0 ? 'Chase with 10+ balls' : 'Chase freely';
           }
           return '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:9px 11px;margin-bottom:6px">'
             + '<div style="display:flex;align-items:center;gap:7px;margin-bottom:8px">'
