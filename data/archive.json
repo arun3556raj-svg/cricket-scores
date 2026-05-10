@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152097",
+      "source_id": "152097",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 54,
+      "round": "League",
+      "date": "2026-05-10",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
+      "winner": "Royal Challengers Bengaluru",
+      "result_text": "Royal Challengers Bengaluru won by 2 wkts",
+      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Mumbai Indians",
+          "team_short": "MI",
+          "team_color": "#1d4ed8",
+          "opponent": "Royal Challengers Bengaluru",
+          "opponent_short": "RCB",
+          "runs": 166,
+          "wickets": 7,
+          "overs": 20,
+          "target": null,
+          "display": "166/7",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Royal Challengers Bengaluru",
+          "team_short": "RCB",
+          "team_color": "#dc2626",
+          "opponent": "Mumbai Indians",
+          "opponent_short": "MI",
+          "runs": 157,
+          "wickets": 8,
+          "overs": 19.3,
+          "target": 167,
+          "display": "157/8",
+          "detail": "(19.3 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152086",
       "source_id": "152086",
       "source": "cricbuzz",
