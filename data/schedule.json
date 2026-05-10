@@ -2040,7 +2040,7 @@
       "team2_color": "#d97706",
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "live",
-      "status_text": "Chennai Super Kings need 47 runs in 37 balls",
+      "status_text": "Chennai Super Kings need 34 runs in 22 balls",
       "start_time": "03:30 PM",
       "start_epoch": 1778407200000,
       "match_date": "Sun, 10 May 2026",
@@ -2071,40 +2071,40 @@
       "id": "152097",
       "series": "Indian Premier League 2026",
       "match_desc": "54th Match",
-      "team1": "Royal Challengers Bengaluru",
-      "team1_short": "RCB",
-      "team1_color": "#dc2626",
-      "team2": "Mumbai Indians",
-      "team2_short": "MI",
-      "team2_color": "#1d4ed8",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
       "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "status": "upcoming",
-      "status_text": "Match starts at May 10, 14:00 GMT",
+      "status": "live",
+      "status_text": "Royal Challengers Bengaluru opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778421600000,
       "match_date": "Sun, 10 May 2026",
-      "t1_h2h_wins": 15,
-      "t2_h2h_wins": 19,
-      "team1_rank": 3,
-      "team1_points": 12,
+      "t1_h2h_wins": 19,
+      "t2_h2h_wins": 15,
+      "team1_rank": 10,
+      "team1_points": 6,
       "team1_last_5": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "team1_qualification_pct": 86,
-      "team2_rank": 10,
-      "team2_points": 6,
-      "team2_last_5": [
         "W",
         "L",
         "L",
         "L",
         "W"
       ],
-      "team2_qualification_pct": 11
+      "team1_qualification_pct": 11,
+      "team2_rank": 3,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 86
     },
     {
       "id": "152108",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "10 May, 07:02 PM",
+  "last_updated": "10 May, 07:18 PM",
   "error": null
 }

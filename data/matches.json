@@ -20,19 +20,19 @@
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "157/3",
-        "detail": "(14.1 ov)",
-        "runs": 157,
-        "wickets": 3,
-        "overs": "14.1"
+        "display": "171/5",
+        "detail": "(16.2 ov)",
+        "runs": 171,
+        "wickets": 5,
+        "overs": "16.2"
       },
       "team2_score2": null,
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "live",
-      "status_text": "Chennai Super Kings need 47 runs in 35 balls",
+      "status_text": "Chennai Super Kings need 33 runs in 22 balls",
       "start_time": "03:30 PM",
       "start_epoch": 1778407200000,
-      "run_rate": 11.08,
+      "run_rate": 10.47,
       "t1_h2h_wins": 3,
       "t2_h2h_wins": 2,
       "team1_rank": 9,
@@ -55,54 +55,53 @@
         "W"
       ],
       "team2_qualification_pct": 46
-    }
-  ],
-  "upcoming": [
+    },
     {
       "id": "152097",
       "series": "IPL 2026",
       "match_desc": "54th Match",
       "match_format": "T20",
-      "team1": "Royal Challengers Bengaluru",
-      "team1_short": "RCB",
-      "team1_color": "#dc2626",
-      "team2": "Mumbai Indians",
-      "team2_short": "MI",
-      "team2_color": "#1d4ed8",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
       "team1_score1": null,
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "status": "upcoming",
-      "status_text": "Match starts at May 10, 14:00 GMT",
+      "status": "live",
+      "status_text": "Royal Challengers Bengaluru opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778421600000,
       "run_rate": null,
-      "t1_h2h_wins": 15,
-      "t2_h2h_wins": 19,
-      "team1_rank": 3,
-      "team1_points": 12,
+      "t1_h2h_wins": 19,
+      "t2_h2h_wins": 15,
+      "team1_rank": 10,
+      "team1_points": 6,
       "team1_last_5": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "team1_qualification_pct": 86,
-      "team2_rank": 10,
-      "team2_points": 6,
-      "team2_last_5": [
         "W",
         "L",
         "L",
         "L",
         "W"
       ],
-      "team2_qualification_pct": 11
+      "team1_qualification_pct": 11,
+      "team2_rank": 3,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 86
     }
   ],
+  "upcoming": [],
   "finished": [
     {
       "id": "152075",
@@ -221,6 +220,6 @@
       "team2_qualification_pct": 20
     }
   ],
-  "last_updated": "10 May, 07:02 PM",
+  "last_updated": "10 May, 07:18 PM",
   "error": null
 }
