@@ -20,19 +20,19 @@
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "118/4",
-        "detail": "(15 ov)",
-        "runs": 118,
-        "wickets": 4,
-        "overs": "15"
+        "display": "131/6",
+        "detail": "(16 ov)",
+        "runs": 131,
+        "wickets": 6,
+        "overs": "16"
       },
       "team2_score2": null,
       "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
       "status": "live",
-      "status_text": "Royal Challengers Bengaluru need 49 runs in 30 balls",
+      "status_text": "Royal Challengers Bengaluru need 36 runs in 24 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1778421600000,
-      "run_rate": 7.87,
+      "run_rate": 8.19,
       "t1_h2h_wins": 19,
       "t2_h2h_wins": 15,
       "team1_rank": 10,
@@ -279,6 +279,6 @@
       "team2_qualification_pct": 20
     }
   ],
-  "last_updated": "10 May, 11:00 PM",
+  "last_updated": "10 May, 11:08 PM",
   "error": null
 }
