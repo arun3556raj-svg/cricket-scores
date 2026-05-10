@@ -5092,8 +5092,10 @@ async function loadSchedule() {
     // Preserve expanded row so user doesn't lose their place
     if (currentFilter === 'points' && pointsData) {
       var savedRow = pointsExpandedRow;
+      var savedTabs = Object.assign({}, pointsDetailTabs);
       renderPointsTable(pointsData);
       pointsExpandedRow = savedRow;
+      pointsDetailTabs = savedTabs;
     }
   } catch (err) {
     $('scheduleList').innerHTML = `<div class="sc-empty">Error: ${esc(err.message)}</div>`;
