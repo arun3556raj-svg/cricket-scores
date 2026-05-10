@@ -950,20 +950,22 @@ const t1 = teamMeta(m.team1_short);
     </div>
     <!-- Momentum + Pressure -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px">
-        <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.08em;align-self:flex-start">${esc(batCode)} Momentum</div>
-        <div style="position:relative;width:72px;height:72px">
-          <svg width="72" height="72" viewBox="0 0 72 72" style="transform:rotate(135deg)">
-            <circle cx="36" cy="36" r="28" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="5" stroke-dasharray="131.95 176" stroke-linecap="round"/>
-            <circle cx="36" cy="36" r="28" fill="none" stroke="#22C55E" stroke-width="5" stroke-dasharray="${(65/100)*131.95} 176" stroke-linecap="round" style="filter:drop-shadow(0 0 5px #22C55E80)"/>
-          </svg>
-          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
-            <span style="font-size:16px;font-weight:800;color:#22C55E;line-height:1">65</span>
-            <span style="font-size:8px;color:rgba(255,255,255,0.3)">MOM</span>
-          </div>
-        </div>
-        <span style="font-size:11px;font-weight:600;color:#22C55E">Building</span>
-      </div>
+      ${(() => {
+        const mom = liveMomentum(m.last_6_balls);
+        if (!mom) {
+          return '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px;justify-content:center;min-height:120px"><span style="font-size:11px;color:rgba(255,255,255,0.15)">Ball-by-ball data needed</span></div>';
+        }
+        const mv = mom.value;
+        const ml = mom.label;
+        const mc = mv >= 65 ? "#22C55E" : mv >= 45 ? "#FACC15" : "#EF4444";
+        return '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px">'
+          + '<div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.08em;align-self:flex-start">' + esc(batCode) + ' Momentum</div>'
+          + '<div style="position:relative;width:72px;height:72px"><svg width="72" height="72" viewBox="0 0 72 72" style="transform:rotate(135deg)">'
+          + '<circle cx="36" cy="36" r="28" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="5" stroke-dasharray="131.95 176" stroke-linecap="round"/>'
+          + '<circle cx="36" cy="36" r="28" fill="none" stroke="' + mc + '" stroke-width="5" stroke-dasharray="' + ((mv/100)*131.95) + ' 176" stroke-linecap="round" style="filter:drop-shadow(0 0 5px ' + mc + '80)"/></svg>'
+          + '<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:16px;font-weight:800;color:' + mc + ';line-height:1">' + mv + '</span><span style="font-size:8px;color:rgba(255,255,255,0.3)">MOM</span></div></div>'
+          + '<span style="font-size:11px;font-weight:600;color:' + mc + '">' + esc(ml) + '</span></div>';
+      })()}
       <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:6px">
         <div style="font-size:9px;font-weight:700;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.08em">Pressure Index</div>
         <div style="position:relative;width:64px;height:64px">
@@ -3536,18 +3538,7 @@ function renderRailPerformers() {
 // ================================================================
 
 
-const TEAM_PROFILE_META = {
-  CSK: { captain: 'MS Dhoni', coach: 'Stephen Fleming', homeGround: 'MA Chidambaram Stadium', titles: 5, founded: 2008 },
-  MI: { captain: 'Hardik Pandya', coach: 'Mark Boucher', homeGround: 'Wankhede Stadium', titles: 5, founded: 2008 },
-  RCB: { captain: 'Faf du Plessis', coach: 'Andy Flower', homeGround: 'M Chinnaswamy Stadium', titles: 1, founded: 2008 },
-  KKR: { captain: 'Shreyas Iyer', coach: 'Chandrakant Pandit', homeGround: 'Eden Gardens', titles: 3, founded: 2008 },
-  DC: { captain: 'David Warner', coach: 'Ricky Ponting', homeGround: 'Arun Jaitley Stadium', titles: 0, founded: 2008 },
-  SRH: { captain: 'Pat Cummins', coach: 'Daniel Vettori', homeGround: 'Rajiv Gandhi Intl. Stadium', titles: 1, founded: 2013 },
-  PBKS: { captain: 'Shikhar Dhawan', coach: 'Trevor Bayliss', homeGround: 'HPCA Stadium, Dharamsala', titles: 0, founded: 2008 },
-  RR: { captain: 'Sanju Samson', coach: 'Kumar Sangakkara', homeGround: 'Sawai Mansingh Stadium', titles: 1, founded: 2008 },
-  GT: { captain: 'Shubman Gill', coach: 'Ashish Nehra', homeGround: 'Narendra Modi Stadium', titles: 2, founded: 2022 },
-  LSG: { captain: 'KL Rahul', coach: 'Andy Flower', homeGround: 'BRSABV Ekana Stadium', titles: 0, founded: 2022 },
-};
+// TEAM_PROFILE_META removed — no API data available for captain/coach/titles. Expanded card shows "—" for missing fields.
 
 function renderTeamsSection() {
   const el = $('teamsSection');
@@ -3585,7 +3576,6 @@ function buildTeamRowsForCards() {
 }
 
 function normalizeTeamCardRow(abbr, row, fallbackRank) {
-  const profile = TEAM_PROFILE_META[abbr] || {};
   const played = row?.played || 0;
   const won = row?.won || 0;
   const lost = row?.lost || 0;
@@ -3651,19 +3641,7 @@ function latestTeamResult(abbr) {
 }
 
 function topTeamPerformer(abbr, mode) {
-  const fallback = {
-    CSK: { batting: ['Ruturaj Gaikwad', 'batting lead'], bowling: ['Deepak Chahar', 'bowling lead'] },
-    MI: { batting: ['Rohit Sharma', 'batting lead'], bowling: ['Jasprit Bumrah', 'bowling lead'] },
-    RCB: { batting: ['Virat Kohli', 'batting lead'], bowling: ['Mohammed Siraj', 'bowling lead'] },
-    KKR: { batting: ['Phil Salt', 'batting lead'], bowling: ['Sunil Narine', 'bowling lead'] },
-    DC: { batting: ['David Warner', 'batting lead'], bowling: ['Kuldeep Yadav', 'bowling lead'] },
-    SRH: { batting: ['Travis Head', 'batting lead'], bowling: ['Pat Cummins', 'bowling lead'] },
-    PBKS: { batting: ['Liam Livingstone', 'batting lead'], bowling: ['Arshdeep Singh', 'bowling lead'] },
-    RR: { batting: ['Sanju Samson', 'batting lead'], bowling: ['Trent Boult', 'bowling lead'] },
-    GT: { batting: ['Shubman Gill', 'batting lead'], bowling: ['Rashid Khan', 'bowling lead'] },
-    LSG: { batting: ['KL Rahul', 'batting lead'], bowling: ['Avesh Khan', 'bowling lead'] },
-  }[abbr]?.[mode] || ['—', '—'];
-  if (!statsData) return { player: fallback[0], stat: fallback[1] };
+  if (!statsData) return null;
   const season = 2026;
   if (mode === 'batting') {
     const map = new Map();
@@ -3674,19 +3652,17 @@ function topTeamPerformer(abbr, mode) {
       map.set(rec.p, row);
     }
     const top = Array.from(map.values()).sort((a, b) => b.runs - a.runs)[0];
-    return top ? { player: top.player, stat: `${top.runs} runs` } : { player: fallback[0], stat: fallback[1] };
+    return top ? { player: top.player, stat: top.runs + ' runs' } : null;
   }
   const map = new Map();
   for (const rec of (statsData.bowling || [])) {
     if (rec.t !== abbr || Number(rec.y) !== season) continue;
     const row = map.get(rec.p) || { player: rec.p, wickets: 0 };
     row.wickets += rec.w || 0;
-    map.set(rec.p, row);
   }
   const top = Array.from(map.values()).sort((a, b) => b.wickets - a.wickets)[0];
-  return top ? { player: top.player, stat: `${top.wickets} wkts` } : { player: fallback[0], stat: fallback[1] };
+  return top ? { player: top.player, stat: top.wickets + ' wkts' } : null;
 }
-
 function teamQualColor(value) {
   return value >= 70 ? '#22C55E' : value >= 40 ? '#FACC15' : value >= 15 ? '#F97316' : '#EF4444';
 }
@@ -3714,7 +3690,7 @@ function renderTeamIntelligenceCard(row) {
             <div class="team-name-stack">
               <div class="team-code-line"><span>${esc(row.abbr)}</span>${isTop4 && !row.eliminated ? '<b class="team-status-pill top4">TOP 4</b>' : ''}${row.eliminated ? '<b class="team-status-pill out">OUT</b>' : ''}</div>
               <div class="team-full-name">${esc(row.full)}</div>
-              <div class="team-home-ground">${esc(row.profile.homeGround || 'Home ground')}</div>
+              <div class="team-home-ground">${esc('Home ground')}</div>
             </div>
           </div>
           <div class="team-points-box"><b>${row.points}</b><span>pts</span><em class="${row.nrr >= 0 ? 'pos' : 'neg'}">${row.nrr > 0 ? '+' : ''}${fmt(row.nrr, 3)}</em></div>
@@ -3742,16 +3718,15 @@ function renderTeamExpandedProfile(row) {
   return `
     <div class="team-expanded">
       <div class="team-expand-grid">
-        <div class="team-expand-card"><span>Captain</span><b>${esc(row.profile.captain || '—')}</b></div>
-        <div class="team-expand-card"><span>Coach</span><b>${esc(row.profile.coach || '—')}</b></div>
+        <div class="team-expand-card"><span>Captain</span><b>—</b></div>
+        <div class="team-expand-card"><span>Coach</span><b>—</b></div>
       </div>
       <div class="team-expand-grid">
-        <div class="team-expand-card"><span>Top Batter</span><b>${esc(row.topBatter.player)}</b><em>${esc(row.topBatter.stat)}</em></div>
-        <div class="team-expand-card"><span>Top Bowler</span><b>${esc(row.topBowler.player)}</b><em>${esc(row.topBowler.stat)}</em></div>
+        <div class="team-expand-card"><span>Top Batter</span><b>${row.topBatter ? esc(row.topBatter.player) : '—'}</b>${row.topBatter ? '<em>' + esc(row.topBatter.stat) + '</em>' : '<em>No data</em>'}</div>
+        <div class="team-expand-card"><span>Top Bowler</span><b>${row.topBowler ? esc(row.topBowler.player) : '—'}</b>${row.topBowler ? '<em>' + esc(row.topBowler.stat) + '</em>' : '<em>No data</em>'}</div>
       </div>
-      <div class="team-expand-card team-title-card ${titles > 0 ? 'has-title' : ''}">
-        <div><span>${titles > 0 ? '🏆 Titles' : '🎽 Titles'}</span><b>${titles > 0 ? `${titles} IPL Title${titles > 1 ? 's' : ''}` : 'No titles yet'}</b></div>
-        <em>Founded ${esc(String(row.profile.founded || '—'))}</em>
+      <div style="padding:10px 12px;border-radius:8px;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.05);text-align:center">
+        <span style="font-size:9px;color:rgba(255,255,255,.25);font-weight:700">Titles & Founded — data unavailable</span>
       </div>
     </div>`;
 }
