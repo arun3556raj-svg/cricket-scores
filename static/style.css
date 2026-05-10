@@ -3761,3 +3761,9 @@ html[data-theme="light"] .player-stats-table .career-row td { border-top-color: 
     gap: 16px !important;
   }
 }
+
+/* ── Live pulsing dot ── */
+@keyframes livePulse {
+ 0%, 100% { opacity: 1; transform: scale(1); }
+ 50% { opacity: 0.4; transform: scale(1.4); }
+}
