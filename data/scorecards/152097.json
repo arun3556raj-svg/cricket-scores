@@ -276,18 +276,18 @@
       "bowl_team": "Mumbai Indians",
       "innings_id": 2,
       "score": {
-        "runs": 153,
+        "runs": 151,
         "wickets": 7,
-        "overs": 19,
-        "run_rate": 8.05,
+        "overs": 18.5,
+        "run_rate": 8.02,
         "declared": false
       },
       "extras": {
-        "total": 11,
-        "wides": 8,
+        "total": 9,
+        "wides": 7,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 3
+        "leg_byes": 2
       },
       "batsmen": [
         {
@@ -377,10 +377,10 @@
         {
           "name": "Romario Shepherd",
           "runs": 3,
-          "balls": 7,
+          "balls": 6,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 42.86,
+          "strike_rate": 50,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -450,12 +450,12 @@
         },
         {
           "name": "Jasprit Bumrah",
-          "overs": 4,
-          "balls": 24,
+          "overs": 3.5,
+          "balls": 23,
           "maidens": 0,
           "runs": 20,
           "wickets": 0,
-          "economy": 5,
+          "economy": 5.2,
           "wides": 2,
           "no_balls": 0,
           "dots": 0
@@ -501,10 +501,10 @@
           "overs": 2,
           "balls": 12,
           "maidens": 0,
-          "runs": 25,
+          "runs": 24,
           "wickets": 0,
-          "economy": 12.5,
-          "wides": 3,
+          "economy": 12,
+          "wides": 2,
           "no_balls": 0,
           "dots": 0
         }
