@@ -1135,6 +1135,8 @@ let pointsSeason = '2026';
 let pointsViewMode = 'compact';
 let pointsExpandedRow = null;
 let pointsDetailTabs = {};
+let teamsSortMode = 'rank';
+let teamsExpanded = {};
 
 let pulseStatsData = null;
 let pulseStatsLoaded = false;
@@ -1559,6 +1561,7 @@ async function loadPointsIntel() {
       pointsSeason = String(pointsData.years?.[0] || '2026');
     }
     if (currentFilter === 'points') renderPointsTable(pointsData);
+    if (currentFilter === 'teams') renderTeamsSection();
     if (lastData) render(lastData);
   } catch (_) {
     // Match cards still work without table intelligence.
@@ -3091,30 +3094,235 @@ function renderRailPerformers() {
 // TEAMS SECTION
 // ================================================================
 
+
+const TEAM_PROFILE_META = {
+  CSK: { captain: 'MS Dhoni', coach: 'Stephen Fleming', homeGround: 'MA Chidambaram Stadium', titles: 5, founded: 2008 },
+  MI: { captain: 'Hardik Pandya', coach: 'Mark Boucher', homeGround: 'Wankhede Stadium', titles: 5, founded: 2008 },
+  RCB: { captain: 'Faf du Plessis', coach: 'Andy Flower', homeGround: 'M Chinnaswamy Stadium', titles: 1, founded: 2008 },
+  KKR: { captain: 'Shreyas Iyer', coach: 'Chandrakant Pandit', homeGround: 'Eden Gardens', titles: 3, founded: 2008 },
+  DC: { captain: 'David Warner', coach: 'Ricky Ponting', homeGround: 'Arun Jaitley Stadium', titles: 0, founded: 2008 },
+  SRH: { captain: 'Pat Cummins', coach: 'Daniel Vettori', homeGround: 'Rajiv Gandhi Intl. Stadium', titles: 1, founded: 2013 },
+  PBKS: { captain: 'Shikhar Dhawan', coach: 'Trevor Bayliss', homeGround: 'HPCA Stadium, Dharamsala', titles: 0, founded: 2008 },
+  RR: { captain: 'Sanju Samson', coach: 'Kumar Sangakkara', homeGround: 'Sawai Mansingh Stadium', titles: 1, founded: 2008 },
+  GT: { captain: 'Shubman Gill', coach: 'Ashish Nehra', homeGround: 'Narendra Modi Stadium', titles: 2, founded: 2022 },
+  LSG: { captain: 'KL Rahul', coach: 'Andy Flower', homeGround: 'BRSABV Ekana Stadium', titles: 0, founded: 2022 },
+};
+
 function renderTeamsSection() {
   const el = $('teamsSection');
   if (!el) return;
+  if (!pointsData && !pointsIntelLoading) loadPointsIntel();
+  const rows = buildTeamRowsForCards();
   el.innerHTML = `
-    <div class="ck-sec-head"><span class="ck-sec-title">IPL 2026 — All Teams</span></div>
-    <div class="teams-grid">
-      ${TEAM_ORDER.map(abbr => {
-        const t = teamMeta(abbr);
-        const ext = TEAM_LOGO_EXT[abbr] || 'webp';
-        const full = TEAM_FULL_NAMES[abbr] || abbr;
-        return `
-          <div class="team-card" onclick="showTeamDetail('${abbr}')">
-            <div class="team-card-logo-wrap" style="background:linear-gradient(135deg,${t.color}18,${t.color2||t.color}08)">
-              <img src="${joinPath(STATIC_BASE_PATH, `team-logos/${abbr}.${ext}`)}" alt="${esc(abbr)}" style="width:100%;height:100%;object-fit:contain"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <span style="display:none;font-size:20px;font-weight:800;color:${t.color};width:100%;height:100%;align-items:center;justify-content:center">${esc(abbr)}</span>
-            </div>
-            <div class="team-card-body">
-              <div style="font-size:10px;font-weight:700;color:${t.color};text-transform:uppercase;letter-spacing:0.8px;margin-bottom:2px">${esc(abbr)}</div>
-              <div style="font-size:12px;font-weight:600;color:var(--ct);line-height:1.3">${esc(full)}</div>
-            </div>
-          </div>`;
-      }).join('')}
+    <div class="teams-v2">
+      <div class="ck-sec-head"><span class="ck-sec-title">IPL 2026 — Team Intelligence</span></div>
+      <div class="team-sort-pills">
+        ${[
+          ['rank', 'By Rank'],
+          ['points', 'By Points'],
+          ['qual', 'Qual %'],
+          ['form', 'Form'],
+        ].map(([id, label]) => `<button type="button" class="team-sort-pill ${teamsSortMode === id ? 'active' : ''}" onclick="setTeamsSort('${id}')">${label}</button>`).join('')}
+      </div>
+      <div class="team-list">
+        ${rows.map(renderTeamIntelligenceCard).join('')}
+      </div>
     </div>`;
+}
+
+function buildTeamRowsForCards() {
+  const season = String(pointsSeason || pointsData?.years?.[0] || '2026');
+  const rawRows = (pointsData?.tables?.[season]?.rows || []).map((row, index) => ({ ...row, rank: row.rank || index + 1 }));
+  const rowMap = new Map(rawRows.map(row => [row.team_short, row]));
+  const rows = TEAM_ORDER.map((abbr, index) => normalizeTeamCardRow(abbr, rowMap.get(abbr), index + 1));
+  return rows.sort((a, b) => {
+    if (teamsSortMode === 'points') return b.points - a.points || b.nrr - a.nrr;
+    if (teamsSortMode === 'qual') return b.qualification_pct - a.qualification_pct || a.rank - b.rank;
+    if (teamsSortMode === 'form') return teamFormScore(b.last_5) - teamFormScore(a.last_5) || a.rank - b.rank;
+    return a.rank - b.rank;
+  });
+}
+
+function normalizeTeamCardRow(abbr, row, fallbackRank) {
+  const profile = TEAM_PROFILE_META[abbr] || {};
+  const played = row?.played || 0;
+  const won = row?.won || 0;
+  const lost = row?.lost || 0;
+  const last5 = Array.isArray(row?.last_5) ? row.last_5 : [];
+  const qual = Number(row?.qualification_pct ?? 0);
+  return {
+    abbr,
+    full: TEAM_FULL_NAMES[abbr] || abbr,
+    rank: row?.rank || fallbackRank,
+    played,
+    won,
+    lost,
+    points: Number(row?.points || 0),
+    nrr: Number(row?.nrr || 0),
+    last_5: last5,
+    qualification_pct: qual,
+    eliminated: qual <= 3 && played >= 10,
+    momentum: teamMomentum(last5, row?.trend || 0),
+    profile,
+    lastResult: latestTeamResult(abbr),
+    topBatter: topTeamPerformer(abbr, 'batting'),
+    topBowler: topTeamPerformer(abbr, 'bowling'),
+  };
+}
+
+function teamFormScore(form) {
+  return (form || []).reduce((score, result, index) => score + (result === 'W' ? (index + 1) : 0), 0);
+}
+
+function teamMomentum(form, trend) {
+  const wins = (form || []).filter(r => r === 'W').length;
+  const tail = (form || []).slice(-3);
+  const tailWins = tail.filter(r => r === 'W').length;
+  const tailLosses = tail.filter(r => r === 'L').length;
+  if (tailLosses === 3) return 'Collapsing';
+  if (tailWins === 3 || wins >= 4) return 'Surging';
+  if (tailWins >= 2 || trend > 0) return 'Rising';
+  if (tailLosses >= 2 || trend < 0) return 'Falling';
+  if (wins <= 1) return 'Dipping';
+  return 'Steady';
+}
+
+function teamMomentumMeta(label) {
+  return {
+    Surging: { icon: '⚡', color: '#22C55E', bg: 'rgba(34,197,94,0.12)' },
+    Rising: { icon: '↑', color: '#4ADE80', bg: 'rgba(74,222,128,0.1)' },
+    Steady: { icon: '→', color: '#94A3B8', bg: 'rgba(148,163,184,0.1)' },
+    Dipping: { icon: '↘', color: '#FB923C', bg: 'rgba(251,146,60,0.1)' },
+    Falling: { icon: '↓', color: '#F87171', bg: 'rgba(248,113,113,0.1)' },
+    Collapsing: { icon: '⬇', color: '#EF4444', bg: 'rgba(239,68,68,0.12)' },
+  }[label] || { icon: '→', color: '#94A3B8', bg: 'rgba(148,163,184,0.1)' };
+}
+
+function latestTeamResult(abbr) {
+  const finished = (lastData?.finished || []).filter(m => m.team1_short === abbr || m.team2_short === abbr);
+  const m = finished[0];
+  if (!m) return null;
+  const isT1 = m.team1_short === abbr;
+  const opp = isT1 ? m.team2_short : m.team1_short;
+  const score = isT1 ? m.team1_score1 : m.team2_score1;
+  const won = String(m.winner || '').includes(abbr) || String(m.winner || '').includes(TEAM_FULL_NAMES[abbr] || abbr);
+  return { opp, won, score: score?.display || '—', overs: score?.detail || '', result: won ? 'W' : 'L' };
+}
+
+function topTeamPerformer(abbr, mode) {
+  const fallback = {
+    CSK: { batting: ['Ruturaj Gaikwad', 'batting lead'], bowling: ['Deepak Chahar', 'bowling lead'] },
+    MI: { batting: ['Rohit Sharma', 'batting lead'], bowling: ['Jasprit Bumrah', 'bowling lead'] },
+    RCB: { batting: ['Virat Kohli', 'batting lead'], bowling: ['Mohammed Siraj', 'bowling lead'] },
+    KKR: { batting: ['Phil Salt', 'batting lead'], bowling: ['Sunil Narine', 'bowling lead'] },
+    DC: { batting: ['David Warner', 'batting lead'], bowling: ['Kuldeep Yadav', 'bowling lead'] },
+    SRH: { batting: ['Travis Head', 'batting lead'], bowling: ['Pat Cummins', 'bowling lead'] },
+    PBKS: { batting: ['Liam Livingstone', 'batting lead'], bowling: ['Arshdeep Singh', 'bowling lead'] },
+    RR: { batting: ['Sanju Samson', 'batting lead'], bowling: ['Trent Boult', 'bowling lead'] },
+    GT: { batting: ['Shubman Gill', 'batting lead'], bowling: ['Rashid Khan', 'bowling lead'] },
+    LSG: { batting: ['KL Rahul', 'batting lead'], bowling: ['Avesh Khan', 'bowling lead'] },
+  }[abbr]?.[mode] || ['—', '—'];
+  if (!statsData) return { player: fallback[0], stat: fallback[1] };
+  const season = 2026;
+  if (mode === 'batting') {
+    const map = new Map();
+    for (const rec of (statsData.batting || [])) {
+      if (rec.t !== abbr || Number(rec.y) !== season) continue;
+      const row = map.get(rec.p) || { player: rec.p, runs: 0 };
+      row.runs += rec.ru || 0;
+      map.set(rec.p, row);
+    }
+    const top = Array.from(map.values()).sort((a, b) => b.runs - a.runs)[0];
+    return top ? { player: top.player, stat: `${top.runs} runs` } : { player: fallback[0], stat: fallback[1] };
+  }
+  const map = new Map();
+  for (const rec of (statsData.bowling || [])) {
+    if (rec.t !== abbr || Number(rec.y) !== season) continue;
+    const row = map.get(rec.p) || { player: rec.p, wickets: 0 };
+    row.wickets += rec.w || 0;
+    map.set(rec.p, row);
+  }
+  const top = Array.from(map.values()).sort((a, b) => b.wickets - a.wickets)[0];
+  return top ? { player: top.player, stat: `${top.wickets} wkts` } : { player: fallback[0], stat: fallback[1] };
+}
+
+function teamQualColor(value) {
+  return value >= 70 ? '#22C55E' : value >= 40 ? '#FACC15' : value >= 15 ? '#F97316' : '#EF4444';
+}
+
+function renderTeamFormPills(form) {
+  const values = (form || []).length ? form : ['-','-','-','-','-'];
+  return `<div class="team-form-pills">${values.map(r => `<span class="team-form-pill ${r === 'W' ? 'win' : r === 'L' ? 'loss' : 'empty'}">${esc(r)}</span>`).join('')}</div>`;
+}
+
+function renderTeamIntelligenceCard(row) {
+  const t = teamMeta(row.abbr);
+  const color = t.color;
+  const isTop4 = row.rank <= 4;
+  const qColor = teamQualColor(row.qualification_pct);
+  const mom = teamMomentumMeta(row.momentum);
+  const open = !!teamsExpanded[row.abbr];
+  const last = row.lastResult;
+  return `
+    <div class="team-card team-intel-card ${row.eliminated ? 'eliminated' : ''}" style="--team-color:${color};--team-color-2:${t.color2 || color}">
+      <div class="team-top-bar"></div>
+      <div class="team-card-pad">
+        <div class="team-row team-row-main">
+          <div class="team-main-left">
+            <div class="team-rank-bubble ${isTop4 ? 'top4' : ''}">#${row.rank}</div>
+            <div class="team-name-stack">
+              <div class="team-code-line"><span>${esc(row.abbr)}</span>${isTop4 && !row.eliminated ? '<b class="team-status-pill top4">TOP 4</b>' : ''}${row.eliminated ? '<b class="team-status-pill out">OUT</b>' : ''}</div>
+              <div class="team-full-name">${esc(row.full)}</div>
+              <div class="team-home-ground">${esc(row.profile.homeGround || 'Home ground')}</div>
+            </div>
+          </div>
+          <div class="team-points-box"><b>${row.points}</b><span>pts</span><em class="${row.nrr >= 0 ? 'pos' : 'neg'}">${row.nrr > 0 ? '+' : ''}${fmt(row.nrr, 3)}</em></div>
+        </div>
+        <div class="team-row team-record-row">
+          <div class="team-record"><span class="w">${row.won}W</span><i>·</i><span class="l">${row.lost}L</span><i>·</i><span class="p">${row.played}P</span></div>
+          <div class="team-momentum" style="background:${mom.bg};color:${mom.color}"><span>${mom.icon}</span>${esc(row.momentum)}</div>
+        </div>
+        <div class="team-row team-form-row">
+          ${renderTeamFormPills(row.last_5)}
+          ${last ? `<div class="team-last-chip ${last.won ? 'won' : 'lost'}"><span>vs ${esc(last.opp)}</span><b>${esc(last.result)} · ${esc(last.score)} ${last.overs ? `(${esc(last.overs)})` : ''}</b></div>` : `<div class="team-last-chip"><span>Latest</span><b>Awaiting result</b></div>`}
+        </div>
+        <div class="team-qual-block">
+          <div class="team-qual-label"><span>PLAYOFF PROBABILITY</span><b style="color:${qColor}">${Math.round(row.qualification_pct)}%</b></div>
+          <div class="team-qual-track"><i style="width:${Math.max(0, Math.min(100, row.qualification_pct))}%;background:${qColor}"></i></div>
+        </div>
+      </div>
+      <button type="button" class="team-expand-toggle" onclick="toggleTeamProfile('${row.abbr}')">Team Profile ${open ? '▴' : '▾'}</button>
+      ${open ? renderTeamExpandedProfile(row) : ''}
+    </div>`;
+}
+
+function renderTeamExpandedProfile(row) {
+  const titles = Number(row.profile.titles || 0);
+  return `
+    <div class="team-expanded">
+      <div class="team-expand-grid">
+        <div class="team-expand-card"><span>Captain</span><b>${esc(row.profile.captain || '—')}</b></div>
+        <div class="team-expand-card"><span>Coach</span><b>${esc(row.profile.coach || '—')}</b></div>
+      </div>
+      <div class="team-expand-grid">
+        <div class="team-expand-card"><span>Top Batter</span><b>${esc(row.topBatter.player)}</b><em>${esc(row.topBatter.stat)}</em></div>
+        <div class="team-expand-card"><span>Top Bowler</span><b>${esc(row.topBowler.player)}</b><em>${esc(row.topBowler.stat)}</em></div>
+      </div>
+      <div class="team-expand-card team-title-card ${titles > 0 ? 'has-title' : ''}">
+        <div><span>${titles > 0 ? '🏆 Titles' : '🎽 Titles'}</span><b>${titles > 0 ? `${titles} IPL Title${titles > 1 ? 's' : ''}` : 'No titles yet'}</b></div>
+        <em>Founded ${esc(String(row.profile.founded || '—'))}</em>
+      </div>
+    </div>`;
+}
+
+function setTeamsSort(mode) {
+  teamsSortMode = mode;
+  renderTeamsSection();
+}
+
+function toggleTeamProfile(abbr) {
+  teamsExpanded[abbr] = !teamsExpanded[abbr];
+  renderTeamsSection();
 }
 
 function showTeamDetail(abbr) {
