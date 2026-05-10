@@ -129,55 +129,6 @@
   ],
   "matches": [
     {
-      "id": "prov-152086",
-      "source_id": "152086",
-      "source": "cricbuzz",
-      "provisional": true,
-      "season": 2026,
-      "match_number": 53,
-      "round": "League",
-      "date": "2026-05-10",
-      "team1": "Lucknow Super Giants",
-      "team1_short": "LSG",
-      "team1_color": "#0284c7",
-      "team2": "Chennai Super Kings",
-      "team2_short": "CSK",
-      "team2_color": "#d97706",
-      "winner": "Chennai Super Kings",
-      "result_text": "Chennai Super Kings won by 5 wkts",
-      "venue": "MA Chidambaram Stadium, Chennai",
-      "innings": [
-        {
-          "number": 1,
-          "team": "Lucknow Super Giants",
-          "team_short": "LSG",
-          "team_color": "#0284c7",
-          "opponent": "Chennai Super Kings",
-          "opponent_short": "CSK",
-          "runs": 203,
-          "wickets": 8,
-          "overs": 20,
-          "target": null,
-          "display": "203/8",
-          "detail": "(20 ov)"
-        },
-        {
-          "number": 2,
-          "team": "Chennai Super Kings",
-          "team_short": "CSK",
-          "team_color": "#d97706",
-          "opponent": "Lucknow Super Giants",
-          "opponent_short": "LSG",
-          "runs": 181,
-          "wickets": 5,
-          "overs": 17.3,
-          "target": 204,
-          "display": "181/5",
-          "detail": "(17.3 ov)"
-        }
-      ]
-    },
-    {
       "id": "prov-152075",
       "source_id": "152075",
       "source": "cricbuzz",

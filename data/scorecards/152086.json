@@ -282,18 +282,18 @@
       "bowl_team": "Lucknow Super Giants",
       "innings_id": 2,
       "score": {
-        "runs": 181,
+        "runs": 208,
         "wickets": 5,
-        "overs": 17.3,
-        "run_rate": 10.34,
+        "overs": 19.2,
+        "run_rate": 10.76,
         "declared": false
       },
       "extras": {
-        "total": 6,
-        "wides": 6,
+        "total": 10,
+        "wides": 9,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 1
       },
       "batsmen": [
         {
@@ -358,24 +358,24 @@
         },
         {
           "name": "Shivam Dube",
-          "runs": 1,
-          "balls": 2,
+          "runs": 15,
+          "balls": 7,
           "fours": 0,
-          "sixes": 0,
-          "strike_rate": 50,
-          "out_desc": "batting",
+          "sixes": 2,
+          "strike_rate": 214.29,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Prashant Veer",
-          "runs": 9,
-          "balls": 6,
+          "runs": 18,
+          "balls": 12,
           "fours": 0,
-          "sixes": 1,
+          "sixes": 2,
           "strike_rate": 150,
-          "out_desc": "batting",
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -456,12 +456,12 @@
         },
         {
           "name": "Prince Yadav",
-          "overs": 3.3,
-          "balls": 21,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 34,
+          "runs": 36,
           "wickets": 0,
-          "economy": 9.7,
+          "economy": 9,
           "wides": 2,
           "no_balls": 0,
           "dots": 0
@@ -480,13 +480,13 @@
         },
         {
           "name": "Avesh Khan",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 35,
+          "runs": 45,
           "wickets": 1,
-          "economy": 11.7,
-          "wides": 3,
+          "economy": 11.2,
+          "wides": 4,
           "no_balls": 0,
           "dots": 0
         },
@@ -499,6 +499,18 @@
           "wickets": 2,
           "economy": 10,
           "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Aiden Markram",
+          "overs": 0.2,
+          "balls": 2,
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 42,
+          "wides": 2,
           "no_balls": 0,
           "dots": 0
         }
