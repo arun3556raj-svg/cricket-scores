@@ -1808,8 +1808,10 @@ async function loadHeroScorecard(match) {
     const sc = await res.json();
     heroScorecardData = sc;
     heroMatchId = match.id;
+    // Re-render hero with ultra card (scorecard data merged into match object)
+    match.batters = []; // Will be populated by loadLiveIntel
     const el = $('heroInner');
-    if (el) el.innerHTML = heroCK(match, sc);
+    if (el) el.innerHTML = liveCardCK(match);
   } catch (_) { /* silently ignore — hero still shows without player data */ }
 }
 

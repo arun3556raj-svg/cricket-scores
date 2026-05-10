@@ -5,15 +5,15 @@
       "bowl_team": "Chennai Super Kings",
       "innings_id": 1,
       "score": {
-        "runs": 147,
-        "wickets": 6,
-        "overs": 14.3,
-        "run_rate": 10.14,
+        "runs": 146,
+        "wickets": 5,
+        "overs": 14.1,
+        "run_rate": 10.31,
         "declared": false
       },
       "extras": {
-        "total": 6,
-        "wides": 4,
+        "total": 5,
+        "wides": 3,
         "no_balls": 1,
         "byes": 0,
         "leg_byes": 1
@@ -82,11 +82,11 @@
         {
           "name": "Akshat Raghuwanshi",
           "runs": 18,
-          "balls": 18,
+          "balls": 17,
           "fours": 1,
           "sixes": 0,
-          "strike_rate": 100,
-          "out_desc": "c Urvil Patel b Jamie Overton",
+          "strike_rate": 105.88,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -106,14 +106,14 @@
         {
           "name": "Himmat Singh",
           "runs": 0,
-          "balls": 1,
+          "balls": 0,
           "fours": 0,
           "sixes": 0,
           "strike_rate": 0,
-          "out_desc": "batting",
+          "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": false
+          "not_out": true
         },
         {
           "name": "Mohammed Shami",
@@ -203,13 +203,13 @@
         },
         {
           "name": "Jamie Overton",
-          "overs": 2.3,
-          "balls": 15,
+          "overs": 2.1,
+          "balls": 13,
           "maidens": 0,
-          "runs": 13,
-          "wickets": 3,
-          "economy": 5.2,
-          "wides": 2,
+          "runs": 12,
+          "wickets": 2,
+          "economy": 5.5,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         }
@@ -244,12 +244,6 @@
           "runs": 130,
           "over": 12.1,
           "wkt_n": 5
-        },
-        {
-          "name": "Akshat Raghuwanshi",
-          "runs": 147,
-          "over": 14.2,
-          "wkt_n": 6
         }
       ]
     }
