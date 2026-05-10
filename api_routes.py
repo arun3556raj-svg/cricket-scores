@@ -11,7 +11,7 @@ api_bp = Blueprint("api", __name__)
 
 # Match list cache (30s)
 _match_cache = {"data": None, "ts": 0}
-MATCH_TTL = 10
+MATCH_TTL = 5
 
 # Scorecard cache (20s)
 _sc_cache = {}
