@@ -1,4 +1,216 @@
 {
-  "innings": [],
+  "innings": [
+    {
+      "bat_team": "Lucknow Super Giants",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 1,
+      "score": {
+        "runs": 92,
+        "wickets": 1,
+        "overs": 6.1,
+        "run_rate": 14.92,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 2,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Josh Inglis",
+          "runs": 78,
+          "balls": 26,
+          "fours": 9,
+          "sixes": 6,
+          "strike_rate": 300,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mitchell Marsh",
+          "runs": 10,
+          "balls": 10,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 100,
+          "out_desc": "c Dewald Brevis b Anshul Kamboj",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nicholas Pooran",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rishabh Pant",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": true,
+          "is_keeper": true,
+          "not_out": true
+        },
+        {
+          "name": "Aiden Markram",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Akshat Raghuwanshi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Himmat Singh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mohammed Shami",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Digvesh Singh Rathi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Prince Yadav",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Akeal Hosein",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 17.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Mukesh Choudhary",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 0,
+          "economy": 13,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Anshul Kamboj",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 15,
+          "wides": 1,
+          "no_balls": 1,
+          "dots": 0
+        },
+        {
+          "name": "Noor Ahmad",
+          "overs": 0.1,
+          "balls": 1,
+          "maidens": 0,
+          "runs": 1,
+          "wickets": 0,
+          "economy": 6,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Mitchell Marsh",
+          "runs": 77,
+          "over": 5.1,
+          "wkt_n": 1
+        }
+      ]
+    }
+  ],
   "error": null
 }
