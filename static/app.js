@@ -693,6 +693,84 @@ function matchCardKeyPlayer(code) {
   return { name, surname: name.split(/\s+/).pop(), role };
 }
 
+
+// ── Client-side live intelligence helpers ──────────────────
+function liveOversToBalls(ov) {
+  const o = Math.floor(ov);
+  const b = Math.round((ov - o) * 10);
+  return o * 6 + b;
+}
+function liveBallsRemaining(overs) {
+  return 120 - liveOversToBalls(overs);
+}
+function liveProjection(score, overs, wickets, crr) {
+  if (!score || !overs) return null;
+  const ballsRem = liveBallsRemaining(overs);
+  const remOvers = ballsRem / 6;
+  let proj = score + (crr * remOvers);
+  const wktPen = wickets * 0.4 * remOvers;
+  proj -= wktPen;
+  const oversDone = Number(overs);
+  if (oversDone >= 16) proj *= 1.05;
+  const r = Math.round(proj);
+  return { projected_score: r, range_low: r - 7, range_high: r + 7, proj_target: r + 1 };
+}
+function liveWinProb(score, overs, wickets, crr, target, rrr, innings) {
+  if (innings === 1) {
+    const proj = score + crr * (liveBallsRemaining(overs) / 6);
+    const delta = (proj - 175) / 35;
+    let bp = 50 + delta * 20;
+    bp = Math.max(10, Math.min(90, bp));
+    return { batting_team: Math.round(bp), fielding_team: Math.round(100 - bp) };
+  } else {
+    if (rrr == null || crr == null) return { batting_team: 50, fielding_team: 50 };
+    const rateDiff = rrr - crr;
+    let bp = 50 - rateDiff * 10;
+    bp -= wickets * 3;
+    bp = Math.max(5, Math.min(95, bp));
+    return { batting_team: Math.round(bp), fielding_team: Math.round(100 - bp) };
+  }
+}
+function liveMomentum(last6) {
+  if (!last6 || !last6.length) return null;
+  const runVals = { '0':0,'1':1,'2':2,'3':3,'4':4,'6':6,'W':0,'Wd':1,'Nb':1 };
+  const runs = last6.reduce(function(s,b) { return s + (runVals[b] || 0); }, 0);
+  const wkts = last6.filter(function(b) { return b === 'W'; }).length;
+  let v = Math.max(0, Math.min(100, (runs / 15) * 100 - wkts * 20));
+  v = Math.round(v);
+  let label = v >= 75 ? 'Dominant' : v >= 55 ? 'Building' : v >= 40 ? 'Neutral' : v >= 25 ? 'Under pressure' : 'Struggling';
+  return { value: v, label: label, last_6_rpo: runs };
+}
+function livePressure(innings, overs, wickets, crr, rrr, target, score) {
+  let base = 0;
+  if (innings === 1) {
+    base += wickets * 10;
+    if (Number(overs) > 10 && crr < 8.0) base += 15;
+    if (Number(overs) > 16) base += 10;
+  } else {
+    if (rrr != null && crr != null) base += Math.max(0, (rrr - crr) * 8);
+    base += wickets * 8;
+    const ballsLeft = (20 - Number(overs)) * 6;
+    if (ballsLeft < 24 && (target - score) > 30) base += 20;
+  }
+  const v = Math.round(Math.min(100, Math.max(0, base)));
+  let label = v >= 70 ? 'High pressure' : v >= 45 ? 'Medium' : v >= 20 ? 'Low' : 'Comfortable';
+  return { value: v, label: label };
+}
+function liveBallCfg(ball) {
+  if (ball === 'W') return { bg: '#EF4444', tx: '#fff', glow: 'rgba(239,68,68,0.6)' };
+  if (ball === '6') return { bg: 'rgba(34,197,94,0.22)', tx: '#4ADE80', glow: 'rgba(34,197,94,0.4)' };
+  if (ball === '4') return { bg: 'rgba(59,130,246,0.22)', tx: '#60A5FA', glow: 'rgba(59,130,246,0.4)' };
+  if (ball === '0') return { bg: 'rgba(255,255,255,0.05)', tx: 'rgba(255,255,255,0.25)', glow: 'transparent' };
+  return { bg: 'rgba(255,255,255,0.1)', tx: 'rgba(255,255,255,0.8)', glow: 'transparent' };
+}
+function liveSrColor(sr) {
+  return sr > 150 ? '#4ADE80' : sr >= 130 ? '#FACC15' : '#F87171';
+}
+function liveEconColor(econ) {
+  return econ < 7.5 ? '#4ADE80' : econ <= 9.5 ? '#FACC15' : '#F87171';
+}
+
 function liveCardCK(m) {
   const t1 = teamMeta(m.team1_short);
   const t2 = teamMeta(m.team2_short);
@@ -704,22 +782,141 @@ function liveCardCK(m) {
     const battingIsT1 = !!m.team1_score1 || !m.team2_score1;
     const batCode = battingIsT1 ? m.team1_short : m.team2_short;
     const bowlCode = battingIsT1 ? m.team2_short : m.team1_short;
+    const batT = battingIsT1 ? t1 : t2;
+    const bowlT = battingIsT1 ? t2 : t1;
     const batScore = battingIsT1 ? m.team1_score1 : m.team2_score1;
-    const crr = m.run_rate || '—';
-    const projected = batScore?.runs && batScore?.overs ? Math.round(Number(batScore.runs) / Math.max(1, Number(batScore.overs)) * 20) : '—';
+    const bowlTeam = battingIsT1 ? m.team2_score1 : m.team1_score1;
+    const crr = Number(m.run_rate) || 0;
+    const overs = batScore ? Number(batScore.overs) || 0 : 0;
+    const wickets = batScore ? Number(batScore.wickets) || 0 : 0;
+    const score = batScore ? Number(batScore.runs) || 0 : 0;
+    const proj = liveProjection(score, overs, wickets, crr);
+    const wp = liveWinProb(score, overs, wickets, crr, null, null, 1);
+    const mom = liveMomentum(m.last_6_balls);
+    const pres = livePressure(1, overs, wickets, crr, null, null, score);
+    const ballTimeline = (m.ball_timeline || m.last_6_balls) ? { this_over: (m.ball_timeline?.this_over || m.last_6_balls || []).slice(0,6), last_over: (m.ball_timeline?.last_over || []) } : null;
+    const batColor = batT.color;
+    const bowlColor = bowlT.color;
+    const lastWkt = esc(m.last_wicket || m.status_text || '');
+    const meta = m.match_desc || m.series || '';
+    const venue = m.venue ? m.venue.split(',')[0] : '';
     return `
-      <article class="live-red-card" onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
-        <div class="live-red-stripe"></div>
-        <div class="live-red-inner">
-          <div class="live-red-head"><div class="live-pulse"><span></span><i></i><b>LIVE</b></div><div class="live-red-chips"><span>CRR ${esc(String(crr))}</span><span class="proj">PROJ ${esc(String(projected))}</span></div></div>
-          <div class="live-score-block">
-            <div class="live-batting-team">${matchCardTeamBadge(batCode, 48)}<div><div class="live-team-code">${esc(batCode)}</div><div class="live-score-num">${batScore ? esc(batScore.display) : '—'}</div><div class="live-score-overs">${batScore ? esc(batScore.detail) : 'In progress'}</div></div></div>
-            <div class="live-fielding-team">${matchCardTeamBadge(bowlCode, 40, true)}<div><div>${esc(bowlCode)}</div><span>Yet to bat / fielding</span></div></div>
+      <div class="live-ultra-panel" onclick='handleCardClick(${JSON.stringify(m.id)}, this)' data-match='${matchJson}'>
+        <div class="live-ultra-top" style="background:linear-gradient(135deg,${batColor}22,${bowlColor}11)">
+          <div class="live-ultra-head">
+            <div class="live-ultra-pulse"><span></span><span></span></div>
+            <div class="live-ultra-meta"><span class="live-ultra-tag">${esc(meta)}</span>${venue ? '<span class="live-ultra-venue">'+esc(venue)+'</span>' : ''}</div>
+            <div class="live-ultra-chips"><span class="live-chip-crr">CRR ${crr.toFixed(2)}</span>${proj ? '<span class="live-chip-proj">PROJ '+proj.projected_score+'</span>' : ''}</div>
           </div>
-          <div class="live-status-strip"><b>${esc(m.status_text || 'Match live')}</b><span>Projected score: ${esc(String(projected))}${projected !== '—' ? '' : ' unavailable'}</span><span>Partnership and last wicket update when scorecard feed exposes it.</span></div>
+          <div class="live-ultra-scores">
+            <div class="live-ultra-team">
+              ${matchCardTeamBadge(batCode, 56)}
+              <div class="live-ultra-team-info">
+                <div class="live-ultra-code" style="color:${batColor}">${esc(batCode)}</div>
+                <div class="live-ultra-score"><b>${batScore ? esc(batScore.display) : '—'}</b><span>${batScore ? esc(batScore.detail) : 'Yet to bat'}</span></div>
+                ${teamMiniIntel(batCode)}
+              </div>
+            </div>
+            <div class="live-ultra-divider">
+              <span class="live-ultra-vs">VS</span>
+              ${proj ? '<span class="live-ultra-proj">proj '+proj.projected_score+'</span>' : ''}
+            </div>
+            <div class="live-ultra-team live-ultra-team--right">
+              ${matchCardTeamBadge(bowlCode, 50)}
+              <div class="live-ultra-team-info">
+                <div class="live-ultra-code" style="color:${bowlColor}">${esc(bowlCode)}</div>
+                <div class="live-ultra-score"><b>${bowlTeam ? esc(bowlTeam.display) : '—'}</b><span>${bowlTeam ? esc(bowlTeam.detail) : 'Will field'}</span></div>
+                ${teamMiniIntel(bowlCode)}
+              </div>
+            </div>
+          </div>
         </div>
-      </article>`;
+        <div class="live-ultra-body">
+          <div class="live-ultra-stats-row">
+            <div class="live-ultra-stat-card">
+              <div class="live-ultra-stat-header">Win Probability</div>
+              <div class="live-ultra-wp-bar" style="--pct:${wp.batting_team}%;--c1:${batColor};--c2:${bowlColor}"><i></i></div>
+              <div class="live-ultra-wp-labels"><span>${wp.batting_team}% ${esc(batCode)}</span><span>${esc(bowlCode)} ${wp.fielding_team}%</span></div>
+            </div>
+            <div class="live-ultra-gauge-group">
+              ${mom ? `
+              <div class="live-ultra-gauge">
+                <svg width="56" height="56" viewBox="0 0 56 56" style="transform:rotate(135deg)">
+                  <circle cx="28" cy="28" r="22" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4" stroke-dasharray="103.67 138.23" stroke-linecap="round"/>
+                  <circle cx="28" cy="28" r="22" fill="none" stroke="${mom.value >= 65 ? '#22C55E' : mom.value >= 45 ? '#FACC15' : '#EF4444'}" stroke-width="4" stroke-dasharray="${(mom.value/100)*103.67} 138.23" stroke-linecap="round" style="filter:drop-shadow(0 0 4px ${mom.value >= 65 ? '#22C55E80' : mom.value >= 45 ? '#FACC1580' : '#EF444480'});transition:stroke-dasharray 1s ease"/>
+                </svg>
+                <span class="live-ultra-gauge-val" style="color:${mom.value >= 65 ? '#22C55E' : mom.value >= 45 ? '#FACC15' : '#EF4444'}">${mom.value}</span>
+                <span class="live-ultra-gauge-label">Momentum</span>
+              </div>` : ''}
+              <div class="live-ultra-gauge">
+                <svg width="50" height="50" viewBox="0 0 50 50" style="transform:rotate(-90deg)">
+                  <circle cx="25" cy="25" r="20" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="5"/>
+                  <circle cx="25" cy="25" r="20" fill="none" stroke="${pres.value >= 70 ? '#EF4444' : pres.value >= 45 ? '#F97316' : '#22C55E'}" stroke-width="5" stroke-dasharray="${(pres.value/100)*125.66} 125.66" stroke-linecap="round" style="filter:drop-shadow(0 0 3px ${pres.value >= 70 ? '#EF444480' : pres.value >= 45 ? '#F9731680' : '#22C55E80'});transition:stroke-dasharray 1s ease"/>
+                </svg>
+                <span class="live-ultra-gauge-val" style="color:${pres.value >= 70 ? '#EF4444' : pres.value >= 45 ? '#F97316' : '#22C55E'}">${pres.value}</span>
+                <span class="live-ultra-gauge-label">${pres.label}</span>
+              </div>
+              ${mom ? '<span class="live-ultra-mom-label" style="color:'+(mom.value >= 65 ? '#22C55E' : mom.value >= 45 ? '#FACC15' : '#EF4444')+'">'+esc(mom.label)+'</span>' : ''}
+            </div>
+          </div>
+          ${ballTimeline && (ballTimeline.this_over.length || ballTimeline.last_over.length) ? `
+          <div class="live-ultra-ball-row">
+            ${ballTimeline.last_over.length ? `
+            <div class="live-ultra-ball-col">
+              <div class="live-ultra-ball-label">Previous over</div>
+              <div class="live-ultra-balls">${ballTimeline.last_over.map(function(b) {
+                var c = liveBallCfg(b);
+                return '<span class="live-ultra-ball" style="background:' + c.bg + ';color:' + c.tx + ';box-shadow:0 0 6px ' + c.glow + '">' + b + '</span>';
+              }).join('')}</div>
+            </div>` : ''}
+            ${ballTimeline.this_over.length ? `
+            <div class="live-ultra-ball-col">
+              <div class="live-ultra-ball-label">This over ${ballTimeline.this_over.filter(function(b){return b!=='W'&&b!=='0';}).length > 2 ? '<span style="color:#4ade80">●</span>' : ''}</div>
+              <div class="live-ultra-balls">${ballTimeline.this_over.map(function(b) {
+                var c = liveBallCfg(b);
+                return '<span class="live-ultra-ball" style="background:' + c.bg + ';color:' + c.tx + ';box-shadow:0 0 6px ' + c.glow + '">' + b + '</span>';
+              }).join('')}</div>
+            </div>` : ''}
+          </div>` : ''}
+          ${m.batters && m.batters.length ? `
+          <div class="live-ultra-section">
+            <div class="live-ultra-section-h">Batters</div>
+            <div class="live-ultra-batters">${m.batters.map(function(b) {
+              var bName = b.name || b.player || '';
+              var sr = b.sr || (b.balls > 0 ? (b.runs * 100 / b.balls) : 0);
+              var bFours = b.fours || 0;
+              var bSixes = b.sixes || 0;
+              return '<div class="live-ultra-batter ' + (b.is_active ? 'batter-active' : '') + '">' +
+                '<div class="live-ultra-batter-name">' + esc(bName) + (b.is_striker ? ' <span class="live-ultra-strike-dot">●</span>' : '') + '</div>' +
+                '<div class="live-ultra-batter-stats"><b>' + (b.runs || 0) + '</b><span>(' + (b.balls || 0) + ')</span><em style="color:' + liveSrColor(sr) + '">SR ' + sr.toFixed(1) + '</em></div>' +
+                '<div class="live-ultra-batter-detail">' + bFours + '\u00d74 ' + bSixes + '\u00d76' + (b.dots != null ? ' \u00b7 ' + b.dots + ' dots' : '') + (b.boundary_count != null ? ' \u00b7 ' + b.boundary_count + ' boundaries' : '') + '</div></div>';
+            }).join('')}</div>
+          </div>` : ''}
+          ${m.bowlers && m.bowlers.length ? `
+          <div class="live-ultra-section">
+            <div class="live-ultra-section-h">Bowlers</div>
+            <div class="live-ultra-bowlers">${m.bowlers.map(function(b) {
+              var bName = b.name || b.player || '';
+              var econ = b.econ || (b.overs > 0 ? (b.runs / b.overs) : 0);
+              return '<div class="live-ultra-bowler ' + (b.is_current ? 'bowler-current' : '') + '">' +
+                '<div class="live-ultra-bowler-name">' + esc(bName) + (b.is_current ? ' <span class="live-ultra-current-dot">\u25cf</span>' : '') + '</div>' +
+                '<div class="live-ultra-bowler-stats"><b>' + (b.wickets || 0) + '/' + (b.runs || 0) + '</b><span>(' + (b.overs || '0.0') + ')</span><em style="color:' + liveEconColor(econ) + '">Econ ' + econ.toFixed(2) + '</em></div>' +
+                '<div class="live-ultra-bowler-detail">' + (b.dots != null ? b.dots + ' dots' : '') + '</div></div>';
+            }).join('')}</div>
+          </div>` : ''}
+          ${m.partnership ? `
+          <div class="live-ultra-pair">
+            <span class="live-ultra-pair-label">Partnership</span>
+            <span class="live-ultra-pair-val"><b>${m.partnership.runs || 0}</b> off <b>${m.partnership.balls || 0}</b> balls</span>
+            ${m.partnership.run_rate ? '<span class="live-ultra-pair-rr">RR '+m.partnership.run_rate.toFixed(1)+'</span>' : ''}
+            ${m.partnership.batter1 && m.partnership.batter2 ? '<span class="live-ultra-pair-names">'+esc(m.partnership.batter1)+' + '+esc(m.partnership.batter2)+'</span>' : ''}
+          </div>` : ''}
+          ${lastWkt ? '<div class="live-ultra-wkt">⚡ Last wkt: '+lastWkt+'</div>' : ''}
+          ${m.status_text ? '<div class="live-ultra-status">'+esc(m.status_text)+'</div>' : ''}
+        </div>
+      </div>`;
   }
+
 
   let t1Winner = false, t2Winner = false;
   if (isResult && m.status_text) {
