@@ -837,7 +837,7 @@ function liveCardCK(m) {
   const target   = sb.target;
   const ballsRem = sb.balls_remaining != null ? sb.balls_remaining : 120 - (Math.floor(overs) * 6 + Math.round((overs % 1) * 10));
 
-  const innings  = meta.innings || 1;
+  const innings  = meta.innings || (batScore1 && batScore2 && Number(batScore1.overs) >= 20 ? 2 : 1);
   const displayScore = batScoreObj && batScoreObj.display ? esc(batScoreObj.display) : '—';
   const displayOvers = batScoreObj && batScoreObj.detail ? esc(batScoreObj.detail) : '';
 
