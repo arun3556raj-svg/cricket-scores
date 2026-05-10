@@ -4919,12 +4919,23 @@ function renderQualificationPointsView(rows) {
           var opp = ptsRows.find(function(r) { return r.team_short === oppCode; });
           var oppColor = opp ? (teamMeta(oppCode).color || '#888') : '#888';
           var oppNrr = opp ? opp.nrr : 0;
-          // Generate strategy text based on opponent NRR and position
-          var batTarget = row.nrr > 0.3 ? 'Win by 15+ runs' : row.nrr > 0 ? 'Win by 25+ runs' : row.nrr > -0.3 ? 'Win by 35+ runs' : 'Win by 50+ runs';
-          var chaseTarget = row.nrr > 0.3 ? 'Chase with 12+ balls left' : row.nrr > 0 ? 'Chase with 10+ balls' : row.nrr > -0.3 ? 'Chase within 15 overs' : 'Chase within 14 overs';
-          if (opp && opp.qualProb > 75) {
-            batTarget = 'Win by 25+ runs — ' + oppCode + ' have strong NRR';
-            chaseTarget = 'Chase with 15+ balls — NRR swing vs top team';
+          var oppNr = Math.abs(oppNrr || 0);
+          // Generate strategy based on OPPONENT's NRR and position
+          if (opp && opp.isTopFour && oppNrr > 0.5) {
+            var batTarget = 'Win by 30+ runs — keep NRR ahead of ' + oppCode;
+            var chaseTarget = 'Chase inside 14 overs — ' + oppCode + ' have +' + oppNrr.toFixed(3) + ' NRR';
+          } else if (opp && oppNrr > 0.3) {
+            var batTarget = 'Win by 25+ runs vs strong NRR side';
+            var chaseTarget = 'Chase with 12+ balls to spare';
+          } else if (oppNrr > 0) {
+            var batTarget = 'Win by 20+ runs — solid NRR opponent';
+            var chaseTarget = 'Chase with 10+ balls remaining';
+          } else if (oppNrr > -0.3) {
+            var batTarget = 'Win by 15+ runs — manageable NRR opponent';
+            var chaseTarget = 'Chase inside 17 overs';
+          } else {
+            var batTarget = 'Win by any margin — weak NRR opponent';
+            var chaseTarget = 'Chase freely — ' + oppCode + ' NRR is weak';
           }
           return '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:9px 11px;margin-bottom:6px">'
             + '<div style="display:flex;align-items:center;gap:7px;margin-bottom:8px">'

@@ -276,10 +276,10 @@
       "bowl_team": "Mumbai Indians",
       "innings_id": 2,
       "score": {
-        "runs": 144,
+        "runs": 137,
         "wickets": 6,
-        "overs": 17.4,
-        "run_rate": 8.15,
+        "overs": 17,
+        "run_rate": 8.06,
         "declared": false
       },
       "extras": {
@@ -340,11 +340,11 @@
         },
         {
           "name": "Krunal Pandya",
-          "runs": 68,
-          "balls": 44,
+          "runs": 61,
+          "balls": 40,
           "fours": 4,
-          "sixes": 4,
-          "strike_rate": 154.55,
+          "sixes": 3,
+          "strike_rate": 152.5,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -486,10 +486,10 @@
         },
         {
           "name": "AM Ghazanfar",
-          "overs": 2.4,
-          "balls": 16,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 28,
+          "runs": 21,
           "wickets": 0,
           "economy": 10.5,
           "wides": 0,
