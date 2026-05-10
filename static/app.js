@@ -4850,7 +4850,7 @@ function renderSchedule(data) {
   let filtered = sorted;
   const now = Date.now();
   if (scheduleFilterMode === 'next2') {
-    const end2 = now + 172800000; // 48 hours
+    const end2 = now + 1722000000; // 48 hours
     filtered = sorted.filter(m => {
       if (m.status === 'finished') return false;
       return (m.start_epoch || 0) >= now && (m.start_epoch || 0) <= end2;
@@ -5360,6 +5360,6 @@ document.addEventListener('DOMContentLoaded', () => {
     generateDateTabs();
     loadMatches(false);
     // Auto-refresh match list every 15 seconds when drawer is closed
-    setInterval(() => { if (!drawerOpen) loadMatches(false); }, 8000);
+    setInterval(() => { if (!drawerOpen) loadMatches(false); }, 20000);
   });
 });
