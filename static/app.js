@@ -907,7 +907,7 @@ function liveCardCK(m) {
     + '<span style="font-size:30px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums">' + score + '</span>'
     + '<span style="font-size:17px;color:#6b7280">/' + wickets + '</span>'
     + '</div>'
-    + '<div style="font-size:11px;color:#6b7280">' + overs + ' ov</div>'
+    + '<div><span data-live="overs" style="font-size:11px;color:#6b7280">' + overs + '</span><span style="font-size:11px;color:#6b7280"> ov</span></div>'
     + '</div>'
     // VS + Target
     + '<div style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:0 14px">'
@@ -922,7 +922,7 @@ function liveCardCK(m) {
     // Show opponent's score (1st innings total) in 2nd innings
     + (innings === 2 && batScore1 ? '<div style="display:flex;align-items:baseline;gap:4px"><span style="font-size:22px;font-weight:700;color:#6b7280">' + (batScore1.runs || 0) + '</span><span style="font-size:13px;color:#6b7280">/' + (batScore1.wickets || 0) + '</span></div><div style="font-size:10px;color:#6b7280">' + esc(batScore1.detail || '') + '</div>' : '')
     + '<div style="font-size:11px;color:#6b7280">CRR ' + crr.toFixed(2) + (rrr ? ' · RRR ' + rrr.toFixed(2) : '') + '</div>'
-    + (target ? '<div style="font-size:10px;color:#9ca3af">Need ' + reqRuns + ' in ' + reqBalls + ' balls</div>' : '')
+    + (target ? '<div style="font-size:10px;color:#9ca3af">Need <span data-live="need">' + reqRuns + '</span> in <span data-live="need-balls">' + reqBalls + '</span> balls</div>' : '')
     + '</div>'
     + '</div>'
 
@@ -964,11 +964,11 @@ function liveCardCK(m) {
     + '<div style="padding:0 14px 14px">'
     + '<div style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px">Win Probability</div>'
     + '<div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">'
-    + '<span style="font-size:13px;font-weight:700;color:' + wpBatColor + '">' + esc(batCode) + ' ' + wpBat + '%</span>'
+    + '<span data-live="wp-bat" style="font-size:13px;font-weight:700;color:' + wpBatColor + '">' + esc(batCode) + ' ' + wpBat + '%</span>'
     + '<div style="flex:1;height:6px;border-radius:3px;background:#1f2937;overflow:hidden;display:flex">'
-    + '<div style="width:' + wpBat + '%;background:' + wpBatColor + ';border-radius:3px"></div>'
+    + '<div data-live="wp-bar" style="width:' + wpBat + '%;background:' + wpBatColor + ';border-radius:3px"></div>'
     + '</div>'
-    + '<span style="font-size:13px;font-weight:700;color:' + wpBowlColor + '">' + esc(bowlCode) + ' ' + wpBowl + '%</span>'
+    + '<span data-live="wp-bowl" style="font-size:13px;font-weight:700;color:' + wpBowlColor + '">' + esc(bowlCode) + ' ' + wpBowl + '%</span>'
     + '</div>'
     + '</div>'
 
@@ -989,7 +989,7 @@ function liveCardCK(m) {
     + '<div style="display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:#0f172a;border-radius:8px">'
     + '<span style="font-size:9px;font-weight:700;color:#6b7280;letter-spacing:1.5px;text-transform:uppercase">Projected Score</span>'
     + '<div style="text-align:right">'
-    + '<span style="font-size:18px;font-weight:800;color:#f9fafb">' + proj.projected_score + '</span>'
+    + '<span data-live="proj" style="font-size:18px;font-weight:800;color:#f9fafb">' + proj.projected_score + '</span>'
     + '<br><span style="font-size:10px;color:#6b7280">Range ' + (proj.range_low || '—') + '–' + (proj.range_high || '—') + '</span>'
     + '</div></div></div>' : '')
 
@@ -1045,6 +1045,32 @@ function liveCardCK(m) {
     + '</div>';
 }
 
+
+
+function updateLiveCard(m) {
+  if (!m) return;
+  var el;
+  if (el = document.querySelector('[data-live="score"]')) el.textContent = m.score_block ? m.score_block.score : (m.team1_score1 ? m.team1_score1.runs : 0);
+  if (el = document.querySelector('[data-live="wickets"]')) el.textContent = '/' + (m.score_block ? m.score_block.wickets : (m.team1_score1 ? m.team1_score1.wickets : 0));
+  if (el = document.querySelector('[data-live="overs"]')) el.textContent = m.score_block ? m.score_block.overs : (m.team1_score1 ? m.team1_score1.overs : 0);
+  if (el = document.querySelector('[data-live="crr"]')) el.textContent = (m.score_block ? m.score_block.crr : Number(m.run_rate) || 0).toFixed(2);
+  if (el = document.querySelector('[data-live="rrr"]')) {
+    var rrr = m.score_block ? m.score_block.rrr : null;
+    if (rrr != null) { el.textContent = rrr.toFixed(2); el.parentNode.style.display = ''; }
+  }
+  if (el = document.querySelector('[data-live="wp-bar"]')) {
+    var wp = m.win_prob || {};
+    el.style.width = (wp.batting_team || 50) + '%';
+  }
+  if (el = document.querySelector('[data-live="wp-bat"]')) {
+    var wp2 = m.win_prob || {};
+    el.textContent = (m.live_meta ? m.live_meta.batting_team : '') + ' ' + (wp2.batting_team || 50) + '%';
+  }
+  if (el = document.querySelector('[data-live="wp-bowl"]')) {
+    var wp3 = m.win_prob || {};
+    el.textContent = (m.live_meta ? m.live_meta.fielding_team : '') + ' ' + (wp3.fielding_team || 50) + '%';
+  }
+}
 function ckScTab(matchId, tab, btn) {
   // Hide all panels for this match
   document.querySelectorAll('.scpanel_' + matchId).forEach(function(el) {
@@ -2148,11 +2174,16 @@ function render(data) {
   const liveBadge = $('liveBadge');
   if (liveBadge) { liveBadge.textContent = totalLive; liveBadge.style.display = totalLive > 0 ? 'inline-flex' : 'none'; }
 
-  // Hero — show ultra live card, then auto-fetch scorecard for player data
+  // Hero — show ultra live card without flicker
   if (data.live.length > 0) {
     const liveMatch = data.live[0];
+    var existingHero = document.querySelector('[data-live="score"]');
+    if (existingHero) {
+      updateLiveCard(liveMatch);
+    } else {
+      $('heroInner').innerHTML = liveCardCK(liveMatch);
+    }
     const cachedSc = (heroMatchId === liveMatch.id) ? heroScorecardData : null;
-    $('heroInner').innerHTML = liveCardCK(liveMatch);
     if (!cachedSc || heroMatchId !== liveMatch.id) {
       heroScorecardData = null;
       heroMatchId = liveMatch.id;
@@ -2225,7 +2256,7 @@ function loadLiveIntel(match) {
       // Re-render hero + grid
       var heroIn = document.getElementById('heroInner');
       if (heroIn && lastData.live.length > 0 && heroIn.innerHTML) {
-        heroIn.innerHTML = liveCardCK(lastData.live[0]);
+        updateLiveCard(lastData.live[0]);
       }
       var grid = document.getElementById('liveGrid');
       if (grid) grid.innerHTML = lastData.live.slice(1).map(liveCardCK).join('');
