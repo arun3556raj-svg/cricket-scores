@@ -1098,7 +1098,8 @@ let scheduleLoaded = false;
 let scheduleData = null;
 let archiveLoaded = false;
 let archiveData = null;
-let archiveFilters = { year: 'all', team: 'all', round: 'all' };
+let archiveFilters = { year: 'All', team: 'All', round: 'All', search: '' };
+let archiveViewMode = 'matches';
 let pointsLoaded = false;
 let pointsData = null;
 let pointsSeason = '2026';
@@ -4045,105 +4046,261 @@ async function loadSchedule() {
   }
 }
 
-function archiveMatchRow(match) {
-  const scoreRows = (match.innings || []).map(inn => `
-    <div class="archive-score-row">
-      <div class="team-left">
-        <div class="team-badge" style="border-color:${inn.team_color}44;color:${inn.team_color};background:${teamMeta(inn.team_short).bg}">${esc(inn.team_short)}</div>
-        <span class="team-name">${esc(inn.team)}</span>
-      </div>
-      <div class="team-score">
-        <span class="score-num">${esc(inn.display)}</span>
-        <span class="score-ov">${esc(inn.detail)}</span>
-      </div>
-    </div>`).join('');
 
-  const matchJson = encodeURIComponent(JSON.stringify(match));
-  return `
-    <div class="sch-row archive-row" onclick="openArchiveScoreboard(this)" data-match="${matchJson}">
-      <div class="archive-row-head">
-        <span class="sch-desc">${esc(match.season)} · ${esc(match.round)}${match.match_number ? ` · Match ${esc(String(match.match_number))}` : ''}</span>
-        <span class="archive-date">${provisionalBadge(match)}${esc(match.date)}</span>
-      </div>
-      <div class="archive-scoreboard">${scoreRows}</div>
-      <div class="sch-footer">
-        <span class="sch-result">${esc(match.result_text)}</span>
-        <span class="archive-card-action">Full scorecard</span>
-        ${match.venue ? `<span class="sch-venue">${esc(match.venue)}</span>` : ''}
-      </div>
-    </div>`;
+const ARCHIVE_TEAM_COLORS = {
+  SRH:'#F97316', GT:'#1D4B6E', RCB:'#DC2626', PBKS:'#E11D48',
+  RR:'#EC4899', CSK:'#FACC15', DC:'#3B82F6', KKR:'#7C3AED',
+  LSG:'#06B6D4', MI:'#1E40AF', DD:'#1D4ED8', KXIP:'#E11D48',
+  RPS:'#F59E0B', GL:'#EA580C', PWI:'#16A34A', DCH:'#0891B2', SH:'#0891B2'
+};
+const IPL_CHAMPIONS = {
+  2008:'RR', 2009:'DCH', 2010:'CSK', 2011:'CSK', 2012:'KKR',
+  2013:'MI', 2014:'KKR', 2015:'MI', 2016:'SRH', 2017:'MI',
+  2018:'CSK', 2019:'MI', 2020:'MI', 2021:'CSK', 2022:'GT',
+  2023:'CSK', 2024:'KKR', 2025:'RCB'
+};
+const KNOCKOUT_ROUNDS = ['Final', 'Qualifier 1', 'Qualifier 2', 'Eliminator'];
+const ARCHIVE_TEAMS = ['CSK','MI','RCB','KKR','RR','SRH','GT','PBKS','DC','LSG'];
+const ARCHIVE_ROUNDS = ['All','Final','Qualifier 1','Qualifier 2','Eliminator','League'];
+
+function archiveTeamColor(code, fallback = 'rgba(255,255,255,0.2)') {
+  return ARCHIVE_TEAM_COLORS[code] || fallback;
 }
 
-function renderArchiveControls(data, visibleCount) {
-  const yearOptions = ['<option value="all">All years</option>']
-    .concat(data.years.map(year => `<option value="${year}" ${archiveFilters.year === String(year) ? 'selected' : ''}>${year}</option>`))
-    .join('');
-  const teamOptions = ['<option value="all">All teams</option>']
-    .concat(data.teams.map(team => `<option value="${esc(team.name)}" ${archiveFilters.team === team.name ? 'selected' : ''}>${esc(team.name)}</option>`))
-    .join('');
-  const roundOptions = ['<option value="all">All rounds</option>']
-    .concat(data.rounds.map(round => `<option value="${esc(round)}" ${archiveFilters.round === round ? 'selected' : ''}>${esc(round)}</option>`))
-    .join('');
-
-  return `
-    <div class="archive-filter-grid">
-      <label class="archive-filter">
-        <span>Year</span>
-        <select onchange="onArchiveFilterChange('year', this.value)">${yearOptions}</select>
-      </label>
-      <label class="archive-filter">
-        <span>Team</span>
-        <select onchange="onArchiveFilterChange('team', this.value)">${teamOptions}</select>
-      </label>
-      <label class="archive-filter">
-        <span>Round</span>
-        <select onchange="onArchiveFilterChange('round', this.value)">${roundOptions}</select>
-      </label>
-    </div>
-    <div class="archive-count">${visibleCount} matches</div>`;
+function createArchiveTeamBadge(code, size = 32) {
+  const color = archiveTeamColor(code);
+  const fontSize = Math.max(6, Math.floor(size * 0.19));
+  const radius = Math.floor(size * 0.22);
+  return `<div class="archive-team-badge" style="width:${size}px;height:${size}px;border-radius:${radius}px;background:${color}18;border:1px solid ${color}30;display:flex;align-items:center;justify-content:center;font-size:${fontSize}px;font-weight:800;color:${color};letter-spacing:.04em;flex-shrink:0">${esc(code || '—')}</div>`;
 }
 
-function getFilteredArchiveMatches(data) {
-  return (data.matches || []).filter(match => {
-    const yearOk = archiveFilters.year === 'all' || String(match.season) === archiveFilters.year;
-    const teamOk = archiveFilters.team === 'all' || match.team1 === archiveFilters.team || match.team2 === archiveFilters.team;
-    const roundOk = archiveFilters.round === 'all' || match.round === archiveFilters.round;
-    return yearOk && teamOk && roundOk;
+function archiveTeamShort(match, teamName) {
+  if (teamName === match.team1) return match.team1_short;
+  if (teamName === match.team2) return match.team2_short;
+  return teamName;
+}
+
+function archiveWinnerShort(match) {
+  return archiveTeamShort(match, match.winner) || match.winner || '';
+}
+
+function normalizeArchiveRound(round) {
+  if (round === 'Elimination Final') return 'Eliminator';
+  if (round === 'Semi Final') return 'Qualifier 2';
+  return KNOCKOUT_ROUNDS.includes(round) ? round : 'League';
+}
+
+function archiveCity(match) {
+  const venue = match.venue || '';
+  const parts = venue.split(',').map(x => x.trim()).filter(Boolean);
+  return parts.length > 1 ? parts[parts.length - 1] : (parts[0] || '');
+}
+
+function archiveScoreFor(match, teamName) {
+  return (match.innings || []).find(inn => inn.team === teamName) || null;
+}
+
+function archiveResultMargin(match) {
+  const text = match.result_text || '';
+  const m = text.match(/won by\s+(.+)$/i);
+  return m ? m[1] : text;
+}
+
+function archiveIsCloseOrSuper(match) {
+  const text = (match.result_text || '').toLowerCase();
+  if (text.includes('super over')) return true;
+  const runs = text.match(/(\d+)\s+runs?/);
+  const wkts = text.match(/(\d+)\s+(?:wickets?|wkts?)/);
+  return (runs && Number(runs[1]) <= 5) || (wkts && Number(wkts[1]) <= 1);
+}
+
+function archiveIsNotable(match, seasonMatches = []) {
+  const round = normalizeArchiveRound(match.round);
+  if (KNOCKOUT_ROUNDS.includes(round) || archiveIsCloseOrSuper(match)) return true;
+  if (!seasonMatches.length) return false;
+  const sorted = [...seasonMatches].sort((a,b) => (a.match_number || 0) - (b.match_number || 0));
+  return match.id === sorted[0]?.id || match.id === sorted[sorted.length - 1]?.id;
+}
+
+function archiveRoundBadge(round) {
+  const r = normalizeArchiveRound(round);
+  const map = {
+    Final: ['#FACC15', 'rgba(250,204,21,.1)'],
+    'Qualifier 1': ['#22C55E', 'rgba(34,197,94,.1)'],
+    'Qualifier 2': ['#F97316', 'rgba(249,115,22,.1)'],
+    Eliminator: ['#EF4444', 'rgba(239,68,68,.1)'],
+    League: ['rgba(255,255,255,.35)', 'rgba(255,255,255,.05)']
+  };
+  const [color, bg] = map[r] || map.League;
+  return `<span class="archive-round-badge" style="color:${color};background:${bg}">${esc(r)}</span>`;
+}
+
+function archiveSurname(name = '') {
+  return String(name).trim().split(/\s+/).pop() || name;
+}
+
+function filterArchiveMatches(matches, filters) {
+  return (matches || []).filter(m => {
+    const y = String(m.season || m.year || '');
+    const t1 = m.team1_short || archiveTeamShort(m, m.team1);
+    const t2 = m.team2_short || archiveTeamShort(m, m.team2);
+    const r = normalizeArchiveRound(m.round);
+    if (filters.year !== 'All' && y !== filters.year) return false;
+    if (filters.team !== 'All' && t1 !== filters.team && t2 !== filters.team) return false;
+    if (filters.round !== 'All') {
+      if (filters.round === 'League' && KNOCKOUT_ROUNDS.includes(r)) return false;
+      if (filters.round !== 'League' && r !== filters.round) return false;
+    }
+    const q = (filters.search || '').trim().toLowerCase();
+    if (q) {
+      const fields = [t1, t2, m.team1, m.team2, archiveCity(m), m.venue, m.winner, m.result_text, m.potm || ''];
+      if (!fields.some(f => String(f || '').toLowerCase().includes(q))) return false;
+    }
+    return true;
   });
 }
 
-function renderArchive(data) {
-  archiveData = data;
-  const meta = getScheduleViewMeta('archive');
-  const heading = $('scheduleHeading');
-  if (heading) heading.textContent = meta.heading;
+function renderArchiveTitle(data) {
+  const years = data.years || [];
+  const minYear = years.length ? Math.min(...years) : 2008;
+  const maxYear = years.length ? Math.max(...years) : 2026;
+  return `<div class="archive-title-block"><h1 class="archive-heading">IPL Archive</h1><p class="archive-sub">${minYear} – ${maxYear} · ${(data.matches || []).length.toLocaleString('en-IN')} matches · ${years.length} seasons</p></div>`;
+}
 
-  const matches = getFilteredArchiveMatches(data);
-  const controls = $('archiveControls');
-  if (controls) {
-    controls.style.display = '';
-    controls.innerHTML = renderArchiveControls(data, matches.length);
-  }
+function renderChampionsStrip() {
+  const chips = [2025,2024,2023,2022,2021,2020,2019,2018].map(year => {
+    const champ = IPL_CHAMPIONS[year];
+    if (!champ) return '';
+    const color = archiveTeamColor(champ);
+    return `<button class="champion-chip" onclick="setArchiveChampionFilter('${year}')">${createArchiveTeamBadge(champ, 24)}<span class="champion-chip-year" style="color:${color}">${year}</span></button>`;
+  }).join('');
+  return `<div class="champions-strip"><div class="champions-strip-label">Recent champions</div><div class="champions-scroll">${chips}</div></div>`;
+}
 
-  if (!matches.length) {
-    $('scheduleList').innerHTML = `<div class="sc-empty">${meta.empty}</div>`;
-    return;
-  }
+function renderArchiveViewToggle() {
+  return `<div class="archive-view-toggle"><button class="archive-view-btn ${archiveViewMode === 'matches' ? 'active' : ''}" onclick="setArchiveViewMode('matches')">📋 Matches</button><button class="archive-view-btn ${archiveViewMode === 'stats' ? 'active' : ''}" onclick="setArchiveViewMode('stats')">📊 Team Stats</button></div>`;
+}
 
+function renderArchiveFilterControls(data, visibleCount) {
+  const years = ['All'].concat([...(data.years || [])].sort((a,b) => b - a).map(String));
+  const yearOptions = years.map(y => `<option value="${esc(y)}" ${archiveFilters.year === y ? 'selected' : ''}>${esc(y)}</option>`).join('');
+  const teamOptions = ['All', ...ARCHIVE_TEAMS].map(t => `<option value="${esc(t)}" ${archiveFilters.team === t ? 'selected' : ''}>${esc(t)}</option>`).join('');
+  const roundOptions = ARCHIVE_ROUNDS.map(r => `<option value="${esc(r)}" ${archiveFilters.round === r ? 'selected' : ''}>${esc(r)}</option>`).join('');
+  const chips = [];
+  if (archiveFilters.year !== 'All') chips.push(`<span class="archive-active-chip">${esc(archiveFilters.year)}</span>`);
+  if (archiveFilters.team !== 'All') chips.push(`<span class="archive-active-chip">${esc(archiveFilters.team)}</span>`);
+  if (archiveFilters.round !== 'All') chips.push(`<span class="archive-active-chip">${esc(archiveFilters.round)}</span>`);
+  if ((archiveFilters.search || '').trim()) chips.push(`<span class="archive-active-chip">Search: ${esc(archiveFilters.search)}</span>`);
+  const hasActive = chips.length > 0;
+  return `
+    <div class="archive-content">
+      <div class="archive-search-wrap"><span class="archive-search-icon">⌕</span><input class="archive-search-input" value="${esc(archiveFilters.search || '')}" oninput="onArchiveFilterChange('search', this.value)" placeholder="Search team, city, venue, result…"></div>
+      <div class="archive-filter-grid">
+        <label class="archive-filter-item"><span class="archive-filter-label">Year</span><select class="archive-filter-select" onchange="onArchiveFilterChange('year', this.value)">${yearOptions}</select></label>
+        <label class="archive-filter-item"><span class="archive-filter-label">Team</span><select class="archive-filter-select" onchange="onArchiveFilterChange('team', this.value)">${teamOptions}</select></label>
+        <label class="archive-filter-item"><span class="archive-filter-label">Round</span><select class="archive-filter-select" onchange="onArchiveFilterChange('round', this.value)">${roundOptions}</select></label>
+      </div>
+      <div class="archive-filter-meta"><div>${chips.join('')}${hasActive ? `<button class="archive-clear-btn" onclick="clearArchiveFilters()">Clear all</button>` : ''}</div><span class="archive-match-count">${visibleCount} matches</span></div>
+    </div>`;
+}
+
+function renderArchiveYearHeader(year, count) {
+  const champ = IPL_CHAMPIONS[year];
+  const color = champ ? archiveTeamColor(champ) : '';
+  return `<div class="archive-year-header"><span class="archive-year-num">${esc(year)}</span>${champ ? `<div class="archive-year-champ">${createArchiveTeamBadge(champ, 20)}<span class="archive-year-champ-label" style="color:${color}">Champions</span></div>` : ''}<span class="archive-year-divider"></span><span class="archive-year-count">${count} matches</span></div>`;
+}
+
+function archiveMatchCard(match, seasonMatches = []) {
+  const t1 = match.team1_short || archiveTeamShort(match, match.team1);
+  const t2 = match.team2_short || archiveTeamShort(match, match.team2);
+  const winner = archiveWinnerShort(match);
+  const winnerColor = archiveTeamColor(winner, match.team1_color || match.team2_color || '#818cf8');
+  const t1Inn = archiveScoreFor(match, match.team1);
+  const t2Inn = archiveScoreFor(match, match.team2);
+  const t1W = winner === t1;
+  const t2W = winner === t2;
+  const round = normalizeArchiveRound(match.round);
+  const city = archiveCity(match);
+  const notable = archiveIsNotable(match, seasonMatches);
+  const matchJson = encodeURIComponent(JSON.stringify(match));
+  const result = archiveResultMargin(match);
+  const scoreBlock = (code, team, inn, isWinner, right = false) => `
+    <div class="archive-team-block ${right ? 'right' : ''}">
+      ${createArchiveTeamBadge(code, 34)}
+      <div style="${right ? 'text-align:right' : ''}">
+        <div style="display:flex;align-items:center;gap:4px;${right ? 'justify-content:flex-end' : ''}">${isWinner && !right ? `<span class="archive-winner-tick">✓</span>` : ''}<span class="archive-team-name ${isWinner ? 'is-winner' : ''}">${esc(code)}</span>${isWinner && right ? `<span class="archive-winner-tick">✓</span>` : ''}</div>
+        <div><span class="archive-team-score ${isWinner ? 'is-winner' : ''}">${esc(inn?.display || '—')}</span>${inn?.detail ? `<span class="archive-team-overs"> ${esc(inn.detail)}</span>` : ''}</div>
+      </div>
+    </div>`;
+  return `
+    <article class="archive-match-card ${round === 'Final' ? 'is-final' : ''}" onclick="openArchiveScoreboard(this)" data-match="${matchJson}">
+      <div class="archive-match-stripe" style="background:linear-gradient(90deg,${winnerColor}66,${winnerColor}22,transparent)"></div>
+      <div class="archive-match-inner">
+        <div class="archive-match-meta"><div class="archive-meta-left">${archiveRoundBadge(round)}${city ? `<span class="archive-match-city">${esc(city)}</span>` : ''}${notable ? `<span class="archive-classic-badge">Classic</span>` : ''}</div><span class="archive-match-date">${esc(match.date || '')}</span></div>
+        <div class="archive-score-row">${scoreBlock(t1, match.team1, t1Inn, t1W)}<span class="archive-vs-divider">VS</span>${scoreBlock(t2, match.team2, t2Inn, t2W, true)}</div>
+        <div class="archive-card-footer"><div class="archive-result-text"><span style="width:2px;height:2px;border-radius:50%;background:${winnerColor};display:inline-block"></span><span>${esc(archiveSurname(match.winner || winner))} won by <b class="archive-result-margin">${esc(result)}</b></span></div>${match.potm ? `<div class="archive-potm"><span class="archive-potm-star">★</span><span class="archive-potm-name">${esc(archiveSurname(match.potm))}</span>${match.potmStat ? `<span class="archive-potm-stat">${esc(match.potmStat)}</span>` : ''}</div>` : ''}</div>
+      </div>
+    </article>`;
+}
+
+function renderArchiveMatchesView(data, matches) {
+  if (!matches.length) return `<div class="archive-empty"><div class="archive-empty-icon">🏏</div><div class="archive-empty-title">No matches found</div><div class="archive-empty-sub">Try clearing filters or searching another team.</div></div>`;
   const byYear = new Map();
   for (const match of matches) {
     const year = String(match.season);
     if (!byYear.has(year)) byYear.set(year, []);
     byYear.get(year).push(match);
   }
+  return Array.from(byYear.entries()).sort((a,b) => Number(b[0]) - Number(a[0])).map(([year, yearMatches]) => {
+    const sorted = [...yearMatches].sort((a,b) => (b.match_number || 0) - (a.match_number || 0));
+    return `<section class="archive-year-group">${renderArchiveYearHeader(year, sorted.length)}<div class="archive-match-stack">${sorted.map(m => archiveMatchCard(m, sorted)).join('')}</div></section>`;
+  }).join('');
+}
 
-  $('scheduleList').innerHTML = Array.from(byYear.entries())
-    .map(([year, yearMatches]) => `
-      <div class="sch-date-group">
-        <div class="sch-date-header">${esc(year)}</div>
-        ${yearMatches.map(archiveMatchRow).join('')}
-      </div>`)
-    .join('');
+function renderArchiveStatsView(data) {
+  const wins = new Map();
+  for (const match of data.matches || []) {
+    const code = archiveWinnerShort(match);
+    if (code) wins.set(code, (wins.get(code) || 0) + 1);
+  }
+  const rows = Array.from(wins.entries()).sort((a,b) => b[1] - a[1]).slice(0, 8);
+  const max = rows[0]?.[1] || 1;
+  const winRows = rows.map(([code, val]) => {
+    const color = archiveTeamColor(code);
+    return `<div class="archive-stat-row"><div class="archive-stat-meta"><span class="archive-stat-label">${esc(code)}</span><span class="archive-stat-val">${val}</span></div><div class="archive-stat-track"><div class="archive-stat-fill" style="width:${Math.round(val / max * 100)}%;background:${color}"></div></div></div>`;
+  }).join('');
+  return `<div class="archive-content"><div class="archive-stats-card"><div class="archive-stats-title">All-time wins</div>${winRows}</div><div class="archive-trivia-grid"><div class="archive-trivia-tile"><div class="archive-trivia-label">Most titles</div><div class="archive-trivia-val" style="color:#1E40AF">MI (5)</div></div><div class="archive-trivia-tile"><div class="archive-trivia-label">Highest score</div><div class="archive-trivia-val" style="color:#DC2626">287/2 (RCB)</div></div><div class="archive-trivia-tile"><div class="archive-trivia-label">Finals played</div><div class="archive-trivia-val" style="color:#FACC15">${(data.years || []).length} seasons</div></div><div class="archive-trivia-tile"><div class="archive-trivia-label">Closest final</div><div class="archive-trivia-val" style="color:#4ADE80">MI won by 1 run</div></div></div></div>`;
+}
+
+function renderArchive(data) {
+  archiveData = data;
+  const heading = $('scheduleHeading');
+  if (heading) heading.textContent = 'IPL Archive';
+  const matches = filterArchiveMatches(data.matches || [], archiveFilters);
+  const controls = $('archiveControls');
+  if (controls) {
+    controls.style.display = '';
+    controls.innerHTML = renderArchiveTitle(data) + renderChampionsStrip() + renderArchiveViewToggle() + (archiveViewMode === 'matches' ? renderArchiveFilterControls(data, matches.length) : '');
+  }
+  $('scheduleList').innerHTML = archiveViewMode === 'stats'
+    ? renderArchiveStatsView(data)
+    : `<div class="archive-content">${renderArchiveMatchesView(data, matches)}</div>`;
+}
+
+function setArchiveViewMode(mode) {
+  archiveViewMode = mode === 'stats' ? 'stats' : 'matches';
+  if (archiveData) renderArchive(archiveData);
+}
+
+function setArchiveChampionFilter(year) {
+  archiveViewMode = 'matches';
+  archiveFilters = { ...archiveFilters, year: String(year), round: 'Final' };
+  if (archiveData) renderArchive(archiveData);
+}
+
+function clearArchiveFilters() {
+  archiveFilters = { year: 'All', team: 'All', round: 'All', search: '' };
+  if (archiveData) renderArchive(archiveData);
 }
 
 function onArchiveFilterChange(key, value) {
@@ -4153,15 +4310,14 @@ function onArchiveFilterChange(key, value) {
 
 async function loadArchive() {
   archiveLoaded = true;
-  const meta = getScheduleViewMeta('archive');
   const heading = $('scheduleHeading');
-  if (heading) heading.textContent = meta.heading;
+  if (heading) heading.textContent = 'IPL Archive';
   const controls = $('archiveControls');
   if (controls) {
     controls.style.display = 'none';
     controls.innerHTML = '';
   }
-  $('scheduleList').innerHTML = `<div class="sc-loading"><div class="sc-spin"></div><span>${meta.loading}</span></div>`;
+  $('scheduleList').innerHTML = `<div class="sc-loading"><div class="sc-spin"></div><span>Loading archive…</span></div>`;
   try {
     const res = await fetchJson(getArchiveUrl());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -4186,11 +4342,7 @@ async function openArchiveScoreboard(el) {
   $('drawerTeams').textContent = `${match.team1} vs ${match.team2}`;
   $('drawerMeta').textContent = `${match.season} · ${match.round}${match.match_number ? ' · Match ' + match.match_number : ''}`;
   $('drawerLiveBar').style.display = 'none';
-  $('drawerBody').innerHTML = `
-    <div class="sc-loading">
-      <div class="sc-spin"></div>
-      <span>Loading archive scorecard...</span>
-    </div>`;
+  $('drawerBody').innerHTML = `<div class="sc-loading"><div class="sc-spin"></div><span>Loading archive scorecard...</span></div>`;
   $('drawerBackdrop').classList.add('open');
   $('drawer').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -4204,37 +4356,17 @@ async function openArchiveScoreboard(el) {
     renderScorecard(data);
   } catch (err) {
     if (!drawerOpen || drawerMatchId !== match.id) return;
-    $('drawerBody').innerHTML = `
-      ${renderArchiveScoreboard(match)}
-      <div class="sc-empty archive-scorecard-fallback">
-        Full scorecard is not available yet.<br>
-        <span style="font-size:12px;color:var(--t4)">Showing the match summary instead. ${esc(err.message)}</span>
-      </div>`;
+    $('drawerBody').innerHTML = `${renderArchiveScoreboard(match)}<div class="sc-empty archive-scorecard-fallback">Full scorecard is not available yet.<br><span style="font-size:12px;color:var(--t4)">Showing the match summary instead. ${esc(err.message)}</span></div>`;
   }
 }
 
 function renderArchiveScoreboard(match) {
   const innings = (match.innings || []).map(inn => `
     <div class="archive-drawer-innings">
-      <div>
-        <div class="innings-team">${esc(inn.team)}</div>
-        <div style="display:flex;align-items:center;gap:8px;margin-top:2px">
-          <span class="innings-overs">${esc(inn.detail)}</span>
-          ${inn.target ? `<span class="innings-rr">Target ${esc(String(inn.target))}</span>` : ''}
-        </div>
-      </div>
+      <div><div class="innings-team">${esc(inn.team)}</div><div style="display:flex;align-items:center;gap:8px;margin-top:2px"><span class="innings-overs">${esc(inn.detail)}</span>${inn.target ? `<span class="innings-rr">Target ${esc(String(inn.target))}</span>` : ''}</div></div>
       <span class="innings-score-line">${esc(inn.display)}</span>
     </div>`).join('');
-
-  return `
-    <div class="archive-drawer">
-      <div class="archive-drawer-meta">
-        <span>${esc(match.date)}</span>
-        ${match.venue ? `<span>${esc(match.venue)}</span>` : ''}
-      </div>
-      ${innings}
-      <div class="archive-drawer-result">${esc(match.result_text)}</div>
-    </div>`;
+  return `<div class="archive-drawer"><div class="archive-drawer-meta"><span>${esc(match.date)}</span>${match.venue ? `<span>${esc(match.venue)}</span>` : ''}</div>${innings}<div class="archive-drawer-result">${esc(match.result_text)}</div></div>`;
 }
 
 function openScheduleScorecard(matchId, el) {
