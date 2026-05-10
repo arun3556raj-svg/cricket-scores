@@ -1049,6 +1049,12 @@ function liveCardCK(m) {
 
 function updateLiveCard(m) {
   if (!m) return;
+  var heroEl = document.getElementById("heroInner");
+  var curId = heroEl ? heroEl.getAttribute("data-mid") : null;
+  if (curId && String(m.id) !== curId) {
+    if (heroEl) heroEl.innerHTML = liveCardCK(m);
+    return;
+  }
   var sb = m.score_block || {};
   var meta = m.live_meta || {};
   var el;
@@ -2214,7 +2220,11 @@ function render(data) {
   // Hero — show ultra live card without flicker
   if (data.live.length > 0) {
     const liveMatch = data.live[0];
-    var existingHero = document.querySelector('[data-live="score"]');
+    var heroMatchCheck = document.getElementById("heroInner");
+    var heroMid = heroMatchCheck ? heroMatchCheck.getAttribute("data-mid") : null;
+    var existingHero = heroMid && String(liveMatch.id) !== heroMid
+      ? (heroMatchCheck.innerHTML = liveCardCK(liveMatch), false)
+      : document.querySelector('[data-live="score"]');
     if (existingHero) {
       updateLiveCard(liveMatch);
     } else {
