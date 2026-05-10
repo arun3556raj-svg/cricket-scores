@@ -3465,3 +3465,92 @@ html[data-theme="light"] .player-stats-table .career-row td { border-top-color: 
 /* Override old progress CSS if conflicting */
 .sch-progress { display:none; }
 .sch-summary { display:none; }
+
+/* ── Archive History Vault redesign ─────────────────────────── */
+.archive-title-block { margin-bottom:14px; }
+.archive-heading { font-size:22px;font-weight:800;color:#F1F5F9;letter-spacing:-.02em;margin:0 0 4px; }
+.archive-sub { font-size:11px;color:rgba(255,255,255,.3);margin:0; }
+.champions-strip { padding:12px 14px;border-radius:12px;margin-bottom:16px;background:linear-gradient(135deg,rgba(250,204,21,.05),rgba(249,115,22,.03));border:1px solid rgba(250,204,21,.08); }
+.champions-strip-label { font-size:9px;font-weight:700;color:rgba(250,204,21,.5);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px; }
+.champions-scroll { display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none; }
+.champions-scroll::-webkit-scrollbar { display:none; }
+.champion-chip { display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 8px;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);cursor:pointer;flex-shrink:0;font-family:inherit; }
+.champion-chip-year { font-size:9px;font-weight:600;font-variant-numeric:tabular-nums; }
+.archive-view-toggle { display:flex;gap:2px;padding:3px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);margin-bottom:14px; }
+.archive-view-btn { flex:1;padding:7px 0;border-radius:8px;border:none;cursor:pointer;font-size:12px;font-weight:500;background:transparent;color:rgba(255,255,255,.4);font-family:inherit;transition:all .15s; }
+.archive-view-btn.active { font-weight:600;background:rgba(255,255,255,.1);color:#F1F5F9; }
+.archive-search-wrap { position:relative;margin-bottom:10px; }
+.archive-search-icon { position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:13px;color:rgba(255,255,255,.2);pointer-events:none; }
+.archive-search-input { width:100%;padding:8px 10px 8px 32px;border-radius:9px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:#E2E8F0;font-size:12px;font-family:inherit;outline:none;transition:border-color .15s; }
+.archive-search-input:focus { border-color:rgba(255,255,255,.15); }
+.archive-search-input::placeholder { color:rgba(255,255,255,.2); }
+.archive-filter-grid { display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:10px; }
+.archive-filter-item { display:flex;flex-direction:column;gap:4px; }
+.archive-filter-label { font-size:9px;font-weight:600;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.08em; }
+.archive-filter-select { padding:7px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);color:#E2E8F0;font-size:12px;font-weight:500;font-family:inherit;cursor:pointer;outline:none;-webkit-appearance:none;appearance:none; }
+.archive-filter-select option { background:#111827;color:#E2E8F0; }
+.archive-filter-meta { display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px;flex-wrap:wrap; }
+.archive-filter-meta > div { display:flex;align-items:center;gap:6px;flex-wrap:wrap; }
+.archive-active-chip { font-size:10px;font-weight:600;padding:3px 9px;border-radius:6px;background:rgba(99,102,241,.12);color:#818CF8;border:1px solid rgba(99,102,241,.15); }
+.archive-clear-btn { font-size:10px;font-weight:600;padding:3px 9px;border-radius:6px;background:rgba(239,68,68,.08);color:#F87171;border:1px solid rgba(239,68,68,.12);cursor:pointer;font-family:inherit; }
+.archive-match-count { font-size:10px;color:rgba(255,255,255,.3);font-variant-numeric:tabular-nums;flex-shrink:0;margin-left:auto; }
+@keyframes archiveFadeUp { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+.archive-content { animation:archiveFadeUp .3s ease; }
+.archive-year-group { margin-bottom:18px; }
+.archive-year-header { display:flex;align-items:center;gap:10px;margin-bottom:8px; }
+.archive-year-num { font-size:20px;font-weight:800;color:#F1F5F9;letter-spacing:-.02em;font-variant-numeric:tabular-nums;flex-shrink:0; }
+.archive-year-champ { display:flex;align-items:center;gap:5px; }
+.archive-year-champ-label { font-size:10px;font-weight:600; }
+.archive-year-divider { flex:1;height:1px;background:rgba(255,255,255,.05); }
+.archive-year-count { font-size:10px;color:rgba(255,255,255,.2);font-variant-numeric:tabular-nums;flex-shrink:0; }
+.archive-match-stack { display:flex;flex-direction:column;gap:6px; }
+.archive-match-card { border-radius:11px;overflow:hidden;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);cursor:pointer;transition:border-color .15s,transform .15s,background .15s; }
+.archive-match-card:hover { border-color:rgba(255,255,255,.1);transform:translateY(-1px); }
+.archive-match-card.is-final { background:rgba(250,204,21,.03);border-color:rgba(250,204,21,.1); }
+.archive-match-stripe { height:1.5px; }
+.archive-match-inner { padding:10px 12px; }
+.archive-match-meta { display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;gap:8px; }
+.archive-meta-left { display:flex;align-items:center;gap:5px;flex-wrap:wrap; }
+.archive-match-city { font-size:9px;color:rgba(255,255,255,.25); }
+.archive-match-date { font-size:9px;color:rgba(255,255,255,.2);font-family:'JetBrains Mono',var(--mono),monospace;white-space:nowrap; }
+.archive-round-badge { font-size:8px;font-weight:700;padding:2px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.06em; }
+.archive-classic-badge { font-size:8px;font-weight:600;padding:1px 6px;border-radius:4px;background:rgba(99,102,241,.12);color:#818CF8; }
+.archive-score-row { display:flex;align-items:center;justify-content:space-between;gap:8px; }
+.archive-team-block { display:flex;align-items:center;gap:8px;min-width:0; }
+.archive-team-block.right { flex-direction:row-reverse; }
+.archive-team-name { font-size:12px;font-weight:700;color:rgba(255,255,255,.4); }
+.archive-team-name.is-winner { color:#E2E8F0; }
+.archive-team-score { font-size:18px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;font-family:'JetBrains Mono',var(--mono),monospace;color:rgba(255,255,255,.3); }
+.archive-team-score.is-winner { color:#F1F5F9; }
+.archive-team-overs { font-size:9px;color:rgba(255,255,255,.2);font-family:'JetBrains Mono',var(--mono),monospace; }
+.archive-winner-tick { font-size:9px;color:#4ADE80; }
+.archive-vs-divider { font-size:8px;font-weight:700;color:rgba(255,255,255,.1);letter-spacing:.08em; }
+.archive-card-footer { display:flex;align-items:center;justify-content:space-between;margin-top:9px;padding-top:8px;border-top:1px solid rgba(255,255,255,.04);gap:8px; }
+.archive-result-text { display:flex;align-items:center;gap:5px;font-size:10px;color:rgba(255,255,255,.4);font-weight:500;min-width:0; }
+.archive-result-margin { font-weight:600;color:rgba(255,255,255,.6); }
+.archive-potm { display:flex;align-items:center;gap:4px;flex-shrink:0; }
+.archive-potm-star { font-size:8px;color:#FACC15; }
+.archive-potm-name { font-size:9px;color:rgba(255,255,255,.3); }
+.archive-potm-stat { font-size:9px;font-weight:600;color:rgba(255,255,255,.45);font-family:'JetBrains Mono',var(--mono),monospace; }
+.archive-empty { text-align:center;padding:48px 20px; }
+.archive-empty-icon { font-size:32px;margin-bottom:10px;opacity:.5; }
+.archive-empty-title { font-size:14px;font-weight:700;color:#CBD5E1;margin-bottom:4px; }
+.archive-empty-sub { font-size:11px;color:rgba(255,255,255,.3); }
+.archive-stats-card { padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);margin-bottom:12px; }
+.archive-stats-title { font-size:11px;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px; }
+.archive-stat-row { display:flex;flex-direction:column;gap:4px;margin-bottom:10px; }
+.archive-stat-meta { display:flex;justify-content:space-between; }
+.archive-stat-label { font-size:10px;color:rgba(255,255,255,.3); }
+.archive-stat-val { font-size:10px;font-weight:700;color:#E2E8F0;font-variant-numeric:tabular-nums; }
+.archive-stat-track { height:3px;border-radius:2px;background:rgba(255,255,255,.06);overflow:hidden; }
+.archive-stat-fill { height:100%;border-radius:2px; }
+.archive-trivia-grid { display:grid;grid-template-columns:1fr 1fr;gap:8px; }
+.archive-trivia-tile { padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05); }
+.archive-trivia-label { font-size:9px;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:6px; }
+.archive-trivia-val { font-size:14px;font-weight:800; }
+@media (max-width:420px) {
+  .archive-filter-grid { gap:6px; }
+  .archive-team-score { font-size:16px; }
+  .archive-team-badge { transform:scale(.92); }
+  .archive-card-footer { align-items:flex-start;flex-direction:column; }
+}
