@@ -222,18 +222,8 @@ function resultMarginBadge(m) {
 }
 
 function tableImpactLine(m, t1Winner, t2Winner) {
-  const winner = t1Winner ? m.team1_short : t2Winner ? m.team2_short : null;
-  const loser = t1Winner ? m.team2_short : t2Winner ? m.team1_short : null;
-  const wr = standingForTeam(winner);
-  const lr = standingForTeam(loser);
-  if (!winner || !wr) return '';
-  // Generate a clean narrative line like "GT jump to #2, RR slip to danger zone"
-  const wBand = qualificationBand(wr);
-  const lBand = lr ? qualificationBand(lr) : null;
-  const wText = wBand && wBand.tone === 'safe' ? `${winner} jump to #${wr.rank}` : `${winner} hold at #${wr.rank}`;
-  const lText = lr ? (lBand && lBand.tone === 'danger' ? `${loser} slip to danger zone` : `${loser} drop to #${lr.rank}`) : '';
-  const text = lText ? `${wText}, ${lText}` : wText;
-  return `<div style="display:flex;align-items:center;gap:6px"><span style="font-size:11px;opacity:.5">📊</span><span>${esc(text)}</span></div>`;
+  // Removed — rank narratives were generating incorrect data from stale points-table.json
+  return '';
 }
 
 // ── Asset manifest (loaded once at startup from data/asset-manifest.json) ──

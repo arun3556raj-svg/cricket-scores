@@ -168,12 +168,12 @@
           "team_color": "#dc2626",
           "opponent": "Mumbai Indians",
           "opponent_short": "MI",
-          "runs": 157,
-          "wickets": 8,
-          "overs": 19.3,
+          "runs": 154,
+          "wickets": 7,
+          "overs": 19,
           "target": 167,
-          "display": "157/8",
-          "detail": "(19.3 ov)"
+          "display": "154/7",
+          "detail": "(19 ov)"
         }
       ]
     },
