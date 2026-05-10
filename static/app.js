@@ -4757,7 +4757,7 @@ function renderExpandedFixtures(row) {
       var s2 = m.team2_score1 ? esc(m.team2_score1.display) : '';
       var margin = m.status_text ? esc(m.status_text.replace(/^.*?(won|lost|tied)/i,'').trim()) : '';
       var wLabel = won ? 'Won' : 'Lost';
-      return '<div class="pt-fixture-row" onclick="handleCardClick(' + JSON.stringify(m.id) + ', this)" style="border-left:2px solid ' + (won ? '#22C55E' : '#F87171') + ';background:' + (won ? 'rgba(34,197,94,0.03)' : 'rgba(248,113,113,0.03)') + ';margin-bottom:3px;padding:7px 10px;border-radius:6px;display:flex;align-items:center;gap:8px;cursor:pointer">'
+      return '<div class="pt-fixture-row" onclick="handleCardClick(' + JSON.stringify(m.id) + ', this)" data-match=\"' + encodeURIComponent(JSON.stringify(m)).replace(/"/g, '&quot;') + '\" style="border-left:2px solid ' + (won ? '#22C55E' : '#F87171') + ';background:' + (won ? 'rgba(34,197,94,0.03)' : 'rgba(248,113,113,0.03)') + ';margin-bottom:3px;padding:7px 10px;border-radius:6px;display:flex;align-items:center;gap:8px;cursor:pointer">'
         + '<span style="background:' + (won ? 'rgba(34,197,94,0.15)' : 'rgba(248,113,113,0.15)') + ';color:' + (won ? '#22C55E' : '#F87171') + ';padding:2px 6px;border-radius:4px;font-size:9px;font-weight:800">' + (won ? 'W' : 'L') + '</span>'
         + '<span style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.7);flex:1">' + esc(opp) + '</span>'
         + '<span style="font-size:9px;color:rgba(255,255,255,0.25)">' + (s1 ? s1 : '') + (s1 && s2 ? ' vs ' : '') + (s2 ? s2 : '') + '</span>'
