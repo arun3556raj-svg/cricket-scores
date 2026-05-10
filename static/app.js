@@ -832,8 +832,13 @@ function liveCardCK(m) {
   const ballsRem = sb.balls_remaining != null ? sb.balls_remaining : 120 - (Math.floor(overs) * 6 + Math.round((overs % 1) * 10));
 
   const innings  = meta.innings || 1;
-  const displayScore = m.team1_score1 ? esc(m.team1_score1.display) : (m.team2_score1 ? esc(m.team2_score1.display) : '—');
-  const displayOvers = m.team1_score1 ? esc(m.team1_score1.detail) : (m.team2_score1 ? esc(m.team2_score1.detail) : '');
+  // Use correct batting team's score (not always team1)
+  var batScores = [m.team1_score1, m.team2_score1];
+  var batScIdx = innings === 2 && batScore1 ? 1 : 0; // If 2nd innings and team1 has score, team2 is batting
+  batScIdx = meta.batting_team === m.team2_short ? 1 : (meta.batting_team === m.team1_short ? 0 : batScIdx);
+  var batScoreObj = batScores[batScIdx] || batScores[0] || {};
+  const displayScore = batScoreObj.display ? esc(batScoreObj.display) : '—';
+  const displayOvers = batScoreObj.detail ? esc(batScoreObj.detail) : '';
 
   // Required runs (2nd innings only)
   const reqRuns  = target ? Math.max(0, target - score) : null;

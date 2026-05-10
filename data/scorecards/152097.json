@@ -276,16 +276,16 @@
       "bowl_team": "Mumbai Indians",
       "innings_id": 2,
       "score": {
-        "runs": 154,
+        "runs": 153,
         "wickets": 7,
         "overs": 19,
-        "run_rate": 8.11,
+        "run_rate": 8.05,
         "declared": false
       },
       "extras": {
-        "total": 12,
+        "total": 11,
         "wides": 8,
-        "no_balls": 1,
+        "no_balls": 0,
         "byes": 0,
         "leg_byes": 3
       },
@@ -377,10 +377,10 @@
         {
           "name": "Romario Shepherd",
           "runs": 3,
-          "balls": 8,
+          "balls": 7,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 37.5,
+          "strike_rate": 42.86,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -501,11 +501,11 @@
           "overs": 2,
           "balls": 12,
           "maidens": 0,
-          "runs": 26,
+          "runs": 25,
           "wickets": 0,
-          "economy": 13,
+          "economy": 12.5,
           "wides": 3,
-          "no_balls": 1,
+          "no_balls": 0,
           "dots": 0
         }
       ],
