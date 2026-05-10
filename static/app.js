@@ -1809,7 +1809,6 @@ async function loadHeroScorecard(match) {
     heroScorecardData = sc;
     heroMatchId = match.id;
     // Re-render hero with ultra card (scorecard data merged into match object)
-    match.batters = []; // Will be populated by loadLiveIntel
     const el = $('heroInner');
     if (el) el.innerHTML = liveCardCK(match);
   } catch (_) { /* silently ignore — hero still shows without player data */ }
@@ -2020,7 +2019,7 @@ function render(data) {
   // Re-apply cached live intel to fresh match objects (from auto-refresh)
   if (data.live) {
     data.live.forEach(function(m) {
-      if (liveIntelCache && liveIntelCache[m.id] && !m.batters) {
+      if (liveIntelCache && liveIntelCache[m.id] && !(m.batters && m.batters.length)) {
         applyIntelToMatch(m, liveIntelCache[m.id]);
       }
     });
@@ -2102,7 +2101,7 @@ function reRenderHero() {
   if (heroIn && lastData && lastData.live && lastData.live.length > 0 && heroIn.innerHTML) {
     // Apply intel to the current match object if cached
     var match = lastData.live[0];
-    if (liveIntelCache[match.id] && !match.batters) {
+    if (liveIntelCache[match.id] && !(match.batters && match.batters.length)) {
       applyIntelToMatch(match, liveIntelCache[match.id]);
     }
     heroIn.innerHTML = liveCardCK(match);
@@ -2117,7 +2116,7 @@ function loadLiveIntel(match) {
   if (!match || !match.id) return;
   // Re-apply cached intel if match object is fresh (auto-refresh creates new objects)
   if (liveIntelCache[match.id]) {
-    if (!match.batters) {
+    if (!(match.batters && match.batters.length)) {
       applyIntelToMatch(match, liveIntelCache[match.id]);
       reRenderHero();
     }
