@@ -276,10 +276,10 @@
       "bowl_team": "Mumbai Indians",
       "innings_id": 2,
       "score": {
-        "runs": 18,
+        "runs": 10,
         "wickets": 1,
-        "overs": 2.2,
-        "run_rate": 7.71,
+        "overs": 0.5,
+        "run_rate": 12,
         "declared": false
       },
       "extras": {
@@ -292,11 +292,11 @@
       "batsmen": [
         {
           "name": "Jacob Bethell",
-          "runs": 11,
-          "balls": 6,
+          "runs": 9,
+          "balls": 3,
           "fours": 2,
           "sixes": 0,
-          "strike_rate": 183.33,
+          "strike_rate": 300,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -316,11 +316,11 @@
         },
         {
           "name": "Devdutt Padikkal",
-          "runs": 6,
-          "balls": 7,
-          "fours": 1,
+          "runs": 0,
+          "balls": 1,
+          "fours": 0,
           "sixes": 0,
-          "strike_rate": 85.71,
+          "strike_rate": 0,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -438,25 +438,13 @@
       "bowlers": [
         {
           "name": "Deepak Chahar",
-          "overs": 1.2,
-          "balls": 8,
+          "overs": 0.5,
+          "balls": 5,
           "maidens": 0,
-          "runs": 14,
+          "runs": 10,
           "wickets": 1,
-          "economy": 10.5,
+          "economy": 12,
           "wides": 1,
-          "no_balls": 0,
-          "dots": 0
-        },
-        {
-          "name": "Jasprit Bumrah",
-          "overs": 1,
-          "balls": 6,
-          "maidens": 0,
-          "runs": 4,
-          "wickets": 0,
-          "economy": 4,
-          "wides": 0,
           "no_balls": 0,
           "dots": 0
         }
