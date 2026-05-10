@@ -72,6 +72,20 @@ def reset_dist() -> None:
 
 def write_index() -> None:
     html = TEMPLATE_PATH.read_text(encoding="utf-8")
+    # Inject cache-busting version from git commit hash
+    import subprocess
+    version = "dev"
+    try:
+        version = subprocess.check_output(
+            ["git", "rev-parse", "--short", "HEAD"],
+            cwd=str(ROOT),
+            stderr=subprocess.DEVNULL,
+            text=True
+        ).strip()
+    except Exception:
+        version = datetime.now().strftime("%Y%m%d%H%M%S")
+    # Replace v=digits with v=sha in all script/link tags
+    html = re.sub(r'\?v=\d+', '?v=' + version, html)
     app_script_re = re.compile(r'(?P<indent>\s*)<script\s+src=["\']static/app\.js(?:\?[^"\']*)?["\']></script>')
     match = app_script_re.search(html)
     if not match:
