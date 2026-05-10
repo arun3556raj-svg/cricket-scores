@@ -276,15 +276,15 @@
       "bowl_team": "Mumbai Indians",
       "innings_id": 2,
       "score": {
-        "runs": 154,
-        "wickets": 7,
-        "overs": 19,
-        "run_rate": 8.11,
+        "runs": 167,
+        "wickets": 8,
+        "overs": 20,
+        "run_rate": 8.35,
         "declared": false
       },
       "extras": {
-        "total": 12,
-        "wides": 8,
+        "total": 15,
+        "wides": 11,
         "no_balls": 1,
         "byes": 0,
         "leg_byes": 3
@@ -376,39 +376,39 @@
         },
         {
           "name": "Romario Shepherd",
-          "runs": 3,
-          "balls": 8,
+          "runs": 4,
+          "balls": 11,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 37.5,
-          "out_desc": "batting",
+          "strike_rate": 36.36,
+          "out_desc": "c Tilak Varma b Raj Bawa",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Rasikh Salam Dar",
-          "runs": 1,
-          "balls": 1,
+          "runs": 3,
+          "balls": 2,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 100,
-          "out_desc": "batting",
+          "strike_rate": 150,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Bhuvneshwar Kumar",
-          "runs": 0,
-          "balls": 0,
+          "runs": 7,
+          "balls": 2,
           "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "sixes": 1,
+          "strike_rate": 350,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Josh Hazlewood",
@@ -498,13 +498,13 @@
         },
         {
           "name": "Raj Bawa",
-          "overs": 2,
-          "balls": 12,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 26,
-          "wickets": 0,
+          "runs": 39,
+          "wickets": 1,
           "economy": 13,
-          "wides": 3,
+          "wides": 6,
           "no_balls": 1,
           "dots": 0
         }
@@ -551,6 +551,12 @@
           "runs": 149,
           "over": 17.6,
           "wkt_n": 7
+        },
+        {
+          "name": "Romario Shepherd",
+          "runs": 157,
+          "over": 19.3,
+          "wkt_n": 8
         }
       ]
     }

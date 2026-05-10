@@ -1666,34 +1666,10 @@ function tournamentPulseData() {
     mvpLeader = mvpList[0] || {};
   }
 
-  // ── Archive-sourced entertainment data ──
+  // ── Archive-sourced entertainment data (removed — unreliable computation) ──
   let chaseRate = { won: 0, total: 0 };
   let highestInn = { team: '', runs: 0, wkts: 0, overs: '' };
   let closestFinish = { margin: 999, detail: '' };
-  if (pulseArchiveData) {
-    const m26 = (pulseArchiveData.matches||[]).filter(m => m.season === 2026);
-    let chases = 0, chasesWon = 0;
-    for (const m of m26) {
-      const inns = m.innings || [];
-      if (inns.length >= 2) {
-        const winner = m.winner || '';
-        const winnerShort = inns.find(i => i.team === winner)?.team_short || inns.find(i => winner && winner.includes(i.team||''))?.team_short || '';
-        if (winnerShort === inns[1].team_short) chasesWon++;
-        chases++;
-      }
-      for (const inn of inns) {
-        const r = inn.runs || 0;
-        if (r > highestInn.runs) highestInn = { team: inn.team_short, runs: r, wkts: inn.wickets||0, overs: inn.overs||'' };
-      }
-      const txt = m.result_text || '';
-      const rm = txt.match(/(\d+)\s+runs?/);
-      if (rm) {
-        const margin = parseInt(rm[1]);
-        if (margin < closestFinish.margin) closestFinish = { margin, detail: txt, winner: m.winner };
-      }
-    }
-    chaseRate = { won: chasesWon, total: chases };
-  }
 
   return {
     doneMatches, totalMatches, remainMatches, progressPct,
@@ -1735,12 +1711,7 @@ function renderTournamentPulse() {
         </div>
       </div>
       <div class="pulse-section">
-        <span class="pulse-section-label">◈ Entertainment</span>
-        <div class="pulse-cards">
-          ${chaseCard(pt)}
-          ${totalCard(pt)}
         </div>
-      </div>
     </div>`;
 }
 
@@ -1930,48 +1901,7 @@ function purpleCapCard(pt) {
     </div>`;
 }
 
-function chaseCard(pt) {
-  const c = pt.chaseRate;
-  if (!c || !c.total) {
-    return `
-      <div class="pulse-card pulse-card--ent">
-        <div class="pulse-label">Chase Success</div>
-        <div style="font-size:12px;color:rgba(255,255,255,.3);margin-top:6px">Loading archive data…</div>
-      </div>`;
-  }
-  const pct = Math.round(c.won/c.total*100);
-  return `
-    <div class="pulse-card pulse-card--ent">
-      <div class="pulse-label">Chase Success Rate</div>
-      <div style="display:flex;align-items:baseline;gap:10px;margin-top:4px">
-        <span style="font-size:28px;font-weight:800;color:#22d3ee;font-variant-numeric:tabular-nums">${pct}%</span>
-        <span class="pulse-secondary">teams batting second ${c.total > 0 ? 'win' : ''}</span>
-      </div>
-      <div class="pulse-subtext">${c.won}/${c.total} chases won ${pt.totalMatches ? '· ' + pt.remainMatches + ' remaining' : ''}</div>
-      ${c.won > 0 && c.total > 0 ? `<div class="pulse-progress-wrap" style="margin-top:8px"><div class="pulse-progress-bar"><div class="pulse-progress-fill" style="width:${pct}%;background:linear-gradient(90deg,#22d3ee,#06b6d4)"></div></div></div>` : ''}
-    </div>`;
-}
 
-function totalCard(pt) {
-  const h = pt.highestInn;
-  const cf = pt.closestFinish;
-  if (!h || !h.runs) {
-    return `
-      <div class="pulse-card pulse-card--ent">
-        <div class="pulse-label">Highest Total</div>
-        <div style="font-size:12px;color:rgba(255,255,255,.3);margin-top:6px">Loading archive data…</div>
-      </div>`;
-  }
-  return `
-    <div class="pulse-card pulse-card--ent">
-      <div class="pulse-label">Highest Total / Closest Finish</div>
-      <div style="display:flex;align-items:baseline;gap:6px;margin-top:4px">
-        <span style="font-size:18px;font-weight:800;color:#22d3ee">${esc(h.team)}</span>
-        <span style="font-size:22px;font-weight:800;color:#f1f5f9;font-variant-numeric:tabular-nums">${h.runs}/${h.wkts}</span>
-      </div>
-      ${cf && cf.margin < 999 ? `<div class="pulse-subtext" style="margin-top:6px">🎯 Closest finish: ${esc(cf.detail)}</div>` : ''}
-    </div>`;
-}
 async function loadPointsIntel() {
   if (pointsData || pointsIntelLoading) return;
   pointsIntelLoading = true;
