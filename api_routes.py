@@ -456,12 +456,25 @@ def api_live_intel(match_id):
     active_inn = innings_list[-1] if innings_list else None
 
     # Get basic score info
-    bat_score = match.get("team1_score1") or {}
     t1s = match.get("team1_short", "")
     t2s = match.get("team2_short", "")
-    batting_is_t1 = bool(bat_score) or not match.get("team2_score1")
-    bat_code = t1s if batting_is_t1 else t2s
-    bowl_code = t2s if batting_is_t1 else t1s
+    s1 = match.get("team1_score1") or {}
+    s2 = match.get("team2_score1") or {}
+    # 2nd innings if both teams have scores and team2's innings is in progress
+    both_inns = bool(s1) and bool(s2)
+    if both_inns:
+        bat_score = s2
+        bowl_score = s1
+        bat_code = t2s
+        bowl_code = t1s
+        innings_num = 2
+        target_val = (s1.get("runs") or 0) + 1
+    else:
+        bat_score = s1 or s2
+        bowl_code = t1s if bat_score == s1 else t2s
+        bat_code = t2s if bat_score == s1 else t1s
+        innings_num = 1
+        target_val = None
     score = bat_score.get("runs", 0) or 0
     overs = float(bat_score.get("overs", 0) or 0)
     wickets = bat_score.get("wickets", 0) or 0
@@ -472,9 +485,13 @@ def api_live_intel(match_id):
     bowlers = _enrich_bowlers(active_inn.get("bowlers", []) if active_inn else [])
     fow = active_inn.get("fow", []) if active_inn else []
     projected = _compute_projection(score, overs, wickets, crr)
-    wp = _compute_win_prob(score, overs, wickets, crr, 1)
+    if innings_num == 2 and target_val:
+        rrr_val = ((target_val - score) / (balls_rem / 6)) if (balls_rem := (120 - int(overs) * 6 - int(round((overs - int(overs)) * 10)))) > 0 else None
+        wp = _compute_win_prob(score, overs, wickets, crr, 2, target=target_val, rrr=rrr_val)
+    else:
+        wp = _compute_win_prob(score, overs, wickets, crr, 1)
     pressure = _compute_pressure(
-        active_inn or {}, {"runs": score, "wickets": wickets}, overs, crr, None, None
+        active_inn or {}, {"runs": score, "wickets": wickets}, overs, crr, target_val, rrr_val if innings_num == 2 else None
     )
     partnership = _compute_partnership(active_inn)
 
@@ -485,13 +502,13 @@ def api_live_intel(match_id):
     payload = {
         "match_meta": {
             "match_num": match.get("match_desc", ""),
+            "innings": innings_num,
             "t1": t1s,
             "t2": t2s,
             "t1_full": match.get("team1", ""),
             "t2_full": match.get("team2", ""),
             "venue": match.get("venue", ""),
             "toss": match.get("status_text", ""),
-            "innings": 1,
             "batting_team": bat_code,
             "fielding_team": bowl_code,
             "is_live": match.get("status") == "live",
@@ -501,11 +518,11 @@ def api_live_intel(match_id):
             "wickets": wickets,
             "overs": overs,
             "crr": crr,
-            "rrr": None,
-            "target": None,
+            "rrr": rrr_val if innings_num == 2 else None,
+            "target": target_val,
             "balls_remaining": live_balls_remaining(overs),
         },
-        "projected": projected,
+        "projected": projected if innings_num == 1 else None,
         "win_probability": wp,
         "win_probability_history": [],
         "momentum": None,
