@@ -5,10 +5,10 @@
       "bowl_team": "Royal Challengers Bengaluru",
       "innings_id": 1,
       "score": {
-        "runs": 166,
-        "wickets": 7,
-        "overs": 19.5,
-        "run_rate": 8.37,
+        "runs": 132,
+        "wickets": 5,
+        "overs": 15.5,
+        "run_rate": 8.34,
         "declared": false
       },
       "extras": {
@@ -69,12 +69,12 @@
         },
         {
           "name": "Tilak Varma",
-          "runs": 57,
-          "balls": 42,
-          "fours": 3,
+          "runs": 45,
+          "balls": 35,
+          "fours": 1,
           "sixes": 2,
-          "strike_rate": 135.71,
-          "out_desc": "b Bhuvneshwar Kumar",
+          "strike_rate": 128.57,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -93,39 +93,39 @@
         },
         {
           "name": "Raj Bawa",
-          "runs": 16,
-          "balls": 14,
-          "fours": 1,
+          "runs": 0,
+          "balls": 3,
+          "fours": 0,
           "sixes": 0,
-          "strike_rate": 114.29,
-          "out_desc": "c Rajat Patidar b Josh Hazlewood",
+          "strike_rate": 0,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Corbin Bosch",
-          "runs": 5,
-          "balls": 5,
+          "runs": 0,
+          "balls": 0,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 100,
-          "out_desc": "batting",
+          "strike_rate": 0,
+          "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": false
+          "not_out": true
         },
         {
           "name": "Deepak Chahar",
-          "runs": 1,
-          "balls": 1,
+          "runs": 0,
+          "balls": 0,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 100,
-          "out_desc": "batting",
+          "strike_rate": 0,
+          "out_desc": "",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": false
+          "not_out": true
         },
         {
           "name": "Jasprit Bumrah",
@@ -155,48 +155,48 @@
       "bowlers": [
         {
           "name": "Bhuvneshwar Kumar",
-          "overs": 4,
-          "balls": 24,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 23,
-          "wickets": 4,
-          "economy": 5.8,
+          "runs": 17,
+          "wickets": 3,
+          "economy": 5.7,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Josh Hazlewood",
-          "overs": 4,
-          "balls": 24,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 33,
-          "wickets": 1,
-          "economy": 8.2,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 9,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Rasikh Salam Dar",
-          "overs": 3.5,
-          "balls": 23,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 42,
+          "runs": 24,
           "wickets": 1,
-          "economy": 11,
+          "economy": 12,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Romario Shepherd",
-          "overs": 3,
-          "balls": 18,
+          "overs": 2.5,
+          "balls": 17,
           "maidens": 0,
-          "runs": 18,
+          "runs": 14,
           "wickets": 1,
-          "economy": 6,
+          "economy": 4.9,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -256,18 +256,6 @@
           "runs": 132,
           "over": 15.2,
           "wkt_n": 5
-        },
-        {
-          "name": "Tilak Varma",
-          "runs": 155,
-          "over": 17.6,
-          "wkt_n": 6
-        },
-        {
-          "name": "Raj Bawa",
-          "runs": 161,
-          "over": 18.6,
-          "wkt_n": 7
         }
       ]
     }
