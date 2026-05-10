@@ -20,19 +20,19 @@
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "171/5",
-        "detail": "(16.2 ov)",
-        "runs": 171,
+        "display": "180/5",
+        "detail": "(17.2 ov)",
+        "runs": 180,
         "wickets": 5,
-        "overs": "16.2"
+        "overs": "17.2"
       },
       "team2_score2": null,
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "live",
-      "status_text": "Chennai Super Kings need 33 runs in 22 balls",
+      "status_text": "Chennai Super Kings need 24 runs in 16 balls",
       "start_time": "03:30 PM",
       "start_epoch": 1778407200000,
-      "run_rate": 10.47,
+      "run_rate": 10.38,
       "t1_h2h_wins": 3,
       "t2_h2h_wins": 2,
       "team1_rank": 9,
@@ -220,6 +220,6 @@
       "team2_qualification_pct": 20
     }
   ],
-  "last_updated": "10 May, 07:18 PM",
+  "last_updated": "10 May, 07:25 PM",
   "error": null
 }
