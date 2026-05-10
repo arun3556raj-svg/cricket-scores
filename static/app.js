@@ -2093,6 +2093,8 @@ function applyIntelToMatch(m, data) {
   if (data.win_probability) m.win_prob = data.win_probability;
   if (data.projected) m.projection_data = data.projected;
   if (data.match_meta) m.live_meta = data.match_meta;
+  if (data.ball_timeline) m.ball_timeline = data.ball_timeline;
+  if (data.momentum) m.last_6_balls = data.momentum.last_6_balls;
 }
 
 function reRenderHero() {
