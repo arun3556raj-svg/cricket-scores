@@ -15,7 +15,7 @@ MATCH_TTL = 5
 
 # Scorecard cache (20s)
 _sc_cache = {}
-SC_TTL = 10
+SC_TTL = 5
 
 # Schedule cache (5 min — changes rarely)
 _schedule_cache = {"data": None, "ts": 0}
