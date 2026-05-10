@@ -5351,6 +5351,6 @@ document.addEventListener('DOMContentLoaded', () => {
     generateDateTabs();
     loadMatches(false);
     // Auto-refresh match list every 15 seconds when drawer is closed
-    setInterval(() => { if (!drawerOpen) loadMatches(false); }, 15_000);
+    setInterval(() => { if (!drawerOpen) loadMatches(false); }, 8000);
   });
 });
