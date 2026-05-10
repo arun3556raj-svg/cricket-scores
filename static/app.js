@@ -4909,6 +4909,52 @@ function renderQualificationPointsView(rows) {
       return need + ' more win' + (need > 1 ? 's' : '') + ' from ' + row.remaining + ' = ' + target + ' pts. ' + (target >= 16 ? 'In contention.' : 'Likely not enough.');
     })() + '</div>'
     + '</div>'
+      // Remaining fixtures — what they need (from remainingFixtures)
+      + '<div style="font-size:8px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;margin-top:12px">Remaining fixtures — what they need</div>'
+      + (function() {
+        var fCodes = row.remainingFixtures || [];
+        if (!fCodes.length) return '<div style="font-size:10px;color:rgba(255,255,255,0.3)">No remaining fixtures</div>';
+        var ptsRows = enrichPointsRows((pointsData?.tables?.[pointsSeason]?.rows) || []);
+        return fCodes.map(function(oppCode) {
+          var opp = ptsRows.find(function(r) { return r.team_short === oppCode; });
+          var oppColor = opp ? (teamMeta(oppCode).color || '#888') : '#888';
+          var oppNrr = opp ? opp.nrr : 0;
+          // Generate strategy text based on opponent NRR and position
+          var batTarget = row.nrr > 0.3 ? 'Win by 15+ runs' : row.nrr > 0 ? 'Win by 25+ runs' : row.nrr > -0.3 ? 'Win by 35+ runs' : 'Win by 50+ runs';
+          var chaseTarget = row.nrr > 0.3 ? 'Chase with 12+ balls left' : row.nrr > 0 ? 'Chase with 10+ balls' : row.nrr > -0.3 ? 'Chase within 15 overs' : 'Chase within 14 overs';
+          if (opp && opp.qualProb > 75) {
+            batTarget = 'Win by 25+ runs — ' + oppCode + ' have strong NRR';
+            chaseTarget = 'Chase with 15+ balls — NRR swing vs top team';
+          }
+          return '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:9px 11px;margin-bottom:6px">'
+            + '<div style="display:flex;align-items:center;gap:7px;margin-bottom:8px">'
+            + '<span style="width:6px;height:6px;border-radius:50%;background:' + oppColor + ';flex-shrink:0"></span>'
+            + '<span style="font-size:12px;font-weight:700;color:#fff">' + esc(oppCode) + '</span>'
+            + '<span style="font-size:8px;padding:2px 7px;border-radius:99px;font-weight:600;background:' + (opp && opp.isTopFour ? 'rgba(34,197,94,0.12)' : 'rgba(255,255,255,0.06)') + ';color:' + (opp && opp.isTopFour ? '#22C55E' : 'rgba(255,255,255,0.35)') + '">' + (opp && opp.isTopFour ? 'Top 4' : '') + '</span>'
+            + '<div style="flex:1"></div>'
+            + '<span style="font-size:8px;color:rgba(255,255,255,0.3)">' + (opp ? 'NRR ' + (opp.nrr >= 0 ? '+' : '') + opp.nrr.toFixed(3) : '') + '</span>'
+            + '</div>'
+            + '<div style="font-size:11px;color:rgba(255,255,255,0.65);line-height:1.5;margin-bottom:6px">'
+            + '<div style="display:flex;align-items:center;gap:6px;margin-bottom:3px"><span style="font-size:9px;color:rgba(255,255,255,0.35);min-width:42px">Batting</span><span>' + esc(batTarget) + '</span></div>'
+            + '<div style="display:flex;align-items:center;gap:6px"><span style="font-size:9px;color:rgba(255,255,255,0.35);min-width:42px">Chasing</span><span>' + esc(chaseTarget) + '</span></div>'
+            + '</div>'
+            + '</div>';
+        }).join('');
+      })()
+      // NRR deep dive
+      + '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:9px 11px;margin-top:8px">'
+      + '<div style="font-size:8px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">NRR deep dive</div>'
+      + '<div style="font-size:10px;color:rgba(255,255,255,0.65);line-height:1.55">' + (function() {
+        var q = row.qualProb || 0;
+        var nrrStr = (row.nrr >= 0 ? '+' : '') + row.nrr.toFixed(3);
+        if (row.eliminated || row.maxPts < 16) return 'NRR at ' + nrrStr + '. Qualification not possible — max ' + row.maxPts + ' pts is below the 16-pt threshold.';
+        if (row.nrr > 0.5) return 'NRR at ' + nrrStr + ' is excellent. Even a heavy loss does not threaten qualification as long as they win the required matches.';
+        if (row.nrr > 0.2) return 'NRR at ' + nrrStr + ' is solid. Standard wins should maintain this. Avoid heavy losses.';
+        if (row.nrr > 0) return 'NRR at ' + nrrStr + ' is positive but thin. Wins by 20+ run margins or chases with 10+ balls remaining recommended.';
+        if (row.nrr > -0.3) return 'NRR at ' + nrrStr + ' is negative. This is a tiebreaker risk. Every win must be by a big margin.';
+        return 'NRR at ' + nrrStr + ' is a significant concern. Would need dominant wins (40+ runs) in ALL remaining matches to turn it around.';
+      })() + '</div>'
+      + '</div>'
       + '</div>'
       + '</div>';
   }
@@ -5228,7 +5274,7 @@ async function loadSchedule() {
     }
     renderSchedule(data);
     // Re-render points table if active so fixtures tab gets fresh schedule data
-    // Preserve expanded row so user doesn't lose their place
+    // Preserve expanded row so user does not lose their place
     if (currentFilter === 'points' && pointsData) {
       var savedRow = pointsExpandedRow;
       var savedTabs = Object.assign({}, pointsDetailTabs);
