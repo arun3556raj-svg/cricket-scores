@@ -5,103 +5,103 @@
       "bowl_team": "Delhi Capitals",
       "innings_id": 1,
       "score": {
-        "runs": 6,
-        "wickets": 0,
-        "overs": 0.3,
-        "run_rate": 12,
+        "runs": 210,
+        "wickets": 5,
+        "overs": 20,
+        "run_rate": 10.5,
         "declared": false
       },
       "extras": {
-        "total": 0,
-        "wides": 0,
-        "no_balls": 0,
-        "byes": 0,
+        "total": 17,
+        "wides": 11,
+        "no_balls": 2,
+        "byes": 4,
         "leg_byes": 0
       },
       "batsmen": [
         {
           "name": "Priyansh Arya",
-          "runs": 6,
-          "balls": 3,
-          "fours": 0,
-          "sixes": 1,
-          "strike_rate": 200,
-          "out_desc": "batting",
+          "runs": 56,
+          "balls": 33,
+          "fours": 2,
+          "sixes": 6,
+          "strike_rate": 169.7,
+          "out_desc": "c Sahil Parakh b Madhav Tiwari",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Prabhsimran Singh",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 18,
+          "balls": 15,
+          "fours": 3,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "batting",
+          "strike_rate": 120,
+          "out_desc": "c Auqib Nabi b Mukesh Kumar",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
         },
         {
-          "name": "Cooper Connolly",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
-        },
-        {
           "name": "Shreyas Iyer",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 59,
+          "balls": 36,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 163.89,
+          "out_desc": "not out",
           "is_captain": true,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
-          "name": "Suryansh Shedge",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "name": "Cooper Connolly",
+          "runs": 38,
+          "balls": 27,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 140.74,
+          "out_desc": "c David Miller b Madhav Tiwari",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Marcus Stoinis",
-          "runs": 0,
-          "balls": 0,
+          "runs": 1,
+          "balls": 2,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 50,
+          "out_desc": "c Madhav Tiwari b Mitchell Starc",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Shashank Singh",
           "runs": 0,
-          "balls": 0,
+          "balls": 1,
           "fours": 0,
           "sixes": 0,
           "strike_rate": 0,
-          "out_desc": "",
+          "out_desc": "c Axar Patel b Mitchell Starc",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 21,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 262.5,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
         },
         {
           "name": "Marco Jansen",
@@ -150,23 +150,325 @@
           "is_captain": false,
           "is_keeper": false,
           "not_out": true
+        },
+        {
+          "name": "Yash Thakur",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
         }
       ],
       "bowlers": [
         {
           "name": "Mitchell Starc",
-          "overs": 0.3,
-          "balls": 3,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 6,
+          "runs": 57,
+          "wickets": 2,
+          "economy": 14.2,
+          "wides": 7,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Auqib Nabi Dar",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 32,
           "wickets": 0,
-          "economy": 12,
+          "economy": 8,
+          "wides": 0,
+          "no_balls": 2,
+          "dots": 0
+        },
+        {
+          "name": "Lungi Ngidi",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 46,
+          "wickets": 0,
+          "economy": 11.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Mukesh Kumar",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 1,
+          "economy": 7.8,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Madhav Tiwari",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 2,
+          "economy": 10,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Prabhsimran Singh",
+          "runs": 78,
+          "over": 6.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "Priyansh Arya",
+          "runs": 97,
+          "over": 8.6,
+          "wkt_n": 2
+        },
+        {
+          "name": "Cooper Connolly",
+          "runs": 180,
+          "over": 17.4,
+          "wkt_n": 3
+        },
+        {
+          "name": "Marcus Stoinis",
+          "runs": 187,
+          "over": 18.1,
+          "wkt_n": 4
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 187,
+          "over": 18.2,
+          "wkt_n": 5
+        }
+      ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 38,
+        "wickets": 3,
+        "overs": 5,
+        "run_rate": 7.6,
+        "declared": false
+      },
+      "extras": {
+        "total": 4,
+        "wides": 4,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "KL Rahul",
+          "runs": 9,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 112.5,
+          "out_desc": "c Marco Jansen b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Abishek Porel",
+          "runs": 5,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 83.33,
+          "out_desc": "b Yash Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sahil Parakh",
+          "runs": 13,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 216.67,
+          "out_desc": "c Yuzvendra Chahal b Arshdeep Singh",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tristan Stubbs",
+          "runs": 7,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 70,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Axar Patel",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "batting",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "David Miller",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Madhav Tiwari",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mukesh Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Auqib Nabi Dar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mitchell Starc",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Lungi Ngidi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 2,
+          "economy": 5.3,
+          "wides": 4,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Yash Thakur",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 1,
+          "economy": 11,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         }
       ],
-      "fow": []
+      "fow": [
+        {
+          "name": "Abishek Porel",
+          "runs": 10,
+          "over": 1.5,
+          "wkt_n": 1
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 14,
+          "over": 2.3,
+          "wkt_n": 2
+        },
+        {
+          "name": "Sahil Parakh",
+          "runs": 33,
+          "over": 4.3,
+          "wkt_n": 3
+        }
+      ]
     }
   ],
   "error": null

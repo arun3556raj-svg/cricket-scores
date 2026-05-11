@@ -2118,7 +2118,7 @@
       "team2_color": "#0ea5e9",
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "live",
-      "status_text": "Delhi Capitals opt to bowl",
+      "status_text": "Delhi Capitals need 175 runs in 92 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1778508000000,
       "match_date": "Mon, 11 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "11 May, 07:31 PM",
+  "last_updated": "11 May, 10:09 PM",
   "error": null
 }
