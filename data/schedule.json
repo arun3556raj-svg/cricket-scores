@@ -2117,8 +2117,8 @@
       "team2_short": "DC",
       "team2_color": "#0ea5e9",
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "status": "upcoming",
-      "status_text": "Match starts at May 11, 14:00 GMT",
+      "status": "live",
+      "status_text": "Delhi Capitals opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778508000000,
       "match_date": "Mon, 11 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "11 May, 04:51 PM",
+  "last_updated": "11 May, 07:31 PM",
   "error": null
 }
