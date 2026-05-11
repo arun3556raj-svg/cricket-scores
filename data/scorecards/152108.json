@@ -264,16 +264,16 @@
       "bowl_team": "Punjab Kings",
       "innings_id": 2,
       "score": {
-        "runs": 38,
-        "wickets": 3,
-        "overs": 5,
-        "run_rate": 7.6,
+        "runs": 216,
+        "wickets": 7,
+        "overs": 19,
+        "run_rate": 11.37,
         "declared": false
       },
       "extras": {
-        "total": 4,
-        "wides": 4,
-        "no_balls": 0,
+        "total": 18,
+        "wides": 17,
+        "no_balls": 1,
         "byes": 0,
         "leg_byes": 0
       },
@@ -316,66 +316,78 @@
         },
         {
           "name": "Tristan Stubbs",
-          "runs": 7,
-          "balls": 10,
+          "runs": 12,
+          "balls": 17,
           "fours": 1,
           "sixes": 0,
-          "strike_rate": 70,
-          "out_desc": "batting",
+          "strike_rate": 70.59,
+          "out_desc": "run out (Cooper Connolly)",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Axar Patel",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "batting",
+          "runs": 56,
+          "balls": 30,
+          "fours": 8,
+          "sixes": 2,
+          "strike_rate": 186.67,
+          "out_desc": "c Ben Dwarshuis b Marcus Stoinis",
           "is_captain": true,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "David Miller",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 51,
+          "balls": 28,
+          "fours": 3,
+          "sixes": 4,
+          "strike_rate": 182.14,
+          "out_desc": "c Prabhsimran Singh b Ben Dwarshuis",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 24,
+          "balls": 10,
+          "fours": 2,
+          "sixes": 2,
+          "strike_rate": 240,
+          "out_desc": "c (sub)Praveen Dubey b Yash Thakur",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
         },
         {
           "name": "Madhav Tiwari",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 18,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 225,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Mukesh Kumar",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Auqib Nabi Dar",
+          "runs": 10,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 500,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Mukesh Kumar",
           "runs": 0,
           "balls": 0,
           "fours": 0,
@@ -409,42 +421,66 @@
           "is_captain": false,
           "is_keeper": false,
           "not_out": true
-        },
-        {
-          "name": "Ashutosh Sharma",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
         }
       ],
       "bowlers": [
         {
           "name": "Arshdeep Singh",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 16,
+          "runs": 21,
           "wickets": 2,
-          "economy": 5.3,
+          "economy": 5.2,
           "wides": 4,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Yash Thakur",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 22,
+          "runs": 55,
+          "wickets": 2,
+          "economy": 13.8,
+          "wides": 5,
+          "no_balls": 1,
+          "dots": 0
+        },
+        {
+          "name": "Marco Jansen",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 45,
+          "wickets": 0,
+          "economy": 11.2,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Ben Dwarshuis",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 51,
           "wickets": 1,
-          "economy": 11,
-          "wides": 0,
+          "economy": 12.8,
+          "wides": 5,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Marcus Stoinis",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 44,
+          "wickets": 1,
+          "economy": 14.7,
+          "wides": 2,
           "no_balls": 0,
           "dots": 0
         }
@@ -467,6 +503,30 @@
           "runs": 33,
           "over": 4.3,
           "wkt_n": 3
+        },
+        {
+          "name": "Tristan Stubbs",
+          "runs": 74,
+          "over": 8.2,
+          "wkt_n": 4
+        },
+        {
+          "name": "Axar Patel",
+          "runs": 138,
+          "over": 13.6,
+          "wkt_n": 5
+        },
+        {
+          "name": "David Miller",
+          "runs": 170,
+          "over": 16.3,
+          "wkt_n": 6
+        },
+        {
+          "name": "Ashutosh Sharma",
+          "runs": 205,
+          "over": 18.5,
+          "wkt_n": 7
         }
       ]
     }

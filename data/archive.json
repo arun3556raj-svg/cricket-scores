@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152108",
+      "source_id": "152108",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 55,
+      "round": "League",
+      "date": "2026-05-11",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Delhi Capitals",
+      "team2_short": "DC",
+      "team2_color": "#0ea5e9",
+      "winner": "Delhi Capitals",
+      "result_text": "Delhi Capitals won by 3 wkts",
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Punjab Kings",
+          "team_short": "PBKS",
+          "team_color": "#e11d48",
+          "opponent": "Delhi Capitals",
+          "opponent_short": "DC",
+          "runs": 210,
+          "wickets": 5,
+          "overs": 20,
+          "target": null,
+          "display": "210/5",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Delhi Capitals",
+          "team_short": "DC",
+          "team_color": "#0ea5e9",
+          "opponent": "Punjab Kings",
+          "opponent_short": "PBKS",
+          "runs": 216,
+          "wickets": 7,
+          "overs": 19,
+          "target": 211,
+          "display": "216/7",
+          "detail": "(19 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152097",
       "source_id": "152097",
       "source": "cricbuzz",

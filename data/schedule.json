@@ -149,12 +149,12 @@
       "team2_points": 12,
       "team2_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 90
+      "team2_qualification_pct": 86
     },
     {
       "id": "149662",
@@ -185,15 +185,15 @@
       ],
       "team1_qualification_pct": 1,
       "team2_rank": 7,
-      "team2_points": 8,
+      "team2_points": 10,
       "team2_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team2_qualification_pct": 19
+      "team2_qualification_pct": 33
     },
     {
       "id": "149673",
@@ -266,12 +266,12 @@
       "team2_points": 12,
       "team2_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 90
+      "team2_qualification_pct": 86
     },
     {
       "id": "149695",
@@ -302,15 +302,15 @@
       ],
       "team1_qualification_pct": 1,
       "team2_rank": 7,
-      "team2_points": 8,
+      "team2_points": 10,
       "team2_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team2_qualification_pct": 19
+      "team2_qualification_pct": 33
     },
     {
       "id": "149699",
@@ -461,12 +461,12 @@
       "team2_points": 12,
       "team2_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 90
+      "team2_qualification_pct": 86
     },
     {
       "id": "149743",
@@ -536,15 +536,15 @@
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 7,
-      "team2_points": 8,
+      "team2_points": 10,
       "team2_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team2_qualification_pct": 19
+      "team2_qualification_pct": 33
     },
     {
       "id": "149757",
@@ -656,12 +656,12 @@
       "team2_points": 12,
       "team2_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 90
+      "team2_qualification_pct": 86
     },
     {
       "id": "149790",
@@ -692,15 +692,15 @@
       ],
       "team1_qualification_pct": 67,
       "team2_rank": 7,
-      "team2_points": 8,
+      "team2_points": 10,
       "team2_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team2_qualification_pct": 19
+      "team2_qualification_pct": 33
     },
     {
       "id": "149801",
@@ -929,12 +929,12 @@
       "team2_points": 12,
       "team2_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 90
+      "team2_qualification_pct": 86
     },
     {
       "id": "151796",
@@ -1004,15 +1004,15 @@
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 7,
-      "team2_points": 8,
+      "team2_points": 10,
       "team2_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team2_qualification_pct": 19
+      "team2_qualification_pct": 33
     },
     {
       "id": "151818",
@@ -1114,12 +1114,12 @@
       "team1_points": 12,
       "team1_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 90,
+      "team1_qualification_pct": 86,
       "team2_rank": 9,
       "team2_points": 7,
       "team2_last_5": [
@@ -1199,15 +1199,15 @@
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 7,
-      "team2_points": 8,
+      "team2_points": 10,
       "team2_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team2_qualification_pct": 19
+      "team2_qualification_pct": 33
     },
     {
       "id": "151867",
@@ -1342,28 +1342,28 @@
       "start_time": "03:30 PM",
       "start_epoch": 1777111200000,
       "match_date": "Sat, 25 Apr 2026",
-      "t1_h2h_wins": 7,
+      "t1_h2h_wins": 8,
       "t2_h2h_wins": 5,
       "team1_rank": 7,
-      "team1_points": 8,
+      "team1_points": 10,
       "team1_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team1_qualification_pct": 19,
+      "team1_qualification_pct": 33,
       "team2_rank": 4,
       "team2_points": 12,
       "team2_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 90
+      "team2_qualification_pct": 86
     },
     {
       "id": "151902",
@@ -1501,15 +1501,15 @@
       "t1_h2h_wins": 7,
       "t2_h2h_wins": 7,
       "team1_rank": 7,
-      "team1_points": 8,
+      "team1_points": 10,
       "team1_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team1_qualification_pct": 19,
+      "team1_qualification_pct": 33,
       "team2_rank": 1,
       "team2_points": 14,
       "team2_last_5": [
@@ -1543,12 +1543,12 @@
       "team1_points": 12,
       "team1_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 90,
+      "team1_qualification_pct": 86,
       "team2_rank": 6,
       "team2_points": 12,
       "team2_last_5": [
@@ -1667,15 +1667,15 @@
       ],
       "team1_qualification_pct": 67,
       "team2_rank": 7,
-      "team2_points": 8,
+      "team2_points": 10,
       "team2_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team2_qualification_pct": 19
+      "team2_qualification_pct": 33
     },
     {
       "id": "151987",
@@ -1777,12 +1777,12 @@
       "team1_points": 12,
       "team1_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 90,
+      "team1_qualification_pct": 86,
       "team2_rank": 3,
       "team2_points": 14,
       "team2_last_5": [
@@ -1852,15 +1852,15 @@
       "t1_h2h_wins": 6,
       "t2_h2h_wins": 9,
       "team1_rank": 7,
-      "team1_points": 8,
+      "team1_points": 10,
       "team1_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team1_qualification_pct": 19,
+      "team1_qualification_pct": 33,
       "team2_rank": 5,
       "team2_points": 12,
       "team2_last_5": [
@@ -1904,12 +1904,12 @@
       "team2_points": 12,
       "team2_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 90
+      "team2_qualification_pct": 86
     },
     {
       "id": "152053",
@@ -1969,15 +1969,15 @@
       "t1_h2h_wins": 6,
       "t2_h2h_wins": 7,
       "team1_rank": 7,
-      "team1_points": 8,
+      "team1_points": 10,
       "team1_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team1_qualification_pct": 19,
+      "team1_qualification_pct": 33,
       "team2_rank": 8,
       "team2_points": 7,
       "team2_last_5": [
@@ -2117,33 +2117,33 @@
       "team2_short": "DC",
       "team2_color": "#0ea5e9",
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "status": "live",
-      "status_text": "Delhi Capitals need 175 runs in 92 balls",
+      "status": "finished",
+      "status_text": "Delhi Capitals won by 3 wkts",
       "start_time": "07:30 PM",
       "start_epoch": 1778508000000,
       "match_date": "Mon, 11 May 2026",
       "t1_h2h_wins": 5,
-      "t2_h2h_wins": 7,
+      "t2_h2h_wins": 8,
       "team1_rank": 4,
       "team1_points": 12,
       "team1_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 90,
+      "team1_qualification_pct": 86,
       "team2_rank": 7,
-      "team2_points": 8,
+      "team2_points": 10,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team2_qualification_pct": 19
+      "team2_qualification_pct": 33
     },
     {
       "id": "152119",
@@ -2245,12 +2245,12 @@
       "team1_points": 12,
       "team1_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 90,
+      "team1_qualification_pct": 86,
       "team2_rank": 10,
       "team2_points": 6,
       "team2_last_5": [
@@ -2362,12 +2362,12 @@
       "team1_points": 12,
       "team1_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 90,
+      "team1_qualification_pct": 86,
       "team2_rank": 1,
       "team2_points": 14,
       "team2_last_5": [
@@ -2398,15 +2398,15 @@
       "t1_h2h_wins": 8,
       "t2_h2h_wins": 4,
       "team1_rank": 7,
-      "team1_points": 8,
+      "team1_points": 10,
       "team1_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team1_qualification_pct": 19,
+      "team1_qualification_pct": 33,
       "team2_rank": 6,
       "team2_points": 12,
       "team2_last_5": [
@@ -2645,12 +2645,12 @@
       "team2_points": 12,
       "team2_last_5": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 90
+      "team2_qualification_pct": 86
     },
     {
       "id": "152252",
@@ -2720,15 +2720,15 @@
       ],
       "team1_qualification_pct": 20,
       "team2_rank": 7,
-      "team2_points": 8,
+      "team2_points": 10,
       "team2_last_5": [
-        "L",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team2_qualification_pct": 19
+      "team2_qualification_pct": 33
     },
     {
       "id": "155376",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "11 May, 10:09 PM",
+  "last_updated": "11 May, 11:54 PM",
   "error": null
 }
