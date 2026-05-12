@@ -2156,8 +2156,8 @@
       "team2_short": "SRH",
       "team2_color": "#ea580c",
       "venue": "Narendra Modi Stadium, Ahmedabad",
-      "status": "upcoming",
-      "status_text": "Match starts at May 12, 14:00 GMT",
+      "status": "live",
+      "status_text": "Sunrisers Hyderabad opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778594400000,
       "match_date": "Tue, 12 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "12 May, 05:51 PM",
+  "last_updated": "12 May, 08:47 PM",
   "error": null
 }
