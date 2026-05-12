@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-152119",
+  "source_id": "152119",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 56,
+  "date": "2026-05-12",
+  "team1": "Gujarat Titans",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "Narendra Modi Stadium, Ahmedabad",
+  "result_text": "Gujarat Titans won by 82 runs",
   "innings": [
     {
       "bat_team": "Gujarat Titans",

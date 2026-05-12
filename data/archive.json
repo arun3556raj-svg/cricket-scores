@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152119",
+      "source_id": "152119",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 56,
+      "round": "League",
+      "date": "2026-05-12",
+      "team1": "Gujarat Titans",
+      "team1_short": "GT",
+      "team1_color": "#0f766e",
+      "team2": "Sunrisers Hyderabad",
+      "team2_short": "SRH",
+      "team2_color": "#ea580c",
+      "winner": "Gujarat Titans",
+      "result_text": "Gujarat Titans won by 82 runs",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Gujarat Titans",
+          "team_short": "GT",
+          "team_color": "#0f766e",
+          "opponent": "Sunrisers Hyderabad",
+          "opponent_short": "SRH",
+          "runs": 168,
+          "wickets": 5,
+          "overs": 20,
+          "target": null,
+          "display": "168/5",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Sunrisers Hyderabad",
+          "team_short": "SRH",
+          "team_color": "#ea580c",
+          "opponent": "Gujarat Titans",
+          "opponent_short": "GT",
+          "runs": 86,
+          "wickets": 10,
+          "overs": 14.5,
+          "target": 169,
+          "display": "86",
+          "detail": "(14.5 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152108",
       "source_id": "152108",
       "source": "cricbuzz",

@@ -1,56 +1,5 @@
 {
-  "live": [
-    {
-      "id": "152119",
-      "series": "IPL 2026",
-      "match_desc": "56th Match",
-      "match_format": "T20",
-      "team1": "Gujarat Titans",
-      "team1_short": "GT",
-      "team1_color": "#0f766e",
-      "team2": "Sunrisers Hyderabad",
-      "team2_short": "SRH",
-      "team2_color": "#ea580c",
-      "team1_score1": {
-        "display": "111/3",
-        "detail": "(14.2 ov)",
-        "runs": 111,
-        "wickets": 3,
-        "overs": "14.2"
-      },
-      "team1_score2": null,
-      "team2_score1": null,
-      "team2_score2": null,
-      "venue": "Narendra Modi Stadium, Ahmedabad",
-      "status": "live",
-      "status_text": "Sunrisers Hyderabad opt to bowl",
-      "start_time": "07:30 PM",
-      "start_epoch": 1778594400000,
-      "run_rate": 7.74,
-      "t1_h2h_wins": 5,
-      "t2_h2h_wins": 1,
-      "team1_rank": 3,
-      "team1_points": 14,
-      "team1_last_5": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "team1_qualification_pct": 99,
-      "team2_rank": 2,
-      "team2_points": 14,
-      "team2_last_5": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "team2_qualification_pct": 99
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "152130",
@@ -75,7 +24,7 @@
       "run_rate": null,
       "t1_h2h_wins": 15,
       "t2_h2h_wins": 20,
-      "team1_rank": 1,
+      "team1_rank": 2,
       "team1_points": 14,
       "team1_last_5": [
         "W",
@@ -98,6 +47,64 @@
     }
   ],
   "finished": [
+    {
+      "id": "152119",
+      "series": "IPL 2026",
+      "match_desc": "56th Match",
+      "match_format": "T20",
+      "team1": "Gujarat Titans",
+      "team1_short": "GT",
+      "team1_color": "#0f766e",
+      "team2": "Sunrisers Hyderabad",
+      "team2_short": "SRH",
+      "team2_color": "#ea580c",
+      "team1_score1": {
+        "display": "168/5",
+        "detail": "(20 ov)",
+        "runs": 168,
+        "wickets": 5,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "86",
+        "detail": "(14.5 ov)",
+        "runs": 86,
+        "wickets": 10,
+        "overs": "14.5"
+      },
+      "team2_score2": null,
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "status": "finished",
+      "status_text": "Gujarat Titans won by 82 runs",
+      "start_time": "07:30 PM",
+      "start_epoch": 1778594400000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 6,
+      "t2_h2h_wins": 1,
+      "team1_rank": 1,
+      "team1_points": 16,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 3,
+      "team2_points": 14,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "team2_qualification_pct": 96
+    },
     {
       "id": "152108",
       "series": "IPL 2026",
@@ -203,7 +210,7 @@
         "L"
       ],
       "team1_qualification_pct": 1,
-      "team2_rank": 1,
+      "team2_rank": 2,
       "team2_points": 14,
       "team2_last_5": [
         "W",
@@ -309,10 +316,10 @@
       "source": "cricbuzz",
       "t1_h2h_wins": 7,
       "t2_h2h_wins": 3,
-      "team1_rank": 3,
-      "team1_points": 14,
+      "team1_rank": 1,
+      "team1_points": 16,
       "team1_last_5": [
-        "L",
+        "W",
         "W",
         "W",
         "W",
@@ -389,6 +396,6 @@
       "team2_qualification_pct": 20
     }
   ],
-  "last_updated": "12 May, 08:47 PM",
+  "last_updated": "12 May, 10:56 PM",
   "error": null
 }
