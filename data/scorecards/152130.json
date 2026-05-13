@@ -5,67 +5,79 @@
       "bowl_team": "Royal Challengers Bengaluru",
       "innings_id": 1,
       "score": {
-        "runs": 4,
-        "wickets": 0,
-        "overs": 1.1,
-        "run_rate": 3.43,
+        "runs": 192,
+        "wickets": 4,
+        "overs": 20,
+        "run_rate": 9.6,
         "declared": false
       },
       "extras": {
-        "total": 0,
-        "wides": 0,
+        "total": 3,
+        "wides": 2,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 1
       },
       "batsmen": [
         {
           "name": "Ajinkya Rahane",
-          "runs": 4,
-          "balls": 6,
-          "fours": 1,
-          "sixes": 0,
-          "strike_rate": 66.67,
-          "out_desc": "batting",
+          "runs": 19,
+          "balls": 13,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 146.15,
+          "out_desc": "c and b Josh Hazlewood",
           "is_captain": true,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Finn Allen",
-          "runs": 0,
-          "balls": 1,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "batting",
+          "runs": 18,
+          "balls": 8,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 225,
+          "out_desc": "c Jitesh Sharma b Bhuvneshwar Kumar",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
-          "name": "Cameron Green",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
-        },
-        {
           "name": "Angkrish Raghuvanshi",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 71,
+          "balls": 46,
+          "fours": 7,
+          "sixes": 3,
+          "strike_rate": 154.35,
+          "out_desc": "run out (Devdutt Padikkal/Bhuvneshwar Kumar)",
           "is_captain": false,
           "is_keeper": true,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Cameron Green",
+          "runs": 32,
+          "balls": 24,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 133.33,
+          "out_desc": "b Rasikh Salam Dar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rinku Singh",
+          "runs": 49,
+          "balls": 29,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 168.97,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
         },
         {
           "name": "Rovman Powell",
@@ -81,18 +93,6 @@
         },
         {
           "name": "Manish Pandey",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Rinku Singh",
           "runs": 0,
           "balls": 0,
           "fours": 0,
@@ -150,35 +150,331 @@
           "is_captain": false,
           "is_keeper": false,
           "not_out": true
+        },
+        {
+          "name": "Saurabh Dubey",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
         }
       ],
       "bowlers": [
         {
           "name": "Bhuvneshwar Kumar",
-          "overs": 1,
-          "balls": 6,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 4,
-          "wickets": 0,
-          "economy": 4,
+          "runs": 34,
+          "wickets": 1,
+          "economy": 8.5,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Jacob Duffy",
-          "overs": 0.1,
-          "balls": 1,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 0,
+          "runs": 48,
           "wickets": 0,
-          "economy": 0,
+          "economy": 12,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Josh Hazlewood",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 8.8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Rasikh Salam Dar",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 1,
+          "economy": 8.8,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Krunal Pandya",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 0,
+          "economy": 9.8,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Finn Allen",
+          "runs": 23,
+          "over": 2.3,
+          "wkt_n": 1
+        },
+        {
+          "name": "Ajinkya Rahane",
+          "runs": 48,
+          "over": 4.4,
+          "wkt_n": 2
+        },
+        {
+          "name": "Cameron Green",
+          "runs": 116,
+          "over": 12.2,
+          "wkt_n": 3
+        },
+        {
+          "name": "Angkrish Raghuvanshi",
+          "runs": 192,
+          "over": 20,
+          "wkt_n": 4
+        }
+      ]
+    },
+    {
+      "bat_team": "Royal Challengers Bengaluru",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 2,
+      "score": {
+        "runs": 66,
+        "wickets": 1,
+        "overs": 5.4,
+        "run_rate": 11.65,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 4
+      },
+      "batsmen": [
+        {
+          "name": "Jacob Bethell",
+          "runs": 15,
+          "balls": 12,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 125,
+          "out_desc": "c and b Kartik Tyagi",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Virat Kohli",
+          "runs": 30,
+          "balls": 14,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 214.29,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "runs": 16,
+          "balls": 8,
+          "fours": 4,
+          "sixes": 0,
+          "strike_rate": 200,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Rajat Patidar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jitesh Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": true
+        },
+        {
+          "name": "Tim David",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Venkatesh Iyer",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Krunal Pandya",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Bhuvneshwar Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rasikh Salam Dar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jacob Duffy",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Josh Hazlewood",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Saurabh Dubey",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 8.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Vaibhav Arora",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 16,
+          "wickets": 0,
+          "economy": 16,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Kartik Tyagi",
+          "overs": 1.4,
+          "balls": 10,
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 11.4,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Sunil Narine",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         }
       ],
-      "fow": []
+      "fow": [
+        {
+          "name": "Jacob Bethell",
+          "runs": 37,
+          "over": 3.2,
+          "wkt_n": 1
+        }
+      ]
     }
   ],
   "error": null

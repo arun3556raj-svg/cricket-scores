@@ -2196,7 +2196,7 @@
       "team2_color": "#dc2626",
       "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
       "status": "live",
-      "status_text": "Royal Challengers Bengaluru opt to bowl",
+      "status_text": "Royal Challengers Bengaluru need 136 runs in 89 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1778680800000,
       "match_date": "Wed, 13 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "13 May, 08:50 PM",
+  "last_updated": "13 May, 10:59 PM",
   "error": null
 }
