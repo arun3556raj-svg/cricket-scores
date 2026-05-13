@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-152130",
+  "source_id": "152130",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 57,
+  "date": "2026-05-13",
+  "team1": "Kolkata Knight Riders",
+  "team2": "Royal Challengers Bengaluru",
+  "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+  "result_text": "Royal Challengers Bengaluru won by 6 wkts",
   "innings": [
     {
       "bat_team": "Kolkata Knight Riders",

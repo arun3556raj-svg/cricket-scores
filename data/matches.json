@@ -1,62 +1,5 @@
 {
-  "live": [
-    {
-      "id": "152130",
-      "series": "IPL 2026",
-      "match_desc": "57th Match",
-      "match_format": "T20",
-      "team1": "Kolkata Knight Riders",
-      "team1_short": "KKR",
-      "team1_color": "#7c3aed",
-      "team2": "Royal Challengers Bengaluru",
-      "team2_short": "RCB",
-      "team2_color": "#dc2626",
-      "team1_score1": {
-        "display": "192/4",
-        "detail": "(20 ov)",
-        "runs": 192,
-        "wickets": 4,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "65/1",
-        "detail": "(5.3 ov)",
-        "runs": 65,
-        "wickets": 1,
-        "overs": "5.3"
-      },
-      "team2_score2": null,
-      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "status": "live",
-      "status_text": "Royal Challengers Bengaluru need 128 runs in 87 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1778680800000,
-      "run_rate": 11.82,
-      "t1_h2h_wins": 20,
-      "t2_h2h_wins": 15,
-      "team1_rank": 8,
-      "team1_points": 7,
-      "team1_last_5": [
-        "L",
-        "W",
-        "N",
-        "W",
-        "W"
-      ],
-      "team1_qualification_pct": 20,
-      "team2_rank": 2,
-      "team2_points": 14,
-      "team2_last_5": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "W"
-      ],
-      "team2_qualification_pct": 99
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "152141",
@@ -105,63 +48,64 @@
   ],
   "finished": [
     {
-      "id": "152119",
+      "id": "152130",
       "series": "IPL 2026",
-      "match_desc": "56th Match",
+      "match_desc": "57th Match",
       "match_format": "T20",
-      "team1": "Gujarat Titans",
-      "team1_short": "GT",
-      "team1_color": "#0f766e",
-      "team2": "Sunrisers Hyderabad",
-      "team2_short": "SRH",
-      "team2_color": "#ea580c",
+      "team1": "Kolkata Knight Riders",
+      "team1_short": "KKR",
+      "team1_color": "#7c3aed",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
       "team1_score1": {
-        "display": "168/5",
+        "display": "192/4",
         "detail": "(20 ov)",
-        "runs": 168,
-        "wickets": 5,
+        "runs": 192,
+        "wickets": 4,
         "overs": "20"
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "86",
-        "detail": "(14.5 ov)",
-        "runs": 86,
-        "wickets": 10,
-        "overs": "14.5"
+        "display": "194/4",
+        "detail": "(19.1 ov)",
+        "runs": 194,
+        "wickets": 4,
+        "overs": "19.1"
       },
       "team2_score2": null,
-      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
       "status": "finished",
-      "status_text": "Gujarat Titans won by 82 runs",
+      "status_text": "Royal Challengers Bengaluru won by 6 wkts",
       "start_time": "07:30 PM",
-      "start_epoch": 1778594400000,
+      "start_epoch": 1778680800000,
       "run_rate": null,
       "provisional": true,
-      "t1_h2h_wins": 6,
-      "t2_h2h_wins": 1,
-      "team1_rank": 1,
-      "team1_points": 16,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 20,
+      "t2_h2h_wins": 16,
+      "team1_rank": 8,
+      "team1_points": 7,
       "team1_last_5": [
         "W",
+        "N",
         "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "team1_qualification_pct": 99,
-      "team2_rank": 3,
-      "team2_points": 14,
-      "team2_last_5": [
-        "W",
-        "W",
-        "L",
         "W",
         "L"
       ],
-      "team2_qualification_pct": 96
+      "team1_qualification_pct": 16,
+      "team2_rank": 1,
+      "team2_points": 16,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "13 May, 10:59 PM",
+  "last_updated": "14 May, 12:50 AM",
   "error": null
 }
