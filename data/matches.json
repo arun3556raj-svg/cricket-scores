@@ -1,49 +1,100 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "152130",
       "series": "IPL 2026",
       "match_desc": "57th Match",
       "match_format": "T20",
-      "team1": "Royal Challengers Bengaluru",
-      "team1_short": "RCB",
-      "team1_color": "#dc2626",
-      "team2": "Kolkata Knight Riders",
-      "team2_short": "KKR",
-      "team2_color": "#7c3aed",
-      "team1_score1": null,
+      "team1": "Kolkata Knight Riders",
+      "team1_short": "KKR",
+      "team1_color": "#7c3aed",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
+      "team1_score1": {
+        "display": "4/0",
+        "detail": "(1 ov)",
+        "runs": 4,
+        "wickets": 0,
+        "overs": "1"
+      },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
-      "status": "upcoming",
-      "status_text": "Match starts at May 13, 14:00 GMT",
+      "status": "live",
+      "status_text": "Royal Challengers Bengaluru opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778680800000,
-      "run_rate": null,
-      "t1_h2h_wins": 15,
-      "t2_h2h_wins": 20,
-      "team1_rank": 2,
-      "team1_points": 14,
+      "run_rate": 4.0,
+      "t1_h2h_wins": 20,
+      "t2_h2h_wins": 15,
+      "team1_rank": 8,
+      "team1_points": 7,
       "team1_last_5": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "W"
-      ],
-      "team1_qualification_pct": 99,
-      "team2_rank": 8,
-      "team2_points": 7,
-      "team2_last_5": [
         "L",
         "W",
         "N",
         "W",
         "W"
       ],
-      "team2_qualification_pct": 20
+      "team1_qualification_pct": 20,
+      "team2_rank": 2,
+      "team2_points": 14,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 99
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "152141",
+      "series": "IPL 2026",
+      "match_desc": "58th Match",
+      "match_format": "T20",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Mumbai Indians",
+      "team2_short": "MI",
+      "team2_color": "#1d4ed8",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "status": "upcoming",
+      "status_text": "Match starts at May 14, 14:00 GMT",
+      "start_time": "07:30 PM",
+      "start_epoch": 1778767200000,
+      "run_rate": null,
+      "t1_h2h_wins": 17,
+      "t2_h2h_wins": 17,
+      "team1_rank": 4,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 86,
+      "team2_rank": 10,
+      "team2_points": 6,
+      "team2_last_5": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "team2_qualification_pct": 1
     }
   ],
   "finished": [
@@ -105,6 +156,6 @@
       "team2_qualification_pct": 96
     }
   ],
-  "last_updated": "13 May, 05:52 PM",
+  "last_updated": "13 May, 08:50 PM",
   "error": null
 }
