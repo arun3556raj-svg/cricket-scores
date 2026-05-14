@@ -5,18 +5,18 @@
       "bowl_team": "Mumbai Indians",
       "innings_id": 1,
       "score": {
-        "runs": 89,
-        "wickets": 1,
-        "overs": 9.5,
-        "run_rate": 9.05,
+        "runs": 200,
+        "wickets": 8,
+        "overs": 20,
+        "run_rate": 10,
         "declared": false
       },
       "extras": {
-        "total": 6,
-        "wides": 2,
+        "total": 13,
+        "wides": 7,
         "no_balls": 0,
-        "byes": 4,
-        "leg_byes": 0
+        "byes": 5,
+        "leg_byes": 1
       },
       "batsmen": [
         {
@@ -33,99 +33,111 @@
         },
         {
           "name": "Prabhsimran Singh",
-          "runs": 42,
-          "balls": 26,
+          "runs": 57,
+          "balls": 32,
           "fours": 6,
-          "sixes": 2,
-          "strike_rate": 161.54,
-          "out_desc": "batting",
+          "sixes": 4,
+          "strike_rate": 178.12,
+          "out_desc": "c Corbin Bosch b Shardul Thakur",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
         },
         {
           "name": "Cooper Connolly",
-          "runs": 19,
-          "balls": 16,
+          "runs": 21,
+          "balls": 22,
           "fours": 2,
           "sixes": 1,
-          "strike_rate": 118.75,
-          "out_desc": "batting",
+          "strike_rate": 95.45,
+          "out_desc": "b Raj Bawa",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Shreyas Iyer",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 200,
+          "out_desc": "b Shardul Thakur",
           "is_captain": true,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Suryansh Shedge",
-          "runs": 0,
-          "balls": 0,
+          "runs": 8,
+          "balls": 5,
           "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "sixes": 1,
+          "strike_rate": 160,
+          "out_desc": "c Raj Bawa b Shardul Thakur",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Shashank Singh",
-          "runs": 0,
-          "balls": 0,
+          "runs": 2,
+          "balls": 3,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 66.67,
+          "out_desc": "lbw b Corbin Bosch",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Azmatullah Omarzai",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 38,
+          "balls": 17,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 223.53,
+          "out_desc": "c Will Jacks b Deepak Chahar",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Marco Jansen",
-          "runs": 0,
-          "balls": 0,
+          "runs": 2,
+          "balls": 7,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 28.57,
+          "out_desc": "b Shardul Thakur",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Vishnu Vinod",
+          "runs": 15,
+          "balls": 8,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 187.5,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
         },
         {
           "name": "Xavier Bartlett",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 18,
+          "balls": 7,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 257.14,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Arshdeep Singh",
@@ -155,60 +167,60 @@
       "bowlers": [
         {
           "name": "Deepak Chahar",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 17,
-          "wickets": 1,
-          "economy": 5.7,
+          "runs": 36,
+          "wickets": 2,
+          "economy": 9,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Jasprit Bumrah",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 19,
+          "runs": 35,
           "wickets": 0,
-          "economy": 9.5,
-          "wides": 0,
+          "economy": 8.8,
+          "wides": 2,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Shardul Thakur",
-          "overs": 1,
-          "balls": 6,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 15,
-          "wickets": 0,
-          "economy": 15,
-          "wides": 1,
+          "runs": 39,
+          "wickets": 4,
+          "economy": 9.8,
+          "wides": 2,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Corbin Bosch",
-          "overs": 1,
-          "balls": 6,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 3,
-          "wickets": 0,
-          "economy": 3,
+          "runs": 42,
+          "wickets": 1,
+          "economy": 10.5,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Raghu Sharma",
-          "overs": 1.5,
-          "balls": 11,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
           "runs": 22,
           "wickets": 0,
-          "economy": 12,
+          "economy": 11,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -224,6 +236,18 @@
           "wides": 1,
           "no_balls": 0,
           "dots": 0
+        },
+        {
+          "name": "Raj Bawa",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 11,
+          "wickets": 1,
+          "economy": 11,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
         }
       ],
       "fow": [
@@ -232,6 +256,295 @@
           "runs": 50,
           "over": 5.3,
           "wkt_n": 1
+        },
+        {
+          "name": "Prabhsimran Singh",
+          "runs": 107,
+          "over": 11.2,
+          "wkt_n": 2
+        },
+        {
+          "name": "Shreyas Iyer",
+          "runs": 111,
+          "over": 11.4,
+          "wkt_n": 3
+        },
+        {
+          "name": "Cooper Connolly",
+          "runs": 111,
+          "over": 12.3,
+          "wkt_n": 4
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 123,
+          "over": 13.2,
+          "wkt_n": 5
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 135,
+          "over": 14.4,
+          "wkt_n": 6
+        },
+        {
+          "name": "Marco Jansen",
+          "runs": 140,
+          "over": 16.2,
+          "wkt_n": 7
+        },
+        {
+          "name": "Azmatullah Omarzai",
+          "runs": 166,
+          "over": 17.6,
+          "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Punjab Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 89,
+        "wickets": 3,
+        "overs": 10,
+        "run_rate": 8.9,
+        "declared": false
+      },
+      "extras": {
+        "total": 1,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Rohit Sharma",
+          "runs": 25,
+          "balls": 26,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 96.15,
+          "out_desc": "b Yuzvendra Chahal",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ryan Rickelton",
+          "runs": 48,
+          "balls": 23,
+          "fours": 4,
+          "sixes": 4,
+          "strike_rate": 208.7,
+          "out_desc": "c Priyansh Arya b Azmatullah Omarzai",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 9,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 150,
+          "out_desc": "c Arshdeep Singh b Marco Jansen",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 5,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 250,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Sherfane Rutherford",
+          "runs": 1,
+          "balls": 3,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 33.33,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Will Jacks",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Raj Bawa",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Corbin Bosch",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Deepak Chahar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Shardul Thakur",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jasprit Bumrah",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Raghu Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Arshdeep Singh",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 0,
+          "economy": 4,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Azmatullah Omarzai",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 21,
+          "wickets": 1,
+          "economy": 10.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Marco Jansen",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 1,
+          "economy": 14,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Xavier Bartlett",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 12.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Yuzvendra Chahal",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 1,
+          "economy": 3.5,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Ryan Rickelton",
+          "runs": 61,
+          "over": 6.3,
+          "wkt_n": 1
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 81,
+          "over": 8.5,
+          "wkt_n": 2
+        },
+        {
+          "name": "Rohit Sharma",
+          "runs": 88,
+          "over": 9.3,
+          "wkt_n": 3
         }
       ]
     }
