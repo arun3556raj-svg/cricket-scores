@@ -2234,8 +2234,8 @@
       "team2_short": "MI",
       "team2_color": "#1d4ed8",
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "status": "upcoming",
-      "status_text": "Match starts at May 14, 14:00 GMT",
+      "status": "live",
+      "status_text": "Mumbai Indians opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778767200000,
       "match_date": "Thu, 14 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "14 May, 05:44 PM",
+  "last_updated": "14 May, 08:14 PM",
   "error": null
 }

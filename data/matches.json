@@ -1,6 +1,5 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "152141",
       "series": "IPL 2026",
@@ -12,16 +11,22 @@
       "team2": "Mumbai Indians",
       "team2_short": "MI",
       "team2_color": "#1d4ed8",
-      "team1_score1": null,
+      "team1_score1": {
+        "display": "82/1",
+        "detail": "(9.2 ov)",
+        "runs": 82,
+        "wickets": 1,
+        "overs": "9.2"
+      },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "status": "upcoming",
-      "status_text": "Match starts at May 14, 14:00 GMT",
+      "status": "live",
+      "status_text": "Mumbai Indians opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778767200000,
-      "run_rate": null,
+      "run_rate": 8.79,
       "t1_h2h_wins": 17,
       "t2_h2h_wins": 17,
       "team1_rank": 4,
@@ -44,6 +49,52 @@
         "L"
       ],
       "team2_qualification_pct": 1
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "152152",
+      "series": "IPL 2026",
+      "match_desc": "59th Match",
+      "match_format": "T20",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "status": "upcoming",
+      "status_text": "Match starts at May 15, 14:00 GMT",
+      "start_time": "07:30 PM",
+      "start_epoch": 1778853600000,
+      "run_rate": null,
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 3,
+      "team1_rank": 9,
+      "team1_points": 7,
+      "team1_last_5": [
+        "L",
+        "N",
+        "L",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 1,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 67
     }
   ],
   "finished": [
@@ -105,6 +156,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "14 May, 05:44 PM",
+  "last_updated": "14 May, 08:14 PM",
   "error": null
 }
