@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152141",
+      "source_id": "152141",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 58,
+      "round": "League",
+      "date": "2026-05-14",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Mumbai Indians",
+      "team2_short": "MI",
+      "team2_color": "#1d4ed8",
+      "winner": "Mumbai Indians",
+      "result_text": "Mumbai Indians won by 6 wkts",
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Punjab Kings",
+          "team_short": "PBKS",
+          "team_color": "#e11d48",
+          "opponent": "Mumbai Indians",
+          "opponent_short": "MI",
+          "runs": 200,
+          "wickets": 8,
+          "overs": 20,
+          "target": null,
+          "display": "200/8",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Mumbai Indians",
+          "team_short": "MI",
+          "team_color": "#1d4ed8",
+          "opponent": "Punjab Kings",
+          "opponent_short": "PBKS",
+          "runs": 205,
+          "wickets": 4,
+          "overs": 19.5,
+          "target": 201,
+          "display": "205/4",
+          "detail": "(19.5 ov)"
+        }
+      ]
+    },
+    {
       "id": "1226",
       "source_id": "1529300",
       "season": 2026,

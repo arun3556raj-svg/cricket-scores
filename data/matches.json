@@ -1,62 +1,5 @@
 {
-  "live": [
-    {
-      "id": "152141",
-      "series": "IPL 2026",
-      "match_desc": "58th Match",
-      "match_format": "T20",
-      "team1": "Punjab Kings",
-      "team1_short": "PBKS",
-      "team1_color": "#e11d48",
-      "team2": "Mumbai Indians",
-      "team2_short": "MI",
-      "team2_color": "#1d4ed8",
-      "team1_score1": {
-        "display": "200/8",
-        "detail": "(20 ov)",
-        "runs": 200,
-        "wickets": 8,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "88/3",
-        "detail": "(9.3 ov)",
-        "runs": 88,
-        "wickets": 3,
-        "overs": "9.3"
-      },
-      "team2_score2": null,
-      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "status": "live",
-      "status_text": "Mumbai Indians need 113 runs in 63 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1778767200000,
-      "run_rate": 9.26,
-      "t1_h2h_wins": 17,
-      "t2_h2h_wins": 17,
-      "team1_rank": 4,
-      "team1_points": 12,
-      "team1_last_5": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "team1_qualification_pct": 86,
-      "team2_rank": 10,
-      "team2_points": 6,
-      "team2_last_5": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "team2_qualification_pct": 1
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "152152",
@@ -81,7 +24,7 @@
       "run_rate": null,
       "t1_h2h_wins": 3,
       "t2_h2h_wins": 3,
-      "team1_rank": 9,
+      "team1_rank": 10,
       "team1_points": 7,
       "team1_last_5": [
         "L",
@@ -105,63 +48,64 @@
   ],
   "finished": [
     {
-      "id": "152130",
+      "id": "152141",
       "series": "IPL 2026",
-      "match_desc": "57th Match",
+      "match_desc": "58th Match",
       "match_format": "T20",
-      "team1": "Kolkata Knight Riders",
-      "team1_short": "KKR",
-      "team1_color": "#7c3aed",
-      "team2": "Royal Challengers Bengaluru",
-      "team2_short": "RCB",
-      "team2_color": "#dc2626",
+      "team1": "Punjab Kings",
+      "team1_short": "PBKS",
+      "team1_color": "#e11d48",
+      "team2": "Mumbai Indians",
+      "team2_short": "MI",
+      "team2_color": "#1d4ed8",
       "team1_score1": {
-        "display": "192/4",
+        "display": "200/8",
         "detail": "(20 ov)",
-        "runs": 192,
-        "wickets": 4,
+        "runs": 200,
+        "wickets": 8,
         "overs": "20"
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "194/4",
-        "detail": "(19.1 ov)",
-        "runs": 194,
+        "display": "205/4",
+        "detail": "(19.5 ov)",
+        "runs": 205,
         "wickets": 4,
-        "overs": "19.1"
+        "overs": "19.5"
       },
       "team2_score2": null,
-      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "finished",
-      "status_text": "Royal Challengers Bengaluru won by 6 wkts",
+      "status_text": "Mumbai Indians won by 6 wkts",
       "start_time": "07:30 PM",
-      "start_epoch": 1778680800000,
+      "start_epoch": 1778767200000,
       "run_rate": null,
       "provisional": true,
-      "t1_h2h_wins": 20,
-      "t2_h2h_wins": 16,
-      "team1_rank": 8,
-      "team1_points": 7,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 17,
+      "t2_h2h_wins": 18,
+      "team1_rank": 4,
+      "team1_points": 12,
       "team1_last_5": [
-        "W",
-        "N",
-        "W",
-        "W",
+        "L",
+        "L",
+        "L",
+        "L",
         "L"
       ],
-      "team1_qualification_pct": 16,
-      "team2_rank": 1,
-      "team2_points": 16,
+      "team1_qualification_pct": 82,
+      "team2_rank": 8,
+      "team2_points": 8,
       "team2_last_5": [
-        "W",
         "L",
         "L",
         "W",
+        "L",
         "W"
       ],
-      "team2_qualification_pct": 99
+      "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "14 May, 10:22 PM",
+  "last_updated": "14 May, 11:58 PM",
   "error": null
 }
