@@ -24,7 +24,7 @@
     "2026": {
       "season": 2026,
       "enhanced": true,
-      "source_note": "League stage · Match 57 of 70 completed · archive + provisional Cricbuzz",
+      "source_note": "League stage · Match 57 of 70 completed · archive database",
       "completed_matches": 57,
       "total_league_matches": 70,
       "rows": [
@@ -43,7 +43,7 @@
           "runs_against": 2162,
           "balls_against": 1396,
           "wickets_taken": 75,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": 1.065,
           "overs_for": "214.2",
           "overs_against": "232.4",
@@ -260,7 +260,7 @@
           "runs_against": 1816,
           "balls_against": 1188,
           "wickets_taken": 68,
-          "provisional_matches": 1,
+          "provisional_matches": 0,
           "nrr": -0.198,
           "overs_for": "192.2",
           "overs_against": "198",

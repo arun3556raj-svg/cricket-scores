@@ -129,10 +129,8 @@
   ],
   "matches": [
     {
-      "id": "prov-152130",
-      "source_id": "152130",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1226",
+      "source_id": "1529300",
       "season": 2026,
       "match_number": 57,
       "round": "League",
@@ -145,7 +143,7 @@
       "team2_color": "#dc2626",
       "winner": "Royal Challengers Bengaluru",
       "result_text": "Royal Challengers Bengaluru won by 6 wkts",
-      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur, Raipur",
       "innings": [
         {
           "number": 1,
@@ -156,10 +154,10 @@
           "opponent_short": "RCB",
           "runs": 192,
           "wickets": 4,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "192/4",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,

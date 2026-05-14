@@ -81,7 +81,6 @@
       "start_epoch": 1778680800000,
       "run_rate": null,
       "provisional": true,
-      "source": "cricbuzz",
       "t1_h2h_wins": 20,
       "t2_h2h_wins": 16,
       "team1_rank": 8,
@@ -106,6 +105,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "14 May, 10:58 AM",
+  "last_updated": "14 May, 01:40 PM",
   "error": null
 }
