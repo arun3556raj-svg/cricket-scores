@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152152",
+      "source_id": "152152",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 59,
+      "round": "League",
+      "date": "2026-05-15",
+      "team1": "Chennai Super Kings",
+      "team1_short": "CSK",
+      "team1_color": "#d97706",
+      "team2": "Lucknow Super Giants",
+      "team2_short": "LSG",
+      "team2_color": "#0284c7",
+      "winner": "Lucknow Super Giants",
+      "result_text": "Lucknow Super Giants won by 7 wkts",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Chennai Super Kings",
+          "team_short": "CSK",
+          "team_color": "#d97706",
+          "opponent": "Lucknow Super Giants",
+          "opponent_short": "LSG",
+          "runs": 187,
+          "wickets": 5,
+          "overs": 20,
+          "target": null,
+          "display": "187/5",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Lucknow Super Giants",
+          "team_short": "LSG",
+          "team_color": "#0284c7",
+          "opponent": "Chennai Super Kings",
+          "opponent_short": "CSK",
+          "runs": 188,
+          "wickets": 3,
+          "overs": 16.4,
+          "target": 188,
+          "display": "188/3",
+          "detail": "(16.4 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152141",
       "source_id": "152141",
       "source": "cricbuzz",

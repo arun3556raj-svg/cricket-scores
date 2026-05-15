@@ -24,8 +24,8 @@
     "2026": {
       "season": 2026,
       "enhanced": true,
-      "source_note": "League stage · Match 58 of 70 completed · archive + provisional Cricbuzz",
-      "completed_matches": 58,
+      "source_note": "League stage · Match 59 of 70 completed · archive + provisional Cricbuzz",
+      "completed_matches": 59,
       "total_league_matches": 70,
       "rows": [
         {
@@ -153,37 +153,6 @@
           "qualification_pct": 82
         },
         {
-          "team": "Chennai Super Kings",
-          "team_short": "CSK",
-          "team_color": "#d97706",
-          "played": 11,
-          "won": 6,
-          "lost": 5,
-          "no_result": 0,
-          "points": 12,
-          "runs_for": 2023,
-          "balls_for": 1290,
-          "wickets_lost": 62,
-          "runs_against": 1914,
-          "balls_against": 1245,
-          "wickets_taken": 70,
-          "provisional_matches": 0,
-          "nrr": 0.185,
-          "overs_for": "215",
-          "overs_against": "207.3",
-          "rank": 5,
-          "last_5": [
-            "W",
-            "L",
-            "W",
-            "W",
-            "W"
-          ],
-          "trend": 1,
-          "remaining": 3,
-          "qualification_pct": 67
-        },
-        {
           "team": "Rajasthan Royals",
           "team_short": "RR",
           "team_color": "#db2777",
@@ -202,7 +171,7 @@
           "nrr": 0.082,
           "overs_for": "200.3",
           "overs_against": "208.2",
-          "rank": 6,
+          "rank": 5,
           "last_5": [
             "W",
             "L",
@@ -213,6 +182,37 @@
           "trend": -1,
           "remaining": 3,
           "qualification_pct": 67
+        },
+        {
+          "team": "Chennai Super Kings",
+          "team_short": "CSK",
+          "team_color": "#d97706",
+          "played": 12,
+          "won": 6,
+          "lost": 6,
+          "no_result": 0,
+          "points": 12,
+          "runs_for": 2210,
+          "balls_for": 1410,
+          "wickets_lost": 67,
+          "runs_against": 2102,
+          "balls_against": 1345,
+          "wickets_taken": 73,
+          "provisional_matches": 1,
+          "nrr": 0.027,
+          "overs_for": "235",
+          "overs_against": "224.1",
+          "rank": 6,
+          "last_5": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "L"
+          ],
+          "trend": 0,
+          "remaining": 2,
+          "qualification_pct": 63
         },
         {
           "team": "Delhi Capitals",
@@ -246,6 +246,37 @@
           "qualification_pct": 33
         },
         {
+          "team": "Lucknow Super Giants",
+          "team_short": "LSG",
+          "team_color": "#0284c7",
+          "played": 12,
+          "won": 4,
+          "lost": 7,
+          "no_result": 1,
+          "points": 9,
+          "runs_for": 2095,
+          "balls_for": 1413,
+          "wickets_lost": 82,
+          "runs_against": 2191,
+          "balls_against": 1368,
+          "wickets_taken": 65,
+          "provisional_matches": 1,
+          "nrr": -0.714,
+          "overs_for": "235.3",
+          "overs_against": "228",
+          "rank": 8,
+          "last_5": [
+            "N",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "trend": 1,
+          "remaining": 2,
+          "qualification_pct": 1
+        },
+        {
           "team": "Mumbai Indians",
           "team_short": "MI",
           "team_color": "#1d4ed8",
@@ -264,7 +295,7 @@
           "nrr": -0.504,
           "overs_for": "228.4",
           "overs_against": "222.3",
-          "rank": 8,
+          "rank": 9,
           "last_5": [
             "L",
             "L",
@@ -295,7 +326,7 @@
           "nrr": -0.198,
           "overs_for": "192.2",
           "overs_against": "198",
-          "rank": 9,
+          "rank": 10,
           "last_5": [
             "W",
             "N",
@@ -306,37 +337,6 @@
           "trend": 1,
           "remaining": 4,
           "qualification_pct": 16
-        },
-        {
-          "team": "Lucknow Super Giants",
-          "team_short": "LSG",
-          "team_color": "#0284c7",
-          "played": 11,
-          "won": 3,
-          "lost": 7,
-          "no_result": 1,
-          "points": 7,
-          "runs_for": 1907,
-          "balls_for": 1313,
-          "wickets_lost": 79,
-          "runs_against": 2004,
-          "balls_against": 1248,
-          "wickets_taken": 60,
-          "provisional_matches": 0,
-          "nrr": -0.92,
-          "overs_for": "218.5",
-          "overs_against": "208",
-          "rank": 10,
-          "last_5": [
-            "L",
-            "N",
-            "L",
-            "W",
-            "L"
-          ],
-          "trend": -1,
-          "remaining": 3,
-          "qualification_pct": 1
         }
       ]
     },

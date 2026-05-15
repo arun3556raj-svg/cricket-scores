@@ -1,62 +1,5 @@
 {
-  "live": [
-    {
-      "id": "152152",
-      "series": "IPL 2026",
-      "match_desc": "59th Match",
-      "match_format": "T20",
-      "team1": "Chennai Super Kings",
-      "team1_short": "CSK",
-      "team1_color": "#d97706",
-      "team2": "Lucknow Super Giants",
-      "team2_short": "LSG",
-      "team2_color": "#0284c7",
-      "team1_score1": {
-        "display": "187/5",
-        "detail": "(20 ov)",
-        "runs": 187,
-        "wickets": 5,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "126/0",
-        "detail": "(10.3 ov)",
-        "runs": 126,
-        "wickets": 0,
-        "overs": "10.3"
-      },
-      "team2_score2": null,
-      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
-      "status": "live",
-      "status_text": "Lucknow Super Giants need 62 runs in 57 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1778853600000,
-      "run_rate": 12.0,
-      "t1_h2h_wins": 3,
-      "t2_h2h_wins": 3,
-      "team1_rank": 5,
-      "team1_points": 12,
-      "team1_last_5": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "team1_qualification_pct": 67,
-      "team2_rank": 10,
-      "team2_points": 7,
-      "team2_last_5": [
-        "L",
-        "N",
-        "L",
-        "W",
-        "L"
-      ],
-      "team2_qualification_pct": 1
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "152163",
@@ -81,7 +24,7 @@
       "run_rate": null,
       "t1_h2h_wins": 1,
       "t2_h2h_wins": 4,
-      "team1_rank": 9,
+      "team1_rank": 10,
       "team1_points": 7,
       "team1_last_5": [
         "W",
@@ -105,6 +48,64 @@
   ],
   "finished": [
     {
+      "id": "152152",
+      "series": "IPL 2026",
+      "match_desc": "59th Match",
+      "match_format": "T20",
+      "team1": "Chennai Super Kings",
+      "team1_short": "CSK",
+      "team1_color": "#d97706",
+      "team2": "Lucknow Super Giants",
+      "team2_short": "LSG",
+      "team2_color": "#0284c7",
+      "team1_score1": {
+        "display": "187/5",
+        "detail": "(20 ov)",
+        "runs": 187,
+        "wickets": 5,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "188/3",
+        "detail": "(16.4 ov)",
+        "runs": 188,
+        "wickets": 3,
+        "overs": "16.4"
+      },
+      "team2_score2": null,
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "status": "finished",
+      "status_text": "Lucknow Super Giants won by 7 wkts",
+      "start_time": "07:30 PM",
+      "start_epoch": 1778853600000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 4,
+      "team1_rank": 6,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 63,
+      "team2_rank": 8,
+      "team2_points": 9,
+      "team2_last_5": [
+        "N",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 1
+    },
+    {
       "id": "152141",
       "series": "IPL 2026",
       "match_desc": "58th Match",
@@ -120,7 +121,7 @@
         "detail": "(20 ov)",
         "runs": 200,
         "wickets": 8,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -128,14 +129,14 @@
         "detail": "(19.5 ov)",
         "runs": 205,
         "wickets": 4,
-        "overs": "19.5"
+        "overs": 19.5
       },
       "team2_score2": null,
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "finished",
       "status_text": "Mumbai Indians won by 6 wkts",
-      "start_time": "07:30 PM",
-      "start_epoch": 1778767200000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz",
@@ -151,7 +152,7 @@
         "L"
       ],
       "team1_qualification_pct": 82,
-      "team2_rank": 8,
+      "team2_rank": 9,
       "team2_points": 8,
       "team2_last_5": [
         "L",
@@ -163,6 +164,6 @@
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "15 May, 10:37 PM",
+  "last_updated": "16 May, 12:21 AM",
   "error": null
 }
