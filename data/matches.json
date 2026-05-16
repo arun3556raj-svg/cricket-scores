@@ -1,6 +1,5 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "152163",
       "series": "IPL 2026",
@@ -17,8 +16,8 @@
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Eden Gardens, Kolkata",
-      "status": "upcoming",
-      "status_text": "Match starts at May 16, 14:00 GMT",
+      "status": "live",
+      "status_text": "Gujarat Titans opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778940000000,
       "run_rate": null,
@@ -44,7 +43,9 @@
         "W"
       ],
       "team2_qualification_pct": 99
-    },
+    }
+  ],
+  "upcoming": [
     {
       "id": "152174",
       "series": "IPL 2026",
@@ -208,6 +209,6 @@
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "16 May, 05:30 PM",
+  "last_updated": "16 May, 07:22 PM",
   "error": null
 }

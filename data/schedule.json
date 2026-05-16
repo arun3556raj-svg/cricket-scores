@@ -2312,8 +2312,8 @@
       "team2_short": "GT",
       "team2_color": "#0f766e",
       "venue": "Eden Gardens, Kolkata",
-      "status": "upcoming",
-      "status_text": "Match starts at May 16, 14:00 GMT",
+      "status": "live",
+      "status_text": "Gujarat Titans opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1778940000000,
       "match_date": "Sat, 16 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "16 May, 05:30 PM",
+  "last_updated": "16 May, 07:22 PM",
   "error": null
 }
