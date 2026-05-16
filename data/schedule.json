@@ -2313,7 +2313,7 @@
       "team2_color": "#0f766e",
       "venue": "Eden Gardens, Kolkata",
       "status": "live",
-      "status_text": "Gujarat Titans opt to bowl",
+      "status_text": "Gujarat Titans need 194 runs in 86 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1778940000000,
       "match_date": "Sat, 16 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "16 May, 09:13 PM",
+  "last_updated": "16 May, 10:09 PM",
   "error": null
 }

@@ -12,21 +12,27 @@
       "team2_short": "GT",
       "team2_color": "#0f766e",
       "team1_score1": {
-        "display": "246/2",
-        "detail": "(19.4 ov)",
-        "runs": 246,
+        "display": "247/2",
+        "detail": "(20 ov)",
+        "runs": 247,
         "wickets": 2,
-        "overs": "19.4"
+        "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "55/1",
+        "detail": "(5.5 ov)",
+        "runs": 55,
+        "wickets": 1,
+        "overs": "5.5"
+      },
       "team2_score2": null,
       "venue": "Eden Gardens, Kolkata",
       "status": "live",
-      "status_text": "Gujarat Titans opt to bowl",
+      "status_text": "Gujarat Titans need 193 runs in 85 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1778940000000,
-      "run_rate": 12.51,
+      "run_rate": 9.43,
       "t1_h2h_wins": 1,
       "t2_h2h_wins": 4,
       "team1_rank": 10,
@@ -259,6 +265,6 @@
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "16 May, 09:13 PM",
+  "last_updated": "16 May, 10:09 PM",
   "error": null
 }

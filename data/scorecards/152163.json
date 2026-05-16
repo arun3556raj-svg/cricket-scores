@@ -5,15 +5,15 @@
       "bowl_team": "Gujarat Titans",
       "innings_id": 1,
       "score": {
-        "runs": 246,
+        "runs": 247,
         "wickets": 2,
-        "overs": 19.4,
-        "run_rate": 12.51,
+        "overs": 20,
+        "run_rate": 12.35,
         "declared": false
       },
       "extras": {
-        "total": 7,
-        "wides": 5,
+        "total": 6,
+        "wides": 4,
         "no_balls": 1,
         "byes": 0,
         "leg_byes": 1
@@ -50,19 +50,19 @@
           "fours": 4,
           "sixes": 7,
           "strike_rate": 186.36,
-          "out_desc": "batting",
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
         },
         {
           "name": "Cameron Green",
-          "runs": 50,
-          "balls": 26,
+          "runs": 52,
+          "balls": 28,
           "fours": 3,
           "sixes": 4,
-          "strike_rate": 192.31,
-          "out_desc": "batting",
+          "strike_rate": 185.71,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -150,6 +150,18 @@
           "is_captain": false,
           "is_keeper": false,
           "not_out": true
+        },
+        {
+          "name": "Matheesha Pathirana",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
         }
       ],
       "bowlers": [
@@ -191,13 +203,13 @@
         },
         {
           "name": "Rashid Khan",
-          "overs": 3.4,
-          "balls": 22,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 56,
+          "runs": 57,
           "wickets": 0,
-          "economy": 15.3,
-          "wides": 1,
+          "economy": 14.2,
+          "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
@@ -238,6 +250,229 @@
           "runs": 139,
           "over": 11.2,
           "wkt_n": 2
+        }
+      ]
+    },
+    {
+      "bat_team": "Gujarat Titans",
+      "bowl_team": "Kolkata Knight Riders",
+      "innings_id": 2,
+      "score": {
+        "runs": 56,
+        "wickets": 1,
+        "overs": 6,
+        "run_rate": 9.33,
+        "declared": false
+      },
+      "extras": {
+        "total": 15,
+        "wides": 9,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 6
+      },
+      "batsmen": [
+        {
+          "name": "Sai Sudharsan",
+          "runs": 23,
+          "balls": 13,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 176.92,
+          "out_desc": "retd hurt",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 14,
+          "balls": 15,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 93.33,
+          "out_desc": "batting",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Nishant Sindhu",
+          "runs": 1,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 25,
+          "out_desc": "c Manish Pandey b Sunil Narine",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jos Buttler",
+          "runs": 3,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 75,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Washington Sundar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jason Holder",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Rashid Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Arshad Khan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Kagiso Rabada",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Ravisrinivasan Sai Kishore",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mohammed Siraj",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Saurabh Dubey",
+          "overs": 1.4,
+          "balls": 10,
+          "maidens": 0,
+          "runs": 18,
+          "wickets": 0,
+          "economy": 10.8,
+          "wides": 7,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Cameron Green",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 8,
+          "wickets": 0,
+          "economy": 8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Kartik Tyagi",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 14,
+          "wickets": 0,
+          "economy": 14,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Matheesha Pathirana",
+          "overs": 1.2,
+          "balls": 8,
+          "maidens": 0,
+          "runs": 9,
+          "wickets": 0,
+          "economy": 6.8,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Sunil Narine",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 1,
+          "wickets": 1,
+          "economy": 1,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Nishant Sindhu",
+          "runs": 49,
+          "over": 4.1,
+          "wkt_n": 1
         }
       ]
     }
