@@ -258,40 +258,40 @@
       "bowl_team": "Kolkata Knight Riders",
       "innings_id": 2,
       "score": {
-        "runs": 56,
-        "wickets": 1,
-        "overs": 6,
-        "run_rate": 9.33,
+        "runs": 181,
+        "wickets": 2,
+        "overs": 16.5,
+        "run_rate": 10.75,
         "declared": false
       },
       "extras": {
-        "total": 15,
-        "wides": 9,
+        "total": 18,
+        "wides": 10,
         "no_balls": 0,
-        "byes": 0,
-        "leg_byes": 6
+        "byes": 1,
+        "leg_byes": 7
       },
       "batsmen": [
         {
           "name": "Sai Sudharsan",
-          "runs": 23,
-          "balls": 13,
+          "runs": 26,
+          "balls": 15,
           "fours": 4,
           "sixes": 1,
-          "strike_rate": 176.92,
-          "out_desc": "retd hurt",
+          "strike_rate": 173.33,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Shubman Gill",
-          "runs": 14,
-          "balls": 15,
-          "fours": 1,
-          "sixes": 1,
-          "strike_rate": 93.33,
-          "out_desc": "batting",
+          "runs": 85,
+          "balls": 49,
+          "fours": 5,
+          "sixes": 7,
+          "strike_rate": 173.47,
+          "out_desc": "c Anukul Roy b Sunil Narine",
           "is_captain": true,
           "is_keeper": false,
           "not_out": false
@@ -310,11 +310,11 @@
         },
         {
           "name": "Jos Buttler",
-          "runs": 3,
-          "balls": 4,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 75,
+          "runs": 51,
+          "balls": 33,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 154.55,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": true,
@@ -420,10 +420,10 @@
         },
         {
           "name": "Cameron Green",
-          "overs": 1,
-          "balls": 6,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 8,
+          "runs": 16,
           "wickets": 0,
           "economy": 8,
           "wides": 0,
@@ -432,12 +432,12 @@
         },
         {
           "name": "Kartik Tyagi",
-          "overs": 1,
-          "balls": 6,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 14,
+          "runs": 38,
           "wickets": 0,
-          "economy": 14,
+          "economy": 12.7,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -456,12 +456,36 @@
         },
         {
           "name": "Sunil Narine",
+          "overs": 3.5,
+          "balls": 23,
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 2,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Varun Chakaravarthy",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 47,
+          "wickets": 0,
+          "economy": 11.8,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Anukul Roy",
           "overs": 1,
           "balls": 6,
           "maidens": 0,
-          "runs": 1,
-          "wickets": 1,
-          "economy": 1,
+          "runs": 17,
+          "wickets": 0,
+          "economy": 17,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -473,6 +497,12 @@
           "runs": 49,
           "over": 4.1,
           "wkt_n": 1
+        },
+        {
+          "name": "Shubman Gill",
+          "runs": 177,
+          "over": 16.2,
+          "wkt_n": 2
         }
       ]
     }
