@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152163",
+      "source_id": "152163",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 60,
+      "round": "League",
+      "date": "2026-05-16",
+      "team1": "Kolkata Knight Riders",
+      "team1_short": "KKR",
+      "team1_color": "#7c3aed",
+      "team2": "Gujarat Titans",
+      "team2_short": "GT",
+      "team2_color": "#0f766e",
+      "winner": "Kolkata Knight Riders",
+      "result_text": "Kolkata Knight Riders won by 29 runs",
+      "venue": "Eden Gardens, Kolkata",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Kolkata Knight Riders",
+          "team_short": "KKR",
+          "team_color": "#7c3aed",
+          "opponent": "Gujarat Titans",
+          "opponent_short": "GT",
+          "runs": 247,
+          "wickets": 2,
+          "overs": 20,
+          "target": null,
+          "display": "247/2",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Gujarat Titans",
+          "team_short": "GT",
+          "team_color": "#0f766e",
+          "opponent": "Kolkata Knight Riders",
+          "opponent_short": "KKR",
+          "runs": 218,
+          "wickets": 4,
+          "overs": 20,
+          "target": 248,
+          "display": "218/4",
+          "detail": "(20 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152152",
       "source_id": "152152",
       "source": "cricbuzz",
