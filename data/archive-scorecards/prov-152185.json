@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-152185",
+  "source_id": "152185",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 62,
+  "date": "2026-05-17",
+  "team1": "Rajasthan Royals",
+  "team2": "Delhi Capitals",
+  "venue": "Arun Jaitley Stadium, Delhi",
+  "result_text": "Delhi Capitals won by 5 wkts",
   "innings": [
     {
       "bat_team": "Rajasthan Royals",
