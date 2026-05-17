@@ -2344,40 +2344,40 @@
       "id": "152174",
       "series": "Indian Premier League 2026",
       "match_desc": "61st Match",
-      "team1": "Punjab Kings",
-      "team1_short": "PBKS",
-      "team1_color": "#e11d48",
-      "team2": "Royal Challengers Bengaluru",
-      "team2_short": "RCB",
-      "team2_color": "#dc2626",
+      "team1": "Royal Challengers Bengaluru",
+      "team1_short": "RCB",
+      "team1_color": "#dc2626",
+      "team2": "Punjab Kings",
+      "team2_short": "PBKS",
+      "team2_color": "#e11d48",
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "status": "upcoming",
-      "status_text": "Match starts at May 17, 10:00 GMT",
+      "status": "live",
+      "status_text": "Punjab Kings opt to bowl",
       "start_time": "03:30 PM",
       "start_epoch": 1779012000000,
       "match_date": "Sun, 17 May 2026",
-      "t1_h2h_wins": 18,
-      "t2_h2h_wins": 19,
-      "team1_rank": 4,
-      "team1_points": 12,
+      "t1_h2h_wins": 19,
+      "t2_h2h_wins": 18,
+      "team1_rank": 1,
+      "team1_points": 16,
       "team1_last_5": [
-        "L",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "team1_qualification_pct": 82,
-      "team2_rank": 1,
-      "team2_points": 16,
-      "team2_last_5": [
         "W",
         "L",
         "L",
         "W",
         "W"
       ],
-      "team2_qualification_pct": 99
+      "team1_qualification_pct": 99,
+      "team2_rank": 4,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 82
     },
     {
       "id": "152185",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "17 May, 02:54 PM",
+  "last_updated": "17 May, 04:19 PM",
   "error": null
 }
