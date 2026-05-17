@@ -5,18 +5,18 @@
       "bowl_team": "Delhi Capitals",
       "innings_id": 1,
       "score": {
-        "runs": 173,
-        "wickets": 5,
-        "overs": 16.3,
-        "run_rate": 10.48,
+        "runs": 193,
+        "wickets": 8,
+        "overs": 20,
+        "run_rate": 9.65,
         "declared": false
       },
       "extras": {
-        "total": 7,
+        "total": 8,
         "wides": 6,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 1
+        "leg_byes": 2
       },
       "batsmen": [
         {
@@ -45,12 +45,12 @@
         },
         {
           "name": "Dhruv Jurel",
-          "runs": 48,
-          "balls": 33,
+          "runs": 53,
+          "balls": 40,
           "fours": 5,
           "sixes": 2,
-          "strike_rate": 145.45,
-          "out_desc": "batting",
+          "strike_rate": 132.5,
+          "out_desc": "lbw b Lungi Ngidi",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
@@ -94,38 +94,50 @@
         {
           "name": "Shubham Dubey",
           "runs": 5,
-          "balls": 7,
+          "balls": 9,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 71.43,
-          "out_desc": "batting",
+          "strike_rate": 55.56,
+          "out_desc": "c Tripurana Vijay b Madhav Tiwari",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dasun Shanaka",
+          "runs": 10,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 125,
+          "out_desc": "c Tristan Stubbs b Mitchell Starc",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Jofra Archer",
-          "runs": 0,
-          "balls": 0,
+          "runs": 2,
+          "balls": 2,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 100,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Adam Milne",
-          "runs": 0,
-          "balls": 0,
+          "runs": 2,
+          "balls": 2,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 100,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Brijesh Sharma",
@@ -155,23 +167,23 @@
       "bowlers": [
         {
           "name": "Mitchell Starc",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 34,
-          "wickets": 3,
-          "economy": 11.3,
+          "runs": 40,
+          "wickets": 4,
+          "economy": 10,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Lungi Ngidi",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 12,
-          "wickets": 1,
+          "runs": 24,
+          "wickets": 2,
           "economy": 6,
           "wides": 0,
           "no_balls": 0,
@@ -203,12 +215,12 @@
         },
         {
           "name": "Madhav Tiwari",
-          "overs": 3.3,
-          "balls": 21,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 26,
-          "wickets": 1,
-          "economy": 7.4,
+          "runs": 27,
+          "wickets": 2,
+          "economy": 6.8,
           "wides": 4,
           "no_balls": 0,
           "dots": 0
@@ -256,8 +268,218 @@
           "runs": 165,
           "over": 14.5,
           "wkt_n": 5
+        },
+        {
+          "name": "Shubham Dubey",
+          "runs": 173,
+          "over": 16.5,
+          "wkt_n": 6
+        },
+        {
+          "name": "Dasun Shanaka",
+          "runs": 187,
+          "over": 18.5,
+          "wkt_n": 7
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 191,
+          "over": 19.4,
+          "wkt_n": 8
         }
       ]
+    },
+    {
+      "bat_team": "Delhi Capitals",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 48,
+        "wickets": 0,
+        "overs": 3.4,
+        "run_rate": 13.09,
+        "declared": false
+      },
+      "extras": {
+        "total": 7,
+        "wides": 7,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Abishek Porel",
+          "runs": 26,
+          "balls": 13,
+          "fours": 4,
+          "sixes": 1,
+          "strike_rate": 200,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "KL Rahul",
+          "runs": 15,
+          "balls": 9,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 166.67,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Sahil Parakh",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Tristan Stubbs",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "David Miller",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Axar Patel",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Madhav Tiwari",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Tripurana Vijay",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Lungi Ngidi",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mitchell Starc",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mukesh Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Jofra Archer",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 25,
+          "wickets": 0,
+          "economy": 12.5,
+          "wides": 6,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Adam Milne",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 0,
+          "economy": 13,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Brijesh Sharma",
+          "overs": 0.4,
+          "balls": 4,
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 15,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": []
     }
   ],
   "error": null
