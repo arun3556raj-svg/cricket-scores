@@ -19,14 +19,20 @@
         "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "76/4",
+        "detail": "(8.3 ov)",
+        "runs": 76,
+        "wickets": 4,
+        "overs": "8.3"
+      },
       "team2_score2": null,
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Punjab Kings need 147 runs in 69 balls",
       "start_time": "03:30 PM",
       "start_epoch": 1779012000000,
-      "run_rate": 11.1,
+      "run_rate": 8.94,
       "t1_h2h_wins": 19,
       "t2_h2h_wins": 18,
       "team1_rank": 1,
@@ -273,6 +279,6 @@
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "17 May, 05:19 PM",
+  "last_updated": "17 May, 06:14 PM",
   "error": null
 }

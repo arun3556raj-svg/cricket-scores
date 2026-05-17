@@ -2352,7 +2352,7 @@
       "team2_color": "#e11d48",
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Punjab Kings need 161 runs in 75 balls",
       "start_time": "03:30 PM",
       "start_epoch": 1779012000000,
       "match_date": "Sun, 17 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "17 May, 05:19 PM",
+  "last_updated": "17 May, 06:14 PM",
   "error": null
 }
