@@ -12,11 +12,11 @@
       "team2_short": "DC",
       "team2_color": "#0ea5e9",
       "team1_score1": {
-        "display": "30/1",
-        "detail": "(2.3 ov)",
-        "runs": 30,
-        "wickets": 1,
-        "overs": "2.3"
+        "display": "172/5",
+        "detail": "(16.1 ov)",
+        "runs": 172,
+        "wickets": 5,
+        "overs": "16.1"
       },
       "team1_score2": null,
       "team2_score1": null,
@@ -26,7 +26,7 @@
       "status_text": "Delhi Capitals opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1779026400000,
-      "run_rate": 12.0,
+      "run_rate": 10.64,
       "t1_h2h_wins": 4,
       "t2_h2h_wins": 8,
       "team1_rank": 5,
@@ -331,6 +331,6 @@
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "17 May, 07:44 PM",
+  "last_updated": "17 May, 09:00 PM",
   "error": null
 }

@@ -5,18 +5,18 @@
       "bowl_team": "Delhi Capitals",
       "innings_id": 1,
       "score": {
-        "runs": 31,
-        "wickets": 1,
-        "overs": 2.4,
-        "run_rate": 11.62,
+        "runs": 173,
+        "wickets": 5,
+        "overs": 16.3,
+        "run_rate": 10.48,
         "declared": false
       },
       "extras": {
-        "total": 1,
-        "wides": 1,
+        "total": 7,
+        "wides": 6,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 1
       },
       "batsmen": [
         {
@@ -33,23 +33,23 @@
         },
         {
           "name": "Vaibhav Sooryavanshi",
-          "runs": 18,
-          "balls": 6,
-          "fours": 1,
-          "sixes": 2,
-          "strike_rate": 300,
-          "out_desc": "batting",
+          "runs": 46,
+          "balls": 21,
+          "fours": 5,
+          "sixes": 3,
+          "strike_rate": 219.05,
+          "out_desc": "c David Miller b Madhav Tiwari",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Dhruv Jurel",
-          "runs": 0,
-          "balls": 1,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
+          "runs": 48,
+          "balls": 33,
+          "fours": 5,
+          "sixes": 2,
+          "strike_rate": 145.45,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": true,
@@ -57,51 +57,51 @@
         },
         {
           "name": "Riyan Parag",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 51,
+          "balls": 26,
+          "fours": 3,
+          "sixes": 5,
+          "strike_rate": 196.15,
+          "out_desc": "c Axar Patel b Mitchell Starc",
           "is_captain": true,
           "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Ravi Singh",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Donovan Ferreira",
           "runs": 0,
-          "balls": 0,
+          "balls": 1,
           "fours": 0,
           "sixes": 0,
           "strike_rate": 0,
-          "out_desc": "",
+          "out_desc": "c Axar Patel b Mitchell Starc",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Ravi Singh",
+          "runs": 4,
+          "balls": 2,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 200,
+          "out_desc": "lbw b Mitchell Starc",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
         },
         {
           "name": "Shubham Dubey",
-          "runs": 0,
-          "balls": 0,
+          "runs": 5,
+          "balls": 7,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 71.43,
+          "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Jofra Archer",
@@ -155,24 +155,72 @@
       "bowlers": [
         {
           "name": "Mitchell Starc",
-          "overs": 1.4,
-          "balls": 10,
+          "overs": 3,
+          "balls": 18,
           "maidens": 0,
-          "runs": 24,
-          "wickets": 0,
-          "economy": 14.4,
+          "runs": 34,
+          "wickets": 3,
+          "economy": 11.3,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Lungi Ngidi",
-          "overs": 1,
-          "balls": 6,
+          "overs": 2,
+          "balls": 12,
           "maidens": 0,
-          "runs": 7,
+          "runs": 12,
           "wickets": 1,
-          "economy": 7,
+          "economy": 6,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Tripurana Vijay",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 29,
+          "wickets": 0,
+          "economy": 14.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Mukesh Kumar",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 40,
+          "wickets": 0,
+          "economy": 20,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Madhav Tiwari",
+          "overs": 3.3,
+          "balls": 21,
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 7.4,
+          "wides": 4,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Axar Patel",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 31,
+          "wickets": 0,
+          "economy": 7.8,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -184,6 +232,30 @@
           "runs": 19,
           "over": 1.5,
           "wkt_n": 1
+        },
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "runs": 89,
+          "over": 7.3,
+          "wkt_n": 2
+        },
+        {
+          "name": "Riyan Parag",
+          "runs": 161,
+          "over": 14.2,
+          "wkt_n": 3
+        },
+        {
+          "name": "Donovan Ferreira",
+          "runs": 161,
+          "over": 14.3,
+          "wkt_n": 4
+        },
+        {
+          "name": "Ravi Singh",
+          "runs": 165,
+          "over": 14.5,
+          "wkt_n": 5
         }
       ]
     }
