@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152174",
+      "source_id": "152174",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 61,
+      "round": "League",
+      "date": "2026-05-17",
+      "team1": "Royal Challengers Bengaluru",
+      "team1_short": "RCB",
+      "team1_color": "#dc2626",
+      "team2": "Punjab Kings",
+      "team2_short": "PBKS",
+      "team2_color": "#e11d48",
+      "winner": "Royal Challengers Bengaluru",
+      "result_text": "Royal Challengers Bengaluru won by 23 runs",
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Royal Challengers Bengaluru",
+          "team_short": "RCB",
+          "team_color": "#dc2626",
+          "opponent": "Punjab Kings",
+          "opponent_short": "PBKS",
+          "runs": 222,
+          "wickets": 4,
+          "overs": 20,
+          "target": null,
+          "display": "222/4",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Punjab Kings",
+          "team_short": "PBKS",
+          "team_color": "#e11d48",
+          "opponent": "Royal Challengers Bengaluru",
+          "opponent_short": "RCB",
+          "runs": 199,
+          "wickets": 8,
+          "overs": 20,
+          "target": 223,
+          "display": "199/8",
+          "detail": "(20 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152163",
       "source_id": "152163",
       "source": "cricbuzz",

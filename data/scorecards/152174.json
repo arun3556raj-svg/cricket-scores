@@ -258,18 +258,18 @@
       "bowl_team": "Royal Challengers Bengaluru",
       "innings_id": 2,
       "score": {
-        "runs": 79,
-        "wickets": 4,
-        "overs": 8.5,
-        "run_rate": 8.94,
+        "runs": 199,
+        "wickets": 8,
+        "overs": 20,
+        "run_rate": 9.95,
         "declared": false
       },
       "extras": {
-        "total": 3,
-        "wides": 3,
+        "total": 12,
+        "wides": 8,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 4
       },
       "batsmen": [
         {
@@ -322,63 +322,63 @@
         },
         {
           "name": "Suryansh Shedge",
-          "runs": 29,
-          "balls": 16,
+          "runs": 35,
+          "balls": 22,
           "fours": 2,
           "sixes": 2,
-          "strike_rate": 181.25,
-          "out_desc": "batting",
+          "strike_rate": 159.09,
+          "out_desc": "c Virat Kohli b Suyash Sharma",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Marcus Stoinis",
-          "runs": 7,
-          "balls": 4,
-          "fours": 1,
+          "runs": 37,
+          "balls": 25,
+          "fours": 5,
           "sixes": 0,
-          "strike_rate": 175,
-          "out_desc": "batting",
+          "strike_rate": 148,
+          "out_desc": "lbw b Josh Hazlewood",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Shashank Singh",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 56,
+          "balls": 27,
+          "fours": 4,
+          "sixes": 4,
+          "strike_rate": 207.41,
+          "out_desc": "c Virat Kohli b Rasikh Salam Dar",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Azmatullah Omarzai",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 14,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 140,
+          "out_desc": "c Tim David b Rasikh Salam Dar",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Harpreet Brar",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
+          "runs": 5,
+          "balls": 3,
+          "fours": 1,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 166.67,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Lockie Ferguson",
@@ -420,49 +420,49 @@
       "bowlers": [
         {
           "name": "Bhuvneshwar Kumar",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 8,
+          "runs": 38,
           "wickets": 2,
-          "economy": 4,
+          "economy": 9.5,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Josh Hazlewood",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 26,
-          "wickets": 0,
-          "economy": 13,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9,
           "wides": 2,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Rasikh Salam Dar",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 15,
-          "wickets": 1,
-          "economy": 7.5,
-          "wides": 0,
+          "runs": 36,
+          "wickets": 3,
+          "economy": 9,
+          "wides": 3,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Suyash Sharma",
-          "overs": 1.5,
-          "balls": 11,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 22,
-          "wickets": 0,
-          "economy": 12,
-          "wides": 0,
+          "runs": 50,
+          "wickets": 1,
+          "economy": 12.5,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
@@ -475,6 +475,18 @@
           "wickets": 1,
           "economy": 8,
           "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Krunal Pandya",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 0,
+          "economy": 9,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         }
@@ -503,6 +515,30 @@
           "runs": 62,
           "over": 7.3,
           "wkt_n": 4
+        },
+        {
+          "name": "Suryansh Shedge",
+          "runs": 93,
+          "over": 10.5,
+          "wkt_n": 5
+        },
+        {
+          "name": "Marcus Stoinis",
+          "runs": 160,
+          "over": 16.1,
+          "wkt_n": 6
+        },
+        {
+          "name": "Shashank Singh",
+          "runs": 194,
+          "over": 19.2,
+          "wkt_n": 7
+        },
+        {
+          "name": "Azmatullah Omarzai",
+          "runs": 199,
+          "over": 19.6,
+          "wkt_n": 8
         }
       ]
     }

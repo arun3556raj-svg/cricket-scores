@@ -1,6 +1,104 @@
 {
   "live": [
     {
+      "id": "152185",
+      "series": "IPL 2026",
+      "match_desc": "62nd Match",
+      "match_format": "T20",
+      "team1": "Rajasthan Royals",
+      "team1_short": "RR",
+      "team1_color": "#db2777",
+      "team2": "Delhi Capitals",
+      "team2_short": "DC",
+      "team2_color": "#0ea5e9",
+      "team1_score1": {
+        "display": "30/1",
+        "detail": "(2.3 ov)",
+        "runs": 30,
+        "wickets": 1,
+        "overs": "2.3"
+      },
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "status": "live",
+      "status_text": "Delhi Capitals opt to bowl",
+      "start_time": "07:30 PM",
+      "start_epoch": 1779026400000,
+      "run_rate": 12.0,
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 8,
+      "team1_rank": 5,
+      "team1_points": 12,
+      "team1_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team1_qualification_pct": 67,
+      "team2_rank": 7,
+      "team2_points": 10,
+      "team2_last_5": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 33
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "152196",
+      "series": "IPL 2026",
+      "match_desc": "63rd Match",
+      "match_format": "T20",
+      "team1": "Chennai Super Kings",
+      "team1_short": "CSK",
+      "team1_color": "#d97706",
+      "team2": "Sunrisers Hyderabad",
+      "team2_short": "SRH",
+      "team2_color": "#ea580c",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "status": "upcoming",
+      "status_text": "Match starts at May 18, 14:00 GMT",
+      "start_time": "07:30 PM",
+      "start_epoch": 1779112800000,
+      "run_rate": null,
+      "t1_h2h_wins": 15,
+      "t2_h2h_wins": 8,
+      "team1_rank": 6,
+      "team1_points": 12,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 63,
+      "team2_rank": 3,
+      "team2_points": 14,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "team2_qualification_pct": 96
+    }
+  ],
+  "finished": [
+    {
       "id": "152174",
       "series": "IPL 2026",
       "match_desc": "61st Match",
@@ -20,27 +118,29 @@
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "76/4",
-        "detail": "(8.3 ov)",
-        "runs": 76,
-        "wickets": 4,
-        "overs": "8.3"
+        "display": "199/8",
+        "detail": "(20 ov)",
+        "runs": 199,
+        "wickets": 8,
+        "overs": "20"
       },
       "team2_score2": null,
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "status": "live",
-      "status_text": "Punjab Kings need 147 runs in 69 balls",
+      "status": "finished",
+      "status_text": "Royal Challengers Bengaluru won by 23 runs",
       "start_time": "03:30 PM",
       "start_epoch": 1779012000000,
-      "run_rate": 8.94,
-      "t1_h2h_wins": 19,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 20,
       "t2_h2h_wins": 18,
       "team1_rank": 1,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
+        "L",
+        "L",
         "W",
-        "L",
-        "L",
         "W",
         "W"
       ],
@@ -54,56 +154,8 @@
         "L",
         "L"
       ],
-      "team2_qualification_pct": 82
-    }
-  ],
-  "upcoming": [
-    {
-      "id": "152185",
-      "series": "IPL 2026",
-      "match_desc": "62nd Match",
-      "match_format": "T20",
-      "team1": "Delhi Capitals",
-      "team1_short": "DC",
-      "team1_color": "#0ea5e9",
-      "team2": "Rajasthan Royals",
-      "team2_short": "RR",
-      "team2_color": "#db2777",
-      "team1_score1": null,
-      "team1_score2": null,
-      "team2_score1": null,
-      "team2_score2": null,
-      "venue": "Arun Jaitley Stadium, Delhi",
-      "status": "upcoming",
-      "status_text": "Match starts at May 17, 14:00 GMT",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779026400000,
-      "run_rate": null,
-      "t1_h2h_wins": 8,
-      "t2_h2h_wins": 4,
-      "team1_rank": 7,
-      "team1_points": 10,
-      "team1_last_5": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "W"
-      ],
-      "team1_qualification_pct": 33,
-      "team2_rank": 5,
-      "team2_points": 12,
-      "team2_last_5": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "team2_qualification_pct": 67
-    }
-  ],
-  "finished": [
+      "team2_qualification_pct": 73
+    },
     {
       "id": "152163",
       "series": "IPL 2026",
@@ -266,7 +318,7 @@
         "L",
         "L"
       ],
-      "team1_qualification_pct": 82,
+      "team1_qualification_pct": 73,
       "team2_rank": 10,
       "team2_points": 8,
       "team2_last_5": [
@@ -279,6 +331,6 @@
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "17 May, 06:14 PM",
+  "last_updated": "17 May, 07:44 PM",
   "error": null
 }
