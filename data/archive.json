@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152196",
+      "source_id": "152196",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 63,
+      "round": "League",
+      "date": "2026-05-18",
+      "team1": "Chennai Super Kings",
+      "team1_short": "CSK",
+      "team1_color": "#d97706",
+      "team2": "Sunrisers Hyderabad",
+      "team2_short": "SRH",
+      "team2_color": "#ea580c",
+      "winner": "Sunrisers Hyderabad",
+      "result_text": "Sunrisers Hyderabad won by 5 wkts",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Chennai Super Kings",
+          "team_short": "CSK",
+          "team_color": "#d97706",
+          "opponent": "Sunrisers Hyderabad",
+          "opponent_short": "SRH",
+          "runs": 180,
+          "wickets": 7,
+          "overs": 20,
+          "target": null,
+          "display": "180/7",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Sunrisers Hyderabad",
+          "team_short": "SRH",
+          "team_color": "#ea580c",
+          "opponent": "Chennai Super Kings",
+          "opponent_short": "CSK",
+          "runs": 181,
+          "wickets": 5,
+          "overs": 19,
+          "target": 181,
+          "display": "181/5",
+          "detail": "(19 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152185",
       "source_id": "152185",
       "source": "cricbuzz",
