@@ -2429,8 +2429,8 @@
       "team2_short": "SRH",
       "team2_color": "#ea580c",
       "venue": "MA Chidambaram Stadium, Chennai",
-      "status": "upcoming",
-      "status_text": "Match starts at May 18, 14:00 GMT",
+      "status": "live",
+      "status_text": "Sunrisers Hyderabad need 166 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1779112800000,
       "match_date": "Mon, 18 May 2026",
@@ -2469,7 +2469,7 @@
       "team2_color": "#0284c7",
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "upcoming",
-      "status_text": "Match starts at May 19, 14:00 GMT",
+      "status_text": "Preview",
       "start_time": "07:30 PM",
       "start_epoch": 1779199200000,
       "match_date": "Tue, 19 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "18 May, 06:25 PM",
+  "last_updated": "18 May, 09:53 PM",
   "error": null
 }

@@ -1,4 +1,487 @@
 {
-  "innings": [],
+  "innings": [
+    {
+      "bat_team": "Chennai Super Kings",
+      "bowl_team": "Sunrisers Hyderabad",
+      "innings_id": 1,
+      "score": {
+        "runs": 180,
+        "wickets": 7,
+        "overs": 20,
+        "run_rate": 9,
+        "declared": false
+      },
+      "extras": {
+        "total": 9,
+        "wides": 8,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Sanju Samson",
+          "runs": 27,
+          "balls": 13,
+          "fours": 5,
+          "sixes": 1,
+          "strike_rate": 207.69,
+          "out_desc": "c Ishan Kishan b Pat Cummins",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Ruturaj Gaikwad",
+          "runs": 15,
+          "balls": 21,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 71.43,
+          "out_desc": "c Eshan Malinga b Pat Cummins",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Urvil Patel",
+          "runs": 13,
+          "balls": 8,
+          "fours": 0,
+          "sixes": 2,
+          "strike_rate": 162.5,
+          "out_desc": "b Sakib Hussain",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Kartik Sharma",
+          "runs": 32,
+          "balls": 19,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 168.42,
+          "out_desc": "c Nitish Reddy b Pat Cummins",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dewald Brevis",
+          "runs": 44,
+          "balls": 27,
+          "fours": 2,
+          "sixes": 4,
+          "strike_rate": 162.96,
+          "out_desc": "b Eshan Malinga",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Shivam Dube",
+          "runs": 26,
+          "balls": 23,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 113.04,
+          "out_desc": "b Sakib Hussain",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Prashant Veer",
+          "runs": 11,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 122.22,
+          "out_desc": "c and b Praful Hinge",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Akeal Hosein",
+          "runs": 3,
+          "balls": 1,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 300,
+          "out_desc": "not out",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Noor Ahmad",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Anshul Kamboj",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Spencer Johnson",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Mukesh Choudhary",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Nitish Kumar Reddy",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 35,
+          "wickets": 0,
+          "economy": 17.5,
+          "wides": 1,
+          "no_balls": 1,
+          "dots": 0
+        },
+        {
+          "name": "Praful Hinge",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 37,
+          "wickets": 1,
+          "economy": 12.3,
+          "wides": 3,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Pat Cummins",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 28,
+          "wickets": 3,
+          "economy": 7,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Eshan Malinga",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 26,
+          "wickets": 1,
+          "economy": 6.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Sakib Hussain",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 34,
+          "wickets": 2,
+          "economy": 8.5,
+          "wides": 3,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Shivang Kumar",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 20,
+          "wickets": 0,
+          "economy": 6.7,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Sanju Samson",
+          "runs": 31,
+          "over": 2.3,
+          "wkt_n": 1
+        },
+        {
+          "name": "Urvil Patel",
+          "runs": 48,
+          "over": 4.3,
+          "wkt_n": 2
+        },
+        {
+          "name": "Kartik Sharma",
+          "runs": 90,
+          "over": 9.4,
+          "wkt_n": 3
+        },
+        {
+          "name": "Ruturaj Gaikwad",
+          "runs": 100,
+          "over": 11.3,
+          "wkt_n": 4
+        },
+        {
+          "name": "Dewald Brevis",
+          "runs": 159,
+          "over": 17.5,
+          "wkt_n": 5
+        },
+        {
+          "name": "Shivam Dube",
+          "runs": 164,
+          "over": 18.3,
+          "wkt_n": 6
+        },
+        {
+          "name": "Prashant Veer",
+          "runs": 180,
+          "over": 19.6,
+          "wkt_n": 7
+        }
+      ]
+    },
+    {
+      "bat_team": "Sunrisers Hyderabad",
+      "bowl_team": "Chennai Super Kings",
+      "innings_id": 2,
+      "score": {
+        "runs": 18,
+        "wickets": 1,
+        "overs": 2.3,
+        "run_rate": 7.2,
+        "declared": false
+      },
+      "extras": {
+        "total": 1,
+        "wides": 1,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Abhishek Sharma",
+          "runs": 11,
+          "balls": 9,
+          "fours": 2,
+          "sixes": 0,
+          "strike_rate": 122.22,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Travis Head",
+          "runs": 6,
+          "balls": 6,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "c and b Mukesh Choudhary",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ishan Kishan",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": true
+        },
+        {
+          "name": "Heinrich Klaasen",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Salil Arora",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Smaran Ravichandran",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Nitish Kumar Reddy",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Pat Cummins",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Shivang Kumar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Eshan Malinga",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Sakib Hussain",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Praful Hinge",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Mukesh Choudhary",
+          "overs": 1.3,
+          "balls": 9,
+          "maidens": 0,
+          "runs": 13,
+          "wickets": 1,
+          "economy": 8.7,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Spencer Johnson",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 5,
+          "wickets": 0,
+          "economy": 5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Travis Head",
+          "runs": 18,
+          "over": 2.3,
+          "wkt_n": 1
+        }
+      ]
+    }
+  ],
   "error": null
 }
