@@ -12,21 +12,27 @@
       "team2_short": "RR",
       "team2_color": "#db2777",
       "team1_score1": {
-        "display": "105/0",
-        "detail": "(8 ov)",
-        "runs": 105,
-        "wickets": 0,
-        "overs": "8"
+        "display": "220/5",
+        "detail": "(20 ov)",
+        "runs": 220,
+        "wickets": 5,
+        "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "187/2",
+        "detail": "(14.5 ov)",
+        "runs": 187,
+        "wickets": 2,
+        "overs": "14.5"
+      },
       "team2_score2": null,
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "live",
-      "status_text": "Rajasthan Royals opt to bowl",
+      "status_text": "Rajasthan Royals need 34 runs in 31 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1779199200000,
-      "run_rate": 13.12,
+      "run_rate": 12.61,
       "t1_h2h_wins": 2,
       "t2_h2h_wins": 5,
       "team1_rank": 9,
@@ -447,6 +453,6 @@
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "19 May, 08:13 PM",
+  "last_updated": "19 May, 11:00 PM",
   "error": null
 }

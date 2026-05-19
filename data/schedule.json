@@ -2469,7 +2469,7 @@
       "team2_color": "#db2777",
       "venue": "Sawai Mansingh Stadium, Jaipur",
       "status": "live",
-      "status_text": "Rajasthan Royals opt to bowl",
+      "status_text": "Rajasthan Royals need 36 runs in 33 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1779199200000,
       "match_date": "Tue, 19 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "19 May, 08:13 PM",
+  "last_updated": "19 May, 11:00 PM",
   "error": null
 }
