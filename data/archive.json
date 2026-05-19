@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152207",
+      "source_id": "152207",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 64,
+      "round": "League",
+      "date": "2026-05-19",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Rajasthan Royals",
+      "team2_short": "RR",
+      "team2_color": "#db2777",
+      "winner": "Rajasthan Royals",
+      "result_text": "Rajasthan Royals won by 7 wkts",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Lucknow Super Giants",
+          "team_short": "LSG",
+          "team_color": "#0284c7",
+          "opponent": "Rajasthan Royals",
+          "opponent_short": "RR",
+          "runs": 220,
+          "wickets": 5,
+          "overs": 20,
+          "target": null,
+          "display": "220/5",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Rajasthan Royals",
+          "team_short": "RR",
+          "team_color": "#db2777",
+          "opponent": "Lucknow Super Giants",
+          "opponent_short": "LSG",
+          "runs": 225,
+          "wickets": 3,
+          "overs": 19.1,
+          "target": 221,
+          "display": "225/3",
+          "detail": "(19.1 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152196",
       "source_id": "152196",
       "source": "cricbuzz",

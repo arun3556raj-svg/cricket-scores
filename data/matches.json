@@ -1,62 +1,5 @@
 {
-  "live": [
-    {
-      "id": "152207",
-      "series": "IPL 2026",
-      "match_desc": "64th Match",
-      "match_format": "T20",
-      "team1": "Lucknow Super Giants",
-      "team1_short": "LSG",
-      "team1_color": "#0284c7",
-      "team2": "Rajasthan Royals",
-      "team2_short": "RR",
-      "team2_color": "#db2777",
-      "team1_score1": {
-        "display": "220/5",
-        "detail": "(20 ov)",
-        "runs": 220,
-        "wickets": 5,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "187/2",
-        "detail": "(14.5 ov)",
-        "runs": 187,
-        "wickets": 2,
-        "overs": "14.5"
-      },
-      "team2_score2": null,
-      "venue": "Sawai Mansingh Stadium, Jaipur",
-      "status": "live",
-      "status_text": "Rajasthan Royals need 34 runs in 31 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779199200000,
-      "run_rate": 12.61,
-      "t1_h2h_wins": 2,
-      "t2_h2h_wins": 5,
-      "team1_rank": 9,
-      "team1_points": 9,
-      "team1_last_5": [
-        "N",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "team1_qualification_pct": 1,
-      "team2_rank": 5,
-      "team2_points": 12,
-      "team2_last_5": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "team2_qualification_pct": 63
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "152218",
@@ -105,9 +48,67 @@
   ],
   "finished": [
     {
+      "id": "152207",
+      "series": "IPL 2026",
+      "match_desc": "64th Match",
+      "match_format": "T20",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Rajasthan Royals",
+      "team2_short": "RR",
+      "team2_color": "#db2777",
+      "team1_score1": {
+        "display": "220/5",
+        "detail": "(20 ov)",
+        "runs": 220,
+        "wickets": 5,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "225/3",
+        "detail": "(19.1 ov)",
+        "runs": 225,
+        "wickets": 3,
+        "overs": "19.1"
+      },
+      "team2_score2": null,
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "status": "finished",
+      "status_text": "Rajasthan Royals won by 7 wkts",
+      "start_time": "07:30 PM",
+      "start_epoch": 1779199200000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 2,
+      "t2_h2h_wins": 6,
+      "team1_rank": 9,
+      "team1_points": 9,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 1,
+      "team2_rank": 4,
+      "team2_points": 14,
+      "team2_last_5": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 92
+    },
+    {
       "id": "152196",
       "series": "IPL 2026",
-      "match_desc": "63rd Match",
+      "match_desc": "63th Match",
       "match_format": "T20",
       "team1": "Chennai Super Kings",
       "team1_short": "CSK",
@@ -120,7 +121,7 @@
         "detail": "(20 ov)",
         "runs": 180,
         "wickets": 7,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -128,14 +129,14 @@
         "detail": "(19 ov)",
         "runs": 181,
         "wickets": 5,
-        "overs": "19"
+        "overs": 19
       },
       "team2_score2": null,
       "venue": "MA Chidambaram Stadium, Chennai",
       "status": "finished",
       "status_text": "Sunrisers Hyderabad won by 5 wkts",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779112800000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz",
@@ -199,16 +200,16 @@
       "source": "cricbuzz",
       "t1_h2h_wins": 4,
       "t2_h2h_wins": 9,
-      "team1_rank": 5,
-      "team1_points": 12,
+      "team1_rank": 4,
+      "team1_points": 14,
       "team1_last_5": [
-        "L",
         "W",
         "L",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "team1_qualification_pct": 63,
+      "team1_qualification_pct": 92,
       "team2_rank": 7,
       "team2_points": 12,
       "team2_last_5": [
@@ -267,7 +268,7 @@
         "W"
       ],
       "team1_qualification_pct": 99,
-      "team2_rank": 4,
+      "team2_rank": 5,
       "team2_points": 12,
       "team2_last_5": [
         "L",
@@ -276,7 +277,7 @@
         "L",
         "L"
       ],
-      "team2_qualification_pct": 73
+      "team2_qualification_pct": 63
     },
     {
       "id": "152163",
@@ -386,11 +387,11 @@
       "team2_rank": 9,
       "team2_points": 9,
       "team2_last_5": [
-        "N",
         "L",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 1
     },
@@ -431,7 +432,7 @@
       "source": "cricbuzz",
       "t1_h2h_wins": 17,
       "t2_h2h_wins": 18,
-      "team1_rank": 4,
+      "team1_rank": 5,
       "team1_points": 12,
       "team1_last_5": [
         "L",
@@ -440,7 +441,7 @@
         "L",
         "L"
       ],
-      "team1_qualification_pct": 73,
+      "team1_qualification_pct": 63,
       "team2_rank": 10,
       "team2_points": 8,
       "team2_last_5": [
@@ -453,6 +454,6 @@
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "19 May, 11:00 PM",
+  "last_updated": "20 May, 12:58 AM",
   "error": null
 }

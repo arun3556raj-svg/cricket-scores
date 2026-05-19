@@ -264,18 +264,18 @@
       "bowl_team": "Lucknow Super Giants",
       "innings_id": 2,
       "score": {
-        "runs": 188,
-        "wickets": 2,
-        "overs": 15,
-        "run_rate": 12.53,
+        "runs": 225,
+        "wickets": 3,
+        "overs": 19.1,
+        "run_rate": 11.74,
         "declared": false
       },
       "extras": {
-        "total": 10,
+        "total": 13,
         "wides": 10,
         "no_balls": 0,
         "byes": 0,
-        "leg_byes": 0
+        "leg_byes": 3
       },
       "batsmen": [
         {
@@ -304,39 +304,39 @@
         },
         {
           "name": "Dhruv Jurel",
-          "runs": 40,
-          "balls": 27,
+          "runs": 53,
+          "balls": 38,
           "fours": 3,
-          "sixes": 2,
-          "strike_rate": 148.15,
-          "out_desc": "batting",
+          "sixes": 3,
+          "strike_rate": 139.47,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": true,
           "not_out": false
         },
         {
           "name": "Lhuan-dre Pretorius",
-          "runs": 2,
-          "balls": 2,
+          "runs": 7,
+          "balls": 6,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 100,
-          "out_desc": "batting",
+          "strike_rate": 116.67,
+          "out_desc": "run out (Ayush Badoni)",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Donovan Ferreira",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 16,
+          "balls": 10,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 160,
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Shubham Dubey",
@@ -438,36 +438,36 @@
         },
         {
           "name": "Mohsin Khan",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 24,
+          "runs": 31,
           "wickets": 1,
-          "economy": 8,
+          "economy": 7.8,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Mayank Yadav",
-          "overs": 3,
-          "balls": 18,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 41,
+          "runs": 50,
           "wickets": 0,
-          "economy": 13.7,
+          "economy": 12.5,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Prince Yadav",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 31,
+          "runs": 43,
           "wickets": 0,
-          "economy": 15.5,
+          "economy": 10.8,
           "wides": 1,
           "no_balls": 0,
           "dots": 0
@@ -480,6 +480,18 @@
           "runs": 38,
           "wickets": 0,
           "economy": 9.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Shahbaz Ahmed",
+          "overs": 0.1,
+          "balls": 1,
+          "maidens": 0,
+          "runs": 6,
+          "wickets": 0,
+          "economy": 36,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
@@ -497,6 +509,12 @@
           "runs": 180,
           "over": 13.6,
           "wkt_n": 2
+        },
+        {
+          "name": "Lhuan-dre Pretorius",
+          "runs": 196,
+          "over": 16.2,
+          "wkt_n": 3
         }
       ]
     }
