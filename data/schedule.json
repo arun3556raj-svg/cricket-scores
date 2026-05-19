@@ -2461,40 +2461,40 @@
       "id": "152207",
       "series": "Indian Premier League 2026",
       "match_desc": "64th Match",
-      "team1": "Rajasthan Royals",
-      "team1_short": "RR",
-      "team1_color": "#db2777",
-      "team2": "Lucknow Super Giants",
-      "team2_short": "LSG",
-      "team2_color": "#0284c7",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Rajasthan Royals",
+      "team2_short": "RR",
+      "team2_color": "#db2777",
       "venue": "Sawai Mansingh Stadium, Jaipur",
-      "status": "upcoming",
-      "status_text": "Preview",
+      "status": "live",
+      "status_text": "Rajasthan Royals opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1779199200000,
       "match_date": "Tue, 19 May 2026",
-      "t1_h2h_wins": 5,
-      "t2_h2h_wins": 2,
-      "team1_rank": 5,
-      "team1_points": 12,
+      "t1_h2h_wins": 2,
+      "t2_h2h_wins": 5,
+      "team1_rank": 9,
+      "team1_points": 9,
       "team1_last_5": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "team1_qualification_pct": 63,
-      "team2_rank": 9,
-      "team2_points": 9,
-      "team2_last_5": [
         "N",
         "L",
         "W",
         "L",
         "W"
       ],
-      "team2_qualification_pct": 1
+      "team1_qualification_pct": 1,
+      "team2_rank": 5,
+      "team2_points": 12,
+      "team2_last_5": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 63
     },
     {
       "id": "152218",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "19 May, 05:23 PM",
+  "last_updated": "19 May, 08:13 PM",
   "error": null
 }
