@@ -1,49 +1,100 @@
 {
-  "live": [],
-  "upcoming": [
+  "live": [
     {
       "id": "152218",
       "series": "IPL 2026",
       "match_desc": "65th Match",
       "match_format": "T20",
-      "team1": "Kolkata Knight Riders",
-      "team1_short": "KKR",
-      "team1_color": "#7c3aed",
-      "team2": "Mumbai Indians",
-      "team2_short": "MI",
-      "team2_color": "#1d4ed8",
-      "team1_score1": null,
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Kolkata Knight Riders",
+      "team2_short": "KKR",
+      "team2_color": "#7c3aed",
+      "team1_score1": {
+        "display": "17/2",
+        "detail": "(3 ov)",
+        "runs": 17,
+        "wickets": 2,
+        "overs": "3"
+      },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
       "venue": "Eden Gardens, Kolkata",
-      "status": "upcoming",
-      "status_text": "Match starts at May 20, 14:00 GMT",
+      "status": "live",
+      "status_text": "Kolkata Knight Riders opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1779285600000,
-      "run_rate": null,
-      "t1_h2h_wins": 11,
-      "t2_h2h_wins": 25,
-      "team1_rank": 8,
-      "team1_points": 9,
+      "run_rate": 5.67,
+      "t1_h2h_wins": 25,
+      "t2_h2h_wins": 11,
+      "team1_rank": 10,
+      "team1_points": 8,
       "team1_last_5": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 1,
+      "team2_rank": 8,
+      "team2_points": 9,
+      "team2_last_5": [
         "N",
         "W",
         "W",
         "L",
         "W"
       ],
-      "team1_qualification_pct": 12,
-      "team2_rank": 10,
-      "team2_points": 8,
+      "team2_qualification_pct": 12
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "152229",
+      "series": "IPL 2026",
+      "match_desc": "66th Match",
+      "match_format": "T20",
+      "team1": "Gujarat Titans",
+      "team1_short": "GT",
+      "team1_color": "#0f766e",
+      "team2": "Chennai Super Kings",
+      "team2_short": "CSK",
+      "team2_color": "#d97706",
+      "team1_score1": null,
+      "team1_score2": null,
+      "team2_score1": null,
+      "team2_score2": null,
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "status": "upcoming",
+      "status_text": "Match starts at May 21, 14:00 GMT",
+      "start_time": "07:30 PM",
+      "start_epoch": 1779372000000,
+      "run_rate": null,
+      "t1_h2h_wins": 5,
+      "t2_h2h_wins": 4,
+      "team1_rank": 2,
+      "team1_points": 16,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 6,
+      "team2_points": 12,
       "team2_last_5": [
-        "L",
-        "L",
+        "W",
+        "W",
         "W",
         "L",
-        "W"
+        "L"
       ],
-      "team2_qualification_pct": 1
+      "team2_qualification_pct": 38
     }
   ],
   "finished": [
@@ -454,6 +505,6 @@
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "20 May, 05:08 PM",
+  "last_updated": "20 May, 07:46 PM",
   "error": null
 }
