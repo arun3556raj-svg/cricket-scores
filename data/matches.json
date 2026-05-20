@@ -1,62 +1,5 @@
 {
-  "live": [
-    {
-      "id": "152218",
-      "series": "IPL 2026",
-      "match_desc": "65th Match",
-      "match_format": "T20",
-      "team1": "Mumbai Indians",
-      "team1_short": "MI",
-      "team1_color": "#1d4ed8",
-      "team2": "Kolkata Knight Riders",
-      "team2_short": "KKR",
-      "team2_color": "#7c3aed",
-      "team1_score1": {
-        "display": "147/8",
-        "detail": "(20 ov)",
-        "runs": 147,
-        "wickets": 8,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "43/1",
-        "detail": "(5.1 ov)",
-        "runs": 43,
-        "wickets": 1,
-        "overs": "5.1"
-      },
-      "team2_score2": null,
-      "venue": "Eden Gardens, Kolkata",
-      "status": "live",
-      "status_text": "Kolkata Knight Riders need 105 runs in 89 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779285600000,
-      "run_rate": 8.32,
-      "t1_h2h_wins": 25,
-      "t2_h2h_wins": 11,
-      "team1_rank": 10,
-      "team1_points": 8,
-      "team1_last_5": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "team1_qualification_pct": 1,
-      "team2_rank": 8,
-      "team2_points": 9,
-      "team2_last_5": [
-        "N",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "team2_qualification_pct": 12
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "152229",
@@ -104,6 +47,64 @@
     }
   ],
   "finished": [
+    {
+      "id": "152218",
+      "series": "IPL 2026",
+      "match_desc": "65th Match",
+      "match_format": "T20",
+      "team1": "Mumbai Indians",
+      "team1_short": "MI",
+      "team1_color": "#1d4ed8",
+      "team2": "Kolkata Knight Riders",
+      "team2_short": "KKR",
+      "team2_color": "#7c3aed",
+      "team1_score1": {
+        "display": "147/8",
+        "detail": "(20 ov)",
+        "runs": 147,
+        "wickets": 8,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "148/6",
+        "detail": "(18.5 ov)",
+        "runs": 148,
+        "wickets": 6,
+        "overs": "18.5"
+      },
+      "team2_score2": null,
+      "venue": "Eden Gardens, Kolkata",
+      "status": "finished",
+      "status_text": "Kolkata Knight Riders won by 4 wkts",
+      "start_time": "07:30 PM",
+      "start_epoch": 1779285600000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 25,
+      "t2_h2h_wins": 12,
+      "team1_rank": 10,
+      "team1_points": 8,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 1,
+      "team2_rank": 8,
+      "team2_points": 11,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team2_qualification_pct": 26
+    },
     {
       "id": "152207",
       "series": "IPL 2026",
@@ -374,15 +375,15 @@
       "t1_h2h_wins": 2,
       "t2_h2h_wins": 4,
       "team1_rank": 8,
-      "team1_points": 9,
+      "team1_points": 11,
       "team1_last_5": [
-        "N",
         "W",
         "W",
         "L",
+        "W",
         "W"
       ],
-      "team1_qualification_pct": 12,
+      "team1_qualification_pct": 26,
       "team2_rank": 2,
       "team2_points": 16,
       "team2_last_5": [
@@ -503,14 +504,14 @@
       "team2_points": 8,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "L",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 1
     }
   ],
-  "last_updated": "20 May, 11:04 PM",
+  "last_updated": "21 May, 01:22 AM",
   "error": null
 }
