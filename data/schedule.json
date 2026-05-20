@@ -2508,7 +2508,7 @@
       "team2_color": "#7c3aed",
       "venue": "Eden Gardens, Kolkata",
       "status": "live",
-      "status_text": "Kolkata Knight Riders opt to bowl",
+      "status_text": "Kolkata Knight Riders need 110 runs in 91 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1779285600000,
       "match_date": "Wed, 20 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "20 May, 07:46 PM",
+  "last_updated": "20 May, 11:04 PM",
   "error": null
 }
