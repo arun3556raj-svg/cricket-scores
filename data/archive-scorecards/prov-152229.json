@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-152229",
+  "source_id": "152229",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 66,
+  "date": "2026-05-21",
+  "team1": "Gujarat Titans",
+  "team2": "Chennai Super Kings",
+  "venue": "Narendra Modi Stadium, Ahmedabad",
+  "result_text": "Gujarat Titans won by 89 runs",
   "innings": [
     {
       "bat_team": "Gujarat Titans",

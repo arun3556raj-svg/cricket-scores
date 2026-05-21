@@ -101,11 +101,11 @@
       "team1_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 38,
+      "team1_qualification_pct": 8,
       "team2_rank": 4,
       "team2_points": 14,
       "team2_last_5": [
@@ -136,13 +136,13 @@
       "t1_h2h_wins": 4,
       "t2_h2h_wins": 4,
       "team1_rank": 2,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 5,
@@ -257,11 +257,11 @@
       "team1_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 38,
+      "team1_qualification_pct": 8,
       "team2_rank": 5,
       "team2_points": 12,
       "team2_last_5": [
@@ -341,13 +341,13 @@
       ],
       "team1_qualification_pct": 92,
       "team2_rank": 2,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team2_qualification_pct": 99
     },
@@ -423,11 +423,11 @@
       "team2_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 38
+      "team2_qualification_pct": 8
     },
     {
       "id": "149732",
@@ -526,13 +526,13 @@
       "t1_h2h_wins": 5,
       "t2_h2h_wins": 3,
       "team1_rank": 2,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 7,
@@ -686,11 +686,11 @@
       "team1_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 38,
+      "team1_qualification_pct": 8,
       "team2_rank": 7,
       "team2_points": 12,
       "team2_last_5": [
@@ -731,13 +731,13 @@
       ],
       "team1_qualification_pct": 1,
       "team2_rank": 2,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team2_qualification_pct": 99
     },
@@ -842,11 +842,11 @@
       "team1_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 38,
+      "team1_qualification_pct": 8,
       "team2_rank": 8,
       "team2_points": 11,
       "team2_last_5": [
@@ -965,13 +965,13 @@
       ],
       "team1_qualification_pct": 26,
       "team2_rank": 2,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team2_qualification_pct": 99
     },
@@ -1047,11 +1047,11 @@
       "team2_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 38
+      "team2_qualification_pct": 8
     },
     {
       "id": "151829",
@@ -1160,13 +1160,13 @@
       ],
       "team1_qualification_pct": 1,
       "team2_rank": 2,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team2_qualification_pct": 99
     },
@@ -1271,11 +1271,11 @@
       "team1_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 38,
+      "team1_qualification_pct": 8,
       "team2_rank": 10,
       "team2_points": 8,
       "team2_last_5": [
@@ -1306,13 +1306,13 @@
       "t1_h2h_wins": 4,
       "t2_h2h_wins": 4,
       "team1_rank": 2,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 1,
@@ -1421,25 +1421,25 @@
       "start_epoch": 1777197600000,
       "match_date": "Sun, 26 Apr 2026",
       "t1_h2h_wins": 4,
-      "t2_h2h_wins": 5,
+      "t2_h2h_wins": 6,
       "team1_rank": 6,
       "team1_points": 12,
       "team1_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 38,
+      "team1_qualification_pct": 8,
       "team2_rank": 2,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team2_qualification_pct": 99
     },
@@ -1628,13 +1628,13 @@
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 2,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team2_qualification_pct": 99
     },
@@ -1710,11 +1710,11 @@
       "team2_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 38
+      "team2_qualification_pct": 8
     },
     {
       "id": "151998",
@@ -1784,13 +1784,13 @@
       ],
       "team1_qualification_pct": 63,
       "team2_rank": 2,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team2_qualification_pct": 99
     },
@@ -1866,11 +1866,11 @@
       "team2_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 38
+      "team2_qualification_pct": 8
     },
     {
       "id": "152042",
@@ -2008,13 +2008,13 @@
       "t1_h2h_wins": 7,
       "t2_h2h_wins": 3,
       "team1_rank": 2,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 4,
@@ -2061,11 +2061,11 @@
       "team2_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 38
+      "team2_qualification_pct": 8
     },
     {
       "id": "152097",
@@ -2164,13 +2164,13 @@
       "t1_h2h_wins": 6,
       "t2_h2h_wins": 1,
       "team1_rank": 2,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 3,
@@ -2285,11 +2285,11 @@
       "team1_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 38,
+      "team1_qualification_pct": 8,
       "team2_rank": 9,
       "team2_points": 9,
       "team2_last_5": [
@@ -2330,13 +2330,13 @@
       ],
       "team1_qualification_pct": 26,
       "team2_rank": 2,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team2_qualification_pct": 99
     },
@@ -2441,11 +2441,11 @@
       "team1_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team1_qualification_pct": 38,
+      "team1_qualification_pct": 8,
       "team2_rank": 3,
       "team2_points": 16,
       "team2_last_5": [
@@ -2546,21 +2546,21 @@
       "team2_short": "CSK",
       "team2_color": "#d97706",
       "venue": "Narendra Modi Stadium, Ahmedabad",
-      "status": "live",
-      "status_text": "Chennai Super Kings need 108 runs in 55 balls",
+      "status": "finished",
+      "status_text": "Gujarat Titans won by 89 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1779372000000,
       "match_date": "Thu, 21 May 2026",
-      "t1_h2h_wins": 5,
+      "t1_h2h_wins": 6,
       "t2_h2h_wins": 4,
       "team1_rank": 2,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 6,
@@ -2568,11 +2568,11 @@
       "team2_last_5": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "team2_qualification_pct": 38
+      "team2_qualification_pct": 8
     },
     {
       "id": "152240",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "21 May, 10:46 PM",
+  "last_updated": "22 May, 12:50 AM",
   "error": null
 }
