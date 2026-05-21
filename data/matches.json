@@ -12,21 +12,27 @@
       "team2_short": "CSK",
       "team2_color": "#d97706",
       "team1_score1": {
-        "display": "53/0",
-        "detail": "(5.2 ov)",
-        "runs": 53,
-        "wickets": 0,
-        "overs": "5.2"
+        "display": "229/4",
+        "detail": "(20 ov)",
+        "runs": 229,
+        "wickets": 4,
+        "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "123/6",
+        "detail": "(11 ov)",
+        "runs": 123,
+        "wickets": 6,
+        "overs": "11"
+      },
       "team2_score2": null,
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "live",
-      "status_text": "Chennai Super Kings opt to bowl",
+      "status_text": "Chennai Super Kings need 107 runs in 54 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1779372000000,
-      "run_rate": 9.94,
+      "run_rate": 11.18,
       "t1_h2h_wins": 5,
       "t2_h2h_wins": 4,
       "team1_rank": 2,
@@ -157,6 +163,6 @@
       "team2_qualification_pct": 26
     }
   ],
-  "last_updated": "21 May, 07:57 PM",
+  "last_updated": "21 May, 10:46 PM",
   "error": null
 }
