@@ -2586,7 +2586,7 @@
       "team2_color": "#dc2626",
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
       "status": "live",
-      "status_text": "Sunrisers Hyderabad opt to bat",
+      "status_text": "Royal Challengers Bengaluru need 206 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1779458400000,
       "match_date": "Fri, 22 May 2026",
@@ -2807,6 +2807,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "22 May, 07:27 PM",
+  "last_updated": "22 May, 10:00 PM",
   "error": null
 }
