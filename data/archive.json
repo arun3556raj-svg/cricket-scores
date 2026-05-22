@@ -129,10 +129,8 @@
   ],
   "matches": [
     {
-      "id": "prov-152229",
-      "source_id": "152229",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1235",
+      "source_id": "1529309",
       "season": 2026,
       "match_number": 66,
       "round": "League",
@@ -145,7 +143,7 @@
       "team2_color": "#d97706",
       "winner": "Gujarat Titans",
       "result_text": "Gujarat Titans won by 89 runs",
-      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "venue": "Narendra Modi Stadium, Ahmedabad, Ahmedabad",
       "innings": [
         {
           "number": 1,
@@ -156,10 +154,10 @@
           "opponent_short": "CSK",
           "runs": 229,
           "wickets": 4,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "229/4",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
@@ -178,10 +176,8 @@
       ]
     },
     {
-      "id": "prov-152218",
-      "source_id": "152218",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1234",
+      "source_id": "1529308",
       "season": 2026,
       "match_number": 65,
       "round": "League",
@@ -194,7 +190,7 @@
       "team2_color": "#7c3aed",
       "winner": "Kolkata Knight Riders",
       "result_text": "Kolkata Knight Riders won by 4 wkts",
-      "venue": "Eden Gardens, Kolkata",
+      "venue": "Eden Gardens, Kolkata, Kolkata",
       "innings": [
         {
           "number": 1,
@@ -205,10 +201,10 @@
           "opponent_short": "KKR",
           "runs": 147,
           "wickets": 8,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "147/8",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
