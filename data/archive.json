@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152240",
+      "source_id": "152240",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 67,
+      "round": "League",
+      "date": "2026-05-22",
+      "team1": "Sunrisers Hyderabad",
+      "team1_short": "SRH",
+      "team1_color": "#ea580c",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
+      "winner": "Sunrisers Hyderabad",
+      "result_text": "Sunrisers Hyderabad won by 55 runs",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Sunrisers Hyderabad",
+          "team_short": "SRH",
+          "team_color": "#ea580c",
+          "opponent": "Royal Challengers Bengaluru",
+          "opponent_short": "RCB",
+          "runs": 255,
+          "wickets": 4,
+          "overs": 20,
+          "target": null,
+          "display": "255/4",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Royal Challengers Bengaluru",
+          "team_short": "RCB",
+          "team_color": "#dc2626",
+          "opponent": "Sunrisers Hyderabad",
+          "opponent_short": "SRH",
+          "runs": 200,
+          "wickets": 4,
+          "overs": 20,
+          "target": 256,
+          "display": "200/4",
+          "detail": "(20 ov)"
+        }
+      ]
+    },
+    {
       "id": "1235",
       "source_id": "1529309",
       "season": 2026,

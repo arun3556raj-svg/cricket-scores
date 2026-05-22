@@ -16,15 +16,15 @@
       "start_time": "07:30 PM",
       "start_epoch": 1774706400000,
       "match_date": "Sat, 28 Mar 2026",
-      "t1_h2h_wins": 13,
+      "t1_h2h_wins": 14,
       "t2_h2h_wins": 12,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -32,10 +32,10 @@
       "team2_points": 18,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 99
     },
@@ -214,12 +214,12 @@
       "t1_h2h_wins": 11,
       "t2_h2h_wins": 20,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -370,12 +370,12 @@
       "t1_h2h_wins": 2,
       "t2_h2h_wins": 5,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -412,10 +412,10 @@
       "team1_points": 18,
       "team1_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 6,
@@ -607,10 +607,10 @@
       "team1_points": 18,
       "team1_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 4,
@@ -643,12 +643,12 @@
       "t1_h2h_wins": 18,
       "t2_h2h_wins": 8,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -763,10 +763,10 @@
       "team1_points": 18,
       "team1_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 10,
@@ -799,12 +799,12 @@
       "t1_h2h_wins": 14,
       "t2_h2h_wins": 9,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -890,10 +890,10 @@
       "team2_points": 18,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 99
     },
@@ -997,10 +997,10 @@
       "team1_points": 18,
       "team1_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 7,
@@ -1033,12 +1033,12 @@
       "t1_h2h_wins": 9,
       "t2_h2h_wins": 15,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -1189,12 +1189,12 @@
       "t1_h2h_wins": 6,
       "t2_h2h_wins": 7,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -1319,10 +1319,10 @@
       "team2_points": 18,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 99
     },
@@ -1394,12 +1394,12 @@
       ],
       "team1_qualification_pct": 92,
       "team2_rank": 3,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team2_qualification_pct": 99
@@ -1514,10 +1514,10 @@
       "team2_points": 18,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 99
     },
@@ -1589,12 +1589,12 @@
       ],
       "team1_qualification_pct": 1,
       "team2_rank": 3,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team2_qualification_pct": 99
@@ -1621,10 +1621,10 @@
       "team1_points": 18,
       "team1_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 2,
@@ -1735,12 +1735,12 @@
       "t1_h2h_wins": 11,
       "t2_h2h_wins": 20,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -1891,12 +1891,12 @@
       "t1_h2h_wins": 18,
       "t2_h2h_wins": 8,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -1943,10 +1943,10 @@
       "team2_points": 18,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 99
     },
@@ -2099,10 +2099,10 @@
       "team2_points": 18,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 99
     },
@@ -2174,12 +2174,12 @@
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 3,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team2_qualification_pct": 99
@@ -2216,10 +2216,10 @@
       "team2_points": 18,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 99
     },
@@ -2362,10 +2362,10 @@
       "team1_points": 18,
       "team1_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 5,
@@ -2447,12 +2447,12 @@
       ],
       "team1_qualification_pct": 8,
       "team2_rank": 3,
-      "team2_points": 16,
+      "team2_points": 18,
       "team2_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team2_qualification_pct": 99
@@ -2585,20 +2585,20 @@
       "team2_short": "RCB",
       "team2_color": "#dc2626",
       "venue": "Rajiv Gandhi International Stadium, Hyderabad",
-      "status": "live",
-      "status_text": "Royal Challengers Bengaluru need 206 runs",
+      "status": "finished",
+      "status_text": "Sunrisers Hyderabad won by 55 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1779458400000,
       "match_date": "Fri, 22 May 2026",
-      "t1_h2h_wins": 13,
+      "t1_h2h_wins": 14,
       "t2_h2h_wins": 12,
       "team1_rank": 3,
-      "team1_points": 16,
+      "team1_points": 18,
       "team1_last_5": [
-        "W",
         "L",
         "W",
         "L",
+        "W",
         "W"
       ],
       "team1_qualification_pct": 99,
@@ -2606,10 +2606,10 @@
       "team2_points": 18,
       "team2_last_5": [
         "L",
-        "L",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 99
     },
@@ -2734,28 +2734,48 @@
       "id": "155376",
       "series": "Indian Premier League 2026",
       "match_desc": "Qualifier 1",
-      "team1": "TBC",
-      "team1_short": "TBC",
-      "team1_color": "#6366f1",
-      "team2": "TBC",
-      "team2_short": "TBC",
-      "team2_color": "#6366f1",
+      "team1": "Royal Challengers Bengaluru",
+      "team1_short": "RCB",
+      "team1_color": "#dc2626",
+      "team2": "Gujarat Titans",
+      "team2_short": "GT",
+      "team2_color": "#0f766e",
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "upcoming",
       "status_text": "Match starts at May 26, 14:00 GMT",
       "start_time": "07:30 PM",
       "start_epoch": 1779804000000,
       "match_date": "Tue, 26 May 2026",
-      "t1_h2h_wins": 0,
-      "t2_h2h_wins": 0
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 4,
+      "team1_rank": 1,
+      "team1_points": 18,
+      "team1_last_5": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 2,
+      "team2_points": 18,
+      "team2_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 99
     },
     {
       "id": "155387",
       "series": "Indian Premier League 2026",
       "match_desc": "Eliminator",
-      "team1": "TBC",
-      "team1_short": "TBC",
-      "team1_color": "#6366f1",
+      "team1": "Sunrisers Hyderabad",
+      "team1_short": "SRH",
+      "team1_color": "#ea580c",
       "team2": "TBC",
       "team2_short": "TBC",
       "team2_color": "#6366f1",
@@ -2766,7 +2786,17 @@
       "start_epoch": 1779890400000,
       "match_date": "Wed, 27 May 2026",
       "t1_h2h_wins": 0,
-      "t2_h2h_wins": 0
+      "t2_h2h_wins": 0,
+      "team1_rank": 3,
+      "team1_points": 18,
+      "team1_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99
     },
     {
       "id": "155398",
@@ -2807,6 +2837,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "22 May, 10:00 PM",
+  "last_updated": "22 May, 11:48 PM",
   "error": null
 }
