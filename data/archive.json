@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152241",
+      "source_id": "152241",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 68,
+      "round": "League",
+      "date": "2026-05-23",
+      "team1": "Lucknow Super Giants",
+      "team1_short": "LSG",
+      "team1_color": "#0284c7",
+      "team2": "Punjab Kings",
+      "team2_short": "PBKS",
+      "team2_color": "#e11d48",
+      "winner": "Punjab Kings",
+      "result_text": "Punjab Kings won by 7 wkts",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Lucknow Super Giants",
+          "team_short": "LSG",
+          "team_color": "#0284c7",
+          "opponent": "Punjab Kings",
+          "opponent_short": "PBKS",
+          "runs": 196,
+          "wickets": 6,
+          "overs": 20,
+          "target": null,
+          "display": "196/6",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Punjab Kings",
+          "team_short": "PBKS",
+          "team_color": "#e11d48",
+          "opponent": "Lucknow Super Giants",
+          "opponent_short": "LSG",
+          "runs": 200,
+          "wickets": 3,
+          "overs": 18,
+          "target": 197,
+          "display": "200/3",
+          "detail": "(18 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152240",
       "source_id": "152240",
       "source": "cricbuzz",
