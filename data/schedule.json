@@ -2625,7 +2625,7 @@
       "team2_color": "#e11d48",
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Punjab Kings need 101 runs in 64 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1779544800000,
       "match_date": "Sat, 23 May 2026",
@@ -2703,7 +2703,7 @@
       "team2_color": "#0ea5e9",
       "venue": "Eden Gardens, Kolkata",
       "status": "upcoming",
-      "status_text": "Match starts at May 24, 14:00 GMT",
+      "status_text": "Preview",
       "start_time": "07:30 PM",
       "start_epoch": 1779631200000,
       "match_date": "Sun, 24 May 2026",
@@ -2837,6 +2837,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "23 May, 09:24 PM",
+  "last_updated": "23 May, 10:25 PM",
   "error": null
 }
