@@ -2703,7 +2703,7 @@
       "team2_color": "#7c3aed",
       "venue": "Eden Gardens, Kolkata",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Kolkata Knight Riders need 96 runs in 51 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1779631200000,
       "match_date": "Sun, 24 May 2026",
@@ -2847,6 +2847,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "24 May, 09:41 PM",
+  "last_updated": "24 May, 10:46 PM",
   "error": null
 }

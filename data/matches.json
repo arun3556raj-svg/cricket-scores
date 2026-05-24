@@ -19,14 +19,20 @@
         "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "115/3",
+        "detail": "(12 ov)",
+        "runs": 115,
+        "wickets": 3,
+        "overs": "12"
+      },
       "team2_score2": null,
       "venue": "Eden Gardens, Kolkata",
       "status": "live",
-      "status_text": "Innings Break",
+      "status_text": "Kolkata Knight Riders need 89 runs in 48 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1779631200000,
-      "run_rate": 10.15,
+      "run_rate": 9.58,
       "t1_h2h_wins": 6,
       "t2_h2h_wins": 7,
       "team1_rank": 7,
@@ -228,6 +234,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "24 May, 09:41 PM",
+  "last_updated": "24 May, 10:46 PM",
   "error": null
 }
