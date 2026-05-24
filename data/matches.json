@@ -12,11 +12,11 @@
       "team2_short": "MI",
       "team2_color": "#1d4ed8",
       "team1_score1": {
-        "display": "93/3",
-        "detail": "(9.5 ov)",
-        "runs": 93,
-        "wickets": 3,
-        "overs": "9.5"
+        "display": "204/8",
+        "detail": "(19.5 ov)",
+        "runs": 204,
+        "wickets": 8,
+        "overs": "19.5"
       },
       "team1_score2": null,
       "team2_score1": null,
@@ -26,7 +26,7 @@
       "status_text": "Mumbai Indians opt to bowl",
       "start_time": "03:30 PM",
       "start_epoch": 1779616800000,
-      "run_rate": 9.46,
+      "run_rate": 10.29,
       "t1_h2h_wins": 15,
       "t2_h2h_wins": 16,
       "team1_rank": 5,
@@ -215,6 +215,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "24 May, 04:27 PM",
+  "last_updated": "24 May, 05:33 PM",
   "error": null
 }
