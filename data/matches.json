@@ -1,5 +1,7 @@
 {
-  "live": [
+  "live": [],
+  "upcoming": [],
+  "finished": [
     {
       "id": "152263",
       "series": "IPL 2026",
@@ -20,27 +22,29 @@
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "115/3",
-        "detail": "(12 ov)",
-        "runs": 115,
-        "wickets": 3,
-        "overs": "12"
+        "display": "163",
+        "detail": "(18.4 ov)",
+        "runs": 163,
+        "wickets": 10,
+        "overs": "18.4"
       },
       "team2_score2": null,
       "venue": "Eden Gardens, Kolkata",
-      "status": "live",
-      "status_text": "Kolkata Knight Riders need 89 runs in 48 balls",
+      "status": "finished",
+      "status_text": "Delhi Capitals won by 40 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1779631200000,
-      "run_rate": 9.58,
-      "t1_h2h_wins": 6,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 7,
       "t2_h2h_wins": 7,
-      "team1_rank": 7,
-      "team1_points": 12,
+      "team1_rank": 6,
+      "team1_points": 14,
       "team1_last_5": [
+        "L",
+        "L",
         "W",
-        "L",
-        "L",
         "W",
         "W"
       ],
@@ -49,16 +53,13 @@
       "team2_points": 11,
       "team2_last_5": [
         "W",
-        "W",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ],
-      "team2_qualification_pct": 26
-    }
-  ],
-  "upcoming": [],
-  "finished": [
+      "team2_qualification_pct": 1
+    },
     {
       "id": "152252",
       "series": "IPL 2026",
@@ -133,7 +134,7 @@
         "detail": "(20 ov)",
         "runs": 196,
         "wickets": 6,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -141,14 +142,14 @@
         "detail": "(18 ov)",
         "runs": 200,
         "wickets": 3,
-        "overs": "18"
+        "overs": 18
       },
       "team2_score2": null,
       "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
       "status": "finished",
       "status_text": "Punjab Kings won by 7 wkts",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779544800000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz",
@@ -234,6 +235,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "24 May, 10:46 PM",
+  "last_updated": "24 May, 11:44 PM",
   "error": null
 }

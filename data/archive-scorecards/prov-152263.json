@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-152263",
+  "source_id": "152263",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 70,
+  "date": "2026-05-24",
+  "team1": "Delhi Capitals",
+  "team2": "Kolkata Knight Riders",
+  "venue": "Eden Gardens, Kolkata",
+  "result_text": "Delhi Capitals won by 40 runs",
   "innings": [
     {
       "bat_team": "Delhi Capitals",

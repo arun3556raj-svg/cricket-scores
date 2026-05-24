@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152263",
+      "source_id": "152263",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 70,
+      "round": "League",
+      "date": "2026-05-24",
+      "team1": "Delhi Capitals",
+      "team1_short": "DC",
+      "team1_color": "#0ea5e9",
+      "team2": "Kolkata Knight Riders",
+      "team2_short": "KKR",
+      "team2_color": "#7c3aed",
+      "winner": "Delhi Capitals",
+      "result_text": "Delhi Capitals won by 40 runs",
+      "venue": "Eden Gardens, Kolkata",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Delhi Capitals",
+          "team_short": "DC",
+          "team_color": "#0ea5e9",
+          "opponent": "Kolkata Knight Riders",
+          "opponent_short": "KKR",
+          "runs": 203,
+          "wickets": 5,
+          "overs": 20,
+          "target": null,
+          "display": "203/5",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Kolkata Knight Riders",
+          "team_short": "KKR",
+          "team_color": "#7c3aed",
+          "opponent": "Delhi Capitals",
+          "opponent_short": "DC",
+          "runs": 163,
+          "wickets": 10,
+          "overs": 18.4,
+          "target": 204,
+          "display": "163",
+          "detail": "(18.4 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152252",
       "source_id": "152252",
       "source": "cricbuzz",
