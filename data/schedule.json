@@ -2656,40 +2656,40 @@
       "id": "152252",
       "series": "Indian Premier League 2026",
       "match_desc": "69th Match",
-      "team1": "Mumbai Indians",
-      "team1_short": "MI",
-      "team1_color": "#1d4ed8",
-      "team2": "Rajasthan Royals",
-      "team2_short": "RR",
-      "team2_color": "#db2777",
+      "team1": "Rajasthan Royals",
+      "team1_short": "RR",
+      "team1_color": "#db2777",
+      "team2": "Mumbai Indians",
+      "team2_short": "MI",
+      "team2_color": "#1d4ed8",
       "venue": "Wankhede Stadium, Mumbai",
-      "status": "upcoming",
-      "status_text": "Match starts at May 24, 10:00 GMT",
+      "status": "live",
+      "status_text": "Mumbai Indians opt to bowl",
       "start_time": "03:30 PM",
       "start_epoch": 1779616800000,
       "match_date": "Sun, 24 May 2026",
-      "t1_h2h_wins": 16,
-      "t2_h2h_wins": 15,
-      "team1_rank": 10,
-      "team1_points": 8,
+      "t1_h2h_wins": 15,
+      "t2_h2h_wins": 16,
+      "team1_rank": 5,
+      "team1_points": 14,
       "team1_last_5": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "team1_qualification_pct": 1,
-      "team2_rank": 5,
-      "team2_points": 14,
-      "team2_last_5": [
         "W",
         "L",
         "L",
         "L",
         "W"
       ],
-      "team2_qualification_pct": 82
+      "team1_qualification_pct": 82,
+      "team2_rank": 10,
+      "team2_points": 8,
+      "team2_last_5": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "team2_qualification_pct": 1
     },
     {
       "id": "152263",
@@ -2837,6 +2837,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "24 May, 03:01 PM",
+  "last_updated": "24 May, 04:27 PM",
   "error": null
 }

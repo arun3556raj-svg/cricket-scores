@@ -1,4 +1,240 @@
 {
-  "innings": [],
+  "innings": [
+    {
+      "bat_team": "Rajasthan Royals",
+      "bowl_team": "Mumbai Indians",
+      "innings_id": 1,
+      "score": {
+        "runs": 94,
+        "wickets": 3,
+        "overs": 10,
+        "run_rate": 9.4,
+        "declared": false
+      },
+      "extras": {
+        "total": 5,
+        "wides": 5,
+        "no_balls": 0,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Yashasvi Jaiswal",
+          "runs": 27,
+          "balls": 17,
+          "fours": 1,
+          "sixes": 3,
+          "strike_rate": 158.82,
+          "out_desc": "c Corbin Bosch b Will Jacks",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "runs": 4,
+          "balls": 6,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 66.67,
+          "out_desc": "c Naman Dhir b Deepak Chahar",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dhruv Jurel",
+          "runs": 16,
+          "balls": 15,
+          "fours": 0,
+          "sixes": 1,
+          "strike_rate": 106.67,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Riyan Parag",
+          "runs": 14,
+          "balls": 8,
+          "fours": 2,
+          "sixes": 1,
+          "strike_rate": 175,
+          "out_desc": "c Tilak Varma b AM Ghazanfar",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Dasun Shanaka",
+          "runs": 28,
+          "balls": 14,
+          "fours": 0,
+          "sixes": 3,
+          "strike_rate": 200,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Donovan Ferreira",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Shubham Dubey",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Jofra Archer",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Nandre Burger",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Yash Raj Punja",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Brijesh Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Deepak Chahar",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 27,
+          "wickets": 1,
+          "economy": 9,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Will Jacks",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 12,
+          "wickets": 1,
+          "economy": 6,
+          "wides": 2,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "AM Ghazanfar",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 30,
+          "wickets": 1,
+          "economy": 15,
+          "wides": 3,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Raghu Sharma",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 7.5,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Shardul Thakur",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 10,
+          "wickets": 0,
+          "economy": 10,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Yashasvi Jaiswal",
+          "runs": 33,
+          "over": 3.4,
+          "wkt_n": 1
+        },
+        {
+          "name": "Vaibhav Sooryavanshi",
+          "runs": 33,
+          "over": 4.1,
+          "wkt_n": 2
+        },
+        {
+          "name": "Riyan Parag",
+          "runs": 54,
+          "over": 5.6,
+          "wkt_n": 3
+        }
+      ]
+    }
+  ],
   "error": null
 }
