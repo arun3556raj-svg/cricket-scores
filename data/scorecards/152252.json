@@ -122,7 +122,7 @@
           "fours": 3,
           "sixes": 0,
           "strike_rate": 172.73,
-          "out_desc": "batting",
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -134,7 +134,7 @@
           "fours": 0,
           "sixes": 1,
           "strike_rate": 333.33,
-          "out_desc": "batting",
+          "out_desc": "not out",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
@@ -286,6 +286,283 @@
           "runs": 175,
           "over": 17.6,
           "wkt_n": 8
+        }
+      ]
+    },
+    {
+      "bat_team": "Mumbai Indians",
+      "bowl_team": "Rajasthan Royals",
+      "innings_id": 2,
+      "score": {
+        "runs": 150,
+        "wickets": 6,
+        "overs": 16,
+        "run_rate": 9.38,
+        "declared": false
+      },
+      "extras": {
+        "total": 3,
+        "wides": 2,
+        "no_balls": 1,
+        "byes": 0,
+        "leg_byes": 0
+      },
+      "batsmen": [
+        {
+          "name": "Rohit Sharma",
+          "runs": 0,
+          "balls": 4,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "c Dhruv Jurel b Jofra Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Ryan Rickelton",
+          "runs": 12,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 171.43,
+          "out_desc": "c Vaibhav Sooryavanshi b Nandre Burger",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 6,
+          "balls": 5,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 120,
+          "out_desc": "b Jofra Archer",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Suryakumar Yadav",
+          "runs": 58,
+          "balls": 39,
+          "fours": 3,
+          "sixes": 4,
+          "strike_rate": 148.72,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 3,
+          "balls": 7,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 42.86,
+          "out_desc": "b Brijesh Sharma",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Will Jacks",
+          "runs": 33,
+          "balls": 18,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 183.33,
+          "out_desc": "c Dhruv Jurel b Yash Raj Punja",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Hardik Pandya",
+          "runs": 34,
+          "balls": 15,
+          "fours": 3,
+          "sixes": 2,
+          "strike_rate": 226.67,
+          "out_desc": "c Nandre Burger b Jofra Archer",
+          "is_captain": true,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Corbin Bosch",
+          "runs": 1,
+          "balls": 2,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 50,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Deepak Chahar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Shardul Thakur",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "AM Ghazanfar",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        },
+        {
+          "name": "Raghu Sharma",
+          "runs": 0,
+          "balls": 0,
+          "fours": 0,
+          "sixes": 0,
+          "strike_rate": 0,
+          "out_desc": "",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": true
+        }
+      ],
+      "bowlers": [
+        {
+          "name": "Jofra Archer",
+          "overs": 4,
+          "balls": 24,
+          "maidens": 0,
+          "runs": 17,
+          "wickets": 3,
+          "economy": 4.2,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Nandre Burger",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 32,
+          "wickets": 1,
+          "economy": 10.7,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Brijesh Sharma",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 23,
+          "wickets": 1,
+          "economy": 7.7,
+          "wides": 0,
+          "no_balls": 1,
+          "dots": 0
+        },
+        {
+          "name": "Ravindra Jadeja",
+          "overs": 2,
+          "balls": 12,
+          "maidens": 0,
+          "runs": 24,
+          "wickets": 0,
+          "economy": 12,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Yash Raj Punja",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 39,
+          "wickets": 1,
+          "economy": 13,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Dasun Shanaka",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 15,
+          "wickets": 0,
+          "economy": 15,
+          "wides": 1,
+          "no_balls": 0,
+          "dots": 0
+        }
+      ],
+      "fow": [
+        {
+          "name": "Rohit Sharma",
+          "runs": 0,
+          "over": 0.4,
+          "wkt_n": 1
+        },
+        {
+          "name": "Naman Dhir",
+          "runs": 18,
+          "over": 2.3,
+          "wkt_n": 2
+        },
+        {
+          "name": "Ryan Rickelton",
+          "runs": 24,
+          "over": 3.2,
+          "wkt_n": 3
+        },
+        {
+          "name": "Tilak Varma",
+          "runs": 38,
+          "over": 5.1,
+          "wkt_n": 4
+        },
+        {
+          "name": "Will Jacks",
+          "runs": 101,
+          "over": 11.3,
+          "wkt_n": 5
+        },
+        {
+          "name": "Hardik Pandya",
+          "runs": 149,
+          "over": 15.4,
+          "wkt_n": 6
         }
       ]
     }
