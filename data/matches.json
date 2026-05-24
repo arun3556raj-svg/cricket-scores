@@ -1,62 +1,6 @@
 {
   "live": [
     {
-      "id": "152252",
-      "series": "IPL 2026",
-      "match_desc": "69th Match",
-      "match_format": "T20",
-      "team1": "Rajasthan Royals",
-      "team1_short": "RR",
-      "team1_color": "#db2777",
-      "team2": "Mumbai Indians",
-      "team2_short": "MI",
-      "team2_color": "#1d4ed8",
-      "team1_score1": {
-        "display": "205/8",
-        "detail": "(20 ov)",
-        "runs": 205,
-        "wickets": 8,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "150/6",
-        "detail": "(16 ov)",
-        "runs": 150,
-        "wickets": 6,
-        "overs": "16"
-      },
-      "team2_score2": null,
-      "venue": "Wankhede Stadium, Mumbai",
-      "status": "live",
-      "status_text": "Mumbai Indians need 56 runs in 24 balls",
-      "start_time": "03:30 PM",
-      "start_epoch": 1779616800000,
-      "run_rate": 9.38,
-      "t1_h2h_wins": 15,
-      "t2_h2h_wins": 16,
-      "team1_rank": 5,
-      "team1_points": 14,
-      "team1_last_5": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "team1_qualification_pct": 82,
-      "team2_rank": 10,
-      "team2_points": 8,
-      "team2_last_5": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "team2_qualification_pct": 1
-    },
-    {
       "id": "152263",
       "series": "IPL 2026",
       "match_desc": "70th Match",
@@ -67,7 +11,13 @@
       "team2": "Kolkata Knight Riders",
       "team2_short": "KKR",
       "team2_color": "#7c3aed",
-      "team1_score1": null,
+      "team1_score1": {
+        "display": "114/2",
+        "detail": "(12 ov)",
+        "runs": 114,
+        "wickets": 2,
+        "overs": "12"
+      },
       "team1_score2": null,
       "team2_score1": null,
       "team2_score2": null,
@@ -76,7 +26,7 @@
       "status_text": "Kolkata Knight Riders opt to bowl",
       "start_time": "07:30 PM",
       "start_epoch": 1779631200000,
-      "run_rate": null,
+      "run_rate": 9.5,
       "t1_h2h_wins": 6,
       "t2_h2h_wins": 7,
       "team1_rank": 7,
@@ -103,6 +53,64 @@
   ],
   "upcoming": [],
   "finished": [
+    {
+      "id": "152252",
+      "series": "IPL 2026",
+      "match_desc": "69th Match",
+      "match_format": "T20",
+      "team1": "Rajasthan Royals",
+      "team1_short": "RR",
+      "team1_color": "#db2777",
+      "team2": "Mumbai Indians",
+      "team2_short": "MI",
+      "team2_color": "#1d4ed8",
+      "team1_score1": {
+        "display": "205/8",
+        "detail": "(20 ov)",
+        "runs": 205,
+        "wickets": 8,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "175/9",
+        "detail": "(20 ov)",
+        "runs": 175,
+        "wickets": 9,
+        "overs": "20"
+      },
+      "team2_score2": null,
+      "venue": "Wankhede Stadium, Mumbai",
+      "status": "finished",
+      "status_text": "Rajasthan Royals won by 30 runs",
+      "start_time": "03:30 PM",
+      "start_epoch": 1779616800000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 16,
+      "t2_h2h_wins": 16,
+      "team1_rank": 4,
+      "team1_points": 16,
+      "team1_last_5": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 10,
+      "team2_points": 8,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "team2_qualification_pct": 1
+    },
     {
       "id": "152241",
       "series": "IPL 2026",
@@ -150,7 +158,7 @@
         "L"
       ],
       "team1_qualification_pct": 1,
-      "team2_rank": 4,
+      "team2_rank": 5,
       "team2_points": 14,
       "team2_last_5": [
         "L",
@@ -159,7 +167,7 @@
         "L",
         "W"
       ],
-      "team2_qualification_pct": 92
+      "team2_qualification_pct": 82
     },
     {
       "id": "152240",
@@ -220,6 +228,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "24 May, 07:25 PM",
+  "last_updated": "24 May, 08:34 PM",
   "error": null
 }

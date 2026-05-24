@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-152252",
+  "source_id": "152252",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 69,
+  "date": "2026-05-24",
+  "team1": "Rajasthan Royals",
+  "team2": "Mumbai Indians",
+  "venue": "Wankhede Stadium, Mumbai",
+  "result_text": "Rajasthan Royals won by 30 runs",
   "innings": [
     {
       "bat_team": "Rajasthan Royals",

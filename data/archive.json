@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-152252",
+      "source_id": "152252",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": 69,
+      "round": "League",
+      "date": "2026-05-24",
+      "team1": "Rajasthan Royals",
+      "team1_short": "RR",
+      "team1_color": "#db2777",
+      "team2": "Mumbai Indians",
+      "team2_short": "MI",
+      "team2_color": "#1d4ed8",
+      "winner": "Rajasthan Royals",
+      "result_text": "Rajasthan Royals won by 30 runs",
+      "venue": "Wankhede Stadium, Mumbai",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Rajasthan Royals",
+          "team_short": "RR",
+          "team_color": "#db2777",
+          "opponent": "Mumbai Indians",
+          "opponent_short": "MI",
+          "runs": 205,
+          "wickets": 8,
+          "overs": 20,
+          "target": null,
+          "display": "205/8",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Mumbai Indians",
+          "team_short": "MI",
+          "team_color": "#1d4ed8",
+          "opponent": "Rajasthan Royals",
+          "opponent_short": "RR",
+          "runs": 175,
+          "wickets": 9,
+          "overs": 20,
+          "target": 206,
+          "display": "175/9",
+          "detail": "(20 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-152241",
       "source_id": "152241",
       "source": "cricbuzz",
