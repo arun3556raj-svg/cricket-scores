@@ -63,7 +63,7 @@
         "detail": "(20 ov)",
         "runs": 203,
         "wickets": 5,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -71,14 +71,14 @@
         "detail": "(18.4 ov)",
         "runs": 163,
         "wickets": 10,
-        "overs": "18.4"
+        "overs": 18.4
       },
       "team2_score2": null,
       "venue": "Eden Gardens, Kolkata",
       "status": "finished",
       "status_text": "Delhi Capitals won by 40 runs",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779631200000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz",
@@ -280,6 +280,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "25 May, 09:56 PM",
+  "last_updated": "25 May, 11:39 PM",
   "error": null
 }
