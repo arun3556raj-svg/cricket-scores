@@ -1,56 +1,5 @@
 {
-  "live": [
-    {
-      "id": "155376",
-      "series": "IPL 2026",
-      "match_desc": "Qualifier 1",
-      "match_format": "T20",
-      "team1": "Royal Challengers Bengaluru",
-      "team1_short": "RCB",
-      "team1_color": "#dc2626",
-      "team2": "Gujarat Titans",
-      "team2_short": "GT",
-      "team2_color": "#0f766e",
-      "team1_score1": {
-        "display": "254/5",
-        "detail": "(20 ov)",
-        "runs": 254,
-        "wickets": 5,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": null,
-      "team2_score2": null,
-      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "status": "live",
-      "status_text": "Innings Break",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779804000000,
-      "run_rate": 12.7,
-      "t1_h2h_wins": 4,
-      "t2_h2h_wins": 4,
-      "team1_rank": 1,
-      "team1_points": 18,
-      "team1_last_5": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "team1_qualification_pct": 99,
-      "team2_rank": 2,
-      "team2_points": 18,
-      "team2_last_5": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "team2_qualification_pct": 99
-    }
-  ],
+  "live": [],
   "upcoming": [
     {
       "id": "155387",
@@ -75,7 +24,7 @@
       "run_rate": null,
       "t1_h2h_wins": 14,
       "t2_h2h_wins": 9,
-      "team1_rank": 3,
+      "team1_rank": 2,
       "team1_points": 18,
       "team1_last_5": [
         "L",
@@ -309,7 +258,7 @@
       "source": "cricbuzz",
       "t1_h2h_wins": 14,
       "t2_h2h_wins": 12,
-      "team1_rank": 3,
+      "team1_rank": 2,
       "team1_points": 18,
       "team1_last_5": [
         "L",
@@ -320,17 +269,75 @@
       ],
       "team1_qualification_pct": 99,
       "team2_rank": 1,
+      "team2_points": 20,
+      "team2_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team2_qualification_pct": 99
+    },
+    {
+      "id": "155376",
+      "series": "IPL 2026",
+      "match_desc": "Qualifier 1",
+      "match_format": "T20",
+      "team1": "Royal Challengers Bengaluru",
+      "team1_short": "RCB",
+      "team1_color": "#dc2626",
+      "team2": "Gujarat Titans",
+      "team2_short": "GT",
+      "team2_color": "#0f766e",
+      "team1_score1": {
+        "display": "254/5",
+        "detail": "(20 ov)",
+        "runs": 254,
+        "wickets": 5,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "162",
+        "detail": "(19.3 ov)",
+        "runs": 162,
+        "wickets": 10,
+        "overs": "19.3"
+      },
+      "team2_score2": null,
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "status": "finished",
+      "status_text": "Royal Challengers Bengaluru won by 92 runs",
+      "start_time": "07:30 PM",
+      "start_epoch": 1779804000000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 5,
+      "t2_h2h_wins": 4,
+      "team1_rank": 1,
+      "team1_points": 20,
+      "team1_last_5": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 3,
       "team2_points": 18,
       "team2_last_5": [
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
         "W",
         "L"
       ],
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "26 May, 09:42 PM",
+  "last_updated": "27 May, 12:07 AM",
   "error": null
 }

@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-155376",
+  "source_id": "155376",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 1,
+  "date": "2026-05-26",
+  "team1": "Royal Challengers Bengaluru",
+  "team2": "Gujarat Titans",
+  "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+  "result_text": "Royal Challengers Bengaluru won by 92 runs",
   "innings": [
     {
       "bat_team": "Royal Challengers Bengaluru",
