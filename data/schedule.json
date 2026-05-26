@@ -2741,8 +2741,8 @@
       "team2_short": "GT",
       "team2_color": "#0f766e",
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
-      "status": "upcoming",
-      "status_text": "Match starts at May 26, 14:00 GMT",
+      "status": "live",
+      "status_text": "Innings Break",
       "start_time": "07:30 PM",
       "start_epoch": 1779804000000,
       "match_date": "Tue, 26 May 2026",
@@ -2847,6 +2847,6 @@
       "t2_h2h_wins": 0
     }
   ],
-  "last_updated": "26 May, 02:28 PM",
+  "last_updated": "26 May, 09:42 PM",
   "error": null
 }
