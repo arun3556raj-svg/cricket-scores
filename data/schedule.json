@@ -2781,7 +2781,7 @@
       "team2_color": "#ea580c",
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "live",
-      "status_text": "Sunrisers Hyderabad opt to bowl",
+      "status_text": "Sunrisers Hyderabad need 149 runs in 73 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1779890400000,
       "match_date": "Wed, 27 May 2026",
@@ -2867,6 +2867,6 @@
       "team1_qualification_pct": 99
     }
   ],
-  "last_updated": "27 May, 07:21 PM",
+  "last_updated": "27 May, 10:26 PM",
   "error": null
 }
