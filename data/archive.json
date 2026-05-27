@@ -178,10 +178,8 @@
       ]
     },
     {
-      "id": "prov-152263",
-      "source_id": "152263",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1239",
+      "source_id": "1529313",
       "season": 2026,
       "match_number": 70,
       "round": "League",
@@ -194,7 +192,7 @@
       "team2_color": "#7c3aed",
       "winner": "Delhi Capitals",
       "result_text": "Delhi Capitals won by 40 runs",
-      "venue": "Eden Gardens, Kolkata",
+      "venue": "Eden Gardens, Kolkata, Kolkata",
       "innings": [
         {
           "number": 1,
@@ -205,10 +203,10 @@
           "opponent_short": "KKR",
           "runs": 203,
           "wickets": 5,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "203/5",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
@@ -227,10 +225,8 @@
       ]
     },
     {
-      "id": "prov-152252",
-      "source_id": "152252",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1238",
+      "source_id": "1529312",
       "season": 2026,
       "match_number": 69,
       "round": "League",
@@ -243,7 +239,7 @@
       "team2_color": "#1d4ed8",
       "winner": "Rajasthan Royals",
       "result_text": "Rajasthan Royals won by 30 runs",
-      "venue": "Wankhede Stadium, Mumbai",
+      "venue": "Wankhede Stadium, Mumbai, Mumbai",
       "innings": [
         {
           "number": 1,
@@ -254,10 +250,10 @@
           "opponent_short": "MI",
           "runs": 205,
           "wickets": 8,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "205/8",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
@@ -268,18 +264,16 @@
           "opponent_short": "RR",
           "runs": 175,
           "wickets": 9,
-          "overs": 20,
+          "overs": 20.0,
           "target": 206,
           "display": "175/9",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         }
       ]
     },
     {
-      "id": "prov-152241",
-      "source_id": "152241",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1237",
+      "source_id": "1529311",
       "season": 2026,
       "match_number": 68,
       "round": "League",
@@ -292,7 +286,7 @@
       "team2_color": "#e11d48",
       "winner": "Punjab Kings",
       "result_text": "Punjab Kings won by 7 wkts",
-      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow, Lucknow",
       "innings": [
         {
           "number": 1,
@@ -303,10 +297,10 @@
           "opponent_short": "PBKS",
           "runs": 196,
           "wickets": 6,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "196/6",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
@@ -317,18 +311,16 @@
           "opponent_short": "LSG",
           "runs": 200,
           "wickets": 3,
-          "overs": 18,
+          "overs": 18.0,
           "target": 197,
           "display": "200/3",
-          "detail": "(18 ov)"
+          "detail": "(18.0 ov)"
         }
       ]
     },
     {
-      "id": "prov-152240",
-      "source_id": "152240",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1236",
+      "source_id": "1529310",
       "season": 2026,
       "match_number": 67,
       "round": "League",
@@ -341,7 +333,7 @@
       "team2_color": "#dc2626",
       "winner": "Sunrisers Hyderabad",
       "result_text": "Sunrisers Hyderabad won by 55 runs",
-      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "venue": "Rajiv Gandhi International Stadium, Uppal, Hyderabad, Hyderabad",
       "innings": [
         {
           "number": 1,
@@ -352,10 +344,10 @@
           "opponent_short": "RCB",
           "runs": 255,
           "wickets": 4,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "255/4",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
@@ -366,10 +358,10 @@
           "opponent_short": "SRH",
           "runs": 200,
           "wickets": 4,
-          "overs": 20,
+          "overs": 20.0,
           "target": 256,
           "display": "200/4",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         }
       ]
     },
