@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-155387",
+  "source_id": "155387",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": null,
+  "date": "2026-05-27",
+  "team1": "Rajasthan Royals",
+  "team2": "Sunrisers Hyderabad",
+  "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+  "result_text": "Rajasthan Royals won by 47 runs",
   "innings": [
     {
       "bat_team": "Rajasthan Royals",

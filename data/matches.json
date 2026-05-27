@@ -1,68 +1,11 @@
 {
-  "live": [
-    {
-      "id": "155387",
-      "series": "IPL 2026",
-      "match_desc": "Eliminator",
-      "match_format": "T20",
-      "team1": "Rajasthan Royals",
-      "team1_short": "RR",
-      "team1_color": "#db2777",
-      "team2": "Sunrisers Hyderabad",
-      "team2_short": "SRH",
-      "team2_color": "#ea580c",
-      "team1_score1": {
-        "display": "243/8",
-        "detail": "(20 ov)",
-        "runs": 243,
-        "wickets": 8,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "108/5",
-        "detail": "(8.5 ov)",
-        "runs": 108,
-        "wickets": 5,
-        "overs": "8.5"
-      },
-      "team2_score2": null,
-      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
-      "status": "live",
-      "status_text": "Sunrisers Hyderabad need 136 runs in 67 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779890400000,
-      "run_rate": 12.23,
-      "t1_h2h_wins": 9,
-      "t2_h2h_wins": 14,
-      "team1_rank": 4,
-      "team1_points": 16,
-      "team1_last_5": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "team1_qualification_pct": 99,
-      "team2_rank": 2,
-      "team2_points": 18,
-      "team2_last_5": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "team2_qualification_pct": 99
-    }
-  ],
+  "live": [],
   "upcoming": [],
   "finished": [
     {
       "id": "155376",
       "series": "IPL 2026",
-      "match_desc": "Qualifier 1",
+      "match_desc": "1th Match",
       "match_format": "T20",
       "team1": "Royal Challengers Bengaluru",
       "team1_short": "RCB",
@@ -75,7 +18,7 @@
         "detail": "(20 ov)",
         "runs": 254,
         "wickets": 5,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -83,14 +26,14 @@
         "detail": "(19.3 ov)",
         "runs": 162,
         "wickets": 10,
-        "overs": "19.3"
+        "overs": 19.3
       },
       "team2_score2": null,
       "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
       "status": "finished",
       "status_text": "Royal Challengers Bengaluru won by 92 runs",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779804000000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz",
@@ -116,8 +59,66 @@
         "L"
       ],
       "team2_qualification_pct": 99
+    },
+    {
+      "id": "155387",
+      "series": "IPL 2026",
+      "match_desc": "Eliminator",
+      "match_format": "T20",
+      "team1": "Rajasthan Royals",
+      "team1_short": "RR",
+      "team1_color": "#db2777",
+      "team2": "Sunrisers Hyderabad",
+      "team2_short": "SRH",
+      "team2_color": "#ea580c",
+      "team1_score1": {
+        "display": "243/8",
+        "detail": "(20 ov)",
+        "runs": 243,
+        "wickets": 8,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "196",
+        "detail": "(19.2 ov)",
+        "runs": 196,
+        "wickets": 10,
+        "overs": "19.2"
+      },
+      "team2_score2": null,
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "status": "finished",
+      "status_text": "Rajasthan Royals won by 47 runs",
+      "start_time": "07:30 PM",
+      "start_epoch": 1779890400000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 10,
+      "t2_h2h_wins": 14,
+      "team1_rank": 2,
+      "team1_points": 18,
+      "team1_last_5": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 4,
+      "team2_points": 18,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "27 May, 10:26 PM",
+  "last_updated": "28 May, 12:57 AM",
   "error": null
 }
