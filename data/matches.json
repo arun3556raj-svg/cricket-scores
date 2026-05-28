@@ -108,7 +108,7 @@
     {
       "id": "155387",
       "series": "IPL 2026",
-      "match_desc": "Eliminator",
+      "match_desc": "IPL Match",
       "match_format": "T20",
       "team1": "Rajasthan Royals",
       "team1_short": "RR",
@@ -121,7 +121,7 @@
         "detail": "(20 ov)",
         "runs": 243,
         "wickets": 8,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -129,14 +129,14 @@
         "detail": "(19.2 ov)",
         "runs": 196,
         "wickets": 10,
-        "overs": "19.2"
+        "overs": 19.2
       },
       "team2_score2": null,
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "finished",
       "status_text": "Rajasthan Royals won by 47 runs",
-      "start_time": "07:30 PM",
-      "start_epoch": 1779890400000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz",
@@ -164,6 +164,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "28 May, 08:27 PM",
+  "last_updated": "28 May, 11:43 PM",
   "error": null
 }
