@@ -2812,38 +2812,38 @@
       "id": "155398",
       "series": "Indian Premier League 2026",
       "match_desc": "Qualifier 2",
-      "team1": "Gujarat Titans",
-      "team1_short": "GT",
-      "team1_color": "#0f766e",
-      "team2": "Rajasthan Royals",
-      "team2_short": "RR",
-      "team2_color": "#db2777",
+      "team1": "Rajasthan Royals",
+      "team1_short": "RR",
+      "team1_color": "#db2777",
+      "team2": "Gujarat Titans",
+      "team2_short": "GT",
+      "team2_color": "#0f766e",
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
-      "status": "upcoming",
-      "status_text": "upcoming",
+      "status": "live",
+      "status_text": "Gujarat Titans need 124 runs in 72 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1780063200000,
       "match_date": "Fri, 29 May 2026",
-      "t1_h2h_wins": 7,
-      "t2_h2h_wins": 3,
-      "team1_rank": 3,
+      "t1_h2h_wins": 3,
+      "t2_h2h_wins": 7,
+      "team1_rank": 2,
       "team1_points": 18,
       "team1_last_5": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "team1_qualification_pct": 99,
-      "team2_rank": 2,
-      "team2_points": 18,
-      "team2_last_5": [
         "L",
         "L",
         "W",
         "W",
         "W"
+      ],
+      "team1_qualification_pct": 99,
+      "team2_rank": 3,
+      "team2_points": 18,
+      "team2_last_5": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
       ],
       "team2_qualification_pct": 99
     },
@@ -2877,6 +2877,6 @@
       "team1_qualification_pct": 99
     }
   ],
-  "last_updated": "29 May, 07:02 PM",
+  "last_updated": "29 May, 10:28 PM",
   "error": null
 }
