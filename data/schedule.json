@@ -2820,7 +2820,7 @@
       "team2_color": "#db2777",
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "status": "upcoming",
-      "status_text": "Match starts at May 29, 14:00 GMT",
+      "status_text": "upcoming",
       "start_time": "07:30 PM",
       "start_epoch": 1780063200000,
       "match_date": "Fri, 29 May 2026",
@@ -2877,6 +2877,6 @@
       "team1_qualification_pct": 99
     }
   ],
-  "last_updated": "29 May, 03:40 PM",
+  "last_updated": "29 May, 07:02 PM",
   "error": null
 }
