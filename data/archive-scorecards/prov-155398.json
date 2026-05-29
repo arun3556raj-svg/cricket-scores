@@ -1,4 +1,16 @@
 {
+  "match_id": "prov-155398",
+  "source_id": "155398",
+  "source": "cricbuzz",
+  "provisional": true,
+  "season": 2026,
+  "round": "League",
+  "match_number": 2,
+  "date": "2026-05-29",
+  "team1": "Rajasthan Royals",
+  "team2": "Gujarat Titans",
+  "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+  "result_text": "Gujarat Titans won by 7 wkts",
   "innings": [
     {
       "bat_team": "Rajasthan Royals",
