@@ -18,7 +18,7 @@
       "team2_score2": null,
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "upcoming",
-      "status_text": "Match starts at May 31, 14:00 GMT",
+      "status_text": "Preview",
       "start_time": "07:30 PM",
       "start_epoch": 1780236000000,
       "run_rate": null,
@@ -106,6 +106,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "30 May, 08:49 PM",
+  "last_updated": "30 May, 10:01 PM",
   "error": null
 }

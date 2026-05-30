@@ -2859,7 +2859,7 @@
       "team2_color": "#0f766e",
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "upcoming",
-      "status_text": "Match starts at May 31, 14:00 GMT",
+      "status_text": "Preview",
       "start_time": "07:30 PM",
       "start_epoch": 1780236000000,
       "match_date": "Sun, 31 May 2026",
@@ -2887,6 +2887,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "30 May, 08:49 PM",
+  "last_updated": "30 May, 10:01 PM",
   "error": null
 }
