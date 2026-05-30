@@ -178,13 +178,11 @@
       ]
     },
     {
-      "id": "prov-155387",
-      "source_id": "155387",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1241",
+      "source_id": "1535463",
       "season": 2026,
       "match_number": null,
-      "round": "League",
+      "round": "Eliminator",
       "date": "2026-05-27",
       "team1": "Rajasthan Royals",
       "team1_short": "RR",
@@ -194,7 +192,7 @@
       "team2_color": "#ea580c",
       "winner": "Rajasthan Royals",
       "result_text": "Rajasthan Royals won by 47 runs",
-      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh, New Chandigarh",
       "innings": [
         {
           "number": 1,
@@ -205,10 +203,10 @@
           "opponent_short": "SRH",
           "runs": 243,
           "wickets": 8,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "243/8",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
@@ -227,13 +225,11 @@
       ]
     },
     {
-      "id": "prov-155376",
-      "source_id": "155376",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1240",
+      "source_id": "1535462",
       "season": 2026,
-      "match_number": 1,
-      "round": "League",
+      "match_number": null,
+      "round": "Qualifier 1",
       "date": "2026-05-26",
       "team1": "Royal Challengers Bengaluru",
       "team1_short": "RCB",
@@ -243,7 +239,7 @@
       "team2_color": "#0f766e",
       "winner": "Royal Challengers Bengaluru",
       "result_text": "Royal Challengers Bengaluru won by 92 runs",
-      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala, Dharamsala",
       "innings": [
         {
           "number": 1,
@@ -254,10 +250,10 @@
           "opponent_short": "GT",
           "runs": 254,
           "wickets": 5,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "254/5",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
