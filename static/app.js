@@ -110,7 +110,7 @@ function esc(s) {
 }
 
 function teamMeta(short) {
-  return TEAMS[short] || { color: '#818cf8', color2: '#a78bfa', bg: 'rgba(129,140,248,0.12)' };
+  return TEAMS[short] || { color: '#E52534', color2: '#ff6b74', bg: 'rgba(229,37,52,0.12)' };
 }
 
 
@@ -332,7 +332,7 @@ function scoreBlock(s, cls = '') {
 // ── Badge HTML ─────────────────────────────────────────────────
 function badge(status) {
   if (status === 'live') {
-    return `<span class="status-badge badge-live-sm"><span class="live-dot" style="background:var(--live)"></span>Live</span>`;
+    return `<span class="status-badge badge-live-sm"><span class="live-dot"></span>LIVE</span>`;
   }
   if (status === 'upcoming') {
     return `<span class="status-badge badge-upcoming"><span class="static-dot" style="background:var(--upcoming)"></span>Upcoming</span>`;
@@ -431,7 +431,7 @@ function matchCard(m) {
             ${t1Winner ? `<span class="winner-tag">W</span>` : ''}
           </div>
           <div class="team-right-score">
-            ${m.team1_score1 ? `<span class="score-num" style="color:${t1.color}">${esc(m.team1_score1.display)}</span><span class="score-ov">${esc(m.team1_score1.detail)}</span>` : `<span class="score-ytb">Yet to bat</span>`}
+            ${m.team1_score1 ? `<span class="score-num${t1Winner ? ' score-num--winner' : ''}">${esc(m.team1_score1.display)}</span><span class="score-ov">${esc(m.team1_score1.detail)}</span>` : `<span class="score-ytb">Yet to bat</span>`}
           </div>
         </div>
         <div class="match-row" style="${t2Opacity}">
@@ -441,7 +441,7 @@ function matchCard(m) {
             ${t2Winner ? `<span class="winner-tag">W</span>` : ''}
           </div>
           <div class="team-right-score">
-            ${m.team2_score1 ? `<span class="score-num" style="color:${t2.color}">${esc(m.team2_score1.display)}</span><span class="score-ov">${esc(m.team2_score1.detail)}</span>` : `<span class="score-ytb">Yet to bat</span>`}
+            ${m.team2_score1 ? `<span class="score-num${t2Winner ? ' score-num--winner' : ''}">${esc(m.team2_score1.display)}</span><span class="score-ov">${esc(m.team2_score1.detail)}</span>` : `<span class="score-ytb">Yet to bat</span>`}
           </div>
         </div>
       </div>
@@ -480,7 +480,7 @@ function heroCK(m, sc = null) {
     battersHtml = intelBatters.slice(0, 2).map(function(b) {
       var sr = b.sr || (b.balls > 0 ? (b.runs * 100 / b.balls) : 0);
       return '<div style="display:flex;align-items:center;gap:10px">'
-        + '<div class="player-avatar-fallback" style="width:30px;height:30px;font-size:12px;background:' + (m.team1_color || '#6366f1') + '20;border-color:' + (m.team1_color || '#6366f1') + '40;color:' + (m.team1_color || '#6366f1') + '">' + (b.name ? b.name.split(' ').map(function(s,j){return j===0||j===b.name.split(' ').length-1?s[0]:'';}).filter(Boolean).join('') : '?') + '</span></div>'
+        + '<div class="player-avatar-fallback" style="width:30px;height:30px;font-size:12px;background:' + (m.team1_color || '#E52534') + '20;border-color:' + (m.team1_color || '#E52534') + '40;color:' + (m.team1_color || '#E52534') + '">' + (b.name ? b.name.split(' ').map(function(s,j){return j===0||j===b.name.split(' ').length-1?s[0]:'';}).filter(Boolean).join('') : '?') + '</span></div>'
         + '<div style="flex:1;min-width:0"><div style="font-size:12.5px;font-weight:600;color:var(--ct);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + esc(b.name) + '</div><div style="font-size:11px;color:var(--ct3)">SR ' + sr.toFixed(1) + (b.fours ? ' \u00b7 ' + b.fours + '\u00d74' : '') + (b.sixes ? ' ' + b.sixes + '\u00d76' : '') + '</div></div>'
         + '<span style="font-size:15px;font-weight:800;color:var(--ct);flex-shrink:0">' + (b.runs || 0) + '<span style="font-size:11px;font-weight:500;color:var(--ct4)"> (' + (b.balls || 0) + ')</span></span></div>';
     }).join('');
@@ -488,7 +488,7 @@ function heroCK(m, sc = null) {
   if (intelBowlers && intelBowlers.length) {
     bowlersHtml = intelBowlers.slice(0, 2).map(function(b) {
       return '<div style="display:flex;align-items:center;gap:10px">'
-        + '<div class="player-avatar-fallback" style="width:30px;height:30px;font-size:12px;background:' + (m.team2_color || '#6366f1') + '20;border-color:' + (m.team2_color || '#6366f1') + '40;color:' + (m.team2_color || '#6366f1') + '">' + (b.name ? b.name.split(' ').map(function(s,j){return j===0||j===b.name.split(' ').length-1?s[0]:'';}).filter(Boolean).join('') : '?') + '</span></div>'
+        + '<div class="player-avatar-fallback" style="width:30px;height:30px;font-size:12px;background:' + (m.team2_color || '#E52534') + '20;border-color:' + (m.team2_color || '#E52534') + '40;color:' + (m.team2_color || '#E52534') + '">' + (b.name ? b.name.split(' ').map(function(s,j){return j===0||j===b.name.split(' ').length-1?s[0]:'';}).filter(Boolean).join('') : '?') + '</span></div>'
         + '<div style="flex:1;min-width:0"><div style="font-size:12.5px;font-weight:600;color:var(--ct);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + esc(b.name) + '</div><div style="font-size:11px;color:var(--ct3)">Econ ' + (b.econ || 0).toFixed(2) + '</div></div>'
         + '<span style="font-size:15px;font-weight:800;color:var(--ct);flex-shrink:0">' + (b.wickets || 0) + '/' + (b.runs || 0) + '</span></div>';
     }).join('');
@@ -620,7 +620,7 @@ function heroCK(m, sc = null) {
 
       <!-- Match situation -->
       ${m.status_text ? `<div style="text-align:center;padding:0 24px 12px;position:relative;z-index:1">
-        <span style="color:#22c55e;font-size:13px;font-weight:600">${esc(m.status_text)}</span>
+        <span style="font-size:13px;font-weight:600;color:var(--live)">${esc(m.status_text)}</span>
       </div>` : ''}
 
       <!-- Batting + Bowling panels -->
