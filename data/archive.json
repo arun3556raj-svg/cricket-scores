@@ -129,6 +129,55 @@
   ],
   "matches": [
     {
+      "id": "prov-155409",
+      "source_id": "155409",
+      "source": "cricbuzz",
+      "provisional": true,
+      "season": 2026,
+      "match_number": null,
+      "round": "League",
+      "date": "2026-05-31",
+      "team1": "Gujarat Titans",
+      "team1_short": "GT",
+      "team1_color": "#0f766e",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
+      "winner": "Royal Challengers Bengaluru",
+      "result_text": "Royal Challengers Bengaluru won by 5 wkts",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "innings": [
+        {
+          "number": 1,
+          "team": "Gujarat Titans",
+          "team_short": "GT",
+          "team_color": "#0f766e",
+          "opponent": "Royal Challengers Bengaluru",
+          "opponent_short": "RCB",
+          "runs": 155,
+          "wickets": 8,
+          "overs": 20,
+          "target": null,
+          "display": "155/8",
+          "detail": "(20 ov)"
+        },
+        {
+          "number": 2,
+          "team": "Royal Challengers Bengaluru",
+          "team_short": "RCB",
+          "team_color": "#dc2626",
+          "opponent": "Gujarat Titans",
+          "opponent_short": "GT",
+          "runs": 161,
+          "wickets": 5,
+          "overs": 18,
+          "target": 156,
+          "display": "161/5",
+          "detail": "(18 ov)"
+        }
+      ]
+    },
+    {
       "id": "prov-155398",
       "source_id": "155398",
       "source": "cricbuzz",

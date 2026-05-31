@@ -1,62 +1,5 @@
 {
-  "live": [
-    {
-      "id": "155409",
-      "series": "IPL 2026",
-      "match_desc": "Final",
-      "match_format": "T20",
-      "team1": "Gujarat Titans",
-      "team1_short": "GT",
-      "team1_color": "#0f766e",
-      "team2": "Royal Challengers Bengaluru",
-      "team2_short": "RCB",
-      "team2_color": "#dc2626",
-      "team1_score1": {
-        "display": "155/8",
-        "detail": "(20 ov)",
-        "runs": 155,
-        "wickets": 8,
-        "overs": "20"
-      },
-      "team1_score2": null,
-      "team2_score1": {
-        "display": "144/5",
-        "detail": "(15.4 ov)",
-        "runs": 144,
-        "wickets": 5,
-        "overs": "15.4"
-      },
-      "team2_score2": null,
-      "venue": "Narendra Modi Stadium, Ahmedabad",
-      "status": "live",
-      "status_text": "Royal Challengers Bengaluru need 12 runs in 26 balls",
-      "start_time": "07:30 PM",
-      "start_epoch": 1780236000000,
-      "run_rate": 9.19,
-      "t1_h2h_wins": 4,
-      "t2_h2h_wins": 5,
-      "team1_rank": 1,
-      "team1_points": 20,
-      "team1_last_5": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "team1_qualification_pct": 99,
-      "team2_rank": 2,
-      "team2_points": 18,
-      "team2_last_5": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "team2_qualification_pct": 99
-    }
-  ],
+  "live": [],
   "upcoming": [],
   "finished": [
     {
@@ -106,18 +49,76 @@
         "L"
       ],
       "team1_qualification_pct": 99,
+      "team2_rank": 2,
+      "team2_points": 20,
+      "team2_last_5": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "team2_qualification_pct": 99
+    },
+    {
+      "id": "155409",
+      "series": "IPL 2026",
+      "match_desc": "Final",
+      "match_format": "T20",
+      "team1": "Gujarat Titans",
+      "team1_short": "GT",
+      "team1_color": "#0f766e",
+      "team2": "Royal Challengers Bengaluru",
+      "team2_short": "RCB",
+      "team2_color": "#dc2626",
+      "team1_score1": {
+        "display": "155/8",
+        "detail": "(20 ov)",
+        "runs": 155,
+        "wickets": 8,
+        "overs": "20"
+      },
+      "team1_score2": null,
+      "team2_score1": {
+        "display": "161/5",
+        "detail": "(18 ov)",
+        "runs": 161,
+        "wickets": 5,
+        "overs": "18"
+      },
+      "team2_score2": null,
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "status": "finished",
+      "status_text": "Royal Challengers Bengaluru won by 5 wkts",
+      "start_time": "07:30 PM",
+      "start_epoch": 1780236000000,
+      "run_rate": null,
+      "provisional": true,
+      "source": "cricbuzz",
+      "t1_h2h_wins": 4,
+      "t2_h2h_wins": 6,
+      "team1_rank": 2,
+      "team1_points": 20,
+      "team1_last_5": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "team1_qualification_pct": 99,
       "team2_rank": 1,
       "team2_points": 20,
       "team2_last_5": [
         "W",
         "W",
-        "L",
         "W",
+        "L",
         "W"
       ],
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "31 May, 11:13 PM",
+  "last_updated": "01 Jun, 12:23 AM",
   "error": null
 }
