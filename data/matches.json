@@ -20,19 +20,19 @@
       },
       "team1_score2": null,
       "team2_score1": {
-        "display": "55/0",
-        "detail": "(3.5 ov)",
-        "runs": 55,
-        "wickets": 0,
-        "overs": "3.5"
+        "display": "144/5",
+        "detail": "(15.4 ov)",
+        "runs": 144,
+        "wickets": 5,
+        "overs": "15.4"
       },
       "team2_score2": null,
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "live",
-      "status_text": "Royal Challengers Bengaluru need 101 runs",
+      "status_text": "Royal Challengers Bengaluru need 12 runs in 26 balls",
       "start_time": "07:30 PM",
       "start_epoch": 1780236000000,
-      "run_rate": 14.35,
+      "run_rate": 9.19,
       "t1_h2h_wins": 4,
       "t2_h2h_wins": 5,
       "team1_rank": 1,
@@ -118,6 +118,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "31 May, 10:05 PM",
+  "last_updated": "31 May, 11:13 PM",
   "error": null
 }

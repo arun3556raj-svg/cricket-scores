@@ -282,15 +282,15 @@
       "bowl_team": "Gujarat Titans",
       "innings_id": 2,
       "score": {
-        "runs": 55,
-        "wickets": 0,
-        "overs": 4,
-        "run_rate": 13.75,
+        "runs": 145,
+        "wickets": 5,
+        "overs": 15.5,
+        "run_rate": 9.16,
         "declared": false
       },
       "extras": {
-        "total": 1,
-        "wides": 0,
+        "total": 2,
+        "wides": 1,
         "no_balls": 0,
         "byes": 0,
         "leg_byes": 1
@@ -298,23 +298,23 @@
       "batsmen": [
         {
           "name": "Venkatesh Iyer",
-          "runs": 26,
-          "balls": 14,
+          "runs": 32,
+          "balls": 16,
           "fours": 4,
-          "sixes": 1,
-          "strike_rate": 185.71,
-          "out_desc": "batting",
+          "sixes": 2,
+          "strike_rate": 200,
+          "out_desc": "c Kagiso Rabada b Mohammed Siraj",
           "is_captain": false,
           "is_keeper": false,
           "not_out": false
         },
         {
           "name": "Virat Kohli",
-          "runs": 28,
-          "balls": 10,
-          "fours": 5,
-          "sixes": 1,
-          "strike_rate": 280,
+          "runs": 63,
+          "balls": 36,
+          "fours": 8,
+          "sixes": 2,
+          "strike_rate": 175,
           "out_desc": "batting",
           "is_captain": false,
           "is_keeper": false,
@@ -322,63 +322,63 @@
         },
         {
           "name": "Devdutt Padikkal",
-          "runs": 0,
-          "balls": 0,
+          "runs": 1,
+          "balls": 4,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 25,
+          "out_desc": "c Arshad Khan b Kagiso Rabada",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Rajat Patidar",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "runs": 15,
+          "balls": 13,
+          "fours": 1,
+          "sixes": 1,
+          "strike_rate": 115.38,
+          "out_desc": "c Kagiso Rabada b Rashid Khan",
           "is_captain": true,
           "is_keeper": false,
-          "not_out": true
-        },
-        {
-          "name": "Jitesh Sharma",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": true,
-          "not_out": true
-        },
-        {
-          "name": "Tim David",
-          "runs": 0,
-          "balls": 0,
-          "fours": 0,
-          "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
-          "is_captain": false,
-          "is_keeper": false,
-          "not_out": true
+          "not_out": false
         },
         {
           "name": "Krunal Pandya",
-          "runs": 0,
-          "balls": 0,
+          "runs": 1,
+          "balls": 2,
           "fours": 0,
           "sixes": 0,
-          "strike_rate": 0,
-          "out_desc": "",
+          "strike_rate": 50,
+          "out_desc": "lbw b Rashid Khan",
           "is_captain": false,
           "is_keeper": false,
-          "not_out": true
+          "not_out": false
+        },
+        {
+          "name": "Tim David",
+          "runs": 24,
+          "balls": 17,
+          "fours": 3,
+          "sixes": 1,
+          "strike_rate": 141.18,
+          "out_desc": "c Jos Buttler b Arshad Khan",
+          "is_captain": false,
+          "is_keeper": false,
+          "not_out": false
+        },
+        {
+          "name": "Jitesh Sharma",
+          "runs": 7,
+          "balls": 7,
+          "fours": 1,
+          "sixes": 0,
+          "strike_rate": 100,
+          "out_desc": "batting",
+          "is_captain": false,
+          "is_keeper": true,
+          "not_out": false
         },
         {
           "name": "Romario Shepherd",
@@ -444,30 +444,109 @@
       "bowlers": [
         {
           "name": "Mohammed Siraj",
-          "overs": 2,
-          "balls": 12,
+          "overs": 4,
+          "balls": 24,
           "maidens": 0,
-          "runs": 17,
-          "wickets": 0,
-          "economy": 8.5,
-          "wides": 0,
+          "runs": 36,
+          "wickets": 1,
+          "economy": 9,
+          "wides": 1,
           "no_balls": 0,
           "dots": 0
         },
         {
           "name": "Kagiso Rabada",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 44,
+          "wickets": 1,
+          "economy": 14.7,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Jason Holder",
           "overs": 2,
           "balls": 12,
           "maidens": 0,
-          "runs": 37,
+          "runs": 16,
           "wickets": 0,
-          "economy": 18.5,
+          "economy": 8,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Rashid Khan",
+          "overs": 3,
+          "balls": 18,
+          "maidens": 0,
+          "runs": 22,
+          "wickets": 2,
+          "economy": 7.3,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Arshad Khan",
+          "overs": 2.5,
+          "balls": 17,
+          "maidens": 0,
+          "runs": 19,
+          "wickets": 1,
+          "economy": 6.7,
+          "wides": 0,
+          "no_balls": 0,
+          "dots": 0
+        },
+        {
+          "name": "Prasidh Krishna",
+          "overs": 1,
+          "balls": 6,
+          "maidens": 0,
+          "runs": 7,
+          "wickets": 0,
+          "economy": 7,
           "wides": 0,
           "no_balls": 0,
           "dots": 0
         }
       ],
-      "fow": []
+      "fow": [
+        {
+          "name": "Venkatesh Iyer",
+          "runs": 62,
+          "over": 4.3,
+          "wkt_n": 1
+        },
+        {
+          "name": "Devdutt Padikkal",
+          "runs": 63,
+          "over": 5.1,
+          "wkt_n": 2
+        },
+        {
+          "name": "Rajat Patidar",
+          "runs": 89,
+          "over": 8.2,
+          "wkt_n": 3
+        },
+        {
+          "name": "Krunal Pandya",
+          "runs": 91,
+          "over": 8.5,
+          "wkt_n": 4
+        },
+        {
+          "name": "Tim David",
+          "runs": 132,
+          "over": 13.6,
+          "wkt_n": 5
+        }
+      ]
     }
   ],
   "error": null
