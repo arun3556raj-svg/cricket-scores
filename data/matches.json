@@ -12,21 +12,27 @@
       "team2_short": "RCB",
       "team2_color": "#dc2626",
       "team1_score1": {
-        "display": "91/4",
-        "detail": "(13.2 ov)",
-        "runs": 91,
-        "wickets": 4,
-        "overs": "13.2"
+        "display": "155/8",
+        "detail": "(20 ov)",
+        "runs": 155,
+        "wickets": 8,
+        "overs": "20"
       },
       "team1_score2": null,
-      "team2_score1": null,
+      "team2_score1": {
+        "display": "55/0",
+        "detail": "(3.5 ov)",
+        "runs": 55,
+        "wickets": 0,
+        "overs": "3.5"
+      },
       "team2_score2": null,
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "live",
-      "status_text": "Royal Challengers Bengaluru opt to bowl",
+      "status_text": "Royal Challengers Bengaluru need 101 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1780236000000,
-      "run_rate": 6.83,
+      "run_rate": 14.35,
       "t1_h2h_wins": 4,
       "t2_h2h_wins": 5,
       "team1_rank": 1,
@@ -112,6 +118,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "31 May, 08:38 PM",
+  "last_updated": "31 May, 10:05 PM",
   "error": null
 }

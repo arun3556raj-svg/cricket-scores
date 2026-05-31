@@ -2859,7 +2859,7 @@
       "team2_color": "#dc2626",
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "live",
-      "status_text": "Royal Challengers Bengaluru opt to bowl",
+      "status_text": "Royal Challengers Bengaluru need 116 runs",
       "start_time": "07:30 PM",
       "start_epoch": 1780236000000,
       "match_date": "Sun, 31 May 2026",
@@ -2887,6 +2887,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "31 May, 08:38 PM",
+  "last_updated": "31 May, 10:05 PM",
   "error": null
 }
