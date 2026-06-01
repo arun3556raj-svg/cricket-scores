@@ -63,7 +63,7 @@
     {
       "id": "155409",
       "series": "IPL 2026",
-      "match_desc": "Final",
+      "match_desc": "IPL Match",
       "match_format": "T20",
       "team1": "Gujarat Titans",
       "team1_short": "GT",
@@ -76,7 +76,7 @@
         "detail": "(20 ov)",
         "runs": 155,
         "wickets": 8,
-        "overs": "20"
+        "overs": 20
       },
       "team1_score2": null,
       "team2_score1": {
@@ -84,14 +84,14 @@
         "detail": "(18 ov)",
         "runs": 161,
         "wickets": 5,
-        "overs": "18"
+        "overs": 18
       },
       "team2_score2": null,
       "venue": "Narendra Modi Stadium, Ahmedabad",
       "status": "finished",
       "status_text": "Royal Challengers Bengaluru won by 5 wkts",
-      "start_time": "07:30 PM",
-      "start_epoch": 1780236000000,
+      "start_time": null,
+      "start_epoch": null,
       "run_rate": null,
       "provisional": true,
       "source": "cricbuzz",
@@ -119,6 +119,6 @@
       "team2_qualification_pct": 99
     }
   ],
-  "last_updated": "01 Jun, 06:10 PM",
+  "last_updated": "01 Jun, 11:58 PM",
   "error": null
 }
