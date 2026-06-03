@@ -129,13 +129,11 @@
   ],
   "matches": [
     {
-      "id": "prov-155409",
-      "source_id": "155409",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1243",
+      "source_id": "1535465",
       "season": 2026,
       "match_number": null,
-      "round": "League",
+      "round": "Final",
       "date": "2026-05-31",
       "team1": "Gujarat Titans",
       "team1_short": "GT",
@@ -145,7 +143,7 @@
       "team2_color": "#dc2626",
       "winner": "Royal Challengers Bengaluru",
       "result_text": "Royal Challengers Bengaluru won by 5 wkts",
-      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "venue": "Narendra Modi Stadium, Ahmedabad, Ahmedabad",
       "innings": [
         {
           "number": 1,
@@ -156,10 +154,10 @@
           "opponent_short": "RCB",
           "runs": 155,
           "wickets": 8,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "155/8",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
@@ -170,21 +168,19 @@
           "opponent_short": "GT",
           "runs": 161,
           "wickets": 5,
-          "overs": 18,
+          "overs": 18.0,
           "target": 156,
           "display": "161/5",
-          "detail": "(18 ov)"
+          "detail": "(18.0 ov)"
         }
       ]
     },
     {
-      "id": "prov-155398",
-      "source_id": "155398",
-      "source": "cricbuzz",
-      "provisional": true,
+      "id": "1242",
+      "source_id": "1535464",
       "season": 2026,
-      "match_number": 2,
-      "round": "League",
+      "match_number": null,
+      "round": "Qualifier 2",
       "date": "2026-05-29",
       "team1": "Rajasthan Royals",
       "team1_short": "RR",
@@ -194,7 +190,7 @@
       "team2_color": "#0f766e",
       "winner": "Gujarat Titans",
       "result_text": "Gujarat Titans won by 7 wkts",
-      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh, New Chandigarh",
       "innings": [
         {
           "number": 1,
@@ -205,10 +201,10 @@
           "opponent_short": "GT",
           "runs": 214,
           "wickets": 6,
-          "overs": 20,
+          "overs": 20.0,
           "target": null,
           "display": "214/6",
-          "detail": "(20 ov)"
+          "detail": "(20.0 ov)"
         },
         {
           "number": 2,
